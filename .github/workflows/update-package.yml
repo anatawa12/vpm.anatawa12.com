@@ -45,7 +45,7 @@ jobs:
           jq \
             --arg DOWNLOAD_URL "$DOWNLOAD_URL" \
             --slurpfile package 'package.json' \
-            '.packages[$package[0].name].versions[$package[0].version] = ($package[0] | .url = $DOWNLOAD_URL))' \
+            '.packages[$package[0].name].versions[$package[0].version] = ($package[0] | .url = $DOWNLOAD_URL)' \
             < vpm.json > vpm.tmp.json
           rm vpm.json
           mv vpm.tmp.json vpm.json
