@@ -1,0 +1,79 @@
+on:
+  repository_dispatch:
+    types: [update-package]
+
+env:
+  REPO: ${{ github.event.client_payload.repository }}
+  VERSION: ${{ github.event.client_payload.version }}
+
+jobs:
+  add-package:
+    runs-on: ubuntu-latest
+    steps:
+      - name: download package.json
+        run: curl -sLf "https://github.com/$REPO/releases/download/v$VERSION/package.json" > package.json
+
+      - name: verify version name
+        run: |
+          if ! [[ ${VERSION} =~ ^([0-9]+)\.([0-9]+)\.([0-9]+)(-(alpha|beta|rc)\.[0-9]+)?$ ]]; then
+            echo "version name is not valid. must be x.y.z OR x.y.z-(alpha|beta|rc).w" >&2
+            exit 1
+          fi
+          if [ "$(jq -r '.version' < package.json)" != "${VERSION}" ]; then
+            echo "version name mismatch between package.json and tag name" >&2
+          fi
+
+      - name: create and verify zip file url
+        run: |
+          ID="$(jq -r '.name' < package.json)"
+          SHORTID="$(echo "$ID" | sed -e 's/^com\.anatawa12\.//')"
+
+          DOWNLOAD_URL="https://vpm.anatawa12.com/$SHORTID/$ID-$VERSION.zip?"
+
+          if ! curl -ILsSf "$DOWNLOAD_URL.1" -o /dev/null; then
+            echo "downloading file from vpm.anatawa12.com failed" >&2
+          fi
+
+          echo "DOWNLOAD_URL=$DOWNLOAD_URL" >> $GITHUB_ENV
+          echo "ID=$ID" >> $GITHUB_ENV
+          echo "SHORTID=$SHORTID" >> $GITHUB_ENV
+
+      - name: update vpm.json
+        run: |
+          jq \
+            --arg DOWNLOAD_URL "$DOWNLOAD_URL" \
+            --slurpfile package 'package.json' \
+            '.packages[$package[0].name].versions[$package[0].version] = ($package[0] | .url = $DOWNLOAD_URL))' \
+            < vpm.json > vpm.tmp.json
+          rm vpm.json
+          mv vpm.tmp.json vpm.json
+
+      - name: add & commit & push
+        run: |
+          rm package.json
+          git add vpm.json
+          git commit -m "add $SHORTID version $VERSION"
+          git push
+
+      - name: re-run if failed
+        if: failure()
+        env:
+          RETRY: ${{ github.event.client_payload.retry }}
+          PAYLOAD: ${{ toJson(github.event.client_payload) }}
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          : ${RETRY:=0}
+
+          if [ $RETRY -gt 3 ]; then
+            echo "Retried 3 times but not successfully updated. PLEASE RETRY MANUALLY" >&2
+            exit 1
+          fi
+
+          DATA="$(echo "PAYLOAD" | jq -c --argjson retry "$RETRY" \
+              '{ client_payload: (. | .retry = $retry + 1), event_type: "update-package" }')"
+
+          curl -X POST "$GITHUB_API_URL/repos/$GITHUB_REPOSITORY/dispatches" \
+            -H 'Accept: application/vnd.github+json' \
+            -H 'authorization: Bearer $GITHUB_TOKEN' \
+            -H "X-GitHub-Api-Version: 2022-11-28" \
+            --data "$DATA"
