@@ -54,6 +54,8 @@ jobs:
         run: |
           rm package.json
           git add vpm.json
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
           git commit -m "add $SHORTID version $VERSION"
           git push
 
@@ -71,7 +73,7 @@ jobs:
             exit 1
           fi
 
-          DATA="$(echo "PAYLOAD" | jq -c --argjson retry "$RETRY" \
+          DATA="$(echo "$PAYLOAD" | jq -c --argjson retry "$RETRY" \
               '{ client_payload: (. | .retry = $retry + 1), event_type: "update-package" }')"
 
           curl -X POST "$GITHUB_API_URL/repos/$GITHUB_REPOSITORY/dispatches" \
