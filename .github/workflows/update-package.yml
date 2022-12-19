@@ -10,6 +10,8 @@ jobs:
   add-package:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v3
+
       - name: download package.json
         run: curl -sLf "https://github.com/$REPO/releases/download/v$VERSION/package.json" > package.json
 
