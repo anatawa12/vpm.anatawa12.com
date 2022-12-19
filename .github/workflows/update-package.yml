@@ -74,6 +74,6 @@ jobs:
 
           curl -X POST "$GITHUB_API_URL/repos/$GITHUB_REPOSITORY/dispatches" \
             -H 'Accept: application/vnd.github+json' \
-            -H 'authorization: Bearer $GITHUB_TOKEN' \
+            -H "authorization: Bearer $GITHUB_TOKEN" \
             -H "X-GitHub-Api-Version: 2022-11-28" \
             --data "$DATA"
