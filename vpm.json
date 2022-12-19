@@ -21,6 +21,27 @@
             }
           ],
           "url": "https://vpm.anatawa12.com/custom-localization-for-editor-extension/com.anatawa12.custom-localization-for-editor-extension-0.2.0.zip?"
+        },
+        "0.2.1": {
+          "name": "com.anatawa12.custom-localization-for-editor-extension",
+          "version": "0.2.1",
+          "displayName": "CustomLocalization4EditorExtension",
+          "author": {
+            "name": "anatawa12",
+            "url": "https://anatawa12.com/"
+          },
+          "description": "The experimental library for Unity extensions which want to have custom locale for translation instead of unity's locale.",
+          "type": "library",
+          "license": "MIT",
+          "url": "https://vpm.anatawa12.com/custom-localization-for-editor-extension/com.anatawa12.custom-localization-for-editor-extension-0.2.1.zip?",
+          "repo": "https://vpm.anatawa12.com/vpm.json",
+          "samples": [
+            {
+              "displayName": "General",
+              "description": "Contains simple ui with localizable",
+              "path": "Samples~/General"
+            }
+          ]
         }
       }
     }
