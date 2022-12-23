@@ -6,5 +6,5 @@ domain for vpm
 - `vpm.anatawa12.com/`
   - `vpm.json` - the vpm version manifest
   - `<package-id-w/o-com.anatawa12>/` - the folder for one package
-    - `<package-id>-<version>.zip` - redirects to github release asset
+    - `package-<version>.zip` - redirects to github release asset
     - `doc/` - documentation

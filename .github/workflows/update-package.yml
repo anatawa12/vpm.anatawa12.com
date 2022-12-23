@@ -30,7 +30,7 @@ jobs:
           ID="$(jq -r '.name' < package.json)"
           SHORTID="$(echo "$ID" | sed -e 's/^com\.anatawa12\.//')"
 
-          DOWNLOAD_URL="https://vpm.anatawa12.com/$SHORTID/$ID-$VERSION.zip?"
+          DOWNLOAD_URL="https://vpm.anatawa12.com/$SHORTID/package-$VERSION.zip?"
 
           if ! curl -ILsSf "$DOWNLOAD_URL.1" -o /dev/null; then
             echo "downloading file from vpm.anatawa12.com failed" >&2
