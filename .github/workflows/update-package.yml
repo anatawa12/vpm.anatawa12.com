@@ -1,16 +1,37 @@
 on:
   repository_dispatch:
     types: [update-package]
-
-env:
-  REPO: ${{ github.event.client_payload.repository }}
-  VERSION: ${{ github.event.client_payload.version }}
+  workflow_call:
+    inputs:
+      repostitory:
+        description: 'Name of source repository'
+        default: ${{ github.repository }}
+        required: true
+        type: string
+    version:
+      repostitory:
+        description: 'Name of version'
+        required: true
+        type: string
+    secrets:
+      TOKEN:
+        required: true
 
 jobs:
-  add-package:
+  publish-vpm:
     runs-on: ubuntu-latest
+    timeout-minutes: 5
+    env:
+      GH_TOKEN: ${{ secrets.TOKEN || github.token }}
+      SRC_REPO: ${{ inputs.repostitory || github.event.client_payload.repository }}
+      VERSION: ${{ inputs.version || github.event.client_payload.version }}
     steps:
       - uses: actions/checkout@v3
+        with:
+          repository: anatawa12/vpm.anatawa12.com
+          token: ${{ secrets.TOKEN || github.token }}
+          ref: master
+      - uses: snow-actions/git-config-user@v1.0.0
 
       - name: download package.json
         run: curl -sLf "https://github.com/$REPO/releases/download/v$VERSION/package.json" > package.json
@@ -50,34 +71,20 @@ jobs:
           rm vpm.json
           mv vpm.tmp.json vpm.json
 
-      - name: add & commit & push
+      - name: Clear package.json
         run: |
           rm package.json
-          git add vpm.json
-          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git config --global user.name "github-actions[bot]"
-          git commit -m "add $SHORTID version $VERSION"
-          git push
 
-      - name: re-run if failed
-        if: failure()
-        env:
-          RETRY: ${{ github.event.client_payload.retry }}
-          PAYLOAD: ${{ toJson(github.event.client_payload) }}
-          GITHUB_TOKEN: ${{ github.token }}
+      - name: Commit changes
         run: |
-          : ${RETRY:=0}
+          git add vpm.json
+          git commit -m "add $SHORTID version $VERSION"
 
-          if [ $RETRY -gt 3 ]; then
-            echo "Retried 3 times but not successfully updated. PLEASE RETRY MANUALLY" >&2
-            exit 1
-          fi
-
-          DATA="$(echo "$PAYLOAD" | jq -c --argjson retry "$RETRY" \
-              '{ client_payload: (. | .retry = $retry + 1), event_type: "update-package" }')"
-
-          curl -X POST "$GITHUB_API_URL/repos/$GITHUB_REPOSITORY/dispatches" \
-            -H 'Accept: application/vnd.github+json' \
-            -H "authorization: Bearer $GITHUB_TOKEN" \
-            -H "X-GitHub-Api-Version: 2022-11-28" \
-            --data "$DATA"
+      - name: Push changes
+        timeout-minutes: 2
+        run: |
+          while true; do
+            git push && break
+            sleep 3
+            git pull --rebase
+          done
