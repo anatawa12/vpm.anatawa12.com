@@ -16,7 +16,6 @@ on:
       repostitory:
         description: 'Name of source repository'
         default: ${{ github.repository }}
-        required: true
         type: string
       version:
         description: 'Name of version'
