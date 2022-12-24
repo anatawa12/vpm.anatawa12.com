@@ -8,8 +8,7 @@ on:
         default: ${{ github.repository }}
         required: true
         type: string
-    version:
-      repostitory:
+      version:
         description: 'Name of version'
         required: true
         type: string
