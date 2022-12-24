@@ -1,6 +1,17 @@
 on:
   repository_dispatch:
     types: [update-package]
+  workflow_dispatch:
+    inputs:
+      repostitory:
+        description: 'Name of source repository'
+        default: ${{ github.repository }}
+        required: true
+        type: string
+      version:
+        description: 'Name of version'
+        required: true
+        type: string
   workflow_call:
     inputs:
       repostitory:
