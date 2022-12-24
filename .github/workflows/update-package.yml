@@ -22,6 +22,10 @@ on:
         description: 'Name of version'
         required: true
         type: string
+      environment:
+        description: 'Name of environment you may use'
+        required: false
+        type: string
     secrets:
       TOKEN:
         required: true
@@ -34,6 +38,9 @@ jobs:
       GH_TOKEN: ${{ secrets.TOKEN || github.token }}
       SRC_REPO: ${{ inputs.repostitory || github.event.client_payload.repository }}
       VERSION: ${{ inputs.version || github.event.client_payload.version }}
+    environment:
+      name: ${{ inputs.environment }}
+      url: https://vpm.anatawa12.com/
     steps:
       - uses: actions/checkout@v3
         with:
