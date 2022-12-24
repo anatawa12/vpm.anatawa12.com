@@ -44,7 +44,7 @@ jobs:
       - uses: snow-actions/git-config-user@v1.0.0
 
       - name: download package.json
-        run: curl -sLf "https://github.com/$REPO/releases/download/v$VERSION/package.json" > package.json
+        run: curl -sLf "https://github.com/$SRC_REPO/releases/download/v$VERSION/package.json" > package.json
 
       - name: verify version name
         run: |
