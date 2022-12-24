@@ -3,3 +3,4 @@
 # new style
 /custom-localization-for-editor-extension/package-:version.zip https://github.com/anatawa12/CustomLocalization4EditorExtension/releases/download/v:version/com.anatawa12.custom-localization-for-editor-extension-:version.zip
 /vpm-package-auto-installer.creator/package-:version.zip https://github.com/anatawa12/VPMPackageAutoInstaller/releases/download/v:version/com.anatawa12.vpm-package-auto-installer.creator-:version.zip
+/animator-controller-as-a-code/package-:version.zip https://github.com/anatawa12/AnimatorController-as-a-Code/releases/download/v:version/com.anatawa12.animator-controller-as-a-code-:version.zip
