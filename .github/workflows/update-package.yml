@@ -39,7 +39,7 @@ jobs:
       VERSION: ${{ inputs.version || github.event.client_payload.version }}
     environment:
       name: ${{ inputs.environment }}
-      url: https://vpm.anatawa12.com/
+      url: https://vpm.anatawa12.com/vpm.json
     steps:
       - uses: actions/checkout@v3
         with:
