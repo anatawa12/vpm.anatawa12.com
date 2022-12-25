@@ -70,6 +70,7 @@ jobs:
 
           if ! curl -ILsSf "$DOWNLOAD_URL.1" -o /dev/null; then
             echo "downloading file from vpm.anatawa12.com failed" >&2
+            exit 1
           fi
 
           echo "DOWNLOAD_URL=$DOWNLOAD_URL" >> $GITHUB_ENV
