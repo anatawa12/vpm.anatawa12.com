@@ -8,3 +8,4 @@ domain for vpm
   - `<package-id-w/o-com.anatawa12>/` - the folder for one package
     - `package-<version>.zip` - redirects to github release asset
     - `doc/` - documentation
+
