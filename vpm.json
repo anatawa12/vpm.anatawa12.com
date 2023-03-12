@@ -521,6 +521,22 @@
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.1.10 <4.0.0"
           }
+        },
+        "0.2.0-rc.1": {
+          "name": "com.anatawa12.avatar-optimizer",
+          "version": "0.2.0-rc.1",
+          "unity": "2019.4",
+          "description": "Set of Anatawa12's Small Avatar Optimization Utilities",
+          "displayName": "Anatawa12's AvatarOpitmizer",
+          "author": {
+            "name": "anatawa12",
+            "url": "https://anatawa12.com/"
+          },
+          "url": "https://vpm.anatawa12.com/avatar-optimizer/package-0.2.0-rc.1.zip?",
+          "repo": "https://vpm.anatawa12.com/vpm.json",
+          "vpmDependencies": {
+            "com.vrchat.avatars": ">=3.1.10 <4.0.0"
+          }
         }
       }
     },
