@@ -1,78 +1,336 @@
 {
   "packages": {
-    "com.anatawa12.custom-localization-for-editor-extension": {
+    "com.anatawa12.avatar-optimizer": {
       "versions": {
-        "0.2.0": {
-          "name": "com.anatawa12.custom-localization-for-editor-extension",
-          "version": "0.2.0",
-          "displayName": "CustomLocalization4EditorExtension",
+        "0.0.1": {
+          "name": "com.anatawa12.avatar-optimizer",
+          "version": "0.0.1",
+          "unity": "2019.4",
+          "description": "Set of Anatawa12's Small Avatar Optimization Utilities",
+          "displayName": "Anatawa12's AvatarOpitmizer",
           "author": {
             "name": "anatawa12",
             "url": "https://anatawa12.com/"
           },
-          "description": "The experimental library for Unity extensions which want to have custom locale for translation instead of unity's locale.",
-          "type": "library",
-          "license": "MIT",
-          "samples": [
-            {
-              "displayName": "General",
-              "description": "Contains simple ui with localizable",
-              "path": "Samples~/General"
-            }
-          ],
-          "url": "https://vpm.anatawa12.com/custom-localization-for-editor-extension/package-0.2.0.zip?"
+          "url": "https://vpm.anatawa12.com/avatar-optimizer/package-0.0.1.zip?",
+          "repo": "https://vpm.anatawa12.com/vpm.json",
+          "vpmDependencies": {
+            "com.vrchat.avatars": ">=3.1.10 <4.0.0"
+          }
+        },
+        "0.0.2": {
+          "name": "com.anatawa12.avatar-optimizer",
+          "version": "0.0.2",
+          "unity": "2019.4",
+          "description": "Set of Anatawa12's Small Avatar Optimization Utilities",
+          "displayName": "Anatawa12's AvatarOpitmizer",
+          "author": {
+            "name": "anatawa12",
+            "url": "https://anatawa12.com/"
+          },
+          "url": "https://vpm.anatawa12.com/avatar-optimizer/package-0.0.2.zip?",
+          "repo": "https://vpm.anatawa12.com/vpm.json",
+          "vpmDependencies": {
+            "com.vrchat.avatars": ">=3.1.10 <4.0.0"
+          }
+        },
+        "0.1.0": {
+          "name": "com.anatawa12.avatar-optimizer",
+          "version": "0.1.0",
+          "unity": "2019.4",
+          "description": "Set of Anatawa12's Small Avatar Optimization Utilities",
+          "displayName": "Anatawa12's AvatarOpitmizer",
+          "author": {
+            "name": "anatawa12",
+            "url": "https://anatawa12.com/"
+          },
+          "url": "https://vpm.anatawa12.com/avatar-optimizer/package-0.1.0.zip?",
+          "repo": "https://vpm.anatawa12.com/vpm.json",
+          "vpmDependencies": {
+            "com.vrchat.avatars": ">=3.1.10 <4.0.0"
+          }
+        },
+        "0.1.2": {
+          "name": "com.anatawa12.avatar-optimizer",
+          "version": "0.1.2",
+          "unity": "2019.4",
+          "description": "Set of Anatawa12's Small Avatar Optimization Utilities",
+          "displayName": "Anatawa12's AvatarOpitmizer",
+          "author": {
+            "name": "anatawa12",
+            "url": "https://anatawa12.com/"
+          },
+          "url": "https://vpm.anatawa12.com/avatar-optimizer/package-0.1.2.zip?",
+          "repo": "https://vpm.anatawa12.com/vpm.json",
+          "vpmDependencies": {
+            "com.vrchat.avatars": ">=3.1.10 <4.0.0"
+          }
+        },
+        "0.1.3": {
+          "name": "com.anatawa12.avatar-optimizer",
+          "version": "0.1.3",
+          "unity": "2019.4",
+          "description": "Set of Anatawa12's Small Avatar Optimization Utilities",
+          "displayName": "Anatawa12's AvatarOpitmizer",
+          "author": {
+            "name": "anatawa12",
+            "url": "https://anatawa12.com/"
+          },
+          "url": "https://vpm.anatawa12.com/avatar-optimizer/package-0.1.3.zip?",
+          "repo": "https://vpm.anatawa12.com/vpm.json",
+          "vpmDependencies": {
+            "com.vrchat.avatars": ">=3.1.10 <4.0.0"
+          }
+        },
+        "0.1.4": {
+          "name": "com.anatawa12.avatar-optimizer",
+          "version": "0.1.4",
+          "unity": "2019.4",
+          "description": "Set of Anatawa12's Small Avatar Optimization Utilities",
+          "displayName": "Anatawa12's AvatarOpitmizer",
+          "author": {
+            "name": "anatawa12",
+            "url": "https://anatawa12.com/"
+          },
+          "url": "https://vpm.anatawa12.com/avatar-optimizer/package-0.1.4.zip?",
+          "repo": "https://vpm.anatawa12.com/vpm.json",
+          "vpmDependencies": {
+            "com.vrchat.avatars": ">=3.1.10 <4.0.0"
+          }
+        },
+        "0.2.0-beta.1": {
+          "name": "com.anatawa12.avatar-optimizer",
+          "version": "0.2.0-beta.1",
+          "unity": "2019.4",
+          "description": "Set of Anatawa12's Small Avatar Optimization Utilities",
+          "displayName": "Anatawa12's AvatarOpitmizer",
+          "author": {
+            "name": "anatawa12",
+            "url": "https://anatawa12.com/"
+          },
+          "url": "https://vpm.anatawa12.com/avatar-optimizer/package-0.2.0-beta.1.zip?",
+          "repo": "https://vpm.anatawa12.com/vpm.json",
+          "vpmDependencies": {
+            "com.vrchat.avatars": ">=3.1.10 <4.0.0"
+          }
+        },
+        "0.2.0-beta.2": {
+          "name": "com.anatawa12.avatar-optimizer",
+          "version": "0.2.0-beta.2",
+          "unity": "2019.4",
+          "description": "Set of Anatawa12's Small Avatar Optimization Utilities",
+          "displayName": "Anatawa12's AvatarOpitmizer",
+          "author": {
+            "name": "anatawa12",
+            "url": "https://anatawa12.com/"
+          },
+          "url": "https://vpm.anatawa12.com/avatar-optimizer/package-0.2.0-beta.2.zip?",
+          "repo": "https://vpm.anatawa12.com/vpm.json",
+          "vpmDependencies": {
+            "com.vrchat.avatars": ">=3.1.10 <4.0.0"
+          }
+        },
+        "0.2.0-rc.1": {
+          "name": "com.anatawa12.avatar-optimizer",
+          "version": "0.2.0-rc.1",
+          "unity": "2019.4",
+          "description": "Set of Anatawa12's Small Avatar Optimization Utilities",
+          "displayName": "Anatawa12's AvatarOpitmizer",
+          "author": {
+            "name": "anatawa12",
+            "url": "https://anatawa12.com/"
+          },
+          "url": "https://vpm.anatawa12.com/avatar-optimizer/package-0.2.0-rc.1.zip?",
+          "repo": "https://vpm.anatawa12.com/vpm.json",
+          "vpmDependencies": {
+            "com.vrchat.avatars": ">=3.1.10 <4.0.0"
+          }
+        },
+        "0.2.0-rc.2": {
+          "name": "com.anatawa12.avatar-optimizer",
+          "version": "0.2.0-rc.2",
+          "unity": "2019.4",
+          "description": "Set of Anatawa12's Small Avatar Optimization Utilities",
+          "displayName": "Anatawa12's AvatarOpitmizer",
+          "author": {
+            "name": "anatawa12",
+            "url": "https://anatawa12.com/"
+          },
+          "url": "https://vpm.anatawa12.com/avatar-optimizer/package-0.2.0-rc.2.zip?",
+          "repo": "https://vpm.anatawa12.com/vpm.json",
+          "vpmDependencies": {
+            "com.vrchat.avatars": ">=3.1.10 <4.0.0"
+          }
+        },
+        "0.2.0": {
+          "name": "com.anatawa12.avatar-optimizer",
+          "version": "0.2.0",
+          "unity": "2019.4",
+          "description": "Set of Anatawa12's Small Avatar Optimization Utilities",
+          "displayName": "Anatawa12's AvatarOpitmizer",
+          "author": {
+            "name": "anatawa12",
+            "url": "https://anatawa12.com/"
+          },
+          "url": "https://vpm.anatawa12.com/avatar-optimizer/package-0.2.0.zip?",
+          "repo": "https://vpm.anatawa12.com/vpm.json",
+          "vpmDependencies": {
+            "com.vrchat.avatars": ">=3.1.10 <4.0.0"
+          }
+        },
+        "0.2.1-beta.1": {
+          "name": "com.anatawa12.avatar-optimizer",
+          "version": "0.2.1-beta.1",
+          "unity": "2019.4",
+          "description": "Set of Anatawa12's Small Avatar Optimization Utilities",
+          "displayName": "Anatawa12's AvatarOpitmizer",
+          "author": {
+            "name": "anatawa12",
+            "url": "https://anatawa12.com/"
+          },
+          "url": "https://vpm.anatawa12.com/avatar-optimizer/package-0.2.1-beta.1.zip?",
+          "repo": "https://vpm.anatawa12.com/vpm.json",
+          "vpmDependencies": {
+            "com.vrchat.avatars": ">=3.1.10 <4.0.0"
+          }
         },
         "0.2.1": {
-          "name": "com.anatawa12.custom-localization-for-editor-extension",
+          "name": "com.anatawa12.avatar-optimizer",
           "version": "0.2.1",
-          "displayName": "CustomLocalization4EditorExtension",
+          "unity": "2019.4",
+          "description": "Set of Anatawa12's Small Avatar Optimization Utilities",
+          "displayName": "Anatawa12's AvatarOpitmizer",
           "author": {
             "name": "anatawa12",
             "url": "https://anatawa12.com/"
           },
-          "description": "The experimental library for Unity extensions which want to have custom locale for translation instead of unity's locale.",
-          "type": "library",
-          "license": "MIT",
-          "url": "https://vpm.anatawa12.com/custom-localization-for-editor-extension/package-0.2.1.zip?",
+          "url": "https://vpm.anatawa12.com/avatar-optimizer/package-0.2.1.zip?",
           "repo": "https://vpm.anatawa12.com/vpm.json",
-          "samples": [
-            {
-              "displayName": "General",
-              "description": "Contains simple ui with localizable",
-              "path": "Samples~/General"
-            }
-          ]
+          "vpmDependencies": {
+            "com.vrchat.avatars": ">=3.1.10 <4.0.0"
+          }
         },
         "0.2.2": {
-          "name": "com.anatawa12.custom-localization-for-editor-extension",
+          "name": "com.anatawa12.avatar-optimizer",
           "version": "0.2.2",
-          "displayName": "CustomLocalization4EditorExtension",
+          "unity": "2019.4",
+          "description": "Set of Anatawa12's Small Avatar Optimization Utilities",
+          "displayName": "Anatawa12's AvatarOpitmizer",
           "author": {
             "name": "anatawa12",
             "url": "https://anatawa12.com/"
           },
-          "description": "The experimental library for Unity extensions which want to have custom locale for translation instead of unity's locale.",
-          "type": "library",
-          "license": "MIT",
-          "url": "https://vpm.anatawa12.com/custom-localization-for-editor-extension/package-0.2.2.zip?",
+          "url": "https://vpm.anatawa12.com/avatar-optimizer/package-0.2.2.zip?",
           "repo": "https://vpm.anatawa12.com/vpm.json",
-          "samples": [
-            {
-              "displayName": "Legacy API Usage",
-              "description": "Contains simple ui with localizable with Legacy API",
-              "path": "Samples~/Legacy"
-            },
-            {
-              "displayName": "Editor Only sample",
-              "description": "Contains simple EditorWindow with EditorGUILayout",
-              "path": "Samples~/EditorOnly"
-            },
-            {
-              "displayName": "Runtime Only sample",
-              "description": "Contains simple MonoBehavior with CL4EE localization attributes.",
-              "path": "Samples~/EditorOnly"
-            }
-          ]
+          "vpmDependencies": {
+            "com.vrchat.avatars": ">=3.1.10 <4.0.0"
+          }
+        },
+        "0.2.3": {
+          "name": "com.anatawa12.avatar-optimizer",
+          "version": "0.2.3",
+          "unity": "2019.4",
+          "description": "Set of Anatawa12's Small Avatar Optimization Utilities",
+          "displayName": "Anatawa12's AvatarOpitmizer",
+          "author": {
+            "name": "anatawa12",
+            "url": "https://anatawa12.com/"
+          },
+          "url": "https://vpm.anatawa12.com/avatar-optimizer/package-0.2.3.zip?",
+          "repo": "https://vpm.anatawa12.com/vpm.json",
+          "vpmDependencies": {
+            "com.vrchat.avatars": ">=3.1.10 <4.0.0"
+          }
+        },
+        "0.2.4": {
+          "name": "com.anatawa12.avatar-optimizer",
+          "version": "0.2.4",
+          "unity": "2019.4",
+          "description": "Set of Anatawa12's Small Avatar Optimization Utilities",
+          "displayName": "Anatawa12's AvatarOpitmizer",
+          "author": {
+            "name": "anatawa12",
+            "url": "https://anatawa12.com/"
+          },
+          "url": "https://vpm.anatawa12.com/avatar-optimizer/package-0.2.4.zip?",
+          "repo": "https://vpm.anatawa12.com/vpm.json",
+          "vpmDependencies": {
+            "com.vrchat.avatars": ">=3.1.10 <4.0.0"
+          }
+        },
+        "0.2.5-rc.1": {
+          "name": "com.anatawa12.avatar-optimizer",
+          "version": "0.2.5-rc.1",
+          "unity": "2019.4",
+          "description": "Set of Anatawa12's Small Avatar Optimization Utilities",
+          "displayName": "Anatawa12's AvatarOpitmizer",
+          "author": {
+            "name": "anatawa12",
+            "url": "https://anatawa12.com/"
+          },
+          "url": "https://vpm.anatawa12.com/avatar-optimizer/package-0.2.5-rc.1.zip?",
+          "repo": "https://vpm.anatawa12.com/vpm.json",
+          "vpmDependencies": {
+            "com.vrchat.avatars": ">=3.1.10 <4.0.0"
+          }
+        },
+        "0.2.5": {
+          "name": "com.anatawa12.avatar-optimizer",
+          "version": "0.2.5",
+          "unity": "2019.4",
+          "description": "Set of Anatawa12's Small Avatar Optimization Utilities",
+          "displayName": "Anatawa12's AvatarOpitmizer",
+          "author": {
+            "name": "anatawa12",
+            "url": "https://anatawa12.com/"
+          },
+          "url": "https://vpm.anatawa12.com/avatar-optimizer/package-0.2.5.zip?",
+          "repo": "https://vpm.anatawa12.com/vpm.json",
+          "vpmDependencies": {
+            "com.vrchat.avatars": ">=3.1.10 <4.0.0"
+          }
+        },
+        "0.2.6-rc.1": {
+          "name": "com.anatawa12.avatar-optimizer",
+          "version": "0.2.6-rc.1",
+          "unity": "2019.4",
+          "description": "Set of Anatawa12's Small Avatar Optimization Utilities",
+          "displayName": "Anatawa12's AvatarOpitmizer",
+          "author": {
+            "name": "anatawa12",
+            "url": "https://anatawa12.com/"
+          },
+          "url": "https://vpm.anatawa12.com/avatar-optimizer/package-0.2.6-rc.1.zip?",
+          "repo": "https://vpm.anatawa12.com/vpm.json",
+          "vpmDependencies": {
+            "com.anatawa12.custom-localization-for-editor-extension": "^0.2.2",
+            "com.vrchat.avatars": ">=3.1.10 <4.0.0"
+          }
+        }
+      }
+    },
+    "com.anatawa12.gists": {
+      "versions": {
+        "0.1.1": {
+          "name": "com.anatawa12.gists",
+          "displayName": "anatawa12's gists pack",
+          "description": "set of anatawa12's gist you can enable/disable any of gist at `Tools/anatawa12's gist selector`",
+          "version": "0.1.1",
+          "url": "https://vpm.anatawa12.com/gists/package-0.1.1.zip?"
+        },
+        "0.1.2": {
+          "name": "com.anatawa12.gists",
+          "displayName": "anatawa12's gists pack",
+          "description": "set of anatawa12's gist you can enable/disable any of gist at `Tools/anatawa12's gist selector`",
+          "version": "0.1.2",
+          "url": "https://vpm.anatawa12.com/gists/package-0.1.2.zip?"
+        },
+        "0.1.3": {
+          "name": "com.anatawa12.gists",
+          "displayName": "anatawa12's gists pack",
+          "description": "set of anatawa12's gist you can enable/disable any of gist at `Tools/anatawa12's gist selector`",
+          "version": "0.1.3",
+          "url": "https://vpm.anatawa12.com/gists/package-0.1.3.zip?"
         }
       }
     },
@@ -406,312 +664,79 @@
         }
       }
     },
-    "com.anatawa12.avatar-optimizer": {
+    "com.anatawa12.custom-localization-for-editor-extension": {
       "versions": {
-        "0.0.1": {
-          "name": "com.anatawa12.avatar-optimizer",
-          "version": "0.0.1",
-          "unity": "2019.4",
-          "description": "Set of Anatawa12's Small Avatar Optimization Utilities",
-          "displayName": "Anatawa12's AvatarOpitmizer",
-          "author": {
-            "name": "anatawa12",
-            "url": "https://anatawa12.com/"
-          },
-          "url": "https://vpm.anatawa12.com/avatar-optimizer/package-0.0.1.zip?",
-          "repo": "https://vpm.anatawa12.com/vpm.json",
-          "vpmDependencies": {
-            "com.vrchat.avatars": ">=3.1.10 <4.0.0"
-          }
-        },
-        "0.0.2": {
-          "name": "com.anatawa12.avatar-optimizer",
-          "version": "0.0.2",
-          "unity": "2019.4",
-          "description": "Set of Anatawa12's Small Avatar Optimization Utilities",
-          "displayName": "Anatawa12's AvatarOpitmizer",
-          "author": {
-            "name": "anatawa12",
-            "url": "https://anatawa12.com/"
-          },
-          "url": "https://vpm.anatawa12.com/avatar-optimizer/package-0.0.2.zip?",
-          "repo": "https://vpm.anatawa12.com/vpm.json",
-          "vpmDependencies": {
-            "com.vrchat.avatars": ">=3.1.10 <4.0.0"
-          }
-        },
-        "0.1.0": {
-          "name": "com.anatawa12.avatar-optimizer",
-          "version": "0.1.0",
-          "unity": "2019.4",
-          "description": "Set of Anatawa12's Small Avatar Optimization Utilities",
-          "displayName": "Anatawa12's AvatarOpitmizer",
-          "author": {
-            "name": "anatawa12",
-            "url": "https://anatawa12.com/"
-          },
-          "url": "https://vpm.anatawa12.com/avatar-optimizer/package-0.1.0.zip?",
-          "repo": "https://vpm.anatawa12.com/vpm.json",
-          "vpmDependencies": {
-            "com.vrchat.avatars": ">=3.1.10 <4.0.0"
-          }
-        },
-        "0.1.2": {
-          "name": "com.anatawa12.avatar-optimizer",
-          "version": "0.1.2",
-          "unity": "2019.4",
-          "description": "Set of Anatawa12's Small Avatar Optimization Utilities",
-          "displayName": "Anatawa12's AvatarOpitmizer",
-          "author": {
-            "name": "anatawa12",
-            "url": "https://anatawa12.com/"
-          },
-          "url": "https://vpm.anatawa12.com/avatar-optimizer/package-0.1.2.zip?",
-          "repo": "https://vpm.anatawa12.com/vpm.json",
-          "vpmDependencies": {
-            "com.vrchat.avatars": ">=3.1.10 <4.0.0"
-          }
-        },
-        "0.1.3": {
-          "name": "com.anatawa12.avatar-optimizer",
-          "version": "0.1.3",
-          "unity": "2019.4",
-          "description": "Set of Anatawa12's Small Avatar Optimization Utilities",
-          "displayName": "Anatawa12's AvatarOpitmizer",
-          "author": {
-            "name": "anatawa12",
-            "url": "https://anatawa12.com/"
-          },
-          "url": "https://vpm.anatawa12.com/avatar-optimizer/package-0.1.3.zip?",
-          "repo": "https://vpm.anatawa12.com/vpm.json",
-          "vpmDependencies": {
-            "com.vrchat.avatars": ">=3.1.10 <4.0.0"
-          }
-        },
-        "0.1.4": {
-          "name": "com.anatawa12.avatar-optimizer",
-          "version": "0.1.4",
-          "unity": "2019.4",
-          "description": "Set of Anatawa12's Small Avatar Optimization Utilities",
-          "displayName": "Anatawa12's AvatarOpitmizer",
-          "author": {
-            "name": "anatawa12",
-            "url": "https://anatawa12.com/"
-          },
-          "url": "https://vpm.anatawa12.com/avatar-optimizer/package-0.1.4.zip?",
-          "repo": "https://vpm.anatawa12.com/vpm.json",
-          "vpmDependencies": {
-            "com.vrchat.avatars": ">=3.1.10 <4.0.0"
-          }
-        },
-        "0.2.0-beta.1": {
-          "name": "com.anatawa12.avatar-optimizer",
-          "version": "0.2.0-beta.1",
-          "unity": "2019.4",
-          "description": "Set of Anatawa12's Small Avatar Optimization Utilities",
-          "displayName": "Anatawa12's AvatarOpitmizer",
-          "author": {
-            "name": "anatawa12",
-            "url": "https://anatawa12.com/"
-          },
-          "url": "https://vpm.anatawa12.com/avatar-optimizer/package-0.2.0-beta.1.zip?",
-          "repo": "https://vpm.anatawa12.com/vpm.json",
-          "vpmDependencies": {
-            "com.vrchat.avatars": ">=3.1.10 <4.0.0"
-          }
-        },
-        "0.2.0-beta.2": {
-          "name": "com.anatawa12.avatar-optimizer",
-          "version": "0.2.0-beta.2",
-          "unity": "2019.4",
-          "description": "Set of Anatawa12's Small Avatar Optimization Utilities",
-          "displayName": "Anatawa12's AvatarOpitmizer",
-          "author": {
-            "name": "anatawa12",
-            "url": "https://anatawa12.com/"
-          },
-          "url": "https://vpm.anatawa12.com/avatar-optimizer/package-0.2.0-beta.2.zip?",
-          "repo": "https://vpm.anatawa12.com/vpm.json",
-          "vpmDependencies": {
-            "com.vrchat.avatars": ">=3.1.10 <4.0.0"
-          }
-        },
-        "0.2.0-rc.1": {
-          "name": "com.anatawa12.avatar-optimizer",
-          "version": "0.2.0-rc.1",
-          "unity": "2019.4",
-          "description": "Set of Anatawa12's Small Avatar Optimization Utilities",
-          "displayName": "Anatawa12's AvatarOpitmizer",
-          "author": {
-            "name": "anatawa12",
-            "url": "https://anatawa12.com/"
-          },
-          "url": "https://vpm.anatawa12.com/avatar-optimizer/package-0.2.0-rc.1.zip?",
-          "repo": "https://vpm.anatawa12.com/vpm.json",
-          "vpmDependencies": {
-            "com.vrchat.avatars": ">=3.1.10 <4.0.0"
-          }
-        },
-        "0.2.0-rc.2": {
-          "name": "com.anatawa12.avatar-optimizer",
-          "version": "0.2.0-rc.2",
-          "unity": "2019.4",
-          "description": "Set of Anatawa12's Small Avatar Optimization Utilities",
-          "displayName": "Anatawa12's AvatarOpitmizer",
-          "author": {
-            "name": "anatawa12",
-            "url": "https://anatawa12.com/"
-          },
-          "url": "https://vpm.anatawa12.com/avatar-optimizer/package-0.2.0-rc.2.zip?",
-          "repo": "https://vpm.anatawa12.com/vpm.json",
-          "vpmDependencies": {
-            "com.vrchat.avatars": ">=3.1.10 <4.0.0"
-          }
-        },
         "0.2.0": {
-          "name": "com.anatawa12.avatar-optimizer",
+          "name": "com.anatawa12.custom-localization-for-editor-extension",
           "version": "0.2.0",
-          "unity": "2019.4",
-          "description": "Set of Anatawa12's Small Avatar Optimization Utilities",
-          "displayName": "Anatawa12's AvatarOpitmizer",
+          "displayName": "CustomLocalization4EditorExtension",
           "author": {
             "name": "anatawa12",
             "url": "https://anatawa12.com/"
           },
-          "url": "https://vpm.anatawa12.com/avatar-optimizer/package-0.2.0.zip?",
-          "repo": "https://vpm.anatawa12.com/vpm.json",
-          "vpmDependencies": {
-            "com.vrchat.avatars": ">=3.1.10 <4.0.0"
-          }
-        },
-        "0.2.1-beta.1": {
-          "name": "com.anatawa12.avatar-optimizer",
-          "version": "0.2.1-beta.1",
-          "unity": "2019.4",
-          "description": "Set of Anatawa12's Small Avatar Optimization Utilities",
-          "displayName": "Anatawa12's AvatarOpitmizer",
-          "author": {
-            "name": "anatawa12",
-            "url": "https://anatawa12.com/"
-          },
-          "url": "https://vpm.anatawa12.com/avatar-optimizer/package-0.2.1-beta.1.zip?",
-          "repo": "https://vpm.anatawa12.com/vpm.json",
-          "vpmDependencies": {
-            "com.vrchat.avatars": ">=3.1.10 <4.0.0"
-          }
+          "description": "The experimental library for Unity extensions which want to have custom locale for translation instead of unity's locale.",
+          "type": "library",
+          "license": "MIT",
+          "samples": [
+            {
+              "displayName": "General",
+              "description": "Contains simple ui with localizable",
+              "path": "Samples~/General"
+            }
+          ],
+          "url": "https://vpm.anatawa12.com/custom-localization-for-editor-extension/package-0.2.0.zip?"
         },
         "0.2.1": {
-          "name": "com.anatawa12.avatar-optimizer",
+          "name": "com.anatawa12.custom-localization-for-editor-extension",
           "version": "0.2.1",
-          "unity": "2019.4",
-          "description": "Set of Anatawa12's Small Avatar Optimization Utilities",
-          "displayName": "Anatawa12's AvatarOpitmizer",
+          "displayName": "CustomLocalization4EditorExtension",
           "author": {
             "name": "anatawa12",
             "url": "https://anatawa12.com/"
           },
-          "url": "https://vpm.anatawa12.com/avatar-optimizer/package-0.2.1.zip?",
+          "description": "The experimental library for Unity extensions which want to have custom locale for translation instead of unity's locale.",
+          "type": "library",
+          "license": "MIT",
+          "url": "https://vpm.anatawa12.com/custom-localization-for-editor-extension/package-0.2.1.zip?",
           "repo": "https://vpm.anatawa12.com/vpm.json",
-          "vpmDependencies": {
-            "com.vrchat.avatars": ">=3.1.10 <4.0.0"
-          }
+          "samples": [
+            {
+              "displayName": "General",
+              "description": "Contains simple ui with localizable",
+              "path": "Samples~/General"
+            }
+          ]
         },
         "0.2.2": {
-          "name": "com.anatawa12.avatar-optimizer",
+          "name": "com.anatawa12.custom-localization-for-editor-extension",
           "version": "0.2.2",
-          "unity": "2019.4",
-          "description": "Set of Anatawa12's Small Avatar Optimization Utilities",
-          "displayName": "Anatawa12's AvatarOpitmizer",
+          "displayName": "CustomLocalization4EditorExtension",
           "author": {
             "name": "anatawa12",
             "url": "https://anatawa12.com/"
           },
-          "url": "https://vpm.anatawa12.com/avatar-optimizer/package-0.2.2.zip?",
+          "description": "The experimental library for Unity extensions which want to have custom locale for translation instead of unity's locale.",
+          "type": "library",
+          "license": "MIT",
+          "url": "https://vpm.anatawa12.com/custom-localization-for-editor-extension/package-0.2.2.zip?",
           "repo": "https://vpm.anatawa12.com/vpm.json",
-          "vpmDependencies": {
-            "com.vrchat.avatars": ">=3.1.10 <4.0.0"
-          }
-        },
-        "0.2.3": {
-          "name": "com.anatawa12.avatar-optimizer",
-          "version": "0.2.3",
-          "unity": "2019.4",
-          "description": "Set of Anatawa12's Small Avatar Optimization Utilities",
-          "displayName": "Anatawa12's AvatarOpitmizer",
-          "author": {
-            "name": "anatawa12",
-            "url": "https://anatawa12.com/"
-          },
-          "url": "https://vpm.anatawa12.com/avatar-optimizer/package-0.2.3.zip?",
-          "repo": "https://vpm.anatawa12.com/vpm.json",
-          "vpmDependencies": {
-            "com.vrchat.avatars": ">=3.1.10 <4.0.0"
-          }
-        },
-        "0.2.4": {
-          "name": "com.anatawa12.avatar-optimizer",
-          "version": "0.2.4",
-          "unity": "2019.4",
-          "description": "Set of Anatawa12's Small Avatar Optimization Utilities",
-          "displayName": "Anatawa12's AvatarOpitmizer",
-          "author": {
-            "name": "anatawa12",
-            "url": "https://anatawa12.com/"
-          },
-          "url": "https://vpm.anatawa12.com/avatar-optimizer/package-0.2.4.zip?",
-          "repo": "https://vpm.anatawa12.com/vpm.json",
-          "vpmDependencies": {
-            "com.vrchat.avatars": ">=3.1.10 <4.0.0"
-          }
-        },
-        "0.2.5-rc.1": {
-          "name": "com.anatawa12.avatar-optimizer",
-          "version": "0.2.5-rc.1",
-          "unity": "2019.4",
-          "description": "Set of Anatawa12's Small Avatar Optimization Utilities",
-          "displayName": "Anatawa12's AvatarOpitmizer",
-          "author": {
-            "name": "anatawa12",
-            "url": "https://anatawa12.com/"
-          },
-          "url": "https://vpm.anatawa12.com/avatar-optimizer/package-0.2.5-rc.1.zip?",
-          "repo": "https://vpm.anatawa12.com/vpm.json",
-          "vpmDependencies": {
-            "com.vrchat.avatars": ">=3.1.10 <4.0.0"
-          }
-        },
-        "0.2.5": {
-          "name": "com.anatawa12.avatar-optimizer",
-          "version": "0.2.5",
-          "unity": "2019.4",
-          "description": "Set of Anatawa12's Small Avatar Optimization Utilities",
-          "displayName": "Anatawa12's AvatarOpitmizer",
-          "author": {
-            "name": "anatawa12",
-            "url": "https://anatawa12.com/"
-          },
-          "url": "https://vpm.anatawa12.com/avatar-optimizer/package-0.2.5.zip?",
-          "repo": "https://vpm.anatawa12.com/vpm.json",
-          "vpmDependencies": {
-            "com.vrchat.avatars": ">=3.1.10 <4.0.0"
-          }
-        },
-        "0.2.6-rc.1": {
-          "name": "com.anatawa12.avatar-optimizer",
-          "version": "0.2.6-rc.1",
-          "unity": "2019.4",
-          "description": "Set of Anatawa12's Small Avatar Optimization Utilities",
-          "displayName": "Anatawa12's AvatarOpitmizer",
-          "author": {
-            "name": "anatawa12",
-            "url": "https://anatawa12.com/"
-          },
-          "url": "https://vpm.anatawa12.com/avatar-optimizer/package-0.2.6-rc.1.zip?",
-          "repo": "https://vpm.anatawa12.com/vpm.json",
-          "vpmDependencies": {
-            "com.anatawa12.custom-localization-for-editor-extension": "^0.2.2",
-            "com.vrchat.avatars": ">=3.1.10 <4.0.0"
-          }
+          "samples": [
+            {
+              "displayName": "Legacy API Usage",
+              "description": "Contains simple ui with localizable with Legacy API",
+              "path": "Samples~/Legacy"
+            },
+            {
+              "displayName": "Editor Only sample",
+              "description": "Contains simple EditorWindow with EditorGUILayout",
+              "path": "Samples~/EditorOnly"
+            },
+            {
+              "displayName": "Runtime Only sample",
+              "description": "Contains simple MonoBehavior with CL4EE localization attributes.",
+              "path": "Samples~/EditorOnly"
+            }
+          ]
         }
       }
     },
@@ -770,31 +795,6 @@
             "Assets/Lyuma/Av3Emulator": "e42c5d0b3e2b3f64e8a88c225b3cef62"
           },
           "url": "https://vpm.anatawa12.com/av3emulator/package-3.0.2.zip?"
-        }
-      }
-    },
-    "com.anatawa12.gists": {
-      "versions": {
-        "0.1.1": {
-          "name": "com.anatawa12.gists",
-          "displayName": "anatawa12's gists pack",
-          "description": "set of anatawa12's gist you can enable/disable any of gist at `Tools/anatawa12's gist selector`",
-          "version": "0.1.1",
-          "url": "https://vpm.anatawa12.com/gists/package-0.1.1.zip?"
-        },
-        "0.1.2": {
-          "name": "com.anatawa12.gists",
-          "displayName": "anatawa12's gists pack",
-          "description": "set of anatawa12's gist you can enable/disable any of gist at `Tools/anatawa12's gist selector`",
-          "version": "0.1.2",
-          "url": "https://vpm.anatawa12.com/gists/package-0.1.2.zip?"
-        },
-        "0.1.3": {
-          "name": "com.anatawa12.gists",
-          "displayName": "anatawa12's gists pack",
-          "description": "set of anatawa12's gist you can enable/disable any of gist at `Tools/anatawa12's gist selector`",
-          "version": "0.1.3",
-          "url": "https://vpm.anatawa12.com/gists/package-0.1.3.zip?"
         }
       }
     }
