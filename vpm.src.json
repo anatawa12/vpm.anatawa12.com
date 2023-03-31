@@ -808,6 +808,9 @@
         }
       }
     },
+    "com.anatawa12.harmonyfix": {
+      "versions": {}
+    },
     "com.anatawa12.av3emulator": {
       "versions": {
         "3.0.0": {
