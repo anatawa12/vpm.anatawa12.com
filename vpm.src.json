@@ -809,7 +809,15 @@
       }
     },
     "com.anatawa12.harmonyfix": {
-      "versions": {}
+      "versions": {
+        "1.0.0": {
+          "name": "com.anatawa12.harmonyfix",
+          "version": "1.0.0",
+          "displayName": "Harmony bug Fix",
+          "description": "Harmony's bug fix",
+          "url": "https://vpm.anatawa12.com/harmonyfix/package-1.0.0.zip?"
+        }
+      }
     },
     "com.anatawa12.av3emulator": {
       "versions": {
