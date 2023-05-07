@@ -6,4 +6,4 @@ if test -f vpm.src.json; then
 fi
 
 mkdir dist
-cp * dist
+cp README.md _redirects add-repo.html vpm.src.json vpm.json dist
