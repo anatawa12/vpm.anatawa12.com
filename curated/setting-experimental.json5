@@ -1,0 +1,21 @@
+{
+  "sources": [
+    {
+      url: "https://vpm.anatawa12.com/vpm.json",
+      author: {
+        name: "anatawa12",
+        github: "anatawa12",
+        contact: "https://twitter.com/anatawa12_vrc"
+      },
+      packages: [
+        "com.anatawa12.avatar-optimizer",
+      ],
+    },
+  ],
+  author: "anatawa12",
+  name: "anatawa12's curated repo (experimental)",
+  id: "com.anatawa12.curated.experimental",
+  url: "https://vpm.anatawa12.com/curated-experimental.json",
+  repo_output: "../src/curated-experimental.src.json",
+  formatted: true,
+}
