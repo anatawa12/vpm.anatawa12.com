@@ -28,6 +28,54 @@
         "nadena.dev.modular-avatar",
       ],
     },
+    {
+      url: "https://vpm.ureishi.net/repos.json",
+      author: {
+        name: "ureishi",
+        github: "ureishi",
+        contact: "https://twitter.com/aivrc",
+      },
+      registerer: {
+        name: "anatawa12",
+        github: "anatawa12",
+        contact: "https://twitter.com/anatawa12_vrc",
+      },
+      packages: [
+        "net.ureishi.qvpen",
+      ],
+    },
+    {
+      url: "https://thryrallo.github.io/VRC-Avatar-Performance-Tools/index.json",
+      author: {
+        name: "Thryrallo",
+        github: "Thryrallo",
+        contact: "https://github.com/Thryrallo",
+      },
+      registerer: {
+        name: "anatawa12",
+        github: "anatawa12",
+        contact: "https://twitter.com/anatawa12_vrc",
+      },
+      packages: [
+        "de.thryrallo.vrc.avatar-performance-tools",
+      ],
+    },
+    {
+      url: "https://vcc.vrcfury.com/",
+      author: {
+        name: "VRCFury",
+        github: "VRCFury",
+        contact: "https://github.com/VRCFury",
+      },
+      registerer: {
+        name: "anatawa12",
+        github: "anatawa12",
+        contact: "https://twitter.com/anatawa12_vrc",
+      },
+      packages: [
+        "com.vrcfury.vrcfury",
+      ],
+    },
   ],
   author: "anatawa12",
   name: "anatawa12's curated repo (experimental)",
