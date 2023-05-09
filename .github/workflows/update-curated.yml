@@ -13,6 +13,9 @@ jobs:
         with:
           ref: curated
       - uses: snow-actions/git-config-user@v1.0.0
+      - uses: denoland/setup-deno@v1
+        with:
+          deno-version: v1.x
 
       - name: update curated repo
         run: cd curated && ./update.sh
