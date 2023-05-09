@@ -76,6 +76,22 @@
         "com.vrcfury.vrcfury",
       ],
     },
+    {
+      url: "https://lilxyzw.github.io/vpm-repos/vpm.json",
+      author: {
+        name: "lilxyzw",
+        github: "lilxyzw",
+        contact: "https://twitter.com/lil_xyzw",
+      },
+      registerer: {
+        name: "anatawa12",
+        github: "anatawa12",
+        contact: "https://twitter.com/anatawa12_vrc",
+      },
+      packages: [
+        "jp.lilxyzw.liltoon",
+      ],
+    }
   ],
   author: "anatawa12",
   name: "anatawa12's curated repo (experimental)",
