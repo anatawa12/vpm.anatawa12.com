@@ -675,6 +675,80 @@
           }
         }
       }
+    },
+    "net.ureishi.qvpen": {
+      "versions": {
+        "3.2.6": {
+          "version": "3.2.6",
+          "name": "net.ureishi.qvpen",
+          "dependencies": {
+            "com.unity.textmeshpro": "2.1.4"
+          },
+          "description": "VRChat World Pen.",
+          "displayName": "QvPen",
+          "legacyFolders": {
+            "Assets\\QvPen": "0eeec8527d6948040915b97bddf0ba10"
+          },
+          "unity": "2019.4",
+          "url": "https://github.com/ureishi/QvPen/releases/download/v3.2.6/net.ureishi.qvpen-3.2.6.zip?",
+          "vpmDependencies": {
+            "com.vrchat.udonsharp": "1.1.7"
+          }
+        }
+      }
+    },
+    "de.thryrallo.vrc.avatar-performance-tools": {
+      "versions": {
+        "1.3.2": {
+          "name": "de.thryrallo.vrc.avatar-performance-tools",
+          "displayName": "Thry's Avatar Performance Tools",
+          "version": "1.3.2",
+          "description": "Calculated and evaluates some avatar metric not currently taking into account by vrchats ranking system.\r\n\nMost prominently gives a breakdown over VRAM usage of different parts of the avatar.",
+          "gitDependencies": {},
+          "vpmDependencies": {},
+          "hideInEditor": false,
+          "url": "https://github.com/Thryrallo/VRC-Avatar-Performance-Tools/releases/download/1.3.2/de.thryrallo.vrc.avatar-performance-tools-1.3.2.zip",
+          "legacyFolders": {},
+          "legacyFiles": {}
+        },
+        "1.3.1": {
+          "name": "de.thryrallo.vrc.avatar-performance-tools",
+          "displayName": "Thry's Avatar Performance Tools",
+          "version": "1.3.1",
+          "description": "Calculated and evaluates some avatar metric not currently taking into account by vrchats ranking system.\r\n\nMost prominently gives a breakdown over VRAM usage of different parts of the avatar.",
+          "gitDependencies": {},
+          "vpmDependencies": {},
+          "hideInEditor": false,
+          "url": "https://github.com/Thryrallo/VRC-Avatar-Performance-Tools/releases/download/1.3.1/de.thryrallo.vrc.avatar-performance-tools-1.3.1.zip",
+          "legacyFolders": {},
+          "legacyFiles": {}
+        },
+        "1.3.0": {
+          "name": "de.thryrallo.vrc.avatar-performance-tools",
+          "displayName": "Thry's Avatar Performance Tools",
+          "version": "1.3.0",
+          "description": "Calculated and evaluates some avatar metric not currently taking into account by vrchats ranking system.\r\n\nMost prominently gives a breakdown over VRAM usage of different parts of the avatar.",
+          "gitDependencies": {},
+          "vpmDependencies": {},
+          "hideInEditor": false,
+          "url": "https://github.com/Thryrallo/VRC-Avatar-Performance-Tools/releases/download/1.3.0/de.thryrallo.vrc.avatar-performance-tools-1.3.0.zip",
+          "legacyFolders": {},
+          "legacyFiles": {}
+        }
+      }
+    },
+    "com.vrcfury.vrcfury": {
+      "versions": {
+        "1.125.0": {
+          "name": "com.vrcfury.vrcfury",
+          "displayName": "VRCFury",
+          "version": "1.125.0",
+          "legacyFolders": {
+            "Assets\\VRCFury": "00b990f230095454f82c345d433841ae"
+          },
+          "url": "https://github.com/VRCFury/VRCFury/releases/download/com.vrcfury.vrcfury%2F1.125.0/com.vrcfury.vrcfury-1.125.0-vcc.zip"
+        }
+      }
     }
   },
   "author": "anatawa12",
