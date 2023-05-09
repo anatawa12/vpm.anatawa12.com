@@ -193,6 +193,198 @@
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.1.10 <4.0.0"
           }
+        },
+        "0.2.6": {
+          "name": "com.anatawa12.avatar-optimizer",
+          "version": "0.2.6",
+          "unity": "2019.4",
+          "description": "Set of Anatawa12's Small Avatar Optimization Utilities",
+          "displayName": "Anatawa12's AvatarOpitmizer",
+          "author": {
+            "name": "anatawa12",
+            "url": "https://anatawa12.com/"
+          },
+          "url": "https://vpm.anatawa12.com/avatar-optimizer/package-0.2.6.zip?",
+          "repo": "https://vpm.anatawa12.com/vpm.json",
+          "vpmDependencies": {
+            "com.anatawa12.custom-localization-for-editor-extension": "^0.2.2",
+            "com.vrchat.avatars": ">=3.1.10 <4.0.0"
+          }
+        },
+        "0.2.7": {
+          "name": "com.anatawa12.avatar-optimizer",
+          "version": "0.2.7",
+          "unity": "2019.4",
+          "description": "Set of Anatawa12's Small Avatar Optimization Utilities",
+          "displayName": "Anatawa12's AvatarOpitmizer",
+          "author": {
+            "name": "anatawa12",
+            "url": "https://anatawa12.com/"
+          },
+          "url": "https://vpm.anatawa12.com/avatar-optimizer/package-0.2.7.zip?",
+          "repo": "https://vpm.anatawa12.com/vpm.json",
+          "vpmDependencies": {
+            "com.anatawa12.custom-localization-for-editor-extension": "^0.2.2",
+            "com.vrchat.avatars": ">=3.1.10 <4.0.0"
+          }
+        },
+        "0.2.8": {
+          "name": "com.anatawa12.avatar-optimizer",
+          "version": "0.2.8",
+          "unity": "2019.4",
+          "description": "Set of Anatawa12's Small Avatar Optimization Utilities",
+          "displayName": "Anatawa12's AvatarOpitmizer",
+          "author": {
+            "name": "anatawa12",
+            "url": "https://anatawa12.com/"
+          },
+          "url": "https://vpm.anatawa12.com/avatar-optimizer/package-0.2.8.zip?",
+          "repo": "https://vpm.anatawa12.com/vpm.json",
+          "vpmDependencies": {
+            "com.anatawa12.custom-localization-for-editor-extension": "^0.2.2",
+            "com.vrchat.avatars": ">=3.1.10 <4.0.0"
+          }
+        },
+        "0.3.0": {
+          "name": "com.anatawa12.avatar-optimizer",
+          "version": "0.3.0",
+          "unity": "2019.4",
+          "description": "Set of Anatawa12's Small Avatar Optimization Utilities",
+          "displayName": "Anatawa12's AvatarOpitmizer",
+          "author": {
+            "name": "anatawa12",
+            "url": "https://anatawa12.com/"
+          },
+          "url": "https://vpm.anatawa12.com/avatar-optimizer/package-0.3.0.zip?",
+          "repo": "https://vpm.anatawa12.com/vpm.json",
+          "vpmDependencies": {
+            "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
+            "com.vrchat.avatars": "~3.2.0-beta.1"
+          }
+        },
+        "0.3.1": {
+          "name": "com.anatawa12.avatar-optimizer",
+          "version": "0.3.1",
+          "unity": "2019.4",
+          "description": "Set of Anatawa12's Small Avatar Optimization Utilities",
+          "displayName": "Anatawa12's AvatarOpitmizer",
+          "author": {
+            "name": "anatawa12",
+            "url": "https://anatawa12.com/"
+          },
+          "url": "https://vpm.anatawa12.com/avatar-optimizer/package-0.3.1.zip?",
+          "repo": "https://vpm.anatawa12.com/vpm.json",
+          "vpmDependencies": {
+            "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
+            "com.vrchat.avatars": "~3.2.0-beta.1"
+          }
+        }
+      }
+    },
+    "com.anatawa12.custom-localization-for-editor-extension": {
+      "versions": {
+        "0.2.0": {
+          "name": "com.anatawa12.custom-localization-for-editor-extension",
+          "version": "0.2.0",
+          "displayName": "CustomLocalization4EditorExtension",
+          "author": {
+            "name": "anatawa12",
+            "url": "https://anatawa12.com/"
+          },
+          "description": "The experimental library for Unity extensions which want to have custom locale for translation instead of unity's locale.",
+          "type": "library",
+          "license": "MIT",
+          "samples": [
+            {
+              "displayName": "General",
+              "description": "Contains simple ui with localizable",
+              "path": "Samples~/General"
+            }
+          ],
+          "url": "https://vpm.anatawa12.com/custom-localization-for-editor-extension/package-0.2.0.zip?"
+        },
+        "0.2.1": {
+          "name": "com.anatawa12.custom-localization-for-editor-extension",
+          "version": "0.2.1",
+          "displayName": "CustomLocalization4EditorExtension",
+          "author": {
+            "name": "anatawa12",
+            "url": "https://anatawa12.com/"
+          },
+          "description": "The experimental library for Unity extensions which want to have custom locale for translation instead of unity's locale.",
+          "type": "library",
+          "license": "MIT",
+          "url": "https://vpm.anatawa12.com/custom-localization-for-editor-extension/package-0.2.1.zip?",
+          "repo": "https://vpm.anatawa12.com/vpm.json",
+          "samples": [
+            {
+              "displayName": "General",
+              "description": "Contains simple ui with localizable",
+              "path": "Samples~/General"
+            }
+          ]
+        },
+        "0.2.2": {
+          "name": "com.anatawa12.custom-localization-for-editor-extension",
+          "version": "0.2.2",
+          "displayName": "CustomLocalization4EditorExtension",
+          "author": {
+            "name": "anatawa12",
+            "url": "https://anatawa12.com/"
+          },
+          "description": "The experimental library for Unity extensions which want to have custom locale for translation instead of unity's locale.",
+          "type": "library",
+          "license": "MIT",
+          "url": "https://vpm.anatawa12.com/custom-localization-for-editor-extension/package-0.2.2.zip?",
+          "repo": "https://vpm.anatawa12.com/vpm.json",
+          "samples": [
+            {
+              "displayName": "Legacy API Usage",
+              "description": "Contains simple ui with localizable with Legacy API",
+              "path": "Samples~/Legacy"
+            },
+            {
+              "displayName": "Editor Only sample",
+              "description": "Contains simple EditorWindow with EditorGUILayout",
+              "path": "Samples~/EditorOnly"
+            },
+            {
+              "displayName": "Runtime Only sample",
+              "description": "Contains simple MonoBehavior with CL4EE localization attributes.",
+              "path": "Samples~/EditorOnly"
+            }
+          ]
+        },
+        "1.0.0": {
+          "name": "com.anatawa12.custom-localization-for-editor-extension",
+          "version": "1.0.0",
+          "displayName": "CustomLocalization4EditorExtension",
+          "author": {
+            "name": "anatawa12",
+            "url": "https://anatawa12.com/"
+          },
+          "description": "The experimental library for Unity extensions which want to have custom locale for translation instead of unity's locale.",
+          "type": "library",
+          "license": "MIT",
+          "url": "https://vpm.anatawa12.com/custom-localization-for-editor-extension/package-1.0.0.zip?",
+          "repo": "https://vpm.anatawa12.com/vpm.json",
+          "samples": [
+            {
+              "displayName": "Legacy API Usage",
+              "description": "Contains simple ui with localizable with Legacy API",
+              "path": "Samples~/Legacy"
+            },
+            {
+              "displayName": "Editor Only sample",
+              "description": "Contains simple EditorWindow with EditorGUILayout",
+              "path": "Samples~/EditorOnly"
+            },
+            {
+              "displayName": "Runtime Only sample",
+              "description": "Contains simple MonoBehavior with CL4EE localization attributes.",
+              "path": "Samples~/EditorOnly"
+            }
+          ]
         }
       }
     }
