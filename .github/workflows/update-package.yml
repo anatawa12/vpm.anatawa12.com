@@ -83,9 +83,9 @@ jobs:
             --arg DOWNLOAD_URL "$DOWNLOAD_URL" \
             --slurpfile package 'package.json' \
             '.packages[$package[0].name].versions[$package[0].version] = ($package[0] | .url = $DOWNLOAD_URL)' \
-            < vpm.src.json > vpm.tmp.json
-          rm vpm.src.json
-          mv vpm.tmp.json vpm.src.json
+            < src/vpm.src.json > vpm.tmp.json
+          rm src/vpm.src.json
+          mv vpm.tmp.json src/vpm.src.json
 
       - name: Clear package.json
         run: |
@@ -93,7 +93,7 @@ jobs:
 
       - name: Commit changes
         run: |
-          git add vpm.src.json
+          git add src/vpm.src.json
           git commit -m "add $SHORTID version $VERSION"
 
       - name: Push changes
