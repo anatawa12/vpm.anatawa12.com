@@ -3,8 +3,6 @@ set -eu
 
 mkdir dist
 
-pushd src
-  jq -c . < vpm.src.json > dist/vpm.json
-popd
+jq -c . < src/vpm.src.json > ../dist/vpm.json
 
 cp src/* dist
