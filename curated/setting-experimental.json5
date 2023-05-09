@@ -9,6 +9,7 @@
       },
       packages: [
         "com.anatawa12.avatar-optimizer",
+        "com.anatawa12.custom-localization-for-editor-extension",
       ],
     },
   ],
