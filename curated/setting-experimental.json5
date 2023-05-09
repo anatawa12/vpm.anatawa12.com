@@ -12,6 +12,22 @@
         "com.anatawa12.custom-localization-for-editor-extension",
       ],
     },
+    {
+      url: "https://vpm.nadena.dev/vpm.json",
+      author: {
+        name: "bd_",
+        github: "bdunderscore",
+        contact: "https://twitter.com/bd_j",
+      },
+      registerer: {
+        name: "anatawa12",
+        github: "anatawa12",
+        contact: "https://twitter.com/anatawa12_vrc",
+      },
+      packages: [
+        "nadena.dev.modular-avatar",
+      ],
+    },
   ],
   author: "anatawa12",
   name: "anatawa12's curated repo (experimental)",
