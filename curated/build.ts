@@ -187,7 +187,7 @@ async function processErrors(_settings: Settings) {
     const owner =  repository.split('/')[0];
     const repo =  repository.split('/')[1];
 
-    const exists = await octokit.rest.search.issuesAndPullRequests({q: `is:issue label:curated-failure repo:"${repository}"`});
+    const {data: exists} = await octokit.rest.search.issuesAndPullRequests({q: `is:issue label:curated-failure repo:"${repository}"`});
     if (exists.items.length) {
       // add comment
       await octokit.rest.issues.createComment({
