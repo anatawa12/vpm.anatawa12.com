@@ -12,21 +12,6 @@
         "com.anatawa12.custom-localization-for-editor-extension",
       ],
     },
-    {
-      url: "https://error-repository/vpm.json",
-      author: {
-        name: "placeholder",
-        contact: "https://placeholder/",
-      },
-      register: {
-        name: "anatawa12",
-        github: "anatawa12",
-        contact: "https://twitter.com/anatawa12_vrc",
-      },
-      packages: [
-        "placeholder-test",
-      ],
-    },
   ],
   author: "anatawa12",
   name: "anatawa12's curated repo (experimental)",
