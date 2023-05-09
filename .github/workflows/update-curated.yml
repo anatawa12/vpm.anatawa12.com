@@ -1,8 +1,7 @@
 on:
   workflow_dispatch: {}
-  # disable for now
-  #schedule:
-  #  - cron:  '0 * * * *'
+  schedule:
+    - cron:  '0 * * * *'
 
 jobs:
   update-curated:
