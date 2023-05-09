@@ -1,11 +1,10 @@
 #!/bin/sh
 set -eu
 
+mkdir dist
+
 pushd src
-if test -f vpm.src.json; then
-  jq -c . < vpm.src.json > vpm.json
-fi
+  jq -c . < vpm.src.json > dist/vpm.json
 popd
 
-mkdir dist
 cp src/* dist
