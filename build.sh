@@ -10,4 +10,4 @@ for src_json in src/*.src.json; do
   jq -c . < "src/$src_json.src.json" > "dist/$src_json.json"
 done
 
-cp src/* dist
+cp static/* dist
