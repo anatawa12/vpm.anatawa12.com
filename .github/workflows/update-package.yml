@@ -12,8 +12,12 @@ on:
         type: string
       website_zip:
         description: 'URL to zip file for website'
+        required: false
+        type: string
       website_path:
         description: 'the path to zip will be extracted to'
+        required: false
+        type: string
   workflow_call:
     inputs:
       repostitory:
@@ -30,8 +34,12 @@ on:
         type: string
       website_zip:
         description: 'URL to zip file for website'
+        required: false
+        type: string
       website_path:
         description: 'the path to zip will be extracted to'
+        required: false
+        type: string
     secrets:
       TOKEN:
         required: true
