@@ -143,7 +143,7 @@ jobs:
 
       - name: Commit changes
         run: |
-          if [ -z "$VERSION" ];
+          if [ -z "$VERSION" ]; then
             MESSAGE="update website for $SHORTID"
           else
             MESSAGE="add $SHORTID version $VERSION"
