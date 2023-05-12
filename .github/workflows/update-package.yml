@@ -128,7 +128,7 @@ jobs:
 
       - name: Download zip
         if: ${{ env.WEBSITE_ZIP }}
-        run: curl "$WEBSITE_ZIP" > website.zip
+        run: curl -sLf "$WEBSITE_ZIP" > website.zip
 
       - name: Extract zip
         if: ${{ env.WEBSITE_ZIP }}
