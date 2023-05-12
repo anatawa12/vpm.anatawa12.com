@@ -132,7 +132,8 @@ jobs:
 
       - name: Extract zip
         if: ${{ env.WEBSITE_ZIP }}
-        run: unzip website.zip -d "static/$SHORTID/$WEBSITE_PATH/"
+        run: mkdir -p "static/$SHORTID/$WEBSITE_PATH/"
+          && unzip website.zip -d "static/$SHORTID/$WEBSITE_PATH/"
           && git add "static/$SHORTID/$WEBSITE_PATH/"
 # endregion
 
