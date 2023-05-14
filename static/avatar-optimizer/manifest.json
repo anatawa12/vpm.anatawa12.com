@@ -1,0 +1,15 @@
+{
+  "name": "Avatar Optimizer (0.3.2-beta.2)",
+  "short_name": "Avatar Optimizer (0.3.2-beta.2)",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "512x512"
+    }
+  ]
+}
