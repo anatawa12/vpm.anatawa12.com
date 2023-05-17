@@ -736,6 +736,10 @@
         }
       }
     },
+    "com.anatawa12.continuous-avatar-uploader": {
+      "versions": {
+      }
+    },
     "com.anatawa12.vpm-package-auto-installer.creator": {
       "versions": {
         "0.2.0": {
