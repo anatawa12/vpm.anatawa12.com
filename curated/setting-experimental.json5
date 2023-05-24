@@ -2,11 +2,7 @@
   "sources": [
     {
       url: "https://vpm.anatawa12.com/vpm.json",
-      author: {
-        name: "anatawa12",
-        github: "anatawa12",
-        contact: "https://twitter.com/anatawa12_vrc"
-      },
+      author: "anatawa12 <https://twitter.com/anatawa12_vrc> @anatawa12",
       packages: [
         "com.anatawa12.avatar-optimizer",
         "com.anatawa12.custom-localization-for-editor-extension",
@@ -14,80 +10,41 @@
     },
     {
       url: "https://vpm.nadena.dev/vpm.json",
-      author: {
-        name: "bd_",
-        github: "bdunderscore",
-        contact: "https://twitter.com/bd_j",
-      },
-      registerer: {
-        name: "anatawa12",
-        github: "anatawa12",
-        contact: "https://twitter.com/anatawa12_vrc",
-      },
+      author: "bd_ <https://twitter.com/bd_j> @bdunderscore",
+      registerer: "anatawa12 <https://twitter.com/anatawa12_vrc> @anatawa12",
       packages: [
         "nadena.dev.modular-avatar",
       ],
     },
     {
       url: "https://vpm.ureishi.net/repos.json",
-      author: {
-        name: "ureishi",
-        github: "ureishi",
-        contact: "https://twitter.com/aivrc",
-      },
-      registerer: {
-        name: "anatawa12",
-        github: "anatawa12",
-        contact: "https://twitter.com/anatawa12_vrc",
-      },
+      author: "ureishi <https://twitter.com/aivrc> @ureishi",
+      registerer: "anatawa12 <https://twitter.com/anatawa12_vrc> @anatawa12",
       packages: [
         "net.ureishi.qvpen",
       ],
     },
     {
       url: "https://thryrallo.github.io/VRC-Avatar-Performance-Tools/index.json",
-      author: {
-        name: "Thryrallo",
-        github: "Thryrallo",
-        contact: "https://github.com/Thryrallo",
-      },
-      registerer: {
-        name: "anatawa12",
-        github: "anatawa12",
-        contact: "https://twitter.com/anatawa12_vrc",
-      },
+      author: "Thryrallo <https://github.com/Thryrallo> @Thryrallo",
+      registerer: "anatawa12 <https://twitter.com/anatawa12_vrc> @anatawa12",
       packages: [
         "de.thryrallo.vrc.avatar-performance-tools",
       ],
     },
     {
       url: "https://vcc.vrcfury.com/",
-      author: {
-        name: "VRCFury",
-        github: "VRCFury",
-        contact: "https://github.com/VRCFury",
-      },
-      registerer: {
-        name: "anatawa12",
-        github: "anatawa12",
-        contact: "https://twitter.com/anatawa12_vrc",
-      },
+      author: "VRCFury <https://github.com/VRCFury> @VRCFury",
+      registerer: "anatawa12 <https://twitter.com/anatawa12_vrc> @anatawa12",
       packages: [
         "com.vrcfury.vrcfury",
       ],
+      skip_remove_check: true,
     },
     {
       url: "https://lilxyzw.github.io/vpm-repos/vpm.json",
-      author: {
-        name: "lilxyzw",
-        github: "lilxyzw",
-        contact: "https://twitter.com/lil_xyzw",
-      },
-      registerer: {
-        name: "anatawa12",
-        github: "anatawa12",
-        contact: "https://twitter.com/anatawa12_vrc",
-      },
+      author: "lilxyzw <https://twitter.com/lil_xyzw> @lilxyzw",
+      registerer: "anatawa12 <https://twitter.com/anatawa12_vrc> @anatawa12",
       packages: [
         "jp.lilxyzw.liltoon",
       ],
@@ -97,6 +54,6 @@
   name: "anatawa12's curated repo (experimental)",
   id: "com.anatawa12.curated.experimental",
   url: "https://vpm.anatawa12.com/curated-experimental.json",
-  repo_output: "../src/curated-experimental.src.json",
+  repo_output: "curated-experimental.src.json",
   formatted: true,
 }

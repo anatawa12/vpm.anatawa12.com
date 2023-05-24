@@ -8,8 +8,7 @@ deno run \
   --allow-write=../src \
   --allow-env \
   build.ts \
-  setting-experimental.json5 \
-  && :
+  setting-experimental.json5
 
 git add ../src/curated-experimental.src.json
 
