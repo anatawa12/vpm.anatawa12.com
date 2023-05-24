@@ -4,7 +4,7 @@ set -eu
 
 deno run \
   --allow-net \
-  --allow-read=. \
+  --allow-read=.,../src \
   --allow-write=../src \
   --allow-env \
   build.ts \
