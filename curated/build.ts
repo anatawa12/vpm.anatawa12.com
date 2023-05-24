@@ -1,4 +1,4 @@
-import { Octokit, App } from "https://cdn.skypack.dev/octokit?dts";
+import { Octokit, App } from "https://esm.sh/octokit?dts";
 import * as JSON5 from "https://deno.land/x/json5@v1.0.0/mod.ts";
 
 interface Settings {
