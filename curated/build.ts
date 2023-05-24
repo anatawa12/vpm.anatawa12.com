@@ -134,6 +134,7 @@ async function processRepo(repo: SourceRepo, allPackages: Set<string>, oldRepo: 
     const pkg = response.packages[packageId];
     if (pkg == null || pkg.versions == null) {
       repoError(repo, `Package ${packageId} not found`);
+      packages.push([packageId, oldRepo.packages?.[packageId] ?? {versions: {}}]);
       break
     }
 
@@ -193,7 +194,7 @@ async function processAPackageVersion(
   versionName: string,
   oldRepo: PackageJson | null | undefined,
   allPackages: Set<string>,
-): Promise<PackageJson | null | undefined> {
+  ): Promise<PackageJson | null | undefined> {
   if (!versionName.match(versionRegex)) {
     console.warn(`Skipping ${packageId} version ${versionName} because it's not stable`)
     return null
