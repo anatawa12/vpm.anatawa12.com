@@ -168,14 +168,16 @@ async function processAPackage(
   const versions = new Set(jsons.map(x => x.version));
 
   // check for deletion.
-  if (oldRepo?.versions && !repo.skip_remove_check) {
+  if (oldRepo?.versions) {
     for (const [version, pkg] of Object.entries(oldRepo.versions)) {
       if (!versions.has(version)) {
         // the version is removed
-        if (!pkg.curated_extra?.removed_reported) {
-          repoError(repo, `Package ${packageId} version ${version} is removed`);
+        if (!repo.skip_remove_check) {
+          if (!pkg.curated_extra?.removed_reported) {
+            repoError(repo, `Package ${packageId} version ${version} is removed`);
+          }
+          (pkg.curated_extra ??= {}).removed_reported = true;
         }
-        (pkg.curated_extra ??= {}).removed_reported = true;
 
         jsons.push(pkg);
       }
