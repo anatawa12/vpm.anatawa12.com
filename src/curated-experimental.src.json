@@ -509,6 +509,15 @@
             "Assets\\VRCFury": "00b990f230095454f82c345d433841ae"
           },
           "url": "https://github.com/VRCFury/VRCFury/releases/download/com.vrcfury.vrcfury%2F1.128.0/com.vrcfury.vrcfury-1.128.0-vcc.zip"
+        },
+        "1.129.0": {
+          "name": "com.vrcfury.vrcfury",
+          "displayName": "VRCFury",
+          "version": "1.129.0",
+          "legacyFolders": {
+            "Assets\\VRCFury": "00b990f230095454f82c345d433841ae"
+          },
+          "url": "https://github.com/VRCFury/VRCFury/releases/download/com.vrcfury.vrcfury%2F1.129.0/com.vrcfury.vrcfury-1.129.0-vcc.zip"
         }
       }
     },
