@@ -215,7 +215,7 @@ async function processAPackageVersion(
     }
   }
 
-  const response = await fetch(json.url);
+  const response = await fetch(json.url, { method: "HEAD" });
   if (!response.ok) {
     repoError(repo, `Package ${packageId} version ${versionName} url returns non-ok response code: ${response.status}`);
     return oldRepo;
