@@ -39,7 +39,6 @@
       packages: [
         "com.vrcfury.vrcfury",
       ],
-      skip_remove_check: true,
     },
     {
       url: "https://lilxyzw.github.io/vpm-repos/vpm.json",
