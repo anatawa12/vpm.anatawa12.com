@@ -1,3 +1,4 @@
+/// <reference lib="es2020" />
 import {Octokit as OctokitCore} from "https://esm.sh/@octokit/core?dts";
 import {restEndpointMethods} from "https://esm.sh/@octokit/plugin-rest-endpoint-methods?dts";
 import * as JSON5 from "https://deno.land/x/json5@v1.0.0/mod.ts";
