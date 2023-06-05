@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tutorial on Avatar Optimizer (0.4.4)</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/tutorial/</link><description>Recent content in Tutorial on Avatar Optimizer (0.4.4)</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/tutorial/index.xml" rel="self" type="application/rss+xml"/><item><title>基本的な使い方</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/tutorial/basic-usage/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/tutorial/basic-usage/</guid><description>基本的な使い方 # メッシュを結合してMesh Renderersを減らす # Avatar Optimizerを使用すると簡単にSkinned Meshを結合することができます！
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tutorial on Avatar Optimizer (1.0.0-beta.1)</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/tutorial/</link><description>Recent content in Tutorial on Avatar Optimizer (1.0.0-beta.1)</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/tutorial/index.xml" rel="self" type="application/rss+xml"/><item><title>基本的な使い方</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/tutorial/basic-usage/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/tutorial/basic-usage/</guid><description>基本的な使い方 # メッシュを結合してMesh Renderersを減らす # Avatar Optimizerを使用すると簡単にSkinned Meshを結合することができます！
 なせSkinned Meshを結合するの？
 SkinnedMeshを結合するとメッシュを変形させる処理の回数が減るため軽くなります。 また、MergeSkinnedMeshで結合すると同じマテリアルのマテリアルスロットを結合できるので、描画処理の回数も減らす事ができます
 今回はまず初めに一番単純なパターンとしてAnonちゃんを軽量化します
@@ -7,7 +7,7 @@ SkinnedMeshを結合するとメッシュを変形させる処理の回数が減
 するとMerge Skinned MeshとSkinned Mesh Rendererが追加されます。
 このMerge Skinned Meshコンポーネントは、指定されたSkinned Mesh Rendererを一緒についているSkinned Mesh Rendererにマージするコンポーネントです。 マージを機能させるためにMerge Skinned MeshにマージするSkinned Mesh Rendererを指定しましょう！
 指定を楽にするために、MergedMeshを選択した状態でinspectorをロックしましょう。 こうすることで複数のSSkinned Mesh Rendererをまとめてドラックアンドドロップできるようになります。1
-それではHierarchyで顔のメッシュであるBody以外のSkinned Mesh Rendererを選択してどロックバンドドロップでSkinned Renderersに指定しましょう！
+それではHierarchyで顔のメッシュであるBody以外のSkinned Mesh Rendererを選択してドラックアンドドロップでSkinned Renderersに指定しましょう！
 なせ顔のメッシュを結合しないの？
 BlendShapeは頂点数とBlendShape数の積に比例して重くなる処理です。 そのため、BlendShapeの数が多い顔のメッシュを頂点数の多い体のメッシュと結合するとかえって重くなってしまうため、顔は別のままにするのを推奨しています
 続いて、MergedMeshのSkinned Mesh Rendererの設定をしましょう！
