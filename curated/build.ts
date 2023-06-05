@@ -215,7 +215,7 @@ async function processAPackageVersion(
     }
   }
 
-  const response = await fetch(json.url, { method: "HEAD" });
+  const response = await tryFetchZip(json.url);
   if (!response.ok) {
     repoError(repo, `Package ${packageId} version ${versionName} url returns non-ok response code: ${response.status}`);
     return oldRepo;
@@ -242,6 +242,16 @@ async function processAPackageVersion(
 
   // the json is good. use the json
   return json;
+}
+
+async function tryFetchZip(url: string): Promise<Response> {
+  let response: Response;
+  for(let i = 0; i < 3; i++) {
+    response = await fetch(json.url, { method: "HEAD" });
+    if (response.ok) break;
+    await new Promise(resolve => setTimeout(resolve, 1000));
+  }
+  return response
 }
 
 ///// utilities
