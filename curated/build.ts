@@ -247,7 +247,7 @@ async function processAPackageVersion(
 async function tryFetchZip(url: string): Promise<Response> {
   let response: Response;
   for(let i = 0; i < 3; i++) {
-    response = await fetch(json.url, { method: "HEAD" });
+    response = await fetch(url, { method: "HEAD" });
     if (response.ok) break;
     await new Promise(resolve => setTimeout(resolve, 1000));
   }
