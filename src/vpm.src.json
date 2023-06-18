@@ -1482,6 +1482,20 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/vpm-package-auto-installer.creator/package-1.0.1.zip?"
+        },
+        "1.0.2": {
+          "name": "com.anatawa12.vpm-package-auto-installer.creator",
+          "version": "1.0.2",
+          "displayName": "VPMPackageAutoInstaller Creator",
+          "description": "The tool to create VPMPackageAutoInstaller bundle creation",
+          "dependencies": {
+            "com.unity.nuget.newtonsoft-json": "2.0.2"
+          },
+          "author": {
+            "name": "anatawa12",
+            "url": "https://anatawa12.com/"
+          },
+          "url": "https://vpm.anatawa12.com/vpm-package-auto-installer.creator/package-1.0.2.zip?"
         }
       }
     },
