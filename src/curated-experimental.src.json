@@ -533,6 +533,23 @@
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
             "com.vrchat.avatars": "~3.2.0-beta.1"
           }
+        },
+        "0.4.11": {
+          "name": "com.anatawa12.avatar-optimizer",
+          "version": "0.4.11",
+          "unity": "2019.4",
+          "description": "Set of Anatawa12's Small Avatar Optimization Utilities",
+          "displayName": "Anatawa12's AvatarOptimizer",
+          "author": {
+            "name": "anatawa12",
+            "url": "https://anatawa12.com/"
+          },
+          "url": "https://vpm.anatawa12.com/avatar-optimizer/package-0.4.11.zip?",
+          "repo": "https://vpm.anatawa12.com/vpm.json",
+          "vpmDependencies": {
+            "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
+            "com.vrchat.avatars": "~3.2.0-beta.1"
+          }
         }
       }
     },
@@ -1219,6 +1236,26 @@
             "url": "https://github.com/bdunderscore/modular-avatar"
           },
           "url": "https://github.com/bdunderscore/modular-avatar/releases/download/1.5.1/nadena.dev.modular-avatar-1.5.1.zip?",
+          "repo": "https://vpm.nadena.dev/vpm.json",
+          "dependencies": {
+            "com.unity.nuget.newtonsoft-json": "2.0.0"
+          },
+          "vpmDependencies": {
+            "com.vrchat.avatars": ">=3.2.0"
+          }
+        },
+        "1.6.0": {
+          "name": "nadena.dev.modular-avatar",
+          "displayName": "Modular Avatar",
+          "version": "1.6.0",
+          "unity": "2019.4",
+          "description": "A suite of tools for assembling your avatar out of reusable components",
+          "author": {
+            "name": "bd_",
+            "email": "bd_@nadena.dev",
+            "url": "https://github.com/bdunderscore/modular-avatar"
+          },
+          "url": "https://github.com/bdunderscore/modular-avatar/releases/download/1.6.0/nadena.dev.modular-avatar-1.6.0.zip?",
           "repo": "https://vpm.nadena.dev/vpm.json",
           "dependencies": {
             "com.unity.nuget.newtonsoft-json": "2.0.0"
