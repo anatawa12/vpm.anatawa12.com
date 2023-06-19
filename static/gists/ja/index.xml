@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Introduction on Unity Gists Pack (0.4.4)</title><link>https://vpm.anatawa12.com/gists/ja/</link><description>Recent content in Introduction on Unity Gists Pack (0.4.4)</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://vpm.anatawa12.com/gists/ja/index.xml" rel="self" type="application/rss+xml"/><item><title>Basic Usage</title><link>https://vpm.anatawa12.com/gists/ja/docs/basic-usage/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/gists/ja/docs/basic-usage/</guid><description>Basic Usage # Unity Gist Packに複数のgistで構成されるため、インストール後にいくつかのgistを有効化する必要があります。
+選択ツールをTools/anatawa12's gist selectorから開いて、有効にしたいgistにチェックを入れ、Apply Changesをクリックしてください。
+依存関係がないパッケージは有効化できません。
+例えば、SetRandomBlueprintIdはVRCSDK Base向けに作られているため、もしVRCSDK Baseがプロジェクトにないと無効化されています。
+また、ActualPerformanceWindowはVRCSDK Avatars向けに作られているため、もしVRCSDK Avatarsがプロジェクトにないと無効化されています。</description></item><item><title>Actual Performance Window</title><link>https://vpm.anatawa12.com/gists/ja/docs/reference/actual-performance-window/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/gists/ja/docs/reference/actual-performance-window/</guid><description>Actual Performance Window # Actual Performance WindowはPlay Modeやbuild時のアバターのPerformance RankをVRChat Clientを起動せずに見るためのウィンドウです。
+Avatar OptimizerやModular AvatarのようなPlay Modeに入るときに適用される非破壊改変ツールを使っている場合、Play Modeのプレビューのパフォーマンスランクを確認できます。
+もし複数のアバターがSceneにある場合には、上部でパフォーマンスランクをみるアバターを選択できます。
+表示されるパフォーマンスランクはVRCSDKによって計算されますが、VRChatの変更によりVRChat Clientで表示されるものと違う場合があります。</description></item></channel></rss>
