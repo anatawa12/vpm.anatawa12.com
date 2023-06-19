@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tutorial on Avatar Optimizer (0.4.10)</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/tutorial/</link><description>Recent content in Tutorial on Avatar Optimizer (0.4.10)</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/tutorial/index.xml" rel="self" type="application/rss+xml"/><item><title>基本的な使い方</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/tutorial/basic-usage/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/tutorial/basic-usage/</guid><description>基本的な使い方 # メッシュを結合してMesh Renderersを減らす # Avatar Optimizerを使用すると簡単にSkinned Meshを結合することができます！
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tutorial on Avatar Optimizer (0.4.11)</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/tutorial/</link><description>Recent content in Tutorial on Avatar Optimizer (0.4.11)</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/tutorial/index.xml" rel="self" type="application/rss+xml"/><item><title>基本的な使い方</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/tutorial/basic-usage/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/tutorial/basic-usage/</guid><description>基本的な使い方 # メッシュを結合してMesh Renderersを減らす # Avatar Optimizerを使用すると簡単にSkinned Meshを結合することができます！
 なせSkinned Meshを結合するの？
 SkinnedMeshを結合するとメッシュを変形させる処理の回数が減るため軽くなります。 また、MergeSkinnedMeshで結合すると同じマテリアルのマテリアルスロットを結合できるので、描画処理の回数も減らす事ができます
 今回はまず初めに一番単純なパターンとしてAnonちゃんを軽量化します
@@ -12,10 +12,5 @@ SkinnedMeshを結合するとメッシュを変形させる処理の回数が減
 BlendShape(シェイプキー)[^blend-shape]は頂点数とBlendShape数の積に比例して重くなる処理です。 そのため、BlendShapeの数が多い顔のメッシュを頂点数の多い体のメッシュと結合するとかえって重くなってしまうため、顔は別のままにするのを推奨しています
 続いて、Anon_Mergedの設定をしましょう！
 Merge Skinned Meshは諸事情3によりボーン、メッシュ、マテリアル以外の設定を自動的には行いません。 そのため、Bounds, Root Bone, Anchor Override等を手動で設定してください。 Anchor Overrideは素体のを、Root BoneはHipsを指定するとうまくいくことが多いと思います。
-BlendShapeを固定する # また、Avatar Optimizerを使用すると簡単にBlendShape(シェイプキー)4を固定することができます！
-なせBlendShapeを固定するの？
-前述のように、BlendShapeは頂点数とBlendShape数の積に比例して重くなる処理です。 また、BlendShapeはweightに関わらず存在するだけで負荷になってしまいます。 そのためPerformance Rankには反映されませんが固定することが軽量化になります。 可能であれば結合したメッシュはBlendShapeが存在しないmeshにすると良いです。
-それでは使わない素体や服のの体型変更用のBlendShapeを結合してみましょう！
-頂点数が増えたメッシュである先程のAnon_MergedにFreeze BlendShapesを追加しましょう！
-Freeze BlendShapeは一緒についているメッシュのBlendShapeを固定します。
-マージを機能させるために固定するBlendShapeを指定しましょう！ チェックボックスにチェックするとそのBlendShapeは固定されます。</description></item></channel></rss>
+UploadせずにPerformance Rankを見る方法 # このAvatar Optimizerは非破壊改変ツールのため、VRCSDKのControl Panel上のPerformance Rankはあてにならなくなります。
+その代わりにPlayモードに入った際のPerformance Rankをanatawa12&amp;rsquo;s Gist PackのActual Performance Windowを使用してみられます。 詳しくはanatawa12&amp;rsquo;s Gist Packの使い方およびActual Performance Windowのドキュメントを参照してください。</description></item></channel></rss>
