@@ -1023,7 +1023,10 @@
           "hideInEditor": false,
           "url": "https://github.com/Thryrallo/VRC-Avatar-Performance-Tools/releases/download/1.3.2/de.thryrallo.vrc.avatar-performance-tools-1.3.2.zip",
           "legacyFolders": {},
-          "legacyFiles": {}
+          "legacyFiles": {},
+          "curated_extra": {
+            "changed_reported": true
+          }
         }
       }
     },
