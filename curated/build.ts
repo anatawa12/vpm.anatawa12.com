@@ -2,6 +2,7 @@
 import {Octokit as OctokitCore} from "https://esm.sh/@octokit/core?dts";
 import {restEndpointMethods} from "https://esm.sh/@octokit/plugin-rest-endpoint-methods?dts";
 import * as JSON5 from "https://deno.land/x/json5@v1.0.0/mod.ts";
+import {Semaphore} from "https://deno.land/x/semaphore@v1.1.2/mod.ts";
 
 const Octokit = OctokitCore.plugin(restEndpointMethods);
 
@@ -251,7 +252,22 @@ async function processAPackageVersion(
   return json;
 }
 
+const fetchSemaphore = new Map<string, Semaphore>();
+
 async function tryFetchZip(url: string): Promise<Response> {
+  const parsed = new URL(url);
+  let semaphore = fetchSemaphore.get(parsed.host)
+  if (!semaphore)
+    fetchSemaphore.set(parsed.host, semaphore = new Semaphore(3));
+  const release = await semaphore.acquire();
+  try {
+    return await doTryFetchZip(parsed);
+  } finally {
+    release();
+  }
+}
+
+async function doTryFetchZip(url: URL): Promise<Response> {
   let response: Response;
 
   response = await fetch(url, {
