@@ -5,6 +5,8 @@ import * as JSON5 from "https://deno.land/x/json5@v1.0.0/mod.ts";
 
 const Octokit = OctokitCore.plugin(restEndpointMethods);
 
+const user_agent = "curated-updater/0.0.0 (https://github.com/anatawa12/vpm.anatawa12.com)";
+
 interface Settings {
   sources: SourceRepo[],
   author: string,
@@ -252,16 +254,25 @@ async function processAPackageVersion(
 async function tryFetchZip(url: string): Promise<Response> {
   let response: Response;
 
-  response = await fetch(url, { method: "HEAD" });
+  response = await fetch(url, {
+    method: "HEAD",
+    headers: { "user-agent": user_agent },
+  });
   if (response.ok) return response;
 
   await new Promise(resolve => setTimeout(resolve, 1000));
 
-  response = await fetch(url, { method: "HEAD" });
+  response = await fetch(url, {
+    method: "HEAD",
+    headers: { "user-agent": user_agent },
+  });
   if (response.ok) return response;
 
   // final request without HEAD to get error information
-  response = await fetch(url);
+  response = await fetch(url, {
+    method: "GET",
+    headers: { "user-agent": user_agent },
+  });
   return response
 }
 
