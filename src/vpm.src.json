@@ -1156,6 +1156,40 @@
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
             "com.vrchat.avatars": "~3.2.0-beta.1"
           }
+        },
+        "1.1.0-beta.1": {
+          "name": "com.anatawa12.avatar-optimizer",
+          "version": "1.1.0-beta.1",
+          "unity": "2019.4",
+          "description": "Set of Anatawa12's Small Avatar Optimization Utilities",
+          "displayName": "Anatawa12's AvatarOptimizer",
+          "author": {
+            "name": "anatawa12",
+            "url": "https://anatawa12.com/"
+          },
+          "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.1.0-beta.1.zip?",
+          "repo": "https://vpm.anatawa12.com/vpm.json",
+          "vpmDependencies": {
+            "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
+            "com.vrchat.avatars": "~3.2.0-beta.1"
+          }
+        },
+        "1.1.0-beta.2": {
+          "name": "com.anatawa12.avatar-optimizer",
+          "version": "1.1.0-beta.2",
+          "unity": "2019.4",
+          "description": "Set of Anatawa12's Small Avatar Optimization Utilities",
+          "displayName": "Anatawa12's AvatarOptimizer",
+          "author": {
+            "name": "anatawa12",
+            "url": "https://anatawa12.com/"
+          },
+          "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.1.0-beta.2.zip?",
+          "repo": "https://vpm.anatawa12.com/vpm.json",
+          "vpmDependencies": {
+            "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
+            "com.vrchat.avatars": "~3.2.0-beta.1"
+          }
         }
       }
     },
@@ -1258,6 +1292,13 @@
           "description": "set of anatawa12's gist you can enable/disable any of gist at `Tools/anatawa12's gist selector`",
           "version": "0.4.6",
           "url": "https://vpm.anatawa12.com/gists/package-0.4.6.zip?"
+        },
+        "0.5.0": {
+          "name": "com.anatawa12.gists",
+          "displayName": "anatawa12's gists pack",
+          "description": "set of anatawa12's gist you can enable/disable any of gist at `Tools/anatawa12's gist selector`",
+          "version": "0.5.0",
+          "url": "https://vpm.anatawa12.com/gists/package-0.5.0.zip?"
         }
       }
     },
@@ -1602,6 +1643,20 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/vpm-package-auto-installer.creator/package-1.0.2.zip?"
+        },
+        "1.0.3": {
+          "name": "com.anatawa12.vpm-package-auto-installer.creator",
+          "version": "1.0.3",
+          "displayName": "VPMPackageAutoInstaller Creator",
+          "description": "The tool to create VPMPackageAutoInstaller bundle creation",
+          "dependencies": {
+            "com.unity.nuget.newtonsoft-json": "2.0.2"
+          },
+          "author": {
+            "name": "anatawa12",
+            "url": "https://anatawa12.com/"
+          },
+          "url": "https://vpm.anatawa12.com/vpm-package-auto-installer.creator/package-1.0.3.zip?"
         }
       }
     },
