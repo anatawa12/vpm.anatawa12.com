@@ -219,6 +219,7 @@ async function processAPackageVersion(
   const response = await tryFetchZip(json.url);
   if (!response.ok) {
     repoError(repo, `Package ${packageId} version ${versionName} url returns non-ok response code: ${response.status}`);
+    console.error(`headers of error response of ${packageId} version ${versionName}`, response.headers)
     return oldRepo;
   }
 
