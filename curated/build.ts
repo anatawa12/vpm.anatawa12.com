@@ -218,8 +218,11 @@ async function processAPackageVersion(
 
   const response = await tryFetchZip(json.url);
   if (!response.ok) {
+    const errorResponse = await response.text();
     repoError(repo, `Package ${packageId} version ${versionName} url returns non-ok response code: ${response.status}`);
-    console.error(`headers of error response of ${packageId} version ${versionName}`, response.headers)
+    console.error(`error response of ${packageId} version ${versionName}`)
+    console.error(`headers:`, response.headers)
+    console.error(`text`, errorResponse)
     return oldRepo;
   }
 
@@ -248,11 +251,17 @@ async function processAPackageVersion(
 
 async function tryFetchZip(url: string): Promise<Response> {
   let response: Response;
-  for(let i = 0; i < 3; i++) {
-    response = await fetch(url, { method: "HEAD" });
-    if (response.ok) break;
-    await new Promise(resolve => setTimeout(resolve, 1000));
-  }
+
+  response = await fetch(url, { method: "HEAD" });
+  if (response.ok) return response;
+
+  await new Promise(resolve => setTimeout(resolve, 1000));
+
+  response = await fetch(url, { method: "HEAD" });
+  if (response.ok) return response;
+
+  // final request without HEAD to get error information
+  response = await fetch(url);
   return response
 }
 
