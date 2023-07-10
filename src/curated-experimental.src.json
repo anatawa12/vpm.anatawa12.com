@@ -1044,6 +1044,26 @@
           },
           "hideInEditor": false,
           "url": "https://github.com/VRCFury/VRCFury/releases/download/com.vrcfury.vrcfury%2F1.171.0/com.vrcfury.vrcfury-1.171.0-vcc.zip"
+        },
+        "1.172.0": {
+          "name": "com.vrcfury.vrcfury",
+          "displayName": "VRCFury",
+          "version": "1.172.0",
+          "legacyFolders": {
+            "Assets\\VRCFury": "00b990f230095454f82c345d433841ae"
+          },
+          "hideInEditor": false,
+          "url": "https://github.com/VRCFury/VRCFury/releases/download/com.vrcfury.vrcfury%2F1.172.0/com.vrcfury.vrcfury-1.172.0-vcc.zip"
+        },
+        "1.173.0": {
+          "name": "com.vrcfury.vrcfury",
+          "displayName": "VRCFury",
+          "version": "1.173.0",
+          "legacyFolders": {
+            "Assets\\VRCFury": "00b990f230095454f82c345d433841ae"
+          },
+          "hideInEditor": false,
+          "url": "https://github.com/VRCFury/VRCFury/releases/download/com.vrcfury.vrcfury%2F1.173.0/com.vrcfury.vrcfury-1.173.0-vcc.zip"
         }
       }
     },
