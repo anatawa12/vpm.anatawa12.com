@@ -33,14 +33,6 @@
       ],
     },
     {
-      url: "https://vcc.vrcfury.com/",
-      author: "VRCFury <https://github.com/VRCFury> @VRCFury",
-      registerer: "anatawa12 <https://twitter.com/anatawa12_vrc> @anatawa12",
-      packages: [
-        "com.vrcfury.vrcfury",
-      ],
-    },
-    {
       url: "https://lilxyzw.github.io/vpm-repos/vpm.json",
       author: "lilxyzw <https://twitter.com/lil_xyzw> @lilxyzw",
       registerer: "anatawa12 <https://twitter.com/anatawa12_vrc> @anatawa12",
