@@ -39,7 +39,15 @@
       packages: [
         "jp.lilxyzw.liltoon",
       ],
-    }
+    },
+    {
+      url: "https://suzuryg.github.io/vpm-repos/vpm.json",
+      author: "suzuryg <https://misskey.niri.la/@suzuryg> @suzuryg",
+      registerer: "anatawa12 <https://twitter.com/anatawa12_vrc> @anatawa12",
+      packages: [
+        "jp.suzuryg.face-emo",
+      ],
+    },
   ],
   author: "anatawa12",
   name: "anatawa12's curated repo (experimental)",
