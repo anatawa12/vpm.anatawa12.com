@@ -15,6 +15,6 @@ jobs:
           deno-version: v1.x
 
       - name: update curated repo
-        run: deno run --allow-env --allow-net --allow-write ./update-script/update-picked.ts
+        run: deno run --allow-env --allow-net --allow-read --allow-write ./update-script/update-picked.ts
         env:
           GITHUB_TOKEN: ${{ github.token }}
