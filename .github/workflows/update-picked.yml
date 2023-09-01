@@ -1,0 +1,20 @@
+on:
+  workflow_dispatch: {}
+  schedule:
+    - cron:  '0 * * * *'
+
+jobs:
+  update-curated:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v3
+      - uses: snow-actions/git-config-user@v1.0.0
+      - uses: denoland/setup-deno@v1
+        with:
+          deno-version: v1.x
+
+      - name: update curated repo
+        run: deno run --allow-env --allow-net --allow-read --allow-write ./update-script/update-picked.ts
+        env:
+          GITHUB_TOKEN: ${{ github.token }}

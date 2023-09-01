@@ -49,7 +49,6 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     env:
-      GH_TOKEN: ${{ secrets.TOKEN || github.token }}
       SRC_REPO: ${{ inputs.repostitory || github.event.client_payload.repository }}
       VERSION: ${{ inputs.version || github.event.client_payload.version }}
       WEBSITE_ZIP: ${{ inputs.website_zip }}
@@ -64,97 +63,11 @@ jobs:
           token: ${{ secrets.TOKEN || github.token }}
           ref: master
       - uses: snow-actions/git-config-user@v1.0.0
+      - uses: denoland/setup-deno@v1
+        with:
+          deno-version: v1.x
 
-      - name: download package.json
-        if: ${{ env.VERSION }}
-        run: curl -sLf "https://github.com/$SRC_REPO/releases/download/v$VERSION/package.json" > package.json
-      - name: download latest package.json instead
-        if: ${{ ! env.VERSION }}
-        run: curl -sLf "https://github.com/$SRC_REPO/releases/latest/download/package.json" > package.json
-
-      - name: Compute Variables
-        run: |
-          ID="$(jq -r '.name' < package.json)"
-          SHORTID="$(echo "$ID" | sed -e 's/^com\.anatawa12\.//')"
-          echo "SHORTID=$SHORTID" >> $GITHUB_ENV
-          echo "ID=$ID" >> $GITHUB_ENV
-
-# region update vpm.src.json
-      - name: verify version name
-        if: ${{ env.VERSION }}
-        run: |
-          if ! [[ ${VERSION} =~ ^([0-9]+)\.([0-9]+)\.([0-9]+)(-(alpha|beta|rc)\.[0-9]+)?$ ]]; then
-            echo "version name is not valid. must be x.y.z OR x.y.z-(alpha|beta|rc).w" >&2
-            exit 1
-          fi
-          if [ "$(jq -r '.version' < package.json)" != "${VERSION}" ]; then
-            echo "version name mismatch between package.json and tag name" >&2
-          fi
-
-      - name: create and verify zip file url
-        if: ${{ env.VERSION }}
-        run: |
-          DOWNLOAD_URL="https://vpm.anatawa12.com/$SHORTID/package-$VERSION.zip?"
-
-          if ! curl -ILsSf "$DOWNLOAD_URL.1" -o /dev/null; then
-            echo "downloading file from vpm.anatawa12.com failed" >&2
-            exit 1
-          fi
-
-          echo "DOWNLOAD_URL=$DOWNLOAD_URL" >> $GITHUB_ENV
-
-      - name: update vpm.json
-        if: ${{ env.VERSION }}
-        run: |
-          jq \
-            --arg DOWNLOAD_URL "$DOWNLOAD_URL" \
-            --slurpfile package 'package.json' \
-            '.packages[$package[0].name].versions[$package[0].version] = ($package[0] | .url = $DOWNLOAD_URL)' \
-            < src/vpm.src.json > vpm.tmp.json
-          rm src/vpm.src.json
-          mv vpm.tmp.json src/vpm.src.json
-          git add src/vpm.src.json
-
-# endregion update vpm.src.json
-
-# region update website
-      - name: Error if path contains dot
-        if: ${{ contains(env.WEBSITE_PATH, '.') }}
-        run: exit 1
-
-      - name: Clear Destniation Dir
-        if: ${{ env.WEBSITE_ZIP }}
-        run: rm -rf "static/$SHORTID/$WEBSITE_PATH/"
-
-      - name: Download zip
-        if: ${{ env.WEBSITE_ZIP }}
-        run: curl -sLf "$WEBSITE_ZIP" > website.zip
-
-      - name: Extract zip
-        if: ${{ env.WEBSITE_ZIP }}
-        run: mkdir -p "static/$SHORTID/$WEBSITE_PATH/"
-          && unzip website.zip -d "static/$SHORTID/$WEBSITE_PATH/"
-          && git add "static/$SHORTID/$WEBSITE_PATH/"
-# endregion
-
-      - name: Clear package.json
-        run: |
-          rm package.json
-
-      - name: Commit changes
-        run: |
-          if [ -z "$VERSION" ]; then
-            MESSAGE="update website for $SHORTID"
-          else
-            MESSAGE="add $SHORTID version $VERSION"
-          fi
-          git commit -m "$MESSAGE"
-
-      - name: Push changes
-        timeout-minutes: 2
-        run: |
-          while true; do
-            git push && break
-            sleep 3
-            git pull --rebase
-          done
+      - name: Perform Update Process
+        run: deno run --allow-env --allow-net --allow-read --allow-write --allow-run update-script/update-package.ts
+        env:
+          REPOSITORY_PATH: "src/vpm.src.json"
