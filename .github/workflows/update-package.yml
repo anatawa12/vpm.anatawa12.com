@@ -68,4 +68,4 @@ jobs:
           deno-version: v1.x
 
       - name: Perform Update Process
-        run: deno run --allow-net --allow-write --allow-run update-script/add-package.ts
+        run: deno run --allow-net --allow-write --allow-run update-script/update-package.ts
