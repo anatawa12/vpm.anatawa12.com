@@ -62,8 +62,10 @@ if (version) {
 if (websiteZip) {
   const tempPath = await Deno.makeTempFile();
   await Deno.writeFile(tempPath, await fetch(websiteZip, {headers: {"User-Agent": userAgent}}).then(x => x.blob()).then(b => b.stream()));
-  await zip.decompress(tempPath, `static/${shortId}/${websitePath}`);
-  await command("git", "add", `static/${shortId}/${websitePath}`);
+  const destFolder = `static/${shortId}/${websitePath}`;
+  await Deno.remove(destFolder, {recursive: true});
+  await zip.decompress(tempPath, destFolder);
+  await command("git", "add", destFolder);
 }
 
 if (version) {
