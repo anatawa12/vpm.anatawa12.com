@@ -69,9 +69,9 @@ if (websiteZip) {
 }
 
 if (version) {
-  await command("git", "commit", "-m", `update website for ${shortId}`);
-} else {
   await command("git", "commit", "-m", `add ${shortId} version ${version}`);
+} else {
+  await command("git", "commit", "-m", `update website for ${shortId}`);
 }
 
 // push or rebase
