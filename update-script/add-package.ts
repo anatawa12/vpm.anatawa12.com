@@ -3,6 +3,7 @@
 import * as semver from "https://deno.land/std@0.200.0/semver/mod.ts";
 import * as zip from "https://deno.land/x/zip@v1.2.5/mod.ts";
 import {RepoUpdater} from "./update-repo.ts";
+import {JsonObject, JsonValue} from "./type.ts";
 
 // input vartiables
 
@@ -73,14 +74,14 @@ if (version) {
 
 // push or rebase
 while (true) {
-  if (await new Deno.Command("git", {args: "push"}).output().then(o => o.success)) {
+  if (await new Deno.Command("git", {args: ["push"]}).output().then(o => o.success)) {
     break // successful
   }
   await new Promise(resolve => setTimeout(resolve, 3000));
   await command("git", "pull", "--rebase");
 }
 
-function verifyPackageJson(packageJson: unknown): object & { name: string, version: string } {
+function verifyPackageJson(packageJson: JsonValue): JsonObject & { name: string, version: string } {
   // verify package json
   if (typeof packageJson !== "object" || packageJson == null)
     throw new Error("package.json is not object");
@@ -89,10 +90,10 @@ function verifyPackageJson(packageJson: unknown): object & { name: string, versi
   if (!('version' in packageJson)) throw new Error("no 'version' in package.json");
   if (typeof packageJson.version !== "string") throw new Error("'version' is not string");
 
-  return packageJson
+  return packageJson as JsonObject & { name: string, version: string }
 }
 
-async function command(cmd: string, ...args: string): Promise<void> {
+async function command(cmd: string, ...args: string[]): Promise<void> {
   if (await new Deno.Command(cmd, {args}).output().then(o => !o.success))
     throw new Error("command failed");
 }

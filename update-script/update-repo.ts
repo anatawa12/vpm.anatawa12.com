@@ -1,21 +1,22 @@
+import type {JsonObject, JsonValue, PackageJson, RepositoryJson} from "./type.ts";
 
 export class RepoUpdater {
-  #repoJson: Record<string, unknown> & Record<"packages", Record<string, Partial<Record<"versions", any>>>>;
+  #repoJson: RepositoryJson & JsonObject;
   #repoJsonPath: string;
 
   constructor(repoJsonPath: string) {
     this.#repoJsonPath = repoJsonPath;
-    const repoJsonIn: unknown = JSON.parse(Deno.readTextFileSync(repoJsonPath));
+    const repoJsonIn: JsonValue = JSON.parse(Deno.readTextFileSync(repoJsonPath));
 
-    if (typeof repoJsonIn !== "object" || !repoJsonIn)
+    if (!isObject(repoJsonIn))
       throw new Error("repository json is not object.");
-    if ("packages" in repoJsonIn && typeof repoJsonIn.packages !== "object")
+    if (!("packages" in repoJsonIn) || !isObject(repoJsonIn.packages))
       throw new Error("'packages' of the repository json is not object");
 
-    this.#repoJson = repoJsonIn as Record<string, unknown> & Record<'packages', Record<string, Partial<Record<'versions', any>>>>;
+    this.#repoJson = repoJsonIn as RepositoryJson & JsonObject;
   }
 
-  addPackage(packageJson: object, url: string) {
+  addPackage(packageJson: PackageJson & JsonObject, url: string) {
     if (!("name" in packageJson) || typeof packageJson.name !== "string")
       throw new Error("name field not valid");
     if (!("version" in packageJson) || typeof packageJson.version !== "string")
@@ -25,16 +26,9 @@ export class RepoUpdater {
     const packageVersion = packageJson.version
 
     this.#repoJson.packages ??= {};
-    const packageInfo = this.#repoJson.packages[packageId] ??= {}
-    if (typeof packageInfo !== "object")
-      throw new Error(`packages["${packageId}"] is not object`);
-    packageInfo.versions ??= {}
-    if (typeof packageInfo.versions !== "object" || !packageInfo.versions)
-      throw new Error(`packages["${packageId}"].versions is not object`);
-    if (packageVersion in packageInfo.versions)
-      throw new Error(`packages["${packageId}"].versions["${packageVersion}"] already exists`);
-    (packageJson as any).url ??= url;
-    packageInfo.versions[packageVersion] = packageJson;
+    const packageInfo = this.#repoJson.packages[packageId] ??= {versions: {}};
+    packageJson.url ??= url;
+    packageInfo.versions[packageVersion] = packageJson as PackageJson & JsonObject;
   }
 
   save() {
@@ -42,6 +36,7 @@ export class RepoUpdater {
   }
 }
 
-export function addPackage() {
-
+function isObject(obj: JsonValue): obj is JsonObject {
+  return typeof obj === "object" && obj != null && Array.isArray(obj);
 }
+
