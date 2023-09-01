@@ -16,7 +16,7 @@ export class RepoUpdater {
     this.#repoJson = repoJsonIn as RepositoryJson & JsonObject;
   }
 
-  addPackage(packageJson: PackageJson & JsonObject, url: string) {
+  addPackage(packageJson: PackageJson & JsonObject, url?: string) {
     if (!("name" in packageJson) || typeof packageJson.name !== "string")
       throw new Error("name field not valid");
     if (!("version" in packageJson) || typeof packageJson.version !== "string")
@@ -34,9 +34,13 @@ export class RepoUpdater {
   save() {
     Deno.writeTextFileSync(this.#repoJsonPath, JSON.stringify(this.#repoJson, null, 2) + "\n")
   }
+
+  contains(packageId: string, version: string): boolean {
+    return this.#repoJson.packages[packageId]?.versions?.[version] != null;
+  }
 }
 
 function isObject(obj: JsonValue): obj is JsonObject {
-  return typeof obj === "object" && obj != null && Array.isArray(obj);
+  return typeof obj === "object" && obj != null && !Array.isArray(obj);
 }
 
