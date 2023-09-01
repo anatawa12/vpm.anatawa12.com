@@ -69,3 +69,5 @@ jobs:
 
       - name: Perform Update Process
         run: deno run --allow-net --allow-write --allow-run update-script/update-package.ts
+        env:
+          REPOSITORY_PATH: "src/vpm.src.json"

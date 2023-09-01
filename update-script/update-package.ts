@@ -11,12 +11,12 @@ const sourceRepo: string = Deno.env.get("SRC_REPO") ?? throws(new Error("SRC_REP
 const version: string | undefined = Deno.env.get("VERSION"); // optional
 const websiteZip: string | undefined = Deno.env.get("WEBSITE_ZIP");
 const websitePath: string | undefined = Deno.env.get("WEBSITE_PATH");
+const repositoryPath: string = Deno.env.get("REPOSITORY_PATH") ?? throws(new Error("REPOSITORY_PATH not specified"));
 
 // global configuration
 
 const commonPackagePrefix: string = Deno.env.get("COMMON_PACKAGE_PREFIX") || "com.anatawa12.";
 const userAgent: string = Deno.env.get("HTTP_USER_AGENT") || "vpm.anatawa12.com updater (https://github.com/anatawa12/vpm.anatawa12.com)";
-const repositoryPath: string = Deno.env.get("REPOSITORY_PATH") || "";
 
 const packageJsonUrl = version
   ? `https://github.com/${sourceRepo}/releases/download/v${version}/package.json`
