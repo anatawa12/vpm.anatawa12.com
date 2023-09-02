@@ -18,3 +18,4 @@ jobs:
         run: deno run --allow-env --allow-net --allow-read --allow-write ./update-script/update-picked.ts
         env:
           GITHUB_TOKEN: ${{ github.token }}
+          REPOSITORY_PATH: "src/vpm.src.json"
