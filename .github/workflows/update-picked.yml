@@ -22,6 +22,7 @@ jobs:
 
       - name: push if changes
         run: |
+          git add "src/vpm.src.json"
           if git diff-index --quiet --cached HEAD --; then
             echo "nothing updated!"
             exit 0
