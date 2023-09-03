@@ -21,7 +21,7 @@ jobs:
           REPOSITORY_PATH: "src/vpm.src.json"
 
       - name: push if changes
-        run:
+        run: |
           if git diff-index --quiet --cached HEAD --; then
             echo "nothing updated!"
             exit 0
