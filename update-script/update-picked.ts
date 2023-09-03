@@ -13,9 +13,6 @@ const config: Record<string, { pkg: string, prerelease?: boolean }[]> = {
   "https://vpm.nadena.dev/vpm-prerelease.json": [
     {pkg: "nadena.dev.ndmf"},
   ],
-  "https://vpm.nadena.dev/vpm.json": [
-    {pkg: "nadena.dev.ndmf"},
-  ],
 };
 
 const repoJson = new RepoUpdater(repositoryPath);
