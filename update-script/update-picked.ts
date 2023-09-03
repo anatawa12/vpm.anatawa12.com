@@ -22,12 +22,14 @@ for (const [removePath, packages] of Object.entries(config)) {
   for (const pkgInfo of packages) {
     const {pkg: packageId, prerelease} = pkgInfo;
     const packageInfo = remoteRepo.packages[packageId];
-    if (!packageInfo) throw new Error(`${packageInfo} not found`);
+    if (!packageInfo) throw new Error(`${packageId} not found`);
     for (const [version, packageJson] of Object.entries(packageInfo.versions)) {
       if (prerelease || !semver.parse(version).prerelease.length) {
         if (!repoJson.contains(packageId, version)) {
           repoJson.addPackage(packageJson);
         }
+      } else {
+        console.log(`skipping ${packageId} version ${version}`);
       }
     }
   }
