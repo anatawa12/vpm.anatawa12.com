@@ -10,9 +10,12 @@ const repositoryPath: string = Deno.env.get("REPOSITORY_PATH") ?? throws(new Err
 const userAgent: string = Deno.env.get("HTTP_USER_AGENT") || "vpm.anatawa12.com updater (https://github.com/anatawa12/vpm.anatawa12.com)";
 
 const config: Record<string, { pkg: string, prerelease?: boolean }[]> = {
-  "https://abpf-test.nadena.dev/index.json": [
-    {pkg: "nadena.dev.av3-build-framework"},
-  ]
+  "https://vpm.nadena.dev/vpm-prerelease.json": [
+    {pkg: "nadena.dev.ndmf"},
+  ],
+  "https://vpm.nadena.dev/vpm.json": [
+    {pkg: "nadena.dev.ndmf"},
+  ],
 };
 
 const repoJson = new RepoUpdater(repositoryPath);
