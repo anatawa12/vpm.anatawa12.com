@@ -1892,7 +1892,7 @@
             "name": "anatawa12",
             "url": "https://anatawa12.com/"
           },
-          "url": "https://github.com/anatawa12/ContinuousAvatarUploader",
+          "url": "https://vpm.anatawa12.com/continuous-avatar-uploader/package-0.2.0-beta.2.zip?",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.3.0-beta.1 <3.4.0"
