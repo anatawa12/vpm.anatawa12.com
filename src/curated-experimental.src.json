@@ -1555,6 +1555,26 @@
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.2.0"
           }
+        },
+        "1.7.6": {
+          "name": "nadena.dev.modular-avatar",
+          "displayName": "Modular Avatar",
+          "version": "1.7.6",
+          "unity": "2019.4",
+          "description": "A suite of tools for assembling your avatar out of reusable components",
+          "author": {
+            "name": "bd_",
+            "email": "bd_@nadena.dev",
+            "url": "https://github.com/bdunderscore/modular-avatar"
+          },
+          "url": "https://github.com/bdunderscore/modular-avatar/releases/download/1.7.6/nadena.dev.modular-avatar-1.7.6.zip?",
+          "repo": "https://vpm.nadena.dev/vpm.json",
+          "dependencies": {
+            "com.unity.nuget.newtonsoft-json": "2.0.0"
+          },
+          "vpmDependencies": {
+            "com.vrchat.avatars": ">=3.2.0"
+          }
         }
       }
     },
