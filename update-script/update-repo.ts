@@ -27,7 +27,7 @@ export class RepoUpdater {
 
     this.#repoJson.packages ??= {};
     const packageInfo = this.#repoJson.packages[packageId] ??= {versions: {}};
-    packageJson.url = url;
+    if (url) packageJson.url = url;
     packageInfo.versions[packageVersion] = packageJson as PackageJson & JsonObject;
   }
 
