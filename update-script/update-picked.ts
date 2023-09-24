@@ -12,8 +12,8 @@ const userAgent: string = Deno.env.get("HTTP_USER_AGENT") || "vpm.anatawa12.com 
 type PackageConfig = { pkg: string, range?: SemVerRange, prerelease?: boolean };
 
 const config: Record<string, PackageConfig[]> = {
-  "https://vpm.nadena.dev/vpm-prerelease.json": [
-    {pkg: "nadena.dev.ndmf", range: parseRange(">= 0.3.0")},
+  "https://vpm.nadena.dev/vpm.json": [
+    {pkg: "nadena.dev.ndmf", range: parseRange(">= 1.0.0")},
   ],
 };
 
