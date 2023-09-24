@@ -45,7 +45,7 @@ function throws(e: unknown): never {
 
 function includeVersion(version: string, config: PackageConfig): boolean {
   const parsedVersion = parseSemver(version);
-  const versionPrerelease = !parsedVersion.prerelease.length;
+  const versionPrerelease = !!parsedVersion.prerelease.length;
 
   // it's prerelease and not specified as included
   if (versionPrerelease && !config.prerelease) return false;
