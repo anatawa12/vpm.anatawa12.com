@@ -14,6 +14,7 @@
       registerer: "anatawa12 <https://twitter.com/anatawa12_vrc> @anatawa12",
       packages: [
         "nadena.dev.modular-avatar",
+        "nadena.dev.ndmf",
       ],
     },
     {
