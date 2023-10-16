@@ -1247,9 +1247,6 @@
             "com.vrchat.avatars": ">=3.1.9",
             "nadena.dev.modular-avatar": "^1.8.1",
             "nadena.dev.ndmf": "^1.1.1"
-          },
-          "curated_extra": {
-            "removed_reported": true
           }
         }
       }
