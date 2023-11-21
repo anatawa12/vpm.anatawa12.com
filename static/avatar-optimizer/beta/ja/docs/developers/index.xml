@@ -1,16 +1,17 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>開発者向け on Avatar Optimizer (1.6.0-beta.12)</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/developers/</link><description>Recent content in 開発者向け on Avatar Optimizer (1.6.0-beta.12)</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/developers/index.xml" rel="self" type="application/rss+xml"/><item><title>ツールをAvatar Optimizerとの互換性をもたせる</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/developers/make-your-tool-compatible-with-aao/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/developers/make-your-tool-compatible-with-aao/</guid><description>ツールをAvatar Optimizerとの互換性をもたせる # このページでは以下の２つのことを説明します。
-どのようなときにツールがAvatar Optimizerと非互換になるか どのように互換性を改善するか もし質問があればfediverseで@anatawa12@misskey.niri.laに気軽に聞いてください。
-どのようなときにツールがAvatar Optimizerと非互換になるか # もしあなたのツールがコンポーネントを追加せず、ビルド時に何もしないのであれば、すでにAvatarOptimizerと互換性があります！
-もしあなたのツールがコンポーネントをアバターに追加する場合、そのツールはAvatar Optimizerと非互換である可能性があります
-Avatar Optimizerはコンポーネントに対するガベージコレクションを実装しているため、Avatar Optimizerはアバターに存在する すべてのコンポーネントについて知る必要があります。
-未知なコンポーネントの問題を避けるため、Avatar Optimizerは道のコンポーネントが以下のようなものであると仮定します。(この仮定は将来的に変更される可能性があります。)
-副作用があるコンポーネントである コンポーネントによって参照されてるコンポーネントに依存している しかし、この仮定は正しくない可能性があるので、Avatar Optimizerは未知のコンポーネントを見つけた場合、以下のような警告を生成します。
-もしあなたのツールがNDMF1をベースにしていない非破壊ツールで、Play modeに入るときに適用されるツールの場合、 Avatar Optimizerがそのツールより前に適用される可能性があるため、非互換です。
-どのように互換性を改善するか # NDMFを使用した非破壊ツールの場合 # もしあなたのツールがNDMF1を使用した非破壊ツールの場合、Avatar Optimizerが実行される前にそのツールのコンポーネントを削除してください。
-Avatar OptimizerはOptimization passに処理を実行するため、もしあなたのツールがOptimization passに何もしないのであれば、特に問題がありません。 もしあなたのツールがOptimization passになにか実行する場合、BeforePluginを用いてAvatar Optimizerの前に実行するようにしてください。 Avatar OptimizerのNDMFのQualifiedNameはcom.anatawa12.avatar-optimizerです。
-もしあなたのツールがAvatar Optimizerよりあとにあなたのコンポーネントを用いて実行する必要がある場合、 Avatar Optimizerにコンポーネントを登録してください.
-NDMFを使用していない非破壊ツールの場合 # もしあなたのツールがNDMF1を使用していない非破壊ツールの場合、NDMFを使用するのを検討してください。
-もしあなたのツールがPlayモードに入るときに適用される場合、Avatar Optimizerとの処理順を保証するためにはNDMFを使用する必要があります。 もしあなたのツールがPlayモードに入るときに適用されない場合、NDMFを使用しなくても問題ないことは多いです。
-もしあなたのツールでNDMFを使用したくない場合、Avatar Optimizerが実行される前にそのツールのコンポーネントを削除してください。 これを達成するためにはNDMFのOptimization passの実行より前にあなたのツールを実行するようにしてください。 現在、NDMFはOptimization passをVRCSDKのRemoveAvatarEditorOnlyの直前のorder -1025で実行するので、 あなたのツールのIVRCSDKPreprocessAvatarCallbackをそれより小さいcallbackOrderで登録してください。
-もしあなたのツールがAvatarOptimizerの実行後(NDMFのOptimization passのあと)に処理したい場合、Avatar Optimizerにコンポーネントを登録してください.
-データを保持するだけのコンポーネントを持つツールの場合 # もしあなたのツールのコンポーネントがビルド時に意味を持たず、情報保持のための場合、 AvatarOptimizerの処理の前にIVRCSDKPreprocessAvatarCallbackでコンポーネントを削除するか、Avatar Optimizerにコンポーネントを登録してください。</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>開発者向け on Avatar Optimizer (1.6.0-rc.1)</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/developers/</link><description>Recent content in 開発者向け on Avatar Optimizer (1.6.0-rc.1)</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/developers/index.xml" rel="self" type="application/rss+xml"/><item><title>コンポーネントにAvatar Optimizerとの互換性をもたせる</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/developers/make-your-components-compatible-with-aao/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/developers/make-your-components-compatible-with-aao/</guid><description>コンポーネントにAvatar Optimizerとの互換性をもたせる # このページでは以下の2つのことを説明します。
+コンポーネントはどのような場合にAvatar Optimizerと非互換になるか どのように互換性を改善するか もし質問があれば、お気軽にfediverseで@anatawa12@misskey.niri.laにご連絡ください。
+コンポーネントはどのような場合にAvatar Optimizerと非互換になるか # Avatar Optimizerが処理する時点でアバターにコンポーネントが存在している場合、そのコンポーネントはAvatar Optimizerと互換性が無い可能性があります。
+Avatar Optimizerはコンポーネント等に対するガベージコレクションシステムを実装しているため、最適化時にアバターに存在するすべてのコンポーネントのことを知る必要があります。
+未知のコンポーネントによる問題を避けるため、Avatar Optimizerは未知のコンポーネントが以下のようなものであると仮定します。(この仮定は将来的に変更される可能性があります。)
+副作用のあるコンポーネントである。 コンポーネントが参照している全てのコンポーネントに依存している。 この仮定は正しくない可能性があるため、Avatar Optimizerは未知のコンポーネントを見つけた場合に以下のような警告を生成します。
+どのように互換性を改善するか # Avatar Optimizerが処理する前にコンポーネントを削除出来る場合は、そのようにしてください。 削除出来ない場合はAvatar Optimizerにコンポーネントを登録してください。
+コンポーネントを削除する # コンポーネントを削除する方法はいくつかあります。
+ツールがNDMF1を使用した非破壊ツールの場合は、NDMFのOptimization phaseより前、 またはOptimization phaseの中で(BeforePluginを用いて)com.anatawa12.avatar-optimizer plugin より前にコンポーネントを削除することを推奨します。
+ツールがNDMF1を使用していない非破壊ツールの場合は、NDMFのOptimization phaseより前にコンポーネントを削除することを推奨します。 この場合、現在のNDMFはVRCSDKのRemoveAvatarEditorOnlyの直前であるorder -1025でOptimization phaseを実行するので、 それより小さいcallbackOrderを指定したIVRCSDKPreprocessAvatarCallbackでコンポーネントを削除してください。
+ツールのコンポーネントがデータを保持する役割しかなく、ビルド時には意味を持っていない場合、 IVRCSDKPreprocessAvatarCallbackを用いてAvatar Optimizerが処理する前にコンポーネントを削除することを推奨します。 IVRCSDKPreprocessAvatarCallbackの順序については上記を参照してください。
+コンポーネントを登録する # ツールのコンポーネントをAvatar Optimizerの処理より後に残しておきたい場合、 Avatar Optimizerにコンポーネントの情報を登録できます。
+まず、Avatar OptimizerのAPIを呼び出すために、assembly definitionファイル2を(存在しない場合)作成してください。
+次に、asmdefファイルのアセンブリ参照にcom.anatawa12.avatar-optimizer.api.editorを追加してください。
+ツールをAvatar Optimizerに依存させたくない場合、Version Definesを使用してください。 Avatar Optimizer 1.6.0より前にはAPIが無く、Avatar Optimizer 2.0.0ではAPIの互換性を破壊する可能性があるため、 バージョンの範囲を[1.6,2.0)(または、将来的に追加されたAPIを用いる必要がある場合、より厳密に [1.7,2.0)など)のように指定することを推奨します。
+続いて、ツールのコンポーネントについてのComponentInformationを定義してください。
+#if AVATAR_OPTIMIZER &amp;amp;&amp;amp; UNITY_EDITOR [ComponentInformation(typeof(YourComponent))] internal class YourComponentInformation : ComponentInformation&amp;lt;YourComponent&amp;gt; { protected override void CollectMutations(YourComponent component, ComponentMutationsCollector collector) { // call methods on the collector to tell about the component } protected override void CollectDependency(YourComponent component, ComponentDependencyCollector collector) { // call methods on the collector to tell about the component } } #endif CollectMutationsでは、コンポーネントの処理によって変更される可能性があるプロパティを登録します。</description></item></channel></rss>
