@@ -1308,6 +1308,23 @@
           "url": "https://github.com/Thryrallo/VRC-Avatar-Performance-Tools/releases/download/1.3.2/de.thryrallo.vrc.avatar-performance-tools-1.3.2.zip",
           "legacyFolders": {},
           "legacyFiles": {}
+        },
+        "1.3.4": {
+          "name": "de.thryrallo.vrc.avatar-performance-tools",
+          "displayName": "Thry's Avatar Performance Tools",
+          "version": "1.3.4",
+          "unity": "2019.4",
+          "description": "Calculates and evaluates multiple avatar metrics that are not currently taken into account by VRChat's ranking system. Most prominently, it gives you a breakdown of VRAM usage of different parts of your avatar.",
+          "gitDependencies": {},
+          "vpmDependencies": {},
+          "author": {
+            "name": "Thryrallo",
+            "email": "thryrallo@gmail.com"
+          },
+          "hideInEditor": false,
+          "url": "https://github.com/Thryrallo/VRC-Avatar-Performance-Tools/releases/download/1.3.4/de.thryrallo.vrc.avatar-performance-tools-1.3.4.zip",
+          "legacyFolders": {},
+          "legacyFiles": {}
         }
       }
     },
