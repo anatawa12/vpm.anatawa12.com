@@ -1268,6 +1268,37 @@
               "path": "Samples~/EditorOnly"
             }
           ]
+        },
+        "1.2.0": {
+          "name": "com.anatawa12.custom-localization-for-editor-extension",
+          "version": "1.2.0",
+          "displayName": "CustomLocalization4EditorExtension",
+          "author": {
+            "name": "anatawa12",
+            "url": "https://anatawa12.com/"
+          },
+          "description": "The experimental library for Unity extensions which want to have custom locale for translation instead of unity's locale.",
+          "type": "library",
+          "license": "MIT",
+          "url": "https://vpm.anatawa12.com/custom-localization-for-editor-extension/package-1.2.0.zip?",
+          "repo": "https://vpm.anatawa12.com/vpm.json",
+          "samples": [
+            {
+              "displayName": "Legacy API Usage",
+              "description": "Contains simple ui with localizable with Legacy API",
+              "path": "Samples~/Legacy"
+            },
+            {
+              "displayName": "Editor Only sample",
+              "description": "Contains simple EditorWindow with EditorGUILayout",
+              "path": "Samples~/EditorOnly"
+            },
+            {
+              "displayName": "Runtime Only sample",
+              "description": "Contains simple MonoBehavior with CL4EE localization attributes.",
+              "path": "Samples~/EditorOnly"
+            }
+          ]
         }
       }
     },
