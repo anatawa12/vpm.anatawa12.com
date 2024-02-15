@@ -1877,6 +1877,21 @@
           "url": "https://github.com/suzuryg/face-emo/releases/download/1.5.0/jp.suzuryg.face-emo-1.5.0.zip?",
           "repo": "https://suzuryg.github.io/vpm-repos/vpm.json",
           "vpmDependencies": {}
+        },
+        "1.5.1": {
+          "name": "jp.suzuryg.face-emo",
+          "displayName": "FaceEmo",
+          "version": "1.5.1",
+          "unity": "2019.4",
+          "description": "Face emote configuration tool for VRChat Avatars 3.0",
+          "author": {
+            "name": "suzuryg",
+            "email": "suzuryg@outlook.com",
+            "url": "https://suzuryg.github.io/face-emo/"
+          },
+          "url": "https://github.com/suzuryg/face-emo/releases/download/1.5.1/jp.suzuryg.face-emo-1.5.1.zip?",
+          "repo": "https://suzuryg.github.io/vpm-repos/vpm.json",
+          "vpmDependencies": {}
         }
       }
     },
