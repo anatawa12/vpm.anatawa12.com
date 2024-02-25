@@ -4474,7 +4474,9 @@
           "legacyFolders": {
             "Assets/Lyuma/Av3Emulator": "e42c5d0b3e2b3f64e8a88c225b3cef62"
           },
-          "yanked": true,
+          "vrc-get": {
+            "yanked": "This package is discontinued. Please use the official Av3Emulator package.",
+          },
           "url": "https://vpm.anatawa12.com/av3emulator/package-3.0.0.zip?"
         },
         "3.0.1": {
@@ -4493,7 +4495,9 @@
           "legacyFolders": {
             "Assets/Lyuma/Av3Emulator": "e42c5d0b3e2b3f64e8a88c225b3cef62"
           },
-          "yanked": true,
+          "vrc-get": {
+            "yanked": "This package is discontinued. Please use the official Av3Emulator package.",
+          },
           "url": "https://vpm.anatawa12.com/av3emulator/package-3.0.1.zip?"
         },
         "3.0.2": {
@@ -4512,7 +4516,9 @@
           "legacyFolders": {
             "Assets/Lyuma/Av3Emulator": "e42c5d0b3e2b3f64e8a88c225b3cef62"
           },
-          "yanked": true,
+          "vrc-get": {
+            "yanked": "This package is discontinued. Please use the official Av3Emulator package.",
+          },
           "url": "https://vpm.anatawa12.com/av3emulator/package-3.0.2.zip?"
         },
         "3.0.3": {
@@ -4531,7 +4537,9 @@
           "legacyFolders": {
             "Assets/Lyuma/Av3Emulator": "e42c5d0b3e2b3f64e8a88c225b3cef62"
           },
-          "yanked": true,
+          "vrc-get": {
+            "yanked": "This package is discontinued. Please use the official Av3Emulator package.",
+          },
           "url": "https://vpm.anatawa12.com/av3emulator/package-3.0.3.zip?"
         }
       }
