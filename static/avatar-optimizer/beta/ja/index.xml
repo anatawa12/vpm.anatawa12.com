@@ -1,62 +1,22 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Introduction on Avatar Optimizer (1.7.0-beta.3)</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/</link><description>Recent content in Introduction on Avatar Optimizer (1.7.0-beta.3)</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/beta/ja/index.xml" rel="self" type="application/rss+xml"/><item><title>基本コンセプト</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/basic-concept/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/basic-concept/</guid><description>Avatar Optimizerの基本コンセプト # このページでは、Avatar Optimizerの基本コンセプトについて説明します。
-Avatar Optimizerとは？ # Avatar Optimizerは、アバターを最適化するためのツールです。 このツールはVRChatアバター向けに設計されていましたが、NDMFでサポートされている他のプラットフォームのアバターにも使用できるかもしれません。
-VRChat以外のプラットフォームのアバターに対するサポートは完全にコミュニティベースであり、Avatar Optimizerの開発チームにはサポートされない場合があります。
-Avatar Optimizerの目的は何ですか？ # このツールは、アバターの見た目を殆ど変化させることなく、簡単にアバターのパフォーマンスを最適化できるようにすることを目的として設計されています。 そのため、このツールでアバターの振る舞いを変更することは意図していません。
-意図していない動作によるアバターの振る舞いの変更は、一部のユースケースで有用かもしれませんが、バグとして扱われます。
-そのバグが殆どのユースケースに影響を与えない場合、バグの修正を一時的に見合わせることがありますが、バグによる振る舞いは他のコンポーネントで考慮されないかもしれません。\
-例えば、1.7.x以前のAAO Merge Skinned Meshコンポーネントは同名のBlendShapeを統合します。
-BlendShapeを統合すると、そのBlendShapeに対するアニメーションによる動作が変わってしまうため、これはバグとして扱われます。
-このバグを使用して、あるSkinned Mesh RendererのBlendShapeに対するアニメーションを、別のSkinned Mesh RendererのBlendShapeに対しても同時に作用させることができます。
-しかし、これはサポートされていない動作であり、他のコンポーネントが動作を壊すかもしれません。
-例えば、AAO Trace and OptimizeコンポーネントのBlendShapeを自動的に固定・除去するは、このバグによってAAO Merge Skinned Meshコンポーネントで統合されて動くようになる可能性があるBlendShapeであっても、固定・除去します。
-Avatar Optimizerの振る舞いは将来のバージョンでも安定していますか？ # Avatar Optimizerはバージョン管理にセマンティックバージョニングを使用しており、コンポーネントの振る舞いには主にセマンティックバージョニングのルールを適用しています。
-すなわち、アバターに既に付いているコンポーネントの振る舞いは、同じメジャーバージョン内では変更されないことが保証されます。
-既存のコンポーネントに対して新しい機能が追加された場合には、それ以降にアバターに新たに追加されたコンポーネントの振る舞いのみ、それ以前のものから変更されることがあります。
-一部のバグでは、そのバグを修正することによってコンポーネントの振る舞いが大幅に変更される場合があります。 そのような場合には、新たな振る舞いを有効化するためのオプションを追加します。
-アバターに既に付いているコンポーネントでは、このオプションをデフォルトで無効にすることで以前までの振る舞いを維持し、 アバターに新たに追加されたコンポーネントでは、このオプションをデフォルトで有効にすることで、バグが修正された新しい動作を行います。
-こういったコンポーネントの振る舞いの維持には、いくつか例外があります。
-コンポーネントのデバッグ専用の機能は、上記のルールに従うことが保証されません。
-例えば、AAO Trace and OptimizeコンポーネントのAdvanced Optionsは変更される可能性が常にあります。 実験的な機能としてマークされている機能は、上記のルールに従うことが保証されません。 AAO Trace and Optimizeコンポーネントの振る舞いは、新しい最適化を実装することによって変更される可能性があります。
-ただし、AAO Trace and Optimizeコンポーネントのデフォルト設定では、アバターの振る舞いや見た目に影響を与えないようにしているため、この変更はアバターに一切影響を与えないはずです。 これら以外で不自然な動作や奇妙な動作などに遭遇した場合は、まずFAQをご覧ください。</description></item><item><title>よくある質問</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/faq/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/faq/</guid><description>よくある質問 # Avatar Optimizerに関するよくある質問のリストです。 他に質問がある場合は、GitHub DiscussionsまたはFediverseでお気軽にお尋ねください。
-AAO Trace and Optimizeコンポーネントを使用すると、アバターの振る舞いや見た目が変わる # AAO Trace and Optimizeコンポーネントを使用して、アバターの振る舞いや見た目が変わってしまった場合は、(アバターがAvatar Optimizerの他のコンポーネントのバグ挙動に依存していない限り、)全てバグです。 GitHub IssuesやMisskey (Mastodon)、Twitterなどから報告をお願いします。
-メッシュが視界の中にあるのに非表示になってしまう # 多くの場合、この問題はSkinned Mesh RendererのRoot Boneを指定し忘れていることが原因です。
-AAO Merge Skinned MeshコンポーネントはRoot Boneの設定を自動的には行わないため、統合先のメッシュ1のRoot Boneを手動で設定する必要があります。
-Modular Avatarを使用している場合は、アバターのルートにMA Mesh Settingsコンポーネントを追加して設定することにより、アバター全体のRoot BoneとBoundsを設定することができます。
-AAO Merge Skinned Meshコンポーネントで統合したメッシュの明るさが他のメッシュと異なる # 多くの場合、この問題は統合先のメッシュのAnchor Overrideを指定し忘れていることが原因です。
-AAO Merge Skinned MeshコンポーネントはAnchor Overrideの設定を自動的には行わないため、統合先のメッシュ1のAnchor Overrideを手動で設定する必要があります。
-Modular Avatarを使用している場合は、アバターのルートにMA Mesh Settingsコンポーネントを追加して設定することにより、アバター全体のAnchor Overrideを設定することができます。
-AAO Merge Skinned Meshコンポーネントを使用すると、マテリアルプロパティに対するアニメーションが競合する # この問題は既知のバグであり、現時点では競合してしまう仕様です。
-マテリアルプロパティに対してアニメーションされるメッシュを統合する際は、競合しないようご注意ください。 競合する場合は警告が表示されるので、そちらを確認してください。
-この問題のissue: #340
-AAO Merge Skinned Meshコンポーネントを使用すると、マテリアルスロットに対するアニメーションが競合する # AAO Merge Skinned Meshコンポーネントは、統合対象のメッシュで同じマテリアルを使用しているマテリアルスロットをデフォルトで統合します。 これにはアニメーションされるマテリアルスロットも含まれます。</description></item><item><title>Changelog</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/changelog/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/changelog/</guid><description>Changelog # このプロジェクトの重要な変更点は以下のとおりです。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Introduction on Avatar Optimizer (1.6.10)</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/</link><description>Recent content in Introduction on Avatar Optimizer (1.6.10)</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/beta/ja/index.xml" rel="self" type="application/rss+xml"/><item><title>Changelog</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/changelog/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/changelog/</guid><description>Changelog # このプロジェクトの重要な変更点は以下のとおりです。
 Keep a Changelogをベースにした形式で表記されています。
-1.7.0-beta.3 - 2024-04-04 # Added # Merge non Direct BlendTree in MergeDirectBlendTree #980 Support bool parameters in Entry/Exit to BlendTree optimization #982 Fixed # Skip Merge Direct BlendTree Option is flipped #978 1.7.0-beta.2 - 2024-04-01 # Changed # Relax preconditions of Entry/Exit to BlendTree optimization #970 Fixed # Some animation is Falsely detected as constant #968 Activeness of renderer GameObject is not correctly considered #972 Exclusions is not working for Automatic Merge Skinned Mesh #972 1.</description></item><item><title>Avatar Global Components</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/component-kind/avatar-global-components/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/component-kind/avatar-global-components/</guid><description> Avatar Global Components # Avatar Global Componentはアバターのルートに追加することでアバター全体に作用するコンポーネントです。
+1.6.10 - 2024-04-05 # Fixed # Missing Reference Exception with Trace and Optimize #986 1.6.9 - 2024-03-27 # 1.6.9-beta.3 - 2024-03-24 # Fixed # ContextHolder become unknown component in NDMF 1.4.0 #946 1.6.9-beta.2 - 2024-03-22 # Added # Support for VRCSDK 3.5.2-beta.2 #935 1.6.9-beta.1 - 2024-03-16 # Added # Support for VRCSDK 3.5.2-beta.1 #926 1.6.8 - 2024-03-12 # Fixed # If some component refers external component, internal error #921 1.</description></item><item><title>Avatar Global Components</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/component-kind/avatar-global-components/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/component-kind/avatar-global-components/</guid><description> Avatar Global Components # Avatar Global Componentはアバターのルートに追加することでアバター全体に作用するコンポーネントです。
 &amp;ldquo;アバターのルート&amp;quot;とは、アバターの最も上の階層にあるGameObjectのことです。 例えばVRChat用アバターの場合、VRC Avatar DescriptorコンポーネントがあるGameObjectが&amp;quot;アバターのルート&amp;quot;です。
 Avatar Global Componentをアバターのルート以外に追加した場合、インスペクター上にエラーが表示され、コンポーネントは一切動作しません。
 以下のコンポーネントがAvatar Global Componentです。
-Trace And Optimize UnusedBonesByReferencesTool</description></item><item><title>Trace And Optimize</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/trace-and-optimize/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/trace-and-optimize/</guid><description>Trace And Optimize (T&amp;amp;O) # 昔のバージョンではAutomatic Configurationという名前でした
+Trace And Optimize UnusedBonesByReferencesTool</description></item><item><title>Trace And Optimize</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/trace-and-optimize/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/trace-and-optimize/</guid><description>Trace And Optimize # 昔のバージョンではAutomatic Configurationという名前でした
 このコンポーネントは、アバターを走査して自動的にできる限りの最適化を行います。 チェックボックスで自動的に行う最適化を選択することが出来ます。
 このコンポーネントはアバターのルートに追加してください。(分類: Avatar Global Component)
-Trace and Optimizeは「見た目に絶対に影響させてはならない」という前提の下で、かなり慎重に作られています。
-そのため、見た目に影響が出たり、何らかのギミックが機能しなくなったりといった問題が発生した場合はすべて、例外なくAAOのバグとなります。
-従って、問題が起きた際は報告していただければ、出来る限り修正いたします。 現在、以下の機能を使った自動最適化が可能です。
-BlendShapeを自動的に固定・除去する
-アニメーションなどで使われていないか、常に同じ値になっているBlendShapeを自動的に固定・除去します。 使われていないObjectを自動的に削除する
+現在、以下の機能を使った自動最適化が可能です。
+BlendShapeを自動的に固定・削除する
+アニメーションなどで使われていないBlendShapeを自動的に固定・除去します。 使われていないObjectを自動的に削除する
 アニメーションなどを走査して、使われていないObject(GameObjectやコンポーネントなど)を自動的に削除します。 endボーンを残す
 親が削除されていないendボーン1を削除しないようにします。 面積がゼロのポリゴンを自動的に削除する
 面積がゼロのポリゴンを削除します。 PhysBoneの設定を最適化する
-PhysBoneの設定について、以下の最適化を行います。 全く同じ設定のPhysBone Colliderを1つに統合します。 不要な場合にIs Animatedのチェックを外します。 アニメーターの最適化
-Animator Controllerを最適化します。詳細はこのセクションを参照してください。 スキンメッシュレンダラーを統合する
-分かれている必要のないスキンメッシュレンダラーを統合します。 マテリアルスロットの前後関係を変えることを許可する
-マテリアルスロットの前後関係を変えることで、アバターの描画負荷を減らせる場合があります。
-多くの場合、マテリアルスロットの前後関係は特に意味を持ちませんが、描画順に影響を与える場合もあるようです。 また、以下の設定で自動設定を調節できます。
+PhysBoneの設定について、以下の最適化を行います。 全く同じ設定のPhysBone Colliderを1つに統合します。 不要な場合にIs Animatedのチェックを外します。 また、以下の設定で自動設定を調節できます。
 MMDワールドとの互換性
 MMDワールドで使われるBlendShapeを固定しないなど、MMDワールドとの互換性を考慮した軽量化を行います。 他に、バグの回避などに使用するための高度な設定がありますが、それらは不安定であり、不用意に変更するべきではありません。 それらの機能については英語のTooltipやソースコード、または開発者の指示を参考にしてください。
-アニメーターの最適化 # この機能では、アニメーターに対して以下の最適化を行います。
-Entry-Exit式のレイヤーをBlendTreeに変換
-アニメーターコントローラーのレイヤーをできる限りBlendTreeに変換します。 Direct BlendTreeを統合
-複数のDirect BlendTreeレイヤーを1つに統合します。 使われていないレイヤーを削除する
-StateやTransitionがないレイヤーを削除します。 AAOは名前がend(大文字小文字の区別なし)で終わるボーンをendボーンとして扱います。&amp;#160;&amp;#x21a9;&amp;#xfe0e;</description></item><item><title>UnusedBonesByReferencesTool</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/unused-bones-by-references-tool/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/unused-bones-by-references-tool/</guid><description>UnusedBonesByReferencesTool # EditorOnlyなメッシュからしか参照がないボーンをEditorOnlyにします。
+AAOは名前がend(大文字小文字の区別なし)で終わるボーンをendボーンとして扱います。&amp;#160;&amp;#x21a9;&amp;#xfe0e;</description></item><item><title>UnusedBonesByReferencesTool</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/unused-bones-by-references-tool/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/unused-bones-by-references-tool/</guid><description>UnusedBonesByReferencesTool # EditorOnlyなメッシュからしか参照がないボーンをEditorOnlyにします。
 このコンポーネントはアバターのルートに追加してください。(分類: Avatar Global Component)
 このコンポーネントは非推奨です。代わりにTrace and Optimizeの使われていないObjectを自動的に削除するを使用してください。 このコンポーネントの動作が改善されることはありません。 これはNarazakaさんのUnusedBonesByReferencesToolを移植したものですが、ビルド時に実行します。</description></item><item><title>Edit Skinned Mesh Components</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/component-kind/edit-skinned-mesh-components/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/component-kind/edit-skinned-mesh-components/</guid><description> Edit Skinned Mesh Components # Edit Skinned Mesh ComponentはSkinnedMeshRendererコンポーネントのあるGameObjectに追加することで、そのSkinnedMeshRendererに作用するコンポーネントです。
 このコンポーネントには2つの小分類があります。
@@ -65,25 +25,25 @@ Source Component # メッシュなどを生成するコンポーネントです�
 MergeSkinnedMesh
 このコンポーネントは他の(Skinned)MeshRendererを基にメッシュを生成します。 Modifying Component # 既にあるメッシュなどを(複製して)編集するコンポーネントです。
 以下のコンポーネントがModifying Edit Skinned Mesh Componentです。
-Remove Mesh By BlendShape Remove Mesh in Box Freeze BlendShape Merge ToonLit Material</description></item><item><title>Merge Skinned Mesh</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/merge-skinned-mesh/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/merge-skinned-mesh/</guid><description>Merge Skinned Mesh (MergeSMR) # 1つ以上のSkinnedMeshRendererやMeshRendererを1つのSkinnedMeshRendererに統合することが出来ます。
+Remove Mesh By BlendShape Remove Mesh in Box Freeze BlendShape Merge ToonLit Material</description></item><item><title>Merge Skinned Mesh</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/merge-skinned-mesh/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/merge-skinned-mesh/</guid><description>Merge Skinned Mesh # 1つ以上のSkinnedMeshRendererやMeshRendererを1つのSkinnedMeshRendererに統合することが出来ます。
 このコンポーネントは、メッシュを指定していないSkinnedMeshRendererコンポーネントがある新規GameObjectに追加してください。(分類: Source Edit Skinned Mesh Component)
 利点 # SkinnedMeshRendererを統合することでメッシュを変形させる処理の回数が減り、負荷が軽くなります。 また、同じマテリアルを使用しているマテリアルスロットも統合することができるので、描画負荷も減らす事ができます。
 備考 # アニメーションでメッシュのオン・オフを個別に切り替えたりすることはできなくなりますが、マテリアルに関するアニメーションは統合前のものがそのまま機能します。
-このコンポーネントはメッシュ・マテリアル・BlendShape・Boundsを設定しますが、その他の設定については変更しません。 AnchorOverride等の設定を行うには、MergeSkinnedMeshのあるGameObject上のSkinnedMeshRendererコンポーネントを編集してください。
+このコンポーネントはメッシュ・マテリアル・BlendShape・Boundsを設定しますが、その他の設定については変更しません。 AnchorOverride等の設定を行うには、MergeSkinnedMeshのあるGameObject上のSkinnedMeshRendererを編集してください。
 また、このコンポーネントは、服のメッシュや体のメッシュを統合するのには適していますが、顔のメッシュを統合するのには適していません。
 BlendShapeは、頂点とBlendShapeの数に比例して負荷が大きくなる機能です。 顔のメッシュは一般的に多くのBlendShapeを持っているため、統合対象に含めると頂点数の増加により負荷が大きくなってしまいます。
-同様に、体や服のメッシュのBlendShapeは固定・除去することを推奨します。 Freeze BlendShapeコンポーネントを統合対象・統合先のSkinnedMeshRendererコンポーネントのいずれか(または両方)に追加して、BlendShapeを固定・除去することが出来ます。 Trace and OptimizeコンポーネントのBlendShapeを自動的に固定・除去するによっても同様の効果を得ることが出来ます。
-いくつかのケースでは、Trace And Optimizeが自動で同様の処理を行うため、このコンポーネントを使用する必要がないかもしれません。 設定 # スキンメッシュレンダラー # 統合対象のSkinnedMeshRendererの一覧です。
+同様に、体や服のメッシュのBlendShapeは固定・除去することを推奨します。 Freeze BlendShapeコンポーネントを統合対象・統合先のSkinnedMeshRendererのいずれか(または両方)に追加して、BlendShapeを固定・除去することが出来ます。 Trace and OptimizeコンポーネントのBlendShapeを自動的に固定・削除するによっても同様の効果を得ることが出来ます。
+設定 # スキンメッシュレンダラー # 統合対象のSkinnedMeshRendererの一覧です。
 一番下の&amp;quot;None&amp;quot;と書いてある要素にドラッグ&amp;amp;ドロップすることにより対象を追加し、Noneに戻すことにより対象を一覧から取り除きます。
 静的レンダラー # 統合対象のMeshRendererの一覧です。
 静的メッシュの移動・回転・変形をボーンで再現します。
 一番下の&amp;quot;None&amp;quot;と書いてある要素にドラッグ&amp;amp;ドロップすることにより対象を追加し、Noneに戻すことにより対象を一覧から取り除きます。
 空のレンダラーオブジェクトを削除する # 統合対象のSkinnedMeshRendererが属しているGameObjectにSkinnedMeshRenderer以外のコンポーネントが無い場合、そのGameObjectをヒエラルキーから取り除くオプションです。
-有効無効状態が統合先と異なるレンダラーを統合しない # 統合先のSkinnedMeshRendererと有効無効の状態が異なる(Skinned)MeshRendererが統合対象の中に含まれている場合、それらをビルド時に統合対象から除外するオプションです。
+有効無効状態が統合先と異なるレンダラーを統合しない # 統合先のSkinnedMeshRendererと有効無効の状態が異なるSkinnedMeshRendererやMeshRendererが統合対象の中に含まれている場合、それらをビルド時に統合対象から除外するオプションです。
 マテリアルの統合 # 複数の(Skinned)MeshRendererで使用されているマテリアルがある場合、ここに一覧で表示されます。
 統合するにチェックを入れることで、それらのマテリアルスロットを1つに統合します。これはDrawCallを削減します。</description></item><item><title>Freeze BlendShape</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/freeze-blendshape/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/freeze-blendshape/</guid><description>Freeze BlendShape # BlendShapeをメッシュに固定し、除去することが出来ます。
 このコンポーネントは、SkinnedMeshRendererコンポーネントのあるGameObjectに追加してください。(分類: Modifying Edit Skinned Mesh Component)
-Trace And Optimizeが自動で同様の処理を行うため、大抵の場合、このコンポーネントを使用する必要はありません。 利点 # BlendShapeの固定・除去には以下の効果があります。
+利点 # BlendShapeの固定・除去には以下の効果があります。
 BlendShapeの値が0以外のときは処理負荷が発生するため、値をアニメーション等で変更しないBlendShapeは固定すると負荷が軽くなります。 値が常に0である場合でも、固定することでアバターの容量を削減することができます。 備考 # 固定すると、アニメーションでの値変更は出来なくなります。
 設定 # BlendShapeの一覧が表示されるので、固定・除去対象のBlendShapeを選択してください。</description></item><item><title>Merge ToonLit Material</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/merge-toonlit-material/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/merge-toonlit-material/</guid><description>Merge ToonLit Material # 手動でテクスチャを並び替えることにより、VRChat/Mobile/Toon Litのマテリアルを1つのマテリアルに統合します。
 このコンポーネントは、SkinnedMeshRendererコンポーネントのあるGameObjectに追加してください。(分類: Modifying Edit Skinned Mesh Component)
@@ -91,26 +51,19 @@ BlendShapeの値が0以外のときは処理負荷が発生するため、値を
 設定 # 統合したマテリアルを追加をクリックして、統合後のマテリアルを追加します。 それぞれのマテリアルについて、統合対象のマテリアルを複数選択することが出来ます。 統合対象を追加をクリックするか、ドロップダウンメニューからマテリアルを選択してください。 統合対象のマテリアルについて、テクスチャの配置場所を設定する必要があります。 X, Y, W, Hの値を調整してテクスチャをお好みの位置にを合わせてください。 プレビューを生成をクリックすると、統合後のテクスチャのプレビューがそれぞれ生成されます。</description></item><item><title>Remove Mesh By BlendShape</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/remove-mesh-by-blendshape/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/remove-mesh-by-blendshape/</guid><description>Remove Mesh By BlendShape # 指定されたBlendShapeによって動かされる頂点とそのポリゴンを削除します。
 このコンポーネントは、SkinnedMeshRendererコンポーネントのあるGameObjectに追加してください。(分類: Modifying Edit Skinned Mesh Component)
 利点 # 服で隠れていたりして見えないような部分のメッシュを削除すると、見た目に影響させずに描画負荷やBlendShapeの処理負荷などを減らして軽量化することができます。 このコンポーネントを使用すると、多くの素体に含まれている貫通防止用のBlendShapeを利用して簡単にメッシュを削除することができます。
-設定 # BlendShapeの一覧が表示されるので、BlendShapeを選択してください。 もし選択されたBlendShapeが頂点を許容差より大きく動かしていたら、その頂点を削除します。
-消えて欲しい箇所が消えない場合は許容差の値を大きく、 消えて欲しくない箇所が消えてしまう場合は許容差の値を小さくしましょう。
-プレビューのために、切り替えたBlendShapeの値を自動的に変更するを有効にすると、BlendShapeの指定を切り替えた時に、その値を自動的に100か0に設定します。</description></item><item><title>Remove Mesh in Box</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/remove-mesh-in-box/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/remove-mesh-in-box/</guid><description>Remove Mesh in Box # 箱で指定した範囲内のポリゴンを削除します。
+設定 # BlendShapeの一覧が表示されるので、BlendShapeを選択してください。 もし選択されたBlendShapeが頂点を許容差より大きく動かしていたら、その頂点を削除します。</description></item><item><title>Remove Mesh in Box</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/remove-mesh-in-box/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/remove-mesh-in-box/</guid><description>Remove Mesh in Box # 箱で指定した範囲内のポリゴンを削除します。
 このコンポーネントは、SkinnedMeshRendererコンポーネントのあるGameObjectに追加してください。(分類: Modifying Edit Skinned Mesh Component)
 利点 # 服で隠れていたりして見えないような部分のメッシュを削除すると、見た目に影響させずに描画負荷やBlendShapeの処理負荷などを減らして軽量化することができます。
 設定 # 数値を調整して箱を追加します。 それぞれの箱について、中心位置、大きさ、角度を変更することが出来ます。(ローカル座標で指定します)
 Edit This Boxをクリックして下図のようなギズモを表示します。箱の大きさ、位置、角度を調整することが出来ます。
 例 # 上側の図にある箱の範囲内のメッシュが、下側の図のように削除されます。</description></item><item><title>Clear Endpoint Position</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/clear-endpoint-position/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/clear-endpoint-position/</guid><description>Clear Endpoint Position # このコンポーネントは、Endpoint Positionの値を0に置換し、_EndPhysBoneGameObjectを追加します。
 このコンポーネントはPhysBoneコンポーネントがあるGameObjectに追加してください。
-今のところ、このコンポーネントに設定項目はありませんが、ボタンが1つあります。 適用して今すぐcomponentを削除するをクリックすると、 この操作が適用され、コンポーネントが削除されます。 アバターを制作するときに便利かもしれません。</description></item><item><title>Merge Bone</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/merge-bone/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/merge-bone/</guid><description> Merge Bone # Trace And Optimizeが自動で同様の処理を行うため、大抵の場合、このコンポーネントを使用する必要はありません。 このコンポーネントがGameObjectに付いている場合、そのGameObjectは親GameObjectに統合されて取り除かれます。 また、統合対象にその他のコンポーネントが付属している場合はそれらも削除されます。
+今のところ、このコンポーネントに設定項目はありませんが、ボタンが1つあります。 適用して今すぐcomponentを削除するをクリックすると、 この操作が適用され、コンポーネントが削除されます。 アバターを制作するときに便利かもしれません。</description></item><item><title>Merge Bone</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/merge-bone/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/merge-bone/</guid><description> Merge Bone # このコンポーネントがGameObjectに付いている場合、そのGameObjectは親GameObjectに統合されて取り除かれます。 また、統合対象にその他のコンポーネントが付属している場合はそれらも削除されます。
 もし親のGameObjectにもMerge Boneコンポーネントが付いていた場合、2つのGameObjectはその更に親のGameObjectに統合されます。
 このコンポーネントが付いているGameObjectの全ての子GameObjectは、その親GameObjectの子になります。
-設定 # 名前の競合を避ける
-統合時に子GameObjectの名前を変更することで、名前の重複によってアニメーションが正しく動かなくなる問題を回避します。</description></item><item><title>Merge PhysBone</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/merge-physbone/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/merge-physbone/</guid><description>Merge PhysBone (MergePB) # このコンポーネントは、複数のPhysBoneコンポーネントを1つに統合します。 MultiChildTypeはIgnoreになります。
+設定 # 名前の競合を避ける 統合時に子GameObjectの名前を変更することで、名前の重複によってアニメーションが正しく動かなくなる問題を回避します。</description></item><item><title>Merge PhysBone</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/merge-physbone/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/merge-physbone/</guid><description>Merge PhysBone # このコンポーネントは、複数のPhysBoneコンポーネントを1つに統合します。 MultiChildTypeはIgnoreになります。
 このコンポーネントは新規GameObjectに追加してください。
-備考 # 統合対象は同じGameObjectの子である必要があります。 代わりにこのGameObjectの子にするオプションを使用することも出来ます。
-このコンポーネントは、PhysBoneのルートとなるGameObjectを新たに作成し、統合対象のPhysBoneによって揺らされるボーンを、作成したGameObjectの子にします。
-なお、ルートとなっているGameObjectも、PhysBoneによって影響を受けるボーンの1つとみなされるため、各Merge PhysBoneごとにPhysBone Affected Transformsの数が1つ増えてしまいます。 このコンポーネントによって追加されるGameObjectがPhysBoneによって揺らされることはないため、これはVRChatのPerformance Rankシステムのバグである可能性があります。
-設定 # このGameObjectの子にする # チェックされている場合、統合対象のPhysBoneが揺らすボーンがこのGameObjectの子になるようにします。
-コンポーネント # 統合対象のPhysBoneコンポーネントの一覧です。
+設定 # コンポーネント # 統合対象のPhysBoneコンポーネントの一覧です。
 一番下の&amp;quot;None&amp;quot;と書いてある要素にドラッグ&amp;amp;ドロップすることにより対象を追加し、Noneに戻すことにより対象を一覧から取り除きます。
 オーバーライド(上書き) # 上記の設定項目の下は、PhysBoneの設定項目のようになっています。 それぞれの項目について、統合対象の項目から値をコピーする場合はCopy(すべての統合対象で値が同じ場合のみ有効)、 代わりに新しい値を設定する場合はOverrideを選択してください。
 コライダーについては、Mergeを選択して統合対象のコライダー一覧を統合することも出来ます。
@@ -123,25 +76,7 @@ Endpoint Positionについては、Clearを選択してClear Endpoint Position�
 設定 # 今のところ、このコンポーネントに設定項目はありません。
 備考 # このコンポーネントはTrace and Optimizeコンポーネントによって自動的に追加されます。 このコンポーネントを手動で追加するよりも、Trace and Optimizeを使うことをお勧めします。</description></item><item><title>Make Children</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/make-children/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/make-children/</guid><description>Make Children # ビルド時に、指定されたGameObjectをこのGameObjectの子にします。
 このコンポーネントは非推奨です。
-この機能はアバターの最適化と関係がないため、今後製作予定の非破壊アバター改変ユーティリティのコンポーネントに置き換えられる予定です。</description></item><item><title>Asset Description</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/developers/asset-description/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/developers/asset-description/</guid><description>Asset Description # Asset DescriptionはAvatar Optimizerにアセットの情報を提供するためのファイルです。
-なぜAsset Descriptionが必要なのか # アバター上の不要な要素を削除するために、Avatar Optimizerはアバターに存在するすべてのコンポーネントのことを知る必要があります。
-Avatar Optimizer v1.6.0でコンポーネントにAAOとの互換性をもたせるためのドキュメントとAPIが追加されましたが、 非破壊ツールでなく、ビルド時に処理を行わないようなツールでは、IVRCSDKPreprocessAvatarCallbackでコンポーネントを削除するのは少し面倒だろうと考えました。
-そのため、Avatar Optimizerに無視してほしい、ビルド時には意味のないコンポーネントを指定するためのシンプルな仕組みとして、Asset Descriptionがv1.7.0で追加されました。
-なお、非破壊ツールの場合については、正しくない実行順で処理が行われた場合に、Avatar Optimizerがコンポーネントを誤って削除してしまわないように、従来通りIVRCSDKPreprocessAvatarCallbackでコンポーネントを削除することを推奨します。
-Asset Descriptionの作成 # Asset Descriptionを作成するには、Projectウィンドウの右クリックメニューからCreate/Avatar Optimizer/Asset Descriptionを選択してください。
-Avatar Optimizerはすべてのファイルの中からファイル検索を行うため、Asset Descriptionの名前、場所は自由です。
-Asset Descriptionの編集 # Comment # コメント欄はメモを書くためにご自由にお使いください。 Avatar Optimizerはコメントを無視します。
-Meaningless Components # Meaningless ComponentsはAvatar Optimizerに無視してほしいコンポーネントの型の一覧です。 コンポーネントのScript Assetを指定してください。 指定されたScript Assetの型のコンポーネントと、そのサブクラスのコンポーネントはAvatar Optimizerに無視されます。
-Asset Descriptionでは実際のScene上のコンポーネントと同様に、Script AssetがguidとfileIDの形で保持されています。 そのため、クラス名を変更したとしても、シーン上のコンポーネントが壊れていない限り、Asset Descriptionでの指定も問題なく機能します。</description></item><item><title>アセットの配布について</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/developers/distributing-prefabs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/developers/distributing-prefabs/</guid><description> アセットの配布について # Avatar Optimizerは配布したいアセットを軽量化したり最適化したりするのに役立つかもしれません。 Avatar Optimizerに依存するアセットを配布する際の推奨事項をいくつか示します。
-ユーザーをAvatar Optimizer公式の配布場所に誘導する # Avatar OptimizerはMITライセンスの下で公開されているため、再配布することが認められています。 それでも、Avatar Optimizer公式の配布場所にユーザーを誘導することを強くお勧めします。
-非公式に配布されるAvatar Optimizerはバージョンが古い可能性があります。 古いバージョンのAvatar Optimizerを使用していると、公式版では既に修正されているバグに遭遇するかもしれません。 また、Avatar Optimizerは前方互換性を保証していないため、新しいバージョンから古いバージョンにダウングレードさせてしまうと、そのユーザーの環境で何らかの問題が発生する可能性があります。
-ユーザーをAvatar Optimizer公式の配布場所に誘導する際に推奨される方法は以下の通りです。
-VPMでアセットを配布する場合は、Avatar OptimizerをVPMからインストールするように指示してください。
-VPMで配布するアセットのpackage.jsonでAvatar Optimizerを依存関係として宣言し、 Avatar OptimizerのVPMリポジトリをVCCに追加するようにユーザーを誘導してください。 こちらはAvatar Optimizerの公式リポジトリをVCCに追加するためのリンクです。
-また、配布するアセットと同じVPMリポジトリにAvatar Optimizerの公式リポジトリをミラーしても構いません。 ミラーする場合は、GitHubのReleasesからミラーするのではなく、VPMリポジトリ自体をミラーしてください。 Avatar Optimizerの公式ドキュメントへのリンクを提供してください。
-こちらはAvatar Optimizer公式のインストールガイドです。 このガイドは、Avatar Optimizerを推奨される方法でインストールするようにユーザーを誘導します。 Avatar OptimizerのBoothページへのリンクを提供してください。
-BoothページはAvatar Optimizer公式の配布場所の1つです。 Boothでは、最新バージョンのVPAIインストーラーunitypackageが含まれています。 VPAIインストーラーunitypackageを同梱し、そのunitypackageをインポートするように指示してください。
-VPAIインストーラーは、Avatar OptimizerのようなVPMパッケージを、unitypackageをインポートするだけでインストールするためのツールです。 Avatar Optimizer 1.x.x用のVPAIインストーラーunitypackageをダウンロードするためのリンクはこちらです。</description></item><item><title>コンポーネントにAvatar Optimizerとの互換性をもたせる</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/developers/make-your-components-compatible-with-aao/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/developers/make-your-components-compatible-with-aao/</guid><description>コンポーネントにAvatar Optimizerとの互換性をもたせる # このページでは以下の2つのことを説明します。
+この機能はアバターの最適化と関係がないため、今後製作予定の非破壊アバター改変ユーティリティのコンポーネントに置き換えられる予定です。</description></item><item><title>コンポーネントにAvatar Optimizerとの互換性をもたせる</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/developers/make-your-components-compatible-with-aao/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/developers/make-your-components-compatible-with-aao/</guid><description>コンポーネントにAvatar Optimizerとの互換性をもたせる # このページでは以下の2つのことを説明します。
 コンポーネントはどのような場合にAvatar Optimizerと非互換になるか どのように互換性を改善するか もし質問があれば、お気軽にfediverseで@anatawa12@misskey.niri.laにご連絡ください。
 コンポーネントはどのような場合にAvatar Optimizerと非互換になるか # Avatar Optimizerが処理する時点でアバターにコンポーネントが存在している場合、そのコンポーネントはAvatar Optimizerと互換性が無い可能性があります。
 Avatar Optimizerはコンポーネント等に対するガベージコレクションシステムを実装しているため、最適化時にアバターに存在するすべてのコンポーネントのことを知る必要があります。
@@ -149,8 +84,8 @@ Avatar Optimizerはコンポーネント等に対するガベージコレクシ�
 副作用のあるコンポーネントである。 コンポーネントが参照している全てのコンポーネントに依存している。 この仮定は正しくない可能性があるため、Avatar Optimizerは未知のコンポーネントを見つけた場合に以下のような警告を生成します。
 どのように互換性を改善するか # Avatar Optimizerが処理する前にコンポーネントを削除出来る場合は、そのようにしてください。 削除出来ない場合はAvatar Optimizerにコンポーネントを登録してください。
 コンポーネントを削除する # コンポーネントを削除する方法はいくつかあります。
-ツールがNDMF1を使用した非破壊ツールの場合は、NDMFのOptimizing phaseより前、 またはOptimizing phaseの中で(BeforePluginを用いて)com.anatawa12.avatar-optimizer plugin より前にコンポーネントを削除することを推奨します。
-ツールがNDMF1を使用していない非破壊ツールの場合は、NDMFのOptimizing phaseより前にコンポーネントを削除することを推奨します。 この場合、現在のNDMFはVRCSDKのRemoveAvatarEditorOnlyの直前であるorder -1025でOptimizing phaseを実行するので、 それより小さいcallbackOrderを指定したIVRCSDKPreprocessAvatarCallbackでコンポーネントを削除してください。
+ツールがNDMF1を使用した非破壊ツールの場合は、NDMFのOptimization phaseより前、 またはOptimization phaseの中で(BeforePluginを用いて)com.anatawa12.avatar-optimizer plugin より前にコンポーネントを削除することを推奨します。
+ツールがNDMF1を使用していない非破壊ツールの場合は、NDMFのOptimization phaseより前にコンポーネントを削除することを推奨します。 この場合、現在のNDMFはVRCSDKのRemoveAvatarEditorOnlyの直前であるorder -1025でOptimization phaseを実行するので、 それより小さいcallbackOrderを指定したIVRCSDKPreprocessAvatarCallbackでコンポーネントを削除してください。
 ツールのコンポーネントがデータを保持する役割しかなく、ビルド時には意味を持っていない場合、 IVRCSDKPreprocessAvatarCallbackを用いてAvatar Optimizerが処理する前にコンポーネントを削除することを推奨します。 IVRCSDKPreprocessAvatarCallbackの順序については上記を参照してください。
 コンポーネントを登録する # ツールのコンポーネントをAvatar Optimizerの処理より後に残しておきたい場合、 Avatar Optimizerにコンポーネントの情報を登録できます。
 まず、Avatar OptimizerのAPIを呼び出すために、assembly definitionファイル2を(存在しない場合)作成してください。
@@ -158,13 +93,17 @@ Avatar Optimizerはコンポーネント等に対するガベージコレクシ�
 ツールをAvatar Optimizerに依存させたくない場合、Version Definesを使用してください。 Avatar Optimizer 1.6.0より前にはAPIが無く、Avatar Optimizer 2.0.0ではAPIの互換性を破壊する可能性があるため、 バージョンの範囲を[1.6,2.0)(または、将来的に追加されたAPIを用いる必要がある場合、より厳密に [1.7,2.0)など)のように指定することを推奨します。
 続いて、ツールのコンポーネントについてのComponentInformationを定義してください。
 #if AVATAR_OPTIMIZER &amp;amp;&amp;amp; UNITY_EDITOR [ComponentInformation(typeof(YourComponent))] internal class YourComponentInformation : ComponentInformation&amp;lt;YourComponent&amp;gt; { protected override void CollectMutations(YourComponent component, ComponentMutationsCollector collector) { // call methods on the collector to tell about the component } protected override void CollectDependency(YourComponent component, ComponentDependencyCollector collector) { // call methods on the collector to tell about the component } } #endif CollectMutationsでは、コンポーネントの処理によって変更される可能性があるプロパティを登録します。</description></item><item><title>基本的な使い方</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/tutorial/basic-usage/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/tutorial/basic-usage/</guid><description>基本的な使い方 # 自動最適化を使用する # アバターには自動的に行える最適化がいくつかあります。
-使用していないBlendShape(シェイプキー)1の除去 BlendShapeの値が0以外のときは処理負荷が発生するため、値をアニメーション等で変更しないBlendShapeは固定すると負荷が軽くなります。 値が常に0である場合でも、固定することでアバターの容量を削減することができます。 使われていないPhysBone等の削除 揺らす対象として存在するメッシュ2が常に無効になっているPhysBoneなどのように、揺らす必要のないPhysBoneが有効になっている場合は計算負荷が余分に発生してしまいます。 アニメーションしたりPhysBoneで揺らしたりすることのないボーンの統合 服のボーンを素体のボーンに入れ子状にして着せるような場合には、それ自身を動かすことがないボーンが多く発生します。そのようなボーンは余分な負荷を発生させてしまいます。 AvatarOptimizerでは、アバターのルートにAAO Trace And Optimizeコンポーネントを追加するだけで、これらの最適化を自動で行うことができます！
-アバターをアップロードする # AAO Trace and Optimizeコンポーネントを付けた状態で、試しにアバターをアップロードしてみましょう！ AAO: Avatar Optimizerは非破壊改変ツールであり、Playモードに入るときかアバターをビルドするときに処理が行われるため、アップロードを行うのに特別な手順は必要ありません。 通常と同じように、VRCSDKのControl Panelからアバターをアップロードしてください。
-ただし、Android(Quest)向けアップロードを行う場合などにおいて、Avatar Optimizerの最適化等によって制限の範囲内に収まるにも関わらず、VRCSDKのビルド前チェックの時点で制限を超過していてアップロードボタンが押せなくなっている場合には、以下の方法が使用できます。
-Manual bake avatarを使用して生成したアバターをアップロードする。
-(アバターのGameObjectを選択した後、Unityウィンドウ上部のToolsから、NDM Frameworkの中にあるManual bake avatarを押す) Sayamame-beansによるUpload without pre-checkを使用してアップロードする。 UploadせずにPerformance Rankを見る方法 # 非破壊改変ツールを使用した改変では、VRCSDKのControl Panel上のPerformance Rankはあてにならなくなります。
-その代わりとして、Playモードに入った際のPerformance Rankをanatawa12&amp;rsquo;s Gist PackのActual Performance Windowを使用して確認することができます。 詳しくはanatawa12&amp;rsquo;s Gist Packの使い方およびActual Performance Windowのドキュメントを参照してください。
-貫通防止用BlendShapeを利用してポリゴンを減らす # 服で隠れていたりして見えないような部分のメッシュを削除すると、見た目に影響させずに描画負荷やBlendShapeの処理負荷などを減らして軽量化することができます。 これを簡単に実現するために、AvatarOptimizerでは多くの素体に含まれている貫通防止用のBlendShapeを利用してメッシュを削除することができます！
-素体のメッシュにAAO Remove Mesh By BlendShapeコンポーネントを追加しましょう！
-想定外の部位が削除されてしまわないかを確認するためにプレビューのために切り替えたBlendShapeの値を自動的に変更するにチェックし、 削除したい部位の貫通防止用BlendShapeを下の一覧から選択しましょう！
-消えて欲しい箇所が消えない場合や、消えて欲しくない箇所が消えてしまう場合には、許容差の値を調整する必要があります！ 許容差は、頂点がBlendShapeによってどのぐらい動けば削除するかを決定するものです。 前者の場合は値を少し大きく、後者の場合は値を少し小さくしましょう！</description></item></channel></rss>
+使用していないBlendShape(シェイプキー)1の削除 BlendShapeの値が0以外のときは処理負荷が発生するため、値をアニメーション等で変更しないBlendShapeは固定すると負荷が軽くなります。 値が常に0である場合でも、固定することでアバターの容量を削減することができます。 使われていないPhysBone等の削除 揺らす対象として存在するメッシュが常に無効になっているPhysBoneなどのように、揺らす必要のないPhysBoneが有効になっている場合は計算負荷が余分に発生してしまいます。 アニメーションしたりPhysBoneで揺らしたりすることのないボーンの統合 服のボーンを素体のボーンに入れ子状にして着せるような場合には、それ自身を動かすことがないボーンが多く発生します。そのようなボーンは余分な負荷を発生させてしまいます。 AvatarOptimizerでは、アバターのルートにTrace And Optimizeコンポーネントを追加するだけで、これらの最適化を自動で行うことができます！
+メッシュを統合してMesh Renderersを減らす # Avatar Optimizerを使用すると簡単にSkinned Meshを統合することができます！ Skinned Meshを統合すると個別にオン・オフできなくなりますが、統合することで軽量化に繋がります！
+なぜSkinned Meshを統合するの？
+Skinned Meshを統合することでメッシュを変形させる処理の回数が減り、負荷が軽くなります。 また、MergeSkinnedMeshでは、同じマテリアルを使用しているマテリアルスロットも統合することができるので、描画負荷も減らす事ができます。
+一番単純なパターンとして、Anonちゃんを軽量化してみます。
+まず初めに、統合先のGameObjectを作りましょう。 アバターのGameObjectを右クリックから Create Empty をクリックして新たなGameObjectを作ります。 そうしたら、わかりやすい名前に変えておいてください。この記事ではAnon_Mergedとします。
+次に、Anon_MergedにMerge Skinned Meshコンポーネントを追加しましょう。
+するとMerge Skinned MeshコンポーネントとSkinned Mesh Rendererコンポーネントが追加されます。 後者が統合先のメッシュ2になります。
+統合したいメッシュをMerge Skinned Meshコンポーネントに楽に指定するために、Anon_Mergedを選択した状態でinspectorをロックしましょう。 こうすることで複数のメッシュをまとめてドラックアンドドロップできるようになります。3
+それでは、顔のメッシュであるBody以外のメッシュをHierarchyで選択し、Merge Skinned Meshコンポーネント内のSkinned Renderersにドラックアンドドロップで指定しましょう！
+なせ顔のメッシュは統合しないの？
+BlendShape(シェイプキー)は頂点数とBlendShape数の積に比例して重くなる処理です。 そのため、BlendShapeの数が多い顔のメッシュを頂点数の多い体のメッシュと統合するとかえって重くなってしまうため、顔は別のままにするのを推奨しています。
+続いて、Anon_Mergedの設定をしましょう！
+Merge Skinned Meshは諸事情4により、ボーン、メッシュ、マテリアル、BlendShape、Bounds以外の設定を自動的には行いません。 そのため、統合先のメッシュ(Merge Skinned Meshコンポーネントと同時に追加されたSkinned Mesh Rendererコンポーネント)にあるAnchor Override, Root Bone等の項目には別途手動で設定が必要です。 Anchor Overrideには素体(Body等)で設定されているものを、Root BoneにはHipsを指定すると上手くいくことが多いと思います。</description></item></channel></rss>
