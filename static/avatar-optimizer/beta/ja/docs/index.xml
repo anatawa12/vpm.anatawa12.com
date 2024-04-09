@@ -1,33 +1,3 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Docs on Avatar Optimizer (1.7.0-beta.5)</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/</link><description>Recent content in Docs on Avatar Optimizer (1.7.0-beta.5)</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/index.xml" rel="self" type="application/rss+xml"/><item><title>基本コンセプト</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/basic-concept/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/basic-concept/</guid><description>Avatar Optimizerの基本コンセプト # このページでは、Avatar Optimizerの基本コンセプトについて説明します。
-Avatar Optimizerとは？ # Avatar Optimizerは、アバターを最適化するためのツールです。 このツールはVRChatアバター向けに設計されていましたが、NDMFでサポートされている他のプラットフォームのアバターにも使用できるかもしれません。
-VRChat以外のプラットフォームのアバターに対するサポートは完全にコミュニティベースであり、Avatar Optimizerの開発チームにはサポートされない場合があります。
-Avatar Optimizerの目的は何ですか？ # このツールは、アバターの見た目を殆ど変化させることなく、簡単にアバターのパフォーマンスを最適化できるようにすることを目的として設計されています。 そのため、このツールでアバターの振る舞いを変更することは意図していません。
-意図していない動作によるアバターの振る舞いの変更は、一部のユースケースで有用かもしれませんが、バグとして扱われます。
-そのバグが殆どのユースケースに影響を与えない場合、バグの修正を一時的に見合わせることがありますが、バグによる振る舞いは他のコンポーネントで考慮されないかもしれません。\
-例えば、1.7.x以前のAAO Merge Skinned Meshコンポーネントは同名のBlendShapeを統合します。
-BlendShapeを統合すると、そのBlendShapeに対するアニメーションによる動作が変わってしまうため、これはバグとして扱われます。
-このバグを使用して、あるSkinned Mesh RendererのBlendShapeに対するアニメーションを、別のSkinned Mesh RendererのBlendShapeに対しても同時に作用させることができます。
-しかし、これはサポートされていない動作であり、他のコンポーネントが動作を壊すかもしれません。
-例えば、AAO Trace and OptimizeコンポーネントのBlendShapeを自動的に固定・除去するは、このバグによってAAO Merge Skinned Meshコンポーネントで統合されて動くようになる可能性があるBlendShapeであっても、固定・除去します。
-Avatar Optimizerの振る舞いは将来のバージョンでも安定していますか？ # Avatar Optimizerはバージョン管理にセマンティックバージョニングを使用しており、コンポーネントの振る舞いには主にセマンティックバージョニングのルールを適用しています。
-すなわち、アバターに既に付いているコンポーネントの振る舞いは、同じメジャーバージョン内では変更されないことが保証されます。
-既存のコンポーネントに対して新しい機能が追加された場合には、それ以降にアバターに新たに追加されたコンポーネントの振る舞いのみ、それ以前のものから変更されることがあります。
-一部のバグでは、そのバグを修正することによってコンポーネントの振る舞いが大幅に変更される場合があります。 そのような場合には、新たな振る舞いを有効化するためのオプションを追加します。
-アバターに既に付いているコンポーネントでは、このオプションをデフォルトで無効にすることで以前までの振る舞いを維持し、 アバターに新たに追加されたコンポーネントでは、このオプションをデフォルトで有効にすることで、バグが修正された新しい動作を行います。
-こういったコンポーネントの振る舞いの維持には、いくつか例外があります。
-コンポーネントのデバッグ専用の機能は、上記のルールに従うことが保証されません。
-例えば、AAO Trace and OptimizeコンポーネントのAdvanced Optionsは変更される可能性が常にあります。 実験的な機能としてマークされている機能は、上記のルールに従うことが保証されません。 AAO Trace and Optimizeコンポーネントの振る舞いは、新しい最適化を実装することによって変更される可能性があります。
-ただし、AAO Trace and Optimizeコンポーネントのデフォルト設定では、アバターの振る舞いや見た目に影響を与えないようにしているため、この変更はアバターに一切影響を与えないはずです。 これら以外で不自然な動作や奇妙な動作などに遭遇した場合は、まずFAQをご覧ください。</description></item><item><title>よくある質問</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/faq/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/faq/</guid><description>よくある質問 # Avatar Optimizerに関するよくある質問のリストです。 他に質問がある場合は、GitHub DiscussionsまたはFediverseでお気軽にお尋ねください。
-AAO Trace and Optimizeコンポーネントを使用すると、アバターの振る舞いや見た目が変わる # AAO Trace and Optimizeコンポーネントを使用して、アバターの振る舞いや見た目が変わってしまった場合は、(アバターがAvatar Optimizerの他のコンポーネントのバグ挙動に依存していない限り、)全てバグです。 GitHub IssuesやMisskey (Mastodon)、Twitterなどから報告をお願いします。
-メッシュが視界の中にあるのに非表示になってしまう # 多くの場合、この問題はSkinned Mesh RendererのRoot Boneを指定し忘れていることが原因です。
-AAO Merge Skinned MeshコンポーネントはRoot Boneの設定を自動的には行わないため、統合先のメッシュ1のRoot Boneを手動で設定する必要があります。
-Modular Avatarを使用している場合は、アバターのルートにMA Mesh Settingsコンポーネントを追加して設定することにより、アバター全体のRoot BoneとBoundsを設定することができます。
-AAO Merge Skinned Meshコンポーネントで統合したメッシュの明るさが他のメッシュと異なる # 多くの場合、この問題は統合先のメッシュのAnchor Overrideを指定し忘れていることが原因です。
-AAO Merge Skinned MeshコンポーネントはAnchor Overrideの設定を自動的には行わないため、統合先のメッシュ1のAnchor Overrideを手動で設定する必要があります。
-Modular Avatarを使用している場合は、アバターのルートにMA Mesh Settingsコンポーネントを追加して設定することにより、アバター全体のAnchor Overrideを設定することができます。
-AAO Merge Skinned Meshコンポーネントを使用すると、マテリアルプロパティに対するアニメーションが競合する # この問題は既知のバグであり、現時点では競合してしまう仕様です。
-マテリアルプロパティに対してアニメーションされるメッシュを統合する際は、競合しないようご注意ください。 競合する場合は警告が表示されるので、そちらを確認してください。
-この問題のissue: #340
-AAO Merge Skinned Meshコンポーネントを使用すると、マテリアルスロットに対するアニメーションが競合する # AAO Merge Skinned Meshコンポーネントは、統合対象のメッシュで同じマテリアルを使用しているマテリアルスロットをデフォルトで統合します。 これにはアニメーションされるマテリアルスロットも含まれます。</description></item><item><title>Changelog</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/changelog/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/changelog/</guid><description>Changelog # このプロジェクトの重要な変更点は以下のとおりです。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Docs on Avatar Optimizer (1.6.12)</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/</link><description>Recent content in Docs on Avatar Optimizer (1.6.12)</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/index.xml" rel="self" type="application/rss+xml"/><item><title>Changelog</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/changelog/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/changelog/</guid><description>Changelog # このプロジェクトの重要な変更点は以下のとおりです。
 Keep a Changelogをベースにした形式で表記されています。
-1.7.0-beta.5 - 2024-04-07 # Added # Components API for Scripting Usage #976 Fixed # Fix skipped parameter values in Entry/Exit to BlendTree optimization #991 1.6.11 - 2024-04-07 # Fixed # Bounds become broken if Update When Offscreen is enabled #990 1.7.0-beta.4 - 2024-04-05 # Changed # Renamed MergeDirectBlendTree(Layers) to MergeBlendTreeLayer #984 1.6.10 - 2024-04-05 # Fixed # Missing Reference Exception with Trace and Optimize #986 1.</description></item></channel></rss>
+1.6.12 - 2024-04-09 # Removed # Activeness Optimization for Constraint component #996 The constraint component is too complex to optimize correctly and reliably 1.6.11 - 2024-04-07 # Fixed # Bounds become broken if Update When Offscreen is enabled #990 1.6.10 - 2024-04-05 # Fixed # Missing Reference Exception with Trace and Optimize #986 1.6.9 - 2024-03-27 # 1.6.9-beta.3 - 2024-03-24 # Fixed # ContextHolder become unknown component in NDMF 1.</description></item></channel></rss>
