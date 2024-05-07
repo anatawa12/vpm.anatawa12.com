@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Introduction on Avatar Optimizer (1.7.0)</title><link>https://vpm.anatawa12.com/avatar-optimizer/ja/</link><description>Recent content in Introduction on Avatar Optimizer (1.7.0)</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/ja/index.xml" rel="self" type="application/rss+xml"/><item><title>基本コンセプト</title><link>https://vpm.anatawa12.com/avatar-optimizer/ja/docs/basic-concept/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/ja/docs/basic-concept/</guid><description>Avatar Optimizerの基本コンセプト # このページでは、Avatar Optimizerの基本コンセプトについて説明します。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Introduction on Avatar Optimizer (1.7.1)</title><link>https://vpm.anatawa12.com/avatar-optimizer/ja/</link><description>Recent content in Introduction on Avatar Optimizer (1.7.1)</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/ja/index.xml" rel="self" type="application/rss+xml"/><item><title>基本コンセプト</title><link>https://vpm.anatawa12.com/avatar-optimizer/ja/docs/basic-concept/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/ja/docs/basic-concept/</guid><description>Avatar Optimizerの基本コンセプト # このページでは、Avatar Optimizerの基本コンセプトについて説明します。
 Avatar Optimizerとは？ # Avatar Optimizerは、アバターを最適化するためのツールです。 このツールはVRChatアバター向けに設計されていましたが、NDMFでサポートされている他のプラットフォームのアバターにも使用できるかもしれません。
 VRChat以外のプラットフォームのアバターに対するサポートは完全にコミュニティベースであり、Avatar Optimizerの開発チームにはサポートされない場合があります。
 Avatar Optimizerの目的は何ですか？ # このツールは、アバターの見た目を殆ど変化させることなく、簡単にアバターのパフォーマンスを最適化できるようにすることを目的として設計されています。 そのため、このツールでアバターの振る舞いを変更することは意図していません。
 意図していない動作によるアバターの振る舞いの変更は、一部のユースケースで有用かもしれませんが、バグとして扱われます。
-そのバグが殆どのユースケースに影響を与えない場合、バグの修正を一時的に見合わせることがありますが、バグによる振る舞いは他のコンポーネントで考慮されないかもしれません。\
+そのバグが殆どのユースケースに影響を与えない場合、バグの修正を一時的に見合わせることがありますが、バグによる振る舞いは他のコンポーネントで考慮されないかもしれません。
 例えば、1.7.x以前のAAO Merge Skinned Meshコンポーネントは同名のBlendShapeを統合します。
 BlendShapeを統合すると、そのBlendShapeに対するアニメーションによる動作が変わってしまうため、これはバグとして扱われます。
 このバグを使用して、あるSkinned Mesh RendererのBlendShapeに対するアニメーションを、別のSkinned Mesh RendererのBlendShapeに対しても同時に作用させることができます。
@@ -16,7 +16,7 @@ Avatar Optimizerの振る舞いは将来のバージョンでも安定してい�
 アバターに既に付いているコンポーネントでは、このオプションをデフォルトで無効にすることで以前までの振る舞いを維持し、 アバターに新たに追加されたコンポーネントでは、このオプションをデフォルトで有効にすることで、バグが修正された新しい動作を行います。
 こういったコンポーネントの振る舞いの維持には、いくつか例外があります。
 コンポーネントのデバッグ専用の機能は、上記のルールに従うことが保証されません。
-例えば、AAO Trace and OptimizeコンポーネントのAdvanced Optionsは変更される可能性が常にあります。 実験的な機能としてマークされている機能は、上記のルールに従うことが保証されません。 AAO Trace and Optimizeコンポーネントの振る舞いは、新しい最適化を実装することによって変更される可能性があります。
+例えば、AAO Trace and OptimizeコンポーネントのDebug Optionsは変更される可能性が常にあります。 実験的な機能としてマークされている機能は、上記のルールに従うことが保証されません。 AAO Trace and Optimizeコンポーネントの振る舞いは、新しい最適化を実装することによって変更される可能性があります。
 ただし、AAO Trace and Optimizeコンポーネントのデフォルト設定では、アバターの振る舞いや見た目に影響を与えないようにしているため、この変更はアバターに一切影響を与えないはずです。 これら以外で不自然な動作や奇妙な動作などに遭遇した場合は、まずFAQをご覧ください。</description></item><item><title>よくある質問</title><link>https://vpm.anatawa12.com/avatar-optimizer/ja/docs/faq/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/ja/docs/faq/</guid><description>よくある質問 # Avatar Optimizerに関するよくある質問のリストです。 他に質問がある場合は、GitHub DiscussionsまたはFediverseでお気軽にお尋ねください。
 AAO Trace and Optimizeコンポーネントを使用すると、アバターの振る舞いや見た目が変わる # AAO Trace and Optimizeコンポーネントを使用して、アバターの振る舞いや見た目が変わってしまった場合は、(アバターがAvatar Optimizerの他のコンポーネントのバグ挙動に依存していない限り、)全てバグです。 GitHub IssuesやMisskey (Mastodon)、Twitterなどから報告をお願いします。
 メッシュが視界の中にあるのに非表示になってしまう # 多くの場合、この問題はSkinned Mesh RendererのRoot Boneを指定し忘れていることが原因です。
@@ -30,7 +30,7 @@ AAO Merge Skinned Meshコンポーネントを使用すると、マテリアル�
 この問題のissue: #340
 AAO Merge Skinned Meshコンポーネントを使用すると、マテリアルスロットに対するアニメーションが競合する # AAO Merge Skinned Meshコンポーネントは、統合対象のメッシュで同じマテリアルを使用しているマテリアルスロットをデフォルトで統合します。 これにはアニメーションされるマテリアルスロットも含まれます。</description></item><item><title>Changelog</title><link>https://vpm.anatawa12.com/avatar-optimizer/ja/docs/changelog/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/ja/docs/changelog/</guid><description>Changelog # このプロジェクトの重要な変更点は以下のとおりです。
 Keep a Changelogをベースにした形式で表記されています。
-1.7.0 - 2024-04-30 # Added # Animator Optimizer #854 Most features of Animator Optimizer is not available in Unity 2019. Animator Optimizer optimizes your Animator Controller without behaviour Changes Current Optimizer includes the following optimization Remove meaningless properties #854 Converts Entry / Exit to 1D BlendTree #854 #867 #927 #970 #982 #991 Merges multiple BlendTrees to single Direct BlendTree #870 #978 #980 #984 Removes meaningless Animator Layers #870 Asset Description #847 Asset Description is the file to provide information of your assets for Avatar Optimizer.</description></item><item><title>Avatar Global Components</title><link>https://vpm.anatawa12.com/avatar-optimizer/ja/docs/component-kind/avatar-global-components/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/ja/docs/component-kind/avatar-global-components/</guid><description> Avatar Global Components # Avatar Global Componentはアバターのルートに追加することでアバター全体に作用するコンポーネントです。
+1.7.1 - 2024-05-07 # Added # Implement mask texture editor #1044 Add Simplified Chinese translation #1055 Changed # Improved behavior with Read/Write Off #1045 Because of Unity limitation, AAO cannot process meshes with R/W off on Start so it will be error. However, on Awake, we can read them so AAO should process them. Since this version, AAO will process meshes with R/W off on Awake.</description></item><item><title>Avatar Global Components</title><link>https://vpm.anatawa12.com/avatar-optimizer/ja/docs/component-kind/avatar-global-components/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/ja/docs/component-kind/avatar-global-components/</guid><description> Avatar Global Components # Avatar Global Componentはアバターのルートに追加することでアバター全体に作用するコンポーネントです。
 &amp;ldquo;アバターのルート&amp;quot;とは、アバターの最も上の階層にあるGameObjectのことです。 例えばVRChat用アバターの場合、VRC Avatar DescriptorコンポーネントがあるGameObjectが&amp;quot;アバターのルート&amp;quot;です。
 Avatar Global Componentをアバターのルート以外に追加した場合、インスペクター上にエラーが表示され、コンポーネントは一切動作しません。
 以下のコンポーネントがAvatar Global Componentです。
@@ -43,8 +43,7 @@ Trace and Optimizeは「見た目に絶対に影響させてはならない」�
 BlendShapeを自動的に固定・除去する
 アニメーションなどで使われていないか、常に同じ値になっているBlendShapeを自動的に固定・除去します。 使われていないObjectを自動的に削除する
 アニメーションなどを走査して、使われていないObject(GameObjectやコンポーネントなど)を自動的に削除します。 endボーンを残す
-親が削除されていないendボーン1を削除しないようにします。 面積がゼロのポリゴンを自動的に削除する
-面積がゼロのポリゴンを削除します。 PhysBoneの設定を最適化する
+親が削除されていないendボーン1を削除しないようにします。 PhysBoneの設定を最適化する
 PhysBoneの設定について、以下の最適化を行います。 全く同じ設定のPhysBone Colliderを1つに統合します。 不要な場合にIs Animatedのチェックを外します。 アニメーターの最適化
 Animator Controllerを最適化します。詳細はこのセクションを参照してください。 スキンメッシュレンダラーを統合する
 分かれている必要のないスキンメッシュレンダラーを統合します。
@@ -52,7 +51,9 @@ Animator Controllerを最適化します。詳細はこのセクションを参�
 マテリアルスロットの前後関係を変えることで、アバターの描画負荷を減らせる場合があります。
 多くの場合、マテリアルスロットの前後関係は特に意味を持ちませんが、描画順に影響を与える場合もあるようです。 また、以下の設定で自動設定を調節できます。
 MMDワールドとの互換性
-MMDワールドで使われるBlendShapeを固定しないなど、MMDワールドとの互換性を考慮した軽量化を行います。 他に、バグの回避などに使用するための高度な設定がありますが、それらは不安定であり、不用意に変更するべきではありません。 それらの機能については英語のTooltipやソースコード、または開発者の指示を参考にしてください。
+MMDワールドで使われるBlendShapeを固定しないなど、MMDワールドとの互換性を考慮した軽量化を行います。 加えて、以下の高度な最適化が利用出来ます。
+面積がゼロのポリゴンを自動的に削除する
+面積がゼロのポリゴンを削除します。 これは一部のシェーダーやアニメーションによるスケール変化を壊す可能性があるため、注意して使用してください。 他に、バグの回避などに使用するための高度な設定がありますが、それらは不安定であり、不用意に変更するべきではありません。 それらの機能については英語のTooltipやソースコード、または開発者の指示を参考にしてください。
 アニメーターの最適化 # この機能では、アニメーターに対して以下の最適化を行います。
 Entry-Exit式のレイヤーをBlendTreeに変換
 アニメーターコントローラーのレイヤーをできる限りBlendTreeに変換します。 BlendTreeを統合
@@ -99,10 +100,16 @@ BlendShapeの値が0以外のときは処理負荷が発生するため、値を
 利点 # 服で隠れていたりして見えないような部分のメッシュを削除すると、見た目に影響させずに描画負荷やBlendShapeの処理負荷などを減らして軽量化することができます。
 このコンポーネントを使用すると、アルファマスク用のテクスチャや、gatosyocoraさんのMeshDeleterWithTexture用のマスクテクスチャを利用して簡単にメッシュを削除することができます。
 設定 # メッシュのマテリアルスロットの一覧が表示されます。 マスクテクスチャによるポリゴンの削除を行う対象のマテリアルスロットを選択してください。
-マスクテクスチャ # ポリゴンの削除に利用するマスクテクスチャです。
+マスクテクスチャ # ポリゴンの削除に利用するマスクテクスチャです。 「編集」ボタンをクリックすると、マスクテクスチャエディターが開きます。
 削除モード # マスクテクスチャは物によって色が異なるため、対応するモードを選択する必要があります。
 黒(に近い色)の場合にポリゴンを削除するように設計されているマスクテクスチャを利用する場合は、Remove Blackに設定してください。
-白(に近い色)の場合にポリゴンを削除するように設計されているマスクテクスチャを利用する場合は、Remove Whiteに設定してください。</description></item><item><title>Remove Mesh in Box</title><link>https://vpm.anatawa12.com/avatar-optimizer/ja/docs/reference/remove-mesh-in-box/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/ja/docs/reference/remove-mesh-in-box/</guid><description>Remove Mesh in Box # 箱で指定した範囲内のポリゴンを削除します。
+白(に近い色)の場合にポリゴンを削除するように設計されているマスクテクスチャを利用する場合は、Remove Whiteに設定してください。
+マスクテクスチャエディター # このウィンドウでマスクテクスチャを編集することができます。
+ウィンドウの上部には、編集中のマスクテクスチャに関する情報が表示されます。
+中央には、表示とブラシサイズについての設定が表示されます。
+ウィンドウの下部には、元のテクスチャ、マスクテクスチャ、メッシュのUVが表示されます。
+マスクテクスチャを塗るには左ドラッグします。また、右ドラッグまたはShift + 左ドラッグでビューを移動することが出来ます。
+スクロールでズームイン/アウトが、Shift + スクロールでブラシサイズの変更が出来ます。</description></item><item><title>Remove Mesh in Box</title><link>https://vpm.anatawa12.com/avatar-optimizer/ja/docs/reference/remove-mesh-in-box/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/ja/docs/reference/remove-mesh-in-box/</guid><description>Remove Mesh in Box # 箱で指定した範囲内のポリゴンを削除します。
 このコンポーネントは、SkinnedMeshRendererコンポーネントのあるGameObjectに追加してください。(分類: Modifying Edit Skinned Mesh Component)
 利点 # 服で隠れていたりして見えないような部分のメッシュを削除すると、見た目に影響させずに描画負荷やBlendShapeの処理負荷などを減らして軽量化することができます。
 設定 # 数値を調整して箱を追加します。 それぞれの箱について、中心位置、大きさ、角度を変更することが出来ます。(ローカル座標で指定します)
