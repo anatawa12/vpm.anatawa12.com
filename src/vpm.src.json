@@ -4116,6 +4116,14 @@
           "unity": "2019.4",
           "version": "0.12.1",
           "url": "https://vpm.anatawa12.com/gists/package-0.12.1.zip?"
+        },
+        "0.13.0": {
+          "name": "com.anatawa12.gists",
+          "displayName": "anatawa12's gists pack",
+          "description": "set of anatawa12's gist you can enable/disable any of gist at `Tools/anatawa12's gist selector`",
+          "unity": "2019.4",
+          "version": "0.13.0",
+          "url": "https://vpm.anatawa12.com/gists/package-0.13.0.zip?"
         }
       }
     },
