@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>コンポーネントの詳細説明 on Avatar Optimizer (1.7.4)</title><link>https://vpm.anatawa12.com/avatar-optimizer/ja/docs/reference/</link><description>Recent content in コンポーネントの詳細説明 on Avatar Optimizer (1.7.4)</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/ja/docs/reference/index.xml" rel="self" type="application/rss+xml"/><item><title>Trace And Optimize</title><link>https://vpm.anatawa12.com/avatar-optimizer/ja/docs/reference/trace-and-optimize/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/ja/docs/reference/trace-and-optimize/</guid><description>Trace And Optimize (T&amp;amp;O) # 昔のバージョンではAutomatic Configurationという名前でした
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>コンポーネントの詳細説明 on Avatar Optimizer (1.7.5)</title><link>https://vpm.anatawa12.com/avatar-optimizer/ja/docs/reference/</link><description>Recent content in コンポーネントの詳細説明 on Avatar Optimizer (1.7.5)</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/ja/docs/reference/index.xml" rel="self" type="application/rss+xml"/><item><title>Trace And Optimize</title><link>https://vpm.anatawa12.com/avatar-optimizer/ja/docs/reference/trace-and-optimize/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/ja/docs/reference/trace-and-optimize/</guid><description>Trace And Optimize (T&amp;amp;O) # 昔のバージョンではAutomatic Configurationという名前でした
 このコンポーネントは、アバターを走査して自動的にできる限りの最適化を行います。 チェックボックスで自動的に行う最適化を選択することが出来ます。
 このコンポーネントはアバターのルートに追加してください。(分類: Avatar Global Component)
 Trace and Optimizeは「見た目に絶対に影響させてはならない」という前提の下で、かなり慎重に作られています。
@@ -6,7 +6,8 @@ Trace and Optimizeは「見た目に絶対に影響させてはならない」�
 従って、問題が起きた際は報告していただければ、出来る限り修正いたします。 現在、以下の機能を使った自動最適化が可能です。
 BlendShapeを自動的に固定・除去する
 アニメーションなどで使われていないか、常に同じ値になっているBlendShapeを自動的に固定・除去します。 使われていないObjectを自動的に削除する
-アニメーションなどを走査して、使われていないObject(GameObjectやコンポーネントなど)を自動的に削除します。 endボーンを残す
+アニメーションなどを走査して、使われていないObject(GameObjectやコンポーネントなど)を自動的に削除します。
+また、切り替えるものと一緒に使われていて、他の方法で使われていないPhysBooneコンポーネントを自動的に切り替えるようにします。 endボーンを残す
 親が削除されていないendボーン1を削除しないようにします。 PhysBoneの設定を最適化する
 PhysBoneの設定について、以下の最適化を行います。 全く同じ設定のPhysBone Colliderを1つに統合します。 不要な場合にIs Animatedのチェックを外します。 アニメーターの最適化
 Animator Controllerを最適化します。詳細はこのセクションを参照してください。 スキンメッシュレンダラーを統合する
@@ -47,6 +48,7 @@ BlendShapeの値が0以外のときは処理負荷が発生するため、値を
 設定 # BlendShapeの一覧が表示されるので、固定・除去対象のBlendShapeを選択してください。</description></item><item><title>Merge ToonLit Material</title><link>https://vpm.anatawa12.com/avatar-optimizer/ja/docs/reference/merge-toonlit-material/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/ja/docs/reference/merge-toonlit-material/</guid><description>Merge ToonLit Material # 手動でテクスチャを並び替えることにより、VRChat/Mobile/Toon Litのマテリアルを1つのマテリアルに統合します。
 このコンポーネントは、SkinnedMeshRendererコンポーネントのあるGameObjectに追加してください。(分類: Modifying Edit Skinned Mesh Component)
 現在、このコンポーネントは大きな需要があると見られるVRChat/Mobile/Toon Litシェーダーのみをサポートしています。 他のシェーダーのサポートも追加する可能性があります。(サードパーティシェーダーでも対応します) もし対応して欲しいシェーダーがあれば、issueを書いてください。
+このコンポーネントは新しいマテリアルを作成するため、このコンポーネントで統合されたマテリアルを使用しているマテリアルスロットはAAO Merge Skinned Meshコンポーネントで統合されません。 別々のメッシュで使用されているマテリアルを纏めて統合したい場合は、AAO Merge Skinned MeshコンポーネントのあるGameObjectと同じGameObjectにMerge ToonLit Materialコンポーネントを追加する必要があります。
 設定 # 統合したマテリアルを追加をクリックして、統合後のマテリアルを追加します。 それぞれのマテリアルについて、統合対象のマテリアルを複数選択することが出来ます。 統合対象を追加をクリックするか、ドロップダウンメニューからマテリアルを選択してください。 統合対象のマテリアルについて、テクスチャの配置場所を設定する必要があります。 X, Y, W, Hの値を調整してテクスチャをお好みの位置にを合わせてください。 プレビューを生成をクリックすると、統合後のテクスチャのプレビューがそれぞれ生成されます。</description></item><item><title>Remove Mesh By BlendShape</title><link>https://vpm.anatawa12.com/avatar-optimizer/ja/docs/reference/remove-mesh-by-blendshape/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/ja/docs/reference/remove-mesh-by-blendshape/</guid><description>Remove Mesh By BlendShape # 指定されたBlendShapeによって動かされる頂点とそのポリゴンを削除します。
 このコンポーネントは、SkinnedMeshRendererコンポーネントのあるGameObjectに追加してください。(分類: Modifying Edit Skinned Mesh Component)
 利点 # 服で隠れていたりして見えないような部分のメッシュを削除すると、見た目に影響させずに描画負荷やBlendShapeの処理負荷などを減らして軽量化することができます。 このコンポーネントを使用すると、多くの素体に含まれている貫通防止用のBlendShapeを利用して簡単にメッシュを削除することができます。
