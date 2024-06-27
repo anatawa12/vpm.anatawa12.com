@@ -9,6 +9,7 @@ on:
         type: string
       version:
         description: 'Name of version'
+        required: false
         type: string
       website_zip:
         description: 'URL to zip file for website'
@@ -26,7 +27,7 @@ on:
         type: string
       version:
         description: 'Name of version'
-        required: true
+        required: false
         type: string
       environment:
         description: 'Name of environment you may use'
