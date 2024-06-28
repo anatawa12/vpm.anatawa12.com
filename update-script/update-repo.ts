@@ -16,7 +16,7 @@ export class RepoUpdater {
     this.#repoJson = repoJsonIn as RepositoryJson & JsonObject;
   }
 
-  addPackage(packageJson: PackageJson & JsonObject, url?: string) {
+  addPackage(packageJson: PackageJson & JsonObject, url?: string, sha256Digit?: string) {
     if (!("name" in packageJson) || typeof packageJson.name !== "string")
       throw new Error("name field not valid");
     if (!("version" in packageJson) || typeof packageJson.version !== "string")
@@ -28,6 +28,12 @@ export class RepoUpdater {
     this.#repoJson.packages ??= {};
     const packageInfo = this.#repoJson.packages[packageId] ??= {versions: {}};
     if (url) packageJson.url = url;
+    if (sha256Digit) {
+      if (packageJson.zipSHA256 && packageJson.zipSHA256 !== sha256Digit) {
+        throw new Error("SHA256 is already set and different");
+      }
+      packageJson.zipSHA256 = sha256Digit;
+    }
     packageInfo.versions[packageVersion] = packageJson as PackageJson & JsonObject;
   }
 

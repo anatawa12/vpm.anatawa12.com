@@ -16,4 +16,5 @@ export interface PackageJson {
   name: string,
   version: string,
   url?: string,
+  zipSHA256?: string,
 }

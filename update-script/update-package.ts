@@ -44,16 +44,21 @@ if (version) {
   // check for download
   const url = `https://vpm.anatawa12.com/${shortId}/package-${packageVersionName}.zip?`;
 
-  await fetch(url, {headers: {"User-Agent": userAgent}})
+  const zipData = await fetch(url, {headers: {"User-Agent": userAgent}})
     .then(res => {
       if (!res.ok) throw new Error(`Downloading file failed: ${url}`);
       return res;
     })
-    .then(x => x.blob());
+    .then(x => x.arrayBuffer());
+
+  const sha256Digit = await crypto.subtle.digest("SHA-256", zipData);
+  const sha256DigitHex = Array.from(new Uint8Array(sha256Digit))
+    .map((b) => b.toString(16).padStart(2, "0"))
+    .join("")
 
   // update vpm.json
   const repoJson = new RepoUpdater(repositoryPath);
-  repoJson.addPackage(packageJson, url);
+  repoJson.addPackage(packageJson, url, sha256DigitHex);
   repoJson.save();
 
   await command("git", "add", "--", repositoryPath);
