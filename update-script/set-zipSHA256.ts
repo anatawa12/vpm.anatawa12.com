@@ -1,4 +1,4 @@
-import {RepositoryJson} from "./type.ts";
+import {JsonObject, PackageJson, RepositoryJson} from "./type.ts";
 
 const path = Deno.args[0];
 const repoJson = await Deno.readTextFile(path);
@@ -63,7 +63,14 @@ for (const [pkgId, value] of Object.entries(repo.packages)) {
 
           console.log(`Downloaded ${shortId} v${version.version} with SHA256: ${sha256DigitHex} size: ${zipData.byteLength} bytes`)
 
-          version.zipSHA256 = sha256DigitHex;
+          let entries = Object.entries(version);
+          const urlIndex = entries.findIndex(([key]) => key === "url");
+          entries = [
+            ...entries.slice(0, urlIndex + 1),
+            ["zipSHA256", sha256DigitHex],
+            ...entries.slice(urlIndex + 1),
+          ];
+          value.versions[version.version] = Object.fromEntries(entries) as (PackageJson & JsonObject);
         } catch (e) {
           console.error(`Failed to download ${url}: ${e}`)
           throw e;
