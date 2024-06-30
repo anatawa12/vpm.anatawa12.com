@@ -13,6 +13,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-0.0.1.zip?",
+          "zipSHA256": "d904041c11e40665242a50b1ad483e931880fd9e273db8d9995b1004134b6668",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.1.10 <4.0.0"
@@ -29,6 +30,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-0.0.2.zip?",
+          "zipSHA256": "dfc6362aa09cb6b034f2dd2d7df87448c5f64295f5624db0c2224d3484d8b045",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.1.10 <4.0.0"
@@ -45,6 +47,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-0.1.0.zip?",
+          "zipSHA256": "1a957aba933bd34c28e2dc246da9fb5302d9b269f6dc7ed876bb9b2fc2ab1750",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.1.10 <4.0.0"
@@ -61,6 +64,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-0.1.2.zip?",
+          "zipSHA256": "5cdd912bf62e8f3997092c6e33e70378d3ac84f93bf98cedaa3b040fe649fb3e",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.1.10 <4.0.0"
@@ -77,6 +81,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-0.1.3.zip?",
+          "zipSHA256": "918aca722242d6e07bc5e6a7319549265b07a0546d22149c8b92a560740114f4",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.1.10 <4.0.0"
@@ -93,6 +98,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-0.1.4.zip?",
+          "zipSHA256": "47e26c9b19302bce9da8ff2b54ca1c38f48907713214a3cb3fc684bb249f7dd6",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.1.10 <4.0.0"
@@ -109,6 +115,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-0.2.0-beta.1.zip?",
+          "zipSHA256": "66bde7d833b8fdc6a50b72fc0dfdbf8bb3d8b3e01269bbea3567b1cbe69d6dd6",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.1.10 <4.0.0"
@@ -125,6 +132,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-0.2.0-beta.2.zip?",
+          "zipSHA256": "4279f37654194b9ace0c64cb603c29e0797264405a8ecaf1c15af679c8d07251",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.1.10 <4.0.0"
@@ -141,6 +149,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-0.2.0-rc.1.zip?",
+          "zipSHA256": "bdba7fa4c7512f108ae1273f63bf990a844d8f191f04e9754dfdb203a7372da1",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.1.10 <4.0.0"
@@ -157,6 +166,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-0.2.0-rc.2.zip?",
+          "zipSHA256": "399a3fe9f074cd9cc4a0c1cd812d40eb904f6cb758531b37030f6e009c83dc15",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.1.10 <4.0.0"
@@ -173,6 +183,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-0.2.0.zip?",
+          "zipSHA256": "3cf3c0557257c9f38dbc80a98e1c5224b14dc1a8139c0eb238bc54c152e1258b",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.1.10 <4.0.0"
@@ -189,6 +200,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-0.2.1-beta.1.zip?",
+          "zipSHA256": "7828f65183bab20333362cd472e00e29a78dcd6c624986cc7738cb3305eed561",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.1.10 <4.0.0"
@@ -205,6 +217,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-0.2.1.zip?",
+          "zipSHA256": "0afae23cdafcd19cc3f984f5cf44209b52d12cd5efc24e51800f469ab2a97b13",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.1.10 <4.0.0"
@@ -221,6 +234,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-0.2.2.zip?",
+          "zipSHA256": "f337fceb6d075e12d005b11b5ecf13254106b2d86c4a71cc2566a67cf6099555",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.1.10 <4.0.0"
@@ -237,6 +251,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-0.2.3.zip?",
+          "zipSHA256": "e8ba11e7b9f42d48c587a61f6b70a17e94f40ad83cb52e3f5d6a256652d555f6",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.1.10 <4.0.0"
@@ -253,6 +268,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-0.2.4.zip?",
+          "zipSHA256": "766f4170f902b22df390255f7725ee7db94340a0f54d32dfce016c22d24c64db",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.1.10 <4.0.0"
@@ -269,6 +285,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-0.2.5-rc.1.zip?",
+          "zipSHA256": "536f6186d9266ce08888440f12f8c7047506700dafb992fd80c38f9283ffeb84",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.1.10 <4.0.0"
@@ -285,6 +302,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-0.2.5.zip?",
+          "zipSHA256": "7da30538367355fb3a5b9ba6de9196b0b423d976e8d577f89e23c378d5179e2a",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.1.10 <4.0.0"
@@ -301,6 +319,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-0.2.6-rc.1.zip?",
+          "zipSHA256": "93eaa9423cd1077a824aefdbbb938eea4b14bf810e34c3d7ad15a17638ade42d",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^0.2.2",
@@ -318,6 +337,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-0.2.6-rc.2.zip?",
+          "zipSHA256": "5294b7ce5f03a73df9fa9c9fa2a8ee2b16ba28f9235066bce674d6032cd0de14",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^0.2.2",
@@ -335,6 +355,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-0.2.6-rc.3.zip?",
+          "zipSHA256": "3cf6cd8fdac1615ac7d021bbb2732837dd77914870d62442533e6f6f374a4225",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^0.2.2",
@@ -352,6 +373,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-0.2.6-rc.4.zip?",
+          "zipSHA256": "09d073b879303a2cfb01e0259431b32ce8ca567e716f4b8dc78b723b108a7353",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^0.2.2",
@@ -369,6 +391,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-0.2.6.zip?",
+          "zipSHA256": "e13fea13276f57edd2fe5ee573de99ecad74dd2e8e913f66a2ffce1a85dec913",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^0.2.2",
@@ -386,6 +409,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-0.2.7-beta.1.zip?",
+          "zipSHA256": "678b117dd66ccc0a303bdd3b7d74bac0ed3bfbbe512a3060dfe96fd9b0940a6b",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^0.2.2",
@@ -403,6 +427,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-0.2.7.zip?",
+          "zipSHA256": "01c88f4ca582c5dbd35e694b8a8f87ed78a5becf72466f2735eeffc722a9869a",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^0.2.2",
@@ -420,6 +445,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-0.2.8-rc.1.zip?",
+          "zipSHA256": "502b82fbc18380d437999d0d0c586fdb66eac1be5a052862c523d02d19e50da0",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^0.2.2",
@@ -437,6 +463,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-0.2.8.zip?",
+          "zipSHA256": "4faad4b253acc418f9ecdec62c04003808b59aa0685d19bb4921aaadd86946da",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^0.2.2",
@@ -454,6 +481,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-0.3.0-beta.1.zip?",
+          "zipSHA256": "d6c8c4ff25677712300f1bff966c44b7245acfe732a15df7981a1ac7373d7d41",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^0.2.2",
@@ -471,6 +499,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-0.3.0-beta.2.zip?",
+          "zipSHA256": "0b59c001315199fbd2f7b0f0d449341a09fbdc25be0f6ad3d1c1d0194f67f558",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^0.2.2",
@@ -488,6 +517,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-0.3.0-beta.3.zip?",
+          "zipSHA256": "d4189af71705a42b6f8789df4837aa16a64918e04c9ea5e8e7d2e2dbf695815a",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^0.2.2",
@@ -505,6 +535,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-0.3.0-rc.1.zip?",
+          "zipSHA256": "da8f364d7c6c3ea9b2df7971c1d1a4aa5513de0cc6492ab9ff414b70930726da",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -522,6 +553,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-0.3.0-rc.2.zip?",
+          "zipSHA256": "b156e0f30047d62715a15c33c996a14f7601046b7862a0082b8b83c291e85125",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -539,6 +571,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-0.3.0.zip?",
+          "zipSHA256": "297ecf2de78674588489192ab4165b14450b05987061446fdef79f97a5ec5d1d",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -556,6 +589,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-0.3.1.zip?",
+          "zipSHA256": "21667bed241790906f2a915b9cd3c08581fca80ced8e884dccc56ac71a088219",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -573,6 +607,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-0.3.2-beta.1.zip?",
+          "zipSHA256": "4ead5d0e83e07fa05a6a2f51436c032680d73f78994c839b411a4472a6eb0e09",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -590,6 +625,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-0.3.2-beta.2.zip?",
+          "zipSHA256": "2e51d63024741c686afd2224420c48d5db81a0f978c49b092d8e3735db79742a",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -607,6 +643,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-0.3.2.zip?",
+          "zipSHA256": "1a4c3b3221a09d8d95f83afc1e97385209db519a0f8acbb6f756bf696f96d730",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -624,6 +661,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-0.3.3.zip?",
+          "zipSHA256": "cdbd3c2775c697b330ba60d845d8c41bb65e229a0a5425998348ef89c6a996b6",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -641,6 +679,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-0.3.4.zip?",
+          "zipSHA256": "be2af88052991beb4b1b97e1804b77b9aa46e5fcfd3d9b35750438ed0a24a7e5",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -658,6 +697,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-0.3.5.zip?",
+          "zipSHA256": "7a82229de62b4462ff7c042484f93b1846578a9ef4d85b151b60373fdc8559ae",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -675,6 +715,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-0.4.0-beta.1.zip?",
+          "zipSHA256": "14c3c3bfd568c4391120a93e07d22f6751ff5fd8b2956d32c787fcc9750737b3",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -692,6 +733,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-0.4.0-rc.1.zip?",
+          "zipSHA256": "bcb336c399407329ba684a5837a67004787a42afef4f9878c7504f19e26b889d",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -709,6 +751,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-0.4.0-rc.2.zip?",
+          "zipSHA256": "cb98a739d597ef1e7b2e321e823f0d837f87551a0bc06a7869e6241f9e85384e",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -726,6 +769,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-0.4.0.zip?",
+          "zipSHA256": "cda59928fe7b3a49bed037314ca100699b3c661002583501e6593d57b2b48548",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -743,6 +787,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-0.4.1-beta.1.zip?",
+          "zipSHA256": "d56f126a0f8d71a7ec06f6b5913c788717a71c58aafadf85cae39d6aa7fa19bd",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -760,6 +805,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-0.4.1-rc.1.zip?",
+          "zipSHA256": "792a2068f4993cabbfacbbfc35809405996d03a0d8f6770c90dfbc4e76818c67",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -777,6 +823,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-0.4.1-rc.2.zip?",
+          "zipSHA256": "ba619d8986effd3eb57ccae2e1cbee4f6f45600d2572699c0d88f57b31c71a53",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -794,6 +841,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-0.4.1-rc.3.zip?",
+          "zipSHA256": "8c1666c123cab81ed05204b3b09726751307a40a213105d003d90fb1e36622bb",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -811,6 +859,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-0.4.1.zip?",
+          "zipSHA256": "18c1b18569b5e1ddf7494c8e80a806aa67f57ee6e39ad5bfc44b2b7a483c28de",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -828,6 +877,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-0.4.2.zip?",
+          "zipSHA256": "009ec00cf10975426fb06664ff578e99ea98a997191cce30b785e856400961c4",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -845,6 +895,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-0.4.3.zip?",
+          "zipSHA256": "6687350f4fb5ee410bb44c6bf5adfadd25a2d3bf1a54401c9ccf1e94e76fed75",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -862,6 +913,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-0.4.4-rc.1.zip?",
+          "zipSHA256": "50237aa20d36719b14652928387f1a6a705a12fb5857d42b2a182f159fdc89df",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -879,6 +931,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-0.4.4.zip?",
+          "zipSHA256": "26eee4f5c3bbc0362de12ea0217ddb2282f57fab0d0b61bae1ce9e0addb6291d",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -896,6 +949,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.0.0-beta.1.zip?",
+          "zipSHA256": "b94b2c40e6b3098117a1d8ead0628f87133ae015837a85c12a6c2eac1fc2532f",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -913,6 +967,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-0.4.5-beta.1.zip?",
+          "zipSHA256": "6553aeff827452f24434f4f0fe27652052df72413feb3594e08237a7ca1ef68f",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -930,6 +985,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-0.4.5.zip?",
+          "zipSHA256": "f6bb9301a56b4c5a03a79fdbf7103aa7a209350a09cd516b4f57a09aa2596b37",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -947,6 +1003,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-0.4.6.zip?",
+          "zipSHA256": "0e4ea57a6d2536f659b8b2c08259feca9b4e8fa189729db07f32496af9556e8c",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -964,6 +1021,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.0.0-beta.2.zip?",
+          "zipSHA256": "1a39a25f11887239668f3c10f77f41a242ad9e2cd34f62ca0d200c81b5fe8894",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -981,6 +1039,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-0.4.7.zip?",
+          "zipSHA256": "1fff3b10e0716c6f1278f6fe2e0414b73e64b9d33bd14ddaa3063e0fd2af9299",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -998,6 +1057,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.0.0-beta.3.zip?",
+          "zipSHA256": "2c1e1d76e16b3817cab324297ecfb735ad236b52adc2178b78aae0e2b372eb44",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -1015,6 +1075,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-0.4.8.zip?",
+          "zipSHA256": "07cc8d69b633f5aa494e711fb37656468b08b16603f568f5fd2544a1fd6df95c",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -1032,6 +1093,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-0.4.9.zip?",
+          "zipSHA256": "cc09cfc818cb50820b0fe20390edd0de97c3d2847065e9aafce98529b825a50e",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -1049,6 +1111,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-0.4.10-beta.1.zip?",
+          "zipSHA256": "d6406e5e97f506fcbb950dc6d6afb0aed5055797817c9140bf3da321cc22aa4b",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -1066,6 +1129,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-0.4.10.zip?",
+          "zipSHA256": "26ddcba419b40356758edbdb8600b87cc3c63db15a1e696541d14a834b0a8b8e",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -1083,6 +1147,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-0.4.11.zip?",
+          "zipSHA256": "ee9cbe0a0a471e6743f80f3e18ccc64dc0bdeac5bace55286ec10b1a68d3df3d",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -1100,6 +1165,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.0.0-beta.4.zip?",
+          "zipSHA256": "a1bed47f180235d3b6029a7fbea7977fba0ced2019909258cd85f8d3d48a6820",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -1117,6 +1183,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-0.4.12.zip?",
+          "zipSHA256": "0549ecbef44062d51f3337a69447c68471278eb54d443811c1d6efa2203a60fd",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -1134,6 +1201,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.0.0-beta.5.zip?",
+          "zipSHA256": "b660e1049ef6a4704627c6997e91c9ca193435333cc61523283cbff831769ad2",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -1151,6 +1219,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.0.0.zip?",
+          "zipSHA256": "7e77c5d3297eedb40409b8ef3b770ecc4c5d7d9d7b346fb3f5c320c4d07c9b11",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -1168,6 +1237,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.1.0-beta.1.zip?",
+          "zipSHA256": "255916bd17a939b3af2fe9c3efee371b41a79a36d737a0eee36229a9df3c7f44",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -1185,6 +1255,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.1.0-beta.2.zip?",
+          "zipSHA256": "58a1ad86ebbafb56738ebec13fe6e1323b02180bc2e152c27734d099c1afc7c2",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -1202,6 +1273,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.1.0-rc.1.zip?",
+          "zipSHA256": "fc63165759e54d2d6e54acf300f0b2564243c3cbde653de5dd22f6739fe12604",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -1219,6 +1291,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.1.0.zip?",
+          "zipSHA256": "88b21f670f144b187f113ef88cfe75f0cb84f81c2ec16afc88ce8d7fd0b6be49",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -1236,6 +1309,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.1.1.zip?",
+          "zipSHA256": "4f3048f0f3ae054437999547a28341cbec10591cee9143ef921ccf36f2c71ce7",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -1253,6 +1327,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.1.2-beta.1.zip?",
+          "zipSHA256": "2ff9620890a149b451a8f340a1cfbda453c4ca4e0b509c93ec810342a5297665",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -1270,6 +1345,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.2.0-beta.1.zip?",
+          "zipSHA256": "c899bcda07b9976e44a0efbd927c39b2352e236e018aaeb9af3d373b150019ff",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -1287,6 +1363,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.2.0-rc.1.zip?",
+          "zipSHA256": "94e40f2d8670cbd7d68a8df4fec9fffc7262431c4ccf6fe9fbb78d70974a3639",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -1304,6 +1381,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.2.0.zip?",
+          "zipSHA256": "3b7eca25597931ac7135ecc3eb8bd9c784352d7de76a1b530873c21d781c80bd",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -1321,6 +1399,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.3.0-rc.1.zip?",
+          "zipSHA256": "36bfaede972a42f8633c351ac8dc3d9487505b434691e21e6a8c0b02cc11d27c",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -1338,6 +1417,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.3.0-rc.2.zip?",
+          "zipSHA256": "0b49c412e3a77bda176a08878f3f35e8f53b946ce1919dccbecc66622c825ed8",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -1355,6 +1435,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.3.0.zip?",
+          "zipSHA256": "ad280deb84dd61b498c831a84df17daf107e3aca702de66df8d99f3510195ba1",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -1372,6 +1453,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.3.1.zip?",
+          "zipSHA256": "df97d86838032a900ece176b78db4f95787764c4a37ef56332544b63f2266f51",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -1389,6 +1471,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.3.2-beta.1.zip?",
+          "zipSHA256": "7874b243f7e03b934a1cb0945e0f61523bc513fe5700f607754d963f6482c539",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -1406,6 +1489,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.3.2-beta.2.zip?",
+          "zipSHA256": "3d8b02e956947143c610a56cca9d9beea88f26f1392e3a3da3ecfa2bc4fdd64c",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -1423,6 +1507,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.3.2-beta.3.zip?",
+          "zipSHA256": "01d0407281146c683426bc77ab5b7d10a4029ba56322d8a6e9e9e427c8be3336",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -1440,6 +1525,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.3.2.zip?",
+          "zipSHA256": "5fe81b1921ab5d3ae1f089e390448317fb0ec6d85837d2bf041001de9d9f458d",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -1457,6 +1543,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.3.3.zip?",
+          "zipSHA256": "0ff1fd29ba0c2ab5bb97de55967f95e271cb8c293a75879d0ec3f8d04eae8b33",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -1474,6 +1561,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.3.4.zip?",
+          "zipSHA256": "d837d7af35e57a32dacfa4876a43accd2b07acd7a6135d271782d2ff9c61fe28",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -1491,6 +1579,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.4.0-beta.1.zip?",
+          "zipSHA256": "229a9289791114c647917347900fbfc9bcb50594cf60be54d3566a72cdfe5c28",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -1508,6 +1597,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.4.0-rc.1.zip?",
+          "zipSHA256": "c405127ede62c62a8519e788c9ea93ad4b39fc3717a51da7f479d87035be09f4",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -1525,6 +1615,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.4.0-rc.2.zip?",
+          "zipSHA256": "203b90cb20bbadf9d56d7af9163990f029d33dde65a48fd63faacd3b1354a374",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -1542,6 +1633,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.4.0-rc.3.zip?",
+          "zipSHA256": "dcd1098a4bead6feeacab3515135aae7ab4788ea0c57dace49edc1a8321e7809",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -1559,6 +1651,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.4.0-rc.4.zip?",
+          "zipSHA256": "3403c63cae768a4543b6d708e0d0e55f7c6c1ee2bfd13d313391b85a7aa5cd39",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -1576,6 +1669,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.4.0.zip?",
+          "zipSHA256": "de0b09ef54d6602234576491a6a8ab44b4a122c3a7e4ec4ef9261ad825d73c49",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -1593,6 +1687,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.4.1.zip?",
+          "zipSHA256": "74679b56841c710f03afefc57ab26c2988cd52e77034d93ad7cbd44037499e52",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -1610,6 +1705,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.4.2.zip?",
+          "zipSHA256": "4b7583e05f14bf2345426bd707aed7019dc8e35c5d3e289279e8e2c2edb92214",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -1627,6 +1723,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.5.0-beta.1.zip?",
+          "zipSHA256": "5a31465891bb9601a7478a99aca87f7d02dfb2ba39047f70629294b7e1585622",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -1644,6 +1741,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.5.0-beta.2.zip?",
+          "zipSHA256": "a64315a6c0a449b5bcb4238d92382c0a74011b3f258f5d5740c87ced1dd65430",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -1661,6 +1759,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.5.0-beta.3.zip?",
+          "zipSHA256": "a6ee6eecfccb51bb08eefbdcc1d44524a146c137bf5f5ea57fa5434c9bb1e641",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -1678,6 +1777,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.4.3-beta.1.zip?",
+          "zipSHA256": "9330a46c43d58d42936dfee41a41b3c7ff956d1be20b445ba4d5d85ddbb266a8",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -1695,6 +1795,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.4.3.zip?",
+          "zipSHA256": "75a7fb842950eb79623d02e4a2f9088bd1d7119c94848083a92bd694035e42e0",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -1712,6 +1813,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.5.0-beta.4.zip?",
+          "zipSHA256": "b1f0a25b13d75a3b664e51534d8a5db79fa621bb06a3b8f3524cdc4a98b6c1af",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -1729,6 +1831,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.5.0-beta.5.zip?",
+          "zipSHA256": "c4fa69874a91bcdd67a38ee76418c3e604fbdec364f7c1de278f61a11591ff4f",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -1746,6 +1849,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.5.0-beta.6.zip?",
+          "zipSHA256": "f200c5d94f69d104a732738e86e52a34f40ad7b241c1870dd0fe00b3f42829a7",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -1763,6 +1867,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.5.0-beta.7.zip?",
+          "zipSHA256": "a92bc9190dacf755d84b0862731485bdc9337c68c4c86df7cf5a80528d44adeb",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -1780,6 +1885,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.5.0-beta.8.zip?",
+          "zipSHA256": "5be9d3de0ab407640f05c69d8eb6f8601baffc4812ecc62d689e629dde38a8ff",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -1797,6 +1903,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.5.0-beta.9.zip?",
+          "zipSHA256": "bb0e0aa50329377cfd12d8cf0a86538e41cc52c9943e80a04848521401996813",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -1814,6 +1921,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.5.0-beta.10.zip?",
+          "zipSHA256": "441c71c45f4014e0d0dc86bf97409ffe4d7a70c58f3412ee327b98aecd6cbf73",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -1831,6 +1939,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.5.0-beta.11.zip?",
+          "zipSHA256": "cf9ad76160fa2520de1b8fb668d22bd2a5b00671f7e1d6d0a8b565b6a611a1ad",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -1848,6 +1957,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.5.0-beta.12.zip?",
+          "zipSHA256": "0a6b8768b3f7d8dc71789410478fd03e1157b2d58c7f09c777474648942f7cf2",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -1865,6 +1975,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.5.0-beta.13.zip?",
+          "zipSHA256": "a1c98f9842c09c3c07c5dde594a61046e3acd1b38cb9e3f5236ed8839f2fc0e3",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -1882,6 +1993,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.5.0-beta.14.zip?",
+          "zipSHA256": "643f7936ddf7ea79720856419778419be46e7e47f84cfc6a77ea22cc0d30f48a",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -1899,6 +2011,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.5.0-rc.1.zip?",
+          "zipSHA256": "74ca71245eaaecd2984f4211fbb1684f2a25627066d25ce92f078b8699fe4cae",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -1916,6 +2029,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.5.0-rc.2.zip?",
+          "zipSHA256": "b8a5d885ed4628099b87d08fc5564bd1f336eef34e48c24d014e8c7a370e8801",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -1933,6 +2047,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.5.0-rc.3.zip?",
+          "zipSHA256": "47482faf2e955247efd134698e892460479241790478c02114ef0c687e56a7e6",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -1950,6 +2065,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.5.0-rc.4.zip?",
+          "zipSHA256": "376277c099beb0b3d606a285011eced3794aae6b99f0da44250c36186b79f414",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -1967,6 +2083,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.5.0-rc.5.zip?",
+          "zipSHA256": "5aa24b064b04aaf25b8ad09c3bb4814711cbdbae356a0792335fa646cb615e88",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -1984,6 +2101,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.5.0-rc.6.zip?",
+          "zipSHA256": "57b5ea72a7a9a40d4f9cf3e9694d5aaa6c34b443dc0b2edddeb5865f657bfe3d",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -2001,6 +2119,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.5.0-rc.7.zip?",
+          "zipSHA256": "10e867fc3dcc9428a12a0dd6b35f29f86847d45b09930be9c94153144ab0a342",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -2019,6 +2138,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.5.0-rc.8.zip?",
+          "zipSHA256": "2a1d1d3ccde9643c2b53108515786885770d67f88e0499707fea6ae3b52a2a94",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -2037,6 +2157,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.5.0-rc.9.zip?",
+          "zipSHA256": "27fe8990301d3a46f1fa03cfceaf55d44768afec2564bb10ec4ee928dd910079",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -2055,6 +2176,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.5.0-rc.10.zip?",
+          "zipSHA256": "ccd53933b38a4b9cc33a4e1e1f47850f39fa574f503142d1aa5bd0a4ff428db8",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -2073,6 +2195,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.5.0-rc.11.zip?",
+          "zipSHA256": "cf1e92807778ed4bedddc09555c833a463c5517e6906d35719a576880ad7df99",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -2091,6 +2214,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.5.0-rc.12.zip?",
+          "zipSHA256": "6f27f0d3eceddc2f18f66e328264dd94f4f00cb51e1db6e9034a758ebb352652",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -2109,6 +2233,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.5.0-rc.13.zip?",
+          "zipSHA256": "7b1f5a06ecec0ac284906f4af9dbe2ef01564260c9b53f4c056fe5adf8325314",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -2127,6 +2252,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.5.0.zip?",
+          "zipSHA256": "97fa91e8b35dfca8ccd27c665f801009935984ca2c75036f44b189a3c39488e4",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -2145,6 +2271,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.5.1-beta.1.zip?",
+          "zipSHA256": "fe5432711e0802fd50ed9eb7b64459685a4aeda7d5de45b702cac4250caa7663",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -2163,6 +2290,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.5.1.zip?",
+          "zipSHA256": "20f87a1df3fcf0595012528ed56e674d5aa98b4373788d39b803a397da467c5d",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -2181,6 +2309,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.5.2-beta.1.zip?",
+          "zipSHA256": "de9c96b02419b3681b045bbddc1fd1be01da9e61dc10658f44f6dd4a472a2897",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -2199,6 +2328,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.5.2-beta.2.zip?",
+          "zipSHA256": "91197b64bc5e7df56ca506d4cdaea6e3ea3f214b2348defce633cc88d2e6651d",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -2217,6 +2347,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.5.2-beta.3.zip?",
+          "zipSHA256": "ae5c40eacaf2053daffaf8344df40f7bea9ae65b6f7413ae68a1d428931f0646",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -2235,6 +2366,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.5.2.zip?",
+          "zipSHA256": "f053a9943bfb1a69ff3337dfa980a39af8cab84d67199b4972468936170dc3c0",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -2253,6 +2385,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.5.3-beta.1.zip?",
+          "zipSHA256": "a446a3fe15b850cec0ce561d873fa8ae95d25be6d015e73e601aa88fa59d667c",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -2271,6 +2404,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.5.3.zip?",
+          "zipSHA256": "bb0c9653adc887647f22d07bc95f6323d2ba7a80cd4facbb6d1700effe26436e",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -2289,6 +2423,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.5.4.zip?",
+          "zipSHA256": "f41dc39e2389f0e8aaf220c2c0a2132052f5e7af6abf44c0221b98019ad52c73",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -2307,6 +2442,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.5.5-beta.1.zip?",
+          "zipSHA256": "4f258108517ae24675056319ad0dceb811286ebd18970b4951681c863cfb8538",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -2325,6 +2461,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.5.5-rc.1.zip?",
+          "zipSHA256": "5808739b254d60baa4f2b744e1b73e7646ae21a3929d9ff97d0f9d845359ce91",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -2343,6 +2480,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.5.5.zip?",
+          "zipSHA256": "1107e990a76e8693a6847afbb023e5899df20689b891d85db984500b7c5524cc",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -2361,6 +2499,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.5.6-beta.1.zip?",
+          "zipSHA256": "2acecc93d3c528a042bf67bf25f3ec7c1874d28bdb78af1eca1808bb4364d86c",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -2379,6 +2518,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.5.6-beta.2.zip?",
+          "zipSHA256": "dbbe820fb9288a876b3fc044073b65fcfbb53645ac5d704748db41d545fde21a",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -2397,6 +2537,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.5.6-rc.1.zip?",
+          "zipSHA256": "74b710853574d774bac70b37ab9d86c0af46ac83b03178040e977db7f1a81eb4",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -2415,6 +2556,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.5.6.zip?",
+          "zipSHA256": "08205bdf376f341f93f52d1e8ab58b2d78e866cdaa39f3c1f6ae03391b9dbbb9",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -2433,6 +2575,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.5.7-beta.1.zip?",
+          "zipSHA256": "4051b3abd29b4ababf1561a0f5075c16fb63491b780a7ea71f89d1a2b093a6e9",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -2451,6 +2594,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.5.7.zip?",
+          "zipSHA256": "f3b2a430acd29750eb409b210df3342d81eb0970c63b40d30082d88c4b258ddb",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -2469,6 +2613,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.5.8-rc.1.zip?",
+          "zipSHA256": "e0307203a0ade849cbc6c68a4b4db2240d80521d0cf4d362a5c5d2c947b6dce0",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -2487,6 +2632,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.5.8.zip?",
+          "zipSHA256": "dbd24eb5a6f80f01746124aab187b475ec7ea496a12449defd3f92d1bc28d90f",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -2505,6 +2651,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.6.0-beta.1.zip?",
+          "zipSHA256": "e0cb46cf5e21a5d2ccb72ac17f4f5c5ce4d4bc6108e3a7c35e84b825217121e0",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -2523,6 +2670,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.5.9-rc.1.zip?",
+          "zipSHA256": "29d57c73a59044be8a94ff813084517c519e6247966ad38849fe5c93f4807b5c",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -2541,6 +2689,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.5.9.zip?",
+          "zipSHA256": "8e31ea473753553d14b348730f14b52084502e60a30540850ce99cdf0c819acd",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -2559,6 +2708,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.6.0-beta.2.zip?",
+          "zipSHA256": "4e0923b1149b83e0cabd9dcbecaf3a1fc68c0d95f67b67312e771474056c1544",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -2577,6 +2727,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.5.10.zip?",
+          "zipSHA256": "4793ab134806fd5df6c50c14c9014884343fc3c66121edb4c22756266b76239a",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -2596,6 +2747,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.6.0-beta.3.zip?",
+          "zipSHA256": "64c85961f72b4f896b75a596bc8f1f99fef1b34fd2ec082ab3ee4fa9069de79b",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -2615,6 +2767,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.6.0-beta.4.zip?",
+          "zipSHA256": "751697189e331199dc8acd477b624353ebfca2d0d41f6956d8211d11d651b68b",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -2634,6 +2787,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.6.0-beta.5.zip?",
+          "zipSHA256": "1f35e1a86948c250d5df390a845ef5be3b8d6558e3fa5a06728cde4b50c060ab",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -2653,6 +2807,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.6.0-beta.6.zip?",
+          "zipSHA256": "75ebc8a8c856b40214dbda6fc79387de1822c99f86453c44190769060aabc078",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -2672,6 +2827,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.6.0-beta.7.zip?",
+          "zipSHA256": "174c51cd3089552498b4387655f6a42436f11d2142b37f2f03d010054d6576a0",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -2691,6 +2847,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.6.0-beta.8.zip?",
+          "zipSHA256": "4dae9717c3048ac4f3f225268f73a6751719c3860fd576b1870c0fe224596bf1",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -2710,6 +2867,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.6.0-beta.9.zip?",
+          "zipSHA256": "0b0b40398ab68d80b81fb746e24942c09f669bbc972dddeef4553b69ad4d84b3",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -2729,6 +2887,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.6.0-beta.10.zip?",
+          "zipSHA256": "e8774ebdefc16cd31e8ac13f9d5c28405771beee72d6b03c19719e6ea5b59bbd",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -2747,6 +2906,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.5.11-beta.1.zip?",
+          "zipSHA256": "6acc8b106d275862dad749c930c12891797e06350e179cbdbe1884d099b17dfc",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -2765,6 +2925,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.5.11.zip?",
+          "zipSHA256": "2b6e2cd1a43815fcf42bdd2cb4aced72eaff27436e2e320504f1b3bc7aa0cd95",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -2784,6 +2945,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.6.0-beta.11.zip?",
+          "zipSHA256": "90ec964db13497a37aad7a7f247e4d377bae717b06aff632ec83c8f64ecfa448",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -2803,6 +2965,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.6.0-beta.12.zip?",
+          "zipSHA256": "653ea8f7e2642db217419dad05abe2cd2758533efef5698fa4824ae40ca8a2dd",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -2822,6 +2985,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.6.0-rc.1.zip?",
+          "zipSHA256": "fc058b4da42878966a62902977fbe2cd8209841fc35b7fe68bf40862847781d8",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -2841,6 +3005,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.6.0-rc.2.zip?",
+          "zipSHA256": "e144a6082a91a01cc23883724ddda59010dd948b7f84c0158268a3f57f2bfd3f",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -2860,6 +3025,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.6.0-rc.3.zip?",
+          "zipSHA256": "73e044cb30c7aff45b2951b31c07e4f66a5359f312a33f8aae54bf2fbe1ebc2d",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -2879,6 +3045,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.6.0-rc.4.zip?",
+          "zipSHA256": "442610fa566b6ca6c48a5109f6685f5a31768f25cba255fc6ec3387db102cc73",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -2898,6 +3065,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.6.0.zip?",
+          "zipSHA256": "6801d19496281f52f60aeb20a478f695a6a9fd49ec3341bf72c88f1962554f94",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -2917,6 +3085,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.6.1.zip?",
+          "zipSHA256": "69868308a255102b7ecab2be9b7b8960a8d8fc6360a7c0b2adfc13f9260f0faf",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -2936,6 +3105,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.6.2-rc.1.zip?",
+          "zipSHA256": "105bc0cc8931b95e8d01e21bb49294917feee72cf0f4206c4676afe2ffc35b11",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -2955,6 +3125,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.6.2.zip?",
+          "zipSHA256": "88b8ec812f2e4938ed07828bf39ba6b0b86863c0ed7c8af5dc24749c91dfbfbb",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -2974,6 +3145,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.6.3.zip?",
+          "zipSHA256": "d6b155b02b8b47451cc2683ccd4a5040f3ada7c9ef8affb58ac6d37d08f82780",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -2993,6 +3165,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.6.4-beta.1.zip?",
+          "zipSHA256": "cafc13eef4fad6f3ee0c65b4690c350d068f39c13e2629ea944154c599030c3f",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -3012,6 +3185,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.6.4.zip?",
+          "zipSHA256": "ccbd246423ccc0d60c39cd1310c4933467a430ff60bde0de5e0887017c195d53",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0",
@@ -3031,6 +3205,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.6.5-beta.1.zip?",
+          "zipSHA256": "b107fb535870e58bfe81c0ab92966945f6360ce88a181d28922d398a4da61f19",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.2.0",
@@ -3050,6 +3225,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.6.5-rc.1.zip?",
+          "zipSHA256": "42b92c2aaae3e483aa916851419aca65fd53a30caa721a64cbce120b9eb49120",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "^1.2.0",
@@ -3069,6 +3245,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.6.5-rc.2.zip?",
+          "zipSHA256": "e6cf5e38a4c1c37aeb5344598c1d0a4e18e3c42e94f5d34d2625a464d1b61e3b",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "documentationUrl": "https://vpm.anatawa12.com/avatar-optimizer/",
           "changelogUrl": "https://vpm.anatawa12.com/avatar-optimizer/en/docs/changelog/",
@@ -3091,6 +3268,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.6.5-rc.3.zip?",
+          "zipSHA256": "3abbcaa994a1262af65056cb6623d66d31c418917d0084ce97e07868e2a3245a",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "documentationUrl": "https://vpm.anatawa12.com/avatar-optimizer/",
           "changelogUrl": "https://vpm.anatawa12.com/avatar-optimizer/en/docs/changelog/",
@@ -3113,6 +3291,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.6.5.zip?",
+          "zipSHA256": "c6dc5952e12e84b1e0c0c030ce3d08aaf429649b1b0288a7ddf3d2dfc1418a36",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "documentationUrl": "https://vpm.anatawa12.com/avatar-optimizer/",
           "changelogUrl": "https://vpm.anatawa12.com/avatar-optimizer/en/docs/changelog/",
@@ -3135,6 +3314,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.6.6.zip?",
+          "zipSHA256": "9c1f18b93fb15f3dfc9e4e4615580a219dc05db65e399707a0cbbee8db6c1270",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "documentationUrl": "https://vpm.anatawa12.com/avatar-optimizer/",
           "changelogUrl": "https://vpm.anatawa12.com/avatar-optimizer/en/docs/changelog/",
@@ -3157,6 +3337,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.6.7-beta.1.zip?",
+          "zipSHA256": "b113e6c24eba343d08e61a4ddc40923ad83921e2c6c223e227921f39445b84ea",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "documentationUrl": "https://vpm.anatawa12.com/avatar-optimizer/",
           "changelogUrl": "https://vpm.anatawa12.com/avatar-optimizer/en/docs/changelog/",
@@ -3179,6 +3360,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.6.7.zip?",
+          "zipSHA256": "c213d06d66496430d90d8fec4fd9a6fc8b686b89c763ef8a009800bb0c297192",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "documentationUrl": "https://vpm.anatawa12.com/avatar-optimizer/",
           "changelogUrl": "https://vpm.anatawa12.com/avatar-optimizer/en/docs/changelog/",
@@ -3201,6 +3383,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.6.8.zip?",
+          "zipSHA256": "ebb875e91b943b01c1c2859c4962ad2f399945006cc690c8d24592679b020a1b",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "documentationUrl": "https://vpm.anatawa12.com/avatar-optimizer/",
           "changelogUrl": "https://vpm.anatawa12.com/avatar-optimizer/en/docs/changelog/",
@@ -3223,6 +3406,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.6.9-beta.1.zip?",
+          "zipSHA256": "929a8138803449207c6ed8c12f154abbe45eed9da012ad7c74cad5f3258e8f10",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "documentationUrl": "https://vpm.anatawa12.com/avatar-optimizer/",
           "changelogUrl": "https://vpm.anatawa12.com/avatar-optimizer/en/docs/changelog/",
@@ -3245,6 +3429,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.6.9-beta.2.zip?",
+          "zipSHA256": "4a2308bd2ae67a7a8712b0d466dc2f3950dc28caeb2342f53866a9c8b0fd02b8",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "documentationUrl": "https://vpm.anatawa12.com/avatar-optimizer/",
           "changelogUrl": "https://vpm.anatawa12.com/avatar-optimizer/en/docs/changelog/",
@@ -3267,6 +3452,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.6.9-beta.3.zip?",
+          "zipSHA256": "ec257929d604256c2c0d0f60699b93e0db98b676701cbccb811a3c97b07f1407",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "documentationUrl": "https://vpm.anatawa12.com/avatar-optimizer/",
           "changelogUrl": "https://vpm.anatawa12.com/avatar-optimizer/en/docs/changelog/",
@@ -3289,6 +3475,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.6.9.zip?",
+          "zipSHA256": "53ad2905c03879e51c4b226ef0e284d784ee1cd158cec69bc70f12dc8f9b10e6",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "documentationUrl": "https://vpm.anatawa12.com/avatar-optimizer/",
           "changelogUrl": "https://vpm.anatawa12.com/avatar-optimizer/en/docs/changelog/",
@@ -3312,6 +3499,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.7.0-beta.1.zip?",
+          "zipSHA256": "6560495e83460ac1b7f6efb3208d05fc17c62584e2b34d9712a019b4f694e74d",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "documentationUrl": "https://vpm.anatawa12.com/avatar-optimizer/",
           "changelogUrl": "https://vpm.anatawa12.com/avatar-optimizer/en/docs/changelog/",
@@ -3334,6 +3522,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.7.0-beta.2.zip?",
+          "zipSHA256": "cd2415dd2b2af72ac7c129cbf90d44d2590e318b071e1540f22308f1ab006610",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "documentationUrl": "https://vpm.anatawa12.com/avatar-optimizer/",
           "changelogUrl": "https://vpm.anatawa12.com/avatar-optimizer/en/docs/changelog/",
@@ -3356,6 +3545,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.7.0-beta.3.zip?",
+          "zipSHA256": "938469b4606b14a22be49f86acd384b9954f2b2f49d37def5f6b5c0ed952a00f",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "documentationUrl": "https://vpm.anatawa12.com/avatar-optimizer/",
           "changelogUrl": "https://vpm.anatawa12.com/avatar-optimizer/en/docs/changelog/",
@@ -3377,6 +3567,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.6.10.zip?",
+          "zipSHA256": "6268d490e9043ad531d4cb46bbc383e3eea939fc48000a6194508a0c02d3138f",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "documentationUrl": "https://vpm.anatawa12.com/avatar-optimizer/",
           "changelogUrl": "https://vpm.anatawa12.com/avatar-optimizer/en/docs/changelog/",
@@ -3400,6 +3591,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.7.0-beta.4.zip?",
+          "zipSHA256": "a5d525275a85e01f9bd9198773371a75abc416d9511a0f8ec8643b9ba322bb21",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "documentationUrl": "https://vpm.anatawa12.com/avatar-optimizer/",
           "changelogUrl": "https://vpm.anatawa12.com/avatar-optimizer/en/docs/changelog/",
@@ -3421,6 +3613,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.6.11.zip?",
+          "zipSHA256": "a4d0af6f41f1310436c923584119a28bdf8543cec9bc4274e0b49e032d4d761a",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "documentationUrl": "https://vpm.anatawa12.com/avatar-optimizer/",
           "changelogUrl": "https://vpm.anatawa12.com/avatar-optimizer/en/docs/changelog/",
@@ -3444,6 +3637,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.7.0-beta.5.zip?",
+          "zipSHA256": "5ea74be83131d7c758203ac372b59db5e84d4b2fbce132f79030c5a8a8b6ad71",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "documentationUrl": "https://vpm.anatawa12.com/avatar-optimizer/",
           "changelogUrl": "https://vpm.anatawa12.com/avatar-optimizer/en/docs/changelog/",
@@ -3465,6 +3659,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.6.12.zip?",
+          "zipSHA256": "970f8054c96399cb0e90989d24fb810aa3857368eda84ac2296e0f30eb926cb1",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "documentationUrl": "https://vpm.anatawa12.com/avatar-optimizer/",
           "changelogUrl": "https://vpm.anatawa12.com/avatar-optimizer/en/docs/changelog/",
@@ -3487,6 +3682,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.6.13.zip?",
+          "zipSHA256": "7cf803e12a1d95453b1540cee5f3ac42de38f59be8e0fd5c888b079b7aa11400",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "documentationUrl": "https://vpm.anatawa12.com/avatar-optimizer/",
           "changelogUrl": "https://vpm.anatawa12.com/avatar-optimizer/en/docs/changelog/",
@@ -3510,6 +3706,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.7.0-beta.6.zip?",
+          "zipSHA256": "95ca43bc7cc2470baa99e848154334536c566917f69ae545ade479dd649ad2c1",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "documentationUrl": "https://vpm.anatawa12.com/avatar-optimizer/",
           "changelogUrl": "https://vpm.anatawa12.com/avatar-optimizer/en/docs/changelog/",
@@ -3532,6 +3729,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.7.0-beta.7.zip?",
+          "zipSHA256": "541f48531d1153385706f5183d125f6ea7ceb9e71f5e780dd8af30d101c8ccaf",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "documentationUrl": "https://vpm.anatawa12.com/avatar-optimizer/",
           "changelogUrl": "https://vpm.anatawa12.com/avatar-optimizer/en/docs/changelog/",
@@ -3554,6 +3752,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.7.0-rc.1.zip?",
+          "zipSHA256": "1b499dcfeb845a923138690cc558e229b444921e38cff4b827f7bf77b6d8bbd5",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "documentationUrl": "https://vpm.anatawa12.com/avatar-optimizer/",
           "changelogUrl": "https://vpm.anatawa12.com/avatar-optimizer/en/docs/changelog/",
@@ -3576,6 +3775,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.7.0-rc.2.zip?",
+          "zipSHA256": "1f9f504e9dc600361126d4957b592a0d74afe7ee0a8730717171683ffcb35d00",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "documentationUrl": "https://vpm.anatawa12.com/avatar-optimizer/",
           "changelogUrl": "https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/changelog/#1.7.0-rc.2",
@@ -3598,6 +3798,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.7.0-rc.3.zip?",
+          "zipSHA256": "55a994dbff456e5204ddd234007c1752a7150606b43721fb8ffbea765f27c10d",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "documentationUrl": "https://vpm.anatawa12.com/avatar-optimizer/",
           "changelogUrl": "https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/changelog/#1.7.0-rc.3",
@@ -3620,6 +3821,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.7.0-rc.4.zip?",
+          "zipSHA256": "9c69e0e371e2da4244ed0fb8306b656be28b3f161a7d3350d455c89f0c2f7fd1",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "documentationUrl": "https://vpm.anatawa12.com/avatar-optimizer/",
           "changelogUrl": "https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/changelog/#1.7.0-rc.4",
@@ -3642,6 +3844,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.7.0.zip?",
+          "zipSHA256": "190c127257ac156b08e92baa2119089369d01795ae6277d35ec9c0ab0788d8ce",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "documentationUrl": "https://vpm.anatawa12.com/avatar-optimizer/",
           "changelogUrl": "https://vpm.anatawa12.com/avatar-optimizer/en/docs/changelog/#1.7.0",
@@ -3664,6 +3867,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.7.1-rc.1.zip?",
+          "zipSHA256": "c80762fb1d3fbb9091d3b9e6ca6bcf15a544ef7fe0b935678c4c720f8d967bd0",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "documentationUrl": "https://vpm.anatawa12.com/avatar-optimizer/",
           "changelogUrl": "https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/changelog/#1.7.1-rc.1",
@@ -3686,6 +3890,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.7.1.zip?",
+          "zipSHA256": "a135320413c4129ad66fdf8e534850c6dfb0ac2672fa12f997efc7b3d36095a1",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "documentationUrl": "https://vpm.anatawa12.com/avatar-optimizer/",
           "changelogUrl": "https://vpm.anatawa12.com/avatar-optimizer/en/docs/changelog/#1.7.1",
@@ -3708,6 +3913,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.7.2-rc.1.zip?",
+          "zipSHA256": "01f9aff5bd56a0bb0fef2c71d95595547d577c6a54a8b636e4421844df07eb68",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "documentationUrl": "https://vpm.anatawa12.com/avatar-optimizer/",
           "changelogUrl": "https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/changelog/#1.7.2-rc.1",
@@ -3730,6 +3936,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.7.2-rc.2.zip?",
+          "zipSHA256": "e5b239fadfff10feeaaf65d60f06be3b0e9e40d66c458cdec6bdd283d348a18e",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "documentationUrl": "https://vpm.anatawa12.com/avatar-optimizer/",
           "changelogUrl": "https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/changelog/#1.7.2-rc.2",
@@ -3752,6 +3959,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.7.2.zip?",
+          "zipSHA256": "faf127fe96a5c5e489b792889bf393f8f17c1f681e49af3d4975f15059567c06",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "documentationUrl": "https://vpm.anatawa12.com/avatar-optimizer/",
           "changelogUrl": "https://vpm.anatawa12.com/avatar-optimizer/en/docs/changelog/#1.7.2",
@@ -3774,6 +3982,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.7.3-rc.1.zip?",
+          "zipSHA256": "e94654ae965888320ee1f5d7e74a856645823bfd7e27d4800159eefb0a3f7d26",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "documentationUrl": "https://vpm.anatawa12.com/avatar-optimizer/",
           "changelogUrl": "https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/changelog/#1.7.3-rc.1",
@@ -3796,6 +4005,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.7.3.zip?",
+          "zipSHA256": "cd77a21b403bd1dd2a58e75df9ea165b6cb4e371ada715c08aeeb4ceaab71de1",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "documentationUrl": "https://vpm.anatawa12.com/avatar-optimizer/",
           "changelogUrl": "https://vpm.anatawa12.com/avatar-optimizer/en/docs/changelog/#1.7.3",
@@ -3818,6 +4028,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.7.4-beta.1.zip?",
+          "zipSHA256": "13f7f22d251891220af4b241f67fb88849af610d0434d42687e57c9c36983957",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "documentationUrl": "https://vpm.anatawa12.com/avatar-optimizer/",
           "changelogUrl": "https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/changelog/#1.7.4-beta.1",
@@ -3840,6 +4051,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.7.4.zip?",
+          "zipSHA256": "ffa810ab88a664d4a0ce3367f1e9b34119cc10f1bab82d6e4d7b8833a0be4a8f",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "documentationUrl": "https://vpm.anatawa12.com/avatar-optimizer/",
           "changelogUrl": "https://vpm.anatawa12.com/avatar-optimizer/en/docs/changelog/#1.7.4",
@@ -3862,6 +4074,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.7.5-beta.1.zip?",
+          "zipSHA256": "86164fea265fc249b8ea9e5585f45e786b0f34f35d80b0b55103e84bc896141b",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "documentationUrl": "https://vpm.anatawa12.com/avatar-optimizer/",
           "changelogUrl": "https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/changelog/#1.7.5-beta.1",
@@ -3884,6 +4097,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.7.5-beta.2.zip?",
+          "zipSHA256": "32d0e20af7835a95986fa9747dea69ac670bac8a1559d8fcf74da32a934bc54d",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "documentationUrl": "https://vpm.anatawa12.com/avatar-optimizer/",
           "changelogUrl": "https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/changelog/#1.7.5-beta.2",
@@ -3906,6 +4120,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.7.5.zip?",
+          "zipSHA256": "53bb5c1acfca556345e6279ea4942c7384e80b5d19094e40bce1176e65cb8fa5",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "documentationUrl": "https://vpm.anatawa12.com/avatar-optimizer/",
           "changelogUrl": "https://vpm.anatawa12.com/avatar-optimizer/en/docs/changelog/#1.7.5",
@@ -3928,6 +4143,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.7.6-beta.1.zip?",
+          "zipSHA256": "f979ed09057c4202c0a4b6cc11303289db07593494e8101396fae56927b2c958",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "documentationUrl": "https://vpm.anatawa12.com/avatar-optimizer/",
           "changelogUrl": "https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/changelog/#1.7.6-beta.1",
@@ -3950,6 +4166,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.7.6-beta.2.zip?",
+          "zipSHA256": "edd4ac11a3dfb7d7c2c9a29cfe754e40fb14bb6992bae48608f1d43b13b3194c",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "documentationUrl": "https://vpm.anatawa12.com/avatar-optimizer/",
           "changelogUrl": "https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/changelog/#1.7.6-beta.2",
@@ -3972,6 +4189,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.7.6.zip?",
+          "zipSHA256": "b11cfd39732a706c22ec9d479cfd7c0d130ab40ab71d4a330262f236c774732a",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "documentationUrl": "https://vpm.anatawa12.com/avatar-optimizer/",
           "changelogUrl": "https://vpm.anatawa12.com/avatar-optimizer/en/docs/changelog/#1.7.6",
@@ -3990,224 +4208,256 @@
           "displayName": "anatawa12's gists pack",
           "description": "set of anatawa12's gist you can enable/disable any of gist at `Tools/anatawa12's gist selector`",
           "version": "0.1.1",
-          "url": "https://vpm.anatawa12.com/gists/package-0.1.1.zip?"
+          "url": "https://vpm.anatawa12.com/gists/package-0.1.1.zip?",
+          "zipSHA256": "150e109007ddd0f1bb9a56dcaa6b4bacf3c41bdabebd8a7aa1f9f8f11e4a364a"
         },
         "0.1.2": {
           "name": "com.anatawa12.gists",
           "displayName": "anatawa12's gists pack",
           "description": "set of anatawa12's gist you can enable/disable any of gist at `Tools/anatawa12's gist selector`",
           "version": "0.1.2",
-          "url": "https://vpm.anatawa12.com/gists/package-0.1.2.zip?"
+          "url": "https://vpm.anatawa12.com/gists/package-0.1.2.zip?",
+          "zipSHA256": "d3f2ad7f63f33a02cf1296a5db726ff8b6972a6c09276d44dec5e28201bab11b"
         },
         "0.1.3": {
           "name": "com.anatawa12.gists",
           "displayName": "anatawa12's gists pack",
           "description": "set of anatawa12's gist you can enable/disable any of gist at `Tools/anatawa12's gist selector`",
           "version": "0.1.3",
-          "url": "https://vpm.anatawa12.com/gists/package-0.1.3.zip?"
+          "url": "https://vpm.anatawa12.com/gists/package-0.1.3.zip?",
+          "zipSHA256": "84299ac1690d6d4a519df6f39f5718437852c11f14d0c58770cffcf7e8f8feef"
         },
         "0.2.0": {
           "name": "com.anatawa12.gists",
           "displayName": "anatawa12's gists pack",
           "description": "set of anatawa12's gist you can enable/disable any of gist at `Tools/anatawa12's gist selector`",
           "version": "0.2.0",
-          "url": "https://vpm.anatawa12.com/gists/package-0.2.0.zip?"
+          "url": "https://vpm.anatawa12.com/gists/package-0.2.0.zip?",
+          "zipSHA256": "bb784b95ac337c1734b86987becf078c8ae6feb658e26a53d35d5613604b204b"
         },
         "0.2.1": {
           "name": "com.anatawa12.gists",
           "displayName": "anatawa12's gists pack",
           "description": "set of anatawa12's gist you can enable/disable any of gist at `Tools/anatawa12's gist selector`",
           "version": "0.2.1",
-          "url": "https://vpm.anatawa12.com/gists/package-0.2.1.zip?"
+          "url": "https://vpm.anatawa12.com/gists/package-0.2.1.zip?",
+          "zipSHA256": "ef500c07fe22d19dcbe666c240c13da824396cbe1f3d603f6bc4f2b391d35457"
         },
         "0.2.2": {
           "name": "com.anatawa12.gists",
           "displayName": "anatawa12's gists pack",
           "description": "set of anatawa12's gist you can enable/disable any of gist at `Tools/anatawa12's gist selector`",
           "version": "0.2.2",
-          "url": "https://vpm.anatawa12.com/gists/package-0.2.2.zip?"
+          "url": "https://vpm.anatawa12.com/gists/package-0.2.2.zip?",
+          "zipSHA256": "1f9e86eb98b9958e7a97a91dc6ea6c4d38134937acb57327ca32050207c89d95"
         },
         "0.3.0": {
           "name": "com.anatawa12.gists",
           "displayName": "anatawa12's gists pack",
           "description": "set of anatawa12's gist you can enable/disable any of gist at `Tools/anatawa12's gist selector`",
           "version": "0.3.0",
-          "url": "https://vpm.anatawa12.com/gists/package-0.3.0.zip?"
+          "url": "https://vpm.anatawa12.com/gists/package-0.3.0.zip?",
+          "zipSHA256": "2ca8bdfde6d36ddec35c4a34c89a5d2caf515e40c2f0998154c150104e651741"
         },
         "0.4.0": {
           "name": "com.anatawa12.gists",
           "displayName": "anatawa12's gists pack",
           "description": "set of anatawa12's gist you can enable/disable any of gist at `Tools/anatawa12's gist selector`",
           "version": "0.4.0",
-          "url": "https://vpm.anatawa12.com/gists/package-0.4.0.zip?"
+          "url": "https://vpm.anatawa12.com/gists/package-0.4.0.zip?",
+          "zipSHA256": "643f7cd7917adcce7332a3410d77b5d62d3c9866101c89b3d0e8223b5f9a35ab"
         },
         "0.4.1": {
           "name": "com.anatawa12.gists",
           "displayName": "anatawa12's gists pack",
           "description": "set of anatawa12's gist you can enable/disable any of gist at `Tools/anatawa12's gist selector`",
           "version": "0.4.1",
-          "url": "https://vpm.anatawa12.com/gists/package-0.4.1.zip?"
+          "url": "https://vpm.anatawa12.com/gists/package-0.4.1.zip?",
+          "zipSHA256": "e2a22d057d0db3e5e1900e5582e717b7bad344861e0b59c73e9c64705d7badcd"
         },
         "0.4.2": {
           "name": "com.anatawa12.gists",
           "displayName": "anatawa12's gists pack",
           "description": "set of anatawa12's gist you can enable/disable any of gist at `Tools/anatawa12's gist selector`",
           "version": "0.4.2",
-          "url": "https://vpm.anatawa12.com/gists/package-0.4.2.zip?"
+          "url": "https://vpm.anatawa12.com/gists/package-0.4.2.zip?",
+          "zipSHA256": "93c5556df4d95f811bc54c963400b5b91080850f886451b19069046da03e92f4"
         },
         "0.4.3": {
           "name": "com.anatawa12.gists",
           "displayName": "anatawa12's gists pack",
           "description": "set of anatawa12's gist you can enable/disable any of gist at `Tools/anatawa12's gist selector`",
           "version": "0.4.3",
-          "url": "https://vpm.anatawa12.com/gists/package-0.4.3.zip?"
+          "url": "https://vpm.anatawa12.com/gists/package-0.4.3.zip?",
+          "zipSHA256": "26a7a6672db2a5b25c2d05e8e3045a791e740841dea9a6106310c881678bb341"
         },
         "0.4.4": {
           "name": "com.anatawa12.gists",
           "displayName": "anatawa12's gists pack",
           "description": "set of anatawa12's gist you can enable/disable any of gist at `Tools/anatawa12's gist selector`",
           "version": "0.4.4",
-          "url": "https://vpm.anatawa12.com/gists/package-0.4.4.zip?"
+          "url": "https://vpm.anatawa12.com/gists/package-0.4.4.zip?",
+          "zipSHA256": "f833ae62c7cbf255ea559a2101f9920383da21b1ff47d6b9e2b81725a5e14424"
         },
         "0.4.5": {
           "name": "com.anatawa12.gists",
           "displayName": "anatawa12's gists pack",
           "description": "set of anatawa12's gist you can enable/disable any of gist at `Tools/anatawa12's gist selector`",
           "version": "0.4.5",
-          "url": "https://vpm.anatawa12.com/gists/package-0.4.5.zip?"
+          "url": "https://vpm.anatawa12.com/gists/package-0.4.5.zip?",
+          "zipSHA256": "bb2bccd6faff9007bf4a374050405e18c4eac46d1eb4974a784b0f389f7e814d"
         },
         "0.4.6": {
           "name": "com.anatawa12.gists",
           "displayName": "anatawa12's gists pack",
           "description": "set of anatawa12's gist you can enable/disable any of gist at `Tools/anatawa12's gist selector`",
           "version": "0.4.6",
-          "url": "https://vpm.anatawa12.com/gists/package-0.4.6.zip?"
+          "url": "https://vpm.anatawa12.com/gists/package-0.4.6.zip?",
+          "zipSHA256": "b689075ea595dbd418f4ba1a53dffedd40141565effee4b4b7b2f000c899a4c9"
         },
         "0.5.0": {
           "name": "com.anatawa12.gists",
           "displayName": "anatawa12's gists pack",
           "description": "set of anatawa12's gist you can enable/disable any of gist at `Tools/anatawa12's gist selector`",
           "version": "0.5.0",
-          "url": "https://vpm.anatawa12.com/gists/package-0.5.0.zip?"
+          "url": "https://vpm.anatawa12.com/gists/package-0.5.0.zip?",
+          "zipSHA256": "8e70db7a671bb78706bb509c1b92b0564ef40e6a57fab1bd8d5ee19115726208"
         },
         "0.6.0": {
           "name": "com.anatawa12.gists",
           "displayName": "anatawa12's gists pack",
           "description": "set of anatawa12's gist you can enable/disable any of gist at `Tools/anatawa12's gist selector`",
           "version": "0.6.0",
-          "url": "https://vpm.anatawa12.com/gists/package-0.6.0.zip?"
+          "url": "https://vpm.anatawa12.com/gists/package-0.6.0.zip?",
+          "zipSHA256": "9b31a55eee9ec35684faf75633b30a45da323e1d9551ca0e0f2e7313de722deb"
         },
         "0.6.1": {
           "name": "com.anatawa12.gists",
           "displayName": "anatawa12's gists pack",
           "description": "set of anatawa12's gist you can enable/disable any of gist at `Tools/anatawa12's gist selector`",
           "version": "0.6.1",
-          "url": "https://vpm.anatawa12.com/gists/package-0.6.1.zip?"
+          "url": "https://vpm.anatawa12.com/gists/package-0.6.1.zip?",
+          "zipSHA256": "f04397727954efeba67bdd747838970755b4ddfec9e46564260eaa6b25eb8fcf"
         },
         "0.6.2": {
           "name": "com.anatawa12.gists",
           "displayName": "anatawa12's gists pack",
           "description": "set of anatawa12's gist you can enable/disable any of gist at `Tools/anatawa12's gist selector`",
           "version": "0.6.2",
-          "url": "https://vpm.anatawa12.com/gists/package-0.6.2.zip?"
+          "url": "https://vpm.anatawa12.com/gists/package-0.6.2.zip?",
+          "zipSHA256": "ea5105dd2b9eae875d83a010193ccd195301ea06ef20c164e72b83260443f724"
         },
         "0.7.0": {
           "name": "com.anatawa12.gists",
           "displayName": "anatawa12's gists pack",
           "description": "set of anatawa12's gist you can enable/disable any of gist at `Tools/anatawa12's gist selector`",
           "version": "0.7.0",
-          "url": "https://vpm.anatawa12.com/gists/package-0.7.0.zip?"
+          "url": "https://vpm.anatawa12.com/gists/package-0.7.0.zip?",
+          "zipSHA256": "5026aea22f03e028c6ccb12d439f26b0ed524cc05a0275d026585bc14d69c3ce"
         },
         "0.8.0": {
           "name": "com.anatawa12.gists",
           "displayName": "anatawa12's gists pack",
           "description": "set of anatawa12's gist you can enable/disable any of gist at `Tools/anatawa12's gist selector`",
           "version": "0.8.0",
-          "url": "https://vpm.anatawa12.com/gists/package-0.8.0.zip?"
+          "url": "https://vpm.anatawa12.com/gists/package-0.8.0.zip?",
+          "zipSHA256": "e296a6904d92bcff6d1b22b7515c7514d2e83fae134f38436127e5d34fd64ea4"
         },
         "0.9.0": {
           "name": "com.anatawa12.gists",
           "displayName": "anatawa12's gists pack",
           "description": "set of anatawa12's gist you can enable/disable any of gist at `Tools/anatawa12's gist selector`",
           "version": "0.9.0",
-          "url": "https://vpm.anatawa12.com/gists/package-0.9.0.zip?"
+          "url": "https://vpm.anatawa12.com/gists/package-0.9.0.zip?",
+          "zipSHA256": "4d58be41dc42815ab563e18bbf96bbb33922f7e9ea1438cf0a6a48dd3dfdc676"
         },
         "0.9.1": {
           "name": "com.anatawa12.gists",
           "displayName": "anatawa12's gists pack",
           "description": "set of anatawa12's gist you can enable/disable any of gist at `Tools/anatawa12's gist selector`",
           "version": "0.9.1",
-          "url": "https://vpm.anatawa12.com/gists/package-0.9.1.zip?"
+          "url": "https://vpm.anatawa12.com/gists/package-0.9.1.zip?",
+          "zipSHA256": "0e1f787abfbf8f867826e11912a61847827e7f2f340ab2abb4a5786d88c7b9ec"
         },
         "0.9.2": {
           "name": "com.anatawa12.gists",
           "displayName": "anatawa12's gists pack",
           "description": "set of anatawa12's gist you can enable/disable any of gist at `Tools/anatawa12's gist selector`",
           "version": "0.9.2",
-          "url": "https://vpm.anatawa12.com/gists/package-0.9.2.zip?"
+          "url": "https://vpm.anatawa12.com/gists/package-0.9.2.zip?",
+          "zipSHA256": "9fbe073da6effd1477a8298a45f93f87ea8cb25263349c44abf98cbd4bd9d718"
         },
         "0.10.0": {
           "name": "com.anatawa12.gists",
           "displayName": "anatawa12's gists pack",
           "description": "set of anatawa12's gist you can enable/disable any of gist at `Tools/anatawa12's gist selector`",
           "version": "0.10.0",
-          "url": "https://vpm.anatawa12.com/gists/package-0.10.0.zip?"
+          "url": "https://vpm.anatawa12.com/gists/package-0.10.0.zip?",
+          "zipSHA256": "7367700b990ce392ac14ba7c1a57df00df3d6690fbb1c34f6388d37dc56d1f46"
         },
         "0.10.1": {
           "name": "com.anatawa12.gists",
           "displayName": "anatawa12's gists pack",
           "description": "set of anatawa12's gist you can enable/disable any of gist at `Tools/anatawa12's gist selector`",
           "version": "0.10.1",
-          "url": "https://vpm.anatawa12.com/gists/package-0.10.1.zip?"
+          "url": "https://vpm.anatawa12.com/gists/package-0.10.1.zip?",
+          "zipSHA256": "99e820dc57751740dc9381865b4bb09c70af94c06c7f370cd397228c1d9e68ca"
         },
         "0.10.2": {
           "name": "com.anatawa12.gists",
           "displayName": "anatawa12's gists pack",
           "description": "set of anatawa12's gist you can enable/disable any of gist at `Tools/anatawa12's gist selector`",
           "version": "0.10.2",
-          "url": "https://vpm.anatawa12.com/gists/package-0.10.2.zip?"
+          "url": "https://vpm.anatawa12.com/gists/package-0.10.2.zip?",
+          "zipSHA256": "68c8dcf2443988ebb047318d1ea9d6453b7ec31352a805dbdcb657950909225b"
         },
         "0.10.3": {
           "name": "com.anatawa12.gists",
           "displayName": "anatawa12's gists pack",
           "description": "set of anatawa12's gist you can enable/disable any of gist at `Tools/anatawa12's gist selector`",
           "version": "0.10.3",
-          "url": "https://vpm.anatawa12.com/gists/package-v0.10.3.zip?"
+          "url": "https://vpm.anatawa12.com/gists/package-v0.10.3.zip?",
+          "zipSHA256": "5a91d0f54e2d471c38f99e9213e926e5d87c5b5c61bef6044b6d070bb4bc7fee"
         },
         "0.10.4": {
           "name": "com.anatawa12.gists",
           "displayName": "anatawa12's gists pack",
           "description": "set of anatawa12's gist you can enable/disable any of gist at `Tools/anatawa12's gist selector`",
           "version": "0.10.4",
-          "url": "https://vpm.anatawa12.com/gists/package-0.10.4.zip?"
+          "url": "https://vpm.anatawa12.com/gists/package-0.10.4.zip?",
+          "zipSHA256": "46ab60833d59aae89ca40db40c7d4734d042fa57933131d84e5d33764adab38e"
         },
         "0.10.5": {
           "name": "com.anatawa12.gists",
           "displayName": "anatawa12's gists pack",
           "description": "set of anatawa12's gist you can enable/disable any of gist at `Tools/anatawa12's gist selector`",
           "version": "0.10.5",
-          "url": "https://vpm.anatawa12.com/gists/package-0.10.5.zip?"
+          "url": "https://vpm.anatawa12.com/gists/package-0.10.5.zip?",
+          "zipSHA256": "d3e4ba5f2c7cfba2d8f19ea4add4778e1870a421e7b95593f1e82d1fdbd22f95"
         },
         "0.11.0": {
           "name": "com.anatawa12.gists",
           "displayName": "anatawa12's gists pack",
           "description": "set of anatawa12's gist you can enable/disable any of gist at `Tools/anatawa12's gist selector`",
           "version": "0.11.0",
-          "url": "https://vpm.anatawa12.com/gists/package-0.11.0.zip?"
+          "url": "https://vpm.anatawa12.com/gists/package-0.11.0.zip?",
+          "zipSHA256": "a5cf9d86fd804d66c81a97ab9a792486bf557e43378bd889121ac1665eae5069"
         },
         "0.11.1": {
           "name": "com.anatawa12.gists",
           "displayName": "anatawa12's gists pack",
           "description": "set of anatawa12's gist you can enable/disable any of gist at `Tools/anatawa12's gist selector`",
           "version": "0.11.1",
-          "url": "https://vpm.anatawa12.com/gists/package-0.11.1.zip?"
+          "url": "https://vpm.anatawa12.com/gists/package-0.11.1.zip?",
+          "zipSHA256": "279614b0a406dce92b40868114683fd92762590a083a12622ecf9754c2fa1eeb"
         },
         "0.11.2": {
           "name": "com.anatawa12.gists",
           "displayName": "anatawa12's gists pack",
           "description": "set of anatawa12's gist you can enable/disable any of gist at `Tools/anatawa12's gist selector`",
           "version": "0.11.2",
-          "url": "https://vpm.anatawa12.com/gists/package-0.11.2.zip?"
+          "url": "https://vpm.anatawa12.com/gists/package-0.11.2.zip?",
+          "zipSHA256": "56fbd44b05035391c5159b4e35a596a645d49885e42f3ed8472b3fc0d6ace04b"
         },
         "0.11.3": {
           "name": "com.anatawa12.gists",
@@ -4215,7 +4465,8 @@
           "description": "set of anatawa12's gist you can enable/disable any of gist at `Tools/anatawa12's gist selector`",
           "unity": "2019.4",
           "version": "0.11.3",
-          "url": "https://vpm.anatawa12.com/gists/package-0.11.3.zip?"
+          "url": "https://vpm.anatawa12.com/gists/package-0.11.3.zip?",
+          "zipSHA256": "87ec30449a2bb051ec03e00c151c560d13d666e88b1d76cde6946040345eeaff"
         },
         "0.11.4": {
           "name": "com.anatawa12.gists",
@@ -4223,7 +4474,8 @@
           "description": "set of anatawa12's gist you can enable/disable any of gist at `Tools/anatawa12's gist selector`",
           "unity": "2019.4",
           "version": "0.11.4",
-          "url": "https://vpm.anatawa12.com/gists/package-0.11.4.zip?"
+          "url": "https://vpm.anatawa12.com/gists/package-0.11.4.zip?",
+          "zipSHA256": "628eda800d7cc9245e2d1688b0a677dfecabf3cad7fa1a82e4cc0d13864cbec7"
         },
         "0.11.5": {
           "name": "com.anatawa12.gists",
@@ -4231,7 +4483,8 @@
           "description": "set of anatawa12's gist you can enable/disable any of gist at `Tools/anatawa12's gist selector`",
           "unity": "2019.4",
           "version": "0.11.5",
-          "url": "https://vpm.anatawa12.com/gists/package-0.11.5.zip?"
+          "url": "https://vpm.anatawa12.com/gists/package-0.11.5.zip?",
+          "zipSHA256": "637133d65f7def959be78533924eaa20acd057019502c958cb763c7502b09da7"
         },
         "0.12.0": {
           "name": "com.anatawa12.gists",
@@ -4239,7 +4492,8 @@
           "description": "set of anatawa12's gist you can enable/disable any of gist at `Tools/anatawa12's gist selector`",
           "unity": "2019.4",
           "version": "0.12.0",
-          "url": "https://vpm.anatawa12.com/gists/package-0.12.0.zip?"
+          "url": "https://vpm.anatawa12.com/gists/package-0.12.0.zip?",
+          "zipSHA256": "0bc3f1eac40de04ada40a4fd41040a325ff7b497e5b68d7ede4b96765354e338"
         },
         "0.12.1": {
           "name": "com.anatawa12.gists",
@@ -4247,7 +4501,8 @@
           "description": "set of anatawa12's gist you can enable/disable any of gist at `Tools/anatawa12's gist selector`",
           "unity": "2019.4",
           "version": "0.12.1",
-          "url": "https://vpm.anatawa12.com/gists/package-0.12.1.zip?"
+          "url": "https://vpm.anatawa12.com/gists/package-0.12.1.zip?",
+          "zipSHA256": "bea849c01199d5773d96fe4e42210d8a86c93c63035b45ec65a5fa1a9447e86c"
         },
         "0.13.0": {
           "name": "com.anatawa12.gists",
@@ -4255,7 +4510,8 @@
           "description": "set of anatawa12's gist you can enable/disable any of gist at `Tools/anatawa12's gist selector`",
           "unity": "2019.4",
           "version": "0.13.0",
-          "url": "https://vpm.anatawa12.com/gists/package-0.13.0.zip?"
+          "url": "https://vpm.anatawa12.com/gists/package-0.13.0.zip?",
+          "zipSHA256": "05bb4fc265fedd0b317386356a06c615e7a7999a8af335b52768736c81c3c948"
         },
         "0.14.0": {
           "name": "com.anatawa12.gists",
@@ -4263,7 +4519,8 @@
           "description": "set of anatawa12's gist you can enable/disable any of gist at `Tools/anatawa12's gist selector`",
           "unity": "2019.4",
           "version": "0.14.0",
-          "url": "https://vpm.anatawa12.com/gists/package-0.14.0.zip?"
+          "url": "https://vpm.anatawa12.com/gists/package-0.14.0.zip?",
+          "zipSHA256": "67afc7b28c54bfc32b299ae3aaee712086f57cc8dd9c5aa2ffa898240fd56d16"
         }
       }
     },
@@ -4280,6 +4537,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/continuous-avatar-uploader/package-0.0.1-beta.1.zip?",
+          "zipSHA256": "09ea3dde3c0c8fa2499cdbca6af277662ad05789d112ca405aafae416c6007a3",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.1.10 <4.0.0"
@@ -4296,6 +4554,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/continuous-avatar-uploader/package-0.0.1.zip?",
+          "zipSHA256": "6142667e7bc2a9777ea22b93d53e34b4d2b0f11f34f4dde2d8fe801b8cd63887",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.1.10 <4.0.0"
@@ -4312,6 +4571,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/continuous-avatar-uploader/package-0.0.2.zip?",
+          "zipSHA256": "210d8a69789864ddd6fde21e8b2ce0195aaca14494f5eb27657aa64b8625cb22",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.1.10 <4.0.0"
@@ -4328,6 +4588,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/continuous-avatar-uploader/package-0.0.3.zip?",
+          "zipSHA256": "dfd2a55fdecdb47d3773182ca1ca349ce089578155bddeb8a082142efde1a63f",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.1.10 <4.0.0"
@@ -4344,6 +4605,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/continuous-avatar-uploader/package-0.1.0-beta.1.zip?",
+          "zipSHA256": "8b04c088739cd577fd65d9269387b047242f50190851ee3e47770622b8436775",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.1.10 <4.0.0"
@@ -4360,6 +4622,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/continuous-avatar-uploader/package-0.1.0-rc.1.zip?",
+          "zipSHA256": "0c04e5b7dc0b5062915ad47a3db8d34dd3de7b8db2272dbd7652ee8696ec176e",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.1.10 <4.0.0"
@@ -4376,6 +4639,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/continuous-avatar-uploader/package-0.1.0.zip?",
+          "zipSHA256": "976ea5e673019ab71157447491b4cd13de71a880fdc14664cba17e7b7d7cf4c0",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.1.10 <4.0.0"
@@ -4392,6 +4656,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/continuous-avatar-uploader/package-0.2.0-beta.1.zip?",
+          "zipSHA256": "d89050201da651d6aa829711cf75c05f1855c70eb6c9e240945d2bfed149582b",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.3.0-beta.1 <3.4.0"
@@ -4408,6 +4673,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/continuous-avatar-uploader/package-0.2.0-beta.2.zip?",
+          "zipSHA256": "9ab84b2d38c4e38174035646d44508e7aa0355fc67f2af13124bf1fa309bf547",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.3.0-beta.1 <3.4.0"
@@ -4424,6 +4690,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/continuous-avatar-uploader/package-0.2.0.zip?",
+          "zipSHA256": "d9389c1550c512035231a3c11973b2e9cefc80e1f20c8b05f11ca7d560e53eeb",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.3.0-beta.1 <3.4.0"
@@ -4440,6 +4707,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/continuous-avatar-uploader/package-0.2.1.zip?",
+          "zipSHA256": "352cc4b4e54d55adaab6b53ca2397c9203799fe1a4a91d92c495118a0bae246d",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.3.0-beta.1 <3.4.0"
@@ -4456,6 +4724,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/continuous-avatar-uploader/package-0.2.2.zip?",
+          "zipSHA256": "de7cc471555c8fc1b987deec92d75cda5cbdf8a0d4474aa153bf03e7508f9de1",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.3.0-beta.1 <3.4.0"
@@ -4472,6 +4741,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/continuous-avatar-uploader/package-0.2.3.zip?",
+          "zipSHA256": "de2bfe22fed66fd9f246c0d5f3a6a23d3ee99b997d3c045826e8c0d23bcb4efd",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.3.0-beta.1 <3.5.0"
@@ -4488,6 +4758,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/continuous-avatar-uploader/package-0.2.4.zip?",
+          "zipSHA256": "77fe623c76b7223faabca669238c83e1cbcec402780569a9506ad86ca2544608",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.3.0-beta.1 <3.5.0"
@@ -4504,6 +4775,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/continuous-avatar-uploader/package-0.2.5.zip?",
+          "zipSHA256": "d99d197898a9cd132cbddd6b6d609f365679a8838849d91dddca9df7a6fd4e71",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.3.0-beta.1 <3.5.0"
@@ -4520,6 +4792,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/continuous-avatar-uploader/package-0.2.6.zip?",
+          "zipSHA256": "620731aa0c9a4fe27779938b5ba9432ab76b18ea8d641b3c80aa4934748f7eb6",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.3.0-beta.1 <3.6.0"
@@ -4536,6 +4809,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/continuous-avatar-uploader/package-0.3.0.zip?",
+          "zipSHA256": "dca3ef1da794bfb94a2c12f40aa5d88d2d613ab18785413fddf016005bc0c05b",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.3.0-beta.1 <3.7.0"
@@ -4552,6 +4826,7 @@
             "url": "https://anatawa12.com/"
           },
           "url": "https://vpm.anatawa12.com/continuous-avatar-uploader/package-0.3.1.zip?",
+          "zipSHA256": "c808da37fcef52c38be818f951834b2b4b274b11d1fda66e9d09632f150dc58c",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.3.0-beta.1 <3.7.0"
@@ -4573,7 +4848,8 @@
             "name": "anatawa12",
             "url": "https://anatawa12.com/"
           },
-          "url": "https://vpm.anatawa12.com/vpm-package-auto-installer.creator/package-0.2.0.zip?"
+          "url": "https://vpm.anatawa12.com/vpm-package-auto-installer.creator/package-0.2.0.zip?",
+          "zipSHA256": "8ac76511a5d98fe75c9ff0fb26e5808fee06ce34999821ecfa81ba136f1030f7"
         },
         "0.2.1": {
           "name": "com.anatawa12.vpm-package-auto-installer.creator",
@@ -4587,7 +4863,8 @@
             "name": "anatawa12",
             "url": "https://anatawa12.com/"
           },
-          "url": "https://vpm.anatawa12.com/vpm-package-auto-installer.creator/package-0.2.1.zip?"
+          "url": "https://vpm.anatawa12.com/vpm-package-auto-installer.creator/package-0.2.1.zip?",
+          "zipSHA256": "15815d9854856b7dc4a020be6ee8e033b735c5e88a7ff1cbe0798b2051b050ce"
         },
         "0.2.2": {
           "name": "com.anatawa12.vpm-package-auto-installer.creator",
@@ -4601,7 +4878,8 @@
             "name": "anatawa12",
             "url": "https://anatawa12.com/"
           },
-          "url": "https://vpm.anatawa12.com/vpm-package-auto-installer.creator/package-0.2.2.zip?"
+          "url": "https://vpm.anatawa12.com/vpm-package-auto-installer.creator/package-0.2.2.zip?",
+          "zipSHA256": "18538eb6ab338145b53b20335b398f1f65d08707b298547cb650c77f5988ef3d"
         },
         "0.2.3": {
           "name": "com.anatawa12.vpm-package-auto-installer.creator",
@@ -4615,7 +4893,8 @@
             "name": "anatawa12",
             "url": "https://anatawa12.com/"
           },
-          "url": "https://vpm.anatawa12.com/vpm-package-auto-installer.creator/package-0.2.3.zip?"
+          "url": "https://vpm.anatawa12.com/vpm-package-auto-installer.creator/package-0.2.3.zip?",
+          "zipSHA256": "ec1ec0e008c6cbea6df6f31beb463b16e94d61921236c09909122a86a9c96222"
         },
         "0.2.6": {
           "name": "com.anatawa12.vpm-package-auto-installer.creator",
@@ -4629,7 +4908,8 @@
             "name": "anatawa12",
             "url": "https://anatawa12.com/"
           },
-          "url": "https://vpm.anatawa12.com/vpm-package-auto-installer.creator/package-0.2.6.zip?"
+          "url": "https://vpm.anatawa12.com/vpm-package-auto-installer.creator/package-0.2.6.zip?",
+          "zipSHA256": "56ab2251e90b2b712c4ea0a311aec06ad332b9a0024fd03bfe9164a836f1cca6"
         },
         "0.2.7": {
           "name": "com.anatawa12.vpm-package-auto-installer.creator",
@@ -4643,7 +4923,8 @@
             "name": "anatawa12",
             "url": "https://anatawa12.com/"
           },
-          "url": "https://vpm.anatawa12.com/vpm-package-auto-installer.creator/package-0.2.7.zip?"
+          "url": "https://vpm.anatawa12.com/vpm-package-auto-installer.creator/package-0.2.7.zip?",
+          "zipSHA256": "0c1ceb69ddd0b5dc663856a385f9f55cde7992df532ef3c44d26482cc8ea7729"
         },
         "0.2.8": {
           "name": "com.anatawa12.vpm-package-auto-installer.creator",
@@ -4657,7 +4938,8 @@
             "name": "anatawa12",
             "url": "https://anatawa12.com/"
           },
-          "url": "https://vpm.anatawa12.com/vpm-package-auto-installer.creator/package-0.2.8.zip?"
+          "url": "https://vpm.anatawa12.com/vpm-package-auto-installer.creator/package-0.2.8.zip?",
+          "zipSHA256": "cb987ac0f594e5f8816cd7e6b2cd0eea3d951553b14be380ebb33fca461ba714"
         },
         "0.3.0": {
           "name": "com.anatawa12.vpm-package-auto-installer.creator",
@@ -4671,7 +4953,8 @@
             "name": "anatawa12",
             "url": "https://anatawa12.com/"
           },
-          "url": "https://vpm.anatawa12.com/vpm-package-auto-installer.creator/package-0.3.0.zip?"
+          "url": "https://vpm.anatawa12.com/vpm-package-auto-installer.creator/package-0.3.0.zip?",
+          "zipSHA256": "cd745799a0c80a5c36eecdfce014da9d70722922ce5259c3ebbf5258f7770552"
         },
         "0.3.1": {
           "name": "com.anatawa12.vpm-package-auto-installer.creator",
@@ -4685,7 +4968,8 @@
             "name": "anatawa12",
             "url": "https://anatawa12.com/"
           },
-          "url": "https://vpm.anatawa12.com/vpm-package-auto-installer.creator/package-0.3.1.zip?"
+          "url": "https://vpm.anatawa12.com/vpm-package-auto-installer.creator/package-0.3.1.zip?",
+          "zipSHA256": "a80498e348e34a42beed3b3d1afa2c3369dd08fa3cc4a5f19e28a66e6cb471bf"
         },
         "0.3.2": {
           "name": "com.anatawa12.vpm-package-auto-installer.creator",
@@ -4699,7 +4983,8 @@
             "name": "anatawa12",
             "url": "https://anatawa12.com/"
           },
-          "url": "https://vpm.anatawa12.com/vpm-package-auto-installer.creator/package-0.3.2.zip?"
+          "url": "https://vpm.anatawa12.com/vpm-package-auto-installer.creator/package-0.3.2.zip?",
+          "zipSHA256": "e47892c1e3be7945152972092de9add4722e30e37e8dc960d941916d813f5ee9"
         },
         "0.3.3": {
           "name": "com.anatawa12.vpm-package-auto-installer.creator",
@@ -4713,7 +4998,8 @@
             "name": "anatawa12",
             "url": "https://anatawa12.com/"
           },
-          "url": "https://vpm.anatawa12.com/vpm-package-auto-installer.creator/package-0.3.3.zip?"
+          "url": "https://vpm.anatawa12.com/vpm-package-auto-installer.creator/package-0.3.3.zip?",
+          "zipSHA256": "dca9ad3d9f79c14b525d842640f63bc66ba5a29fd4f5e36d8f70dec3861c541d"
         },
         "0.3.4": {
           "name": "com.anatawa12.vpm-package-auto-installer.creator",
@@ -4727,7 +5013,8 @@
             "name": "anatawa12",
             "url": "https://anatawa12.com/"
           },
-          "url": "https://vpm.anatawa12.com/vpm-package-auto-installer.creator/package-0.3.4.zip?"
+          "url": "https://vpm.anatawa12.com/vpm-package-auto-installer.creator/package-0.3.4.zip?",
+          "zipSHA256": "cc80dcd87dcdfacad87e159c6972c32f376357f0a7e0a0ff2d6b59c5a7ce718e"
         },
         "0.3.5": {
           "name": "com.anatawa12.vpm-package-auto-installer.creator",
@@ -4741,7 +5028,8 @@
             "name": "anatawa12",
             "url": "https://anatawa12.com/"
           },
-          "url": "https://vpm.anatawa12.com/vpm-package-auto-installer.creator/package-0.3.5.zip?"
+          "url": "https://vpm.anatawa12.com/vpm-package-auto-installer.creator/package-0.3.5.zip?",
+          "zipSHA256": "d77657b11fb7552deabf2eee917faaf1612048e2f49bbbd90dbc3f997d733260"
         },
         "1.0.0": {
           "name": "com.anatawa12.vpm-package-auto-installer.creator",
@@ -4755,7 +5043,8 @@
             "name": "anatawa12",
             "url": "https://anatawa12.com/"
           },
-          "url": "https://vpm.anatawa12.com/vpm-package-auto-installer.creator/package-1.0.0.zip?"
+          "url": "https://vpm.anatawa12.com/vpm-package-auto-installer.creator/package-1.0.0.zip?",
+          "zipSHA256": "47006713c05ac811f8506cfde17de28151a808f600ef25e5148b94ed2f09515e"
         },
         "1.0.1": {
           "name": "com.anatawa12.vpm-package-auto-installer.creator",
@@ -4769,7 +5058,8 @@
             "name": "anatawa12",
             "url": "https://anatawa12.com/"
           },
-          "url": "https://vpm.anatawa12.com/vpm-package-auto-installer.creator/package-1.0.1.zip?"
+          "url": "https://vpm.anatawa12.com/vpm-package-auto-installer.creator/package-1.0.1.zip?",
+          "zipSHA256": "da4af18028377d047241d89de3b3f24be33e9c03f2c7e3a8982b340d96bb0ee3"
         },
         "1.0.2": {
           "name": "com.anatawa12.vpm-package-auto-installer.creator",
@@ -4783,7 +5073,8 @@
             "name": "anatawa12",
             "url": "https://anatawa12.com/"
           },
-          "url": "https://vpm.anatawa12.com/vpm-package-auto-installer.creator/package-1.0.2.zip?"
+          "url": "https://vpm.anatawa12.com/vpm-package-auto-installer.creator/package-1.0.2.zip?",
+          "zipSHA256": "29ab774d0c4c36764872e80b5bd7da423ab8993481b74b8a29937a934a446e10"
         },
         "1.0.3": {
           "name": "com.anatawa12.vpm-package-auto-installer.creator",
@@ -4797,7 +5088,8 @@
             "name": "anatawa12",
             "url": "https://anatawa12.com/"
           },
-          "url": "https://vpm.anatawa12.com/vpm-package-auto-installer.creator/package-1.0.3.zip?"
+          "url": "https://vpm.anatawa12.com/vpm-package-auto-installer.creator/package-1.0.3.zip?",
+          "zipSHA256": "f95339d3512ac7e85974ab858bb88332df931d90722bb298de6c80dc7adcf43a"
         },
         "1.0.4": {
           "name": "com.anatawa12.vpm-package-auto-installer.creator",
@@ -4811,7 +5103,8 @@
             "name": "anatawa12",
             "url": "https://anatawa12.com/"
           },
-          "url": "https://vpm.anatawa12.com/vpm-package-auto-installer.creator/package-1.0.4.zip?"
+          "url": "https://vpm.anatawa12.com/vpm-package-auto-installer.creator/package-1.0.4.zip?",
+          "zipSHA256": "2feae6620ddd7aab7c019862cb5cdb98fc65b75e5c6e1d4c7c4709d640479ea5"
         },
         "1.0.5": {
           "name": "com.anatawa12.vpm-package-auto-installer.creator",
@@ -4825,7 +5118,8 @@
             "name": "anatawa12",
             "url": "https://anatawa12.com/"
           },
-          "url": "https://vpm.anatawa12.com/vpm-package-auto-installer.creator/package-1.0.5.zip?"
+          "url": "https://vpm.anatawa12.com/vpm-package-auto-installer.creator/package-1.0.5.zip?",
+          "zipSHA256": "5c0ad8df09567142da8266ae8148e7bf5094d4d0489db54c2bb070fb94d7179e"
         },
         "1.0.6": {
           "name": "com.anatawa12.vpm-package-auto-installer.creator",
@@ -4839,7 +5133,8 @@
             "name": "anatawa12",
             "url": "https://anatawa12.com/"
           },
-          "url": "https://vpm.anatawa12.com/vpm-package-auto-installer.creator/package-1.0.6.zip?"
+          "url": "https://vpm.anatawa12.com/vpm-package-auto-installer.creator/package-1.0.6.zip?",
+          "zipSHA256": "fc1ebd8e510cedbf9a0b7089efbfa775820dd1db372b613e97127d45800f9262"
         },
         "1.0.7": {
           "name": "com.anatawa12.vpm-package-auto-installer.creator",
@@ -4853,7 +5148,8 @@
             "name": "anatawa12",
             "url": "https://anatawa12.com/"
           },
-          "url": "https://vpm.anatawa12.com/vpm-package-auto-installer.creator/package-1.0.7.zip?"
+          "url": "https://vpm.anatawa12.com/vpm-package-auto-installer.creator/package-1.0.7.zip?",
+          "zipSHA256": "f32c0b8f04629ddae26368a6b821e5af5b58bc059105ec27f685401b2be52c35"
         },
         "1.0.8": {
           "name": "com.anatawa12.vpm-package-auto-installer.creator",
@@ -4867,7 +5163,8 @@
             "name": "anatawa12",
             "url": "https://anatawa12.com/"
           },
-          "url": "https://vpm.anatawa12.com/vpm-package-auto-installer.creator/package-1.0.8.zip?"
+          "url": "https://vpm.anatawa12.com/vpm-package-auto-installer.creator/package-1.0.8.zip?",
+          "zipSHA256": "dab2b44ebfa635e98da73702188c65b39f6a0fafaf3bce841d28277bb6c63761"
         },
         "1.0.9": {
           "name": "com.anatawa12.vpm-package-auto-installer.creator",
@@ -4881,7 +5178,8 @@
             "name": "anatawa12",
             "url": "https://anatawa12.com/"
           },
-          "url": "https://vpm.anatawa12.com/vpm-package-auto-installer.creator/package-1.0.9.zip?"
+          "url": "https://vpm.anatawa12.com/vpm-package-auto-installer.creator/package-1.0.9.zip?",
+          "zipSHA256": "bfb31c89b838746906a814d2ed2b2ebd5c0138e3ea2ce1347244ca3383a9bd1f"
         },
         "1.1.0": {
           "name": "com.anatawa12.vpm-package-auto-installer.creator",
@@ -4895,7 +5193,8 @@
             "name": "anatawa12",
             "url": "https://anatawa12.com/"
           },
-          "url": "https://vpm.anatawa12.com/vpm-package-auto-installer.creator/package-1.1.0.zip?"
+          "url": "https://vpm.anatawa12.com/vpm-package-auto-installer.creator/package-1.1.0.zip?",
+          "zipSHA256": "f3d82213d307ac6db1472d7a70fa6a8abf273fef1d13280a1e1d552ef75c7233"
         },
         "1.1.1": {
           "name": "com.anatawa12.vpm-package-auto-installer.creator",
@@ -4909,7 +5208,8 @@
             "name": "anatawa12",
             "url": "https://anatawa12.com/"
           },
-          "url": "https://vpm.anatawa12.com/vpm-package-auto-installer.creator/package-1.1.1.zip?"
+          "url": "https://vpm.anatawa12.com/vpm-package-auto-installer.creator/package-1.1.1.zip?",
+          "zipSHA256": "5575d0311007aef9c4687122cdf765628b55100612e3cc0ba8eeed757a8c6913"
         },
         "1.1.2": {
           "name": "com.anatawa12.vpm-package-auto-installer.creator",
@@ -4923,7 +5223,8 @@
             "name": "anatawa12",
             "url": "https://anatawa12.com/"
           },
-          "url": "https://vpm.anatawa12.com/vpm-package-auto-installer.creator/package-1.1.2.zip?"
+          "url": "https://vpm.anatawa12.com/vpm-package-auto-installer.creator/package-1.1.2.zip?",
+          "zipSHA256": "2e826d31ab2e76c5029c2c03febb935d36b90b7413864b35fb3e62e4932e287d"
         }
       }
     },
@@ -4942,7 +5243,8 @@
           "dependencies": {
             "com.unity.nuget.newtonsoft-json": "2.0.0"
           },
-          "url": "https://vpm.anatawa12.com/animator-controller-as-a-code/package-0.1.0.zip?"
+          "url": "https://vpm.anatawa12.com/animator-controller-as-a-code/package-0.1.0.zip?",
+          "zipSHA256": "ef14ddb5d01f48af3e2bc011a7a504090c30a568b69f8a89269413eafc680427"
         },
         "0.2.0": {
           "name": "com.anatawa12.animator-controller-as-a-code",
@@ -4957,7 +5259,8 @@
           "dependencies": {
             "com.unity.nuget.newtonsoft-json": "2.0.0"
           },
-          "url": "https://vpm.anatawa12.com/animator-controller-as-a-code/package-0.2.0.zip?"
+          "url": "https://vpm.anatawa12.com/animator-controller-as-a-code/package-0.2.0.zip?",
+          "zipSHA256": "e8e5b9ebd4ee6d43e75e67107df4ee14bd26d056fc3cc1d0c6579c826091607d"
         },
         "0.2.1": {
           "name": "com.anatawa12.animator-controller-as-a-code",
@@ -4969,7 +5272,8 @@
             "name": "anatawa12",
             "email": "anatawa12@icloud.com"
           },
-          "url": "https://vpm.anatawa12.com/animator-controller-as-a-code/package-0.2.1.zip?"
+          "url": "https://vpm.anatawa12.com/animator-controller-as-a-code/package-0.2.1.zip?",
+          "zipSHA256": "6c61011722d76f719e52b1b739bb1d4b93a59daf1c38cb6a3cca994b7144bfc4"
         },
         "0.2.2": {
           "name": "com.anatawa12.animator-controller-as-a-code",
@@ -4990,7 +5294,8 @@
           "gitDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "https://github.com/anatawa12/CustomLocalization4EditorExtension.git#v0.2.1"
           },
-          "url": "https://vpm.anatawa12.com/animator-controller-as-a-code/package-0.2.2.zip?"
+          "url": "https://vpm.anatawa12.com/animator-controller-as-a-code/package-0.2.2.zip?",
+          "zipSHA256": "e81e284242f3acc37e557f74502b0e1756c2a6087999557c4acd5c248eef74f2"
         },
         "0.2.3": {
           "name": "com.anatawa12.animator-controller-as-a-code",
@@ -5011,7 +5316,8 @@
           "gitDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "https://github.com/anatawa12/CustomLocalization4EditorExtension.git#v0.2.1"
           },
-          "url": "https://vpm.anatawa12.com/animator-controller-as-a-code/package-0.2.3.zip?"
+          "url": "https://vpm.anatawa12.com/animator-controller-as-a-code/package-0.2.3.zip?",
+          "zipSHA256": "ace7ec7586d11a1683392f86ae328a15743bc621c1c37d1bb750e4eaa4e4db40"
         },
         "0.2.4": {
           "name": "com.anatawa12.animator-controller-as-a-code",
@@ -5032,7 +5338,8 @@
           "gitDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "https://github.com/anatawa12/CustomLocalization4EditorExtension.git#v0.2.1"
           },
-          "url": "https://vpm.anatawa12.com/animator-controller-as-a-code/package-0.2.4.zip?"
+          "url": "https://vpm.anatawa12.com/animator-controller-as-a-code/package-0.2.4.zip?",
+          "zipSHA256": "0badf63f676c511fcb248e2099e9b2207f823c8b5b8180fb4df1c370fe662ac7"
         },
         "0.2.5": {
           "name": "com.anatawa12.animator-controller-as-a-code",
@@ -5053,7 +5360,8 @@
           "gitDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "https://github.com/anatawa12/CustomLocalization4EditorExtension.git#v0.2.1"
           },
-          "url": "https://vpm.anatawa12.com/animator-controller-as-a-code/package-0.2.5.zip?"
+          "url": "https://vpm.anatawa12.com/animator-controller-as-a-code/package-0.2.5.zip?",
+          "zipSHA256": "3620fe83f3d9c11a5c8429694cf177de255488a14d3fc404ff494b1cb13f2a16"
         },
         "0.2.6": {
           "name": "com.anatawa12.animator-controller-as-a-code",
@@ -5074,7 +5382,8 @@
           "gitDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "https://github.com/anatawa12/CustomLocalization4EditorExtension.git#v0.2.1"
           },
-          "url": "https://vpm.anatawa12.com/animator-controller-as-a-code/package-0.2.6.zip?"
+          "url": "https://vpm.anatawa12.com/animator-controller-as-a-code/package-0.2.6.zip?",
+          "zipSHA256": "6f198cf1c9a9116728f39d6edb1de9db690305a33f94b454cff4dc22284fb829"
         },
         "0.2.7": {
           "name": "com.anatawa12.animator-controller-as-a-code",
@@ -5095,7 +5404,8 @@
           "gitDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "https://github.com/anatawa12/CustomLocalization4EditorExtension.git#v0.2.1"
           },
-          "url": "https://vpm.anatawa12.com/animator-controller-as-a-code/package-0.2.7.zip?"
+          "url": "https://vpm.anatawa12.com/animator-controller-as-a-code/package-0.2.7.zip?",
+          "zipSHA256": "f8f93ddfde69335cb0d1b07ffdd46450c0158899e254d142f3311e965b09ca1a"
         },
         "0.2.8": {
           "name": "com.anatawa12.animator-controller-as-a-code",
@@ -5116,7 +5426,8 @@
           "gitDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "https://github.com/anatawa12/CustomLocalization4EditorExtension.git#v0.2.1"
           },
-          "url": "https://vpm.anatawa12.com/animator-controller-as-a-code/package-0.2.8.zip?"
+          "url": "https://vpm.anatawa12.com/animator-controller-as-a-code/package-0.2.8.zip?",
+          "zipSHA256": "56bc84f167b435a16a94535ea6aea3afe20603f261e4464afe3caa9ff5c0619d"
         },
         "0.2.9": {
           "name": "com.anatawa12.animator-controller-as-a-code",
@@ -5137,7 +5448,8 @@
           "gitDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "https://github.com/anatawa12/CustomLocalization4EditorExtension.git#v0.2.1"
           },
-          "url": "https://vpm.anatawa12.com/animator-controller-as-a-code/package-0.2.9.zip?"
+          "url": "https://vpm.anatawa12.com/animator-controller-as-a-code/package-0.2.9.zip?",
+          "zipSHA256": "fc88dee7f92ebbe530765eb13201181c61610389700321214767cf8b0b706328"
         },
         "0.2.10": {
           "name": "com.anatawa12.animator-controller-as-a-code",
@@ -5158,7 +5470,8 @@
           "gitDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "https://github.com/anatawa12/CustomLocalization4EditorExtension.git#v1.0.0"
           },
-          "url": "https://vpm.anatawa12.com/animator-controller-as-a-code/package-0.2.10.zip?"
+          "url": "https://vpm.anatawa12.com/animator-controller-as-a-code/package-0.2.10.zip?",
+          "zipSHA256": "7745904918fd756db122004408648d4e4b9ca522dde75780c4e8a171158f2abc"
         },
         "0.2.11": {
           "name": "com.anatawa12.animator-controller-as-a-code",
@@ -5179,7 +5492,8 @@
           "gitDependencies": {
             "com.anatawa12.custom-localization-for-editor-extension": "https://github.com/anatawa12/CustomLocalization4EditorExtension.git#v1.0.0"
           },
-          "url": "https://vpm.anatawa12.com/animator-controller-as-a-code/package-0.2.11.zip?"
+          "url": "https://vpm.anatawa12.com/animator-controller-as-a-code/package-0.2.11.zip?",
+          "zipSHA256": "edeb0d833eab9b5d1054f3675f933bf2ba2bf8c3271ada6a41eb14b70b95b9a6"
         }
       }
     },
@@ -5203,7 +5517,8 @@
               "path": "Samples~/General"
             }
           ],
-          "url": "https://vpm.anatawa12.com/custom-localization-for-editor-extension/package-0.2.0.zip?"
+          "url": "https://vpm.anatawa12.com/custom-localization-for-editor-extension/package-0.2.0.zip?",
+          "zipSHA256": "c5bfc35b54ccb9999456e05ccee906aa0411cd5dd195db4ab5ce09fdaafefd88"
         },
         "0.2.1": {
           "name": "com.anatawa12.custom-localization-for-editor-extension",
@@ -5217,6 +5532,7 @@
           "type": "library",
           "license": "MIT",
           "url": "https://vpm.anatawa12.com/custom-localization-for-editor-extension/package-0.2.1.zip?",
+          "zipSHA256": "08a48da4aed5043c9ac0a07ff21583065360b80277a0db5ee2cef9f0931a49b4",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "samples": [
             {
@@ -5238,6 +5554,7 @@
           "type": "library",
           "license": "MIT",
           "url": "https://vpm.anatawa12.com/custom-localization-for-editor-extension/package-0.2.2.zip?",
+          "zipSHA256": "0f99fac8851f6b4ee30cf8a96a19b2fba426a9c17f0d2dcabe7934bddf043a79",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "samples": [
             {
@@ -5269,6 +5586,7 @@
           "type": "library",
           "license": "MIT",
           "url": "https://vpm.anatawa12.com/custom-localization-for-editor-extension/package-1.0.0.zip?",
+          "zipSHA256": "e9bce6905fc3470496c4b601a5749e21aa4f8ef1583817561f951c592793413f",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "samples": [
             {
@@ -5300,6 +5618,7 @@
           "type": "library",
           "license": "MIT",
           "url": "https://vpm.anatawa12.com/custom-localization-for-editor-extension/package-1.1.0.zip?",
+          "zipSHA256": "aa72d32575fd191a53986b3bd961c08af34c74cd3cbd7ff5082c3b594de86f6e",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "samples": [
             {
@@ -5331,6 +5650,7 @@
           "type": "library",
           "license": "MIT",
           "url": "https://vpm.anatawa12.com/custom-localization-for-editor-extension/package-1.1.1.zip?",
+          "zipSHA256": "d1d7e9733ad29f67a5786f1a2ad9336f93107d46119909eeafe12f10a2a0a3f7",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "samples": [
             {
@@ -5362,6 +5682,7 @@
           "type": "library",
           "license": "MIT",
           "url": "https://vpm.anatawa12.com/custom-localization-for-editor-extension/package-1.2.0.zip?",
+          "zipSHA256": "db58bc70cd6bb6c7823b11327632b559b9b59b32ca512100ba8abe62951d658b",
           "repo": "https://vpm.anatawa12.com/vpm.json",
           "samples": [
             {
@@ -5390,7 +5711,8 @@
           "version": "1.0.0",
           "displayName": "Harmony bug Fix",
           "description": "Harmony's bug fix",
-          "url": "https://vpm.anatawa12.com/harmonyfix/package-1.0.0.zip?"
+          "url": "https://vpm.anatawa12.com/harmonyfix/package-1.0.0.zip?",
+          "zipSHA256": "df0ec3331ce6e573d6a9401efa2545dc2cc27d1a23ba09856ef415f537cb1314"
         }
       }
     },
@@ -5415,7 +5737,8 @@
           "vrc-get": {
             "yanked": "This package is discontinued. Please use the official Av3Emulator package."
           },
-          "url": "https://vpm.anatawa12.com/av3emulator/package-3.0.0.zip?"
+          "url": "https://vpm.anatawa12.com/av3emulator/package-3.0.0.zip?",
+          "zipSHA256": "336ce46304e266cd8b35ca94c7565ee1434497e0556ce2591a21e1a69ef255d3"
         },
         "3.0.1": {
           "name": "com.anatawa12.av3emulator",
@@ -5436,7 +5759,8 @@
           "vrc-get": {
             "yanked": "This package is discontinued. Please use the official Av3Emulator package."
           },
-          "url": "https://vpm.anatawa12.com/av3emulator/package-3.0.1.zip?"
+          "url": "https://vpm.anatawa12.com/av3emulator/package-3.0.1.zip?",
+          "zipSHA256": "504f295166041aae7c0e735e4ad998e71dc18c0eea36289187c7762c9be9a4a9"
         },
         "3.0.2": {
           "name": "com.anatawa12.av3emulator",
@@ -5457,7 +5781,8 @@
           "vrc-get": {
             "yanked": "This package is discontinued. Please use the official Av3Emulator package."
           },
-          "url": "https://vpm.anatawa12.com/av3emulator/package-3.0.2.zip?"
+          "url": "https://vpm.anatawa12.com/av3emulator/package-3.0.2.zip?",
+          "zipSHA256": "fc962ff553eb51747e1d720755c06b351312ec592605a2c2cbc9c8cf02effdff"
         },
         "3.0.3": {
           "name": "com.anatawa12.av3emulator",
@@ -5478,7 +5803,8 @@
           "vrc-get": {
             "yanked": "This package is discontinued. Please use the official Av3Emulator package."
           },
-          "url": "https://vpm.anatawa12.com/av3emulator/package-3.0.3.zip?"
+          "url": "https://vpm.anatawa12.com/av3emulator/package-3.0.3.zip?",
+          "zipSHA256": "7c9d47db97844fd1f53d4885ef69dd9a6c6417e41929eeba45b4ee3ced9260cc"
         }
       }
     },
@@ -5498,7 +5824,8 @@
             "com.vrchat.udonsharp": "^1.1.8",
             "com.vrchat.worlds": "^3.1.x"
           },
-          "url": "https://vpm.anatawa12.com/udon-sharp-migration-fix/package-0.1.0.zip?"
+          "url": "https://vpm.anatawa12.com/udon-sharp-migration-fix/package-0.1.0.zip?",
+          "zipSHA256": "3bf5a0607e76a9b4eac855a85a3571680f5a946b67f9ae7d821af84e243a6d5c"
         },
         "0.1.1": {
           "name": "com.anatawa12.udon-sharp-migration-fix",
@@ -5514,7 +5841,8 @@
             "com.vrchat.udonsharp": "^1.1.8",
             "com.vrchat.worlds": "^3.1.x"
           },
-          "url": "https://vpm.anatawa12.com/udon-sharp-migration-fix/package-0.1.1.zip?"
+          "url": "https://vpm.anatawa12.com/udon-sharp-migration-fix/package-0.1.1.zip?",
+          "zipSHA256": "09781e9c6e75ceb83de545e7202ba02381568b2247c74ae17e051f8fc0984c7f"
         }
       }
     },
