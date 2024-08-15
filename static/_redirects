@@ -10,3 +10,4 @@
 /harmonyfix/package-:version.zip https://github.com/anatawa12/HarmonyFix-for-Unity/releases/download/v:version/com.anatawa12.harmonyfix-:version.zip
 /continuous-avatar-uploader/package-:version.zip https://github.com/anatawa12/ContinuousAvatarUploader/releases/download/v:version/com.anatawa12.continuous-avatar-uploader-:version.zip
 /udon-sharp-migration-fix/package-:version.zip https://github.com/anatawa12/UdonSharpMigrationBugFix/releases/download/v:version/com.anatawa12.udon-sharp-migration-fix-:version.zip
+/vrc-constraints-converter/package-:version.zip https://github.com/anatawa12/ProjectWideVRCConstraintsConverter/releases/download/v:version/com.anatawa12.udon-sharp-migration-fix-:version.zip
