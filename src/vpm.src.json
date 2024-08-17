@@ -6457,6 +6457,19 @@
           },
           "url": "https://vpm.anatawa12.com/vrc-constraints-converter/package-0.1.0.zip?",
           "zipSHA256": "e592db4abd3cf01225eb703d39c6641261d75b0b1b9db2c212e6565780fcfe3f"
+        },
+        "0.1.1": {
+          "name": "com.anatawa12.vrc-constraints-converter",
+          "version": "0.1.1",
+          "displayName": "Project-Wide VRC Constraints Converter",
+          "description": "Convert Unity Constraints to VRC Constraints for ALL assets in your project",
+          "documentationUrl": "https://github.com/anatawa12/ProjectWideVRCConstraintsConverter?tab=readme-ov-file",
+          "changelogUrl": "https://github.com/anatawa12/ProjectWideVRCConstraintsConverter?tab=readme-ov-file#notable-changes",
+          "vpmDependencies": {
+            "com.vrchat.avatars": "^3.7.0-beta.1"
+          },
+          "url": "https://vpm.anatawa12.com/vrc-constraints-converter/package-0.1.1.zip?",
+          "zipSHA256": "1895525df3d41ff61410f79e13b75db93d3b1a2a2f000885e4dbe4dba6a53e9d"
         }
       }
     }
