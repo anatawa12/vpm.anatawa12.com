@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Introduction on Avatar Optimizer (1.7.12-beta.3)</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/</link><description>Recent content in Introduction on Avatar Optimizer (1.7.12-beta.3)</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/beta/ja/index.xml" rel="self" type="application/rss+xml"/><item><title>v1.0.0一周年を記念してちょっと歴史を振り返る</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/posts/2024-06-27-one-year-since-stable-release/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/posts/2024-06-27-one-year-since-stable-release/</guid><description>AAO: Avatar Optimizer v1.0.0一周年を記念してちょっと歴史を振り返ってみることにしてみる。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Introduction on Avatar Optimizer (1.7.12)</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/</link><description>Recent content in Introduction on Avatar Optimizer (1.7.12)</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/beta/ja/index.xml" rel="self" type="application/rss+xml"/><item><title>v1.0.0一周年を記念してちょっと歴史を振り返る</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/posts/2024-06-27-one-year-since-stable-release/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/posts/2024-06-27-one-year-since-stable-release/</guid><description>AAO: Avatar Optimizer v1.0.0一周年を記念してちょっと歴史を振り返ってみることにしてみる。
 書いた人はanatawa12なので「私」はanatawa12を指す。
 Avatar Optimizerが生まれるまで # 2021年11月 # 私がVRChatを始める。 このときにPublic (現在のLegacy欄)アバターから 2a7sちゃんを選んで使うことにした。 そしてこの子はSDK2アバターでかつ、パーツが結合された状態でfbxが組まれていた。 このときの経験がSkinned Mesh Rendererを増やすことに対する待避感につながってる気がする。
 2022年 # 和服を作ってた間などに(?)fbx更新でモデルがひどくなることの対策にprefab variantが使えることを知った。 それで非破壊で服を着せるツールが欲しくなってたりした。
@@ -13,9 +13,10 @@ Avatar Optimizerが生まれる # pre-0.0.1 (2022年12月末) # Modular Avatar�
 PhysBoneをいい感じにマージするツール作成中...
 というかツール名的にはMergerにしてメッシュも統合できたらなと思ってたり pic.twitter.com/NxqvUIeMCF
 &amp;mdash; anatawa12@VRC @anatawa12@misskey.niri.la (@anatawa12_vrc) December 27, 2022 0.</description></item><item><title>基本コンセプト</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/basic-concept/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/basic-concept/</guid><description>Avatar Optimizerの基本コンセプト # このページでは、Avatar Optimizerの基本コンセプトについて説明します。
-Avatar Optimizerとは？ # Avatar Optimizerは、アバターを最適化するためのツールです。 このツールはVRChatアバター向けに設計されていましたが、NDMFでサポートされている他のプラットフォームのアバターにも使用できるかもしれません。
-VRChat以外のプラットフォームのアバターに対するサポートは完全にコミュニティベースであり、Avatar Optimizerの開発チームにはサポートされない場合があります。
-Avatar Optimizerの目的は何ですか？ # このツールは、アバターの見た目を殆ど変化させることなく、簡単にアバターのパフォーマンスを最適化できるようにすることを目的として設計されています。 そのため、このツールでアバターの振る舞いを変更することは意図していません。
+Avatar Optimizerとは？ # Avatar Optimizerは、アバターを非破壊的に最適化するためのツールです。 このツールはVRChatアバター向けに設計されていましたが、NDMFでサポートされている他のプラットフォームのアバターにも使用できるかもしれません。
+(Avatar Optimizerにおいて、)「非破壊的」とは以下のことを指します。
+Avatar Optimizerを使用するためにプレハブを展開(unpack)する必要がないこと。 Avatar Optimizerを使用するために必要なことは、コンポーネントを追加することだけです。 Avatar Optimizerはプロジェクトに保存されているアバターに一切影響を与えず、ビルド中に生成されるアバターデータの一時コピーにのみ影響すること。 なお、VRChat以外のプラットフォームのアバターに対するサポートは主にコミュニティベースであり、Avatar Optimizerの開発チームにはサポートされない場合があります。
+Avatar Optimizerの目的は何ですか？ # このツールは、アバターの見た目を殆ど変化させることなく、アバターのパフォーマンスを非破壊的に最適化できるようにすることを目的として設計されています。 そのため、このツールでアバターの振る舞いを変更することは意図していません。
 意図していない動作によるアバターの振る舞いの変更は、一部のユースケースで有用かもしれませんが、バグとして扱われます。
 そのバグが殆どのユースケースに影響を与えない場合、バグの修正を一時的に見合わせることがありますが、バグによる振る舞いは他のコンポーネントで考慮されないかもしれません。
 例えば、1.7.x以前のAAO Merge Skinned Meshコンポーネントは同名のBlendShapeを統合します。
@@ -30,8 +31,7 @@ Avatar Optimizerの振る舞いは将来のバージョンでも安定してい�
 アバターに既に付いているコンポーネントでは、このオプションをデフォルトで無効にすることで以前までの振る舞いを維持し、 アバターに新たに追加されたコンポーネントでは、このオプションをデフォルトで有効にすることで、バグが修正された新しい動作を行います。
 こういったコンポーネントの振る舞いの維持には、いくつか例外があります。
 コンポーネントのデバッグ専用の機能は、上記のルールに従うことが保証されません。
-例えば、AAO Trace and OptimizeコンポーネントのDebug Optionsは変更される可能性が常にあります。 実験的な機能としてマークされている機能は、上記のルールに従うことが保証されません。 AAO Trace and Optimizeコンポーネントの振る舞いは、新しい最適化を実装することによって変更される可能性があります。
-ただし、AAO Trace and Optimizeコンポーネントのデフォルト設定では、アバターの振る舞いや見た目に影響を与えないようにしているため、この変更はアバターに一切影響を与えないはずです。 これら以外で不自然な動作や奇妙な動作などに遭遇した場合は、まずFAQをご覧ください。</description></item><item><title>よくある質問</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/faq/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/faq/</guid><description>よくある質問 # Avatar Optimizerに関するよくある質問のリストです。 他に質問がある場合は、GitHub DiscussionsまたはFediverse (Misskey / Mastodon)でお気軽にお尋ねください。
+例えば、AAO Trace and OptimizeコンポーネントのDebug Optionsは変更される可能性が常にあります。 実験的な機能としてマークされている機能は、上記のルールに従うことが保証されません。 AAO Trace and Optimizeコンポーネントの振る舞いは、新しい最適化を実装することによって変更される可能性があります。</description></item><item><title>よくある質問</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/faq/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/faq/</guid><description>よくある質問 # Avatar Optimizerに関するよくある質問のリストです。 他に質問がある場合は、GitHub DiscussionsまたはFediverse (Misskey / Mastodon)でお気軽にお尋ねください。
 AAO Trace and Optimizeコンポーネントを使用すると、アバターの振る舞いや見た目が変わる # AAO Trace and Optimizeコンポーネントを使用して、アバターの振る舞いや見た目が変わってしまった場合は、(アバターがAvatar Optimizerの他のコンポーネントのバグ挙動に依存していない限り、)全てバグです。 GitHub IssuesやFediverse (Misskey / Mastodon)、Twitterなどから報告をお願いします。
 メッシュが視界の中にあるのに非表示になってしまう # 多くの場合、この問題はSkinned Mesh RendererのRoot Boneを指定し忘れていることが原因です。
 AAO Merge Skinned MeshコンポーネントはRoot Boneの設定を自動的には行わないため、統合先のメッシュ1のRoot Boneを手動で設定する必要があります。
@@ -43,7 +43,7 @@ AAO Merge Skinned Meshコンポーネントを使用すると、マテリアル�
 マテリアルプロパティに対してアニメーションされるメッシュを統合する際は、競合しないようご注意ください。 競合する場合は警告が表示されるので、そちらを確認してください。
 この問題のissue: #340</description></item><item><title>Changelog</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/changelog/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/changelog/</guid><description>Changelog # このプロジェクトの重要な変更点は以下のとおりです。
 Keep a Changelogをベースにした形式で表記されています。
-1.7.12-beta.3 - 2024-08-25 # Fixed # Broken validation for MergePhysBone merging PhysBones with specified target #1160 1.7.12-beta.2 - 2024-08-23 # Fixed # FinalIK Gimmicks with IKExecutionOrder is broken #1153 1.7.12-beta.1 - 2024-08-22 # Changed # Rewritten Check for Update system #1151 Fixed # VRCConstraints with Target might be removed unexpectedly #1150 1.7.11 - 2024-08-08 # Added # VRCSDK 3.7.0 support #1140 This includes VRCConstraints support 1.</description></item><item><title>Avatar Global Components</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/component-kind/avatar-global-components/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/component-kind/avatar-global-components/</guid><description> Avatar Global Components # Avatar Global Componentはアバターのルートに追加することでアバター全体に作用するコンポーネントです。
+1.7.12 - 2024-08-27 # 1.7.12-beta.3 - 2024-08-25 # Fixed # Broken validation for MergePhysBone merging PhysBones with specified target #1160 1.7.12-beta.2 - 2024-08-23 # Fixed # FinalIK Gimmicks with IKExecutionOrder is broken #1153 1.7.12-beta.1 - 2024-08-22 # Changed # Rewritten Check for Update system #1151 Fixed # VRCConstraints with Target might be removed unexpectedly #1150 1.7.11 - 2024-08-08 # Added # VRCSDK 3.7.0 support #1140 This includes VRCConstraints support 1.</description></item><item><title>Avatar Global Components</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/component-kind/avatar-global-components/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/component-kind/avatar-global-components/</guid><description> Avatar Global Components # Avatar Global Componentはアバターのルートに追加することでアバター全体に作用するコンポーネントです。
 &amp;ldquo;アバターのルート&amp;quot;とは、アバターの最も上の階層にあるGameObjectのことです。 例えばVRChat用アバターの場合、VRC Avatar DescriptorコンポーネントがあるGameObjectが&amp;quot;アバターのルート&amp;quot;です。
 Avatar Global Componentをアバターのルート以外に追加した場合、インスペクター上にエラーが表示され、コンポーネントは一切動作しません。
 以下のコンポーネントがAvatar Global Componentです。
@@ -182,20 +182,24 @@ BoothページはAvatar Optimizer公式の配布場所の1つです。 Boothで�
 VPAIインストーラーは、Avatar OptimizerのようなVPMパッケージを、unitypackageをインポートするだけでインストールするためのツールです。 Avatar Optimizer 1.x.x用のVPAIインストーラーunitypackageをダウンロードするためのリンクはこちらです。</description></item><item><title>コンポーネントにAvatar Optimizerとの互換性をもたせる</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/developers/make-your-components-compatible-with-aao/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/developers/make-your-components-compatible-with-aao/</guid><description>コンポーネントにAvatar Optimizerとの互換性をもたせる # このページでは以下の2つのことを説明します。
 コンポーネントはどのような場合にAvatar Optimizerと非互換になるか どのように互換性を改善するか もし質問があれば、お気軽にfediverseで@anatawa12@misskey.niri.laにご連絡ください。
 コンポーネントはどのような場合にAvatar Optimizerと非互換になるか # Avatar Optimizerが処理する時点でアバターにコンポーネントが存在している場合、そのコンポーネントはAvatar Optimizerと互換性が無い可能性があります。
-Avatar Optimizerはコンポーネント等に対するガベージコレクションシステムを実装しているため、最適化時にアバターに存在するすべてのコンポーネントのことを知る必要があります。
-未知のコンポーネントによる問題を避けるため、Avatar Optimizerは未知のコンポーネントが以下のようなものであると仮定します。(この仮定は将来的に変更される可能性があります。)
-副作用のあるコンポーネントである。 コンポーネントが参照している全てのコンポーネントに依存している。 この仮定は正しくない可能性があるため、Avatar Optimizerは未知のコンポーネントを見つけた場合に以下のような警告を生成します。
-どのように互換性を改善するか # Avatar Optimizerが処理する前にコンポーネントを削除出来る場合は、そのようにしてください。 削除出来ない場合はAvatar Optimizerにコンポーネントを登録してください。
-Avatar Optimizer v1.7.0以降では、ビルド時やランタイムで処理を行わないコンポーネント向けにAsset Descriptionが追加されています。 ビルド時に処理を行わないようなツールであれば、こちらを利用して登録することもできます。
-ビルド時に何らかの処理を行うツールやコンポーネントの場合は、Asset Descriptionで登録するのは非推奨です。 これは、Asset Descriptionによる登録では、ビルド時の処理順が意図しないものになってしまった場合などにAvatar Optimizerがコンポーネントを削除してしまうことにより、ツールが正しく動作出来なくなる可能性があるためです。
-コンポーネントを削除する # コンポーネントを削除する方法はいくつかあります。
-ツールがNDMF1を使用した非破壊ツールの場合は、NDMFのOptimizing phaseより前、 またはOptimizing phaseの中で(BeforePluginを用いて)com.anatawa12.avatar-optimizer plugin より前にコンポーネントを削除することを推奨します。
-ツールがNDMF1を使用していない非破壊ツールの場合は、NDMFのOptimizing phaseより前にコンポーネントを削除することを推奨します。 この場合、現在のNDMFはVRCSDKのRemoveAvatarEditorOnlyの直前であるorder -1025でOptimizing phaseを実行するので、 それより小さいcallbackOrderを指定したIVRCSDKPreprocessAvatarCallbackでコンポーネントを削除してください。
-ツールのコンポーネントがデータを保持する役割しかなく、ビルド時には意味を持っていない場合、 IVRCSDKPreprocessAvatarCallbackを用いてAvatar Optimizerが処理する前にコンポーネントを削除することを推奨します。 IVRCSDKPreprocessAvatarCallbackの順序については上記を参照してください。
-コンポーネントを登録する # ツールのコンポーネントをAvatar Optimizerの処理より後に残しておきたい場合、 Avatar Optimizerにコンポーネントの情報を登録できます。
-まず、Avatar OptimizerのAPIを呼び出すために、assembly definitionファイル2を(存在しない場合)作成してください。
-次に、asmdefファイルのアセンブリ参照にcom.anatawa12.avatar-optimizer.api.editorを追加してください。
-ツールをAvatar Optimizerに依存させたくない場合、Version Definesを使用してください。 Avatar Optimizer 1.</description></item><item><title>基本的な使い方</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/tutorial/basic-usage/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/tutorial/basic-usage/</guid><description>基本的な使い方 # 自動最適化を使用する # アバターには自動的に行える最適化がいくつかあります。
+Avatar Optimizerはビルド処理の最後の方で動作するように設計されているため、Avatar Optimizerにとって未知のコンポーネントについてはサポートしていません。
+例えば、Avatar Optimizerはコンポーネント等に対するガベージコレクションシステムを実装しています。 使用されているコンポーネントを保持し、未使用のコンポーネントを適切に削除するためには、 最適化時にアバターに存在するすべてのコンポーネントのことを知っておく必要があります。
+未知のコンポーネントによる問題を避けるため、Avatar Optimizerは未知のコンポーネントが以下のようなものであると仮定します。
+コンポーネントが有効かつアクティブになる可能性がある場合は保持される必要がある。 これは、未知のコンポーネントが実行時(VRChat上など)に動作するコンポーネントであると仮定しているためです。 コンポーネントが参照している全てのコンポーネントに依存している。 (上記の仮定は将来的に変更される可能性があります。)
+しかしながら、これらの仮定は正しくない可能性があるため、Avatar Optimizerは以下のような警告を生成します。
+どのように互換性を改善するか # 以下の対応のいずれかを行うことで、互換性を改善することができます。
+Avatar Optimizerが処理する前にコンポーネントを削除する
+コンポーネントが実行時では動作しないものである場合、(すなわち、ビルド時や編集モードでのみ動作するコンポーネントである場合、) Avatar Optimizerより前にアバターを処理し、コンポーネントを削除することが殆どの場合で最善です。
+詳細は下のセクションを参照してください。
+Avatar Optimizerは、Trace and Optimizeの前に処理を行う殆どのAvatar Optimizerコンポーネントにおいて、内部的にこの方法を使用しています。
+APIを使用してAvatar Optimizerにコンポーネントを登録する
+実行時に動作するコンポーネントや、Avatar Optimizerより後にアバターを処理するために残しておく必要があるコンポーネントの場合、 そのコンポーネントの情報をAvatar Optimizerに登録することができます。
+詳細は下のセクションを参照してください。
+Avatar Optimizerは、Trace and Optimizeの後に処理を行う一部のコンポーネントや、Unity純正のコンポーネント、VRCSDKのコンポーネントなどを保持するために、内部的にこの方法を使用しています。
+Asset Descriptionを使用して、削除しても問題のないコンポーネントとしてAvatar Optimizerに登録する
+Avatar Optimizer v1.7.0以降では、実行時やビルド時で処理を行わないコンポーネント向けに[Asset Description]が追加されています。 ツールが実行時やビルド時に何も行わない場合は、「Avatar Optimizerが処理する前にコンポーネントを削除する」代わりにこの方法を使用してコンポーネントを登録することができます。
+詳細は[Asset Description]を参照してください。
+なお、ツールが実行時やビルド時に何らかの処理を行う場合は、そのコンポーネントをAsset Descriptionで登録することは非推奨です。 実行時やビルド時に何らかの処理を行うコンポーネントをAsset Descriptionで登録してしまうと、 実行順に予期しない変更があったり、指定が正しくなかったりした場合に、コンポーネントがAvatar Optimizerに意図せず削除されてツールが正常に動作できなくなる可能性があります。</description></item><item><title>基本的な使い方</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/tutorial/basic-usage/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/tutorial/basic-usage/</guid><description>基本的な使い方 # 自動最適化を使用する # アバターには自動的に行える最適化がいくつかあります。
 使用していないBlendShape(シェイプキー)1の除去 BlendShapeの値が0以外のときは処理負荷が発生するため、値をアニメーション等で変更しないBlendShapeは固定すると負荷が軽くなります。 値が常に0である場合でも、固定することでアバターの容量を削減することができます。 使われていないPhysBone等の削除 揺らす対象として存在するメッシュ2が常に無効になっているPhysBoneなどのように、揺らす必要のないPhysBoneが有効になっている場合は計算負荷が余分に発生してしまいます。 アニメーションしたりPhysBoneで揺らしたりすることのないボーンの統合 服のボーンを素体のボーンに入れ子状にして着せるような場合には、それ自身を動かすことがないボーンが多く発生します。そのようなボーンは余分な負荷を発生させてしまいます。 一緒に切り替えていたり、切り替えることがなかったりするメッシュ同士の統合 アバターに服が1着しかない場合、体、髪、服などを別々のメッシュにしておく必要はないかもしれません。 切り替え可能な複数の服がある場合でも、体、髪、下着などを別々のメッシュにしておく必要はないかもしれません。 AvatarOptimizerでは、アバターのルートにAAO Trace And Optimizeコンポーネントを追加するだけで、これらの最適化を自動で行うことができます！
 アバターをアップロードする # AAO Trace and Optimizeコンポーネントを付けた状態で、試しにアバターをアップロードしてみましょう！ AAO: Avatar Optimizerは非破壊改変ツールであり、Playモードに入るときかアバターをビルドするときに処理が行われるため、アップロードを行うのに特別な手順は必要ありません。 通常と同じように、VRCSDKのControl Panelからアバターをアップロードしてください。
 ただし、Android(Quest)向けアップロードを行う場合などにおいて、Avatar Optimizerの最適化等によって制限の範囲内に収まるにも関わらず、 VRCSDKのビルド前チェックの時点で制限を超過していてアップロードボタンが押せない場合があります。
