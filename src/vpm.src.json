@@ -5851,6 +5851,28 @@
           },
           "url": "https://vpm.anatawa12.com/animator-controller-as-a-code/package-0.2.11.zip?",
           "zipSHA256": "edeb0d833eab9b5d1054f3675f933bf2ba2bf8c3271ada6a41eb14b70b95b9a6"
+        },
+        "0.2.12": {
+          "name": "com.anatawa12.animator-controller-as-a-code",
+          "displayName": "AnimatorController as a Code",
+          "version": "0.2.12",
+          "unity": "2019.4",
+          "description": "A small Unity Editor Library to generate AnimatorController with C# Code",
+          "author": {
+            "name": "anatawa12",
+            "email": "anatawa12@icloud.com"
+          },
+          "dependencies": {
+            "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0"
+          },
+          "vpmDependencies": {
+            "com.anatawa12.custom-localization-for-editor-extension": "^1.0.0"
+          },
+          "gitDependencies": {
+            "com.anatawa12.custom-localization-for-editor-extension": "https://github.com/anatawa12/CustomLocalization4EditorExtension.git#v1.0.0"
+          },
+          "url": "https://vpm.anatawa12.com/animator-controller-as-a-code/package-0.2.12.zip?",
+          "zipSHA256": "232ea3ce1afa82e39c77bcf846a42dbccc4ca77555a4db759bcfbe72c72217e7"
         }
       }
     },
