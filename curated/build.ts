@@ -51,6 +51,7 @@ interface PackageJson {
   name: string,
   version: string,
   url: string,
+  zipSHA256?: string,
   vpmDependencies?: { [pkg: string]: string },
 }
 
@@ -237,6 +238,11 @@ async function processAPackageVersion(
     delete clonedOldRepo.url;
     const clonedJson: PackageWithoutUrl = Object.assign({}, json);
     delete clonedJson.url;
+
+    // allow adding zipSHA256 to existing version(s)
+    if (oldRepo.zipSHA256 == null) {
+      delete clonedJson.zipSHA256;
+    }
 
     const differs = findDifferProps(clonedOldRepo, clonedJson);
     if (differs.length != 0) {
