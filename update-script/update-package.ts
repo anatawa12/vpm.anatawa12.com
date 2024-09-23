@@ -65,12 +65,32 @@ if (version) {
 }
 
 if (websiteZip) {
-  const tempPath = await Deno.makeTempFile();
-  await Deno.writeFile(tempPath, await fetch(websiteZip, {headers: {"User-Agent": userAgent}}).then(x => x.blob()).then(b => b.stream()));
   const destFolder = `static/${shortId}/${websitePath}`;
-  await Deno.remove(destFolder, {recursive: true});
-  await zip.decompress(tempPath, destFolder);
-  await command("git", "add", destFolder);
+
+  if (await shouldUpdateWebsite(destFolder)) {
+    const tempPath = await Deno.makeTempFile();
+    await Deno.writeFile(tempPath, await fetch(websiteZip, {headers: {"User-Agent": userAgent}}).then(x => x.blob()).then(b => b.stream()));
+    await Deno.remove(destFolder, {recursive: true});
+    await zip.decompress(tempPath, destFolder);
+    if (version) {
+      await Deno.writeTextFile(`${destFolder}/.version`, `${version}\n`);
+    } else {
+      await Deno.remove(`${destFolder}/.version`);
+    }
+    await command("git", "add", destFolder);
+  }
+
+  async function shouldUpdateWebsite(destFolder: string): Promise<boolean> {
+    const existingVersionFile = `${destFolder}/.version`;
+    const existingVersion = await readFileOrNullIfNotExist(existingVersionFile);
+    if (!existingVersion) return true;
+    if (!version) return false;
+
+    const existingVersionParsed = semver.parse(existingVersion);
+    const versionParsed = semver.parse(version);
+
+    return semver.compare(existingVersionParsed, versionParsed) < 0;
+  }
 }
 
 if (version) {
@@ -107,4 +127,13 @@ async function command(cmd: string, ...args: string[]): Promise<void> {
 
 function throws(e: unknown): never{
   throw e;
+}
+
+async function readFileOrNullIfNotExist(path: string): Promise<string | null> {
+  try {
+    return Deno.readTextFile(path);
+  } catch (e) {
+    if (e instanceof Deno.errors.NotFound) return null;
+    throw e;
+  }
 }
