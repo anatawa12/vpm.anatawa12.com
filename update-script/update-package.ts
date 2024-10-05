@@ -133,7 +133,6 @@ async function readFileOrNullIfNotExist(path: string): Promise<string | null> {
   try {
     return Deno.readTextFile(path);
   } catch (e) {
-    if (e instanceof Deno.errors.NotFound) return null;
-    throw e;
+    return null;
   }
 }
