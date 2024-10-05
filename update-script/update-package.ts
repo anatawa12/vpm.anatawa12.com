@@ -131,7 +131,7 @@ function throws(e: unknown): never{
 
 async function readFileOrNullIfNotExist(path: string): Promise<string | null> {
   try {
-    return Deno.readTextFile(path);
+    return await Deno.readTextFile(path);
   } catch (e) {
     return null;
   }
