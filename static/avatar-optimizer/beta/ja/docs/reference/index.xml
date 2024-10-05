@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>コンポーネントの詳細説明 on Avatar Optimizer (1.7.13)</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/</link><description>Recent content in コンポーネントの詳細説明 on Avatar Optimizer (1.7.13)</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/index.xml" rel="self" type="application/rss+xml"/><item><title>Trace And Optimize</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/trace-and-optimize/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/trace-and-optimize/</guid><description>Trace And Optimize (T&amp;amp;O) # 昔のバージョンではAutomatic Configurationという名前でした
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>コンポーネントの詳細説明 on Avatar Optimizer (1.8.0-beta.4)</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/</link><description>Recent content in コンポーネントの詳細説明 on Avatar Optimizer (1.8.0-beta.4)</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/index.xml" rel="self" type="application/rss+xml"/><item><title>Trace And Optimize</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/trace-and-optimize/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/trace-and-optimize/</guid><description>Trace And Optimize (T&amp;amp;O) # 昔のバージョンではAutomatic Configurationという名前でした
 このコンポーネントは、アバターを走査して自動的にできる限りの最適化を行います。 チェックボックスで自動的に行う最適化を選択することが出来ます。
 このコンポーネントはアバターのルートに追加してください。(分類: Avatar Global Component)
 Trace and Optimizeは「見た目に絶対に影響させてはならない」という前提の下で、かなり慎重に作られています。
@@ -20,7 +20,8 @@ MMDワールドで使われるBlendShapeを固定しないなど、MMDワール�
 面積がゼロのポリゴンを自動的に削除する
 面積がゼロのポリゴンを削除します。 これは一部のシェーダーやアニメーションによるスケール変化を壊す可能性があるため、注意して使用してください。 他に、バグの回避などに使用するための高度な設定がありますが、それらは不安定であり、不用意に変更するべきではありません。 それらの機能については英語のTooltipやソースコード、または開発者の指示を参考にしてください。
 アニメーターの最適化 # この機能では、アニメーターに対して以下の最適化を行います。
-Entry-Exit式のレイヤーをBlendTreeに変換
+AnyState式のレイヤーをEntry-Exit式に変換
+アニメーターコントローラーのレイヤーをできる限りEntry-Exit式に変換します。 また、以下の最適化により、AnyState式のレイヤーがBlendTreeに変換されることがあります。 Entry-Exit式のレイヤーをBlendTreeに変換
 アニメーターコントローラーのレイヤーをできる限りBlendTreeに変換します。 BlendTreeを統合
 複数のBlendTreeレイヤーを1つのDirect BlendTreeに統合します。 使われていないレイヤーを削除する
 StateやTransitionがないレイヤーを削除します。 AAOは名前がend(大文字小文字の区別なし)で終わるボーンをendボーンとして扱います。&amp;#160;&amp;#x21a9;&amp;#xfe0e;</description></item><item><title>UnusedBonesByReferencesTool</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/unused-bones-by-references-tool/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/unused-bones-by-references-tool/</guid><description>UnusedBonesByReferencesTool # EditorOnlyなメッシュからしか参照がないボーンをEditorOnlyにします。
@@ -40,6 +41,9 @@ BlendShapeは、頂点とBlendShapeの数に比例して負荷が大きくなる
 一番下の&amp;quot;None&amp;quot;と書いてある要素にドラッグ&amp;amp;ドロップすることにより対象を追加し、Noneに戻すことにより対象を一覧から取り除きます。
 空のレンダラーオブジェクトを削除する # 統合対象のSkinnedMeshRendererが属しているGameObjectにSkinnedMeshRenderer以外のコンポーネントが無い場合、そのGameObjectをヒエラルキーから取り除くオプションです。
 有効無効状態が統合先と異なるレンダラーを統合しない # 統合先のSkinnedMeshRendererと有効無効の状態が異なる(Skinned)MeshRendererが統合対象の中に含まれている場合、それらをビルド時に統合対象から除外するオプションです。
+&amp;ldquo;有効無効状態に関するアニメーションをコピーする&amp;rdquo; # 統合対象の(Skinned)MeshRendererの有効無効状態に関するアニメーションを統合先のSkinnedMeshRendererにコピーするオプションです。
+この機能は、統合先のSkinnedMeshRendererのenabledプロパティや、そのGameObjectや祖先のGameObjectのactiveSelfプロパティのアニメーションをコピーします。 ただし、アニメーションされているプロパティは1種類しかコピーできないため、複数種類/階層のプロパティがアニメーションされている場合(enabledとactiveSelfの両方がアニメーションされている場合や、自身と親の両方のactiveSelfがアニメーションされている場合など)はエラーになります。
+なお、統合先のSkinnedMeshRendererのenabledに対するアニメーションはこの機能によって上書きされるため、この機能を使用する時は統合先のSkinnedMeshRendererのenabledをアニメーションしてはいけません。
 マテリアルの統合 # 複数の(Skinned)MeshRendererで使用されているマテリアルがある場合、ここに一覧で表示されます。
 統合するにチェックを入れることで、それらのマテリアルスロットを1つに統合します。これはDrawCallを削減します。</description></item><item><title>Freeze BlendShape</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/freeze-blendshape/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/freeze-blendshape/</guid><description>Freeze BlendShape # BlendShapeをメッシュに固定し、除去することが出来ます。
 このコンポーネントは、SkinnedMeshRendererコンポーネントのあるGameObjectに追加してください。(分類: Modifying Edit Skinned Mesh Component)
