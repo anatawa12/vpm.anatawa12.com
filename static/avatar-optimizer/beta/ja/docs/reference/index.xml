@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>コンポーネントの詳細説明 on Avatar Optimizer (1.8.0-beta.6)</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/</link><description>Recent content in コンポーネントの詳細説明 on Avatar Optimizer (1.8.0-beta.6)</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/index.xml" rel="self" type="application/rss+xml"/><item><title>Trace And Optimize</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/trace-and-optimize/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/trace-and-optimize/</guid><description>Trace And Optimize (T&amp;amp;O) # 昔のバージョンではAutomatic Configurationという名前でした
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>コンポーネントの詳細説明 on Avatar Optimizer (1.8.0-beta.7)</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/</link><description>Recent content in コンポーネントの詳細説明 on Avatar Optimizer (1.8.0-beta.7)</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/index.xml" rel="self" type="application/rss+xml"/><item><title>Trace And Optimize</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/trace-and-optimize/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/trace-and-optimize/</guid><description>Trace And Optimize (T&amp;amp;O) # 昔のバージョンではAutomatic Configurationという名前でした
 このコンポーネントは、アバターを走査して自動的にできる限りの最適化を行います。 チェックボックスで自動的に行う最適化を選択することが出来ます。
 このコンポーネントはアバターのルートに追加してください。(分類: Avatar Global Component)
 Trace and Optimizeは「見た目に絶対に影響させてはならない」という前提の下で、かなり慎重に作られています。
@@ -55,10 +55,18 @@ BlendShapeの値が0以外のときは処理負荷が発生するため、値を
 このコンポーネントは新しいマテリアルを作成するため、このコンポーネントで統合されたマテリアルを使用しているマテリアルスロットはAAO Merge Skinned Meshコンポーネントで統合されません。 別々のメッシュで使用されているマテリアルを纏めて統合したい場合は、AAO Merge Skinned MeshコンポーネントのあるGameObjectと同じGameObjectにMerge ToonLit Materialコンポーネントを追加する必要があります。
 設定 # 統合したマテリアルを追加をクリックして、統合後のマテリアルを追加します。 それぞれのマテリアルについて、統合対象のマテリアルを複数選択することが出来ます。 統合対象を追加をクリックするか、ドロップダウンメニューからマテリアルを選択してください。 統合対象のマテリアルについて、テクスチャの配置場所を設定する必要があります。 X, Y, W, Hの値を調整してテクスチャをお好みの位置にを合わせてください。 プレビューを生成をクリックすると、統合後のテクスチャのプレビューがそれぞれ生成されます。</description></item><item><title>Remove Mesh By BlendShape</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/remove-mesh-by-blendshape/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/remove-mesh-by-blendshape/</guid><description>Remove Mesh By BlendShape # 指定されたBlendShapeによって動かされる頂点とそのポリゴンを削除します。
 このコンポーネントは、SkinnedMeshRendererコンポーネントのあるGameObjectに追加してください。(分類: Modifying Edit Skinned Mesh Component)
-利点 # 服で隠れていたりして見えないような部分のメッシュを削除すると、見た目に影響させずに描画負荷やBlendShapeの処理負荷などを減らして軽量化することができます。 このコンポーネントを使用すると、多くの素体に含まれている貫通防止用のBlendShapeを利用して簡単にメッシュを削除することができます。
+利点 # 服で隠れていたりして見えないような部分のメッシュを削除すると、見た目に影響させずに描画負荷やBlendShapeの処理負荷などを減らして軽量化することができます。
+このコンポーネントを使用すると、多くの素体に含まれている貫通防止用のBlendShapeを利用して簡単にメッシュを削除することができます。
 設定 # BlendShapeの一覧が表示されるので、BlendShapeを選択してください。 もし選択されたBlendShapeが頂点を許容差より大きく動かしていたら、その頂点を削除します。
 消えて欲しい箇所が消えない場合は許容差の値を大きく、 消えて欲しくない箇所が消えてしまう場合は許容差の値を小さくしましょう。
-プレビューのために、切り替えたBlendShapeの値を自動的に変更するを有効にすると、BlendShapeの指定を切り替えた時に、その値を自動的に100か0に設定します。</description></item><item><title>Remove Mesh By Mask</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/remove-mesh-by-mask/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/remove-mesh-by-mask/</guid><description>Remove Mesh By Mask # マスクテクスチャで指定した範囲のポリゴンを削除します。
+プレビューのために、切り替えたBlendShapeの値を自動的に変更するを有効にすると、BlendShapeの指定を切り替えた時に、その値を自動的に100か0に設定します。</description></item><item><title>Remove Mesh By Box</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/remove-mesh-by-box/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/remove-mesh-by-box/</guid><description>Remove Mesh By Box # 箱で指定した範囲のポリゴンを削除します。
+このコンポーネントは、SkinnedMeshRendererコンポーネントのあるGameObjectに追加してください。(分類: Modifying Edit Skinned Mesh Component)
+利点 # 服で隠れていたりして見えないような部分のメッシュを削除すると、見た目に影響させずに描画負荷やBlendShapeの処理負荷などを減らして軽量化することができます。
+設定 # 削除するポリゴン # 箱の内側のポリゴンを削除するか、箱の外側のポリゴンを削除するかを選択することが出来ます。
+箱 # ポリゴンを削除するための箱の一覧が表示されます。 Boxesの右側の数値を大きくすることで、箱を追加することが出来ます。
+それぞれの箱について、中心位置、大きさ、角度を変更することが出来ます。(ローカル座標で指定します)
+Edit This Boxをクリックすると下図のようなギズモを表示します。 こちらから箱の位置、大きさ、角度を調整することも出来ます。
+例 # 上側の図にある箱の範囲内のメッシュが、下側の図のように削除されます。</description></item><item><title>Remove Mesh By Mask</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/remove-mesh-by-mask/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/remove-mesh-by-mask/</guid><description>Remove Mesh By Mask # マスクテクスチャで指定した範囲のポリゴンを削除します。
 このコンポーネントは、SkinnedMeshRendererコンポーネントのあるGameObjectに追加してください。(分類: Modifying Edit Skinned Mesh Component)
 利点 # 服で隠れていたりして見えないような部分のメッシュを削除すると、見た目に影響させずに描画負荷やBlendShapeの処理負荷などを減らして軽量化することができます。
 このコンポーネントを使用すると、アルファマスク用のテクスチャや、gatosyocoraさんのMeshDeleterWithTexture用のマスクテクスチャを利用して簡単にメッシュを削除することができます。
@@ -72,15 +80,18 @@ BlendShapeの値が0以外のときは処理負荷が発生するため、値を
 中央には、表示とブラシサイズについての設定が表示されます。
 ウィンドウの下部には、元のテクスチャ、マスクテクスチャ、メッシュのUVが表示されます。
 マスクテクスチャを塗るには左ドラッグします。また、右ドラッグまたはShift + 左ドラッグでビューを移動することが出来ます。
-スクロールでズームイン/アウトが、Shift + スクロールでブラシサイズの変更が出来ます。</description></item><item><title>Remove Mesh in Box</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/remove-mesh-in-box/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/remove-mesh-in-box/</guid><description>Remove Mesh in Box # 箱で指定した範囲内のポリゴンを削除します。
+スクロールでズームイン/アウトが、Shift + スクロールでブラシサイズの変更が出来ます。</description></item><item><title>Remove Mesh By UV Tile</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/remove-mesh-by-uv-tile/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/remove-mesh-by-uv-tile/</guid><description>Remove Mesh By UV Tile # UVタイルで指定した範囲のポリゴンを削除します。
 このコンポーネントは、SkinnedMeshRendererコンポーネントのあるGameObjectに追加してください。(分類: Modifying Edit Skinned Mesh Component)
 利点 # 服で隠れていたりして見えないような部分のメッシュを削除すると、見た目に影響させずに描画負荷やBlendShapeの処理負荷などを減らして軽量化することができます。
-設定 # 数値を調整して箱を追加します。 それぞれの箱について、中心位置、大きさ、角度を変更することが出来ます。(ローカル座標で指定します)
-Edit This Boxをクリックして下図のようなギズモを表示します。箱の大きさ、位置、角度を調整することが出来ます。
-例 # 上側の図にある箱の範囲内のメッシュが、下側の図のように削除されます。</description></item><item><title>Rename BlendShape</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/rename-blendshape/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/rename-blendshape/</guid><description>Rename BlendShape # メッシュのBlendShape名を変更することが出来ます。
+このコンポーネントを使用すると、PoiyomiやlilToonのUV Tile Discard機能を使用してモデルの一部が隠せるようになっている場合に、簡単にメッシュを削除することができます。
+これは、UV Tile DiscardのVertexモードのように動作します。
+UV Tile Discardについての詳細は、UV Tile DiscardについてのPoiyomiのドキュメントをご参照ください。
+なお、何らかの非破壊ツールを使用してモデルのUVタイリングを行っても問題ありません。
+設定 # メッシュのマテリアルスロットの一覧が表示されます。 削除を行う対象のUVタイルを選択してください。
+UVタイル選択欄の上部で、UVチャンネルを指定することもできます。 PoiyomiやlilToonのUV Tile Discard機能とは異なり、このコンポーネントではあらゆるUVチャンネルをUVタイル選択用のUVとして指定することができます。</description></item><item><title>Rename BlendShape</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/rename-blendshape/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/rename-blendshape/</guid><description>Rename BlendShape # メッシュのBlendShape名を変更することが出来ます。
 変更後の名前が重複している場合、それらは1つのBlendShapeへと統合されます。
 このコンポーネントは、SkinnedMeshRendererコンポーネントのあるGameObjectに追加してください。(分類: Modifying Edit Skinned Mesh Component)
-設定 # BlendShape名の変更一覧表が表示されます。 左上の &amp;lsquo;+&amp;rsquo; ボタンから、名前を変更するBlendShapeを追加することが出来ます。
+設定 # BlendShape名の変更一覧表が表示されます。 右上の &amp;lsquo;+&amp;rsquo; ボタンから、名前を変更するBlendShapeを追加することが出来ます。
 変更後の名前が重複している場合は、それらが統合されることを示すために、入力欄が黄色でハイライトされます。</description></item><item><title>Clear Endpoint Position</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/clear-endpoint-position/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/clear-endpoint-position/</guid><description>Clear Endpoint Position # このコンポーネントは、Endpoint Positionの値を0に置換し、_EndPhysBoneGameObjectを追加します。
 このコンポーネントはPhysBoneコンポーネントがあるGameObjectに追加してください。
 今のところ、このコンポーネントに設定項目はありませんが、ボタンが1つあります。 適用して今すぐcomponentを削除するをクリックすると、 この操作が適用され、コンポーネントが削除されます。 アバターを制作するときに便利かもしれません。</description></item><item><title>Merge Bone</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/merge-bone/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/merge-bone/</guid><description> Merge Bone # Trace And Optimizeが自動で同様の処理を行うため、大抵の場合、このコンポーネントを使用する必要はありません。 このコンポーネントがGameObjectに付いている場合、そのGameObjectは親GameObjectに統合されて取り除かれます。 また、統合対象にその他のコンポーネントが付属している場合はそれらも削除されます。
