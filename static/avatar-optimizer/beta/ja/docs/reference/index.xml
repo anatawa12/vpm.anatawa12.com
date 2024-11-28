@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>コンポーネントの詳細説明 on Avatar Optimizer (1.8.0-rc.8)</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/</link><description>Recent content in コンポーネントの詳細説明 on Avatar Optimizer (1.8.0-rc.8)</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/index.xml" rel="self" type="application/rss+xml"/><item><title>Trace And Optimize</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/trace-and-optimize/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/trace-and-optimize/</guid><description>Trace And Optimize (T&amp;amp;O) # 昔のバージョンではAutomatic Configurationという名前でした
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>コンポーネントの詳細説明 on Avatar Optimizer (1.8.0-rc.9)</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/</link><description>Recent content in コンポーネントの詳細説明 on Avatar Optimizer (1.8.0-rc.9)</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/index.xml" rel="self" type="application/rss+xml"/><item><title>Trace And Optimize</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/trace-and-optimize/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/trace-and-optimize/</guid><description>Trace And Optimize (T&amp;amp;O) # 昔のバージョンではAutomatic Configurationという名前でした
 このコンポーネントは、アバターを走査して自動的にできる限りの最適化を行います。 チェックボックスで自動的に行う最適化を選択することが出来ます。
 このコンポーネントはアバターのルートに追加してください。(分類: Avatar Global Component)
 Trace and Optimizeは「見た目に絶対に影響させてはならない」という前提の下で、かなり慎重に作られています。
@@ -15,7 +15,9 @@ Animator Controllerを最適化します。詳細はこのセクションを参�
 分かれている必要のないスキンメッシュレンダラーを統合します。
 場合により、自動では一部のメッシュを統合しないこともあるため、必要に応じてMerge Skinned Meshを使用してください。 マテリアルスロットの前後関係を変えることを許可する
 マテリアルスロットの前後関係を変えることで、アバターの描画負荷を減らせる場合があります。
-多くの場合、マテリアルスロットの前後関係は特に意味を持ちませんが、描画順に影響を与える場合もあるようです。 また、以下の設定で自動設定を調節できます。
+多くの場合、マテリアルスロットの前後関係は特に意味を持ちませんが、描画順に影響を与える場合もあるようです。 テクスチャを最適化する
+見た目に影響を与えずにテクスチャを最適化します。
+現在は、AvatarOptimizerが対応しているシェーダーが使用されているマテリアルに対してのみ、UVパッキングやテクスチャサイズの縮小を行います。 また、以下の設定で自動設定を調節できます。
 MMDワールドとの互換性
 MMDワールドで使われるBlendShapeを固定しないなど、MMDワールドとの互換性を考慮した軽量化を行います。 加えて、以下の高度な最適化が利用出来ます。
 面積がゼロのポリゴンを自動的に削除する
@@ -72,8 +74,11 @@ Edit This Boxをクリックすると下図のようなギズモを表示しま�
 このコンポーネントは、SkinnedMeshRendererコンポーネントのあるGameObjectに追加してください。(分類: Modifying Edit Skinned Mesh Component)
 利点 # 服で隠れていたりして見えないような部分のメッシュを削除すると、見た目に影響させずに描画負荷やBlendShapeの処理負荷などを減らして軽量化することができます。
 このコンポーネントを使用すると、アルファマスク用のテクスチャや、gatosyocoraさんのMeshDeleterWithTexture用のマスクテクスチャを利用して簡単にメッシュを削除することができます。
-設定 # メッシュのマテリアルスロットの一覧が表示されます。 マスクテクスチャによるポリゴンの削除を行う対象のマテリアルスロットを選択してください。
-マスクテクスチャ # ポリゴンの削除に利用するマスクテクスチャです。 「編集」ボタンをクリックすると、マスクテクスチャエディターが開きます。
+設定 # メッシュのマテリアルスロットの一覧が表示されます。
+マスクテクスチャによるポリゴンの削除を行う対象のマテリアルスロットを選択してください。
+マスクテクスチャ # ポリゴンの削除に利用するマスクテクスチャです。
+何もセットされていない場合は、「作成」ボタンをクリックしてテクスチャを新規作成することができます。
+「編集」ボタンをクリックすると、マスクテクスチャエディターが開きます。
 削除モード # マスクテクスチャは物によって色が異なるため、対応するモードを選択する必要があります。
 黒(に近い色)の場合にポリゴンを削除するように設計されているマスクテクスチャを利用する場合は、Remove Blackに設定してください。
 白(に近い色)の場合にポリゴンを削除するように設計されているマスクテクスチャを利用する場合は、Remove Whiteに設定してください。
