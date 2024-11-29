@@ -13,7 +13,7 @@ type PackageConfig = { pkg: string, range?: SemVerRange, prerelease?: boolean };
 
 const config: Record<string, PackageConfig[]> = {
   "https://vpm.nadena.dev/vpm.json": [
-    {pkg: "nadena.dev.ndmf", range: parseRange(">= 1.0.0")},
+    {pkg: "nadena.dev.ndmf", range: parseRange(">= 1.0.0 <1.6.0 || >=1.6.1")},
   ],
 };
 
