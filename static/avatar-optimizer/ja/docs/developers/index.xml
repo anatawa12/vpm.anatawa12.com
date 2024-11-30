@@ -1,20 +1,26 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>開発者向け on Avatar Optimizer (1.7.13)</title><link>https://vpm.anatawa12.com/avatar-optimizer/ja/docs/developers/</link><description>Recent content in 開発者向け on Avatar Optimizer (1.7.13)</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/ja/docs/developers/index.xml" rel="self" type="application/rss+xml"/><item><title>Asset Description</title><link>https://vpm.anatawa12.com/avatar-optimizer/ja/docs/developers/asset-description/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/ja/docs/developers/asset-description/</guid><description>Asset Description # Asset DescriptionはAvatar Optimizerにアセットの情報を提供するためのファイルです。
-なぜAsset Descriptionが必要なのか # アバター上の不要な要素を削除するために、Avatar Optimizerはアバターに存在するすべてのコンポーネントのことを知る必要があります。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>開発者向け on Avatar Optimizer (1.8.0)</title><link>https://vpm.anatawa12.com/avatar-optimizer/ja/docs/developers/</link><description>Recent content in 開発者向け on Avatar Optimizer (1.8.0)</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/ja/docs/developers/index.xml" rel="self" type="application/rss+xml"/><item><title>Asset Description</title><link>https://vpm.anatawa12.com/avatar-optimizer/ja/docs/developers/asset-description/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/ja/docs/developers/asset-description/</guid><description>Asset Description # Asset DescriptionはAvatar Optimizerにアセットの情報を提供するためのファイルです。
+なぜAsset Descriptionが必要なのか # Avatar Optimizerは、Asset Descriptionで提供された情報を用いて最適化の失敗を防ぎます。
+Asset Descriptionでは、以下の情報を提供することができます。
+Meaningless Components
+Avatar Optimizerに無視されるべきコンポーネントを指定します。 Parameters Read By External Tools
+OSCツールなどの外部ツールから読み取られるパラメーターを指定します。 Parameters Changed By External Tools
+OSCツールなどの外部ツールから変更されるパラメーターを指定します。 各項目が必要な理由については以下の説明を参照してください。
+Meaningless Components # アバター上の不要な要素を削除するために、Avatar Optimizerはアバターに存在するすべてのコンポーネントのことを知る必要があります。
 Avatar Optimizer v1.6.0でコンポーネントにAAOとの互換性をもたせるためのドキュメントとAPIが追加されましたが、 非破壊ツールでなく、ビルド時に処理を行わないようなツールでは、IVRCSDKPreprocessAvatarCallbackでコンポーネントを削除するのは少し面倒だろうと考えました。
 そのため、Avatar Optimizerに無視してほしい、ビルド時やランタイムで処理を行わないコンポーネントを指定するためのシンプルな仕組みとして、Asset Descriptionがv1.7.0で追加されました。
-なお、非破壊ツールの場合については、正しくない実行順で処理が行われた場合に、Avatar Optimizerがコンポーネントを誤って削除してしまわないように、従来通りIVRCSDKPreprocessAvatarCallbackでコンポーネントを削除することを推奨します。
-Asset Descriptionの作成 # Asset Descriptionを作成するには、Projectウィンドウの右クリックメニューからCreate/Avatar Optimizer/Asset Descriptionを選択してください。
-Avatar Optimizerはすべてのファイルの中からファイル検索を行うため、Asset Descriptionの名前、場所は自由です。
-Asset Descriptionの編集 # Comment # コメント欄はメモを書くためにご自由にお使いください。 Avatar Optimizerはコメントを無視します。
-Meaningless Components # Meaningless ComponentsはAvatar Optimizerに無視してほしいコンポーネントの型の一覧です。 コンポーネントのScript Assetを指定してください。 指定されたScript Assetの型のコンポーネントと、そのサブクラスのコンポーネントはAvatar Optimizerに無視されます。
-Asset Descriptionでは実際のScene上のコンポーネントと同様に、Script AssetがguidとfileIDの形で保持されています。 そのため、クラス名を変更したとしても、シーン上のコンポーネントが壊れていない限り、Asset Descriptionでの指定も問題なく機能します。</description></item><item><title>Component Scripting API</title><link>https://vpm.anatawa12.com/avatar-optimizer/ja/docs/developers/component-api/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/ja/docs/developers/component-api/</guid><description>Component Scripting API # Avatar Optimizer v1.7.0以降、アバターにAvatar Optimizerのコンポーネントを追加・設定するためのComponent APIを提供しています。 このAPIを使用することで、Avatar Optimizerのコンポーネントを追加するツールやコンポーネントを作成することができます。
+なお、非破壊ツールの場合については、正しくない実行順で処理が行われた場合にAvatar Optimizerがコンポーネントを誤って削除してしまわないように、従来通りIVRCSDKPreprocessAvatarCallbackやNDMFを使用してAvatar Optimizerの処理よりも先にコンポーネントを削除することを推奨します。
+Parameters Read By Extenral Tools # PhysBoneやContact Receiverのようなコンポーネントは、OSCツールで読み取り可能なパラメーターを生成します。 そのようなパラメーターは、Animator ControllerやExpression Parameterに登録しなくても、OSCツールから読み取り可能であることが知られています。
+そのため、Avatar Optimizerはそれらのパラメーターが単に使用されていないものなのか、OSCツールで読み取るためのものなのかを判別することができません。 登録されていないパラメーターがOSCツールで使用されていることは比較的少ないため、コンポーネントが生成するパラメーターがアバター上で全く使われていない場合にはコンポーネントが削除されることになります。
+これを防ぐために、OSCツールから読み取られる目的のパラメーターをAsset Descriptionで指定することができます。
+Parameters Changed By External Tools # この情報は現在のAvatar Optimizerでは使用されていませんが、将来的に使用することが計画されています。</description></item><item><title>Component Scripting API</title><link>https://vpm.anatawa12.com/avatar-optimizer/ja/docs/developers/component-api/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/ja/docs/developers/component-api/</guid><description>Component Scripting API # Avatar Optimizer v1.7.0以降、アバターにAvatar Optimizerのコンポーネントを追加・設定するためのComponent APIを提供しています。 このAPIを使用することで、Avatar Optimizerのコンポーネントを追加するツールやコンポーネントを作成することができます。
 Component APIが利用可能なコンポーネント # 現時点では、すべてのコンポーネントがComponent APIで利用出来るわけではありません。 Component APIが利用可能なコンポーネントの一覧は以下の通りです。
-RemoveMeshInBox - コンポーネントの追加と設定変更がサポートされています RemoveMeshByBlendShape - コンポーネントの追加と設定変更がサポートされています TraceAndOptimize - デフォルト設定での追加はサポートされていますが、設定変更はサポートされていません 将来のバージョンで追加されるデフォルトで有効な機能との互換性を保つために、コンポーネントの設定変更を行う場合には注意が必要です。 詳細については以下のドキュメントを参照してください。
+RemoveMeshInBox - コンポーネントの追加と追加時の設定変更がサポートされています RemoveMeshByBlendShape - コンポーネントの追加と追加時の設定変更がサポートされています TraceAndOptimize - デフォルト設定での追加はサポートされていますが、設定変更はサポートされていません 将来のバージョンで追加されるデフォルトで有効な機能との互換性を保つために、コンポーネントの設定変更を行う場合には注意が必要です。 詳細については以下のドキュメントを参照してください。
 はじめに # Component APIを使用するには、assembly definitionファイルでcom.anatawa12.avatar-optimizer.runtimeを参照する必要があります。 Avatar Optimizerはランタイムで動作しないため、ランタイムビルド向けでcom.anatawa12.avatar-optimizer.runtimeに依存してはいけません。
 com.anatawa12.avatar-optimizer.runtimeにあるいくつかのクラスは、将来のバージョンでランタイム向けビルドから除外される可能性があります。 言い換えると、ランタイム向けのアセンブリでcom.anatawa12.avatar-optimizer.runtimeを使用するのは避けることをお勧めします。エディタ向けのアセンブリでのみ使用するようにしてください。
 次に、コンポーネントの設定を変更する場合は、将来のバージョンで追加される機能との互換性を確保するためにvoid Initialize(int version)メソッドを呼び出す必要があります。 (動作の安定性で説明されているように、)デフォルト設定は変更される可能性があります。
 デフォルト設定は、GameObject.AddComponent&amp;lt;T&amp;gt;()メソッドで追加されるコンポーネントに影響します。 従って、Avatar Optimizerの将来のバージョンとの互換性を保つためには、使用するデフォルト設定のバージョンを指定してInitializeメソッドを呼び出す必要があります。 デフォルト設定のバージョンは、Initializeメソッドのドキュメントに記載されているはずです。
-Initializeメソッドを呼び出さなかった場合、コンポーネントが予期しない動作をしたり、将来的にエラーが発生したりする可能性があります。</description></item><item><title>アセットの配布について</title><link>https://vpm.anatawa12.com/avatar-optimizer/ja/docs/developers/distributing-prefabs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/ja/docs/developers/distributing-prefabs/</guid><description> アセットの配布について # Avatar Optimizerは配布したいアセットを軽量化したり最適化したりするのに役立つかもしれません。 Avatar Optimizerに依存するアセットを配布する際の推奨事項をいくつか示します。
+Initializeメソッドを呼び出さなかった場合、コンポーネントが予期しない動作をしたり、将来的にエラーが発生したりする可能性があります。 コンポーネントの設定変更はコンポーネントを追加した直後に行う場合のみサポートされており、既にGameObject上に存在しているコンポーネントに対する設定変更はサポートされていません。 これは、将来のバージョンで追加された機能が、既存のコンポーネントの設定内容と互換性がない可能性があるためです。
+例えば、v1.8.0で追加されたAAO Remove Mesh By Boxコンポーネントの反転オプションを有効にすると、設定される箱による効果が変わってしまい、v1.7以前のみを想定して作成されているツールと互換性がなくなってしまいます。</description></item><item><title>アセットの配布について</title><link>https://vpm.anatawa12.com/avatar-optimizer/ja/docs/developers/distributing-prefabs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/ja/docs/developers/distributing-prefabs/</guid><description> アセットの配布について # Avatar Optimizerは配布したいアセットを軽量化したり最適化したりするのに役立つかもしれません。 Avatar Optimizerに依存するアセットを配布する際の推奨事項をいくつか示します。
 ユーザーをAvatar Optimizer公式の配布場所に誘導する # Avatar OptimizerはMITライセンスの下で公開されているため、再配布することが認められています。 それでも、Avatar Optimizer公式の配布場所にユーザーを誘導することを強くお勧めします。
 非公式に配布されるAvatar Optimizerはバージョンが古い可能性があります。 古いバージョンのAvatar Optimizerを使用していると、公式版では既に修正されているバグに遭遇するかもしれません。 また、Avatar Optimizerは前方互換性を保証していないため、新しいバージョンから古いバージョンにダウングレードさせてしまうと、そのユーザーの環境で何らかの問題が発生する可能性があります。
 ユーザーをAvatar Optimizer公式の配布場所に誘導する際に推奨される方法は以下の通りです。
@@ -24,7 +30,7 @@ VPMで配布するアセットのpackage.jsonでAvatar Optimizerを依存関係�
 こちらはAvatar Optimizer公式のインストールガイドです。 このガイドは、Avatar Optimizerを推奨される方法でインストールするようにユーザーを誘導します。 Avatar OptimizerのBoothページへのリンクを提供してください。
 BoothページはAvatar Optimizer公式の配布場所の1つです。 Boothでは、最新バージョンのVPAIインストーラーunitypackageが含まれています。 VPAIインストーラーunitypackageを同梱し、そのunitypackageをインポートするように指示してください。
 VPAIインストーラーは、Avatar OptimizerのようなVPMパッケージを、unitypackageをインポートするだけでインストールするためのツールです。 Avatar Optimizer 1.x.x用のVPAIインストーラーunitypackageをダウンロードするためのリンクはこちらです。</description></item><item><title>コンポーネントにAvatar Optimizerとの互換性をもたせる</title><link>https://vpm.anatawa12.com/avatar-optimizer/ja/docs/developers/make-your-components-compatible-with-aao/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/ja/docs/developers/make-your-components-compatible-with-aao/</guid><description>コンポーネントにAvatar Optimizerとの互換性をもたせる # このページでは以下の2つのことを説明します。
-コンポーネントはどのような場合にAvatar Optimizerと非互換になるか どのように互換性を改善するか もし質問があれば、お気軽にfediverseで@anatawa12@misskey.niri.laにご連絡ください。
+コンポーネントはどのような場合にAvatar Optimizerと非互換になるか どのように互換性を改善するか もし質問があれば、お気軽にFediverse (Misskey / Mastodon)やNDMF Discordでご連絡ください。
 コンポーネントはどのような場合にAvatar Optimizerと非互換になるか # Avatar Optimizerが処理する時点でアバターにコンポーネントが存在している場合、そのコンポーネントはAvatar Optimizerと互換性が無い可能性があります。
 Avatar Optimizerはビルド処理の最後の方で動作するように設計されているため、Avatar Optimizerにとって未知のコンポーネントについてはサポートしていません。
 例えば、Avatar Optimizerはコンポーネント等に対するガベージコレクションシステムを実装しています。 使用されているコンポーネントを保持し、未使用のコンポーネントを適切に削除するためには、 最適化時にアバターに存在するすべてのコンポーネントのことを知っておく必要があります。
@@ -41,6 +47,5 @@ APIを使用してAvatar Optimizerにコンポーネントを登録する
 詳細は下のセクションを参照してください。
 Avatar Optimizerは、Trace and Optimizeの後に処理を行う一部のコンポーネントや、Unity純正のコンポーネント、VRCSDKのコンポーネントなどを保持するために、内部的にこの方法を使用しています。
 Asset Descriptionを使用して、削除しても問題のないコンポーネントとしてAvatar Optimizerに登録する
-Avatar Optimizer v1.7.0以降では、実行時やビルド時で処理を行わないコンポーネント向けに[Asset Description]が追加されています。 ツールが実行時やビルド時に何も行わない場合は、「Avatar Optimizerが処理する前にコンポーネントを削除する」代わりにこの方法を使用してコンポーネントを登録することができます。
-詳細は[Asset Description]を参照してください。
-なお、ツールが実行時やビルド時に何らかの処理を行う場合は、そのコンポーネントをAsset Descriptionで登録することは非推奨です。 実行時やビルド時に何らかの処理を行うコンポーネントをAsset Descriptionで登録してしまうと、 実行順に予期しない変更があったり、指定が正しくなかったりした場合に、コンポーネントがAvatar Optimizerに意図せず削除されてツールが正常に動作できなくなる可能性があります。</description></item></channel></rss>
+Avatar Optimizer v1.7.0以降では、実行時やビルド時で処理を行わないコンポーネント向けにAsset Descriptionが追加されています。 ツールが実行時やビルド時に何も行わない場合は、「Avatar Optimizerが処理する前にコンポーネントを削除する」代わりにこの方法を使用してコンポーネントを登録することができます。
+詳細はAsset Descriptionを参照してください。</description></item></channel></rss>
