@@ -1715,6 +1715,29 @@
             "com.vrchat.avatars": ">=3.7.0 <3.8.0"
           },
           "zipSHA256": "e0c5d88647c2fd9f94fb04f275fe6ada76406b352e016ef4bae8107e2e885889"
+        },
+        "1.8.1": {
+          "name": "com.anatawa12.avatar-optimizer",
+          "version": "1.8.1",
+          "private": false,
+          "private-beta": false,
+          "unity": "2022.3",
+          "description": "Set of Anatawa12's Small Avatar Optimization Utilities",
+          "displayName": "AAO: Avatar Optimizer",
+          "author": {
+            "name": "anatawa12",
+            "url": "https://anatawa12.com/"
+          },
+          "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.8.1.zip?",
+          "repo": "https://vpm.anatawa12.com/vpm.json",
+          "documentationUrl": "https://vpm.anatawa12.com/avatar-optimizer/",
+          "changelogUrl": "https://vpm.anatawa12.com/avatar-optimizer/en/docs/changelog/#1.8.1",
+          "license": "MIT",
+          "vpmDependencies": {
+            "nadena.dev.ndmf": "^1.6.0",
+            "com.vrchat.avatars": ">=3.7.0 <3.8.0"
+          },
+          "zipSHA256": "eef01b6b95ca845b8a5b8109375d0d606b91405f804ea0d3f824f3d311a7e5fa"
         }
       }
     },
