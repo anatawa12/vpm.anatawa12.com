@@ -4050,6 +4050,28 @@
             "com.vrchat.avatars": ">=3.7.4",
             "nadena.dev.ndmf": ">=1.6.0 <2.0.0-a"
           }
+        },
+        "1.11.2": {
+          "name": "nadena.dev.modular-avatar",
+          "displayName": "Modular Avatar",
+          "version": "1.11.2",
+          "unity": "2022.3",
+          "description": "A suite of tools for assembling your avatar out of reusable components",
+          "author": {
+            "name": "bd_",
+            "email": "bd_@nadena.dev",
+            "url": "https://github.com/bdunderscore/modular-avatar"
+          },
+          "url": "https://github.com/bdunderscore/modular-avatar/releases/download/1.11.2/nadena.dev.modular-avatar-1.11.2.zip?",
+          "repo": "https://vpm.nadena.dev/vpm.json",
+          "dependencies": {
+            "com.unity.nuget.newtonsoft-json": "2.0.0"
+          },
+          "vpmDependencies": {
+            "com.vrchat.avatars": ">=3.7.4",
+            "nadena.dev.ndmf": ">=1.6.0 <2.0.0-a"
+          },
+          "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
         }
       }
     },
@@ -4548,6 +4570,21 @@
             "url": "https://github.com/bdunderscore/ndmf"
           },
           "url": "https://github.com/bdunderscore/ndmf/releases/download/1.6.4/nadena.dev.ndmf-1.6.4.zip?",
+          "repo": "https://vpm.nadena.dev/vpm.json"
+        },
+        "1.6.5": {
+          "name": "nadena.dev.ndmf",
+          "displayName": "Non-Destructive Modular Framework",
+          "version": "1.6.5",
+          "unity": "2022.3",
+          "description": "A framework for building non-destructive plugins for VRChat Avatar 3.0",
+          "vrchatVersion": "2022.1.1",
+          "author": {
+            "name": "bd_",
+            "email": "bd_@nadena.dev",
+            "url": "https://github.com/bdunderscore/ndmf"
+          },
+          "url": "https://github.com/bdunderscore/ndmf/releases/download/1.6.5/nadena.dev.ndmf-1.6.5.zip?",
           "repo": "https://vpm.nadena.dev/vpm.json"
         }
       }
