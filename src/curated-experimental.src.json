@@ -4293,6 +4293,27 @@
             "com.vrchat.avatars": ">=3.7.4",
             "nadena.dev.ndmf": ">=1.7.1 <2.0.0-a"
           }
+        },
+        "1.12.2": {
+          "name": "nadena.dev.modular-avatar",
+          "displayName": "Modular Avatar",
+          "version": "1.12.2",
+          "unity": "2022.3",
+          "description": "A suite of tools for assembling your avatar out of reusable components",
+          "author": {
+            "name": "bd_",
+            "email": "bd_@nadena.dev",
+            "url": "https://github.com/bdunderscore/modular-avatar"
+          },
+          "url": "https://github.com/bdunderscore/modular-avatar/releases/download/1.12.2/nadena.dev.modular-avatar-1.12.2.zip?",
+          "repo": "https://vpm.nadena.dev/vpm.json",
+          "dependencies": {
+            "com.unity.nuget.newtonsoft-json": "2.0.0"
+          },
+          "vpmDependencies": {
+            "com.vrchat.avatars": ">=3.7.4",
+            "nadena.dev.ndmf": ">=1.7.2-r <2.0.0-a"
+          }
         }
       }
     },
@@ -4881,6 +4902,21 @@
             "url": "https://github.com/bdunderscore/ndmf"
           },
           "url": "https://github.com/bdunderscore/ndmf/releases/download/1.7.1/nadena.dev.ndmf-1.7.1.zip?",
+          "repo": "https://vpm.nadena.dev/vpm.json"
+        },
+        "1.7.2": {
+          "name": "nadena.dev.ndmf",
+          "displayName": "Non-Destructive Modular Framework",
+          "version": "1.7.2",
+          "unity": "2022.3",
+          "description": "A framework for building non-destructive plugins for VRChat Avatar 3.0",
+          "vrchatVersion": "2022.1.1",
+          "author": {
+            "name": "bd_",
+            "email": "bd_@nadena.dev",
+            "url": "https://github.com/bdunderscore/ndmf"
+          },
+          "url": "https://github.com/bdunderscore/ndmf/releases/download/1.7.2/nadena.dev.ndmf-1.7.2.zip?",
           "repo": "https://vpm.nadena.dev/vpm.json"
         }
       }
