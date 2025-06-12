@@ -7440,9 +7440,12 @@
         "1.0.0": {
           "name": "com.anatawa12.harmonyfix",
           "version": "1.0.0",
-          "displayName": "Harmony bug Fix",
-          "description": "Harmony's bug fix",
+          "displayName": "Harmony bug Fix (Deprecated; use Harmony Patches for Apple Silicon native & Rosetta instead)",
+          "description": "Use \"Harmony Patches for Apple Silicon native & Rosetta\" instead Please",
           "url": "https://vpm.anatawa12.com/harmonyfix/package-1.0.0.zip?",
+          "vrc-get": {
+            "yanked": "This package is discontinued. Please use Harmony Patches for Apple Silicon native & Rosetta instead"
+          },
           "zipSHA256": "df0ec3331ce6e573d6a9401efa2545dc2cc27d1a23ba09856ef415f537cb1314"
         }
       }
