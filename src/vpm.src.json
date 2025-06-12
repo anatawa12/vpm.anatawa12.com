@@ -8363,6 +8363,21 @@
           "zipSHA256": "93c72c242c85fef853ce3670deccbf02ad53cdb094830ef3bc7cc7249a5cbd29"
         }
       }
+    },
+    "com.anatawa12.apple-silicon-harmony": {
+      "versions": {
+        "0.1.0-beta.1": {
+          "name": "com.anatawa12.apple-silicon-harmony",
+          "version": "0.1.0-beta.1",
+          "displayName": "Harmony Patches for Apple Silicon native & Rosetta",
+          "legacyPackages": [
+            "com.anatawa12.harmonyfix"
+          ],
+          "description": "The package contains the patches of Harmony to support Apple Silicon native W^X limitations and to fix Rosetta 2 environment detection bugs.",
+          "url": "https://vpm.anatawa12.com/apple-silicon-harmony/package-0.1.0-beta.1.zip?",
+          "zipSHA256": "baddeb89683f3fc7b9c6a5487bb9d6e5026d42a39476b96e156884a9ecfc606b"
+        }
+      }
     }
   },
   "author": "anatawa12",
