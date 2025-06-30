@@ -6098,6 +6098,15 @@
           "version": "0.18.2",
           "url": "https://vpm.anatawa12.com/gists/package-0.18.2.zip?",
           "zipSHA256": "174f6764f51a6cc9c1fca80dfdcc7cda5444a38abc05b221aae9758994aa843d"
+        },
+        "0.18.3": {
+          "name": "com.anatawa12.gists",
+          "displayName": "anatawa12's gists pack",
+          "description": "set of anatawa12's gist you can enable/disable any of gist at `Tools/anatawa12's gist selector`",
+          "unity": "2019.4",
+          "version": "0.18.3",
+          "url": "https://vpm.anatawa12.com/gists/package-0.18.3.zip?",
+          "zipSHA256": "8bcbd87f10a79735ad93c050df60fbc70726bd28b613a19edbe11afde5513247"
         }
       }
     },
