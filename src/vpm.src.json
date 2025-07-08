@@ -7568,113 +7568,6 @@
         }
       }
     },
-    "com.anatawa12.harmonyfix": {
-      "versions": {
-        "1.0.0": {
-          "name": "com.anatawa12.harmonyfix",
-          "version": "1.0.0",
-          "displayName": "Harmony bug Fix (Deprecated; use Harmony Patches for Apple Silicon native & Rosetta instead)",
-          "description": "Use \"Harmony Patches for Apple Silicon native & Rosetta\" instead Please",
-          "url": "https://vpm.anatawa12.com/harmonyfix/package-1.0.0.zip?",
-          "vrc-get": {
-            "yanked": "This package is discontinued. Please use Harmony Patches for Apple Silicon native & Rosetta instead"
-          },
-          "zipSHA256": "df0ec3331ce6e573d6a9401efa2545dc2cc27d1a23ba09856ef415f537cb1314"
-        }
-      }
-    },
-    "com.anatawa12.av3emulator": {
-      "versions": {
-        "3.0.0": {
-          "name": "com.anatawa12.av3emulator",
-          "displayName": "anatawa12's fork of Av3Emulator",
-          "version": "3.0.0",
-          "unity": "2019.4",
-          "description": "Avatars 3.0 Emulator",
-          "contributors": [
-            "lyuma xn.lyuma@gmail.com",
-            "anatawa12 <anatawa12@icloud.com>"
-          ],
-          "dependencies": {
-            "vrchat.blackstartx.gesture-manager": "^3.8.2"
-          },
-          "legacyFolders": {
-            "Assets/Lyuma/Av3Emulator": "e42c5d0b3e2b3f64e8a88c225b3cef62"
-          },
-          "vrc-get": {
-            "yanked": "This package is discontinued. Please use the official Av3Emulator package."
-          },
-          "url": "https://vpm.anatawa12.com/av3emulator/package-3.0.0.zip?",
-          "zipSHA256": "336ce46304e266cd8b35ca94c7565ee1434497e0556ce2591a21e1a69ef255d3"
-        },
-        "3.0.1": {
-          "name": "com.anatawa12.av3emulator",
-          "displayName": "anatawa12's fork of Av3Emulator",
-          "version": "3.0.1",
-          "unity": "2019.4",
-          "description": "Avatars 3.0 Emulator",
-          "contributors": [
-            "lyuma xn.lyuma@gmail.com",
-            "anatawa12 <anatawa12@icloud.com>"
-          ],
-          "dependencies": {
-            "vrchat.blackstartx.gesture-manager": "^3.8.2"
-          },
-          "legacyFolders": {
-            "Assets/Lyuma/Av3Emulator": "e42c5d0b3e2b3f64e8a88c225b3cef62"
-          },
-          "vrc-get": {
-            "yanked": "This package is discontinued. Please use the official Av3Emulator package."
-          },
-          "url": "https://vpm.anatawa12.com/av3emulator/package-3.0.1.zip?",
-          "zipSHA256": "504f295166041aae7c0e735e4ad998e71dc18c0eea36289187c7762c9be9a4a9"
-        },
-        "3.0.2": {
-          "name": "com.anatawa12.av3emulator",
-          "displayName": "anatawa12's fork of Av3Emulator",
-          "version": "3.0.2",
-          "unity": "2019.4",
-          "description": "Avatars 3.0 Emulator",
-          "contributors": [
-            "lyuma xn.lyuma@gmail.com",
-            "anatawa12 <anatawa12@icloud.com>"
-          ],
-          "vpmDependencies": {
-            "vrchat.blackstartx.gesture-manager": "^3.8.2"
-          },
-          "legacyFolders": {
-            "Assets/Lyuma/Av3Emulator": "e42c5d0b3e2b3f64e8a88c225b3cef62"
-          },
-          "vrc-get": {
-            "yanked": "This package is discontinued. Please use the official Av3Emulator package."
-          },
-          "url": "https://vpm.anatawa12.com/av3emulator/package-3.0.2.zip?",
-          "zipSHA256": "fc962ff553eb51747e1d720755c06b351312ec592605a2c2cbc9c8cf02effdff"
-        },
-        "3.0.3": {
-          "name": "com.anatawa12.av3emulator",
-          "displayName": "DO NOT INSTALL THIS PACKAGE. THIS IS ONLY FOR COMPATIBILITY UNTIL VRCHAT SUPPORTS YANK. (Anatawa12's Modified Av3Emulator)",
-          "version": "3.0.3",
-          "unity": "2019.4",
-          "description": "Avatars 3.0 Emulator",
-          "contributors": [
-            "lyuma xn.lyuma@gmail.com",
-            "anatawa12 <anatawa12@icloud.com>"
-          ],
-          "vpmDependencies": {
-            "vrchat.blackstartx.gesture-manager": "^3.8.2"
-          },
-          "legacyFolders": {
-            "Assets/Lyuma/Av3Emulator": "e42c5d0b3e2b3f64e8a88c225b3cef62"
-          },
-          "vrc-get": {
-            "yanked": "This package is discontinued. Please use the official Av3Emulator package."
-          },
-          "url": "https://vpm.anatawa12.com/av3emulator/package-3.0.3.zip?",
-          "zipSHA256": "7c9d47db97844fd1f53d4885ef69dd9a6c6417e41929eeba45b4ee3ced9260cc"
-        }
-      }
-    },
     "com.anatawa12.udon-sharp-migration-fix": {
       "versions": {
         "0.1.0": {
@@ -8534,6 +8427,113 @@
           "description": "The package contains the patches of Harmony to support Apple Silicon native W^X limitations and to fix Rosetta 2 environment detection bugs.",
           "url": "https://vpm.anatawa12.com/apple-silicon-harmony/package-0.1.0.zip?",
           "zipSHA256": "1fe3be957507442883632002a4c3fead468f8efb410feeb46e1e2162c0d94cee"
+        }
+      }
+    },
+    "com.anatawa12.av3emulator": {
+      "versions": {
+        "3.0.0": {
+          "name": "com.anatawa12.av3emulator",
+          "displayName": "anatawa12's fork of Av3Emulator",
+          "version": "3.0.0",
+          "unity": "2019.4",
+          "description": "Avatars 3.0 Emulator",
+          "contributors": [
+            "lyuma xn.lyuma@gmail.com",
+            "anatawa12 <anatawa12@icloud.com>"
+          ],
+          "dependencies": {
+            "vrchat.blackstartx.gesture-manager": "^3.8.2"
+          },
+          "legacyFolders": {
+            "Assets/Lyuma/Av3Emulator": "e42c5d0b3e2b3f64e8a88c225b3cef62"
+          },
+          "vrc-get": {
+            "yanked": "This package is discontinued. Please use the official Av3Emulator package."
+          },
+          "url": "https://vpm.anatawa12.com/av3emulator/package-3.0.0.zip?",
+          "zipSHA256": "336ce46304e266cd8b35ca94c7565ee1434497e0556ce2591a21e1a69ef255d3"
+        },
+        "3.0.1": {
+          "name": "com.anatawa12.av3emulator",
+          "displayName": "anatawa12's fork of Av3Emulator",
+          "version": "3.0.1",
+          "unity": "2019.4",
+          "description": "Avatars 3.0 Emulator",
+          "contributors": [
+            "lyuma xn.lyuma@gmail.com",
+            "anatawa12 <anatawa12@icloud.com>"
+          ],
+          "dependencies": {
+            "vrchat.blackstartx.gesture-manager": "^3.8.2"
+          },
+          "legacyFolders": {
+            "Assets/Lyuma/Av3Emulator": "e42c5d0b3e2b3f64e8a88c225b3cef62"
+          },
+          "vrc-get": {
+            "yanked": "This package is discontinued. Please use the official Av3Emulator package."
+          },
+          "url": "https://vpm.anatawa12.com/av3emulator/package-3.0.1.zip?",
+          "zipSHA256": "504f295166041aae7c0e735e4ad998e71dc18c0eea36289187c7762c9be9a4a9"
+        },
+        "3.0.2": {
+          "name": "com.anatawa12.av3emulator",
+          "displayName": "anatawa12's fork of Av3Emulator",
+          "version": "3.0.2",
+          "unity": "2019.4",
+          "description": "Avatars 3.0 Emulator",
+          "contributors": [
+            "lyuma xn.lyuma@gmail.com",
+            "anatawa12 <anatawa12@icloud.com>"
+          ],
+          "vpmDependencies": {
+            "vrchat.blackstartx.gesture-manager": "^3.8.2"
+          },
+          "legacyFolders": {
+            "Assets/Lyuma/Av3Emulator": "e42c5d0b3e2b3f64e8a88c225b3cef62"
+          },
+          "vrc-get": {
+            "yanked": "This package is discontinued. Please use the official Av3Emulator package."
+          },
+          "url": "https://vpm.anatawa12.com/av3emulator/package-3.0.2.zip?",
+          "zipSHA256": "fc962ff553eb51747e1d720755c06b351312ec592605a2c2cbc9c8cf02effdff"
+        },
+        "3.0.3": {
+          "name": "com.anatawa12.av3emulator",
+          "displayName": "DO NOT INSTALL THIS PACKAGE. THIS IS ONLY FOR COMPATIBILITY UNTIL VRCHAT SUPPORTS YANK. (Anatawa12's Modified Av3Emulator)",
+          "version": "3.0.3",
+          "unity": "2019.4",
+          "description": "Avatars 3.0 Emulator",
+          "contributors": [
+            "lyuma xn.lyuma@gmail.com",
+            "anatawa12 <anatawa12@icloud.com>"
+          ],
+          "vpmDependencies": {
+            "vrchat.blackstartx.gesture-manager": "^3.8.2"
+          },
+          "legacyFolders": {
+            "Assets/Lyuma/Av3Emulator": "e42c5d0b3e2b3f64e8a88c225b3cef62"
+          },
+          "vrc-get": {
+            "yanked": "This package is discontinued. Please use the official Av3Emulator package."
+          },
+          "url": "https://vpm.anatawa12.com/av3emulator/package-3.0.3.zip?",
+          "zipSHA256": "7c9d47db97844fd1f53d4885ef69dd9a6c6417e41929eeba45b4ee3ced9260cc"
+        }
+      }
+    },
+    "com.anatawa12.harmonyfix": {
+      "versions": {
+        "1.0.0": {
+          "name": "com.anatawa12.harmonyfix",
+          "version": "1.0.0",
+          "displayName": "Harmony bug Fix (Deprecated; use Harmony Patches for Apple Silicon native & Rosetta instead)",
+          "description": "Use \"Harmony Patches for Apple Silicon native & Rosetta\" instead Please",
+          "url": "https://vpm.anatawa12.com/harmonyfix/package-1.0.0.zip?",
+          "vrc-get": {
+            "yanked": "This package is discontinued. Please use Harmony Patches for Apple Silicon native & Rosetta instead"
+          },
+          "zipSHA256": "df0ec3331ce6e573d6a9401efa2545dc2cc27d1a23ba09856ef415f537cb1314"
         }
       }
     }
