@@ -8467,6 +8467,24 @@
           },
           "url": "https://vpm.anatawa12.com/multi-unity-package-exporter/package-0.1.0.zip?",
           "zipSHA256": "2eb13869cc2871d5fb9cac451cf32ae0b7946fa22dd6f4022bdaf5980dfe9312"
+        },
+        "0.1.1": {
+          "name": "com.anatawa12.multi-unity-package-exporter",
+          "version": "0.1.1",
+          "displayName": "Multi UnityPackage Exporter",
+          "description": "A tool to export multiple UnityPackages at once.",
+          "unity": "2022.3",
+          "keywords": [
+            "unity",
+            "exporter",
+            "unitypackage",
+            "multi-export"
+          ],
+          "author": {
+            "name": "anatawa12"
+          },
+          "url": "https://vpm.anatawa12.com/multi-unity-package-exporter/package-0.1.1.zip?",
+          "zipSHA256": "c899b556e4c3a989c216e251f4204e0eb93e5af4aa7f4c17eb7dbb804514867c"
         }
       }
     },
