@@ -3100,6 +3100,72 @@
     },
     "nadena.dev.modular-avatar": {
       "versions": {
+        "0.8.0": {
+          "name": "nadena.dev.modular-avatar",
+          "displayName": "Modular Avatar",
+          "version": "0.8.0",
+          "unity": "2019.4",
+          "description": "",
+          "author": {
+            "name": "bd_",
+            "email": "bd_@nadena.dev",
+            "url": "https://github.com/bdunderscore/modular-avatar"
+          },
+          "url": "https://github.com/bdunderscore/modular-avatar/releases/download/0.8.0/nadena.dev.modular-avatar-0.8.0.zip?",
+          "repo": "https://vpm.nadena.dev/vpm.json",
+          "dependencies": {},
+          "vpmDependencies": {
+            "com.vrchat.base": "3.1.9",
+            "com.vrchat.avatars": "3.1.9"
+          },
+          "zipSHA256": "557a4135e928cca2d0b4ef1d59d7cd48122a5e8e495b913ef9c7f4e25412c165",
+          "documentationUrl": "https://modular-avatar.nadena.dev/?lang=auto",
+          "changelogUrl": "https://github.com/bdunderscore/modular-avatar/releases/tag/0.8.0"
+        },
+        "0.9.0": {
+          "name": "nadena.dev.modular-avatar",
+          "displayName": "Modular Avatar",
+          "version": "0.9.0",
+          "unity": "2019.4",
+          "description": "",
+          "author": {
+            "name": "bd_",
+            "email": "bd_@nadena.dev",
+            "url": "https://github.com/bdunderscore/modular-avatar"
+          },
+          "url": "https://github.com/bdunderscore/modular-avatar/releases/download/0.9.0/nadena.dev.modular-avatar-0.9.0.zip?",
+          "repo": "https://vpm.nadena.dev/vpm.json",
+          "dependencies": {},
+          "vpmDependencies": {
+            "com.vrchat.base": "3.1.9",
+            "com.vrchat.avatars": "3.1.9"
+          },
+          "zipSHA256": "56b411d62b8f68f8b6735c7834b88c71a3f0d032f721fbde2ffd886fe1331b18",
+          "documentationUrl": "https://modular-avatar.nadena.dev/?lang=auto",
+          "changelogUrl": "https://github.com/bdunderscore/modular-avatar/releases/tag/0.9.0"
+        },
+        "0.9.1": {
+          "name": "nadena.dev.modular-avatar",
+          "displayName": "Modular Avatar",
+          "version": "0.9.1",
+          "unity": "2019.4",
+          "description": "",
+          "author": {
+            "name": "bd_",
+            "email": "bd_@nadena.dev",
+            "url": "https://github.com/bdunderscore/modular-avatar"
+          },
+          "url": "https://github.com/bdunderscore/modular-avatar/releases/download/0.9.1/nadena.dev.modular-avatar-0.9.1.zip?",
+          "repo": "https://vpm.nadena.dev/vpm.json",
+          "dependencies": {},
+          "vpmDependencies": {
+            "com.vrchat.base": "3.1.9",
+            "com.vrchat.avatars": "3.1.9"
+          },
+          "zipSHA256": "99700698b7cb4577df06b46e56d91e6b680608dbaec8e792dc43db05109bdbff",
+          "documentationUrl": "https://modular-avatar.nadena.dev/?lang=auto",
+          "changelogUrl": "https://github.com/bdunderscore/modular-avatar/releases/tag/0.9.1"
+        },
         "1.0.0": {
           "name": "nadena.dev.modular-avatar",
           "displayName": "Modular Avatar",
@@ -3119,6 +3185,9 @@
           "vpmDependencies": {
             "com.vrchat.base": "3.1.9",
             "com.vrchat.avatars": "3.1.9"
+          },
+          "curated_extra": {
+            "changed_reported": true
           }
         },
         "1.0.1": {
@@ -3140,6 +3209,9 @@
           "vpmDependencies": {
             "com.vrchat.base": "3.1.9",
             "com.vrchat.avatars": "3.1.9"
+          },
+          "curated_extra": {
+            "changed_reported": true
           }
         },
         "1.1.0": {
@@ -3161,6 +3233,9 @@
           "vpmDependencies": {
             "com.vrchat.base": "3.1.9",
             "com.vrchat.avatars": "3.1.9"
+          },
+          "curated_extra": {
+            "changed_reported": true
           }
         },
         "1.1.1": {
@@ -3182,6 +3257,9 @@
           "vpmDependencies": {
             "com.vrchat.base": ">=3.1.9",
             "com.vrchat.avatars": ">=3.1.9"
+          },
+          "curated_extra": {
+            "changed_reported": true
           }
         },
         "1.1.2": {
@@ -3202,6 +3280,9 @@
           },
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.1.9"
+          },
+          "curated_extra": {
+            "changed_reported": true
           }
         },
         "1.2.0": {
@@ -3222,6 +3303,9 @@
           },
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.1.9"
+          },
+          "curated_extra": {
+            "changed_reported": true
           }
         },
         "1.2.1": {
@@ -3242,6 +3326,9 @@
           },
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.1.9"
+          },
+          "curated_extra": {
+            "changed_reported": true
           }
         },
         "1.3.0": {
@@ -3262,6 +3349,9 @@
           },
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.1.9"
+          },
+          "curated_extra": {
+            "changed_reported": true
           }
         },
         "1.4.0": {
@@ -3282,6 +3372,9 @@
           },
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.1.9"
+          },
+          "curated_extra": {
+            "changed_reported": true
           }
         },
         "1.4.1": {
@@ -3302,6 +3395,9 @@
           },
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.1.9"
+          },
+          "curated_extra": {
+            "changed_reported": true
           }
         },
         "1.4.2": {
@@ -3322,6 +3418,9 @@
           },
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.1.9"
+          },
+          "curated_extra": {
+            "changed_reported": true
           }
         },
         "1.4.3": {
@@ -3342,6 +3441,9 @@
           },
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.1.9"
+          },
+          "curated_extra": {
+            "changed_reported": true
           }
         },
         "1.4.4": {
@@ -3362,6 +3464,9 @@
           },
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.1.9"
+          },
+          "curated_extra": {
+            "changed_reported": true
           }
         },
         "1.4.5": {
@@ -3382,6 +3487,9 @@
           },
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.1.9"
+          },
+          "curated_extra": {
+            "changed_reported": true
           }
         },
         "1.5.0": {
@@ -3402,6 +3510,9 @@
           },
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.2.0"
+          },
+          "curated_extra": {
+            "changed_reported": true
           }
         },
         "1.5.1": {
@@ -3422,6 +3533,9 @@
           },
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.2.0"
+          },
+          "curated_extra": {
+            "changed_reported": true
           }
         },
         "1.6.0": {
@@ -3442,6 +3556,9 @@
           },
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.2.0"
+          },
+          "curated_extra": {
+            "changed_reported": true
           }
         },
         "1.7.0": {
@@ -3462,6 +3579,9 @@
           },
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.2.0"
+          },
+          "curated_extra": {
+            "changed_reported": true
           }
         },
         "1.7.1": {
@@ -3482,6 +3602,9 @@
           },
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.2.0"
+          },
+          "curated_extra": {
+            "changed_reported": true
           }
         },
         "1.7.2": {
@@ -3502,6 +3625,9 @@
           },
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.2.0"
+          },
+          "curated_extra": {
+            "changed_reported": true
           }
         },
         "1.7.3": {
@@ -3522,6 +3648,9 @@
           },
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.2.0"
+          },
+          "curated_extra": {
+            "changed_reported": true
           }
         },
         "1.7.4": {
@@ -3542,6 +3671,9 @@
           },
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.2.0"
+          },
+          "curated_extra": {
+            "changed_reported": true
           }
         },
         "1.7.5": {
@@ -3562,6 +3694,9 @@
           },
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.2.0"
+          },
+          "curated_extra": {
+            "changed_reported": true
           }
         },
         "1.7.6": {
@@ -3582,6 +3717,9 @@
           },
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.2.0"
+          },
+          "curated_extra": {
+            "changed_reported": true
           }
         },
         "1.7.7": {
@@ -3602,6 +3740,9 @@
           },
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.2.0"
+          },
+          "curated_extra": {
+            "changed_reported": true
           }
         },
         "1.8.0": {
@@ -3623,6 +3764,9 @@
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.2.0",
             "nadena.dev.ndmf": ">=1.1.1 <2.0.0-a"
+          },
+          "curated_extra": {
+            "changed_reported": true
           }
         },
         "1.8.1": {
@@ -3644,6 +3788,9 @@
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.2.0",
             "nadena.dev.ndmf": ">=1.1.1 <2.0.0-a"
+          },
+          "curated_extra": {
+            "changed_reported": true
           }
         },
         "1.8.2": {
@@ -3665,6 +3812,9 @@
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.2.0",
             "nadena.dev.ndmf": ">=1.2.4 <2.0.0-a"
+          },
+          "curated_extra": {
+            "changed_reported": true
           }
         },
         "1.8.3": {
@@ -3686,6 +3836,9 @@
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.2.0",
             "nadena.dev.ndmf": ">=1.2.5 <2.0.0-a"
+          },
+          "curated_extra": {
+            "changed_reported": true
           }
         },
         "1.8.4": {
@@ -3707,6 +3860,9 @@
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.2.0",
             "nadena.dev.ndmf": ">=1.2.5 <2.0.0-a"
+          },
+          "curated_extra": {
+            "changed_reported": true
           }
         },
         "1.9.0": {
@@ -3728,6 +3884,9 @@
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.2.0",
             "nadena.dev.ndmf": ">=1.3.1 <2.0.0-a"
+          },
+          "curated_extra": {
+            "changed_reported": true
           }
         },
         "1.9.1": {
@@ -3749,6 +3908,9 @@
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.2.0",
             "nadena.dev.ndmf": ">=1.3.1 <2.0.0-a"
+          },
+          "curated_extra": {
+            "changed_reported": true
           }
         },
         "1.9.2": {
@@ -3770,6 +3932,9 @@
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.2.0",
             "nadena.dev.ndmf": ">=1.3.1 <2.0.0-a"
+          },
+          "curated_extra": {
+            "changed_reported": true
           }
         },
         "1.9.3": {
@@ -3791,6 +3956,9 @@
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.4.0",
             "nadena.dev.ndmf": ">=1.3.5 <2.0.0-a"
+          },
+          "curated_extra": {
+            "changed_reported": true
           }
         },
         "1.9.4": {
@@ -3812,6 +3980,9 @@
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.4.0",
             "nadena.dev.ndmf": ">=1.3.6 <2.0.0-a"
+          },
+          "curated_extra": {
+            "changed_reported": true
           }
         },
         "1.9.5": {
@@ -3833,6 +4004,9 @@
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.4.0",
             "nadena.dev.ndmf": ">=1.3.6 <2.0.0-a"
+          },
+          "curated_extra": {
+            "changed_reported": true
           }
         },
         "1.9.6": {
@@ -3854,6 +4028,9 @@
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.4.0",
             "nadena.dev.ndmf": ">=1.3.6 <2.0.0-a"
+          },
+          "curated_extra": {
+            "changed_reported": true
           }
         },
         "1.9.7": {
@@ -3875,6 +4052,9 @@
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.4.0",
             "nadena.dev.ndmf": ">=1.3.6 <2.0.0-a"
+          },
+          "curated_extra": {
+            "changed_reported": true
           }
         },
         "1.9.8": {
@@ -3896,6 +4076,9 @@
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.4.0",
             "nadena.dev.ndmf": ">=1.3.6 <2.0.0-a"
+          },
+          "curated_extra": {
+            "changed_reported": true
           }
         },
         "1.9.9": {
@@ -3917,6 +4100,9 @@
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.4.0",
             "nadena.dev.ndmf": ">=1.4.0 <2.0.0-a"
+          },
+          "curated_extra": {
+            "changed_reported": true
           }
         },
         "1.9.10": {
@@ -3938,6 +4124,9 @@
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.4.0",
             "nadena.dev.ndmf": ">=1.4.0 <2.0.0-a"
+          },
+          "curated_extra": {
+            "changed_reported": true
           }
         },
         "1.9.11": {
@@ -3959,6 +4148,9 @@
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.4.0",
             "nadena.dev.ndmf": ">=1.4.0 <2.0.0-a"
+          },
+          "curated_extra": {
+            "changed_reported": true
           }
         },
         "1.9.12": {
@@ -3980,6 +4172,9 @@
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.4.0",
             "nadena.dev.ndmf": ">=1.4.0 <2.0.0-a"
+          },
+          "curated_extra": {
+            "changed_reported": true
           }
         },
         "1.9.13": {
@@ -4001,6 +4196,9 @@
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.4.0",
             "nadena.dev.ndmf": ">=1.4.1 <2.0.0-a"
+          },
+          "curated_extra": {
+            "changed_reported": true
           }
         },
         "1.9.14": {
@@ -4022,6 +4220,9 @@
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.4.0",
             "nadena.dev.ndmf": ">=1.4.1 <2.0.0-a"
+          },
+          "curated_extra": {
+            "changed_reported": true
           }
         },
         "1.9.15": {
@@ -4043,6 +4244,9 @@
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.4.0",
             "nadena.dev.ndmf": ">=1.4.1 <2.0.0-a"
+          },
+          "curated_extra": {
+            "changed_reported": true
           }
         },
         "1.9.16": {
@@ -4064,6 +4268,9 @@
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.4.0",
             "nadena.dev.ndmf": ">=1.4.1 <2.0.0-a"
+          },
+          "curated_extra": {
+            "changed_reported": true
           }
         },
         "1.10.0": {
@@ -4085,6 +4292,9 @@
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.7.0",
             "nadena.dev.ndmf": ">=1.5.0 <2.0.0-a"
+          },
+          "curated_extra": {
+            "changed_reported": true
           }
         },
         "1.10.1": {
@@ -4106,6 +4316,9 @@
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.7.0",
             "nadena.dev.ndmf": ">=1.5.0 <2.0.0-a"
+          },
+          "curated_extra": {
+            "changed_reported": true
           }
         },
         "1.10.2": {
@@ -4127,6 +4340,9 @@
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.7.0",
             "nadena.dev.ndmf": ">=1.5.3 <2.0.0-a"
+          },
+          "curated_extra": {
+            "changed_reported": true
           }
         },
         "1.10.3": {
@@ -4148,6 +4364,9 @@
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.7.0",
             "nadena.dev.ndmf": ">=1.5.4 <2.0.0-a"
+          },
+          "curated_extra": {
+            "changed_reported": true
           }
         },
         "1.10.4": {
@@ -4169,6 +4388,9 @@
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.7.0",
             "nadena.dev.ndmf": ">=1.5.4 <2.0.0-a"
+          },
+          "curated_extra": {
+            "changed_reported": true
           }
         },
         "1.10.5": {
@@ -4190,6 +4412,9 @@
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.7.0",
             "nadena.dev.ndmf": ">=1.5.6 <2.0.0-a"
+          },
+          "curated_extra": {
+            "changed_reported": true
           }
         },
         "1.10.6": {
@@ -4211,6 +4436,9 @@
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.7.0",
             "nadena.dev.ndmf": ">=1.5.6 <2.0.0-a"
+          },
+          "curated_extra": {
+            "changed_reported": true
           }
         },
         "1.10.7": {
@@ -4232,6 +4460,9 @@
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.7.0",
             "nadena.dev.ndmf": ">=1.5.6 <2.0.0-a"
+          },
+          "curated_extra": {
+            "changed_reported": true
           }
         },
         "1.10.8": {
@@ -4253,6 +4484,9 @@
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.7.0",
             "nadena.dev.ndmf": ">=1.5.6 <2.0.0-a"
+          },
+          "curated_extra": {
+            "changed_reported": true
           }
         },
         "1.10.9": {
@@ -4274,6 +4508,9 @@
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.7.0",
             "nadena.dev.ndmf": ">=1.5.6 <2.0.0-a"
+          },
+          "curated_extra": {
+            "changed_reported": true
           }
         },
         "1.10.10": {
@@ -4295,6 +4532,9 @@
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.7.0",
             "nadena.dev.ndmf": ">=1.5.6 <2.0.0-a"
+          },
+          "curated_extra": {
+            "changed_reported": true
           }
         },
         "1.10.11": {
@@ -4316,6 +4556,9 @@
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.7.0",
             "nadena.dev.ndmf": ">=1.6.0 <2.0.0-a"
+          },
+          "curated_extra": {
+            "changed_reported": true
           }
         },
         "1.11.0": {
@@ -4337,6 +4580,9 @@
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.7.4",
             "nadena.dev.ndmf": ">=1.6.0 <2.0.0-a"
+          },
+          "curated_extra": {
+            "changed_reported": true
           }
         },
         "1.11.1": {
@@ -4358,6 +4604,9 @@
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.7.4",
             "nadena.dev.ndmf": ">=1.6.0 <2.0.0-a"
+          },
+          "curated_extra": {
+            "changed_reported": true
           }
         },
         "1.11.2": {
@@ -4380,7 +4629,10 @@
             "com.vrchat.avatars": ">=3.7.4",
             "nadena.dev.ndmf": ">=1.6.0 <2.0.0-a"
           },
-          "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
+          "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e",
+          "curated_extra": {
+            "changed_reported": true
+          }
         },
         "1.11.3": {
           "name": "nadena.dev.modular-avatar",
@@ -4402,7 +4654,10 @@
             "com.vrchat.avatars": ">=3.7.4",
             "nadena.dev.ndmf": ">=1.6.0 <2.0.0-a"
           },
-          "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
+          "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e",
+          "curated_extra": {
+            "changed_reported": true
+          }
         },
         "1.11.4": {
           "name": "nadena.dev.modular-avatar",
@@ -4424,7 +4679,10 @@
             "com.vrchat.avatars": ">=3.7.4",
             "nadena.dev.ndmf": ">=1.6.0 <2.0.0-a"
           },
-          "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
+          "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e",
+          "curated_extra": {
+            "changed_reported": true
+          }
         },
         "1.11.5": {
           "name": "nadena.dev.modular-avatar",
@@ -4446,7 +4704,10 @@
             "com.vrchat.avatars": ">=3.7.4",
             "nadena.dev.ndmf": ">=1.6.0 <2.0.0-a"
           },
-          "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
+          "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e",
+          "curated_extra": {
+            "changed_reported": true
+          }
         },
         "1.11.6": {
           "name": "nadena.dev.modular-avatar",
@@ -4468,7 +4729,10 @@
             "com.vrchat.avatars": ">=3.7.4",
             "nadena.dev.ndmf": ">=1.6.0 <2.0.0-a"
           },
-          "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
+          "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e",
+          "curated_extra": {
+            "changed_reported": true
+          }
         },
         "1.11.7": {
           "name": "nadena.dev.modular-avatar",
@@ -4490,7 +4754,10 @@
             "com.vrchat.avatars": ">=3.7.4",
             "nadena.dev.ndmf": ">=1.6.0 <2.0.0-a"
           },
-          "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
+          "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e",
+          "curated_extra": {
+            "changed_reported": true
+          }
         },
         "1.12.0": {
           "name": "nadena.dev.modular-avatar",
@@ -4511,6 +4778,9 @@
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.7.4",
             "nadena.dev.ndmf": ">=1.7.0 <2.0.0-a"
+          },
+          "curated_extra": {
+            "changed_reported": true
           }
         },
         "1.12.1": {
@@ -4532,6 +4802,9 @@
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.7.4",
             "nadena.dev.ndmf": ">=1.7.1 <2.0.0-a"
+          },
+          "curated_extra": {
+            "changed_reported": true
           }
         },
         "1.12.2": {
@@ -4553,6 +4826,9 @@
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.7.4",
             "nadena.dev.ndmf": ">=1.7.2-r <2.0.0-a"
+          },
+          "curated_extra": {
+            "changed_reported": true
           }
         },
         "1.12.3": {
@@ -4574,6 +4850,9 @@
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.7.4",
             "nadena.dev.ndmf": ">=1.7.4 <2.0.0-a"
+          },
+          "curated_extra": {
+            "changed_reported": true
           }
         },
         "1.12.4": {
@@ -4595,6 +4874,9 @@
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.7.4",
             "nadena.dev.ndmf": ">=1.7.6 <2.0.0-a"
+          },
+          "curated_extra": {
+            "changed_reported": true
           }
         },
         "1.12.5": {
@@ -4616,12 +4898,69 @@
           "vpmDependencies": {
             "com.vrchat.avatars": ">=3.7.4",
             "nadena.dev.ndmf": ">=1.7.7 <2.0.0-a"
+          },
+          "curated_extra": {
+            "changed_reported": true
           }
         }
       }
     },
     "nadena.dev.ndmf": {
       "versions": {
+        "0.1.0": {
+          "name": "nadena.dev.ndmf",
+          "displayName": "Non-Destructive Modular Framework - なでもふ",
+          "version": "0.1.0",
+          "unity": "2019.4",
+          "description": "A framework for building non-destructive plugins for VRChat Avatar 3.0",
+          "vrchatVersion": "2022.1.1",
+          "author": {
+            "name": "bd_",
+            "email": "bd_@nadena.dev",
+            "url": "https://github.com/bdunderscore/ndmf"
+          },
+          "url": "https://github.com/bdunderscore/ndmf/releases/download/0.1.0/nadena.dev.ndmf-0.1.0.zip?",
+          "repo": "https://vpm.nadena.dev/vpm.json",
+          "zipSHA256": "de2c1f13d4978c8e3e00d1033f01fa8ec5fb61507542d07030809029f5831ca8",
+          "documentationUrl": "https://ndmf.nadena.dev",
+          "changelogUrl": "https://github.com/bdunderscore/ndmf/releases/tag/0.1.0"
+        },
+        "0.3.0": {
+          "name": "nadena.dev.ndmf",
+          "displayName": "Non-Destructive Modular Framework - なでもふ",
+          "version": "0.3.0",
+          "unity": "2019.4",
+          "description": "A framework for building non-destructive plugins for VRChat Avatar 3.0",
+          "vrchatVersion": "2022.1.1",
+          "author": {
+            "name": "bd_",
+            "email": "bd_@nadena.dev",
+            "url": "https://github.com/bdunderscore/ndmf"
+          },
+          "url": "https://github.com/bdunderscore/ndmf/releases/download/0.3.0/nadena.dev.ndmf-0.3.0.zip?",
+          "repo": "https://vpm.nadena.dev/vpm.json",
+          "zipSHA256": "10c6ce2d6d63962fe6e824bff31397e025cc1e4b5d5ed141e8a3b8ea91e09375",
+          "documentationUrl": "https://ndmf.nadena.dev",
+          "changelogUrl": "https://github.com/bdunderscore/ndmf/releases/tag/0.3.0"
+        },
+        "0.4.0": {
+          "name": "nadena.dev.ndmf",
+          "displayName": "Non-Destructive Modular Framework",
+          "version": "0.4.0",
+          "unity": "2019.4",
+          "description": "A framework for building non-destructive plugins for VRChat Avatar 3.0",
+          "vrchatVersion": "2022.1.1",
+          "author": {
+            "name": "bd_",
+            "email": "bd_@nadena.dev",
+            "url": "https://github.com/bdunderscore/ndmf"
+          },
+          "url": "https://github.com/bdunderscore/ndmf/releases/download/0.4.0/nadena.dev.ndmf-0.4.0.zip?",
+          "repo": "https://vpm.nadena.dev/vpm.json",
+          "zipSHA256": "1290adcdc1827322d07e02b5819650f933ea89580d7c4c5817c5d245ea0d4607",
+          "documentationUrl": "https://ndmf.nadena.dev",
+          "changelogUrl": "https://github.com/bdunderscore/ndmf/releases/tag/0.4.0"
+        },
         "1.0.0": {
           "name": "nadena.dev.ndmf",
           "displayName": "Non-Destructive Modular Framework",
@@ -4635,7 +4974,10 @@
             "url": "https://github.com/bdunderscore/ndmf"
           },
           "url": "https://github.com/bdunderscore/ndmf/releases/download/1.0.0/nadena.dev.ndmf-1.0.0.zip?",
-          "repo": "https://vpm.nadena.dev/vpm.json"
+          "repo": "https://vpm.nadena.dev/vpm.json",
+          "curated_extra": {
+            "changed_reported": true
+          }
         },
         "1.0.1": {
           "name": "nadena.dev.ndmf",
@@ -4650,7 +4992,10 @@
             "url": "https://github.com/bdunderscore/ndmf"
           },
           "url": "https://github.com/bdunderscore/ndmf/releases/download/1.0.1/nadena.dev.ndmf-1.0.1.zip?",
-          "repo": "https://vpm.nadena.dev/vpm.json"
+          "repo": "https://vpm.nadena.dev/vpm.json",
+          "curated_extra": {
+            "changed_reported": true
+          }
         },
         "1.0.2": {
           "name": "nadena.dev.ndmf",
@@ -4665,7 +5010,10 @@
             "url": "https://github.com/bdunderscore/ndmf"
           },
           "url": "https://github.com/bdunderscore/ndmf/releases/download/1.0.2/nadena.dev.ndmf-1.0.2.zip?",
-          "repo": "https://vpm.nadena.dev/vpm.json"
+          "repo": "https://vpm.nadena.dev/vpm.json",
+          "curated_extra": {
+            "changed_reported": true
+          }
         },
         "1.1.0": {
           "name": "nadena.dev.ndmf",
@@ -4680,7 +5028,10 @@
             "url": "https://github.com/bdunderscore/ndmf"
           },
           "url": "https://github.com/bdunderscore/ndmf/releases/download/1.1.0/nadena.dev.ndmf-1.1.0.zip?",
-          "repo": "https://vpm.nadena.dev/vpm.json"
+          "repo": "https://vpm.nadena.dev/vpm.json",
+          "curated_extra": {
+            "changed_reported": true
+          }
         },
         "1.1.1": {
           "name": "nadena.dev.ndmf",
@@ -4695,7 +5046,10 @@
             "url": "https://github.com/bdunderscore/ndmf"
           },
           "url": "https://github.com/bdunderscore/ndmf/releases/download/1.1.1/nadena.dev.ndmf-1.1.1.zip?",
-          "repo": "https://vpm.nadena.dev/vpm.json"
+          "repo": "https://vpm.nadena.dev/vpm.json",
+          "curated_extra": {
+            "changed_reported": true
+          }
         },
         "1.2.0": {
           "name": "nadena.dev.ndmf",
@@ -4710,7 +5064,10 @@
             "url": "https://github.com/bdunderscore/ndmf"
           },
           "url": "https://github.com/bdunderscore/ndmf/releases/download/1.2.0/nadena.dev.ndmf-1.2.0.zip?",
-          "repo": "https://vpm.nadena.dev/vpm.json"
+          "repo": "https://vpm.nadena.dev/vpm.json",
+          "curated_extra": {
+            "changed_reported": true
+          }
         },
         "1.2.1": {
           "name": "nadena.dev.ndmf",
@@ -4725,7 +5082,10 @@
             "url": "https://github.com/bdunderscore/ndmf"
           },
           "url": "https://github.com/bdunderscore/ndmf/releases/download/1.2.1/nadena.dev.ndmf-1.2.1.zip?",
-          "repo": "https://vpm.nadena.dev/vpm.json"
+          "repo": "https://vpm.nadena.dev/vpm.json",
+          "curated_extra": {
+            "changed_reported": true
+          }
         },
         "1.2.2": {
           "name": "nadena.dev.ndmf",
@@ -4740,7 +5100,10 @@
             "url": "https://github.com/bdunderscore/ndmf"
           },
           "url": "https://github.com/bdunderscore/ndmf/releases/download/1.2.2/nadena.dev.ndmf-1.2.2.zip?",
-          "repo": "https://vpm.nadena.dev/vpm.json"
+          "repo": "https://vpm.nadena.dev/vpm.json",
+          "curated_extra": {
+            "changed_reported": true
+          }
         },
         "1.2.3": {
           "name": "nadena.dev.ndmf",
@@ -4755,7 +5118,10 @@
             "url": "https://github.com/bdunderscore/ndmf"
           },
           "url": "https://github.com/bdunderscore/ndmf/releases/download/1.2.3/nadena.dev.ndmf-1.2.3.zip?",
-          "repo": "https://vpm.nadena.dev/vpm.json"
+          "repo": "https://vpm.nadena.dev/vpm.json",
+          "curated_extra": {
+            "changed_reported": true
+          }
         },
         "1.2.4": {
           "name": "nadena.dev.ndmf",
@@ -4770,7 +5136,10 @@
             "url": "https://github.com/bdunderscore/ndmf"
           },
           "url": "https://github.com/bdunderscore/ndmf/releases/download/1.2.4/nadena.dev.ndmf-1.2.4.zip?",
-          "repo": "https://vpm.nadena.dev/vpm.json"
+          "repo": "https://vpm.nadena.dev/vpm.json",
+          "curated_extra": {
+            "changed_reported": true
+          }
         },
         "1.2.5": {
           "name": "nadena.dev.ndmf",
@@ -4785,7 +5154,10 @@
             "url": "https://github.com/bdunderscore/ndmf"
           },
           "url": "https://github.com/bdunderscore/ndmf/releases/download/1.2.5/nadena.dev.ndmf-1.2.5.zip?",
-          "repo": "https://vpm.nadena.dev/vpm.json"
+          "repo": "https://vpm.nadena.dev/vpm.json",
+          "curated_extra": {
+            "changed_reported": true
+          }
         },
         "1.3.0": {
           "name": "nadena.dev.ndmf",
@@ -4800,7 +5172,10 @@
             "url": "https://github.com/bdunderscore/ndmf"
           },
           "url": "https://github.com/bdunderscore/ndmf/releases/download/1.3.0/nadena.dev.ndmf-1.3.0.zip?",
-          "repo": "https://vpm.nadena.dev/vpm.json"
+          "repo": "https://vpm.nadena.dev/vpm.json",
+          "curated_extra": {
+            "changed_reported": true
+          }
         },
         "1.3.1": {
           "name": "nadena.dev.ndmf",
@@ -4815,7 +5190,10 @@
             "url": "https://github.com/bdunderscore/ndmf"
           },
           "url": "https://github.com/bdunderscore/ndmf/releases/download/1.3.1/nadena.dev.ndmf-1.3.1.zip?",
-          "repo": "https://vpm.nadena.dev/vpm.json"
+          "repo": "https://vpm.nadena.dev/vpm.json",
+          "curated_extra": {
+            "changed_reported": true
+          }
         },
         "1.3.2": {
           "name": "nadena.dev.ndmf",
@@ -4830,7 +5208,10 @@
             "url": "https://github.com/bdunderscore/ndmf"
           },
           "url": "https://github.com/bdunderscore/ndmf/releases/download/1.3.2/nadena.dev.ndmf-1.3.2.zip?",
-          "repo": "https://vpm.nadena.dev/vpm.json"
+          "repo": "https://vpm.nadena.dev/vpm.json",
+          "curated_extra": {
+            "changed_reported": true
+          }
         },
         "1.3.3": {
           "name": "nadena.dev.ndmf",
@@ -4845,7 +5226,10 @@
             "url": "https://github.com/bdunderscore/ndmf"
           },
           "url": "https://github.com/bdunderscore/ndmf/releases/download/1.3.3/nadena.dev.ndmf-1.3.3.zip?",
-          "repo": "https://vpm.nadena.dev/vpm.json"
+          "repo": "https://vpm.nadena.dev/vpm.json",
+          "curated_extra": {
+            "changed_reported": true
+          }
         },
         "1.3.4": {
           "name": "nadena.dev.ndmf",
@@ -4860,7 +5244,10 @@
             "url": "https://github.com/bdunderscore/ndmf"
           },
           "url": "https://github.com/bdunderscore/ndmf/releases/download/1.3.4/nadena.dev.ndmf-1.3.4.zip?",
-          "repo": "https://vpm.nadena.dev/vpm.json"
+          "repo": "https://vpm.nadena.dev/vpm.json",
+          "curated_extra": {
+            "changed_reported": true
+          }
         },
         "1.3.5": {
           "name": "nadena.dev.ndmf",
@@ -4875,7 +5262,10 @@
             "url": "https://github.com/bdunderscore/ndmf"
           },
           "url": "https://github.com/bdunderscore/ndmf/releases/download/1.3.5/nadena.dev.ndmf-1.3.5.zip?",
-          "repo": "https://vpm.nadena.dev/vpm.json"
+          "repo": "https://vpm.nadena.dev/vpm.json",
+          "curated_extra": {
+            "changed_reported": true
+          }
         },
         "1.3.6": {
           "name": "nadena.dev.ndmf",
@@ -4890,7 +5280,10 @@
             "url": "https://github.com/bdunderscore/ndmf"
           },
           "url": "https://github.com/bdunderscore/ndmf/releases/download/1.3.6/nadena.dev.ndmf-1.3.6.zip?",
-          "repo": "https://vpm.nadena.dev/vpm.json"
+          "repo": "https://vpm.nadena.dev/vpm.json",
+          "curated_extra": {
+            "changed_reported": true
+          }
         },
         "1.3.7": {
           "name": "nadena.dev.ndmf",
@@ -4905,7 +5298,10 @@
             "url": "https://github.com/bdunderscore/ndmf"
           },
           "url": "https://github.com/bdunderscore/ndmf/releases/download/1.3.7/nadena.dev.ndmf-1.3.7.zip?",
-          "repo": "https://vpm.nadena.dev/vpm.json"
+          "repo": "https://vpm.nadena.dev/vpm.json",
+          "curated_extra": {
+            "changed_reported": true
+          }
         },
         "1.4.0": {
           "name": "nadena.dev.ndmf",
@@ -4920,7 +5316,10 @@
             "url": "https://github.com/bdunderscore/ndmf"
           },
           "url": "https://github.com/bdunderscore/ndmf/releases/download/1.4.0/nadena.dev.ndmf-1.4.0.zip?",
-          "repo": "https://vpm.nadena.dev/vpm.json"
+          "repo": "https://vpm.nadena.dev/vpm.json",
+          "curated_extra": {
+            "changed_reported": true
+          }
         },
         "1.4.1": {
           "name": "nadena.dev.ndmf",
@@ -4935,7 +5334,10 @@
             "url": "https://github.com/bdunderscore/ndmf"
           },
           "url": "https://github.com/bdunderscore/ndmf/releases/download/1.4.1/nadena.dev.ndmf-1.4.1.zip?",
-          "repo": "https://vpm.nadena.dev/vpm.json"
+          "repo": "https://vpm.nadena.dev/vpm.json",
+          "curated_extra": {
+            "changed_reported": true
+          }
         },
         "1.5.0": {
           "name": "nadena.dev.ndmf",
@@ -4950,7 +5352,10 @@
             "url": "https://github.com/bdunderscore/ndmf"
           },
           "url": "https://github.com/bdunderscore/ndmf/releases/download/1.5.0/nadena.dev.ndmf-1.5.0.zip?",
-          "repo": "https://vpm.nadena.dev/vpm.json"
+          "repo": "https://vpm.nadena.dev/vpm.json",
+          "curated_extra": {
+            "changed_reported": true
+          }
         },
         "1.5.2": {
           "name": "nadena.dev.ndmf",
@@ -4965,7 +5370,10 @@
             "url": "https://github.com/bdunderscore/ndmf"
           },
           "url": "https://github.com/bdunderscore/ndmf/releases/download/1.5.2/nadena.dev.ndmf-1.5.2.zip?",
-          "repo": "https://vpm.nadena.dev/vpm.json"
+          "repo": "https://vpm.nadena.dev/vpm.json",
+          "curated_extra": {
+            "changed_reported": true
+          }
         },
         "1.5.3": {
           "name": "nadena.dev.ndmf",
@@ -4980,7 +5388,10 @@
             "url": "https://github.com/bdunderscore/ndmf"
           },
           "url": "https://github.com/bdunderscore/ndmf/releases/download/1.5.3/nadena.dev.ndmf-1.5.3.zip?",
-          "repo": "https://vpm.nadena.dev/vpm.json"
+          "repo": "https://vpm.nadena.dev/vpm.json",
+          "curated_extra": {
+            "changed_reported": true
+          }
         },
         "1.5.4": {
           "name": "nadena.dev.ndmf",
@@ -4995,7 +5406,10 @@
             "url": "https://github.com/bdunderscore/ndmf"
           },
           "url": "https://github.com/bdunderscore/ndmf/releases/download/1.5.4/nadena.dev.ndmf-1.5.4.zip?",
-          "repo": "https://vpm.nadena.dev/vpm.json"
+          "repo": "https://vpm.nadena.dev/vpm.json",
+          "curated_extra": {
+            "changed_reported": true
+          }
         },
         "1.5.5": {
           "name": "nadena.dev.ndmf",
@@ -5010,7 +5424,10 @@
             "url": "https://github.com/bdunderscore/ndmf"
           },
           "url": "https://github.com/bdunderscore/ndmf/releases/download/1.5.5/nadena.dev.ndmf-1.5.5.zip?",
-          "repo": "https://vpm.nadena.dev/vpm.json"
+          "repo": "https://vpm.nadena.dev/vpm.json",
+          "curated_extra": {
+            "changed_reported": true
+          }
         },
         "1.5.6": {
           "name": "nadena.dev.ndmf",
@@ -5025,7 +5442,10 @@
             "url": "https://github.com/bdunderscore/ndmf"
           },
           "url": "https://github.com/bdunderscore/ndmf/releases/download/1.5.6/nadena.dev.ndmf-1.5.6.zip?",
-          "repo": "https://vpm.nadena.dev/vpm.json"
+          "repo": "https://vpm.nadena.dev/vpm.json",
+          "curated_extra": {
+            "changed_reported": true
+          }
         },
         "1.5.7": {
           "name": "nadena.dev.ndmf",
@@ -5040,7 +5460,10 @@
             "url": "https://github.com/bdunderscore/ndmf"
           },
           "url": "https://github.com/bdunderscore/ndmf/releases/download/1.5.7/nadena.dev.ndmf-1.5.7.zip?",
-          "repo": "https://vpm.nadena.dev/vpm.json"
+          "repo": "https://vpm.nadena.dev/vpm.json",
+          "curated_extra": {
+            "changed_reported": true
+          }
         },
         "1.6.0": {
           "name": "nadena.dev.ndmf",
@@ -5055,7 +5478,10 @@
             "url": "https://github.com/bdunderscore/ndmf"
           },
           "url": "https://github.com/bdunderscore/ndmf/releases/download/1.6.0/nadena.dev.ndmf-1.6.0.zip?",
-          "repo": "https://vpm.nadena.dev/vpm.json"
+          "repo": "https://vpm.nadena.dev/vpm.json",
+          "curated_extra": {
+            "changed_reported": true
+          }
         },
         "1.6.1": {
           "name": "nadena.dev.ndmf",
@@ -5070,7 +5496,10 @@
             "url": "https://github.com/bdunderscore/ndmf"
           },
           "url": "https://github.com/bdunderscore/ndmf/releases/download/1.6.1/nadena.dev.ndmf-1.6.1.zip?",
-          "repo": "https://vpm.nadena.dev/vpm.json"
+          "repo": "https://vpm.nadena.dev/vpm.json",
+          "curated_extra": {
+            "changed_reported": true
+          }
         },
         "1.6.2": {
           "name": "nadena.dev.ndmf",
@@ -5085,7 +5514,10 @@
             "url": "https://github.com/bdunderscore/ndmf"
           },
           "url": "https://github.com/bdunderscore/ndmf/releases/download/1.6.2/nadena.dev.ndmf-1.6.2.zip?",
-          "repo": "https://vpm.nadena.dev/vpm.json"
+          "repo": "https://vpm.nadena.dev/vpm.json",
+          "curated_extra": {
+            "changed_reported": true
+          }
         },
         "1.6.3": {
           "name": "nadena.dev.ndmf",
@@ -5100,7 +5532,10 @@
             "url": "https://github.com/bdunderscore/ndmf"
           },
           "url": "https://github.com/bdunderscore/ndmf/releases/download/1.6.3/nadena.dev.ndmf-1.6.3.zip?",
-          "repo": "https://vpm.nadena.dev/vpm.json"
+          "repo": "https://vpm.nadena.dev/vpm.json",
+          "curated_extra": {
+            "changed_reported": true
+          }
         },
         "1.6.4": {
           "name": "nadena.dev.ndmf",
@@ -5115,7 +5550,10 @@
             "url": "https://github.com/bdunderscore/ndmf"
           },
           "url": "https://github.com/bdunderscore/ndmf/releases/download/1.6.4/nadena.dev.ndmf-1.6.4.zip?",
-          "repo": "https://vpm.nadena.dev/vpm.json"
+          "repo": "https://vpm.nadena.dev/vpm.json",
+          "curated_extra": {
+            "changed_reported": true
+          }
         },
         "1.6.5": {
           "name": "nadena.dev.ndmf",
@@ -5130,7 +5568,10 @@
             "url": "https://github.com/bdunderscore/ndmf"
           },
           "url": "https://github.com/bdunderscore/ndmf/releases/download/1.6.5/nadena.dev.ndmf-1.6.5.zip?",
-          "repo": "https://vpm.nadena.dev/vpm.json"
+          "repo": "https://vpm.nadena.dev/vpm.json",
+          "curated_extra": {
+            "changed_reported": true
+          }
         },
         "1.6.6": {
           "name": "nadena.dev.ndmf",
@@ -5145,7 +5586,10 @@
             "url": "https://github.com/bdunderscore/ndmf"
           },
           "url": "https://github.com/bdunderscore/ndmf/releases/download/1.6.6/nadena.dev.ndmf-1.6.6.zip?",
-          "repo": "https://vpm.nadena.dev/vpm.json"
+          "repo": "https://vpm.nadena.dev/vpm.json",
+          "curated_extra": {
+            "changed_reported": true
+          }
         },
         "1.6.7": {
           "name": "nadena.dev.ndmf",
@@ -5160,7 +5604,10 @@
             "url": "https://github.com/bdunderscore/ndmf"
           },
           "url": "https://github.com/bdunderscore/ndmf/releases/download/1.6.7/nadena.dev.ndmf-1.6.7.zip?",
-          "repo": "https://vpm.nadena.dev/vpm.json"
+          "repo": "https://vpm.nadena.dev/vpm.json",
+          "curated_extra": {
+            "changed_reported": true
+          }
         },
         "1.6.8": {
           "name": "nadena.dev.ndmf",
@@ -5175,7 +5622,10 @@
             "url": "https://github.com/bdunderscore/ndmf"
           },
           "url": "https://github.com/bdunderscore/ndmf/releases/download/1.6.8/nadena.dev.ndmf-1.6.8.zip?",
-          "repo": "https://vpm.nadena.dev/vpm.json"
+          "repo": "https://vpm.nadena.dev/vpm.json",
+          "curated_extra": {
+            "changed_reported": true
+          }
         },
         "1.7.0": {
           "name": "nadena.dev.ndmf",
@@ -5190,7 +5640,10 @@
             "url": "https://github.com/bdunderscore/ndmf"
           },
           "url": "https://github.com/bdunderscore/ndmf/releases/download/1.7.0/nadena.dev.ndmf-1.7.0.zip?",
-          "repo": "https://vpm.nadena.dev/vpm.json"
+          "repo": "https://vpm.nadena.dev/vpm.json",
+          "curated_extra": {
+            "changed_reported": true
+          }
         },
         "1.7.1": {
           "name": "nadena.dev.ndmf",
@@ -5205,7 +5658,10 @@
             "url": "https://github.com/bdunderscore/ndmf"
           },
           "url": "https://github.com/bdunderscore/ndmf/releases/download/1.7.1/nadena.dev.ndmf-1.7.1.zip?",
-          "repo": "https://vpm.nadena.dev/vpm.json"
+          "repo": "https://vpm.nadena.dev/vpm.json",
+          "curated_extra": {
+            "changed_reported": true
+          }
         },
         "1.7.2": {
           "name": "nadena.dev.ndmf",
@@ -5220,7 +5676,10 @@
             "url": "https://github.com/bdunderscore/ndmf"
           },
           "url": "https://github.com/bdunderscore/ndmf/releases/download/1.7.2/nadena.dev.ndmf-1.7.2.zip?",
-          "repo": "https://vpm.nadena.dev/vpm.json"
+          "repo": "https://vpm.nadena.dev/vpm.json",
+          "curated_extra": {
+            "changed_reported": true
+          }
         },
         "1.7.3": {
           "name": "nadena.dev.ndmf",
@@ -5235,7 +5694,10 @@
             "url": "https://github.com/bdunderscore/ndmf"
           },
           "url": "https://github.com/bdunderscore/ndmf/releases/download/1.7.3/nadena.dev.ndmf-1.7.3.zip?",
-          "repo": "https://vpm.nadena.dev/vpm.json"
+          "repo": "https://vpm.nadena.dev/vpm.json",
+          "curated_extra": {
+            "changed_reported": true
+          }
         },
         "1.7.4": {
           "name": "nadena.dev.ndmf",
@@ -5250,7 +5712,10 @@
             "url": "https://github.com/bdunderscore/ndmf"
           },
           "url": "https://github.com/bdunderscore/ndmf/releases/download/1.7.4/nadena.dev.ndmf-1.7.4.zip?",
-          "repo": "https://vpm.nadena.dev/vpm.json"
+          "repo": "https://vpm.nadena.dev/vpm.json",
+          "curated_extra": {
+            "changed_reported": true
+          }
         },
         "1.7.5": {
           "name": "nadena.dev.ndmf",
@@ -5265,7 +5730,10 @@
             "url": "https://github.com/bdunderscore/ndmf"
           },
           "url": "https://github.com/bdunderscore/ndmf/releases/download/1.7.5/nadena.dev.ndmf-1.7.5.zip?",
-          "repo": "https://vpm.nadena.dev/vpm.json"
+          "repo": "https://vpm.nadena.dev/vpm.json",
+          "curated_extra": {
+            "changed_reported": true
+          }
         },
         "1.7.6": {
           "name": "nadena.dev.ndmf",
@@ -5280,7 +5748,10 @@
             "url": "https://github.com/bdunderscore/ndmf"
           },
           "url": "https://github.com/bdunderscore/ndmf/releases/download/1.7.6/nadena.dev.ndmf-1.7.6.zip?",
-          "repo": "https://vpm.nadena.dev/vpm.json"
+          "repo": "https://vpm.nadena.dev/vpm.json",
+          "curated_extra": {
+            "changed_reported": true
+          }
         },
         "1.7.7": {
           "name": "nadena.dev.ndmf",
@@ -5295,7 +5766,10 @@
             "url": "https://github.com/bdunderscore/ndmf"
           },
           "url": "https://github.com/bdunderscore/ndmf/releases/download/1.7.7/nadena.dev.ndmf-1.7.7.zip?",
-          "repo": "https://vpm.nadena.dev/vpm.json"
+          "repo": "https://vpm.nadena.dev/vpm.json",
+          "curated_extra": {
+            "changed_reported": true
+          }
         },
         "1.7.8": {
           "name": "nadena.dev.ndmf",
@@ -5310,7 +5784,10 @@
             "url": "https://github.com/bdunderscore/ndmf"
           },
           "url": "https://github.com/bdunderscore/ndmf/releases/download/1.7.8/nadena.dev.ndmf-1.7.8.zip?",
-          "repo": "https://vpm.nadena.dev/vpm.json"
+          "repo": "https://vpm.nadena.dev/vpm.json",
+          "curated_extra": {
+            "changed_reported": true
+          }
         },
         "1.7.9": {
           "name": "nadena.dev.ndmf",
@@ -5325,7 +5802,10 @@
             "url": "https://github.com/bdunderscore/ndmf"
           },
           "url": "https://github.com/bdunderscore/ndmf/releases/download/1.7.9/nadena.dev.ndmf-1.7.9.zip?",
-          "repo": "https://vpm.nadena.dev/vpm.json"
+          "repo": "https://vpm.nadena.dev/vpm.json",
+          "curated_extra": {
+            "changed_reported": true
+          }
         },
         "1.7.10": {
           "name": "nadena.dev.ndmf",
@@ -5340,7 +5820,10 @@
             "url": "https://github.com/bdunderscore/ndmf"
           },
           "url": "https://github.com/bdunderscore/ndmf/releases/download/1.7.10/nadena.dev.ndmf-1.7.10.zip?",
-          "repo": "https://vpm.nadena.dev/vpm.json"
+          "repo": "https://vpm.nadena.dev/vpm.json",
+          "curated_extra": {
+            "changed_reported": true
+          }
         },
         "1.8.0": {
           "name": "nadena.dev.ndmf",
@@ -5358,7 +5841,10 @@
             "com.unity.modules.animation": "1.0.0"
           },
           "url": "https://github.com/bdunderscore/ndmf/releases/download/1.8.0/nadena.dev.ndmf-1.8.0.zip?",
-          "repo": "https://vpm.nadena.dev/vpm.json"
+          "repo": "https://vpm.nadena.dev/vpm.json",
+          "curated_extra": {
+            "changed_reported": true
+          }
         }
       }
     },
