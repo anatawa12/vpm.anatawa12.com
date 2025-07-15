@@ -8615,6 +8615,16 @@
     },
     "com.anatawa12.liltoon-vat": {
       "versions": {
+        "1.0.0": {
+          "name": "com.anatawa12.liltoon-vat",
+          "displayName": "lilToon VAT",
+          "version": "1.0.0",
+          "vpmDependencies": {
+            "jp.lilxyzw.liltoon": "1.0.0"
+          },
+          "url": "https://vpm.anatawa12.com/liltoon-vat/package-1.0.0.zip?",
+          "zipSHA256": "c9175653898841cd96f32105476cbf9a9fae1965fd2db428cf2adbe34b2e986c"
+        }
       }
     },
     "com.anatawa12.av3emulator": {
