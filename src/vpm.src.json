@@ -8665,6 +8665,16 @@
           },
           "url": "https://vpm.anatawa12.com/liltoon-vat/package-1.0.2-beta.1.zip?",
           "zipSHA256": "5d5112f2cf0d93383027a7bfe5d24915dba91b3466c8a2f7ffa54c258649495a"
+        },
+        "1.0.2": {
+          "name": "com.anatawa12.liltoon-vat",
+          "displayName": "lilToon VAT",
+          "version": "1.0.2",
+          "vpmDependencies": {
+            "jp.lilxyzw.liltoon": "^1.10.0 || ^2.0.0"
+          },
+          "url": "https://vpm.anatawa12.com/liltoon-vat/package-1.0.2.zip?",
+          "zipSHA256": "138aee9bc1c48d5d7f7f609a82e688a9e68d89a4dc3a959b2e9a84ccc70cb908"
         }
       }
     },
