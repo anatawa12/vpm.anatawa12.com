@@ -1,43 +1,233 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Component Reference on Avatar Optimizer (1.9.0-beta.2)</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/</link><description>Recent content in Component Reference on Avatar Optimizer (1.9.0-beta.2)</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/index.xml" rel="self" type="application/rss+xml"/><item><title>Trace And Optimize</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/trace-and-optimize/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/trace-and-optimize/</guid><description>Trace And Optimize (T&amp;amp;O) # Previously known as Automatic Configuration
-This component will trace your avatar and optimize your avatar automatically. You can enable/disable some automatic optimization features with checkboxes.
-This component should be added to an avatar root. (Kind: Avatar Global Component)
-Trace and Optimize is quite carefully designed under the premise that &amp;ldquo;never let it affect the appearance.&amp;rdquo;
-So, if any problems occur, such as appearance is affected or some gimmick stops working, they are all caused by bugs in AAO, without exception.</description></item><item><title>UnusedBonesByReferencesTool</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/unused-bones-by-references-tool/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/unused-bones-by-references-tool/</guid><description>UnusedBonesByReferencesTool # Marks it as EditorOnly that bones referenced only from EditorOnly meshes.
-This component should be added to an avatar root. (Kind: Avatar Global Component)
-This component is obsolete. You should use Remove unused Objects of Trace and Optimize instead. This component will never get algorithm improvements. This is port of UnusedBonesByReferencesTool by Narazaka but run at build time.</description></item><item><title>Merge Skinned Mesh</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/merge-skinned-mesh/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/merge-skinned-mesh/</guid><description>Merge Skinned Mesh (MergeSMR) # Merges one or more SkinnedMeshRenderers and MeshRenderers into one SkinnedMeshRenderer.
-This component should be added to a new GameObject which has a SkinnedMeshRenderer component without Mesh specified. (Kind: Source Edit Skinned Mesh Component)
-Trace And Optimize will automatically do the same process, so in most cases you do not need to use this component. Benefits # Merging SkinnedMeshRenderer will reduce number of deforming mesh (skinning).</description></item><item><title>Freeze BlendShape</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/freeze-blendshape/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/freeze-blendshape/</guid><description>Freeze BlendShape # Freeze &amp;amp; remove BlendShape from the mesh.
-This component should be added to a GameObject which has a SkinnedMeshRenderer component. (Kind: Modifying Edit Skinned Mesh Component)
-Trace And Optimize will automatically do the same process, so in most cases you do not need to use this component. Benefits # Freezing &amp;amp; removing BlendShapes has the following benefits.
-For BlendShapes with non-zero weight, freezing BlendShapes will reduce processing cost.</description></item><item><title>Merge ToonLit Material</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/merge-toonlit-material/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/merge-toonlit-material/</guid><description>Merge ToonLit Material # Merge VRChat/Mobile/Toon Lit materials to one material by packing texture manually.
-This component should be added to a GameObject which has a SkinnedMeshRenderer component. (Kind: Modifying Edit Skinned Mesh Component)
-This component currently only supports VRChat/Mobile/Toon Lit because I believe there are big demands but I may add support for other shaders. (also for third-party shaders) If you want other shader support, please write a issue</description></item><item><title>Remove Mesh By BlendShape</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/remove-mesh-by-blendshape/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/remove-mesh-by-blendshape/</guid><description>Remove Mesh By BlendShape # Remove vertices transformed by specified BlendShape and their polygons.
-This component should be added to a GameObject which has a SkinnedMeshRenderer component. (Kind: Modifying Edit Skinned Mesh Component)
-Benefits # By removing polygons which are hidden by clothes or something, you can reduce rendering cost, BlendShape processing cost, etc. without affecting the appearance so much.
-You can use this component to easily remove polygons with BlendShapes for shrinking parts of the body, which many avatars have.</description></item><item><title>Remove Mesh By Box</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/remove-mesh-by-box/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/remove-mesh-by-box/</guid><description>Remove Mesh By Box # Remove some polygons with any of specified boxes.
-This component should be added to a GameObject which has a SkinnedMeshRenderer component. (Kind: Modifying Edit Skinned Mesh Component)
-Benefits # By removing polygons which are hidden by clothes or something, you can reduce rendering cost, BlendShape processing cost, etc. without affecting the appearance so much.
-Settings # Remove Polygons # You can choose whether to remove polygons in the any of boxes or outside the all boxes.</description></item><item><title>Remove Mesh By Mask</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/remove-mesh-by-mask/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/remove-mesh-by-mask/</guid><description>Remove Mesh By Mask # Remove some polygons in any area specified by mask textures.
-This component should be added to a GameObject which has a SkinnedMeshRenderer component. (Kind: Modifying Edit Skinned Mesh Component)
-Benefits # By removing polygons which are hidden by clothes or something, you can reduce rendering cost, BlendShape processing cost, etc. without affecting the appearance so much.
-You can use this component to easily remove polygons with alpha mask texture or mask texture for MeshDeleterWithTexture by gatosyocora.</description></item><item><title>Remove Mesh By UV Tile</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/remove-mesh-by-uv-tile/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/remove-mesh-by-uv-tile/</guid><description>Remove Mesh By UV Tile # Remove some polygons in any area specified by UV Tile.
-This component should be added to a GameObject which has a SkinnedMeshRenderer component. (Kind: Modifying Edit Skinned Mesh Component)
-Benefits # By removing polygons which are hidden by clothes or something, you can reduce rendering cost, BlendShape processing cost, etc. without affecting the appearance so much.
-You can use this component to easily remove polygons of models designed to hide some portion with UV Tile Discard feature of Poiyomi or lilToon.</description></item><item><title>Rename BlendShape</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/rename-blendshape/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/rename-blendshape/</guid><description>Rename BlendShape # Renames BlendShapes in the Mesh.
-If renamed name is duplicated, it will merge the BlendShapes into one.
-This component should be added to a GameObject which has a SkinnedMeshRenderer component. (Kind: Modifying Edit Skinned Mesh Component)
-Settings # You&amp;rsquo;ll see the list of BlendShape mapping.
-Click upper right &amp;lsquo;+&amp;rsquo; button to add new mapping.
-If the renamed name is duplicated, it will be shown in yellow color to indicate that it will be merged.</description></item><item><title>Clear Endpoint Position</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/clear-endpoint-position/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/clear-endpoint-position/</guid><description>Clear Endpoint Position # This component will replace EndpointPosition to 0 with adding _EndPhysBone GameObject.
-This component should be added to a GameObject which has PhysBone Components.
-This component doesn&amp;rsquo;t have any configuration for now but there&amp;rsquo;s one button on the view. Clicking Apply and Remove component will applies this operation and removes this component. This may be useful for developing avatars.</description></item><item><title>Merge Bone</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/merge-bone/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/merge-bone/</guid><description>Merge Bone # Trace And Optimize will automatically do the same process, so in most cases you do not need to use this component. If you add this component to some GameObject, the GameObject will be removed and merged to parent GameObject. Also, if some other components are attached to the target GameObject, they will be removed too.
-If the parent GameObject also have Merge Bone component, two GameObjects are merged to their further parent GameObject.</description></item><item><title>Merge PhysBone</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/merge-physbone/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/merge-physbone/</guid><description>Merge PhysBone (MergePB) # This component merges multiple PhysBone Components into one Component with MultiChildType == Ignore.
-This component should be added to a new GameObject.
-Notes # Merge target PhysBones must be children of the same GameObject. Alternatively, you can use Make Children of Me option.
-This component will create a new PhysBone root GameObject and make the bones swayed by merge target PhysBones into children of this GameObject.</description></item><item><title>Remove Zero Sized Polygon</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/remove-zero-sized-polygon/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/remove-zero-sized-polygon/</guid><description>Remove Zero Sized Polygon # Remove polygons whose area are zero.
-This component should be added to a GameObject which has a SkinnedMeshRenderer component.
-Since this component works very late in the build process, this component is NOT Modifying Edit Skinned Mesh Component.
-Adding this component to the SkinnedMeshRenderers to be merged by Merge Skinned Mesh component has no effect.
-Benefits # By removing polygons whose area are zero, you can reduce rendering cost.</description></item><item><title>Make Children</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/make-children/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/make-children/</guid><description>Make Children # These specified objects will be the children of this GameObject at build time.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Component Reference on Avatar Optimizer (1.8.13)</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/</link><description>Recent content in Component Reference on Avatar Optimizer (1.8.13)</description><generator>Hugo</generator><language>en</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/index.xml" rel="self" type="application/rss+xml"/><item><title>Trace And Optimize</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/trace-and-optimize/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/trace-and-optimize/</guid><description>&lt;h1 id="trace-and-optimize">
+ Trace And Optimize (T&amp;amp;O)
+ &lt;a class="anchor" href="#trace-and-optimize">#&lt;/a>
+&lt;/h1>
+&lt;p>&lt;i>Previously known as Automatic Configuration&lt;/i>&lt;/p>
+&lt;p>This component will trace your avatar and optimize your avatar automatically.
+You can enable/disable some automatic optimization features with checkboxes.&lt;/p>
+&lt;p>This component should be added to an avatar root. (Kind: &lt;a href="../../component-kind/avatar-global-components">Avatar Global Component&lt;/a>)&lt;/p>
+&lt;blockquote class="book-hint info">
+ 
+
+Trace and Optimize is quite carefully designed under the premise that "**never let it affect the appearance**."\
+So, if any problems occur, such as appearance is affected or some gimmick stops working, they are all caused by bugs in AAO, without exception.\
+Therefore, if you encounter any problems with this component, please report it.\
+We will fix it as much as we can.
+
+
+&lt;/blockquote>
+
+&lt;p>Currently the following optimizations are applied automatically.&lt;/p></description></item><item><title>UnusedBonesByReferencesTool</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/unused-bones-by-references-tool/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/unused-bones-by-references-tool/</guid><description>&lt;h1 id="unusedbonesbyreferencestool">
+ UnusedBonesByReferencesTool
+ &lt;a class="anchor" href="#unusedbonesbyreferencestool">#&lt;/a>
+&lt;/h1>
+&lt;p>Marks it as EditorOnly that bones referenced only from EditorOnly meshes.&lt;/p>
+&lt;p>This component should be added to an avatar root. (Kind: &lt;a href="../../component-kind/avatar-global-components">Avatar Global Component&lt;/a>)&lt;/p>
+&lt;blockquote class="book-hint warning">
+ 
+
+This component is obsolete. You should use `Remove unused Objects` of [Trace and Optimize](../trace-and-optimize) instead.
+This component will never get algorithm improvements.
+
+
+&lt;/blockquote>
+
+&lt;p>This is port of &lt;a href="https://narazaka.booth.pm/items/3831781">UnusedBonesByReferencesTool by Narazaka&lt;/a> but run at build time.&lt;/p>
+&lt;p>&lt;img src="component.png" alt="component.png" />&lt;/p></description></item><item><title>Merge Skinned Mesh</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/merge-skinned-mesh/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/merge-skinned-mesh/</guid><description>&lt;h1 id="merge-skinned-mesh">
+ Merge Skinned Mesh (MergeSMR)
+ &lt;a class="anchor" href="#merge-skinned-mesh">#&lt;/a>
+&lt;/h1>
+&lt;p>Merges one or more SkinnedMeshRenderers and MeshRenderers into one SkinnedMeshRenderer.&lt;/p>
+&lt;p>This component should be added to a new GameObject which has a SkinnedMeshRenderer component without Mesh specified. (Kind: &lt;a href="../../component-kind/edit-skinned-mesh-components#source-component">Source Edit Skinned Mesh Component&lt;/a>)&lt;/p>
+&lt;blockquote class="book-hint info">
+ 
+
+[Trace And Optimize](../trace-and-optimize) will automatically do the same process, so in most cases you do not need to use this component.
+
+
+&lt;/blockquote>
+
+&lt;h2 id="benefits">
+ Benefits
+ &lt;a class="anchor" href="#benefits">#&lt;/a>
+&lt;/h2>
+&lt;p>Merging SkinnedMeshRenderer will reduce number of deforming mesh (skinning).
+Also, it can reduce material slots using the same material, so we can reduce rendering cost.&lt;/p></description></item><item><title>Freeze BlendShape</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/freeze-blendshape/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/freeze-blendshape/</guid><description>&lt;h1 id="freeze-blendshape">
+ Freeze BlendShape
+ &lt;a class="anchor" href="#freeze-blendshape">#&lt;/a>
+&lt;/h1>
+&lt;p>Freeze &amp;amp; remove BlendShape from the mesh.&lt;/p>
+&lt;p>This component should be added to a GameObject which has a SkinnedMeshRenderer component. (Kind: &lt;a href="../../component-kind/edit-skinned-mesh-components#modifying-component">Modifying Edit Skinned Mesh Component&lt;/a>)&lt;/p>
+&lt;blockquote class="book-hint info">
+ 
+
+[Trace And Optimize](../trace-and-optimize) will automatically do the same process, so in most cases you do not need to use this component.
+
+
+&lt;/blockquote>
+
+&lt;h2 id="benefits">
+ Benefits
+ &lt;a class="anchor" href="#benefits">#&lt;/a>
+&lt;/h2>
+&lt;p>Freezing &amp;amp; removing BlendShapes has the following benefits.&lt;/p>
+&lt;ul>
+&lt;li>For BlendShapes with non-zero weight, freezing BlendShapes will reduce processing cost.&lt;/li>
+&lt;li>Even if the weight is zero, removing BlendShapes will reduce the size of avatars.&lt;/li>
+&lt;/ul>
+&lt;h2 id="notes">
+ Notes
+ &lt;a class="anchor" href="#notes">#&lt;/a>
+&lt;/h2>
+&lt;p>By freezing BlendShape, the weights cannot be changed on Animation.&lt;/p></description></item><item><title>Merge ToonLit Material</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/merge-toonlit-material/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/merge-toonlit-material/</guid><description>&lt;h1 id="merge-toonlit-material">
+ Merge ToonLit Material
+ &lt;a class="anchor" href="#merge-toonlit-material">#&lt;/a>
+&lt;/h1>
+&lt;p>Merge &lt;code>VRChat/Mobile/Toon Lit&lt;/code> materials to one material by packing texture manually.&lt;/p>
+&lt;p>This component should be added to a GameObject which has a SkinnedMeshRenderer component. (Kind: &lt;a href="../../component-kind/edit-skinned-mesh-components#modifying-component">Modifying Edit Skinned Mesh Component&lt;/a>)&lt;/p>
+&lt;p>This component currently only supports &lt;code>VRChat/Mobile/Toon Lit&lt;/code> because I believe there are big demands
+but I may add support for other shaders. (also for third-party shaders)
+If you want other shader support, please write a &lt;a href="https://github.com/anatawa12/AvatarOptimizer/issues/new/choose">issue&lt;/a>&lt;/p>
+&lt;p>This component will create new materials thus material slots which have the materials created by this component will not be merged by &lt;code>AAO Merge Skinned Mesh&lt;/code> component.
+You should add &lt;code>Merge ToonLit Material&lt;/code> to the GameObject which has &lt;code>AAO Merge Skinned Mesh&lt;/code> component if you want to merge materials from multiple renderers.&lt;/p></description></item><item><title>Remove Mesh By BlendShape</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/remove-mesh-by-blendshape/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/remove-mesh-by-blendshape/</guid><description>&lt;h1 id="remove-mesh-by-blendshape">
+ Remove Mesh By BlendShape
+ &lt;a class="anchor" href="#remove-mesh-by-blendshape">#&lt;/a>
+&lt;/h1>
+&lt;p>Remove vertices transformed by specified BlendShape and their polygons.&lt;/p>
+&lt;p>This component should be added to a GameObject which has a SkinnedMeshRenderer component. (Kind: &lt;a href="../../component-kind/edit-skinned-mesh-components#modifying-component">Modifying Edit Skinned Mesh Component&lt;/a>)&lt;/p>
+&lt;h2 id="benefits">
+ Benefits
+ &lt;a class="anchor" href="#benefits">#&lt;/a>
+&lt;/h2>
+&lt;p>By removing polygons which are hidden by clothes or something, you can reduce rendering cost, BlendShape processing cost, etc. without affecting the appearance so much.&lt;/p>
+&lt;p>You can use this component to easily remove polygons with BlendShapes for shrinking parts of the body, which many avatars have.&lt;/p></description></item><item><title>Remove Mesh By Box</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/remove-mesh-by-box/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/remove-mesh-by-box/</guid><description>&lt;h1 id="remove-mesh-by-box">
+ Remove Mesh By Box
+ &lt;a class="anchor" href="#remove-mesh-by-box">#&lt;/a>
+&lt;/h1>
+&lt;p>Remove some polygons with any of specified boxes.&lt;/p>
+&lt;p>This component should be added to a GameObject which has a SkinnedMeshRenderer component. (Kind: &lt;a href="../../component-kind/edit-skinned-mesh-components#modifying-component">Modifying Edit Skinned Mesh Component&lt;/a>)&lt;/p>
+&lt;h2 id="benefits">
+ Benefits
+ &lt;a class="anchor" href="#benefits">#&lt;/a>
+&lt;/h2>
+&lt;p>By removing polygons which are hidden by clothes or something, you can reduce rendering cost, BlendShape processing cost, etc. without affecting the appearance so much.&lt;/p>
+&lt;h2 id="settings">
+ Settings
+ &lt;a class="anchor" href="#settings">#&lt;/a>
+&lt;/h2>
+&lt;p>&lt;img src="component.png" alt="component.png" />&lt;/p>
+&lt;h3 id="remove-polygons">
+ Remove Polygons
+ &lt;a class="anchor" href="#remove-polygons">#&lt;/a>
+&lt;/h3>
+&lt;p>You can choose whether to remove polygons in the any of boxes or outside the all boxes.&lt;/p></description></item><item><title>Remove Mesh By Mask</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/remove-mesh-by-mask/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/remove-mesh-by-mask/</guid><description>&lt;h1 id="remove-mesh-by-mask">
+ Remove Mesh By Mask
+ &lt;a class="anchor" href="#remove-mesh-by-mask">#&lt;/a>
+&lt;/h1>
+&lt;p>Remove some polygons in any area specified by mask textures.&lt;/p>
+&lt;p>This component should be added to a GameObject which has a SkinnedMeshRenderer component. (Kind: &lt;a href="../../component-kind/edit-skinned-mesh-components#modifying-component">Modifying Edit Skinned Mesh Component&lt;/a>)&lt;/p>
+&lt;h2 id="benefits">
+ Benefits
+ &lt;a class="anchor" href="#benefits">#&lt;/a>
+&lt;/h2>
+&lt;p>By removing polygons which are hidden by clothes or something, you can reduce rendering cost, BlendShape processing cost, etc. without affecting the appearance so much.&lt;/p>
+&lt;p>You can use this component to easily remove polygons with alpha mask texture or mask texture for &lt;a href="https://github.com/gatosyocora/MeshDeleterWithTexture">MeshDeleterWithTexture&lt;/a> by gatosyocora.&lt;/p></description></item><item><title>Remove Mesh By UV Tile</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/remove-mesh-by-uv-tile/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/remove-mesh-by-uv-tile/</guid><description>&lt;h1 id="remove-mesh-by-uv-tile">
+ Remove Mesh By UV Tile
+ &lt;a class="anchor" href="#remove-mesh-by-uv-tile">#&lt;/a>
+&lt;/h1>
+&lt;p>Remove some polygons in any area specified by UV Tile.&lt;/p>
+&lt;p>This component should be added to a GameObject which has a SkinnedMeshRenderer component. (Kind: &lt;a href="../../component-kind/edit-skinned-mesh-components#modifying-component">Modifying Edit Skinned Mesh Component&lt;/a>)&lt;/p>
+&lt;h2 id="benefits">
+ Benefits
+ &lt;a class="anchor" href="#benefits">#&lt;/a>
+&lt;/h2>
+&lt;p>By removing polygons which are hidden by clothes or something, you can reduce rendering cost, BlendShape processing cost, etc. without affecting the appearance so much.&lt;/p>
+&lt;p>You can use this component to easily remove polygons of models designed to hide some portion with UV Tile Discard feature of Poiyomi or lilToon.&lt;br>
+This component works like UV Tile Discard with Vertex Mode.&lt;/p></description></item><item><title>Rename BlendShape</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/rename-blendshape/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/rename-blendshape/</guid><description>&lt;h1 id="rename-blendshape">
+ Rename BlendShape
+ &lt;a class="anchor" href="#rename-blendshape">#&lt;/a>
+&lt;/h1>
+&lt;p>Renames BlendShapes in the Mesh.&lt;br>
+If renamed name is duplicated, it will merge the BlendShapes into one.&lt;/p>
+&lt;p>This component should be added to a GameObject which has a SkinnedMeshRenderer component. (Kind: &lt;a href="../../component-kind/edit-skinned-mesh-components#modifying-component">Modifying Edit Skinned Mesh Component&lt;/a>)&lt;/p>
+&lt;h2 id="settings">
+ Settings
+ &lt;a class="anchor" href="#settings">#&lt;/a>
+&lt;/h2>
+&lt;p>&lt;img src="component.png" alt="component.png" />&lt;/p>
+&lt;p>You&amp;rsquo;ll see the list of BlendShape mapping.&lt;/p>
+&lt;p>Click upper right &amp;lsquo;+&amp;rsquo; button to add new mapping.&lt;/p>
+&lt;p>If the renamed name is duplicated, it will be shown in yellow color to indicate that it will be merged.&lt;/p></description></item><item><title>Clear Endpoint Position</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/clear-endpoint-position/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/clear-endpoint-position/</guid><description>&lt;h1 id="clear-endpoint-position">
+ Clear Endpoint Position
+ &lt;a class="anchor" href="#clear-endpoint-position">#&lt;/a>
+&lt;/h1>
+&lt;p>This component will replace EndpointPosition to 0 with adding &lt;code>_EndPhysBone&lt;/code> GameObject.&lt;/p>
+&lt;p>This component should be added to a GameObject which has PhysBone Components.&lt;/p>
+&lt;p>This component doesn&amp;rsquo;t have any configuration for now but there&amp;rsquo;s one button on the view.
+Clicking &lt;code>Apply and Remove component&lt;/code> will applies this operation and removes this component.
+This may be useful for developing avatars.&lt;/p>
+&lt;p>&lt;img src="component.png" alt="component.png" />&lt;/p></description></item><item><title>Merge Bone</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/merge-bone/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/merge-bone/</guid><description>&lt;h1 id="merge-bone">
+ Merge Bone
+ &lt;a class="anchor" href="#merge-bone">#&lt;/a>
+&lt;/h1>
+&lt;blockquote class="book-hint info">
+ 
+
+[Trace And Optimize](../trace-and-optimize) will automatically do the same process, so in most cases you do not need to use this component.
+
+
+&lt;/blockquote>
+
+&lt;p>If you add this component to some GameObject, the GameObject will be removed and merged to parent GameObject.
+Also, if some other components are attached to the target GameObject, they will be removed too.&lt;/p>
+&lt;p>If the parent GameObject also have Merge Bone component, two GameObjects are merged to their further parent GameObject.&lt;/p></description></item><item><title>Merge PhysBone</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/merge-physbone/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/merge-physbone/</guid><description>&lt;h1 id="merge-physbone">
+ Merge PhysBone (MergePB)
+ &lt;a class="anchor" href="#merge-physbone">#&lt;/a>
+&lt;/h1>
+&lt;p>This component merges multiple PhysBone Components into one Component with MultiChildType == Ignore.&lt;/p>
+&lt;p>This component should be added to a new GameObject.&lt;/p>
+&lt;h2 id="notes">
+ Notes
+ &lt;a class="anchor" href="#notes">#&lt;/a>
+&lt;/h2>
+&lt;p>Merge target PhysBones must be children of the same GameObject.
+Alternatively, you can use &lt;code>Make Children of Me&lt;/code> option.&lt;/p>
+&lt;p>This component will create a new PhysBone root GameObject and make the bones swayed by merge target PhysBones into children of this GameObject.&lt;br>
+Since the root GameObject is treated as a PhysBone affected Transforms, the number of &lt;code>PhysBone Affected Transforms&lt;/code> will be increased by one for each Merge PhysBone.
+The GameObject added by this component will not be swayed by PhysBone, so this can be a bug of the VRChat Performance Rank System.&lt;/p></description></item><item><title>Remove Zero Sized Polygon</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/remove-zero-sized-polygon/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/remove-zero-sized-polygon/</guid><description>&lt;h1 id="remove-zero-sized-polygon">
+ Remove Zero Sized Polygon
+ &lt;a class="anchor" href="#remove-zero-sized-polygon">#&lt;/a>
+&lt;/h1>
+&lt;p>Remove polygons whose area are zero.&lt;/p>
+&lt;p>This component should be added to a GameObject which has a SkinnedMeshRenderer component.&lt;/p>
+&lt;blockquote class="book-hint warning">
+ 
+
+Since this component works very late in the build process, this component is **NOT** [Modifying Edit Skinned Mesh Component](../../component-kind/edit-skinned-mesh-components#modifying-component).
+
+Adding this component to the SkinnedMeshRenderers to be merged by [Merge Skinned Mesh](../merge-skinned-mesh) component has no effect.
+
+
+&lt;/blockquote>
+
+&lt;h2 id="benefits">
+ Benefits
+ &lt;a class="anchor" href="#benefits">#&lt;/a>
+&lt;/h2>
+&lt;p>By removing polygons whose area are zero, you can reduce rendering cost.
+This will have almost zero effect on the appearance.&lt;/p></description></item><item><title>Make Children</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/make-children/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/make-children/</guid><description>&lt;h1 id="make-children">
+ Make Children
+ &lt;a class="anchor" href="#make-children">#&lt;/a>
+&lt;/h1>
+&lt;p>These specified objects will be the children of this GameObject at build time.&lt;/p>
+&lt;blockquote class="book-hint warning">
+ 
+
 This component is deprecated.
-This function is not related to avatar optimization, so this component will be replaced by one in a currently planned non-destructive Avatar Modification Utils.</description></item></channel></rss>
+
+This function is not related to avatar optimization, so this component will be replaced by one in a currently planned non-destructive Avatar Modification Utils.
+
+
+&lt;/blockquote>
+
+&lt;p>&lt;img src="component.png" alt="component.png" />&lt;/p></description></item></channel></rss>

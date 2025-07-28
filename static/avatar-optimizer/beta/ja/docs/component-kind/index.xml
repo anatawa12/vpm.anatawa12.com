@@ -1,12 +1,44 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>コンポーネントの種類 on Avatar Optimizer (1.9.0-beta.2)</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/component-kind/</link><description>Recent content in コンポーネントの種類 on Avatar Optimizer (1.9.0-beta.2)</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/component-kind/index.xml" rel="self" type="application/rss+xml"/><item><title>Avatar Global Components</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/component-kind/avatar-global-components/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/component-kind/avatar-global-components/</guid><description> Avatar Global Components # Avatar Global Componentはアバターのルートに追加することでアバター全体に作用するコンポーネントです。
-&amp;ldquo;アバターのルート&amp;quot;とは、アバターの最も上の階層にあるGameObjectのことです。 例えばVRChat用アバターの場合、VRC Avatar DescriptorコンポーネントがあるGameObjectが&amp;quot;アバターのルート&amp;quot;です。
-Avatar Global Componentをアバターのルート以外に追加した場合、インスペクター上にエラーが表示され、コンポーネントは一切動作しません。
-以下のコンポーネントがAvatar Global Componentです。
-Trace And Optimize UnusedBonesByReferencesTool</description></item><item><title>Edit Skinned Mesh Components</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/component-kind/edit-skinned-mesh-components/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/component-kind/edit-skinned-mesh-components/</guid><description> Edit Skinned Mesh Components # Edit Skinned Mesh ComponentはSkinnedMeshRendererコンポーネントのあるGameObjectに追加することで、そのSkinnedMeshRendererに作用するコンポーネントです。
-このコンポーネントには2つの小分類があります。
-Source Component # メッシュなどを生成するコンポーネントです。
-以下のコンポーネントがSource Edit Skinned Mesh Componentです。
-MergeSkinnedMesh
-このコンポーネントは他の(Skinned)MeshRendererを基にメッシュを生成します。 Modifying Component # 既にあるメッシュなどを(複製して)編集するコンポーネントです。
-以下のコンポーネントがModifying Edit Skinned Mesh Componentです。
-Remove Mesh By BlendShape Remove Mesh By Box Remove Mesh By UV Tile Freeze BlendShape Merge ToonLit Material Rename BlendsShape</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>コンポーネントの種類 on Avatar Optimizer (1.8.13)</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/component-kind/</link><description>Recent content in コンポーネントの種類 on Avatar Optimizer (1.8.13)</description><generator>Hugo</generator><language>ja</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/component-kind/index.xml" rel="self" type="application/rss+xml"/><item><title>Avatar Global Components</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/component-kind/avatar-global-components/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/component-kind/avatar-global-components/</guid><description>&lt;h1 id="avatar-global-components">
+ Avatar Global Components
+ &lt;a class="anchor" href="#avatar-global-components">#&lt;/a>
+&lt;/h1>
+&lt;p>Avatar Global Componentはアバターのルートに追加することでアバター全体に作用するコンポーネントです。&lt;/p>
+&lt;p>&amp;ldquo;アバターのルート&amp;quot;とは、アバターの最も上の階層にあるGameObjectのことです。
+例えばVRChat用アバターの場合、VRC Avatar DescriptorコンポーネントがあるGameObjectが&amp;quot;アバターのルート&amp;quot;です。&lt;/p>
+&lt;p>&lt;img src="avatar-root.png" alt="avatar-root.png" />&lt;/p>
+&lt;p>Avatar Global Componentをアバターのルート以外に追加した場合、インスペクター上にエラーが表示され、コンポーネントは一切動作しません。&lt;/p>
+&lt;p>以下のコンポーネントがAvatar Global Componentです。&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="../../reference/trace-and-optimize">Trace And Optimize&lt;/a>&lt;/li>
+&lt;li>&lt;a href="../../reference/unused-bones-by-references-tool">UnusedBonesByReferencesTool&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>Edit Skinned Mesh Components</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/component-kind/edit-skinned-mesh-components/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/component-kind/edit-skinned-mesh-components/</guid><description>&lt;h1 id="edit-skinned-mesh-components">
+ Edit Skinned Mesh Components
+ &lt;a class="anchor" href="#edit-skinned-mesh-components">#&lt;/a>
+&lt;/h1>
+&lt;p>Edit Skinned Mesh ComponentはSkinnedMeshRendererコンポーネントのあるGameObjectに追加することで、そのSkinnedMeshRendererに作用するコンポーネントです。&lt;/p>
+&lt;p>このコンポーネントには2つの小分類があります。&lt;/p>
+&lt;h2 id="source-component">
+ Source Component
+ &lt;a class="anchor" href="#source-component">#&lt;/a>
+&lt;/h2>
+&lt;p>メッシュなどを生成するコンポーネントです。&lt;br>
+以下のコンポーネントがSource Edit Skinned Mesh Componentです。&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="../../reference/merge-skinned-mesh">MergeSkinnedMesh&lt;/a>&lt;br>
+このコンポーネントは他の(Skinned)MeshRendererを基にメッシュを生成します。&lt;/li>
+&lt;/ul>
+&lt;h2 id="modifying-component">
+ Modifying Component
+ &lt;a class="anchor" href="#modifying-component">#&lt;/a>
+&lt;/h2>
+&lt;p>既にあるメッシュなどを(複製して)編集するコンポーネントです。&lt;br>
+以下のコンポーネントがModifying Edit Skinned Mesh Componentです。&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="../../reference/remove-mesh-by-blendshape">Remove Mesh By BlendShape&lt;/a>&lt;/li>
+&lt;li>&lt;a href="../../reference/remove-mesh-by-mask">Remove Mesh By Mask&lt;/a>&lt;/li>
+&lt;li>&lt;a href="../../reference/remove-mesh-by-box">Remove Mesh By Box&lt;/a>&lt;/li>
+&lt;li>&lt;a href="../../remove-mesh-by-uv-tile/">Remove Mesh By UV Tile&lt;/a>&lt;/li>
+&lt;li>&lt;a href="../../reference/freeze-blendshape">Freeze BlendShape&lt;/a>&lt;/li>
+&lt;li>&lt;a href="../../reference/merge-toonlit-material">Merge ToonLit Material&lt;/a>&lt;/li>
+&lt;li>&lt;a href="../../reference/rename-blendshape">Rename BlendsShape&lt;/a>&lt;/li>
+&lt;/ul></description></item></channel></rss>

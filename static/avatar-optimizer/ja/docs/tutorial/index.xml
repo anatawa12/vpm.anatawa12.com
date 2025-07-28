@@ -1,12 +1,80 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>チュートリアル on Avatar Optimizer (1.8.12)</title><link>https://vpm.anatawa12.com/avatar-optimizer/ja/docs/tutorial/</link><description>Recent content in チュートリアル on Avatar Optimizer (1.8.12)</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/ja/docs/tutorial/index.xml" rel="self" type="application/rss+xml"/><item><title>基本的な使い方</title><link>https://vpm.anatawa12.com/avatar-optimizer/ja/docs/tutorial/basic-usage/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/ja/docs/tutorial/basic-usage/</guid><description>基本的な使い方 # 自動最適化を使用する # アバターには自動的に行える最適化がいくつかあります。
-使用していないBlendShape(シェイプキー)1の除去 BlendShapeの値が0以外のときは処理負荷が発生するため、値をアニメーション等で変更しないBlendShapeは固定すると負荷が軽くなります。 値が常に0である場合でも、固定することでアバターの容量を削減することができます。 使われていないPhysBone等の削除 揺らす対象として存在するメッシュ2が常に無効になっているPhysBoneなどのように、揺らす必要のないPhysBoneが有効になっている場合は計算負荷が余分に発生してしまいます。 アニメーションしたりPhysBoneで揺らしたりすることのないボーンの統合 服のボーンを素体のボーンに入れ子状にして着せるような場合には、それ自身を動かすことがないボーンが多く発生します。そのようなボーンは余分な負荷を発生させてしまいます。 一緒に切り替えていたり、切り替えることがなかったりするメッシュ同士の統合 アバターに服が1着しかない場合、体、髪、服などを別々のメッシュにしておく必要はないかもしれません。 切り替え可能な複数の服がある場合でも、体、髪、下着などを別々のメッシュにしておく必要はないかもしれません。 AvatarOptimizerでは、アバターのルートにAAO Trace And Optimizeコンポーネントを追加するだけで、これらの最適化を自動で行うことができます！
-アバターをアップロードする # AAO Trace and Optimizeコンポーネントを付けた状態で、試しにアバターをアップロードしてみましょう！ AAO: Avatar Optimizerは非破壊改変ツールであり、Playモードに入るときかアバターをビルドするときに処理が行われるため、アップロードを行うのに特別な手順は必要ありません。 通常と同じように、VRCSDKのControl Panelからアバターをアップロードしてください。
-ただし、Android(Quest)向けアップロードを行う場合などにおいて、Avatar Optimizerの最適化等によって制限の範囲内に収まるにも関わらず、 VRCSDKのビルド前チェックの時点で制限を超過していてアップロードボタンが押せない場合があります。
-ビルド前チェックをスキップする方法はいくつかあります。詳しくはよくある質問を参照してください。
-UploadせずにPerformance Rankを見る方法 # 非破壊改変ツールを使用した改変では、VRCSDKのControl Panel上のPerformance Rankはあてにならなくなります。
-その代わりとして、Playモードに入った際のPerformance Rankをanatawa12&amp;rsquo;s Gist PackのActual Performance Windowを使用して確認することができます。 詳しくはanatawa12&amp;rsquo;s Gist Packの使い方およびActual Performance Windowのドキュメントを参照してください。
-非破壊改変ツールを手動で適用する方法 # アバターのGameObjectを右クリックして出てくるメニューのNDM FrameworkからManual bake avatarをクリックすると、非破壊ツールによる処理を手動で適用することができます。
-Manual bake avatarは初めにアバターを複製し、その複製に対して非破壊ツールの処理を適用させるため、元のアバターは変更されないままになります。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>チュートリアル on Avatar Optimizer (1.8.13)</title><link>https://vpm.anatawa12.com/avatar-optimizer/ja/docs/tutorial/</link><description>Recent content in チュートリアル on Avatar Optimizer (1.8.13)</description><generator>Hugo</generator><language>ja</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/ja/docs/tutorial/index.xml" rel="self" type="application/rss+xml"/><item><title>基本的な使い方</title><link>https://vpm.anatawa12.com/avatar-optimizer/ja/docs/tutorial/basic-usage/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/ja/docs/tutorial/basic-usage/</guid><description>&lt;h1 id="基本的な使い方">
+ 基本的な使い方
+ &lt;a class="anchor" href="#%e5%9f%ba%e6%9c%ac%e7%9a%84%e3%81%aa%e4%bd%bf%e3%81%84%e6%96%b9">#&lt;/a>
+&lt;/h1>
+&lt;h2 id="trace-and-optimize">
+ 自動最適化を使用する
+ &lt;a class="anchor" href="#trace-and-optimize">#&lt;/a>
+&lt;/h2>
+&lt;p>アバターには自動的に行える最適化がいくつかあります。&lt;/p>
+&lt;ul>
+&lt;li>使用していないBlendShape(シェイプキー)&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>の除去
+&lt;ul>
+&lt;li>BlendShapeの値が0以外のときは処理負荷が発生するため、値をアニメーション等で変更しないBlendShapeは固定すると負荷が軽くなります。&lt;/li>
+&lt;li>値が常に0である場合でも、固定することでアバターの容量を削減することができます。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>使われていないPhysBone等の削除
+&lt;ul>
+&lt;li>揺らす対象として存在するメッシュ&lt;sup id="fnref:2">&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref">2&lt;/a>&lt;/sup>が常に無効になっているPhysBoneなどのように、揺らす必要のないPhysBoneが有効になっている場合は計算負荷が余分に発生してしまいます。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>アニメーションしたりPhysBoneで揺らしたりすることのないボーンの統合
+&lt;ul>
+&lt;li>服のボーンを素体のボーンに入れ子状にして着せるような場合には、それ自身を動かすことがないボーンが多く発生します。そのようなボーンは余分な負荷を発生させてしまいます。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>一緒に切り替えていたり、切り替えることがなかったりするメッシュ同士の統合
+&lt;ul>
+&lt;li>アバターに服が1着しかない場合、体、髪、服などを別々のメッシュにしておく必要はないかもしれません。&lt;/li>
+&lt;li>切り替え可能な複数の服がある場合でも、体、髪、下着などを別々のメッシュにしておく必要はないかもしれません。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;p>AvatarOptimizerでは、アバターのルートに&lt;code>AAO Trace And Optimize&lt;/code>コンポーネントを追加するだけで、これらの最適化を自動で行うことができます！&lt;/p>
+&lt;p>&lt;img src="add-trace-and-optimize.png" alt="add-trace-and-optimize.png" />&lt;/p>
+&lt;h2 id="upload-avatar">
+ アバターをアップロードする
+ &lt;a class="anchor" href="#upload-avatar">#&lt;/a>
+&lt;/h2>
+&lt;p>&lt;code>AAO Trace and Optimize&lt;/code>コンポーネントを付けた状態で、試しにアバターをアップロードしてみましょう！
+AAO: Avatar Optimizerは非破壊改変ツールであり、Playモードに入るときかアバターをビルドするときに処理が行われるため、アップロードを行うのに特別な手順は必要ありません。
+通常と同じように、VRCSDKのControl Panelからアバターをアップロードしてください。&lt;/p>
+&lt;p>ただし、Android(Quest)向けアップロードを行う場合などにおいて、Avatar Optimizerの最適化等によって制限の範囲内に収まるにも関わらず、 VRCSDKのビルド前チェックの時点で制限を超過していてアップロードボタンが押せない場合があります。&lt;br>
+ビルド前チェックをスキップする方法はいくつかあります。詳しくは&lt;a href="../../faq/#i-cannot-upload-the-avatar-because-of-pre-build-hard-limit-check">よくある質問&lt;/a>を参照してください。&lt;/p>
+&lt;blockquote class="book-hint info">
+ 
+
+### UploadせずにPerformance Rankを見る方法 {#performance-rank-without-upload}
+
+非破壊改変ツールを使用した改変では、VRCSDKのControl Panel上のPerformance Rankはあてにならなくなります。
+
+その代わりとして、Playモードに入った際のPerformance Rankをanatawa12's Gist PackのActual Performance Windowを使用して確認することができます。
+詳しくは[anatawa12's Gist Packの使い方][gists-basic-usage]および[Actual Performance Windowのドキュメント][Actual Performance Window]を参照してください。
+
+[gists-basic-usage]: https://vpm.anatawa12.com/gists/ja/docs/basic-usage/
+[Actual Performance Window]: https://vpm.anatawa12.com/gists/ja/docs/reference/actual-performance-window/
+
+
+&lt;/blockquote>
+
+&lt;blockquote class="book-hint info">
+ 
+
+### 非破壊改変ツールを手動で適用する方法 {#how-to-manual-bake}
+
+アバターのGameObjectを右クリックして出てくるメニューの`NDM Framework`から`Manual bake avatar`をクリックすると、非破壊ツールによる処理を手動で適用することができます。
+
+`Manual bake avatar`は初めにアバターを複製し、その複製に対して非破壊ツールの処理を適用させるため、元のアバターは変更されないままになります。
+
 VRChat向けアバターをVRM形式で出力したい場合などにご活用ください。
-貫通防止用BlendShapeを利用してポリゴンを減らす # 服で隠れていたりして見えないような部分のメッシュを削除すると、見た目に影響させずに描画負荷やBlendShapeの処理負荷などを減らして軽量化することができます。 これを簡単に実現するために、AvatarOptimizerでは多くの素体に含まれている貫通防止用のBlendShapeを利用してメッシュを削除することができます！
-素体のメッシュにAAO Remove Mesh By BlendShapeコンポーネントを追加して、削除したい部位の貫通防止用BlendShapeをコンポーネント下側の一覧から選択しましょう！</description></item></channel></rss>
+
+
+&lt;/blockquote>
+
+&lt;h2 id="remove-mesh-by-blendshape">
+ 貫通防止用BlendShapeを利用してポリゴンを減らす
+ &lt;a class="anchor" href="#remove-mesh-by-blendshape">#&lt;/a>
+&lt;/h2>
+&lt;p>服で隠れていたりして見えないような部分のメッシュを削除すると、見た目に影響させずに描画負荷やBlendShapeの処理負荷などを減らして軽量化することができます。
+これを簡単に実現するために、AvatarOptimizerでは多くの素体に含まれている貫通防止用のBlendShapeを利用してメッシュを削除することができます！&lt;/p></description></item></channel></rss>

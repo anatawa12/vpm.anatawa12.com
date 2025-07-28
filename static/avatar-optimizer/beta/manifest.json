@@ -1,14 +1,14 @@
 {
-  "name": "Avatar Optimizer (1.9.0-beta.2)",
-  "short_name": "Avatar Optimizer (1.9.0-beta.2)",
-  "start_url": "/",
-  "scope": "/",
+  "name": "Avatar Optimizer (1.8.13)",
+  "short_name": "Avatar Optimizer (1.8.13)",
+  "start_url": "/avatar-optimizer/beta/",
+  "scope": "/avatar-optimizer/beta/",
   "display": "standalone",
   "background_color": "#000000",
   "theme_color": "#000000",
   "icons": [
     {
-      "src": "/favicon.svg",
+      "src": "/avatar-optimizer/beta/favicon.svg",
       "sizes": "512x512"
     }
   ]

@@ -1,128 +1,497 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>コンポーネントの詳細説明 on Avatar Optimizer (1.9.0-beta.2)</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/</link><description>Recent content in コンポーネントの詳細説明 on Avatar Optimizer (1.9.0-beta.2)</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/index.xml" rel="self" type="application/rss+xml"/><item><title>Trace And Optimize</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/trace-and-optimize/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/trace-and-optimize/</guid><description>Trace And Optimize (T&amp;amp;O) # 昔のバージョンではAutomatic Configurationという名前でした
-このコンポーネントは、アバターを走査して自動的にできる限りの最適化を行います。 チェックボックスで自動的に行う最適化を選択することが出来ます。
-このコンポーネントはアバターのルートに追加してください。(分類: Avatar Global Component)
-Trace and Optimizeは「見た目に絶対に影響させてはならない」という前提の下で、かなり慎重に作られています。
-そのため、見た目に影響が出たり、何らかのギミックが機能しなくなったりといった問題が発生した場合はすべて、例外なくAAOのバグとなります。
-従って、問題が起きた際は報告していただければ、出来る限り修正いたします。 現在、以下の機能を使った自動最適化が可能です。
-BlendShapeを最適化する
-以前はBlendShapeを自動的に固定・除去するという名前でしたが、機能が増えたため名前が変わりました。
-アニメーションなどを走査して、BlendShapeを自動的に固定・除去・統合することでBlendShapeの数を削減します。 使われていないObjectを自動的に削除する
-アニメーションなどを走査して、使われていないObject(GameObjectやコンポーネントなど)を自動的に削除します。
-また、切り替えるものと一緒に使われていて、他の方法で使われていないPhysBooneコンポーネントを自動的に切り替えるようにします。 endボーンを残す
-親が削除されていないendボーン1を削除しないようにします。 PhysBoneの設定を最適化する
-PhysBoneの設定について、以下の最適化を行います。 全く同じ設定のPhysBone Colliderを1つに統合します。 不要な場合にIs Animatedのチェックを外します。 アニメーターの最適化
-Animator Controllerを最適化します。詳細はこのセクションを参照してください。 スキンメッシュレンダラーを統合する
-分かれている必要のないスキンメッシュレンダラーを統合します。
-場合により、自動では一部のメッシュを統合しないこともあるため、必要に応じてMerge Skinned Meshを使用してください。 マテリアルスロットの前後関係を変えることを許可する
-マテリアルスロットの前後関係を変えることで、アバターの描画負荷を減らせる場合があります。
-多くの場合、マテリアルスロットの前後関係は特に意味を持ちませんが、描画順に影響を与える場合もあるようです。 テクスチャを最適化する
-見た目に影響を与えずにテクスチャを最適化します。
-現在は、AvatarOptimizerが対応しているシェーダーが使用されているマテリアルに対してのみ、UVパッキングやテクスチャサイズの縮小を行います。 また、以下の設定で自動設定を調節できます。
-MMDワールドとの互換性
-MMDワールドで使われるBlendShapeを固定しないなど、MMDワールドとの互換性を考慮した軽量化を行います。 加えて、以下の高度な最適化が利用出来ます。
-面積がゼロのポリゴンを自動的に削除する
-面積がゼロのポリゴンを削除します。 これは一部のシェーダーやアニメーションによるスケール変化を壊す可能性があるため、注意して使用してください。 他に、バグの回避などに使用するための高度な設定がありますが、それらは不安定であり、不用意に変更するべきではありません。 それらの機能については英語のTooltipやソースコード、または開発者の指示を参考にしてください。
-アニメーターの最適化 # この機能では、アニメーターに対して以下の最適化を行います。
-AnyState式のレイヤーをEntry-Exit式に変換
-アニメーターコントローラーのレイヤーをできる限りEntry-Exit式に変換します。 また、以下の最適化により、AnyState式のレイヤーがBlendTreeに変換されることがあります。 Entry-Exit式のレイヤーをBlendTreeに変換
-アニメーターコントローラーのレイヤーをできる限りBlendTreeに変換します。 BlendTreeを統合
-複数のBlendTreeレイヤーを1つのDirect BlendTreeに統合します。 使われていないレイヤーを削除する
-StateやTransitionがないレイヤーを削除します。 AAOは名前がend(大文字小文字の区別なし)で終わるボーンをendボーンとして扱います。&amp;#160;&amp;#x21a9;&amp;#xfe0e;</description></item><item><title>UnusedBonesByReferencesTool</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/unused-bones-by-references-tool/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/unused-bones-by-references-tool/</guid><description>UnusedBonesByReferencesTool # EditorOnlyなメッシュからしか参照がないボーンをEditorOnlyにします。
-このコンポーネントはアバターのルートに追加してください。(分類: Avatar Global Component)
-このコンポーネントは非推奨です。代わりにTrace and Optimizeの使われていないObjectを自動的に削除するを使用してください。 このコンポーネントの動作が改善されることはありません。 これはNarazakaさんのUnusedBonesByReferencesToolを移植したものですが、ビルド時に実行します。</description></item><item><title>Merge Skinned Mesh</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/merge-skinned-mesh/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/merge-skinned-mesh/</guid><description>Merge Skinned Mesh (MergeSMR) # 1つ以上のSkinnedMeshRendererやMeshRendererを1つのSkinnedMeshRendererに統合することが出来ます。
-このコンポーネントは、メッシュを指定していないSkinnedMeshRendererコンポーネントがある新規GameObjectに追加してください。(分類: Source Edit Skinned Mesh Component)
-Trace And Optimizeが自動で同様の処理を行うため、大抵の場合、このコンポーネントを使用する必要はありません。 利点 # SkinnedMeshRendererを統合することでメッシュを変形させる処理の回数が減り、負荷が軽くなります。 また、同じマテリアルを使用しているマテリアルスロットも統合することができるので、描画負荷も減らす事ができます。
-備考 # アニメーションでメッシュのオン・オフを個別に切り替えたりすることはできなくなりますが、マテリアルに関するアニメーションは統合前のものがそのまま機能します。
-このコンポーネントはメッシュ・マテリアル・BlendShape・Boundsを設定しますが、その他の設定については変更しません。 Anchor Override等の設定を行うには、MergeSkinnedMeshのあるGameObject上のSkinnedMeshRendererコンポーネントを編集してください。
-[Modular Avatar]を使用している場合は、アバターのルートに[MA Mesh Settings]コンポーネントを追加して設定することにより、アバター全体のAnchor Override等をまとめて設定することができます。 BlendShapeによる負荷を減らすために、体や服のメッシュのBlendShapeは固定・除去することを推奨します。
-Freeze BlendShapeコンポーネントを統合対象・統合先のSkinnedMeshRendererコンポーネントのいずれか(または両方)に追加して、BlendShapeを固定・除去することが出来ます。 Trace and OptimizeコンポーネントのBlendShapeを最適化するによっても同様の効果を得ることが出来ます。
-以前のAvatar Optimizerは顔のメッシュを他のメッシュと統合することを推奨していませんでした。 これは、Unity 2019でBlendShapeの多いメッシュを統合するとメッシュの負荷が大幅に増加してしまうためです。
-Unity 2022ではBlendShapeの負荷が改善されているため、その記述は取り下げられました。
-設定 # スキンメッシュレンダラー # 統合対象のSkinnedMeshRendererの一覧です。
-一番下の&amp;quot;None&amp;quot;と書いてある要素にドラッグ&amp;amp;ドロップすることにより対象を追加し、Noneに戻すことにより対象を一覧から取り除きます。
-静的レンダラー # 統合対象のMeshRendererの一覧です。
-静的メッシュの移動・回転・変形をボーンで再現します。
-一番下の&amp;quot;None&amp;quot;と書いてある要素にドラッグ&amp;amp;ドロップすることにより対象を追加し、Noneに戻すことにより対象を一覧から取り除きます。
-空のレンダラーオブジェクトを削除する # 統合対象のSkinnedMeshRendererが属しているGameObjectにSkinnedMeshRenderer以外のコンポーネントが無い場合、そのGameObjectをヒエラルキーから取り除くオプションです。
-有効無効状態が統合先と異なるレンダラーを統合しない # 統合先のSkinnedMeshRendererと有効無効の状態が異なる(Skinned)MeshRendererが統合対象の中に含まれている場合、それらをビルド時に統合対象から除外するオプションです。
-有効無効状態に関するアニメーションをコピーする # 統合対象の(Skinned)MeshRendererの有効無効状態に関するアニメーションを統合先のSkinnedMeshRendererにコピーするオプションです。
-この機能は、統合先のSkinnedMeshRendererのenabledプロパティや、そのGameObjectや祖先のGameObjectのactiveSelfプロパティのアニメーションをコピーします。 ただし、アニメーションされているプロパティは1種類しかコピーできないため、複数種類/階層のプロパティがアニメーションされている場合(enabledとactiveSelfの両方がアニメーションされている場合や、自身と親の両方のactiveSelfがアニメーションされている場合など)はエラーになります。
-なお、統合先のSkinnedMeshRendererのenabledに対するアニメーションはこの機能によって上書きされるため、この機能を使用する時は統合先のSkinnedMeshRendererのenabledをアニメーションしてはいけません。
-BlendShapeモード # BlendShapeをどのように扱うかについてのオプションです。
-BlendShape名を自動変更して重複を避ける: 重複を避けるために、BlendShape名を自動で変更します。これはデフォルトの設定になっています。 同名のBlendShapeを統合する: 同じ名前のBlendShapeを統合します。異なるSkinnedMeshRendererにある同じ名前のBlendShapeを統合する際に便利です。 v1.</description></item><item><title>Freeze BlendShape</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/freeze-blendshape/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/freeze-blendshape/</guid><description>Freeze BlendShape # BlendShapeをメッシュに固定し、除去することが出来ます。
-このコンポーネントは、SkinnedMeshRendererコンポーネントのあるGameObjectに追加してください。(分類: Modifying Edit Skinned Mesh Component)
-Trace And Optimizeが自動で同様の処理を行うため、大抵の場合、このコンポーネントを使用する必要はありません。 利点 # BlendShapeの固定・除去には以下の効果があります。
-BlendShapeの値が0以外のときは処理負荷が発生するため、値をアニメーション等で変更しないBlendShapeは固定すると負荷が軽くなります。 値が常に0である場合でも、固定することでアバターの容量を削減することができます。 備考 # 固定すると、アニメーションでの値変更は出来なくなります。
-設定 # BlendShapeの一覧が表示されるので、固定・除去対象のBlendShapeを選択してください。</description></item><item><title>Merge ToonLit Material</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/merge-toonlit-material/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/merge-toonlit-material/</guid><description>Merge ToonLit Material # 手動でテクスチャを並び替えることにより、VRChat/Mobile/Toon Litのマテリアルを1つのマテリアルに統合します。
-このコンポーネントは、SkinnedMeshRendererコンポーネントのあるGameObjectに追加してください。(分類: Modifying Edit Skinned Mesh Component)
-現在、このコンポーネントは大きな需要があると見られるVRChat/Mobile/Toon Litシェーダーのみをサポートしています。 他のシェーダーのサポートも追加する可能性があります。(サードパーティシェーダーでも対応します) もし対応して欲しいシェーダーがあれば、issueを書いてください。
-このコンポーネントは新しいマテリアルを作成するため、このコンポーネントで統合されたマテリアルを使用しているマテリアルスロットはAAO Merge Skinned Meshコンポーネントで統合されません。 別々のメッシュで使用されているマテリアルを纏めて統合したい場合は、AAO Merge Skinned MeshコンポーネントのあるGameObjectと同じGameObjectにMerge ToonLit Materialコンポーネントを追加する必要があります。
-設定 # 統合したマテリアルを追加をクリックして、統合後のマテリアルを追加します。 それぞれのマテリアルについて、統合対象のマテリアルを複数選択することが出来ます。 統合対象を追加をクリックするか、ドロップダウンメニューからマテリアルを選択してください。 統合対象のマテリアルについて、テクスチャの配置場所を設定する必要があります。 X, Y, W, Hの値を調整してテクスチャをお好みの位置にを合わせてください。 プレビューを生成をクリックすると、統合後のテクスチャのプレビューがそれぞれ生成されます。</description></item><item><title>Remove Mesh By BlendShape</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/remove-mesh-by-blendshape/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/remove-mesh-by-blendshape/</guid><description>Remove Mesh By BlendShape # 指定されたBlendShapeによって動かされる頂点とそのポリゴンを削除します。
-このコンポーネントは、SkinnedMeshRendererコンポーネントのあるGameObjectに追加してください。(分類: Modifying Edit Skinned Mesh Component)
-利点 # 服で隠れていたりして見えないような部分のメッシュを削除すると、見た目に影響させずに描画負荷やBlendShapeの処理負荷などを減らして軽量化することができます。
-このコンポーネントを使用すると、多くの素体に含まれている貫通防止用のBlendShapeを利用して簡単にメッシュを削除することができます。
-設定 # BlendShapeの一覧が表示されるので、BlendShapeを選択してください。 もし選択されたBlendShapeが頂点を許容差より大きく動かしていたら、その頂点を削除します。
-消えて欲しい箇所が消えない場合は許容差の値を大きく、 消えて欲しくない箇所が消えてしまう場合は許容差の値を小さくしましょう。
-プレビューのために、切り替えたBlendShapeの値を自動的に変更するを有効にすると、BlendShapeの指定を切り替えた時に、その値を自動的に100か0に設定します。</description></item><item><title>Remove Mesh By Box</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/remove-mesh-by-box/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/remove-mesh-by-box/</guid><description>Remove Mesh By Box # 箱で指定した範囲のポリゴンを削除します。
-このコンポーネントは、SkinnedMeshRendererコンポーネントのあるGameObjectに追加してください。(分類: Modifying Edit Skinned Mesh Component)
-利点 # 服で隠れていたりして見えないような部分のメッシュを削除すると、見た目に影響させずに描画負荷やBlendShapeの処理負荷などを減らして軽量化することができます。
-設定 # 削除するポリゴン # 箱の内側のポリゴンを削除するか、箱の外側のポリゴンを削除するかを選択することが出来ます。
-箱 # ポリゴンを削除するための箱の一覧が表示されます。 Boxesの右側の数値を大きくすることで、箱を追加することが出来ます。
-それぞれの箱について、中心位置、大きさ、角度を変更することが出来ます。(ローカル座標で指定します)
-Edit This Boxをクリックすると下図のようなギズモを表示します。 こちらから箱の位置、大きさ、角度を調整することも出来ます。
-例 # 上側の図にある箱の範囲内のメッシュが、下側の図のように削除されます。</description></item><item><title>Remove Mesh By Mask</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/remove-mesh-by-mask/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/remove-mesh-by-mask/</guid><description>Remove Mesh By Mask # マスクテクスチャで指定した範囲のポリゴンを削除します。
-このコンポーネントは、SkinnedMeshRendererコンポーネントのあるGameObjectに追加してください。(分類: Modifying Edit Skinned Mesh Component)
-利点 # 服で隠れていたりして見えないような部分のメッシュを削除すると、見た目に影響させずに描画負荷やBlendShapeの処理負荷などを減らして軽量化することができます。
-このコンポーネントを使用すると、アルファマスク用のテクスチャや、gatosyocoraさんのMeshDeleterWithTexture用のマスクテクスチャを利用して簡単にメッシュを削除することができます。
-設定 # メッシュのマテリアルスロットの一覧が表示されます。
-マスクテクスチャによるポリゴンの削除を行う対象のマテリアルスロットを選択してください。
-マスクテクスチャ # ポリゴンの削除に利用するマスクテクスチャです。
-何もセットされていない場合は、「作成」ボタンをクリックしてテクスチャを新規作成することができます。
-「編集」ボタンをクリックすると、マスクテクスチャエディターが開きます。
-削除モード # マスクテクスチャは物によって色が異なるため、対応するモードを選択する必要があります。
-黒(に近い色)の場合にポリゴンを削除するように設計されているマスクテクスチャを利用する場合は、Remove Blackに設定してください。
-白(に近い色)の場合にポリゴンを削除するように設計されているマスクテクスチャを利用する場合は、Remove Whiteに設定してください。
-マスクテクスチャエディター # このウィンドウでマスクテクスチャを編集することができます。
-ウィンドウの上部には、編集中のマスクテクスチャに関する情報が表示されます。
-中央には、表示とブラシサイズについての設定が表示されます。
-ウィンドウの下部には、元のテクスチャ、マスクテクスチャ、メッシュのUVが表示されます。
-マスクテクスチャを塗るには左ドラッグします。また、右ドラッグまたはShift + 左ドラッグでビューを移動することが出来ます。
-スクロールでズームイン/アウトが、Shift + スクロールでブラシサイズの変更が出来ます。</description></item><item><title>Remove Mesh By UV Tile</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/remove-mesh-by-uv-tile/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/remove-mesh-by-uv-tile/</guid><description>Remove Mesh By UV Tile # UVタイルで指定した範囲のポリゴンを削除します。
-このコンポーネントは、SkinnedMeshRendererコンポーネントのあるGameObjectに追加してください。(分類: Modifying Edit Skinned Mesh Component)
-利点 # 服で隠れていたりして見えないような部分のメッシュを削除すると、見た目に影響させずに描画負荷やBlendShapeの処理負荷などを減らして軽量化することができます。
-このコンポーネントを使用すると、PoiyomiやlilToonのUV Tile Discard機能を使用してモデルの一部が隠せるようになっている場合に、簡単にメッシュを削除することができます。
-これは、UV Tile DiscardのVertexモードのように動作します。
-UV Tile Discardについての詳細は、UV Tile DiscardについてのPoiyomiのドキュメントをご参照ください。
-なお、何らかの非破壊ツールを使用してモデルのUVタイリングを行っても問題ありません。
-設定 # メッシュのマテリアルスロットの一覧が表示されます。 削除を行う対象のUVタイルを選択してください。
-UVタイル選択欄の上部で、UVチャンネルを指定することもできます。 PoiyomiやlilToonのUV Tile Discard機能とは異なり、このコンポーネントではあらゆるUVチャンネルをUVタイル選択用のUVとして指定することができます。</description></item><item><title>Rename BlendShape</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/rename-blendshape/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/rename-blendshape/</guid><description>Rename BlendShape # メッシュのBlendShape名を変更することが出来ます。
-変更後の名前が重複している場合、それらは1つのBlendShapeへと統合されます。
-このコンポーネントは、SkinnedMeshRendererコンポーネントのあるGameObjectに追加してください。(分類: Modifying Edit Skinned Mesh Component)
-設定 # BlendShape名の変更一覧表が表示されます。 右上の &amp;lsquo;+&amp;rsquo; ボタンから、名前を変更するBlendShapeを追加することが出来ます。
-変更後の名前が重複している場合は、それらが統合されることを示すために、入力欄が黄色でハイライトされます。</description></item><item><title>Clear Endpoint Position</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/clear-endpoint-position/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/clear-endpoint-position/</guid><description>Clear Endpoint Position # このコンポーネントは、Endpoint Positionの値を0に置換し、_EndPhysBoneGameObjectを追加します。
-このコンポーネントはPhysBoneコンポーネントがあるGameObjectに追加してください。
-今のところ、このコンポーネントに設定項目はありませんが、ボタンが1つあります。 適用して今すぐcomponentを削除するをクリックすると、 この操作が適用され、コンポーネントが削除されます。 アバターを制作するときに便利かもしれません。</description></item><item><title>Merge Bone</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/merge-bone/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/merge-bone/</guid><description> Merge Bone # Trace And Optimizeが自動で同様の処理を行うため、大抵の場合、このコンポーネントを使用する必要はありません。 このコンポーネントがGameObjectに付いている場合、そのGameObjectは親GameObjectに統合されて取り除かれます。 また、統合対象にその他のコンポーネントが付属している場合はそれらも削除されます。
-もし親のGameObjectにもMerge Boneコンポーネントが付いていた場合、2つのGameObjectはその更に親のGameObjectに統合されます。
-このコンポーネントが付いているGameObjectの全ての子GameObjectは、その親GameObjectの子になります。
-設定 # 名前の競合を避ける
-統合時に子GameObjectの名前を変更することで、名前の重複によってアニメーションが正しく動かなくなる問題を回避します。</description></item><item><title>Merge PhysBone</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/merge-physbone/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/merge-physbone/</guid><description>Merge PhysBone (MergePB) # このコンポーネントは、複数のPhysBoneコンポーネントを1つに統合します。 MultiChildTypeはIgnoreになります。
-このコンポーネントは新規GameObjectに追加してください。
-備考 # 統合対象は同じGameObjectの子である必要があります。 代わりにこのGameObjectの子にするオプションを使用することも出来ます。
-このコンポーネントは、PhysBoneのルートとなるGameObjectを新たに作成し、統合対象のPhysBoneによって揺らされるボーンを、作成したGameObjectの子にします。
-なお、ルートとなっているGameObjectも、PhysBoneによって影響を受けるボーンの1つとみなされるため、各Merge PhysBoneごとにPhysBone Affected Transformsの数が1つ増えてしまいます。 このコンポーネントによって追加されるGameObjectがPhysBoneによって揺らされることはないため、これはVRChatのPerformance Rankシステムのバグである可能性があります。
-設定 # このGameObjectの子にする # チェックされている場合、統合対象のPhysBoneが揺らすボーンがこのGameObjectの子になるようにします。
-コンポーネント # 統合対象のPhysBoneコンポーネントの一覧です。
-一番下の&amp;quot;None&amp;quot;と書いてある要素にドラッグ&amp;amp;ドロップすることにより対象を追加し、Noneに戻すことにより対象を一覧から取り除きます。
-オーバーライド(上書き) # 上記の設定項目の下は、PhysBoneの設定項目のようになっています。 それぞれの項目について、統合対象の項目から値をコピーする場合はCopy(すべての統合対象で値が同じ場合のみ有効)、 代わりに新しい値を設定する場合はOverrideを選択してください。
-コライダーについては、Mergeを選択して統合対象のコライダー一覧を統合することができます。
-Endpoint Positionについては、Clearを選択してClear Endpoint Positionを使用することができます。
-角度制限では、Fixを選択することで、ボーンに対する捻るような回転(Roll)の値を自動で揃えられます。 これにより、Rollの値だけが異なっているような場合に角度制限を纏めて適用することができます。</description></item><item><title>Remove Zero Sized Polygon</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/remove-zero-sized-polygon/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/remove-zero-sized-polygon/</guid><description>Remove Zero Sized Polygon # 面積がゼロのポリゴンを削除します。
-このコンポーネントは、SkinnedMeshRendererコンポーネントのあるGameObjectに追加してください。
-このコンポーネントはビルドの最後の方で実行されるため、Modifying Edit Skinned Mesh Component ではありません。
-このコンポーネントをMerge Skinned Meshの統合対象となるSkinnedMeshRendererに追加しても効果がありません。
-利点 # 面積がゼロのポリゴンを削除することで、描画負荷を減らすことができます。 見た目に影響を与えることはほとんどありません。
-備考 # モデルファイルでのポリゴンの大きさがゼロであっても、シェーダーによって何かを描画していることがあるため、見た目に影響が出ることがあります。
-設定 # 今のところ、このコンポーネントに設定項目はありません。
-備考 # このコンポーネントはTrace and Optimizeコンポーネントによって自動的に追加されます。 このコンポーネントを手動で追加するよりも、Trace and Optimizeを使うことをお勧めします。</description></item><item><title>Make Children</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/make-children/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/make-children/</guid><description>Make Children # ビルド時に、指定されたGameObjectをこのGameObjectの子にします。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>コンポーネントの詳細説明 on Avatar Optimizer (1.8.13)</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/</link><description>Recent content in コンポーネントの詳細説明 on Avatar Optimizer (1.8.13)</description><generator>Hugo</generator><language>ja</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/index.xml" rel="self" type="application/rss+xml"/><item><title>Trace And Optimize</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/trace-and-optimize/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/trace-and-optimize/</guid><description>&lt;h1 id="trace-and-optimize">
+ Trace And Optimize (T&amp;amp;O)
+ &lt;a class="anchor" href="#trace-and-optimize">#&lt;/a>
+&lt;/h1>
+&lt;p>&lt;i>昔のバージョンではAutomatic Configurationという名前でした&lt;/i>&lt;/p>
+&lt;p>このコンポーネントは、アバターを走査して自動的にできる限りの最適化を行います。
+チェックボックスで自動的に行う最適化を選択することが出来ます。&lt;/p>
+&lt;p>このコンポーネントはアバターのルートに追加してください。(分類: &lt;a href="../../component-kind/avatar-global-components">Avatar Global Component&lt;/a>)&lt;/p>
+&lt;blockquote class="book-hint info">
+ 
+
+Trace and Optimizeは「**見た目に絶対に影響させてはならない**」という前提の下で、かなり慎重に作られています。\
+そのため、見た目に影響が出たり、何らかのギミックが機能しなくなったりといった問題が発生した場合はすべて、例外なくAAOのバグとなります。\
+従って、問題が起きた際は報告していただければ、出来る限り修正いたします。
+
+
+&lt;/blockquote>
+
+&lt;p>現在、以下の機能を使った自動最適化が可能です。&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>BlendShapeを最適化する&lt;/code>&lt;br>
+&lt;small>以前は&lt;code>BlendShapeを自動的に固定・除去する&lt;/code>という名前でしたが、機能が増えたため名前が変わりました。&lt;/small>&lt;br>
+アニメーションなどを走査して、BlendShapeを自動的に固定・除去・統合することでBlendShapeの数を削減します。&lt;/li>
+&lt;li>&lt;code>使われていないObjectを自動的に削除する&lt;/code>&lt;br>
+アニメーションなどを走査して、使われていないObject(GameObjectやコンポーネントなど)を自動的に削除します。&lt;br>
+また、切り替えるものと一緒に使われていて、他の方法で使われていないPhysBooneコンポーネントを自動的に切り替えるようにします。
+&lt;ul>
+&lt;li>&lt;code>endボーンを残す&lt;/code>&lt;br>
+親が削除されていないendボーン&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>を削除しないようにします。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;code>PhysBoneの設定を最適化する&lt;/code>&lt;br>
+PhysBoneの設定について、以下の最適化を行います。
+&lt;ul>
+&lt;li>全く同じ設定のPhysBone Colliderを1つに統合します。&lt;/li>
+&lt;li>不要な場合に&lt;code>Is Animated&lt;/code>のチェックを外します。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;code>アニメーターの最適化&lt;/code>&lt;br>
+Animator Controllerを最適化します。詳細は&lt;a href="#animator-optimizer">このセクション&lt;/a>を参照してください。&lt;/li>
+&lt;li>&lt;code>スキンメッシュレンダラーを統合する&lt;/code>&lt;br>
+分かれている必要のないスキンメッシュレンダラーを統合します。&lt;br>
+場合により、自動では一部のメッシュを統合しないこともあるため、必要に応じて&lt;a href="../merge-skinned-mesh">Merge Skinned Mesh&lt;/a>を使用してください。
+&lt;ul>
+&lt;li>&lt;code>マテリアルスロットの前後関係を変えることを許可する&lt;/code>&lt;br>
+マテリアルスロットの前後関係を変えることで、アバターの描画負荷を減らせる場合があります。&lt;br>
+多くの場合、マテリアルスロットの前後関係は特に意味を持ちませんが、描画順に影響を与える場合もあるようです。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;code>テクスチャを最適化する&lt;/code>&lt;br>
+見た目に影響を与えずにテクスチャを最適化します。&lt;br>
+現在は、AvatarOptimizerが対応しているシェーダーが使用されているマテリアルに対してのみ、UVパッキングやテクスチャサイズの縮小を行います。&lt;/li>
+&lt;/ul>
+&lt;p>また、以下の設定で自動設定を調節できます。&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>MMDワールドとの互換性&lt;/code>&lt;br>
+MMDワールドで使われるBlendShapeを固定しないなど、MMDワールドとの互換性を考慮した軽量化を行います。&lt;/li>
+&lt;/ul>
+&lt;p>加えて、以下の高度な最適化が利用出来ます。&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>面積がゼロのポリゴンを自動的に削除する&lt;/code>&lt;br>
+面積がゼロのポリゴンを削除します。
+これは一部のシェーダーやアニメーションによるスケール変化を壊す可能性があるため、注意して使用してください。&lt;/li>
+&lt;/ul>
+&lt;p>他に、バグの回避などに使用するための高度な設定がありますが、それらは不安定であり、不用意に変更するべきではありません。
+それらの機能については英語のTooltipやソースコード、または開発者の指示を参考にしてください。&lt;/p>
+&lt;p>&lt;img src="component.png" alt="component.png" />&lt;/p>
+&lt;h2 id="animator-optimizer">
+ アニメーターの最適化
+ &lt;a class="anchor" href="#animator-optimizer">#&lt;/a>
+&lt;/h2>
+&lt;p>この機能では、アニメーターに対して以下の最適化を行います。&lt;/p>
+&lt;ul>
+&lt;li>AnyState式のレイヤーをEntry-Exit式に変換&lt;br>
+アニメーターコントローラーのレイヤーをできる限りEntry-Exit式に変換します。
+また、以下の最適化により、AnyState式のレイヤーがBlendTreeに変換されることがあります。&lt;/li>
+&lt;li>Entry-Exit式のレイヤーをBlendTreeに変換&lt;br>
+アニメーターコントローラーのレイヤーをできる限りBlendTreeに変換します。&lt;/li>
+&lt;li>BlendTreeを統合&lt;br>
+複数のBlendTreeレイヤーを1つのDirect BlendTreeに統合します。&lt;/li>
+&lt;li>使われていないレイヤーを削除する&lt;br>
+StateやTransitionがないレイヤーを削除します。&lt;/li>
+&lt;/ul>
+&lt;div class="footnotes" role="doc-endnotes">
+&lt;hr>
+&lt;ol>
+&lt;li id="fn:1">
+&lt;p>AAOは名前が&lt;code>end&lt;/code>(大文字小文字の区別なし)で終わるボーンをendボーンとして扱います。&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p></description></item><item><title>UnusedBonesByReferencesTool</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/unused-bones-by-references-tool/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/unused-bones-by-references-tool/</guid><description>&lt;h1 id="unusedbonesbyreferencestool">
+ UnusedBonesByReferencesTool
+ &lt;a class="anchor" href="#unusedbonesbyreferencestool">#&lt;/a>
+&lt;/h1>
+&lt;p>EditorOnlyなメッシュからしか参照がないボーンをEditorOnlyにします。&lt;/p>
+&lt;p>このコンポーネントはアバターのルートに追加してください。(分類: &lt;a href="../../component-kind/avatar-global-components">Avatar Global Component&lt;/a>)&lt;/p>
+&lt;blockquote class="book-hint warning">
+ 
+
+このコンポーネントは非推奨です。代わりに[Trace and Optimize](../trace-and-optimize)の`使われていないObjectを自動的に削除する`を使用してください。
+このコンポーネントの動作が改善されることはありません。
+
+
+&lt;/blockquote>
+
+&lt;p>これはNarazakaさんの&lt;a href="https://narazaka.booth.pm/items/3831781">UnusedBonesByReferencesTool&lt;/a>を移植したものですが、ビルド時に実行します。&lt;/p>
+&lt;p>&lt;img src="component.png" alt="component.png" />&lt;/p></description></item><item><title>Merge Skinned Mesh</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/merge-skinned-mesh/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/merge-skinned-mesh/</guid><description>&lt;h1 id="merge-skinned-mesh">
+ Merge Skinned Mesh (MergeSMR)
+ &lt;a class="anchor" href="#merge-skinned-mesh">#&lt;/a>
+&lt;/h1>
+&lt;p>1つ以上のSkinnedMeshRendererやMeshRendererを1つのSkinnedMeshRendererに統合することが出来ます。&lt;/p>
+&lt;p>このコンポーネントは、メッシュを指定していないSkinnedMeshRendererコンポーネントがある新規GameObjectに追加してください。(分類: &lt;a href="../../component-kind/edit-skinned-mesh-components#source-component">Source Edit Skinned Mesh Component&lt;/a>)&lt;/p>
+&lt;blockquote class="book-hint info">
+ 
+
+[Trace And Optimize](../trace-and-optimize)が自動で同様の処理を行うため、大抵の場合、このコンポーネントを使用する必要はありません。
+
+
+&lt;/blockquote>
+
+&lt;h2 id="benefits">
+ 利点
+ &lt;a class="anchor" href="#benefits">#&lt;/a>
+&lt;/h2>
+&lt;p>SkinnedMeshRendererを統合することでメッシュを変形させる処理の回数が減り、負荷が軽くなります。
+また、同じマテリアルを使用しているマテリアルスロットも統合することができるので、描画負荷も減らす事ができます。&lt;/p>
+&lt;h2 id="notes">
+ 備考
+ &lt;a class="anchor" href="#notes">#&lt;/a>
+&lt;/h2>
+&lt;p>アニメーションでメッシュのオン・オフを個別に切り替えたりすることはできなくなりますが、マテリアルに関するアニメーションは統合前のものがそのまま機能します。&lt;/p>
+&lt;p>このコンポーネントはメッシュ・マテリアル・BlendShape・Boundsを設定しますが、その他の設定については変更しません。
+Anchor Override等の設定を行うには、MergeSkinnedMeshのあるGameObject上のSkinnedMeshRendererコンポーネントを編集してください。&lt;/p>
+&lt;blockquote class="book-hint info">
+ 
+
+[Modular Avatar]を使用している場合は、アバターのルートに[`MA Mesh Settings`]コンポーネントを追加して設定することにより、アバター全体のAnchor Override等をまとめて設定することができます。
+
+
+&lt;/blockquote>
+
+&lt;p>BlendShapeによる負荷を減らすために、体や服のメッシュのBlendShapeは固定・除去することを推奨します。&lt;br>
+&lt;a href="../freeze-blendshape">Freeze BlendShape&lt;/a>コンポーネントを統合対象・統合先のSkinnedMeshRendererコンポーネントのいずれか(または両方)に追加して、BlendShapeを固定・除去することが出来ます。
+&lt;a href="../trace-and-optimize">Trace and Optimize&lt;/a>コンポーネントの&lt;code>BlendShapeを最適化する&lt;/code>によっても同様の効果を得ることが出来ます。&lt;/p>
+&lt;p>以前のAvatar Optimizerは顔のメッシュを他のメッシュと統合することを推奨していませんでした。
+これは、Unity 2019でBlendShapeの多いメッシュを統合するとメッシュの負荷が大幅に増加してしまうためです。&lt;br>
+Unity 2022ではBlendShapeの負荷が改善されているため、その記述は取り下げられました。&lt;/p>
+&lt;h2 id="settings">
+ 設定
+ &lt;a class="anchor" href="#settings">#&lt;/a>
+&lt;/h2>
+&lt;p>&lt;img src="component.png" alt="component.png" />&lt;/p>
+&lt;h3 id="skinned-renderers">
+ スキンメッシュレンダラー
+ &lt;a class="anchor" href="#skinned-renderers">#&lt;/a>
+&lt;/h3>
+&lt;p>統合対象のSkinnedMeshRendererの一覧です。&lt;/p>
+&lt;p>一番下の&amp;quot;None&amp;quot;と書いてある要素にドラッグ&amp;amp;ドロップすることにより対象を追加し、Noneに戻すことにより対象を一覧から取り除きます。&lt;/p>
+&lt;h3 id="static-renderers">
+ 静的レンダラー
+ &lt;a class="anchor" href="#static-renderers">#&lt;/a>
+&lt;/h3>
+&lt;p>統合対象のMeshRendererの一覧です。&lt;/p>
+&lt;p>静的メッシュの移動・回転・変形をボーンで再現します。&lt;/p>
+&lt;p>一番下の&amp;quot;None&amp;quot;と書いてある要素にドラッグ&amp;amp;ドロップすることにより対象を追加し、Noneに戻すことにより対象を一覧から取り除きます。&lt;/p>
+&lt;h3 id="remove-empty-renderer-gameobject">
+ 空のレンダラーオブジェクトを削除する
+ &lt;a class="anchor" href="#remove-empty-renderer-gameobject">#&lt;/a>
+&lt;/h3>
+&lt;p>統合対象のSkinnedMeshRendererが属しているGameObjectにSkinnedMeshRenderer以外のコンポーネントが無い場合、そのGameObjectをヒエラルキーから取り除くオプションです。&lt;/p>
+&lt;h3 id="skip-enablement-mismatched-renderers">
+ 有効無効状態が統合先と異なるレンダラーを統合しない
+ &lt;a class="anchor" href="#skip-enablement-mismatched-renderers">#&lt;/a>
+&lt;/h3>
+&lt;p>統合先のSkinnedMeshRendererと有効無効の状態が異なる(Skinned)MeshRendererが統合対象の中に含まれている場合、それらをビルド時に統合対象から除外するオプションです。&lt;/p>
+&lt;h3 id="copy-enablement-animation">
+ 有効無効状態に関するアニメーションをコピーする
+ &lt;a class="anchor" href="#copy-enablement-animation">#&lt;/a>
+&lt;/h3>
+&lt;p>統合対象の(Skinned)MeshRendererの有効無効状態に関するアニメーションを統合先のSkinnedMeshRendererにコピーするオプションです。&lt;/p></description></item><item><title>Freeze BlendShape</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/freeze-blendshape/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/freeze-blendshape/</guid><description>&lt;h1 id="freeze-blendshape">
+ Freeze BlendShape
+ &lt;a class="anchor" href="#freeze-blendshape">#&lt;/a>
+&lt;/h1>
+&lt;p>BlendShapeをメッシュに固定し、除去することが出来ます。&lt;/p>
+&lt;p>このコンポーネントは、SkinnedMeshRendererコンポーネントのあるGameObjectに追加してください。(分類: &lt;a href="../../component-kind/edit-skinned-mesh-components#modifying-component">Modifying Edit Skinned Mesh Component&lt;/a>)&lt;/p>
+&lt;blockquote class="book-hint info">
+ 
+
+[Trace And Optimize](../trace-and-optimize)が自動で同様の処理を行うため、大抵の場合、このコンポーネントを使用する必要はありません。
+
+
+&lt;/blockquote>
+
+&lt;h2 id="benefits">
+ 利点
+ &lt;a class="anchor" href="#benefits">#&lt;/a>
+&lt;/h2>
+&lt;p>BlendShapeの固定・除去には以下の効果があります。&lt;/p>
+&lt;ul>
+&lt;li>BlendShapeの値が0以外のときは処理負荷が発生するため、値をアニメーション等で変更しないBlendShapeは固定すると負荷が軽くなります。&lt;/li>
+&lt;li>値が常に0である場合でも、固定することでアバターの容量を削減することができます。&lt;/li>
+&lt;/ul>
+&lt;h2 id="notes">
+ 備考
+ &lt;a class="anchor" href="#notes">#&lt;/a>
+&lt;/h2>
+&lt;p>固定すると、アニメーションでの値変更は出来なくなります。&lt;/p>
+&lt;h2 id="settings">
+ 設定
+ &lt;a class="anchor" href="#settings">#&lt;/a>
+&lt;/h2>
+&lt;p>&lt;img src="component.png" alt="component.png" />&lt;/p>
+&lt;p>BlendShapeの一覧が表示されるので、固定・除去対象のBlendShapeを選択してください。&lt;/p></description></item><item><title>Merge ToonLit Material</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/merge-toonlit-material/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/merge-toonlit-material/</guid><description>&lt;h1 id="merge-toonlit-material">
+ Merge ToonLit Material
+ &lt;a class="anchor" href="#merge-toonlit-material">#&lt;/a>
+&lt;/h1>
+&lt;p>手動でテクスチャを並び替えることにより、&lt;code>VRChat/Mobile/Toon Lit&lt;/code>のマテリアルを1つのマテリアルに統合します。&lt;/p>
+&lt;p>このコンポーネントは、SkinnedMeshRendererコンポーネントのあるGameObjectに追加してください。(分類: &lt;a href="../../component-kind/edit-skinned-mesh-components#modifying-component">Modifying Edit Skinned Mesh Component&lt;/a>)&lt;/p>
+&lt;p>現在、このコンポーネントは大きな需要があると見られる&lt;code>VRChat/Mobile/Toon Lit&lt;/code>シェーダーのみをサポートしています。
+他のシェーダーのサポートも追加する可能性があります。(サードパーティシェーダーでも対応します)
+もし対応して欲しいシェーダーがあれば、&lt;a href="https://github.com/anatawa12/AvatarOptimizer/issues/new/choose">issue&lt;/a>を書いてください。&lt;/p>
+&lt;p>このコンポーネントは新しいマテリアルを作成するため、このコンポーネントで統合されたマテリアルを使用しているマテリアルスロットは&lt;code>AAO Merge Skinned Mesh&lt;/code>コンポーネントで統合されません。
+別々のメッシュで使用されているマテリアルを纏めて統合したい場合は、&lt;code>AAO Merge Skinned Mesh&lt;/code>コンポーネントのあるGameObjectと同じGameObjectに&lt;code>Merge ToonLit Material&lt;/code>コンポーネントを追加する必要があります。&lt;/p>
+&lt;h2 id="settings">
+ 設定
+ &lt;a class="anchor" href="#settings">#&lt;/a>
+&lt;/h2>
+&lt;p>&lt;code>統合したマテリアルを追加&lt;/code>をクリックして、統合後のマテリアルを追加します。
+それぞれのマテリアルについて、統合対象のマテリアルを複数選択することが出来ます。
+&lt;code>統合対象を追加&lt;/code>をクリックするか、ドロップダウンメニューからマテリアルを選択してください。
+統合対象のマテリアルについて、テクスチャの配置場所を設定する必要があります。
+X, Y, W, Hの値を調整してテクスチャをお好みの位置にを合わせてください。
+&lt;code>プレビューを生成&lt;/code>をクリックすると、統合後のテクスチャのプレビューがそれぞれ生成されます。&lt;/p>
+&lt;p>&lt;img src="component.png" alt="component.png" />&lt;/p></description></item><item><title>Remove Mesh By BlendShape</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/remove-mesh-by-blendshape/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/remove-mesh-by-blendshape/</guid><description>&lt;h1 id="remove-mesh-by-blendshape">
+ Remove Mesh By BlendShape
+ &lt;a class="anchor" href="#remove-mesh-by-blendshape">#&lt;/a>
+&lt;/h1>
+&lt;p>指定されたBlendShapeによって動かされる頂点とそのポリゴンを削除します。&lt;/p>
+&lt;p>このコンポーネントは、SkinnedMeshRendererコンポーネントのあるGameObjectに追加してください。(分類: &lt;a href="../../component-kind/edit-skinned-mesh-components#modifying-component">Modifying Edit Skinned Mesh Component&lt;/a>)&lt;/p>
+&lt;h2 id="benefits">
+ 利点
+ &lt;a class="anchor" href="#benefits">#&lt;/a>
+&lt;/h2>
+&lt;p>服で隠れていたりして見えないような部分のメッシュを削除すると、見た目に影響させずに描画負荷やBlendShapeの処理負荷などを減らして軽量化することができます。&lt;/p>
+&lt;p>このコンポーネントを使用すると、多くの素体に含まれている貫通防止用のBlendShapeを利用して簡単にメッシュを削除することができます。&lt;/p>
+&lt;h2 id="settings">
+ 設定
+ &lt;a class="anchor" href="#settings">#&lt;/a>
+&lt;/h2>
+&lt;p>&lt;img src="component.png" alt="component.png" />&lt;/p>
+&lt;p>BlendShapeの一覧が表示されるので、BlendShapeを選択してください。
+もし選択されたBlendShapeが頂点を&lt;code>許容差&lt;/code>より大きく動かしていたら、その頂点を削除します。&lt;/p>
+&lt;p>消えて欲しい箇所が消えない場合は&lt;code>許容差&lt;/code>の値を大きく、
+消えて欲しくない箇所が消えてしまう場合は&lt;code>許容差&lt;/code>の値を小さくしましょう。&lt;/p>
+&lt;p>&lt;code>プレビューのために、切り替えたBlendShapeの値を自動的に変更する&lt;/code>を有効にすると、BlendShapeの指定を切り替えた時に、その値を自動的に100か0に設定します。&lt;/p></description></item><item><title>Remove Mesh By Box</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/remove-mesh-by-box/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/remove-mesh-by-box/</guid><description>&lt;h1 id="remove-mesh-by-box">
+ Remove Mesh By Box
+ &lt;a class="anchor" href="#remove-mesh-by-box">#&lt;/a>
+&lt;/h1>
+&lt;p>箱で指定した範囲のポリゴンを削除します。&lt;/p>
+&lt;p>このコンポーネントは、SkinnedMeshRendererコンポーネントのあるGameObjectに追加してください。(分類: &lt;a href="../../component-kind/edit-skinned-mesh-components#modifying-component">Modifying Edit Skinned Mesh Component&lt;/a>)&lt;/p>
+&lt;h2 id="benefits">
+ 利点
+ &lt;a class="anchor" href="#benefits">#&lt;/a>
+&lt;/h2>
+&lt;p>服で隠れていたりして見えないような部分のメッシュを削除すると、見た目に影響させずに描画負荷やBlendShapeの処理負荷などを減らして軽量化することができます。&lt;/p>
+&lt;h2 id="settings">
+ 設定
+ &lt;a class="anchor" href="#settings">#&lt;/a>
+&lt;/h2>
+&lt;h3 id="remove-polygons">
+ 削除するポリゴン
+ &lt;a class="anchor" href="#remove-polygons">#&lt;/a>
+&lt;/h3>
+&lt;p>箱の内側のポリゴンを削除するか、箱の外側のポリゴンを削除するかを選択することが出来ます。&lt;/p>
+&lt;h3 id="boxes">
+ 箱
+ &lt;a class="anchor" href="#boxes">#&lt;/a>
+&lt;/h3>
+&lt;p>ポリゴンを削除するための箱の一覧が表示されます。
+&lt;code>Boxes&lt;/code>の右側の数値を大きくすることで、箱を追加することが出来ます。&lt;/p>
+&lt;p>それぞれの箱について、中心位置、大きさ、角度を変更することが出来ます。(ローカル座標で指定します)&lt;/p>
+&lt;p>&lt;img src="component.png" alt="component.png" />&lt;/p>
+&lt;p>&lt;code>Edit This Box&lt;/code>をクリックすると下図のようなギズモを表示します。
+こちらから箱の位置、大きさ、角度を調整することも出来ます。&lt;/p>
+&lt;img src="gizmo.png" width="563">
+&lt;h2 id="Example">
+ 例
+ &lt;a class="anchor" href="#Example">#&lt;/a>
+&lt;/h2>
+&lt;p>上側の図にある箱の範囲内のメッシュが、下側の図のように削除されます。&lt;/p>
+&lt;img src="before.png" width="403">
+&lt;img src="after.png" width="403"></description></item><item><title>Remove Mesh By Mask</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/remove-mesh-by-mask/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/remove-mesh-by-mask/</guid><description>&lt;h1 id="remove-mesh-by-mask">
+ Remove Mesh By Mask
+ &lt;a class="anchor" href="#remove-mesh-by-mask">#&lt;/a>
+&lt;/h1>
+&lt;p>マスクテクスチャで指定した範囲のポリゴンを削除します。&lt;/p>
+&lt;p>このコンポーネントは、SkinnedMeshRendererコンポーネントのあるGameObjectに追加してください。(分類: &lt;a href="../../component-kind/edit-skinned-mesh-components#modifying-component">Modifying Edit Skinned Mesh Component&lt;/a>)&lt;/p>
+&lt;h2 id="benefits">
+ 利点
+ &lt;a class="anchor" href="#benefits">#&lt;/a>
+&lt;/h2>
+&lt;p>服で隠れていたりして見えないような部分のメッシュを削除すると、見た目に影響させずに描画負荷やBlendShapeの処理負荷などを減らして軽量化することができます。&lt;/p>
+&lt;p>このコンポーネントを使用すると、アルファマスク用のテクスチャや、gatosyocoraさんの&lt;a href="https://github.com/gatosyocora/MeshDeleterWithTexture">MeshDeleterWithTexture&lt;/a>用のマスクテクスチャを利用して簡単にメッシュを削除することができます。&lt;/p>
+&lt;h2 id="settings">
+ 設定
+ &lt;a class="anchor" href="#settings">#&lt;/a>
+&lt;/h2>
+&lt;p>&lt;img src="component.png" alt="component.png" />&lt;/p>
+&lt;p>メッシュのマテリアルスロットの一覧が表示されます。&lt;br>
+マスクテクスチャによるポリゴンの削除を行う対象のマテリアルスロットを選択してください。&lt;/p>
+&lt;h3 id="mask-texture">
+ マスクテクスチャ
+ &lt;a class="anchor" href="#mask-texture">#&lt;/a>
+&lt;/h3>
+&lt;p>ポリゴンの削除に利用するマスクテクスチャです。&lt;br>
+何もセットされていない場合は、「作成」ボタンをクリックしてテクスチャを新規作成することができます。&lt;/p>
+&lt;p>「編集」ボタンをクリックすると、マスクテクスチャエディターが開きます。&lt;/p>
+&lt;h3 id="remove-mode">
+ 削除モード
+ &lt;a class="anchor" href="#remove-mode">#&lt;/a>
+&lt;/h3>
+&lt;p>マスクテクスチャは物によって色が異なるため、対応するモードを選択する必要があります。&lt;/p>
+&lt;p>黒(に近い色)の場合にポリゴンを削除するように設計されているマスクテクスチャを利用する場合は、&lt;code>Remove Black&lt;/code>に設定してください。&lt;br>
+白(に近い色)の場合にポリゴンを削除するように設計されているマスクテクスチャを利用する場合は、&lt;code>Remove White&lt;/code>に設定してください。&lt;/p>
+&lt;h2 id="mask-texture-editor">
+ マスクテクスチャエディター
+ &lt;a class="anchor" href="#mask-texture-editor">#&lt;/a>
+&lt;/h2>
+&lt;p>&lt;img src="mask-editor.png" alt="mask-editor.png" />&lt;/p>
+&lt;p>このウィンドウでマスクテクスチャを編集することができます。&lt;/p>
+&lt;p>ウィンドウの上部には、編集中のマスクテクスチャに関する情報が表示されます。&lt;br>
+中央には、表示とブラシサイズについての設定が表示されます。&lt;br>
+ウィンドウの下部には、元のテクスチャ、マスクテクスチャ、メッシュのUVが表示されます。&lt;/p>
+&lt;p>マスクテクスチャを塗るには左ドラッグします。また、右ドラッグまたはShift + 左ドラッグでビューを移動することが出来ます。&lt;br>
+スクロールでズームイン/アウトが、Shift + スクロールでブラシサイズの変更が出来ます。&lt;/p></description></item><item><title>Remove Mesh By UV Tile</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/remove-mesh-by-uv-tile/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/remove-mesh-by-uv-tile/</guid><description>&lt;h1 id="remove-mesh-by-uv-tile">
+ Remove Mesh By UV Tile
+ &lt;a class="anchor" href="#remove-mesh-by-uv-tile">#&lt;/a>
+&lt;/h1>
+&lt;p>UVタイルで指定した範囲のポリゴンを削除します。&lt;/p>
+&lt;p>このコンポーネントは、SkinnedMeshRendererコンポーネントのあるGameObjectに追加してください。(分類: &lt;a href="../../component-kind/edit-skinned-mesh-components#modifying-component">Modifying Edit Skinned Mesh Component&lt;/a>)&lt;/p>
+&lt;h2 id="benefits">
+ 利点
+ &lt;a class="anchor" href="#benefits">#&lt;/a>
+&lt;/h2>
+&lt;p>服で隠れていたりして見えないような部分のメッシュを削除すると、見た目に影響させずに描画負荷やBlendShapeの処理負荷などを減らして軽量化することができます。&lt;/p>
+&lt;p>このコンポーネントを使用すると、PoiyomiやlilToonのUV Tile Discard機能を使用してモデルの一部が隠せるようになっている場合に、簡単にメッシュを削除することができます。&lt;br>
+これは、UV Tile DiscardのVertexモードのように動作します。&lt;/p>
+&lt;p>UV Tile Discardについての詳細は、&lt;a href="https://www.poiyomi.com/special-fx/uv-tile-discard">UV Tile DiscardについてのPoiyomiのドキュメント&lt;/a>をご参照ください。&lt;/p>
+&lt;p>なお、何らかの非破壊ツールを使用してモデルのUVタイリングを行っても問題ありません。&lt;/p>
+&lt;h2 id="settings">
+ 設定
+ &lt;a class="anchor" href="#settings">#&lt;/a>
+&lt;/h2>
+&lt;p>&lt;img src="component.png" alt="component.png" />&lt;/p>
+&lt;p>メッシュのマテリアルスロットの一覧が表示されます。
+削除を行う対象のUVタイルを選択してください。&lt;/p>
+&lt;p>UVタイル選択欄の上部で、UVチャンネルを指定することもできます。
+PoiyomiやlilToonのUV Tile Discard機能とは異なり、このコンポーネントではあらゆるUVチャンネルをUVタイル選択用のUVとして指定することができます。&lt;/p></description></item><item><title>Rename BlendShape</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/rename-blendshape/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/rename-blendshape/</guid><description>&lt;h1 id="rename-blendshape">
+ Rename BlendShape
+ &lt;a class="anchor" href="#rename-blendshape">#&lt;/a>
+&lt;/h1>
+&lt;p>メッシュのBlendShape名を変更することが出来ます。&lt;br>
+変更後の名前が重複している場合、それらは1つのBlendShapeへと統合されます。&lt;/p>
+&lt;p>このコンポーネントは、SkinnedMeshRendererコンポーネントのあるGameObjectに追加してください。(分類: &lt;a href="../../component-kind/edit-skinned-mesh-components#modifying-component">Modifying Edit Skinned Mesh Component&lt;/a>)&lt;/p>
+&lt;h2 id="Settings">
+ 設定
+ &lt;a class="anchor" href="#Settings">#&lt;/a>
+&lt;/h2>
+&lt;p>&lt;img src="component.png" alt="component.png" />&lt;/p>
+&lt;p>BlendShape名の変更一覧表が表示されます。
+右上の &amp;lsquo;+&amp;rsquo; ボタンから、名前を変更するBlendShapeを追加することが出来ます。&lt;/p>
+&lt;p>変更後の名前が重複している場合は、それらが統合されることを示すために、入力欄が黄色でハイライトされます。&lt;/p></description></item><item><title>Clear Endpoint Position</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/clear-endpoint-position/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/clear-endpoint-position/</guid><description>&lt;h1 id="clear-endpoint-position">
+ Clear Endpoint Position
+ &lt;a class="anchor" href="#clear-endpoint-position">#&lt;/a>
+&lt;/h1>
+&lt;p>このコンポーネントは、Endpoint Positionの値を0に置換し、&lt;code>_EndPhysBone&lt;/code>GameObjectを追加します。&lt;/p>
+&lt;p>このコンポーネントはPhysBoneコンポーネントがあるGameObjectに追加してください。&lt;/p>
+&lt;p>今のところ、このコンポーネントに設定項目はありませんが、ボタンが1つあります。
+&lt;code>適用して今すぐcomponentを削除する&lt;/code>をクリックすると、 この操作が適用され、コンポーネントが削除されます。
+アバターを制作するときに便利かもしれません。&lt;/p>
+&lt;p>&lt;img src="component.png" alt="component.png" />&lt;/p></description></item><item><title>Merge Bone</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/merge-bone/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/merge-bone/</guid><description>&lt;h1 id="merge-bone">
+ Merge Bone
+ &lt;a class="anchor" href="#merge-bone">#&lt;/a>
+&lt;/h1>
+&lt;blockquote class="book-hint info">
+ 
+
+[Trace And Optimize](../trace-and-optimize)が自動で同様の処理を行うため、大抵の場合、このコンポーネントを使用する必要はありません。
+
+
+&lt;/blockquote>
+
+&lt;p>このコンポーネントがGameObjectに付いている場合、そのGameObjectは親GameObjectに統合されて取り除かれます。
+また、統合対象にその他のコンポーネントが付属している場合はそれらも削除されます。&lt;/p>
+&lt;p>もし親のGameObjectにもMerge Boneコンポーネントが付いていた場合、2つのGameObjectはその更に親のGameObjectに統合されます。&lt;/p>
+&lt;p>このコンポーネントが付いているGameObjectの全ての子GameObjectは、その親GameObjectの子になります。&lt;/p>
+&lt;h2 id="settings">
+ 設定
+ &lt;a class="anchor" href="#settings">#&lt;/a>
+&lt;/h2>
+&lt;p>&lt;img src="component.png" alt="component.png" />&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>名前の競合を避ける&lt;/code>&lt;br>
+統合時に子GameObjectの名前を変更することで、名前の重複によってアニメーションが正しく動かなくなる問題を回避します。&lt;/li>
+&lt;/ul></description></item><item><title>Merge PhysBone</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/merge-physbone/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/merge-physbone/</guid><description>&lt;h1 id="merge-physbone">
+ Merge PhysBone (MergePB)
+ &lt;a class="anchor" href="#merge-physbone">#&lt;/a>
+&lt;/h1>
+&lt;p>このコンポーネントは、複数のPhysBoneコンポーネントを1つに統合します。
+MultiChildTypeはIgnoreになります。&lt;/p>
+&lt;p>このコンポーネントは新規GameObjectに追加してください。&lt;/p>
+&lt;h2 id="notes">
+ 備考
+ &lt;a class="anchor" href="#notes">#&lt;/a>
+&lt;/h2>
+&lt;p>統合対象は同じGameObjectの子である必要があります。
+代わりに&lt;code>このGameObjectの子にする&lt;/code>オプションを使用することも出来ます。&lt;/p>
+&lt;p>このコンポーネントは、PhysBoneのルートとなるGameObjectを新たに作成し、統合対象のPhysBoneによって揺らされるボーンを、作成したGameObjectの子にします。&lt;br>
+なお、ルートとなっているGameObjectも、PhysBoneによって影響を受けるボーンの1つとみなされるため、各Merge PhysBoneごとに&lt;code>PhysBone Affected Transforms&lt;/code>の数が1つ増えてしまいます。
+このコンポーネントによって追加されるGameObjectがPhysBoneによって揺らされることはないため、これはVRChatのPerformance Rankシステムのバグである可能性があります。&lt;/p>
+&lt;h2 id="settings">
+ 設定
+ &lt;a class="anchor" href="#settings">#&lt;/a>
+&lt;/h2>
+&lt;p>&lt;img src="component.png" alt="component.png" />&lt;/p>
+&lt;h3 id="make-children-of-me">
+ このGameObjectの子にする
+ &lt;a class="anchor" href="#make-children-of-me">#&lt;/a>
+&lt;/h3>
+&lt;p>チェックされている場合、統合対象のPhysBoneが揺らすボーンがこのGameObjectの子になるようにします。&lt;/p>
+&lt;h3 id="components">
+ コンポーネント
+ &lt;a class="anchor" href="#components">#&lt;/a>
+&lt;/h3>
+&lt;p>統合対象のPhysBoneコンポーネントの一覧です。&lt;/p>
+&lt;p>一番下の&amp;quot;None&amp;quot;と書いてある要素にドラッグ&amp;amp;ドロップすることにより対象を追加し、Noneに戻すことにより対象を一覧から取り除きます。&lt;/p>
+&lt;h3 id="overrides">
+ オーバーライド(上書き)
+ &lt;a class="anchor" href="#overrides">#&lt;/a>
+&lt;/h3>
+&lt;p>上記の設定項目の下は、PhysBoneの設定項目のようになっています。
+それぞれの項目について、統合対象の項目から値をコピーする場合は&lt;code>Copy&lt;/code>(すべての統合対象で値が同じ場合のみ有効)、
+代わりに新しい値を設定する場合は&lt;code>Override&lt;/code>を選択してください。&lt;/p>
+&lt;p>コライダーについては、&lt;code>Merge&lt;/code>を選択して統合対象のコライダー一覧を統合することができます。&lt;/p>
+&lt;p>Endpoint Positionについては、&lt;code>Clear&lt;/code>を選択して&lt;a href="../clear-endpoint-position">Clear Endpoint Position&lt;/a>を使用することができます。&lt;/p>
+&lt;p>角度制限では、&lt;code>Fix&lt;/code>を選択することで、ボーンに対する捻るような回転(Roll)の値を自動で揃えられます。
+これにより、Rollの値だけが異なっているような場合に角度制限を纏めて適用することができます。&lt;/p></description></item><item><title>Remove Zero Sized Polygon</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/remove-zero-sized-polygon/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/remove-zero-sized-polygon/</guid><description>&lt;h1 id="remove-zero-sized-polygon">
+ Remove Zero Sized Polygon
+ &lt;a class="anchor" href="#remove-zero-sized-polygon">#&lt;/a>
+&lt;/h1>
+&lt;p>面積がゼロのポリゴンを削除します。&lt;/p>
+&lt;p>このコンポーネントは、SkinnedMeshRendererコンポーネントのあるGameObjectに追加してください。&lt;/p>
+&lt;blockquote class="book-hint warning">
+ 
+
+このコンポーネントはビルドの最後の方で実行されるため、[Modifying Edit Skinned Mesh Component](../../component-kind/edit-skinned-mesh-components#modifying-component) では**ありません**。
+
+このコンポーネントを[Merge Skinned Mesh](../merge-skinned-mesh)の統合対象となるSkinnedMeshRendererに追加しても効果がありません。
+
+
+&lt;/blockquote>
+
+&lt;h2 id="benefits">
+ 利点
+ &lt;a class="anchor" href="#benefits">#&lt;/a>
+&lt;/h2>
+&lt;p>面積がゼロのポリゴンを削除することで、描画負荷を減らすことができます。
+見た目に影響を与えることはほとんどありません。&lt;/p>
+&lt;h2 id="notes">
+ 備考
+ &lt;a class="anchor" href="#notes">#&lt;/a>
+&lt;/h2>
+&lt;p>モデルファイルでのポリゴンの大きさがゼロであっても、シェーダーによって何かを描画していることがあるため、見た目に影響が出ることがあります。&lt;/p>
+&lt;h2 id="settings">
+ 設定
+ &lt;a class="anchor" href="#settings">#&lt;/a>
+&lt;/h2>
+&lt;p>今のところ、このコンポーネントに設定項目はありません。&lt;/p>
+&lt;p>&lt;img src="component.png" alt="component.png" />&lt;/p>
+&lt;h2 id="notes">
+ 備考
+ &lt;a class="anchor" href="#notes">#&lt;/a>
+&lt;/h2>
+&lt;p>このコンポーネントは&lt;a href="../trace-and-optimize">Trace and Optimize&lt;/a>コンポーネントによって自動的に追加されます。
+このコンポーネントを手動で追加するよりも、Trace and Optimizeを使うことをお勧めします。&lt;/p></description></item><item><title>Make Children</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/make-children/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/make-children/</guid><description>&lt;h1 id="make-children">
+ Make Children
+ &lt;a class="anchor" href="#make-children">#&lt;/a>
+&lt;/h1>
+&lt;p>ビルド時に、指定されたGameObjectをこのGameObjectの子にします。&lt;/p>
+&lt;blockquote class="book-hint warning">
+ 
+
 このコンポーネントは非推奨です。
-この機能はアバターの最適化と関係がないため、今後製作予定の非破壊アバター改変ユーティリティのコンポーネントに置き換えられる予定です。</description></item></channel></rss>
+
+この機能はアバターの最適化と関係がないため、今後製作予定の非破壊アバター改変ユーティリティのコンポーネントに置き換えられる予定です。
+
+
+&lt;/blockquote>
+
+&lt;p>&lt;img src="component.png" alt="component.png" />&lt;/p></description></item></channel></rss>

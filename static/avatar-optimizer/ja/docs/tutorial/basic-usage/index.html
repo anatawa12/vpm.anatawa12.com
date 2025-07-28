@@ -1,42 +1,106 @@
-<!doctype html><html lang=en-us dir=ltr><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="基本的な使い方 # 自動最適化を使用する # アバターには自動的に行える最適化がいくつかあります。
+<!doctype html><html lang=ja dir=ltr><head><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="
+  基本的な使い方
+  #
+
+
+  自動最適化を使用する
+  #
+
+アバターには自動的に行える最適化がいくつかあります。
+
+使用していないBlendShape(シェイプキー)1の除去
+
+BlendShapeの値が0以外のときは処理負荷が発生するため、値をアニメーション等で変更しないBlendShapeは固定すると負荷が軽くなります。
+値が常に0である場合でも、固定することでアバターの容量を削減することができます。
+
+
+使われていないPhysBone等の削除
+
+揺らす対象として存在するメッシュ2が常に無効になっているPhysBoneなどのように、揺らす必要のないPhysBoneが有効になっている場合は計算負荷が余分に発生してしまいます。
+
+
+アニメーションしたりPhysBoneで揺らしたりすることのないボーンの統合
+
+服のボーンを素体のボーンに入れ子状にして着せるような場合には、それ自身を動かすことがないボーンが多く発生します。そのようなボーンは余分な負荷を発生させてしまいます。
+
+
+一緒に切り替えていたり、切り替えることがなかったりするメッシュ同士の統合
+
+アバターに服が1着しかない場合、体、髪、服などを別々のメッシュにしておく必要はないかもしれません。
+切り替え可能な複数の服がある場合でも、体、髪、下着などを別々のメッシュにしておく必要はないかもしれません。
+
+
+
+AvatarOptimizerでは、アバターのルートにAAO Trace And Optimizeコンポーネントを追加するだけで、これらの最適化を自動で行うことができます！
+
+
+  アバターをアップロードする
+  #
+
+AAO Trace and Optimizeコンポーネントを付けた状態で、試しにアバターをアップロードしてみましょう！
+AAO: Avatar Optimizerは非破壊改変ツールであり、Playモードに入るときかアバターをビルドするときに処理が行われるため、アップロードを行うのに特別な手順は必要ありません。
+通常と同じように、VRCSDKのControl Panelからアバターをアップロードしてください。
+ただし、Android(Quest)向けアップロードを行う場合などにおいて、Avatar Optimizerの最適化等によって制限の範囲内に収まるにも関わらず、 VRCSDKのビルド前チェックの時点で制限を超過していてアップロードボタンが押せない場合があります。
+ビルド前チェックをスキップする方法はいくつかあります。詳しくはよくある質問を参照してください。
+
+  
+
+### UploadせずにPerformance Rankを見る方法 {#performance-rank-without-upload}
+
+非破壊改変ツールを使用した改変では、VRCSDKのControl Panel上のPerformance Rankはあてにならなくなります。
+
+その代わりとして、Playモードに入った際のPerformance Rankをanatawa12's Gist PackのActual Performance Windowを使用して確認することができます。
+詳しくは[anatawa12's Gist Packの使い方][gists-basic-usage]および[Actual Performance Windowのドキュメント][Actual Performance Window]を参照してください。
+
+[gists-basic-usage]: https://vpm.anatawa12.com/gists/ja/docs/basic-usage/
+[Actual Performance Window]: https://vpm.anatawa12.com/gists/ja/docs/reference/actual-performance-window/
+
+
+
+
+
+  
+
+### 非破壊改変ツールを手動で適用する方法 {#how-to-manual-bake}
+
+アバターのGameObjectを右クリックして出てくるメニューの`NDM Framework`から`Manual bake avatar`をクリックすると、非破壊ツールによる処理を手動で適用することができます。
+
+`Manual bake avatar`は初めにアバターを複製し、その複製に対して非破壊ツールの処理を適用させるため、元のアバターは変更されないままになります。
+
+VRChat向けアバターをVRM形式で出力したい場合などにご活用ください。
+
+
+
+
+
+  貫通防止用BlendShapeを利用してポリゴンを減らす
+  #
+
+服で隠れていたりして見えないような部分のメッシュを削除すると、見た目に影響させずに描画負荷やBlendShapeの処理負荷などを減らして軽量化することができます。
+これを簡単に実現するために、AvatarOptimizerでは多くの素体に含まれている貫通防止用のBlendShapeを利用してメッシュを削除することができます！"><meta name=theme-color media="(prefers-color-scheme: light)" content="#ffffff"><meta name=theme-color media="(prefers-color-scheme: dark)" content="#343a40"><meta name=color-scheme content="light dark"><meta property="og:url" content="https://vpm.anatawa12.com/avatar-optimizer/ja/docs/tutorial/basic-usage/"><meta property="og:site_name" content="Avatar Optimizer (1.8.13)"><meta property="og:title" content="基本的な使い方"><meta property="og:description" content="基本的な使い方 # 自動最適化を使用する # アバターには自動的に行える最適化がいくつかあります。
 使用していないBlendShape(シェイプキー)1の除去 BlendShapeの値が0以外のときは処理負荷が発生するため、値をアニメーション等で変更しないBlendShapeは固定すると負荷が軽くなります。 値が常に0である場合でも、固定することでアバターの容量を削減することができます。 使われていないPhysBone等の削除 揺らす対象として存在するメッシュ2が常に無効になっているPhysBoneなどのように、揺らす必要のないPhysBoneが有効になっている場合は計算負荷が余分に発生してしまいます。 アニメーションしたりPhysBoneで揺らしたりすることのないボーンの統合 服のボーンを素体のボーンに入れ子状にして着せるような場合には、それ自身を動かすことがないボーンが多く発生します。そのようなボーンは余分な負荷を発生させてしまいます。 一緒に切り替えていたり、切り替えることがなかったりするメッシュ同士の統合 アバターに服が1着しかない場合、体、髪、服などを別々のメッシュにしておく必要はないかもしれません。 切り替え可能な複数の服がある場合でも、体、髪、下着などを別々のメッシュにしておく必要はないかもしれません。 AvatarOptimizerでは、アバターのルートにAAO Trace And Optimizeコンポーネントを追加するだけで、これらの最適化を自動で行うことができます！
 アバターをアップロードする # AAO Trace and Optimizeコンポーネントを付けた状態で、試しにアバターをアップロードしてみましょう！ AAO: Avatar Optimizerは非破壊改変ツールであり、Playモードに入るときかアバターをビルドするときに処理が行われるため、アップロードを行うのに特別な手順は必要ありません。 通常と同じように、VRCSDKのControl Panelからアバターをアップロードしてください。
 ただし、Android(Quest)向けアップロードを行う場合などにおいて、Avatar Optimizerの最適化等によって制限の範囲内に収まるにも関わらず、 VRCSDKのビルド前チェックの時点で制限を超過していてアップロードボタンが押せない場合があります。
 ビルド前チェックをスキップする方法はいくつかあります。詳しくはよくある質問を参照してください。
-UploadせずにPerformance Rankを見る方法 # 非破壊改変ツールを使用した改変では、VRCSDKのControl Panel上のPerformance Rankはあてにならなくなります。
-その代わりとして、Playモードに入った際のPerformance Rankをanatawa12&rsquo;s Gist PackのActual Performance Windowを使用して確認することができます。 詳しくはanatawa12&rsquo;s Gist Packの使い方およびActual Performance Windowのドキュメントを参照してください。
-非破壊改変ツールを手動で適用する方法 # アバターのGameObjectを右クリックして出てくるメニューのNDM FrameworkからManual bake avatarをクリックすると、非破壊ツールによる処理を手動で適用することができます。
-Manual bake avatarは初めにアバターを複製し、その複製に対して非破壊ツールの処理を適用させるため、元のアバターは変更されないままになります。
-VRChat向けアバターをVRM形式で出力したい場合などにご活用ください。
-貫通防止用BlendShapeを利用してポリゴンを減らす # 服で隠れていたりして見えないような部分のメッシュを削除すると、見た目に影響させずに描画負荷やBlendShapeの処理負荷などを減らして軽量化することができます。 これを簡単に実現するために、AvatarOptimizerでは多くの素体に含まれている貫通防止用のBlendShapeを利用してメッシュを削除することができます！
-素体のメッシュにAAO Remove Mesh By BlendShapeコンポーネントを追加して、削除したい部位の貫通防止用BlendShapeをコンポーネント下側の一覧から選択しましょう！"><meta name=theme-color content="#FFFFFF"><meta name=color-scheme content="light dark"><meta property="og:title" content="基本的な使い方"><meta property="og:description" content="基本的な使い方 # 自動最適化を使用する # アバターには自動的に行える最適化がいくつかあります。
-使用していないBlendShape(シェイプキー)1の除去 BlendShapeの値が0以外のときは処理負荷が発生するため、値をアニメーション等で変更しないBlendShapeは固定すると負荷が軽くなります。 値が常に0である場合でも、固定することでアバターの容量を削減することができます。 使われていないPhysBone等の削除 揺らす対象として存在するメッシュ2が常に無効になっているPhysBoneなどのように、揺らす必要のないPhysBoneが有効になっている場合は計算負荷が余分に発生してしまいます。 アニメーションしたりPhysBoneで揺らしたりすることのないボーンの統合 服のボーンを素体のボーンに入れ子状にして着せるような場合には、それ自身を動かすことがないボーンが多く発生します。そのようなボーンは余分な負荷を発生させてしまいます。 一緒に切り替えていたり、切り替えることがなかったりするメッシュ同士の統合 アバターに服が1着しかない場合、体、髪、服などを別々のメッシュにしておく必要はないかもしれません。 切り替え可能な複数の服がある場合でも、体、髪、下着などを別々のメッシュにしておく必要はないかもしれません。 AvatarOptimizerでは、アバターのルートにAAO Trace And Optimizeコンポーネントを追加するだけで、これらの最適化を自動で行うことができます！
-アバターをアップロードする # AAO Trace and Optimizeコンポーネントを付けた状態で、試しにアバターをアップロードしてみましょう！ AAO: Avatar Optimizerは非破壊改変ツールであり、Playモードに入るときかアバターをビルドするときに処理が行われるため、アップロードを行うのに特別な手順は必要ありません。 通常と同じように、VRCSDKのControl Panelからアバターをアップロードしてください。
-ただし、Android(Quest)向けアップロードを行う場合などにおいて、Avatar Optimizerの最適化等によって制限の範囲内に収まるにも関わらず、 VRCSDKのビルド前チェックの時点で制限を超過していてアップロードボタンが押せない場合があります。
-ビルド前チェックをスキップする方法はいくつかあります。詳しくはよくある質問を参照してください。
-UploadせずにPerformance Rankを見る方法 # 非破壊改変ツールを使用した改変では、VRCSDKのControl Panel上のPerformance Rankはあてにならなくなります。
-その代わりとして、Playモードに入った際のPerformance Rankをanatawa12&rsquo;s Gist PackのActual Performance Windowを使用して確認することができます。 詳しくはanatawa12&rsquo;s Gist Packの使い方およびActual Performance Windowのドキュメントを参照してください。
-非破壊改変ツールを手動で適用する方法 # アバターのGameObjectを右クリックして出てくるメニューのNDM FrameworkからManual bake avatarをクリックすると、非破壊ツールによる処理を手動で適用することができます。
-Manual bake avatarは初めにアバターを複製し、その複製に対して非破壊ツールの処理を適用させるため、元のアバターは変更されないままになります。
-VRChat向けアバターをVRM形式で出力したい場合などにご活用ください。
-貫通防止用BlendShapeを利用してポリゴンを減らす # 服で隠れていたりして見えないような部分のメッシュを削除すると、見た目に影響させずに描画負荷やBlendShapeの処理負荷などを減らして軽量化することができます。 これを簡単に実現するために、AvatarOptimizerでは多くの素体に含まれている貫通防止用のBlendShapeを利用してメッシュを削除することができます！
-素体のメッシュにAAO Remove Mesh By BlendShapeコンポーネントを追加して、削除したい部位の貫通防止用BlendShapeをコンポーネント下側の一覧から選択しましょう！"><meta property="og:type" content="article"><meta property="og:url" content="https://vpm.anatawa12.com/avatar-optimizer/ja/docs/tutorial/basic-usage/"><meta property="article:section" content="docs"><meta property="og:site_name" content="Avatar Optimizer Official Docs"><title>基本的な使い方 | Avatar Optimizer (1.8.12)</title><link rel=manifest href=/avatar-optimizer/manifest.json><link rel=icon href=/avatar-optimizer/favicon.png type=image/x-icon><link rel=alternate hreflang=en-us href=https://vpm.anatawa12.com/avatar-optimizer/en/docs/tutorial/basic-usage/ title="Basic Usage"><link rel=stylesheet href=/avatar-optimizer/book.min.7b9a6c829681a6f349ea50c244bb8941dd0ef4a3d98496b358f7678d3591e8c1.css integrity="sha256-e5psgpaBpvNJ6lDCRLuJQd0O9KPZhJazWPdnjTWR6ME=" crossorigin=anonymous><script defer src=/avatar-optimizer/flexsearch.min.js></script>
-<script defer src=/avatar-optimizer/ja.search.min.2ab52480a51736c4ebbe6957a5e25dc7b27e96bd891c03c37527401cce38c737.js integrity="sha256-KrUkgKUXNsTrvmlXpeJdx7J+lr2JHAPDdSdAHM44xzc=" crossorigin=anonymous></script></head><body dir=ltr><input type=checkbox class="hidden toggle" id=menu-control>
-<input type=checkbox class="hidden toggle" id=toc-control><main class="container flex"><aside class=book-menu><div class=book-menu-content><nav><h2 class=book-brand><a class="flex align-center" href=/avatar-optimizer/ja/><span>Avatar Optimizer (1.8.12)</span></a></h2><div class=book-search><input type=text id=book-search-input placeholder=検索 aria-label=検索 maxlength=64 data-hotkeys=s/><div class="book-search-spinner hidden"></div><ul id=book-search-results></ul></div><ul class=book-languages><li><input type=checkbox id=languages class=toggle>
+### UploadせずにPerformance Rankを見る方法 {#performance-rank-without-upload} 非破壊改変ツールを使用した改変では、VRCSDKのControl Panel上のPerformance Rankはあてにならなくなります。 その代わりとして、Playモードに入った際のPerformance Rankをanatawa12's Gist PackのActual Performance Windowを使用して確認することができます。 詳しくは[anatawa12's Gist Packの使い方][gists-basic-usage]および[Actual Performance Windowのドキュメント][Actual Performance Window]を参照してください。 [gists-basic-usage]: https://vpm.anatawa12.com/gists/ja/docs/basic-usage/ [Actual Performance Window]: https://vpm.anatawa12.com/gists/ja/docs/reference/actual-performance-window/ ### 非破壊改変ツールを手動で適用する方法 {#how-to-manual-bake} アバターのGameObjectを右クリックして出てくるメニューの`NDM Framework`から`Manual bake avatar`をクリックすると、非破壊ツールによる処理を手動で適用することができます。 `Manual bake avatar`は初めにアバターを複製し、その複製に対して非破壊ツールの処理を適用させるため、元のアバターは変更されないままになります。 VRChat向けアバターをVRM形式で出力したい場合などにご活用ください。 貫通防止用BlendShapeを利用してポリゴンを減らす # 服で隠れていたりして見えないような部分のメッシュを削除すると、見た目に影響させずに描画負荷やBlendShapeの処理負荷などを減らして軽量化することができます。 これを簡単に実現するために、AvatarOptimizerでは多くの素体に含まれている貫通防止用のBlendShapeを利用してメッシュを削除することができます！"><meta property="og:locale" content="ja"><meta property="og:type" content="article"><meta property="article:section" content="docs"><title>基本的な使い方 | Avatar Optimizer (1.8.13)</title><link rel=icon href=/avatar-optimizer/favicon.png><link rel=manifest href=/avatar-optimizer/manifest.json><link rel=canonical href=https://vpm.anatawa12.com/avatar-optimizer/ja/docs/tutorial/basic-usage/><link rel=alternate hreflang=en href=https://vpm.anatawa12.com/avatar-optimizer/en/docs/tutorial/basic-usage/ title="Basic Usage"><link rel=stylesheet href=/avatar-optimizer/book.min.60113a8b97a3ffc03c87f522a46a7f47cc2ab4570776eaf10e1f2527b80e37f4.css integrity="sha256-YBE6i5ej/8A8h/UipGp/R8wqtFcHdurxDh8lJ7gON/Q=" crossorigin=anonymous><script defer src=/avatar-optimizer/fuse.min.js></script><script defer src=/avatar-optimizer/ja.search.min.198044581ab7f68213ced918612e7fd4d4444e46f1fa87ff0b4ec32edfe3776d.js integrity="sha256-GYBEWBq39oITztkYYS5/1NRETkbx+of/C07DLt/jd20=" crossorigin=anonymous></script></head><body dir=ltr><input type=checkbox class="hidden toggle" id=menu-control>
+<input type=checkbox class="hidden toggle" id=toc-control><main class="container flex"><aside class=book-menu><div class=book-menu-content><nav><h2 class=book-brand><a class="flex align-center" href=/avatar-optimizer/ja/><span>Avatar Optimizer (1.8.13)</span></a></h2><div class="book-search hidden"><input type=text id=book-search-input placeholder=検索 aria-label=検索 maxlength=64 data-hotkeys=s/><div class="book-search-spinner hidden"></div><ul id=book-search-results></ul></div><script>document.querySelector(".book-search").classList.remove("hidden")</script><ul class=book-languages><li><input type=checkbox id=languages class=toggle>
 <label for=languages class="flex justify-between"><a role=button class="flex align-center"><img src=/avatar-optimizer/svg/translate.svg class=book-icon alt=Languages>
-日本語</a></label><ul><li><a href=https://vpm.anatawa12.com/avatar-optimizer/en/docs/tutorial/basic-usage/>English</a></li></ul></li></ul><ul><li><a class=ao-stable-beta href=https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/tutorial/basic-usage/>Goto Beta Docs</a></li><li><a class=ao-stable-beta href=https://vpm.anatawa12.com/avatar-optimizer/ja/#installation>インストール方法</a></li></ul><ul><li class=book-section-flat><span>チュートリアル</span><ul><li><a href=/avatar-optimizer/ja/docs/tutorial/basic-usage/ class=active>基本的な使い方</a></li></ul></li><li><a href=/avatar-optimizer/ja/docs/basic-concept/>基本コンセプト</a></li><li><a href=/avatar-optimizer/ja/docs/faq/>よくある質問</a></li><li><a href=/avatar-optimizer/ja/docs/changelog/>Changelog</a></li><li class=book-section-flat><span>コンポーネントの種類</span><ul><li><a href=/avatar-optimizer/ja/docs/component-kind/avatar-global-components/>Avatar Global Components</a></li><li><a href=/avatar-optimizer/ja/docs/component-kind/edit-skinned-mesh-components/>Edit Skinned Mesh Components</a></li></ul></li><li class=book-section-flat><span>コンポーネントの詳細説明</span><ul><li><a href=/avatar-optimizer/ja/docs/reference/trace-and-optimize/>Trace And Optimize</a></li><li><a href=/avatar-optimizer/ja/docs/reference/unused-bones-by-references-tool/>UnusedBonesByReferencesTool</a></li><li><a href=/avatar-optimizer/ja/docs/reference/merge-skinned-mesh/>Merge Skinned Mesh</a></li><li><a href=/avatar-optimizer/ja/docs/reference/freeze-blendshape/>Freeze BlendShape</a></li><li><a href=/avatar-optimizer/ja/docs/reference/merge-toonlit-material/>Merge ToonLit Material</a></li><li><a href=/avatar-optimizer/ja/docs/reference/remove-mesh-by-blendshape/>Remove Mesh By BlendShape</a></li><li><a href=/avatar-optimizer/ja/docs/reference/remove-mesh-by-box/>Remove Mesh By Box</a></li><li><a href=/avatar-optimizer/ja/docs/reference/remove-mesh-by-mask/>Remove Mesh By Mask</a></li><li><a href=/avatar-optimizer/ja/docs/reference/remove-mesh-by-uv-tile/>Remove Mesh By UV Tile</a></li><li><a href=/avatar-optimizer/ja/docs/reference/rename-blendshape/>Rename BlendShape</a></li><li><a href=/avatar-optimizer/ja/docs/reference/clear-endpoint-position/>Clear Endpoint Position</a></li><li><a href=/avatar-optimizer/ja/docs/reference/merge-bone/>Merge Bone</a></li><li><a href=/avatar-optimizer/ja/docs/reference/merge-physbone/>Merge PhysBone</a></li><li><a href=/avatar-optimizer/ja/docs/reference/remove-zero-sized-polygon/>Remove Zero Sized Polygon</a></li><li><a href=/avatar-optimizer/ja/docs/reference/make-children/>Make Children</a></li></ul></li><li class=book-section-flat><span>開発者向け</span><ul><li><a href=/avatar-optimizer/ja/docs/developers/asset-description/>Asset Description</a></li><li><a href=/avatar-optimizer/ja/docs/developers/component-api/>Component Scripting API</a></li><li><a href=/avatar-optimizer/ja/docs/developers/distributing-prefabs/>アセットの配布について</a></li><li><a href=/avatar-optimizer/ja/docs/developers/make-your-components-compatible-with-aao/>コンポーネントにAvatar Optimizerとの互換性をもたせる</a></li></ul></li></ul><ul><li class=book-section-flat><span>Blog Posts</span><ul><li><a href=/avatar-optimizer/ja/posts/2024-06-27-one-year-since-stable-release/>v1.0.0一周年を記念してちょっと歴史を振り返る</a></li></ul></li></ul></nav><script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script></div></aside><div class=book-page><header class=book-header><div class="flex align-center justify-between"><label for=menu-control><img src=/avatar-optimizer/svg/menu.svg class=book-icon alt=Menu></label>
-<strong>基本的な使い方</strong>
-<label for=toc-control><img src=/avatar-optimizer/svg/toc.svg class=book-icon alt="Table of Contents"></label></div><aside class="hidden clearfix"><nav id=TableOfContents><ul><li><a href=#trace-and-optimize>自動最適化を使用する</a></li><li><a href=#upload-avatar>アバターをアップロードする</a></li><li><a href=#remove-mesh-by-blendshape>貫通防止用BlendShapeを利用してポリゴンを減らす</a></li></ul></nav></aside></header><article class=markdown><h1 id=基本的な使い方>基本的な使い方
+日本語</a></label><ul><li><a href=/avatar-optimizer/en/docs/tutorial/basic-usage/>English</a></li></ul></li></ul><ul><li><a class=ao-stable-beta href=https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/tutorial/basic-usage/>Goto Beta Docs</a></li><li><a class=ao-stable-beta href=https://vpm.anatawa12.com/avatar-optimizer/ja/#installation>インストール方法</a></li></ul><ul><li class=book-section-flat><span>チュートリアル</span><ul><li><a href=/avatar-optimizer/ja/docs/tutorial/basic-usage/ class=active>基本的な使い方</a></li></ul></li><li><a href=/avatar-optimizer/ja/docs/basic-concept/>基本コンセプト</a></li><li><a href=/avatar-optimizer/ja/docs/faq/>よくある質問</a></li><li><a href=/avatar-optimizer/ja/docs/changelog/>Changelog</a></li><li class=book-section-flat><span>コンポーネントの種類</span><ul><li><a href=/avatar-optimizer/ja/docs/component-kind/avatar-global-components/>Avatar Global Components</a></li><li><a href=/avatar-optimizer/ja/docs/component-kind/edit-skinned-mesh-components/>Edit Skinned Mesh Components</a></li></ul></li><li class=book-section-flat><span>コンポーネントの詳細説明</span><ul><li><a href=/avatar-optimizer/ja/docs/reference/trace-and-optimize/>Trace And Optimize</a></li><li><a href=/avatar-optimizer/ja/docs/reference/unused-bones-by-references-tool/>UnusedBonesByReferencesTool</a></li><li><a href=/avatar-optimizer/ja/docs/reference/merge-skinned-mesh/>Merge Skinned Mesh</a></li><li><a href=/avatar-optimizer/ja/docs/reference/freeze-blendshape/>Freeze BlendShape</a></li><li><a href=/avatar-optimizer/ja/docs/reference/merge-toonlit-material/>Merge ToonLit Material</a></li><li><a href=/avatar-optimizer/ja/docs/reference/remove-mesh-by-blendshape/>Remove Mesh By BlendShape</a></li><li><a href=/avatar-optimizer/ja/docs/reference/remove-mesh-by-box/>Remove Mesh By Box</a></li><li><a href=/avatar-optimizer/ja/docs/reference/remove-mesh-by-mask/>Remove Mesh By Mask</a></li><li><a href=/avatar-optimizer/ja/docs/reference/remove-mesh-by-uv-tile/>Remove Mesh By UV Tile</a></li><li><a href=/avatar-optimizer/ja/docs/reference/rename-blendshape/>Rename BlendShape</a></li><li><a href=/avatar-optimizer/ja/docs/reference/clear-endpoint-position/>Clear Endpoint Position</a></li><li><a href=/avatar-optimizer/ja/docs/reference/merge-bone/>Merge Bone</a></li><li><a href=/avatar-optimizer/ja/docs/reference/merge-physbone/>Merge PhysBone</a></li><li><a href=/avatar-optimizer/ja/docs/reference/remove-zero-sized-polygon/>Remove Zero Sized Polygon</a></li><li><a href=/avatar-optimizer/ja/docs/reference/make-children/>Make Children</a></li></ul></li><li class=book-section-flat><span>開発者向け</span><ul><li><a href=/avatar-optimizer/ja/docs/developers/asset-description/>Asset Description</a></li><li><a href=/avatar-optimizer/ja/docs/developers/component-api/>Component Scripting API</a></li><li><a href=/avatar-optimizer/ja/docs/developers/distributing-prefabs/>アセットの配布について</a></li><li><a href=/avatar-optimizer/ja/docs/developers/make-your-components-compatible-with-aao/>コンポーネントにAvatar Optimizerとの互換性をもたせる</a></li></ul></li></ul><ul><li class=book-section-flat><span>Blog Posts</span><ul><li><a href=/avatar-optimizer/ja/posts/2024-06-27-one-year-since-stable-release/>v1.0.0一周年を記念してちょっと歴史を振り返る</a></li></ul></li></ul></nav><script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script></div></aside><div class=book-page><header class=book-header><div class="flex align-center justify-between"><label for=menu-control><img src=/avatar-optimizer/svg/menu.svg class=book-icon alt=Menu></label><h3>基本的な使い方</h3><label for=toc-control><img src=/avatar-optimizer/svg/toc.svg class=book-icon alt="Table of Contents"></label></div><aside class="hidden clearfix"><nav id=TableOfContents><ul><li><a href=#trace-and-optimize>自動最適化を使用する</a></li><li><a href=#upload-avatar>アバターをアップロードする</a></li><li><a href=#remove-mesh-by-blendshape>貫通防止用BlendShapeを利用してポリゴンを減らす</a></li></ul></nav></aside></header><article class="markdown book-article"><h1 id=基本的な使い方>基本的な使い方
 <a class=anchor href=#%e5%9f%ba%e6%9c%ac%e7%9a%84%e3%81%aa%e4%bd%bf%e3%81%84%e6%96%b9>#</a></h1><h2 id=trace-and-optimize>自動最適化を使用する
 <a class=anchor href=#trace-and-optimize>#</a></h2><p>アバターには自動的に行える最適化がいくつかあります。</p><ul><li>使用していないBlendShape(シェイプキー)<sup id=fnref:1><a href=#fn:1 class=footnote-ref role=doc-noteref>1</a></sup>の除去<ul><li>BlendShapeの値が0以外のときは処理負荷が発生するため、値をアニメーション等で変更しないBlendShapeは固定すると負荷が軽くなります。</li><li>値が常に0である場合でも、固定することでアバターの容量を削減することができます。</li></ul></li><li>使われていないPhysBone等の削除<ul><li>揺らす対象として存在するメッシュ<sup id=fnref:2><a href=#fn:2 class=footnote-ref role=doc-noteref>2</a></sup>が常に無効になっているPhysBoneなどのように、揺らす必要のないPhysBoneが有効になっている場合は計算負荷が余分に発生してしまいます。</li></ul></li><li>アニメーションしたりPhysBoneで揺らしたりすることのないボーンの統合<ul><li>服のボーンを素体のボーンに入れ子状にして着せるような場合には、それ自身を動かすことがないボーンが多く発生します。そのようなボーンは余分な負荷を発生させてしまいます。</li></ul></li><li>一緒に切り替えていたり、切り替えることがなかったりするメッシュ同士の統合<ul><li>アバターに服が1着しかない場合、体、髪、服などを別々のメッシュにしておく必要はないかもしれません。</li><li>切り替え可能な複数の服がある場合でも、体、髪、下着などを別々のメッシュにしておく必要はないかもしれません。</li></ul></li></ul><p>AvatarOptimizerでは、アバターのルートに<code>AAO Trace And Optimize</code>コンポーネントを追加するだけで、これらの最適化を自動で行うことができます！</p><p><img src=add-trace-and-optimize.png alt=add-trace-and-optimize.png></p><h2 id=upload-avatar>アバターをアップロードする
 <a class=anchor href=#upload-avatar>#</a></h2><p><code>AAO Trace and Optimize</code>コンポーネントを付けた状態で、試しにアバターをアップロードしてみましょう！
 AAO: Avatar Optimizerは非破壊改変ツールであり、Playモードに入るときかアバターをビルドするときに処理が行われるため、アップロードを行うのに特別な手順は必要ありません。
-通常と同じように、VRCSDKのControl Panelからアバターをアップロードしてください。</p><p>ただし、Android(Quest)向けアップロードを行う場合などにおいて、Avatar Optimizerの最適化等によって制限の範囲内に収まるにも関わらず、 VRCSDKのビルド前チェックの時点で制限を超過していてアップロードボタンが押せない場合があります。<br>ビルド前チェックをスキップする方法はいくつかあります。詳しくは<a href=../../faq/#i-cannot-upload-the-avatar-because-of-pre-build-hard-limit-check>よくある質問</a>を参照してください。</p><blockquote class="book-hint info"><h3 id=performance-rank-without-upload>UploadせずにPerformance Rankを見る方法
-<a class=anchor href=#performance-rank-without-upload>#</a></h3><p>非破壊改変ツールを使用した改変では、VRCSDKのControl Panel上のPerformance Rankはあてにならなくなります。</p><p>その代わりとして、Playモードに入った際のPerformance Rankをanatawa12&rsquo;s Gist PackのActual Performance Windowを使用して確認することができます。
-詳しくは<a href=https://vpm.anatawa12.com/gists/ja/docs/basic-usage/>anatawa12&rsquo;s Gist Packの使い方</a>および<a href=https://vpm.anatawa12.com/gists/ja/docs/reference/actual-performance-window/>Actual Performance Windowのドキュメント</a>を参照してください。</p></blockquote><blockquote class="book-hint info"><h3 id=how-to-manual-bake>非破壊改変ツールを手動で適用する方法
-<a class=anchor href=#how-to-manual-bake>#</a></h3><p>アバターのGameObjectを右クリックして出てくるメニューの<code>NDM Framework</code>から<code>Manual bake avatar</code>をクリックすると、非破壊ツールによる処理を手動で適用することができます。</p><p><code>Manual bake avatar</code>は初めにアバターを複製し、その複製に対して非破壊ツールの処理を適用させるため、元のアバターは変更されないままになります。</p><p>VRChat向けアバターをVRM形式で出力したい場合などにご活用ください。</p></blockquote><h2 id=remove-mesh-by-blendshape>貫通防止用BlendShapeを利用してポリゴンを減らす
+通常と同じように、VRCSDKのControl Panelからアバターをアップロードしてください。</p><p>ただし、Android(Quest)向けアップロードを行う場合などにおいて、Avatar Optimizerの最適化等によって制限の範囲内に収まるにも関わらず、 VRCSDKのビルド前チェックの時点で制限を超過していてアップロードボタンが押せない場合があります。<br>ビルド前チェックをスキップする方法はいくつかあります。詳しくは<a href=../../faq/#i-cannot-upload-the-avatar-because-of-pre-build-hard-limit-check>よくある質問</a>を参照してください。</p><blockquote class="book-hint info">### UploadせずにPerformance Rankを見る方法 {#performance-rank-without-upload}
+非破壊改変ツールを使用した改変では、VRCSDKのControl Panel上のPerformance Rankはあてにならなくなります。
+その代わりとして、Playモードに入った際のPerformance Rankをanatawa12's Gist PackのActual Performance Windowを使用して確認することができます。
+詳しくは[anatawa12's Gist Packの使い方][gists-basic-usage]および[Actual Performance Windowのドキュメント][Actual Performance Window]を参照してください。
+[gists-basic-usage]: https://vpm.anatawa12.com/gists/ja/docs/basic-usage/
+[Actual Performance Window]: https://vpm.anatawa12.com/gists/ja/docs/reference/actual-performance-window/</blockquote><blockquote class="book-hint info">### 非破壊改変ツールを手動で適用する方法 {#how-to-manual-bake}
+アバターのGameObjectを右クリックして出てくるメニューの`NDM Framework`から`Manual bake avatar`をクリックすると、非破壊ツールによる処理を手動で適用することができます。
+`Manual bake avatar`は初めにアバターを複製し、その複製に対して非破壊ツールの処理を適用させるため、元のアバターは変更されないままになります。
+VRChat向けアバターをVRM形式で出力したい場合などにご活用ください。</blockquote><h2 id=remove-mesh-by-blendshape>貫通防止用BlendShapeを利用してポリゴンを減らす
 <a class=anchor href=#remove-mesh-by-blendshape>#</a></h2><p>服で隠れていたりして見えないような部分のメッシュを削除すると、見た目に影響させずに描画負荷やBlendShapeの処理負荷などを減らして軽量化することができます。
 これを簡単に実現するために、AvatarOptimizerでは多くの素体に含まれている貫通防止用のBlendShapeを利用してメッシュを削除することができます！</p><p>素体のメッシュに<code>AAO Remove Mesh By BlendShape</code>コンポーネントを追加して、削除したい部位の貫通防止用BlendShapeをコンポーネント下側の一覧から選択しましょう！</p><p>消えてほしい箇所が消えない場合や、消えてほしくない箇所が消えてしまう場合には、<code>許容差</code>の値を調整する必要があります！
 <code>許容差</code>は、頂点がBlendShapeによってどのぐらい動けば削除するかを決定するものです。
-消えてほしい箇所が消えない場合は値を少し大きく、消えてほしくない箇所が消えてしまう場合は値を少し小さくしましょう！</p><p><img src=./remove-mesh-by-blendshape.png alt="remove mesh by BlendShape"></p><div class=footnotes role=doc-endnotes><hr><ol><li id=fn:1><p>BlendShapeはUnity上のモーフィングの名前です。MayaではTarget Shape、BlenderではShape Key、MetasequoiaやMMDではモーフと呼ばれます。&#160;<a href=#fnref:1 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p></li><li id=fn:2><p>この記事でのメッシュは、UnityのMesh assetではなく、SkinnedMeshRendererやMeshRendererを意味しています。&#160;<a href=#fnref:2 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p></li></ol></div></article><footer class=book-footer><div class="flex flex-wrap justify-between"><div><a class="flex align-center" href=https://github.com/anatawa12/AvatarOptimizer/edit/master/.docs/content/docs/tutorial/basic-usage/index.ja.md target=_blank rel=noopener><img src=/avatar-optimizer/svg/edit.svg class=book-icon alt=Edit>
+消えてほしい箇所が消えない場合は値を少し大きく、消えてほしくない箇所が消えてしまう場合は値を少し小さくしましょう！</p><p><img src=./remove-mesh-by-blendshape.png alt="remove mesh by BlendShape"></p><div class=footnotes role=doc-endnotes><hr><ol><li id=fn:1><p>BlendShapeはUnity上のモーフィングの名前です。MayaではTarget Shape、BlenderではShape Key、MetasequoiaやMMDではモーフと呼ばれます。&#160;<a href=#fnref:1 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p></li><li id=fn:2><p>この記事でのメッシュは、UnityのMesh assetではなく、SkinnedMeshRendererやMeshRendererを意味しています。&#160;<a href=#fnref:2 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p></li></ol></div></article><footer class=book-footer><div class="flex flex-wrap justify-between"><div><a class="flex align-center" href=https://github.com/anatawa12/AvatarOptimizer/edit/master/.docs/content/docs/tutorial/basic-usage/index.ja.md target=_blank rel=noopener><img src=/avatar-optimizer/svg/edit.svg class=book-icon alt>
 <span>このページを編集する</span></a></div></div><script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script></footer><div class=book-comments></div><label for=menu-control class="hidden book-menu-overlay"></label></div><aside class=book-toc><div class=book-toc-content><nav id=TableOfContents><ul><li><a href=#trace-and-optimize>自動最適化を使用する</a></li><li><a href=#upload-avatar>アバターをアップロードする</a></li><li><a href=#remove-mesh-by-blendshape>貫通防止用BlendShapeを利用してポリゴンを減らす</a></li></ul></nav></div></aside></main></body></html>

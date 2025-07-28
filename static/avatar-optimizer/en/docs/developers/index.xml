@@ -1,12 +1,68 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>For Developers on Avatar Optimizer (1.8.12)</title><link>https://vpm.anatawa12.com/avatar-optimizer/en/docs/developers/</link><description>Recent content in For Developers on Avatar Optimizer (1.8.12)</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/en/docs/developers/index.xml" rel="self" type="application/rss+xml"/><item><title>Asset Description</title><link>https://vpm.anatawa12.com/avatar-optimizer/en/docs/developers/asset-description/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/en/docs/developers/asset-description/</guid><description>Asset Description # Asset Description is the file to provide information of your assets for Avatar Optimizer.
-Why Asset Description is needed # Avatar Optimizer uses information from Asset Description to not excessively optimize user&amp;rsquo;s avatar.
-Current Asset Description can provide the following information:
-Meaningless Components
-Components that should be ignored by Avatar Optimizer. Parameters Read By External Tools
-Parameters that can be read by external tools, especially for OSC Tools.</description></item><item><title>Component Scripting API</title><link>https://vpm.anatawa12.com/avatar-optimizer/en/docs/developers/component-api/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/en/docs/developers/component-api/</guid><description>Component Scripting API # Since Avatar Optimizer v1.7.0, Avatar Optimizer provides Component API to add Avatar Optimizer components to the Avatar. By using this API, you can create tools or components that add Avatar Optimizer components.
-Components that supported by Component API # Currently, not all components are supported by Component API. Here is the list of components that are supported by Component API.
-RemoveMeshInBox - Adding component and configuring for that is supported RemoveMeshByBlendShape - Adding component and configuring for that is supported TraceAndOptimize - Adding with default configuration is supported but configuring is not supported For components that supports configuring, to keep compatibility with future features that enabled by default, you need extra attention for the configuration.</description></item><item><title>Distributing Prefabs</title><link>https://vpm.anatawa12.com/avatar-optimizer/en/docs/developers/distributing-prefabs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/en/docs/developers/distributing-prefabs/</guid><description>Distributing Prefabs # Avatar Optimizer mey help you making your assets lightweight and optimized. Here are some recommendations for how to distribute prefabs that depend on Avatar Optimizer.
-Guide your users to the official distribution of Avatar Optimizer # Since Avatar Optimizer is published under MIT License, redistribution is allowed. However, I strongly recommend you to guide your users to the official distribution of Avatar Optimizer.
-Your unofficial distribution of Avatar Optimizer may be outdated.</description></item><item><title>Make your components compatible with Avatar Optimizer</title><link>https://vpm.anatawa12.com/avatar-optimizer/en/docs/developers/make-your-components-compatible-with-aao/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/en/docs/developers/make-your-components-compatible-with-aao/</guid><description>Make your components compatible with Avatar Optimizer # This page describes the following two things.
-When can components be incompatible with Avatar Optimizer? How to improve the compatibility? If you have some question, please feel free to ask on Fediverse (Misskey / Mastodon) or NDMF Discord.
-When can components be incompatible with Avatar Optimizer? # If your components are on the avatar and still exist when Avatar Optimizer processes it, your components can be incompatible with Avatar Optimizer.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>For Developers on Avatar Optimizer (1.8.13)</title><link>https://vpm.anatawa12.com/avatar-optimizer/en/docs/developers/</link><description>Recent content in For Developers on Avatar Optimizer (1.8.13)</description><generator>Hugo</generator><language>en</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/en/docs/developers/index.xml" rel="self" type="application/rss+xml"/><item><title>Asset Description</title><link>https://vpm.anatawa12.com/avatar-optimizer/en/docs/developers/asset-description/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/en/docs/developers/asset-description/</guid><description>&lt;h1 id="asset-description">
+ Asset Description
+ &lt;a class="anchor" href="#asset-description">#&lt;/a>
+&lt;/h1>
+&lt;p>Asset Description is the file to provide information of your assets for Avatar Optimizer.&lt;/p>
+&lt;h2 id="why-asset-description-is-needed">
+ Why Asset Description is needed
+ &lt;a class="anchor" href="#why-asset-description-is-needed">#&lt;/a>
+&lt;/h2>
+&lt;p>Avatar Optimizer uses information from Asset Description to not excessively optimize user&amp;rsquo;s avatar.&lt;/p>
+&lt;p>Current Asset Description can provide the following information:&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>Meaningless Components&lt;/code>&lt;br>
+Components that should be ignored by Avatar Optimizer.&lt;/li>
+&lt;li>&lt;code>Parameters Read By External Tools&lt;/code>&lt;br>
+Parameters that can be read by external tools, especially for OSC Tools.&lt;/li>
+&lt;li>&lt;code>Parameters Changed By External Tools&lt;/code>
+Parameters that can be changed by external tools, especially for OSC Tools.&lt;/li>
+&lt;/ul>
+&lt;p>We will describe why Asset Description is needed for each information below.&lt;/p></description></item><item><title>Component Scripting API</title><link>https://vpm.anatawa12.com/avatar-optimizer/en/docs/developers/component-api/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/en/docs/developers/component-api/</guid><description>&lt;h1 id="component-scripting-api">
+ Component Scripting API
+ &lt;a class="anchor" href="#component-scripting-api">#&lt;/a>
+&lt;/h1>
+&lt;p>Since Avatar Optimizer v1.7.0, Avatar Optimizer provides Component API to add Avatar Optimizer components to the Avatar.
+By using this API, you can create tools or components that add Avatar Optimizer components.&lt;/p>
+&lt;h2 id="supported-components">
+ Components that supported by Component API 
+ &lt;a class="anchor" href="#supported-components">#&lt;/a>
+&lt;/h2>
+&lt;p>Currently, not all components are supported by Component API.
+Here is the list of components that are supported by Component API.&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>RemoveMeshInBox&lt;/code> - Adding component and configuring for that is supported&lt;/li>
+&lt;li>&lt;code>RemoveMeshByBlendShape&lt;/code> - Adding component and configuring for that is supported&lt;/li>
+&lt;li>&lt;code>TraceAndOptimize&lt;/code> - Adding with default configuration is supported but configuring is not supported&lt;/li>
+&lt;/ul>
+&lt;p>For components that supports configuring, to keep compatibility with future features that enabled by default,
+you need extra attention for the configuration. See document below for more details.&lt;/p></description></item><item><title>Distributing Prefabs</title><link>https://vpm.anatawa12.com/avatar-optimizer/en/docs/developers/distributing-prefabs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/en/docs/developers/distributing-prefabs/</guid><description>&lt;h1 id="distributing-prefabs">
+ Distributing Prefabs
+ &lt;a class="anchor" href="#distributing-prefabs">#&lt;/a>
+&lt;/h1>
+&lt;p>Avatar Optimizer mey help you making your assets lightweight and optimized.
+Here are some recommendations for how to distribute prefabs that depend on Avatar Optimizer.&lt;/p>
+&lt;h2 id="guide-to-the-official-distribution">
+ Guide your users to the official distribution of Avatar Optimizer
+ &lt;a class="anchor" href="#guide-to-the-official-distribution">#&lt;/a>
+&lt;/h2>
+&lt;p>Since Avatar Optimizer is published under MIT License, redistribution is allowed.
+However, I strongly recommend you to guide your users to the official distribution of Avatar Optimizer.&lt;br>
+Your unofficial distribution of Avatar Optimizer may be outdated.
+If users use outdated version, they may encounter bugs that have already been fixed in the official distribution.
+In addition, since Avatar Optimizer doesn&amp;rsquo;t guarantee forward compatibility,
+if your users use a newer version of Avatar Optimizer than your unofficial distribution and downgrade it to outdated version, some problems will be caused.&lt;/p></description></item><item><title>Make your components compatible with Avatar Optimizer</title><link>https://vpm.anatawa12.com/avatar-optimizer/en/docs/developers/make-your-components-compatible-with-aao/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/en/docs/developers/make-your-components-compatible-with-aao/</guid><description>&lt;h1 id="make-your-components-compatible-with-avatar-optimizer">
+ Make your components compatible with Avatar Optimizer
+ &lt;a class="anchor" href="#make-your-components-compatible-with-avatar-optimizer">#&lt;/a>
+&lt;/h1>
+&lt;p>This page describes the following two things.&lt;/p>
+&lt;ul>
+&lt;li>When can components be incompatible with Avatar Optimizer?&lt;/li>
+&lt;li>How to improve the compatibility?&lt;/li>
+&lt;/ul>
+&lt;p>If you have some question, please feel free to ask on &lt;a href="https://misskey.niri.la/@anatawa12">Fediverse (Misskey / Mastodon)&lt;/a> or &lt;a href="https://discord.gg/dV4cVpewmM">NDMF Discord&lt;/a>.&lt;/p>
+&lt;h2 id="when-incompatible">
+ When can components be incompatible with Avatar Optimizer?
+ &lt;a class="anchor" href="#when-incompatible">#&lt;/a>
+&lt;/h2>
+&lt;p>If your components are on the avatar and still exist when Avatar Optimizer processes it,
+your components can be incompatible with Avatar Optimizer.&lt;/p></description></item></channel></rss>

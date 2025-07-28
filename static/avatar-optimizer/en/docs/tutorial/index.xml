@@ -1,2 +1,34 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tutorial on Avatar Optimizer (1.8.12)</title><link>https://vpm.anatawa12.com/avatar-optimizer/en/docs/tutorial/</link><description>Recent content in Tutorial on Avatar Optimizer (1.8.12)</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/en/docs/tutorial/index.xml" rel="self" type="application/rss+xml"/><item><title>Basic Usage</title><link>https://vpm.anatawa12.com/avatar-optimizer/en/docs/tutorial/basic-usage/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/en/docs/tutorial/basic-usage/</guid><description>Basic Usage # Use Automatic Optimization # There are several optimizations which can be performed automatically for Avatars.
-Removing Unused BlendShapes(Shape Keys)1 For BlendShapes with non-zero weight, freezing BlendShapes will reduce processing cost. Even if the weight is zero, removing BlendShapes will reduce the size of avatars. Removing unused Behaviours such as PhysBones If there are enabled PhysBones which do not need to be swayed (e.g., the swaying target mesh2 is always disabled), extra computational cost is caused.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tutorial on Avatar Optimizer (1.8.13)</title><link>https://vpm.anatawa12.com/avatar-optimizer/en/docs/tutorial/</link><description>Recent content in Tutorial on Avatar Optimizer (1.8.13)</description><generator>Hugo</generator><language>en</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/en/docs/tutorial/index.xml" rel="self" type="application/rss+xml"/><item><title>Basic Usage</title><link>https://vpm.anatawa12.com/avatar-optimizer/en/docs/tutorial/basic-usage/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/en/docs/tutorial/basic-usage/</guid><description>&lt;h1 id="basic-usage">
+ Basic Usage
+ &lt;a class="anchor" href="#basic-usage">#&lt;/a>
+&lt;/h1>
+&lt;h2 id="trace-and-optimize">
+ Use Automatic Optimization
+ &lt;a class="anchor" href="#trace-and-optimize">#&lt;/a>
+&lt;/h2>
+&lt;p>There are several optimizations which can be performed automatically for Avatars.&lt;/p>
+&lt;ul>
+&lt;li>Removing Unused BlendShapes(Shape Keys)&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>
+&lt;ul>
+&lt;li>For BlendShapes with non-zero weight, freezing BlendShapes will reduce processing cost.&lt;/li>
+&lt;li>Even if the weight is zero, removing BlendShapes will reduce the size of avatars.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Removing unused Behaviours such as PhysBones
+&lt;ul>
+&lt;li>If there are enabled PhysBones which do not need to be swayed (e.g., the swaying target mesh&lt;sup id="fnref:2">&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref">2&lt;/a>&lt;/sup> is always disabled), extra computational cost is caused.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Merging bones which is not animated or swayed with PhysBones
+&lt;ul>
+&lt;li>If the clothes bones are nested into the body bones, there will be many bones which are never moved locally. Such bones cause extra cost.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Merging meshes which are toggled together or never toggled
+&lt;ul>
+&lt;li>If your avatar has only one cloth, it might not be necessary to have separated meshes for body, hair, and clothes.&lt;/li>
+&lt;li>Even if you have multiple switchable clothes, it might not be necessary to have separated meshes with body, hair, and underwear.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;p>With AvatarOptimizer, these optimizations can be performed automatically by simply adding &lt;code>AAO Trace And Optimize&lt;/code> component to the Avatar Root!&lt;/p></description></item></channel></rss>
