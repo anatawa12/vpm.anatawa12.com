@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Introduction on Avatar Optimizer (1.8.13)</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/</link><description>Recent content in Introduction on Avatar Optimizer (1.8.13)</description><generator>Hugo</generator><language>en</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/beta/en/index.xml" rel="self" type="application/rss+xml"/><item><title>Basic Concepts</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/basic-concept/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/basic-concept/</guid><description>&lt;h1 id="basic-concepts">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Introduction on Avatar Optimizer (1.8.14-beta.1)</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/</link><description>Recent content in Introduction on Avatar Optimizer (1.8.14-beta.1)</description><generator>Hugo</generator><language>en</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/beta/en/index.xml" rel="self" type="application/rss+xml"/><item><title>Basic Concepts</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/basic-concept/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/basic-concept/</guid><description>&lt;h1 id="basic-concepts">
  Basic Concepts of Avatar Optimizer
  &lt;a class="anchor" href="#basic-concepts">#&lt;/a>
 &lt;/h1>
@@ -64,6 +64,28 @@ I&amp;rsquo;m usually use Japanese, but you can ask me with English.&lt;/p>
 
  
  
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+ 
+
+
+ 
+
+ 
+
+ 
+ 
+
+ 
+
+ 
+ 
 
 
  
@@ -6895,6 +6917,22 @@ I&amp;rsquo;m usually use Japanese, but you can ask me with English.&lt;/p>
 
 
 
+&lt;h2 id="1.8.14-beta.1">
+ &lt;a href="https://github.com/anatawa12/AvatarOptimizer/compare/v1.8.13...v1.8.14-beta.1">1.8.14-beta.1&lt;/a> - 2025-08-09
+ &lt;a class="anchor" href="#1.8.14-beta.1">#&lt;/a>
+&lt;/h2>
+&lt;h3 id="1.8.14-beta.1-fixed">
+ Fixed
+ &lt;a class="anchor" href="#1.8.14-beta.1-fixed">#&lt;/a>
+&lt;/h3>
+&lt;ul>
+&lt;li>AAO may break infinimation &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1492">&lt;code>#1492&lt;/code>&lt;/a>
+&lt;ul>
+&lt;li>The infinimation is the technique of animation that may be used in NDMF or other tools.&lt;/li>
+&lt;li>I hope most of AAO users don&amp;rsquo;t experience this issue for now, but will be spread in the near future.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
 &lt;h2 id="1.8.13">
  &lt;a href="https://github.com/anatawa12/AvatarOptimizer/compare/v1.8.13-beta.3...v1.8.13">1.8.13&lt;/a> - 2025-07-28
  &lt;a class="anchor" href="#1.8.13">#&lt;/a>
@@ -10335,31 +10373,19 @@ For example, in the case of a VRChat avatar, the &amp;ldquo;avatar root&amp;rdqu
 You can enable/disable some automatic optimization features with checkboxes.&lt;/p>
 &lt;p>This component should be added to an avatar root. (Kind: &lt;a href="../../component-kind/avatar-global-components">Avatar Global Component&lt;/a>)&lt;/p>
 &lt;blockquote class="book-hint info">
- 
-
-Trace and Optimize is quite carefully designed under the premise that "**never let it affect the appearance**."\
-So, if any problems occur, such as appearance is affected or some gimmick stops working, they are all caused by bugs in AAO, without exception.\
-Therefore, if you encounter any problems with this component, please report it.\
-We will fix it as much as we can.
-
-
-&lt;/blockquote>
-
-&lt;p>Currently the following optimizations are applied automatically.&lt;/p></description></item><item><title>UnusedBonesByReferencesTool</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/unused-bones-by-references-tool/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/unused-bones-by-references-tool/</guid><description>&lt;h1 id="unusedbonesbyreferencestool">
+&lt;p>Trace and Optimize is quite carefully designed under the premise that &amp;ldquo;&lt;strong>never let it affect the appearance&lt;/strong>.&amp;rdquo;&lt;br>
+So, if any problems occur, such as appearance is affected or some gimmick stops working, they are all caused by bugs in AAO, without exception.&lt;br>
+Therefore, if you encounter any problems with this component, please report it.&lt;br>
+We will fix it as much as we can.&lt;/p></description></item><item><title>UnusedBonesByReferencesTool</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/unused-bones-by-references-tool/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/unused-bones-by-references-tool/</guid><description>&lt;h1 id="unusedbonesbyreferencestool">
  UnusedBonesByReferencesTool
  &lt;a class="anchor" href="#unusedbonesbyreferencestool">#&lt;/a>
 &lt;/h1>
 &lt;p>Marks it as EditorOnly that bones referenced only from EditorOnly meshes.&lt;/p>
 &lt;p>This component should be added to an avatar root. (Kind: &lt;a href="../../component-kind/avatar-global-components">Avatar Global Component&lt;/a>)&lt;/p>
 &lt;blockquote class="book-hint warning">
- 
-
-This component is obsolete. You should use `Remove unused Objects` of [Trace and Optimize](../trace-and-optimize) instead.
-This component will never get algorithm improvements.
-
-
+&lt;p>This component is obsolete. You should use &lt;code>Remove unused Objects&lt;/code> of &lt;a href="../trace-and-optimize">Trace and Optimize&lt;/a> instead.
+This component will never get algorithm improvements.&lt;/p>
 &lt;/blockquote>
-
 &lt;p>This is port of &lt;a href="https://narazaka.booth.pm/items/3831781">UnusedBonesByReferencesTool by Narazaka&lt;/a> but run at build time.&lt;/p>
 &lt;p>&lt;img src="component.png" alt="component.png" />&lt;/p></description></item><item><title>Edit Skinned Mesh Components</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/component-kind/edit-skinned-mesh-components/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/component-kind/edit-skinned-mesh-components/</guid><description>&lt;h1 id="edit-skinned-mesh-components">
  Edit Skinned Mesh Components
@@ -10390,13 +10416,8 @@ Following components are Modifying Edit Skinned Mesh Component.&lt;/p></descript
 &lt;p>Merges one or more SkinnedMeshRenderers and MeshRenderers into one SkinnedMeshRenderer.&lt;/p>
 &lt;p>This component should be added to a new GameObject which has a SkinnedMeshRenderer component without Mesh specified. (Kind: &lt;a href="../../component-kind/edit-skinned-mesh-components#source-component">Source Edit Skinned Mesh Component&lt;/a>)&lt;/p>
 &lt;blockquote class="book-hint info">
- 
-
-[Trace And Optimize](../trace-and-optimize) will automatically do the same process, so in most cases you do not need to use this component.
-
-
+&lt;p>&lt;a href="../trace-and-optimize">Trace And Optimize&lt;/a> will automatically do the same process, so in most cases you do not need to use this component.&lt;/p>
 &lt;/blockquote>
-
 &lt;h2 id="benefits">
  Benefits
  &lt;a class="anchor" href="#benefits">#&lt;/a>
@@ -10409,13 +10430,8 @@ Also, it can reduce material slots using the same material, so we can reduce ren
 &lt;p>Freeze &amp;amp; remove BlendShape from the mesh.&lt;/p>
 &lt;p>This component should be added to a GameObject which has a SkinnedMeshRenderer component. (Kind: &lt;a href="../../component-kind/edit-skinned-mesh-components#modifying-component">Modifying Edit Skinned Mesh Component&lt;/a>)&lt;/p>
 &lt;blockquote class="book-hint info">
- 
-
-[Trace And Optimize](../trace-and-optimize) will automatically do the same process, so in most cases you do not need to use this component.
-
-
+&lt;p>&lt;a href="../trace-and-optimize">Trace And Optimize&lt;/a> will automatically do the same process, so in most cases you do not need to use this component.&lt;/p>
 &lt;/blockquote>
-
 &lt;h2 id="benefits">
  Benefits
  &lt;a class="anchor" href="#benefits">#&lt;/a>
@@ -10521,13 +10537,8 @@ This may be useful for developing avatars.&lt;/p>
  &lt;a class="anchor" href="#merge-bone">#&lt;/a>
 &lt;/h1>
 &lt;blockquote class="book-hint info">
- 
-
-[Trace And Optimize](../trace-and-optimize) will automatically do the same process, so in most cases you do not need to use this component.
-
-
+&lt;p>&lt;a href="../trace-and-optimize">Trace And Optimize&lt;/a> will automatically do the same process, so in most cases you do not need to use this component.&lt;/p>
 &lt;/blockquote>
-
 &lt;p>If you add this component to some GameObject, the GameObject will be removed and merged to parent GameObject.
 Also, if some other components are attached to the target GameObject, they will be removed too.&lt;/p>
 &lt;p>If the parent GameObject also have Merge Bone component, two GameObjects are merged to their further parent GameObject.&lt;/p></description></item><item><title>Merge PhysBone</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/merge-physbone/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/merge-physbone/</guid><description>&lt;h1 id="merge-physbone">
@@ -10551,15 +10562,9 @@ The GameObject added by this component will not be swayed by PhysBone, so this c
 &lt;p>Remove polygons whose area are zero.&lt;/p>
 &lt;p>This component should be added to a GameObject which has a SkinnedMeshRenderer component.&lt;/p>
 &lt;blockquote class="book-hint warning">
- 
-
-Since this component works very late in the build process, this component is **NOT** [Modifying Edit Skinned Mesh Component](../../component-kind/edit-skinned-mesh-components#modifying-component).
-
-Adding this component to the SkinnedMeshRenderers to be merged by [Merge Skinned Mesh](../merge-skinned-mesh) component has no effect.
-
-
+&lt;p>Since this component works very late in the build process, this component is &lt;strong>NOT&lt;/strong> &lt;a href="../../component-kind/edit-skinned-mesh-components#modifying-component">Modifying Edit Skinned Mesh Component&lt;/a>.&lt;/p>
+&lt;p>Adding this component to the SkinnedMeshRenderers to be merged by &lt;a href="../merge-skinned-mesh">Merge Skinned Mesh&lt;/a> component has no effect.&lt;/p>
 &lt;/blockquote>
-
 &lt;h2 id="benefits">
  Benefits
  &lt;a class="anchor" href="#benefits">#&lt;/a>
@@ -10571,15 +10576,9 @@ This will have almost zero effect on the appearance.&lt;/p></description></item>
 &lt;/h1>
 &lt;p>These specified objects will be the children of this GameObject at build time.&lt;/p>
 &lt;blockquote class="book-hint warning">
- 
-
-This component is deprecated.
-
-This function is not related to avatar optimization, so this component will be replaced by one in a currently planned non-destructive Avatar Modification Utils.
-
-
+&lt;p>This component is deprecated.&lt;/p>
+&lt;p>This function is not related to avatar optimization, so this component will be replaced by one in a currently planned non-destructive Avatar Modification Utils.&lt;/p>
 &lt;/blockquote>
-
 &lt;p>&lt;img src="component.png" alt="component.png" />&lt;/p></description></item><item><title/><link>https://vpm.anatawa12.com/avatar-optimizer/beta/404.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/404.html</guid><description/></item><item><title>Asset Description</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/developers/asset-description/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/developers/asset-description/</guid><description>&lt;h1 id="asset-description">
  Asset Description
  &lt;a class="anchor" href="#asset-description">#&lt;/a>

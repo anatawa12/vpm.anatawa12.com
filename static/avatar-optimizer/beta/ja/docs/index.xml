@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Docs on Avatar Optimizer (1.8.13)</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/</link><description>Recent content in Docs on Avatar Optimizer (1.8.13)</description><generator>Hugo</generator><language>ja</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/index.xml" rel="self" type="application/rss+xml"/><item><title>基本コンセプト</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/basic-concept/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/basic-concept/</guid><description>&lt;h1 id="basic-concepts">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Docs on Avatar Optimizer (1.8.14-beta.1)</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/</link><description>Recent content in Docs on Avatar Optimizer (1.8.14-beta.1)</description><generator>Hugo</generator><language>ja</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/index.xml" rel="self" type="application/rss+xml"/><item><title>基本コンセプト</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/basic-concept/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/basic-concept/</guid><description>&lt;h1 id="basic-concepts">
  Avatar Optimizerの基本コンセプト
  &lt;a class="anchor" href="#basic-concepts">#&lt;/a>
 &lt;/h1>
@@ -113,6 +113,28 @@
 
  
  
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+ 
+
+
+ 
+
+ 
+
+ 
+ 
+
+ 
+
+ 
+ 
 
 
  
@@ -6944,6 +6966,22 @@
 
 
 
+&lt;h2 id="1.8.14-beta.1">
+ &lt;a href="https://github.com/anatawa12/AvatarOptimizer/compare/v1.8.13...v1.8.14-beta.1">1.8.14-beta.1&lt;/a> - 2025-08-09
+ &lt;a class="anchor" href="#1.8.14-beta.1">#&lt;/a>
+&lt;/h2>
+&lt;h3 id="1.8.14-beta.1-fixed">
+ Fixed
+ &lt;a class="anchor" href="#1.8.14-beta.1-fixed">#&lt;/a>
+&lt;/h3>
+&lt;ul>
+&lt;li>AAO may break infinimation &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1492">&lt;code>#1492&lt;/code>&lt;/a>
+&lt;ul>
+&lt;li>The infinimation is the technique of animation that may be used in NDMF or other tools.&lt;/li>
+&lt;li>I hope most of AAO users don&amp;rsquo;t experience this issue for now, but will be spread in the near future.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
 &lt;h2 id="1.8.13">
  &lt;a href="https://github.com/anatawa12/AvatarOptimizer/compare/v1.8.13-beta.3...v1.8.13">1.8.13&lt;/a> - 2025-07-28
  &lt;a class="anchor" href="#1.8.13">#&lt;/a>

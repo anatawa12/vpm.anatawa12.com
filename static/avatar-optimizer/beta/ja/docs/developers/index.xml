@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>開発者向け on Avatar Optimizer (1.8.13)</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/developers/</link><description>Recent content in 開発者向け on Avatar Optimizer (1.8.13)</description><generator>Hugo</generator><language>ja</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/developers/index.xml" rel="self" type="application/rss+xml"/><item><title>Asset Description</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/developers/asset-description/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/developers/asset-description/</guid><description>&lt;h1 id="asset-description">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>開発者向け on Avatar Optimizer (1.8.14-beta.1)</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/developers/</link><description>Recent content in 開発者向け on Avatar Optimizer (1.8.14-beta.1)</description><generator>Hugo</generator><language>ja</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/developers/index.xml" rel="self" type="application/rss+xml"/><item><title>Asset Description</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/developers/asset-description/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/developers/asset-description/</guid><description>&lt;h1 id="asset-description">
  Asset Description
  &lt;a class="anchor" href="#asset-description">#&lt;/a>
 &lt;/h1>
@@ -73,22 +73,12 @@ Avatar Optimizerはランタイムで動作しないため、ランタイムビ�
 従って、Avatar Optimizerの将来のバージョンとの互換性を保つためには、使用するデフォルト設定のバージョンを指定して&lt;code>Initialize&lt;/code>メソッドを呼び出す必要があります。
 デフォルト設定のバージョンは、&lt;code>Initialize&lt;/code>メソッドのドキュメントに記載されているはずです。&lt;/p>
 &lt;blockquote class="book-hint warning">
- 
-
-`Initialize`メソッドを呼び出さなかった場合、コンポーネントが予期しない動作をしたり、将来的にエラーが発生したりする可能性があります。
-
-
+&lt;p>&lt;code>Initialize&lt;/code>メソッドを呼び出さなかった場合、コンポーネントが予期しない動作をしたり、将来的にエラーが発生したりする可能性があります。&lt;/p>
 &lt;/blockquote>
-
 &lt;blockquote class="book-hint info">
- 
-
-コンポーネントの設定変更はコンポーネントを追加した直後に行う場合のみサポートされており、既にGameObject上に存在しているコンポーネントに対する設定変更はサポートされていません。
-これは、将来のバージョンで追加された機能が、既存のコンポーネントの設定内容と互換性がない可能性があるためです。
-
-例えば、v1.8.0で追加された`AAO Remove Mesh By Box`コンポーネントの反転オプションを有効にすると、設定される箱による効果が変わってしまい、v1.7以前のみを想定して作成されているツールと互換性がなくなってしまいます。
-
-
+&lt;p>コンポーネントの設定変更はコンポーネントを追加した直後に行う場合のみサポートされており、既にGameObject上に存在しているコンポーネントに対する設定変更はサポートされていません。
+これは、将来のバージョンで追加された機能が、既存のコンポーネントの設定内容と互換性がない可能性があるためです。&lt;/p>
+&lt;p>例えば、v1.8.0で追加された&lt;code>AAO Remove Mesh By Box&lt;/code>コンポーネントの反転オプションを有効にすると、設定される箱による効果が変わってしまい、v1.7以前のみを想定して作成されているツールと互換性がなくなってしまいます。&lt;/p>
 &lt;/blockquote></description></item><item><title>アセットの配布について</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/developers/distributing-prefabs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/developers/distributing-prefabs/</guid><description>&lt;h1 id="distributing-prefabs">
  アセットの配布について
  &lt;a class="anchor" href="#distributing-prefabs">#&lt;/a>
