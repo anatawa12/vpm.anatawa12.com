@@ -43,38 +43,19 @@ AAO: Avatar Optimizerは非破壊改変ツールであり、Playモードに入�
 &lt;p>ただし、Android(Quest)向けアップロードを行う場合などにおいて、Avatar Optimizerの最適化等によって制限の範囲内に収まるにも関わらず、 VRCSDKのビルド前チェックの時点で制限を超過していてアップロードボタンが押せない場合があります。&lt;br>
 ビルド前チェックをスキップする方法はいくつかあります。詳しくは&lt;a href="../../faq/#i-cannot-upload-the-avatar-because-of-pre-build-hard-limit-check">よくある質問&lt;/a>を参照してください。&lt;/p>
 &lt;blockquote class="book-hint info">
- 
-
-### UploadせずにPerformance Rankを見る方法 {#performance-rank-without-upload}
-
-非破壊改変ツールを使用した改変では、VRCSDKのControl Panel上のPerformance Rankはあてにならなくなります。
-
-その代わりとして、Playモードに入った際のPerformance Rankをanatawa12's Gist PackのActual Performance Windowを使用して確認することができます。
-詳しくは[anatawa12's Gist Packの使い方][gists-basic-usage]および[Actual Performance Windowのドキュメント][Actual Performance Window]を参照してください。
-
-[gists-basic-usage]: https://vpm.anatawa12.com/gists/ja/docs/basic-usage/
-[Actual Performance Window]: https://vpm.anatawa12.com/gists/ja/docs/reference/actual-performance-window/
-
-
+&lt;h3 id="performance-rank-without-upload">
+ UploadせずにPerformance Rankを見る方法
+ &lt;a class="anchor" href="#performance-rank-without-upload">#&lt;/a>
+&lt;/h3>
+&lt;p>非破壊改変ツールを使用した改変では、VRCSDKのControl Panel上のPerformance Rankはあてにならなくなります。&lt;/p>
+&lt;p>その代わりとして、Playモードに入った際のPerformance Rankをanatawa12&amp;rsquo;s Gist PackのActual Performance Windowを使用して確認することができます。
+詳しくは&lt;a href="https://vpm.anatawa12.com/gists/ja/docs/basic-usage/">anatawa12&amp;rsquo;s Gist Packの使い方&lt;/a>および&lt;a href="https://vpm.anatawa12.com/gists/ja/docs/reference/actual-performance-window/">Actual Performance Windowのドキュメント&lt;/a>を参照してください。&lt;/p>
 &lt;/blockquote>
-
 &lt;blockquote class="book-hint info">
- 
-
-### 非破壊改変ツールを手動で適用する方法 {#how-to-manual-bake}
-
-アバターのGameObjectを右クリックして出てくるメニューの`NDM Framework`から`Manual bake avatar`をクリックすると、非破壊ツールによる処理を手動で適用することができます。
-
-`Manual bake avatar`は初めにアバターを複製し、その複製に対して非破壊ツールの処理を適用させるため、元のアバターは変更されないままになります。
-
-VRChat向けアバターをVRM形式で出力したい場合などにご活用ください。
-
-
-&lt;/blockquote>
-
-&lt;h2 id="remove-mesh-by-blendshape">
- 貫通防止用BlendShapeを利用してポリゴンを減らす
- &lt;a class="anchor" href="#remove-mesh-by-blendshape">#&lt;/a>
-&lt;/h2>
-&lt;p>服で隠れていたりして見えないような部分のメッシュを削除すると、見た目に影響させずに描画負荷やBlendShapeの処理負荷などを減らして軽量化することができます。
-これを簡単に実現するために、AvatarOptimizerでは多くの素体に含まれている貫通防止用のBlendShapeを利用してメッシュを削除することができます！&lt;/p></description></item></channel></rss>
+&lt;h3 id="how-to-manual-bake">
+ 非破壊改変ツールを手動で適用する方法
+ &lt;a class="anchor" href="#how-to-manual-bake">#&lt;/a>
+&lt;/h3>
+&lt;p>アバターのGameObjectを右クリックして出てくるメニューの&lt;code>NDM Framework&lt;/code>から&lt;code>Manual bake avatar&lt;/code>をクリックすると、非破壊ツールによる処理を手動で適用することができます。&lt;/p>
+&lt;p>&lt;code>Manual bake avatar&lt;/code>は初めにアバターを複製し、その複製に対して非破壊ツールの処理を適用させるため、元のアバターは変更されないままになります。&lt;/p>
+&lt;p>VRChat向けアバターをVRM形式で出力したい場合などにご活用ください。&lt;/p></description></item></channel></rss>

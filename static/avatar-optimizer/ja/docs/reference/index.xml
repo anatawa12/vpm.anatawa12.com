@@ -7,15 +7,10 @@
 チェックボックスで自動的に行う最適化を選択することが出来ます。&lt;/p>
 &lt;p>このコンポーネントはアバターのルートに追加してください。(分類: &lt;a href="../../component-kind/avatar-global-components">Avatar Global Component&lt;/a>)&lt;/p>
 &lt;blockquote class="book-hint info">
- 
-
-Trace and Optimizeは「**見た目に絶対に影響させてはならない**」という前提の下で、かなり慎重に作られています。\
-そのため、見た目に影響が出たり、何らかのギミックが機能しなくなったりといった問題が発生した場合はすべて、例外なくAAOのバグとなります。\
-従って、問題が起きた際は報告していただければ、出来る限り修正いたします。
-
-
+&lt;p>Trace and Optimizeは「&lt;strong>見た目に絶対に影響させてはならない&lt;/strong>」という前提の下で、かなり慎重に作られています。&lt;br>
+そのため、見た目に影響が出たり、何らかのギミックが機能しなくなったりといった問題が発生した場合はすべて、例外なくAAOのバグとなります。&lt;br>
+従って、問題が起きた際は報告していただければ、出来る限り修正いたします。&lt;/p>
 &lt;/blockquote>
-
 &lt;p>現在、以下の機能を使った自動最適化が可能です。&lt;/p>
 &lt;ul>
 &lt;li>&lt;code>BlendShapeを最適化する&lt;/code>&lt;br>
@@ -92,14 +87,9 @@ StateやTransitionがないレイヤーを削除します。&lt;/li>
 &lt;p>EditorOnlyなメッシュからしか参照がないボーンをEditorOnlyにします。&lt;/p>
 &lt;p>このコンポーネントはアバターのルートに追加してください。(分類: &lt;a href="../../component-kind/avatar-global-components">Avatar Global Component&lt;/a>)&lt;/p>
 &lt;blockquote class="book-hint warning">
- 
-
-このコンポーネントは非推奨です。代わりに[Trace and Optimize](../trace-and-optimize)の`使われていないObjectを自動的に削除する`を使用してください。
-このコンポーネントの動作が改善されることはありません。
-
-
+&lt;p>このコンポーネントは非推奨です。代わりに&lt;a href="../trace-and-optimize">Trace and Optimize&lt;/a>の&lt;code>使われていないObjectを自動的に削除する&lt;/code>を使用してください。
+このコンポーネントの動作が改善されることはありません。&lt;/p>
 &lt;/blockquote>
-
 &lt;p>これはNarazakaさんの&lt;a href="https://narazaka.booth.pm/items/3831781">UnusedBonesByReferencesTool&lt;/a>を移植したものですが、ビルド時に実行します。&lt;/p>
 &lt;p>&lt;img src="component.png" alt="component.png" />&lt;/p></description></item><item><title>Merge Skinned Mesh</title><link>https://vpm.anatawa12.com/avatar-optimizer/ja/docs/reference/merge-skinned-mesh/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/ja/docs/reference/merge-skinned-mesh/</guid><description>&lt;h1 id="merge-skinned-mesh">
  Merge Skinned Mesh (MergeSMR)
@@ -108,13 +98,8 @@ StateやTransitionがないレイヤーを削除します。&lt;/li>
 &lt;p>1つ以上のSkinnedMeshRendererやMeshRendererを1つのSkinnedMeshRendererに統合することが出来ます。&lt;/p>
 &lt;p>このコンポーネントは、メッシュを指定していないSkinnedMeshRendererコンポーネントがある新規GameObjectに追加してください。(分類: &lt;a href="../../component-kind/edit-skinned-mesh-components#source-component">Source Edit Skinned Mesh Component&lt;/a>)&lt;/p>
 &lt;blockquote class="book-hint info">
- 
-
-[Trace And Optimize](../trace-and-optimize)が自動で同様の処理を行うため、大抵の場合、このコンポーネントを使用する必要はありません。
-
-
+&lt;p>&lt;a href="../trace-and-optimize">Trace And Optimize&lt;/a>が自動で同様の処理を行うため、大抵の場合、このコンポーネントを使用する必要はありません。&lt;/p>
 &lt;/blockquote>
-
 &lt;h2 id="benefits">
  利点
  &lt;a class="anchor" href="#benefits">#&lt;/a>
@@ -129,13 +114,8 @@ StateやTransitionがないレイヤーを削除します。&lt;/li>
 &lt;p>このコンポーネントはメッシュ・マテリアル・BlendShape・Boundsを設定しますが、その他の設定については変更しません。
 Anchor Override等の設定を行うには、MergeSkinnedMeshのあるGameObject上のSkinnedMeshRendererコンポーネントを編集してください。&lt;/p>
 &lt;blockquote class="book-hint info">
- 
-
-[Modular Avatar]を使用している場合は、アバターのルートに[`MA Mesh Settings`]コンポーネントを追加して設定することにより、アバター全体のAnchor Override等をまとめて設定することができます。
-
-
+&lt;p>&lt;a href="https://modular-avatar.nadena.dev/ja">Modular Avatar&lt;/a>を使用している場合は、アバターのルートに&lt;a href="https://modular-avatar.nadena.dev/ja/docs/reference/mesh-settings">&lt;code>MA Mesh Settings&lt;/code>&lt;/a>コンポーネントを追加して設定することにより、アバター全体のAnchor Override等をまとめて設定することができます。&lt;/p>
 &lt;/blockquote>
-
 &lt;p>BlendShapeによる負荷を減らすために、体や服のメッシュのBlendShapeは固定・除去することを推奨します。&lt;br>
 &lt;a href="../freeze-blendshape">Freeze BlendShape&lt;/a>コンポーネントを統合対象・統合先のSkinnedMeshRendererコンポーネントのいずれか(または両方)に追加して、BlendShapeを固定・除去することが出来ます。
 &lt;a href="../trace-and-optimize">Trace and Optimize&lt;/a>コンポーネントの&lt;code>BlendShapeを最適化する&lt;/code>によっても同様の効果を得ることが出来ます。&lt;/p>
@@ -181,13 +161,8 @@ Unity 2022ではBlendShapeの負荷が改善されているため、その記述
 &lt;p>BlendShapeをメッシュに固定し、除去することが出来ます。&lt;/p>
 &lt;p>このコンポーネントは、SkinnedMeshRendererコンポーネントのあるGameObjectに追加してください。(分類: &lt;a href="../../component-kind/edit-skinned-mesh-components#modifying-component">Modifying Edit Skinned Mesh Component&lt;/a>)&lt;/p>
 &lt;blockquote class="book-hint info">
- 
-
-[Trace And Optimize](../trace-and-optimize)が自動で同様の処理を行うため、大抵の場合、このコンポーネントを使用する必要はありません。
-
-
+&lt;p>&lt;a href="../trace-and-optimize">Trace And Optimize&lt;/a>が自動で同様の処理を行うため、大抵の場合、このコンポーネントを使用する必要はありません。&lt;/p>
 &lt;/blockquote>
-
 &lt;h2 id="benefits">
  利点
  &lt;a class="anchor" href="#benefits">#&lt;/a>
@@ -380,13 +355,8 @@ PoiyomiやlilToonのUV Tile Discard機能とは異なり、このコンポーネ
  &lt;a class="anchor" href="#merge-bone">#&lt;/a>
 &lt;/h1>
 &lt;blockquote class="book-hint info">
- 
-
-[Trace And Optimize](../trace-and-optimize)が自動で同様の処理を行うため、大抵の場合、このコンポーネントを使用する必要はありません。
-
-
+&lt;p>&lt;a href="../trace-and-optimize">Trace And Optimize&lt;/a>が自動で同様の処理を行うため、大抵の場合、このコンポーネントを使用する必要はありません。&lt;/p>
 &lt;/blockquote>
-
 &lt;p>このコンポーネントがGameObjectに付いている場合、そのGameObjectは親GameObjectに統合されて取り除かれます。
 また、統合対象にその他のコンポーネントが付属している場合はそれらも削除されます。&lt;/p>
 &lt;p>もし親のGameObjectにもMerge Boneコンポーネントが付いていた場合、2つのGameObjectはその更に親のGameObjectに統合されます。&lt;/p>
@@ -448,15 +418,9 @@ MultiChildTypeはIgnoreになります。&lt;/p>
 &lt;p>面積がゼロのポリゴンを削除します。&lt;/p>
 &lt;p>このコンポーネントは、SkinnedMeshRendererコンポーネントのあるGameObjectに追加してください。&lt;/p>
 &lt;blockquote class="book-hint warning">
- 
-
-このコンポーネントはビルドの最後の方で実行されるため、[Modifying Edit Skinned Mesh Component](../../component-kind/edit-skinned-mesh-components#modifying-component) では**ありません**。
-
-このコンポーネントを[Merge Skinned Mesh](../merge-skinned-mesh)の統合対象となるSkinnedMeshRendererに追加しても効果がありません。
-
-
+&lt;p>このコンポーネントはビルドの最後の方で実行されるため、&lt;a href="../../component-kind/edit-skinned-mesh-components#modifying-component">Modifying Edit Skinned Mesh Component&lt;/a> では&lt;strong>ありません&lt;/strong>。&lt;/p>
+&lt;p>このコンポーネントを&lt;a href="../merge-skinned-mesh">Merge Skinned Mesh&lt;/a>の統合対象となるSkinnedMeshRendererに追加しても効果がありません。&lt;/p>
 &lt;/blockquote>
-
 &lt;h2 id="benefits">
  利点
  &lt;a class="anchor" href="#benefits">#&lt;/a>
@@ -485,13 +449,7 @@ MultiChildTypeはIgnoreになります。&lt;/p>
 &lt;/h1>
 &lt;p>ビルド時に、指定されたGameObjectをこのGameObjectの子にします。&lt;/p>
 &lt;blockquote class="book-hint warning">
- 
-
-このコンポーネントは非推奨です。
-
-この機能はアバターの最適化と関係がないため、今後製作予定の非破壊アバター改変ユーティリティのコンポーネントに置き換えられる予定です。
-
-
+&lt;p>このコンポーネントは非推奨です。&lt;/p>
+&lt;p>この機能はアバターの最適化と関係がないため、今後製作予定の非破壊アバター改変ユーティリティのコンポーネントに置き換えられる予定です。&lt;/p>
 &lt;/blockquote>
-
 &lt;p>&lt;img src="component.png" alt="component.png" />&lt;/p></description></item></channel></rss>
