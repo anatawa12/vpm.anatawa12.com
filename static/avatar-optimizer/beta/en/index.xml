@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Introduction on Avatar Optimizer (1.8.14-beta.1)</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/</link><description>Recent content in Introduction on Avatar Optimizer (1.8.14-beta.1)</description><generator>Hugo</generator><language>en</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/beta/en/index.xml" rel="self" type="application/rss+xml"/><item><title>Basic Concepts</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/basic-concept/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/basic-concept/</guid><description>&lt;h1 id="basic-concepts">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Introduction on Avatar Optimizer (1.8.14-beta.2)</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/</link><description>Recent content in Introduction on Avatar Optimizer (1.8.14-beta.2)</description><generator>Hugo</generator><language>en</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/beta/en/index.xml" rel="self" type="application/rss+xml"/><item><title>Basic Concepts</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/basic-concept/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/basic-concept/</guid><description>&lt;h1 id="basic-concepts">
  Basic Concepts of Avatar Optimizer
  &lt;a class="anchor" href="#basic-concepts">#&lt;/a>
 &lt;/h1>
@@ -86,6 +86,28 @@ I&amp;rsquo;m usually use Japanese, but you can ask me with English.&lt;/p>
 
  
  
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+ 
+
+
+ 
+
+ 
+
+ 
+ 
+
+ 
+
+ 
+ 
 
 
  
@@ -6917,6 +6939,21 @@ I&amp;rsquo;m usually use Japanese, but you can ask me with English.&lt;/p>
 
 
 
+&lt;h2 id="1.8.14-beta.2">
+ &lt;a href="https://github.com/anatawa12/AvatarOptimizer/compare/v1.8.14-beta.1...v1.8.14-beta.2">1.8.14-beta.2&lt;/a> - 2025-09-13
+ &lt;a class="anchor" href="#1.8.14-beta.2">#&lt;/a>
+&lt;/h2>
+&lt;h3 id="1.8.14-beta.2-added">
+ Added
+ &lt;a class="anchor" href="#1.8.14-beta.2-added">#&lt;/a>
+&lt;/h3>
+&lt;ul>
+&lt;li>Compatibility declaration for VRCSDK 3.9.x &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1520">&lt;code>#1520&lt;/code>&lt;/a>
+&lt;ul>
+&lt;li>No breaking changes affect AAO, so no code changes were required.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
 &lt;h2 id="1.8.14-beta.1">
  &lt;a href="https://github.com/anatawa12/AvatarOptimizer/compare/v1.8.13...v1.8.14-beta.1">1.8.14-beta.1&lt;/a> - 2025-08-09
  &lt;a class="anchor" href="#1.8.14-beta.1">#&lt;/a>
