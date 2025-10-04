@@ -1,6 +1,6 @@
 {
-  "name": "Avatar Optimizer (1.8.14-beta.2)",
-  "short_name": "Avatar Optimizer (1.8.14-beta.2)",
+  "name": "Avatar Optimizer (1.8.14)",
+  "short_name": "Avatar Optimizer (1.8.14)",
   "start_url": "/avatar-optimizer/beta/",
   "scope": "/avatar-optimizer/beta/",
   "display": "standalone",
