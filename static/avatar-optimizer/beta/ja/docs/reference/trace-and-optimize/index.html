@@ -64,23 +64,39 @@ MMDワールドで使われるBlendShapeを固定しないなど、MMDワール�
   アニメーターの最適化
   #
 
-この機能では、アニメーターに対して以下の最適化を行います。
+この機能では、現在、アニメーターに対して以下の最適化を行います。
+(最適化処理の詳細な仕様は、将来的に変更される可能性があります。)
+
 
 AnyState式のレイヤーをEntry-Exit式に変換
-アニメーターコントローラーのレイヤーをできる限りEntry-Exit式に変換します。
-また、以下の最適化により、AnyState式のレイヤーがBlendTreeに変換されることがあります。
-Entry-Exit式のレイヤーをBlendTreeに変換
-アニメーターコントローラーのレイヤーをできる限りBlendTreeに変換します。
-BlendTreeを統合
-複数のBlendTreeレイヤーを1つのDirect BlendTreeに統合します。
-使われていないレイヤーを削除する
-StateやTransitionがないレイヤーを削除します。
+AnyState式のレイヤーをできる限りDiamond型のEntry-Exit式に変換します。
+また、後述の最適化により、AnyState式のレイヤーは最終的にBlendTreeに変換されることがあります。
+
+  ---
+title: AnyState式Layer
+---
+graph LR;
+      AnyState(AnyState);
+      Entry(Entry) --> State1;
+      AnyState --> State1(State1);
+      AnyState --> State2(State2);
+      AnyState --> State3(State3);
+
+classDef default fill:#ab8211
+classDef node stroke-width:0px,color:#ffffff
+classDef state fill:#878787
+style AnyState fill:#29a0cc
+style Entry fill:#15910f
+class Entry,State1,State2,Exit node
+class State1 default
+class State2,State3 state
 
 
 
 
-
-AAOは名前がend(大文字小文字の区別なし)で終わるボーンをendボーンとして扱います。&#160;&#8617;&#xfe0e;"><meta name=theme-color media="(prefers-color-scheme: light)" content="#ffffff"><meta name=theme-color media="(prefers-color-scheme: dark)" content="#343a40"><meta name=color-scheme content="light dark"><meta property="og:url" content="https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/trace-and-optimize/"><meta property="og:site_name" content="Avatar Optimizer (1.8.15)"><meta property="og:title" content="Trace And Optimize"><meta property="og:description" content="Trace And Optimize (T&amp;O) # 昔のバージョンではAutomatic Configurationという名前でした
+完全グラフ構造のレイヤーをEntry-Exit式に変換
+完全グラフを構成しているレイヤーをできる限りDiamond型のEntry-Exit式に変換します。
+また、後述の最適化により、完全グラフ構造のレイヤーは最終的にBlendTreeに変換されることがあります。"><meta name=theme-color media="(prefers-color-scheme: light)" content="#ffffff"><meta name=theme-color media="(prefers-color-scheme: dark)" content="#343a40"><meta name=color-scheme content="light dark"><meta property="og:url" content="https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/trace-and-optimize/"><meta property="og:site_name" content="Avatar Optimizer (1.9.0-beta.6)"><meta property="og:title" content="Trace And Optimize"><meta property="og:description" content="Trace And Optimize (T&amp;O) # 昔のバージョンではAutomatic Configurationという名前でした
 このコンポーネントは、アバターを走査して自動的にできる限りの最適化を行います。 チェックボックスで自動的に行う最適化を選択することが出来ます。
 このコンポーネントはアバターのルートに追加してください。(分類: Avatar Global Component)
 Trace and Optimizeは「見た目に絶対に影響させてはならない」という前提の下で、かなり慎重に作られています。
@@ -105,19 +121,111 @@ MMDワールドとの互換性
 MMDワールドで使われるBlendShapeを固定しないなど、MMDワールドとの互換性を考慮した軽量化を行います。 加えて、以下の高度な最適化が利用出来ます。
 面積がゼロのポリゴンを自動的に削除する
 面積がゼロのポリゴンを削除します。 これは一部のシェーダーやアニメーションによるスケール変化を壊す可能性があるため、注意して使用してください。 他に、バグの回避などに使用するための高度な設定がありますが、それらは不安定であり、不用意に変更するべきではありません。 それらの機能については英語のTooltipやソースコード、または開発者の指示を参考にしてください。
-アニメーターの最適化 # この機能では、アニメーターに対して以下の最適化を行います。
+アニメーターの最適化 # この機能では、現在、アニメーターに対して以下の最適化を行います。
+(最適化処理の詳細な仕様は、将来的に変更される可能性があります。)
 AnyState式のレイヤーをEntry-Exit式に変換
-アニメーターコントローラーのレイヤーをできる限りEntry-Exit式に変換します。 また、以下の最適化により、AnyState式のレイヤーがBlendTreeに変換されることがあります。 Entry-Exit式のレイヤーをBlendTreeに変換
-アニメーターコントローラーのレイヤーをできる限りBlendTreeに変換します。 BlendTreeを統合
-複数のBlendTreeレイヤーを1つのDirect BlendTreeに統合します。 使われていないレイヤーを削除する
-StateやTransitionがないレイヤーを削除します。 AAOは名前がend(大文字小文字の区別なし)で終わるボーンをendボーンとして扱います。 ↩︎"><meta property="og:locale" content="ja"><meta property="og:type" content="article"><meta property="article:section" content="docs"><title>Trace And Optimize | Avatar Optimizer (1.8.15)</title><link rel=icon href=/avatar-optimizer/beta/favicon.png><link rel=manifest href=/avatar-optimizer/beta/manifest.json><link rel=canonical href=https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/trace-and-optimize/><link rel=alternate hreflang=en href=https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/trace-and-optimize/ title="Trace And Optimize"><link rel=stylesheet href=/avatar-optimizer/beta/book.min.60113a8b97a3ffc03c87f522a46a7f47cc2ab4570776eaf10e1f2527b80e37f4.css integrity="sha256-YBE6i5ej/8A8h/UipGp/R8wqtFcHdurxDh8lJ7gON/Q=" crossorigin=anonymous><script defer src=/avatar-optimizer/beta/fuse.min.js></script><script defer src=/avatar-optimizer/beta/ja.search.min.321c741cff544ea4415ad616a93e763862f8910f07b217641952f6c3dd53ab9f.js integrity="sha256-Mhx0HP9UTqRBWtYWqT52OGL4kQ8HshdkGVL2w91Tq58=" crossorigin=anonymous></script></head><body dir=ltr><input type=checkbox class="hidden toggle" id=menu-control>
-<input type=checkbox class="hidden toggle" id=toc-control><main class="container flex"><aside class=book-menu><div class=book-menu-content><nav><h2 class=book-brand><a class="flex align-center" href=/avatar-optimizer/beta/ja/><span>Avatar Optimizer (1.8.15)</span></a></h2><div class="book-search hidden"><input type=text id=book-search-input placeholder=検索 aria-label=検索 maxlength=64 data-hotkeys=s/><div class="book-search-spinner hidden"></div><ul id=book-search-results></ul></div><script>document.querySelector(".book-search").classList.remove("hidden")</script><ul class=book-languages><li><input type=checkbox id=languages class=toggle>
+AnyState式のレイヤーをできる限りDiamond型のEntry-Exit式に変換します。 また、後述の最適化により、AnyState式のレイヤーは最終的にBlendTreeに変換されることがあります。
+--- title: AnyState式Layer --- graph LR; AnyState(AnyState); Entry(Entry) --> State1; AnyState --> State1(State1); AnyState --> State2(State2); AnyState --> State3(State3); classDef default fill:#ab8211 classDef node stroke-width:0px,color:#ffffff classDef state fill:#878787 style AnyState fill:#29a0cc style Entry fill:#15910f class Entry,State1,State2,Exit node class State1 default class State2,State3 state 完全グラフ構造のレイヤーをEntry-Exit式に変換
+完全グラフを構成しているレイヤーをできる限りDiamond型のEntry-Exit式に変換します。
+また、後述の最適化により、完全グラフ構造のレイヤーは最終的にBlendTreeに変換されることがあります。"><meta property="og:locale" content="ja"><meta property="og:type" content="article"><meta property="article:section" content="docs"><title>Trace And Optimize | Avatar Optimizer (1.9.0-beta.6)</title><link rel=icon href=/avatar-optimizer/beta/favicon.png><link rel=manifest href=/avatar-optimizer/beta/manifest.json><link rel=canonical href=https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/trace-and-optimize/><link rel=alternate hreflang=en href=https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/trace-and-optimize/ title="Trace And Optimize"><link rel=stylesheet href=/avatar-optimizer/beta/book.min.60113a8b97a3ffc03c87f522a46a7f47cc2ab4570776eaf10e1f2527b80e37f4.css integrity="sha256-YBE6i5ej/8A8h/UipGp/R8wqtFcHdurxDh8lJ7gON/Q=" crossorigin=anonymous><script defer src=/avatar-optimizer/beta/fuse.min.js></script><script defer src=/avatar-optimizer/beta/ja.search.min.ef5c4f5af8786fc7b972d8fcfac12d91e8d95c28cab22bae723676fc0ad6ac60.js integrity="sha256-71xPWvh4b8e5ctj8+sEtkejZXCjKsiuucjZ2/ArWrGA=" crossorigin=anonymous></script></head><body dir=ltr><input type=checkbox class="hidden toggle" id=menu-control>
+<input type=checkbox class="hidden toggle" id=toc-control><main class="container flex"><aside class=book-menu><div class=book-menu-content><nav><h2 class=book-brand><a class="flex align-center" href=/avatar-optimizer/beta/ja/><span>Avatar Optimizer (1.9.0-beta.6)</span></a></h2><div class="book-search hidden"><input type=text id=book-search-input placeholder=検索 aria-label=検索 maxlength=64 data-hotkeys=s/><div class="book-search-spinner hidden"></div><ul id=book-search-results></ul></div><script>document.querySelector(".book-search").classList.remove("hidden")</script><ul class=book-languages><li><input type=checkbox id=languages class=toggle>
 <label for=languages class="flex justify-between"><a role=button class="flex align-center"><img src=/avatar-optimizer/beta/svg/translate.svg class=book-icon alt=Languages>
-日本語</a></label><ul><li><a href=/avatar-optimizer/beta/en/docs/reference/trace-and-optimize/>English</a></li></ul></li></ul><ul><li><a class=ao-stable-beta href=https://vpm.anatawa12.com/avatar-optimizer/ja/docs/reference/trace-and-optimize/>Goto Stable Docs</a></li><li><a class=ao-stable-beta href=https://vpm.anatawa12.com/avatar-optimizer/beta/ja/#installation>インストール方法</a></li></ul><ul><li class=book-section-flat><span>チュートリアル</span><ul><li><a href=/avatar-optimizer/beta/ja/docs/tutorial/basic-usage/>基本的な使い方</a></li></ul></li><li><a href=/avatar-optimizer/beta/ja/docs/basic-concept/>基本コンセプト</a></li><li><a href=/avatar-optimizer/beta/ja/docs/faq/>よくある質問</a></li><li><a href=/avatar-optimizer/beta/ja/docs/changelog/>Changelog</a></li><li class=book-section-flat><span>コンポーネントの種類</span><ul><li><a href=/avatar-optimizer/beta/ja/docs/component-kind/avatar-global-components/>Avatar Global Components</a></li><li><a href=/avatar-optimizer/beta/ja/docs/component-kind/edit-skinned-mesh-components/>Edit Skinned Mesh Components</a></li></ul></li><li class=book-section-flat><span>コンポーネントの詳細説明</span><ul><li><a href=/avatar-optimizer/beta/ja/docs/reference/trace-and-optimize/ class=active>Trace And Optimize</a></li><li><a href=/avatar-optimizer/beta/ja/docs/reference/unused-bones-by-references-tool/>UnusedBonesByReferencesTool</a></li><li><a href=/avatar-optimizer/beta/ja/docs/reference/merge-skinned-mesh/>Merge Skinned Mesh</a></li><li><a href=/avatar-optimizer/beta/ja/docs/reference/freeze-blendshape/>Freeze BlendShape</a></li><li><a href=/avatar-optimizer/beta/ja/docs/reference/merge-toonlit-material/>Merge ToonLit Material</a></li><li><a href=/avatar-optimizer/beta/ja/docs/reference/remove-mesh-by-blendshape/>Remove Mesh By BlendShape</a></li><li><a href=/avatar-optimizer/beta/ja/docs/reference/remove-mesh-by-box/>Remove Mesh By Box</a></li><li><a href=/avatar-optimizer/beta/ja/docs/reference/remove-mesh-by-mask/>Remove Mesh By Mask</a></li><li><a href=/avatar-optimizer/beta/ja/docs/reference/remove-mesh-by-uv-tile/>Remove Mesh By UV Tile</a></li><li><a href=/avatar-optimizer/beta/ja/docs/reference/rename-blendshape/>Rename BlendShape</a></li><li><a href=/avatar-optimizer/beta/ja/docs/reference/clear-endpoint-position/>Clear Endpoint Position</a></li><li><a href=/avatar-optimizer/beta/ja/docs/reference/merge-bone/>Merge Bone</a></li><li><a href=/avatar-optimizer/beta/ja/docs/reference/merge-physbone/>Merge PhysBone</a></li><li><a href=/avatar-optimizer/beta/ja/docs/reference/remove-zero-sized-polygon/>Remove Zero Sized Polygon</a></li><li><a href=/avatar-optimizer/beta/ja/docs/reference/make-children/>Make Children</a></li></ul></li><li class=book-section-flat><span>開発者向け</span><ul><li><a href=/avatar-optimizer/beta/ja/docs/developers/asset-description/>Asset Description</a></li><li><a href=/avatar-optimizer/beta/ja/docs/developers/component-api/>Component Scripting API</a></li><li><a href=/avatar-optimizer/beta/ja/docs/developers/distributing-prefabs/>アセットの配布について</a></li><li><a href=/avatar-optimizer/beta/ja/docs/developers/make-your-components-compatible-with-aao/>コンポーネントにAvatar Optimizerとの互換性をもたせる</a></li></ul></li></ul><ul><li class=book-section-flat><span>Blog Posts</span><ul><li><a href=/avatar-optimizer/beta/ja/posts/2024-06-27-one-year-since-stable-release/>v1.0.0一周年を記念してちょっと歴史を振り返る</a></li></ul></li></ul></nav><script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script></div></aside><div class=book-page><header class=book-header><div class="flex align-center justify-between"><label for=menu-control><img src=/avatar-optimizer/beta/svg/menu.svg class=book-icon alt=Menu></label><h3>Trace And Optimize</h3><label for=toc-control><img src=/avatar-optimizer/beta/svg/toc.svg class=book-icon alt="Table of Contents"></label></div><aside class="hidden clearfix"><nav id=TableOfContents><ul><li><a href=#animator-optimizer>アニメーターの最適化</a></li></ul></nav></aside></header><article class="markdown book-article"><h1 id=trace-and-optimize>Trace And Optimize (T&amp;O)
+日本語</a></label><ul><li><a href=/avatar-optimizer/beta/en/docs/reference/trace-and-optimize/>English</a></li></ul></li></ul><ul><li><a class=ao-stable-beta href=https://vpm.anatawa12.com/avatar-optimizer/ja/docs/reference/trace-and-optimize/>Goto Stable Docs</a></li><li><a class=ao-stable-beta href=https://vpm.anatawa12.com/avatar-optimizer/beta/ja/#installation>インストール方法</a></li></ul><ul><li class=book-section-flat><span>チュートリアル</span><ul><li><a href=/avatar-optimizer/beta/ja/docs/tutorial/basic-usage/>基本的な使い方</a></li></ul></li><li><a href=/avatar-optimizer/beta/ja/docs/basic-concept/>基本コンセプト</a></li><li><a href=/avatar-optimizer/beta/ja/docs/faq/>よくある質問</a></li><li><a href=/avatar-optimizer/beta/ja/docs/changelog/>Changelog</a></li><li class=book-section-flat><span>コンポーネントの種類</span><ul><li><a href=/avatar-optimizer/beta/ja/docs/component-kind/avatar-global-components/>Avatar Global Components</a></li><li><a href=/avatar-optimizer/beta/ja/docs/component-kind/edit-skinned-mesh-components/>Edit Skinned Mesh Components</a></li></ul></li><li class=book-section-flat><span>コンポーネントの詳細説明</span><ul><li><a href=/avatar-optimizer/beta/ja/docs/reference/trace-and-optimize/ class=active>Trace And Optimize</a></li><li><a href=/avatar-optimizer/beta/ja/docs/reference/merge-skinned-mesh/>Merge Skinned Mesh</a></li><li><a href=/avatar-optimizer/beta/ja/docs/reference/freeze-blendshape/>Freeze BlendShape</a></li><li><a href=/avatar-optimizer/beta/ja/docs/reference/max-texture-size/>Max Texture Size</a></li><li><a href=/avatar-optimizer/beta/ja/docs/reference/merge-material/>Merge Material</a></li><li><a href=/avatar-optimizer/beta/ja/docs/reference/remove-mesh-by-blendshape/>Remove Mesh By BlendShape</a></li><li><a href=/avatar-optimizer/beta/ja/docs/reference/remove-mesh-by-box/>Remove Mesh By Box</a></li><li><a href=/avatar-optimizer/beta/ja/docs/reference/remove-mesh-by-mask/>Remove Mesh By Mask</a></li><li><a href=/avatar-optimizer/beta/ja/docs/reference/remove-mesh-by-uv-tile/>Remove Mesh By UV Tile</a></li><li><a href=/avatar-optimizer/beta/ja/docs/reference/rename-blendshape/>Rename BlendShape</a></li><li><a href=/avatar-optimizer/beta/ja/docs/reference/clear-endpoint-position/>Clear Endpoint Position</a></li><li><a href=/avatar-optimizer/beta/ja/docs/reference/merge-bone/>Merge Bone</a></li><li><a href=/avatar-optimizer/beta/ja/docs/reference/merge-physbone/>Merge PhysBone</a></li><li><a href=/avatar-optimizer/beta/ja/docs/reference/remove-zero-sized-polygon/>Remove Zero Sized Polygon</a></li><li><a href=/avatar-optimizer/beta/ja/docs/reference/replace-end-bone-with-endpoint-position/>Replace End Bone With Endpoint Position</a></li><li><a href=/avatar-optimizer/beta/ja/docs/reference/make-children/>Make Children</a></li><li><a href=/avatar-optimizer/beta/ja/docs/reference/merge-toonlit-material/>Merge ToonLit Material</a></li><li><a href=/avatar-optimizer/beta/ja/docs/reference/unused-bones-by-references-tool/>UnusedBonesByReferencesTool</a></li></ul></li><li class=book-section-flat><span>開発者向け</span><ul><li><a href=/avatar-optimizer/beta/ja/docs/developers/asset-description/>Asset Description</a></li><li><a href=/avatar-optimizer/beta/ja/docs/developers/component-api/>Component Scripting API</a></li><li><a href=/avatar-optimizer/beta/ja/docs/developers/distributing-prefabs/>アセットの配布について</a></li><li><a href=/avatar-optimizer/beta/ja/docs/developers/make-your-components-compatible-with-aao/>コンポーネントにAvatar Optimizerとの互換性をもたせる</a></li></ul></li></ul><ul><li class=book-section-flat><span>Blog Posts</span><ul><li><a href=/avatar-optimizer/beta/ja/posts/2024-06-27-one-year-since-stable-release/>v1.0.0一周年を記念してちょっと歴史を振り返る</a></li></ul></li></ul></nav><script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script></div></aside><div class=book-page><header class=book-header><div class="flex align-center justify-between"><label for=menu-control><img src=/avatar-optimizer/beta/svg/menu.svg class=book-icon alt=Menu></label><h3>Trace And Optimize</h3><label for=toc-control><img src=/avatar-optimizer/beta/svg/toc.svg class=book-icon alt="Table of Contents"></label></div><aside class="hidden clearfix"><nav id=TableOfContents><ul><li><a href=#animator-optimizer>アニメーターの最適化</a></li></ul></nav></aside></header><article class="markdown book-article"><h1 id=trace-and-optimize>Trace And Optimize (T&amp;O)
 <a class=anchor href=#trace-and-optimize>#</a></h1><p><i>昔のバージョンではAutomatic Configurationという名前でした</i></p><p>このコンポーネントは、アバターを走査して自動的にできる限りの最適化を行います。
 チェックボックスで自動的に行う最適化を選択することが出来ます。</p><p>このコンポーネントはアバターのルートに追加してください。(分類: <a href=../../component-kind/avatar-global-components>Avatar Global Component</a>)</p><blockquote class="book-hint info"><p>Trace and Optimizeは「<strong>見た目に絶対に影響させてはならない</strong>」という前提の下で、かなり慎重に作られています。<br>そのため、見た目に影響が出たり、何らかのギミックが機能しなくなったりといった問題が発生した場合はすべて、例外なくAAOのバグとなります。<br>従って、問題が起きた際は報告していただければ、出来る限り修正いたします。</p></blockquote><p>現在、以下の機能を使った自動最適化が可能です。</p><ul><li><code>BlendShapeを最適化する</code><br><small>以前は<code>BlendShapeを自動的に固定・除去する</code>という名前でしたが、機能が増えたため名前が変わりました。</small><br>アニメーションなどを走査して、BlendShapeを自動的に固定・除去・統合することでBlendShapeの数を削減します。</li><li><code>使われていないObjectを自動的に削除する</code><br>アニメーションなどを走査して、使われていないObject(GameObjectやコンポーネントなど)を自動的に削除します。<br>また、切り替えるものと一緒に使われていて、他の方法で使われていないPhysBooneコンポーネントを自動的に切り替えるようにします。<ul><li><code>endボーンを残す</code><br>親が削除されていないendボーン<sup id=fnref:1><a href=#fn:1 class=footnote-ref role=doc-noteref>1</a></sup>を削除しないようにします。</li></ul></li><li><code>PhysBoneの設定を最適化する</code><br>PhysBoneの設定について、以下の最適化を行います。<ul><li>全く同じ設定のPhysBone Colliderを1つに統合します。</li><li>不要な場合に<code>Is Animated</code>のチェックを外します。</li></ul></li><li><code>アニメーターの最適化</code><br>Animator Controllerを最適化します。詳細は<a href=#animator-optimizer>このセクション</a>を参照してください。</li><li><code>スキンメッシュレンダラーを統合する</code><br>分かれている必要のないスキンメッシュレンダラーを統合します。<br>場合により、自動では一部のメッシュを統合しないこともあるため、必要に応じて<a href=../merge-skinned-mesh>Merge Skinned Mesh</a>を使用してください。<ul><li><code>マテリアルスロットの前後関係を変えることを許可する</code><br>マテリアルスロットの前後関係を変えることで、アバターの描画負荷を減らせる場合があります。<br>多くの場合、マテリアルスロットの前後関係は特に意味を持ちませんが、描画順に影響を与える場合もあるようです。</li></ul></li><li><code>テクスチャを最適化する</code><br>見た目に影響を与えずにテクスチャを最適化します。<br>現在は、AvatarOptimizerが対応しているシェーダーが使用されているマテリアルに対してのみ、UVパッキングやテクスチャサイズの縮小を行います。</li></ul><p>また、以下の設定で自動設定を調節できます。</p><ul><li><code>MMDワールドとの互換性</code><br>MMDワールドで使われるBlendShapeを固定しないなど、MMDワールドとの互換性を考慮した軽量化を行います。</li></ul><p>加えて、以下の高度な最適化が利用出来ます。</p><ul><li><code>面積がゼロのポリゴンを自動的に削除する</code><br>面積がゼロのポリゴンを削除します。
 これは一部のシェーダーやアニメーションによるスケール変化を壊す可能性があるため、注意して使用してください。</li></ul><p>他に、バグの回避などに使用するための高度な設定がありますが、それらは不安定であり、不用意に変更するべきではありません。
 それらの機能については英語のTooltipやソースコード、または開発者の指示を参考にしてください。</p><p><img src=component.png alt=component.png></p><h2 id=animator-optimizer>アニメーターの最適化
-<a class=anchor href=#animator-optimizer>#</a></h2><p>この機能では、アニメーターに対して以下の最適化を行います。</p><ul><li>AnyState式のレイヤーをEntry-Exit式に変換<br>アニメーターコントローラーのレイヤーをできる限りEntry-Exit式に変換します。
-また、以下の最適化により、AnyState式のレイヤーがBlendTreeに変換されることがあります。</li><li>Entry-Exit式のレイヤーをBlendTreeに変換<br>アニメーターコントローラーのレイヤーをできる限りBlendTreeに変換します。</li><li>BlendTreeを統合<br>複数のBlendTreeレイヤーを1つのDirect BlendTreeに統合します。</li><li>使われていないレイヤーを削除する<br>StateやTransitionがないレイヤーを削除します。</li></ul><div class=footnotes role=doc-endnotes><hr><ol><li id=fn:1><p>AAOは名前が<code>end</code>(大文字小文字の区別なし)で終わるボーンをendボーンとして扱います。&#160;<a href=#fnref:1 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p></li></ol></div></article><footer class=book-footer><div class="flex flex-wrap justify-between"><div><a class="flex align-center" href=https://github.com/anatawa12/AvatarOptimizer/edit/master/.docs/content/docs/reference/trace-and-optimize/index.ja.md target=_blank rel=noopener><img src=/avatar-optimizer/beta/svg/edit.svg class=book-icon alt>
-<span>このページを編集する</span></a></div></div><script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script></footer><div class=book-comments></div><label for=menu-control class="hidden book-menu-overlay"></label></div><aside class=book-toc><div class=book-toc-content><nav id=TableOfContents><ul><li><a href=#animator-optimizer>アニメーターの最適化</a></li></ul></nav></div></aside></main></body></html>
+<a class=anchor href=#animator-optimizer>#</a></h2><p>この機能では、現在、アニメーターに対して以下の最適化を行います。</p><p>(最適化処理の詳細な仕様は、将来的に変更される可能性があります。)</p><ul><li><p>AnyState式のレイヤーをEntry-Exit式に変換<br>AnyState式のレイヤーをできる限りDiamond型のEntry-Exit式に変換します。
+また、後述の最適化により、AnyState式のレイヤーは最終的にBlendTreeに変換されることがあります。</p><pre class=mermaid>
+  ---
+title: AnyState式Layer
+---
+graph LR;
+      AnyState(AnyState);
+      Entry(Entry) --&gt; State1;
+      AnyState --&gt; State1(State1);
+      AnyState --&gt; State2(State2);
+      AnyState --&gt; State3(State3);
+
+classDef default fill:#ab8211
+classDef node stroke-width:0px,color:#ffffff
+classDef state fill:#878787
+style AnyState fill:#29a0cc
+style Entry fill:#15910f
+class Entry,State1,State2,Exit node
+class State1 default
+class State2,State3 state
+</pre></li><li><p>完全グラフ構造のレイヤーをEntry-Exit式に変換<br>完全グラフを構成しているレイヤーをできる限りDiamond型のEntry-Exit式に変換します。<br>また、後述の最適化により、完全グラフ構造のレイヤーは最終的にBlendTreeに変換されることがあります。</p><pre class=mermaid>
+  ---
+title: Complete Graph layer
+---
+graph LR;
+      Entry(Entry) --&gt; State1;
+      State1(State1) --&gt; State2(State2);
+      State1 --&gt; State3(State3);
+      State2 --&gt; State1;
+      State2 --&gt; State3;
+      State3 --&gt; State1;
+      State3 --&gt; State2;
+
+classDef default fill:#ab8211
+classDef node stroke-width:0px,color:#ffffff
+classDef state fill:#878787
+%%style AnyState fill:#29a0cc
+style Entry fill:#15910f
+class Entry,State1,State2,Exit node
+class State1 default
+class State2,State3 state
+</pre></li><li><p>Entry-Exit式のレイヤーをBlendTreeに変換<br>Entry-Exit式のレイヤーをできる限りBlendTreeに変換します。<br>現在、Diamond型、およびLinear型のEntry-Exit式のレイヤーがBlendTreeに変換されます。</p><pre class=mermaid>
+  ---
+title: Diamond型Entry-Exit式レイヤー
+---
+graph LR;
+      Entry(Entry);
+      Entry --&gt; State1(State1);
+      Entry --&gt; State2(State2);
+      Entry --&gt; State3(State3);
+      State1 --&gt; Exit(Exit);
+      State2 --&gt; Exit;
+      State3 --&gt; Exit;
+
+classDef default fill:#ab8211
+classDef node stroke-width:0px,color:#ffffff
+classDef state fill:#878787
+style Exit fill:#ba202f
+style Entry fill:#15910f
+class Entry,State1,State2,Exit node
+class State1 default
+class State2,State3 state
+</pre><pre class=mermaid>
+  ---
+title: Linear型Entry-Exit式レイヤー
+---
+flowchart LR;
+      Entry(Entry) --&gt; State1(State1);
+      State1 --&gt; State2(State2);
+      State2 --&gt; Exit(Exit);
+
+classDef node stroke-width:0px,color:#ffffff
+classDef defaultState fill:#ab8211
+classDef state fill:#878787
+style Exit fill:#ba202f
+style Entry fill:#15910f
+class Entry,State1,State2,Exit node
+class State1 defaultState
+class State2 state
+</pre></li><li><p>BlendTreeを統合<br>複数のBlendTreeレイヤーを1つのDirect BlendTreeに統合します。</p></li><li><p>使われていないレイヤーを削除する<br>StateやTransitionがないレイヤーを削除します。</p></li></ul><div class=footnotes role=doc-endnotes><hr><ol><li id=fn:1><p>Trace And Optimizeでは、名前が<code>end</code>(大文字小文字の区別なし)で終わるボーンをendボーンとして扱います。&#160;<a href=#fnref:1 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p></li></ol></div></article><footer class=book-footer><div class="flex flex-wrap justify-between"><div><a class="flex align-center" href=https://github.com/anatawa12/AvatarOptimizer/edit/master/.docs/content/docs/reference/trace-and-optimize/index.ja.md target=_blank rel=noopener><img src=/avatar-optimizer/beta/svg/edit.svg class=book-icon alt>
+<span>このページを編集する</span></a></div></div><script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script></footer><div class=book-comments></div><label for=menu-control class="hidden book-menu-overlay"></label></div><aside class=book-toc><div class=book-toc-content><nav id=TableOfContents><ul><li><a href=#animator-optimizer>アニメーターの最適化</a></li></ul></nav></div></aside></main><script type=module>
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+    import elkLayouts from 'https://cdn.jsdelivr.net/npm/@mermaid-js/layout-elk@0/dist/mermaid-layout-elk.esm.min.mjs';
+
+    mermaid.registerLayoutLoaders(elkLayouts);
+    mermaid.initialize({
+        startOnLoad: true,
+        nodeSpacing: 20,
+        rankSpacing: 20,
+        flowchart: {
+            padding: 5,
+        }
+    });
+</script></body></html>
