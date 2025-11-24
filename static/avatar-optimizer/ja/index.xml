@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Introduction on Avatar Optimizer (1.8.14)</title><link>https://vpm.anatawa12.com/avatar-optimizer/ja/</link><description>Recent content in Introduction on Avatar Optimizer (1.8.14)</description><generator>Hugo</generator><language>ja</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/ja/index.xml" rel="self" type="application/rss+xml"/><item><title>v1.0.0一周年を記念してちょっと歴史を振り返る</title><link>https://vpm.anatawa12.com/avatar-optimizer/ja/posts/2024-06-27-one-year-since-stable-release/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/ja/posts/2024-06-27-one-year-since-stable-release/</guid><description>&lt;p>AAO: Avatar Optimizer v1.0.0一周年を記念してちょっと歴史を振り返ってみることにしてみる。&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Introduction on Avatar Optimizer (1.8.15)</title><link>https://vpm.anatawa12.com/avatar-optimizer/ja/</link><description>Recent content in Introduction on Avatar Optimizer (1.8.15)</description><generator>Hugo</generator><language>ja</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/ja/index.xml" rel="self" type="application/rss+xml"/><item><title>v1.0.0一周年を記念してちょっと歴史を振り返る</title><link>https://vpm.anatawa12.com/avatar-optimizer/ja/posts/2024-06-27-one-year-since-stable-release/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/ja/posts/2024-06-27-one-year-since-stable-release/</guid><description>&lt;p>AAO: Avatar Optimizer v1.0.0一周年を記念してちょっと歴史を振り返ってみることにしてみる。&lt;/p>
 &lt;p>書いた人はanatawa12なので「私」はanatawa12を指す。&lt;/p>
 &lt;h2 id="before-born">
  Avatar Optimizerが生まれるまで
@@ -175,6 +175,28 @@
 
  
  
+
+
+ 
+
+ 
+
+ 
+ 
+
+ 
+
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+ 
  
 
  
@@ -3098,6 +3120,21 @@
 
 
 
+&lt;h2 id="1.8.15">
+ &lt;a href="https://github.com/anatawa12/AvatarOptimizer/compare/v1.8.14...v1.8.15">1.8.15&lt;/a> - 2025-11-24
+ &lt;a class="anchor" href="#1.8.15">#&lt;/a>
+&lt;/h2>
+&lt;h3 id="1.8.15-added">
+ Added
+ &lt;a class="anchor" href="#1.8.15-added">#&lt;/a>
+&lt;/h3>
+&lt;ul>
+&lt;li>Support for VRCSDK 3.10.x &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1562">&lt;code>#1562&lt;/code>&lt;/a> &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1570">&lt;code>#1570&lt;/code>&lt;/a>
+&lt;ul>
+&lt;li>New internal component ParentChangeDetector is added&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
 &lt;h2 id="1.8.14">
  &lt;a href="https://github.com/anatawa12/AvatarOptimizer/compare/v1.8.13...v1.8.14">1.8.14&lt;/a> - 2025-10-04
  &lt;a class="anchor" href="#1.8.14">#&lt;/a>

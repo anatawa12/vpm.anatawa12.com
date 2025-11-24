@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Component Kinds on Avatar Optimizer (1.9.0-beta.5)</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/component-kind/</link><description>Recent content in Component Kinds on Avatar Optimizer (1.9.0-beta.5)</description><generator>Hugo</generator><language>en</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/component-kind/index.xml" rel="self" type="application/rss+xml"/><item><title>Avatar Global Components</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/component-kind/avatar-global-components/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/component-kind/avatar-global-components/</guid><description>&lt;h1 id="avatar-global-components">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Component Kinds on Avatar Optimizer (1.8.15)</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/component-kind/</link><description>Recent content in Component Kinds on Avatar Optimizer (1.8.15)</description><generator>Hugo</generator><language>en</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/component-kind/index.xml" rel="self" type="application/rss+xml"/><item><title>Avatar Global Components</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/component-kind/avatar-global-components/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/component-kind/avatar-global-components/</guid><description>&lt;h1 id="avatar-global-components">
  Avatar Global Components
  &lt;a class="anchor" href="#avatar-global-components">#&lt;/a>
 &lt;/h1>
@@ -12,12 +12,20 @@ For example, in the case of a VRChat avatar, the &amp;ldquo;avatar root&amp;rdqu
 &lt;/h1>
 &lt;p>Edit Skinned Mesh Component is a kind of component which should be added to
 a GameObject which has a SkinnedMeshRenderer component, and applies some modification to the SkinnedMeshRenderer.&lt;/p>
-&lt;p>Since Avatar Optimizer 1.9.0, some components can be used with basic MeshRenderer component.
-Those will be called &amp;ldquo;Edit Skinned Mesh component with basic mesh support&amp;rdquo;.&lt;/p>
 &lt;p>There are two sub-kinds.&lt;/p>
 &lt;h2 id="source-component">
  Source Component
  &lt;a class="anchor" href="#source-component">#&lt;/a>
 &lt;/h2>
 &lt;p>This kind of component will produce Mesh and some other properties of SkinnedMeshRenderer.&lt;br>
-Following components are Source Edit Skinned Mesh Component.&lt;/p></description></item></channel></rss>
+Following components are Source Edit Skinned Mesh Component.&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="../../reference/merge-skinned-mesh">MergeSkinnedMesh&lt;/a>&lt;br>
+This component will produce mesh from other (Skinned)MeshRenderers.&lt;/li>
+&lt;/ul>
+&lt;h2 id="modifying-component">
+ Modifying Component
+ &lt;a class="anchor" href="#modifying-component">#&lt;/a>
+&lt;/h2>
+&lt;p>This kind of component will (duplicates and) modifies the existing Mesh and some other properties of SkinnedMeshRenderer.&lt;br>
+Following components are Modifying Edit Skinned Mesh Component.&lt;/p></description></item></channel></rss>
