@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Introduction on Avatar Optimizer (1.9.0-beta.6)</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/</link><description>Recent content in Introduction on Avatar Optimizer (1.9.0-beta.6)</description><generator>Hugo</generator><language>en</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/beta/en/index.xml" rel="self" type="application/rss+xml"/><item><title>Basic Concepts</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/basic-concept/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/basic-concept/</guid><description>&lt;h1 id="basic-concepts">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Introduction on Avatar Optimizer (1.9.0-rc.1)</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/</link><description>Recent content in Introduction on Avatar Optimizer (1.9.0-rc.1)</description><generator>Hugo</generator><language>en</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/beta/en/index.xml" rel="self" type="application/rss+xml"/><item><title>Basic Concepts</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/basic-concept/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/basic-concept/</guid><description>&lt;h1 id="basic-concepts">
  Basic Concepts of Avatar Optimizer
  &lt;a class="anchor" href="#basic-concepts">#&lt;/a>
 &lt;/h1>
@@ -82,6 +82,37 @@ I&amp;rsquo;m usually use Japanese, but you can ask me with English.&lt;/p>
 
  
  
+
+
+ 
+
+ 
+
+ 
+ 
+
+ 
+
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+ 
  
 
  
@@ -7151,6 +7182,28 @@ I&amp;rsquo;m usually use Japanese, but you can ask me with English.&lt;/p>
 
 
 
+&lt;h2 id="1.9.0-rc.1">
+ &lt;a href="https://github.com/anatawa12/AvatarOptimizer/compare/v1.9.0-beta.6...v1.9.0-rc.1">1.9.0-rc.1&lt;/a> - 2025-12-01
+ &lt;a class="anchor" href="#1.9.0-rc.1">#&lt;/a>
+&lt;/h2>
+&lt;h3 id="1.9.0-rc.1-added">
+ Added
+ &lt;a class="anchor" href="#1.9.0-rc.1-added">#&lt;/a>
+&lt;/h3>
+&lt;ul>
+&lt;li>Experimental support for NDMF Platform Support &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1577">&lt;code>#1577&lt;/code>&lt;/a> &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1576">&lt;code>#1576&lt;/code>&lt;/a>
+&lt;ul>
+&lt;li>This is an experimental feature that does not follow semantic versioning.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="1.9.0-rc.1-fixed">
+ Fixed
+ &lt;a class="anchor" href="#1.9.0-rc.1-fixed">#&lt;/a>
+&lt;/h3>
+&lt;ul>
+&lt;li>Error in AutoFreezeBlendShape with broken viseme settings &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1575">&lt;code>#1575&lt;/code>&lt;/a>&lt;/li>
+&lt;/ul>
 &lt;h2 id="1.9.0-beta.6">
  &lt;a href="https://github.com/anatawa12/AvatarOptimizer/compare/v1.8.15...v1.9.0-beta.6">1.9.0-beta.6&lt;/a> - 2025-11-24
  &lt;a class="anchor" href="#1.9.0-beta.6">#&lt;/a>
