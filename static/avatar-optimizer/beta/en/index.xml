@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Introduction on Avatar Optimizer (1.9.0-rc.1)</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/</link><description>Recent content in Introduction on Avatar Optimizer (1.9.0-rc.1)</description><generator>Hugo</generator><language>en</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/beta/en/index.xml" rel="self" type="application/rss+xml"/><item><title>Basic Concepts</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/basic-concept/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/basic-concept/</guid><description>&lt;h1 id="basic-concepts">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Introduction on Avatar Optimizer (1.8.16)</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/</link><description>Recent content in Introduction on Avatar Optimizer (1.8.16)</description><generator>Hugo</generator><language>en</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/beta/en/index.xml" rel="self" type="application/rss+xml"/><item><title>Basic Concepts</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/basic-concept/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/basic-concept/</guid><description>&lt;h1 id="basic-concepts">
  Basic Concepts of Avatar Optimizer
  &lt;a class="anchor" href="#basic-concepts">#&lt;/a>
 &lt;/h1>
@@ -73,161 +73,6 @@ I&amp;rsquo;m usually use Japanese, but you can ask me with English.&lt;/p>
 
  
  
- 
-
- 
- 
- 
- 
-
- 
- 
-
-
- 
-
- 
-
- 
- 
-
- 
-
- 
- 
- 
-
- 
- 
- 
- 
-
- 
- 
- 
-
- 
- 
- 
- 
-
- 
- 
- 
-
- 
- 
- 
- 
-
- 
- 
-
-
- 
-
- 
-
- 
- 
-
- 
-
- 
- 
- 
-
- 
- 
- 
- 
-
- 
- 
-
-
- 
-
- 
-
- 
- 
-
- 
-
- 
- 
- 
-
- 
- 
- 
- 
-
- 
- 
-
-
- 
-
- 
-
- 
- 
-
- 
-
- 
- 
- 
-
- 
- 
- 
- 
-
- 
- 
-
-
- 
-
- 
-
- 
- 
-
- 
-
- 
- 
- 
-
- 
- 
- 
- 
-
- 
- 
- 
-
- 
- 
- 
- 
-
- 
- 
- 
-
- 
- 
- 
- 
-
- 
- 
 
 
  
@@ -292,61 +137,39 @@ I&amp;rsquo;m usually use Japanese, but you can ask me with English.&lt;/p>
  
  
 
- 
  
-
-
  
 
- 
 
  
- 
 
  
 
  
  
- 
 
- 
  
- 
- 
 
  
  
-
-
  
 
  
-
  
  
-
  
 
  
- 
-
-
  
 
- 
 
  
- 
 
  
 
- 
  
  
 
- 
- 
- 
  
 
  
@@ -7182,66 +7005,19 @@ I&amp;rsquo;m usually use Japanese, but you can ask me with English.&lt;/p>
 
 
 
-&lt;h2 id="1.9.0-rc.1">
- &lt;a href="https://github.com/anatawa12/AvatarOptimizer/compare/v1.9.0-beta.6...v1.9.0-rc.1">1.9.0-rc.1&lt;/a> - 2025-12-01
- &lt;a class="anchor" href="#1.9.0-rc.1">#&lt;/a>
+&lt;h2 id="1.8.16">
+ &lt;a href="https://github.com/anatawa12/AvatarOptimizer/compare/v1.8.15...v1.8.16">1.8.16&lt;/a> - 2025-12-03
+ &lt;a class="anchor" href="#1.8.16">#&lt;/a>
 &lt;/h2>
-&lt;h3 id="1.9.0-rc.1-added">
- Added
- &lt;a class="anchor" href="#1.9.0-rc.1-added">#&lt;/a>
-&lt;/h3>
-&lt;ul>
-&lt;li>Experimental support for NDMF Platform Support &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1577">&lt;code>#1577&lt;/code>&lt;/a> &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1576">&lt;code>#1576&lt;/code>&lt;/a>
-&lt;ul>
-&lt;li>This is an experimental feature that does not follow semantic versioning.&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h3 id="1.9.0-rc.1-fixed">
- Fixed
- &lt;a class="anchor" href="#1.9.0-rc.1-fixed">#&lt;/a>
-&lt;/h3>
-&lt;ul>
-&lt;li>Error in AutoFreezeBlendShape with broken viseme settings &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1575">&lt;code>#1575&lt;/code>&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="1.9.0-beta.6">
- &lt;a href="https://github.com/anatawa12/AvatarOptimizer/compare/v1.8.15...v1.9.0-beta.6">1.9.0-beta.6&lt;/a> - 2025-11-24
- &lt;a class="anchor" href="#1.9.0-beta.6">#&lt;/a>
-&lt;/h2>
-&lt;h3 id="1.9.0-beta.6-added">
- Added
- &lt;a class="anchor" href="#1.9.0-beta.6-added">#&lt;/a>
-&lt;/h3>
-&lt;ul>
-&lt;li>Replace EndBone With Endpoint Position component which replaces the end bone in the vrc physbone with the Endpoint Position &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1423">&lt;code>#1423&lt;/code>&lt;/a>&lt;/li>
-&lt;li>Automatic Replace EndBone With Endpoint Position &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1423">&lt;code>#1423&lt;/code>&lt;/a>
-&lt;ul>
-&lt;li>Trace and Optimize now automatically replaces PhysBone&amp;rsquo;s EndBone with Endpoint Position if possible.&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h3 id="1.9.0-beta.6-changed">
+&lt;h3 id="1.8.16-changed">
  Changed
- &lt;a class="anchor" href="#1.9.0-beta.6-changed">#&lt;/a>
+ &lt;a class="anchor" href="#1.8.16-changed">#&lt;/a>
 &lt;/h3>
 &lt;ul>
-&lt;li>Useful error message will be shown when known unity bug that prevents you from building your avatar &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1563">&lt;code>#1563&lt;/code>&lt;/a>
-&lt;ul>
-&lt;li>Actually I cannot reproduce the bug so I hope this works but nothing certify this works.&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h3 id="1.9.0-beta.6-fixed">
- Fixed
- &lt;a class="anchor" href="#1.9.0-beta.6-fixed">#&lt;/a>
-&lt;/h3>
-&lt;ul>
-&lt;li>Cubemap textures are removed unexpectedly &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1566">&lt;code>#1566&lt;/code>&lt;/a>&lt;/li>
-&lt;li>Unexpectedly textures with uv transforms are atlased &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1569">&lt;code>#1569&lt;/code>&lt;/a>&lt;/li>
-&lt;li>Error with insoncistent animator controller &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1571">&lt;code>#1571&lt;/code>&lt;/a>&lt;/li>
+&lt;li>Streaming mipmap settings are copied when processing textures &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1558">&lt;code>#1558&lt;/code>&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;h2 id="1.8.15">
- &lt;a href="https://github.com/anatawa12/AvatarOptimizer/compare/v1.9.0-beta.5...v1.8.15">1.8.15&lt;/a> - 2025-11-24
+ &lt;a href="https://github.com/anatawa12/AvatarOptimizer/compare/v1.8.14...v1.8.15">1.8.15&lt;/a> - 2025-11-24
  &lt;a class="anchor" href="#1.8.15">#&lt;/a>
 &lt;/h2>
 &lt;h3 id="1.8.15-added">
@@ -7252,172 +7028,6 @@ I&amp;rsquo;m usually use Japanese, but you can ask me with English.&lt;/p>
 &lt;li>Support for VRCSDK 3.10.x &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1562">&lt;code>#1562&lt;/code>&lt;/a> &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1570">&lt;code>#1570&lt;/code>&lt;/a>
 &lt;ul>
 &lt;li>New internal component ParentChangeDetector is added&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h2 id="1.9.0-beta.5">
- &lt;a href="https://github.com/anatawa12/AvatarOptimizer/compare/v1.9.0-beta.4...v1.9.0-beta.5">1.9.0-beta.5&lt;/a> - 2025-11-12
- &lt;a class="anchor" href="#1.9.0-beta.5">#&lt;/a>
-&lt;/h2>
-&lt;h3 id="1.9.0-beta.5-fixed">
- Fixed
- &lt;a class="anchor" href="#1.9.0-beta.5-fixed">#&lt;/a>
-&lt;/h3>
-&lt;ul>
-&lt;li>Compilation error with VRCSDK 3.7.x or older &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1561">&lt;code>#1561&lt;/code>&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="1.9.0-beta.4">
- &lt;a href="https://github.com/anatawa12/AvatarOptimizer/compare/v1.9.0-beta.3...v1.9.0-beta.4">1.9.0-beta.4&lt;/a> - 2025-11-11
- &lt;a class="anchor" href="#1.9.0-beta.4">#&lt;/a>
-&lt;/h2>
-&lt;h3 id="1.9.0-beta.4-fixed">
- Fixed
- &lt;a class="anchor" href="#1.9.0-beta.4-fixed">#&lt;/a>
-&lt;/h3>
-&lt;ul>
-&lt;li>KeyNotFoundException in some cases &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1560">&lt;code>#1560&lt;/code>&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="1.9.0-beta.3">
- &lt;a href="https://github.com/anatawa12/AvatarOptimizer/compare/v1.8.14...v1.9.0-beta.3">1.9.0-beta.3&lt;/a> - 2025-11-09
- &lt;a class="anchor" href="#1.9.0-beta.3">#&lt;/a>
-&lt;/h2>
-&lt;h3 id="1.9.0-beta.3-added">
- Added
- &lt;a class="anchor" href="#1.9.0-beta.3-added">#&lt;/a>
-&lt;/h3>
-&lt;ul>
-&lt;li>Linear Entry-Exit support for Entry-Exit to 1D BlendTree Optimization &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1498">&lt;code>#1498&lt;/code>&lt;/a> &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1506">&lt;code>#1506&lt;/code>&lt;/a>
-&lt;ul>
-&lt;li>Since this version, Entry =&amp;gt; State1 =&amp;gt; State2 =&amp;gt; Exit pattern is now supported.&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>More cases are supported by Automatically Freeze BlendShape &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1510">&lt;code>#1510&lt;/code>&lt;/a>
-&lt;ul>
-&lt;li>AAO can now freeze BlendShapes that are animated in animator layers with weights between 0 and 1.&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>Remove unused textures in Remove Unused Objects &lt;code>1502&lt;/code>&lt;/li>
-&lt;li>Invert option of Remove Mesh by BlendShape &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1535">&lt;code>#1535&lt;/code>&lt;/a>&lt;/li>
-&lt;li>Automatically merge PhysBone when no grabbing PhysBone is detected &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1539">&lt;code>#1539&lt;/code>&lt;/a>&lt;/li>
-&lt;li>Automatic Merge BlendTree support for WriteDefaults off BlendTree &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1283">&lt;code>#1283&lt;/code>&lt;/a>&lt;/li>
-&lt;li>Component API for Remove Mesh By Mask &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1541">&lt;code>#1541&lt;/code>&lt;/a>
-&lt;ul>
-&lt;li>External tools can now programmatically add and configure RemoveMeshByMask components.&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>Complete Graph to Entry Exit optimization &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1544">&lt;code>#1544&lt;/code>&lt;/a>
-&lt;ul>
-&lt;li>New optimization in the Animator Optimizer, which is part of Trace and Optimize.&lt;/li>
-&lt;li>It&amp;rsquo;s expected that this optimization will reduce the number of transitions computed every frame.&lt;/li>
-&lt;li>After this optimization, Entry Exit to BlendTree optimization may be applied.&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>Minimum linting for some mistakes that reduces the avatar performance &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1549">&lt;code>#1549&lt;/code>&lt;/a>
-&lt;ul>
-&lt;li>AAO now performs basic linting to identify common mistakes that can negatively impact avatar performance.&lt;/li>
-&lt;li>Currently, multi-pass rendering with exactly the same material is detected since it&amp;rsquo;s likely a mistake that clicks &amp;lsquo;+&amp;rsquo; button on the inspector by mistake.&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>Max Texture Size component to limit texture &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1516">&lt;code>#1516&lt;/code>&lt;/a>&lt;/li>
-&lt;li>Merge Material component which is successor of Merge ToonLit Material &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1516">&lt;code>#1516&lt;/code>&lt;/a>
-&lt;ul>
-&lt;li>This component merges multiple materials into one material.&lt;/li>
-&lt;li>This component supports many shader includes lilToon, ToonStandard and others.&lt;/li>
-&lt;li>Merge ToonLit Material is now deprecated. Please use this new component instead.&lt;/li>
-&lt;li>Merge ToonLit Material will be removed in next major version.&lt;/li>
-&lt;li>This component will support both Skinned Mesh Renderer and Mesh Renderer.&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h3 id="1.9.0-beta.3-changed">
- Changed
- &lt;a class="anchor" href="#1.9.0-beta.3-changed">#&lt;/a>
-&lt;/h3>
-&lt;ul>
-&lt;li>Avatar Optimizer will run as late as possible in NDMF Pipeline by default &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1493">&lt;code>#1493&lt;/code>&lt;/a>
-&lt;ul>
-&lt;li>To achieve this, I changed the name of plugin class, which is internal API, to contain non-ASCII character (with escape sequence).&lt;/li>
-&lt;li>It&amp;rsquo;s not recommended but when you actually want to run after Avatar Optimizer, you can use &lt;a href="https://ndmf.nadena.dev/api/nadena.dev.ndmf.fluent.Sequence.html#nadena_dev_ndmf_fluent_Sequence_AfterPlugin_System_String_System_String_System_Int32_">&lt;code>AfterPlugin&lt;/code>&lt;/a> api with &lt;code>&amp;quot;com.anatawa12.avatar-optimizer&amp;quot;&lt;/code> as the plugin name in NDMF.
-&lt;ul>
-&lt;li>In such cases, it might be necessary to register your components to Avatar Optimizer with API. For more details about registering components, see &lt;a href="https://vpm.anatawa12.com/avatar-optimizer/en/docs/developers/make-your-components-compatible-with-aao/">Make your components compatible with Avatar Optimizer&lt;/a> in the documentation.&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>This changes order of default plugin order, but when your plugin depending on running Avatar Optimizer after your plugin, it&amp;rsquo;s better to use &lt;a href="https://ndmf.nadena.dev/api/nadena.dev.ndmf.fluent.Sequence.html#nadena_dev_ndmf_fluent_Sequence_BeforePlugin_System_String_System_String_System_Int32_">&lt;code>BeforePlugin&lt;/code>&lt;/a> api with &lt;code>&amp;quot;com.anatawa12.avatar-optimizer&amp;quot;&lt;/code> as the plugin name in NDMF.&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>Moved removing submeshes with no materials assigned to the early process of AAO &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1495">&lt;code>#1495&lt;/code>&lt;/a>
-&lt;ul>
-&lt;li>This should let other process like freezing blendshapes ignore such submeshes.&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>Replace Mask Texture Editor &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1470">&amp;rsquo;#1470&amp;rsquo;&lt;/a>&lt;/li>
-&lt;li>Ignore unknown IEditorOnly components and log a warning in console instead of showing a popup. &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1422">&amp;rsquo;#1422&amp;rsquo;&lt;/a>&lt;/li>
-&lt;li>Orphan Vertices will be kept &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1515">&lt;code>#1515&lt;/code>&lt;/a>
-&lt;ul>
-&lt;li>Vertices that are not part of any triangle will be kept.&lt;/li>
-&lt;li>Orphan vertices are likely to be used to control the bounds of the mesh so they will be kept.&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>Allow Shuffle Material Slots is now enabled by default &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1533">&lt;code>#1533&lt;/code>&lt;/a>&lt;/li>
-&lt;li>Descriptive localized messages are shown in Play Mode when animation keys are removed &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1461">&lt;code>#1461&lt;/code>&lt;/a>
-&lt;ul>
-&lt;li>When AAO removes animation keys because target objects are absent, descriptive messages in the user&amp;rsquo;s language are now shown in Play Mode to help understand what happened.&lt;/li>
-&lt;li>These messages explain that the target object is absent, keys were removed by AAO, and suggest reporting if this is incorrect.&lt;/li>
-&lt;li>In Edit Mode (upload builds), the behavior remains unchanged with a terse internal identifier to minimize avatar size.&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>VRChat parameter drivers now work correctly when parameters are converted from bool/int to float during Entry-Exit to BlendTree optimization &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1547">&lt;code>#1547&lt;/code>&lt;/a>
-&lt;ul>
-&lt;li>Based on fix from NDMF (bdunderscore/ndmf#693)&lt;/li>
-&lt;li>Parameter drivers now use intermediate parameters to preserve original type semantics&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>Motion time state is now supported in EntryExit to BlendTree optimization &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1552">&lt;code>#1552&lt;/code>&lt;/a>
-&lt;ul>
-&lt;li>Motion time state is safe to convert to BlendTree since it does not affect parameter evaluation.&lt;/li>
-&lt;li>This change may increase the number of states converted to BlendTree.&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>Greater / Less and Float conditions support for Entry-Exit to BlendTree optimization &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1554">&lt;code>#1554&lt;/code>&lt;/a>
-&lt;ul>
-&lt;li>Equals / NotEquals conditions for Ints or Bool operators are only supported in previous versions of Animator Optimizer.&lt;/li>
-&lt;li>Please note that creating animator controllers that can optimized with this optimization is difficult with Float operators because we need to use BitIncrement/Decrement-ed condition threshold for exiting parameters.&lt;/li>
-&lt;li>For example, when we use &lt;code>&amp;gt; 0&lt;/code> condition for entry transition, we need to use &lt;code>&amp;lt; 1e-45 (BitIncrement(0))&lt;/code>, which is equivalent to &lt;code>&amp;lt;= 0&lt;/code>, for exit transition.&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>Streaming mipmap settings are copied when processing textures &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1558">&lt;code>#1558&lt;/code>&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h3 id="1.9.0-beta.3-fixed">
- Fixed
- &lt;a class="anchor" href="#1.9.0-beta.3-fixed">#&lt;/a>
-&lt;/h3>
-&lt;ul>
-&lt;li>Merging SubMeshes may not work for some meshes &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1501">&lt;code>#1501&lt;/code>&lt;/a>&lt;/li>
-&lt;li>EnsureRunningOnMainThread can only be called from the main thread error in some cases &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1503">&lt;code>#1503&lt;/code>&lt;/a>&lt;/li>
-&lt;li>Error from optimize texture when remove unused objects is disabled &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1504">&lt;code>#1504&lt;/code>&lt;/a>&lt;/li>
-&lt;li>Unity error when SkinnedMesh has no blend shapes after optimization &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1402">&lt;code>#1402&lt;/code>&lt;/a>&lt;/li>
-&lt;li>Mesh can be disappeared when BlendShapes with infinity in their delta are frozen with AAO &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1518">&lt;code>#1518&lt;/code>&lt;/a>
-&lt;ul>
-&lt;li>Freezing them would result Infinity in vertex position, which results NaN or Infinity in bounds, which makes Unity to clear the mesh.&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>VRM: A NullReferenceException or MissingReferenceException may occur when parsing incomplete VRM components &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1524">&lt;code>#1524&lt;/code>&lt;/a>&lt;/li>
-&lt;li>MeshCompression settings is not preserved after AvatarOptimizer process &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1529">&lt;code>#1529&lt;/code>&lt;/a>
-&lt;ul>
-&lt;li>This bug increases size of some avatars unexpectedly. This is fixed now.&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>Missing &lt;code>Ignore Other Phys Bone&lt;/code> support for Merge Phys Bone &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1532">&lt;code>#1532&lt;/code>&lt;/a>
-&lt;ul>
-&lt;li>Ignore Other Phys Bone property is not supported by Merge Phys Bone. This was a bug.&lt;/li>
-&lt;li>This version fixes this bug.&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>Fixed Optimize Texture may throw error in rare cases &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1538">&lt;code>#1538&lt;/code>&lt;/a>&lt;/li>
-&lt;li>Basic mesh support for remove mesh components &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1530">&lt;code>#1530&lt;/code>&lt;/a>
-&lt;ul>
-&lt;li>You now can remove some portion of basic meshes with Remove Mesh components!&lt;/li>
-&lt;li>This does not includes remove mesh by blendshape because basic mesh does not support blendshape.&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;/ul>
@@ -7448,7 +7058,7 @@ I&amp;rsquo;m usually use Japanese, but you can ask me with English.&lt;/p>
 &lt;/li>
 &lt;/ul>
 &lt;h2 id="1.8.14-beta.1">
- &lt;a href="https://github.com/anatawa12/AvatarOptimizer/compare/v1.9.0-beta.2...v1.8.14-beta.1">1.8.14-beta.1&lt;/a> - 2025-08-09
+ &lt;a href="https://github.com/anatawa12/AvatarOptimizer/compare/v1.8.13...v1.8.14-beta.1">1.8.14-beta.1&lt;/a> - 2025-08-09
  &lt;a class="anchor" href="#1.8.14-beta.1">#&lt;/a>
 &lt;/h2>
 &lt;h3 id="1.8.14-beta.1-fixed">
@@ -7462,17 +7072,6 @@ I&amp;rsquo;m usually use Japanese, but you can ask me with English.&lt;/p>
 &lt;li>I hope most of AAO users don&amp;rsquo;t experience this issue for now, but will be spread in the near future.&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;/ul>
-&lt;h2 id="1.9.0-beta.2">
- &lt;a href="https://github.com/anatawa12/AvatarOptimizer/compare/v1.8.13...v1.9.0-beta.2">1.9.0-beta.2&lt;/a> - 2025-07-28
- &lt;a class="anchor" href="#1.9.0-beta.2">#&lt;/a>
-&lt;/h2>
-&lt;h3 id="1.9.0-beta.2-fixed">
- Fixed
- &lt;a class="anchor" href="#1.9.0-beta.2-fixed">#&lt;/a>
-&lt;/h3>
-&lt;ul>
-&lt;li>Padding used in OptimizeTexture is too small that can cause problems with masks &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1478">&lt;code>#1478&lt;/code>&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;h2 id="1.8.13">
  &lt;a href="https://github.com/anatawa12/AvatarOptimizer/compare/v1.8.13-beta.3...v1.8.13">1.8.13&lt;/a> - 2025-07-28
@@ -7502,7 +7101,7 @@ I&amp;rsquo;m usually use Japanese, but you can ask me with English.&lt;/p>
 &lt;li>VRCConstraints solve in local space can be broken with automatic merge bone &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1484">&lt;code>#1484&lt;/code>&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;h2 id="1.8.13-beta.1">
- &lt;a href="https://github.com/anatawa12/AvatarOptimizer/compare/v1.9.0-beta.1...v1.8.13-beta.1">1.8.13-beta.1&lt;/a> - 2025-07-25
+ &lt;a href="https://github.com/anatawa12/AvatarOptimizer/compare/v1.8.12...v1.8.13-beta.1">1.8.13-beta.1&lt;/a> - 2025-07-25
  &lt;a class="anchor" href="#1.8.13-beta.1">#&lt;/a>
 &lt;/h2>
 &lt;h3 id="1.8.13-beta.1-fixed">
@@ -7514,17 +7113,6 @@ I&amp;rsquo;m usually use Japanese, but you can ask me with English.&lt;/p>
 &lt;li>StackOverflow with infinite recursion when AdditiveReferencePoseClip has recursion &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1480">&lt;code>#1480&lt;/code>&lt;/a>&lt;/li>
 &lt;li>Generating preview of MergeToonLit does not work &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1481">&lt;code>#1481&lt;/code>&lt;/a>&lt;/li>
 &lt;li>Automatic toggle may create toggle for different object when multiple components on single GameObject &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1482">&lt;code>#1482&lt;/code>&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="1.9.0-beta.1">
- &lt;a href="https://github.com/anatawa12/AvatarOptimizer/compare/v1.8.12...v1.9.0-beta.1">1.9.0-beta.1&lt;/a> - 2025-07-13
- &lt;a class="anchor" href="#1.9.0-beta.1">#&lt;/a>
-&lt;/h2>
-&lt;h3 id="1.9.0-beta.1-added">
- Added
- &lt;a class="anchor" href="#1.9.0-beta.1-added">#&lt;/a>
-&lt;/h3>
-&lt;ul>
-&lt;li>Declare compatibility with non-VRCSDK platforms &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1433">&lt;code>#1433&lt;/code>&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;h2 id="1.8.12">
  &lt;a href="https://github.com/anatawa12/AvatarOptimizer/compare/v1.8.12-beta.1...v1.8.12">1.8.12&lt;/a> - 2025-07-13
@@ -10928,21 +10516,40 @@ You can enable/disable some automatic optimization features with checkboxes.&lt;
 &lt;p>Trace and Optimize is quite carefully designed under the premise that &amp;ldquo;&lt;strong>never let it affect the appearance&lt;/strong>.&amp;rdquo;&lt;br>
 So, if any problems occur, such as appearance is affected or some gimmick stops working, they are all caused by bugs in AAO, without exception.&lt;br>
 Therefore, if you encounter any problems with this component, please report it.&lt;br>
-We will fix it as much as we can.&lt;/p></description></item><item><title>Edit Skinned Mesh Components</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/component-kind/edit-skinned-mesh-components/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/component-kind/edit-skinned-mesh-components/</guid><description>&lt;h1 id="edit-skinned-mesh-components">
+We will fix it as much as we can.&lt;/p></description></item><item><title>UnusedBonesByReferencesTool</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/unused-bones-by-references-tool/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/unused-bones-by-references-tool/</guid><description>&lt;h1 id="unusedbonesbyreferencestool">
+ UnusedBonesByReferencesTool
+ &lt;a class="anchor" href="#unusedbonesbyreferencestool">#&lt;/a>
+&lt;/h1>
+&lt;p>Marks it as EditorOnly that bones referenced only from EditorOnly meshes.&lt;/p>
+&lt;p>This component should be added to an avatar root. (Kind: &lt;a href="../../component-kind/avatar-global-components">Avatar Global Component&lt;/a>)&lt;/p>
+&lt;blockquote class="book-hint warning">
+&lt;p>This component is obsolete. You should use &lt;code>Remove unused Objects&lt;/code> of &lt;a href="../trace-and-optimize">Trace and Optimize&lt;/a> instead.
+This component will never get algorithm improvements.&lt;/p>
+&lt;/blockquote>
+&lt;p>This is port of &lt;a href="https://narazaka.booth.pm/items/3831781">UnusedBonesByReferencesTool by Narazaka&lt;/a> but run at build time.&lt;/p>
+&lt;p>&lt;img src="component.png" alt="component.png" />&lt;/p></description></item><item><title>Edit Skinned Mesh Components</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/component-kind/edit-skinned-mesh-components/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/component-kind/edit-skinned-mesh-components/</guid><description>&lt;h1 id="edit-skinned-mesh-components">
  Edit Skinned Mesh Components
  &lt;a class="anchor" href="#edit-skinned-mesh-components">#&lt;/a>
 &lt;/h1>
 &lt;p>Edit Skinned Mesh Component is a kind of component which should be added to
 a GameObject which has a SkinnedMeshRenderer component, and applies some modification to the SkinnedMeshRenderer.&lt;/p>
-&lt;p>Since Avatar Optimizer 1.9.0, some components can be used with basic MeshRenderer component.
-Those will be called &amp;ldquo;Edit Skinned Mesh component with basic mesh support&amp;rdquo;.&lt;/p>
 &lt;p>There are two sub-kinds.&lt;/p>
 &lt;h2 id="source-component">
  Source Component
  &lt;a class="anchor" href="#source-component">#&lt;/a>
 &lt;/h2>
 &lt;p>This kind of component will produce Mesh and some other properties of SkinnedMeshRenderer.&lt;br>
-Following components are Source Edit Skinned Mesh Component.&lt;/p></description></item><item><title>Merge Skinned Mesh</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/merge-skinned-mesh/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/merge-skinned-mesh/</guid><description>&lt;h1 id="merge-skinned-mesh">
+Following components are Source Edit Skinned Mesh Component.&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="../../reference/merge-skinned-mesh">MergeSkinnedMesh&lt;/a>&lt;br>
+This component will produce mesh from other (Skinned)MeshRenderers.&lt;/li>
+&lt;/ul>
+&lt;h2 id="modifying-component">
+ Modifying Component
+ &lt;a class="anchor" href="#modifying-component">#&lt;/a>
+&lt;/h2>
+&lt;p>This kind of component will (duplicates and) modifies the existing Mesh and some other properties of SkinnedMeshRenderer.&lt;br>
+Following components are Modifying Edit Skinned Mesh Component.&lt;/p></description></item><item><title>Merge Skinned Mesh</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/merge-skinned-mesh/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/merge-skinned-mesh/</guid><description>&lt;h1 id="merge-skinned-mesh">
  Merge Skinned Mesh (MergeSMR)
  &lt;a class="anchor" href="#merge-skinned-mesh">#&lt;/a>
 &lt;/h1>
@@ -10978,29 +10585,17 @@ Also, it can reduce material slots using the same material, so we can reduce ren
  Notes
  &lt;a class="anchor" href="#notes">#&lt;/a>
 &lt;/h2>
-&lt;p>By freezing BlendShape, the weights cannot be changed on Animation.&lt;/p></description></item><item><title>Max Texture Size</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/max-texture-size/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/max-texture-size/</guid><description>&lt;h1 id="max-texture-size">
- Max Texture Size
- &lt;a class="anchor" href="#max-texture-size">#&lt;/a>
+&lt;p>By freezing BlendShape, the weights cannot be changed on Animation.&lt;/p></description></item><item><title>Merge ToonLit Material</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/merge-toonlit-material/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/merge-toonlit-material/</guid><description>&lt;h1 id="merge-toonlit-material">
+ Merge ToonLit Material
+ &lt;a class="anchor" href="#merge-toonlit-material">#&lt;/a>
 &lt;/h1>
-&lt;p>Reduce texture size by extracting specific mipmap levels, preserving the original texture format and settings.&lt;/p>
-&lt;p>This component can be added to any GameObject and applies to that GameObject and all its children.&lt;/p>
-&lt;p>When multiple Max Texture Size components are present, the closest parent&amp;rsquo;s setting is used, and if a texture is affected by multiple settings, the maximum size is applied.&lt;/p>
-&lt;h2 id="limitations">
- Limitations
- &lt;a class="anchor" href="#limitations">#&lt;/a>
-&lt;/h2>
-&lt;h3 id="mipmaps-required">
- Mipmaps Required
- &lt;a class="anchor" href="#mipmaps-required">#&lt;/a>
-&lt;/h3>
-&lt;p>Textures must have mipmaps enabled to be resized. Textures without mipmaps or textures that don&amp;rsquo;t have enough mipmap levels to reach the target size will be skipped with a warning.&lt;/p></description></item><item><title>Merge Material</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/merge-material/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/merge-material/</guid><description>&lt;h1 id="merge-material">
- Merge Material
- &lt;a class="anchor" href="#merge-material">#&lt;/a>
-&lt;/h1>
-&lt;p>Merge multiple materials with same shaders to one material by packing texture manually.&lt;/p>
-&lt;p>This component should be added to a GameObject which has a Skinned Mesh Renderer or Mesh Renderer component. (Kind: &lt;a href="../../component-kind/edit-skinned-mesh-components#modifying-component">Modifying Edit Skinned Mesh Component with basic mesh support&lt;/a>)&lt;/p>
-&lt;p>This component supports shaders with ShaderInformation provided.&lt;br>
-Currently, Avatar Optimizer provides ShaderInformation for some popular shaders like Standard, ToonLit and ToonStandard by VRChat SDK, and lilToon but shader authors can add support for this component by providing ShaderInformation.&lt;/p></description></item><item><title>Remove Mesh By BlendShape</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/remove-mesh-by-blendshape/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/remove-mesh-by-blendshape/</guid><description>&lt;h1 id="remove-mesh-by-blendshape">
+&lt;p>Merge &lt;code>VRChat/Mobile/Toon Lit&lt;/code> materials to one material by packing texture manually.&lt;/p>
+&lt;p>This component should be added to a GameObject which has a SkinnedMeshRenderer component. (Kind: &lt;a href="../../component-kind/edit-skinned-mesh-components#modifying-component">Modifying Edit Skinned Mesh Component&lt;/a>)&lt;/p>
+&lt;p>This component currently only supports &lt;code>VRChat/Mobile/Toon Lit&lt;/code> because I believe there are big demands
+but I may add support for other shaders. (also for third-party shaders)
+If you want other shader support, please write a &lt;a href="https://github.com/anatawa12/AvatarOptimizer/issues/new/choose">issue&lt;/a>&lt;/p>
+&lt;p>This component will create new materials thus material slots which have the materials created by this component will not be merged by &lt;code>AAO Merge Skinned Mesh&lt;/code> component.
+You should add &lt;code>Merge ToonLit Material&lt;/code> to the GameObject which has &lt;code>AAO Merge Skinned Mesh&lt;/code> component if you want to merge materials from multiple renderers.&lt;/p></description></item><item><title>Remove Mesh By BlendShape</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/remove-mesh-by-blendshape/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/remove-mesh-by-blendshape/</guid><description>&lt;h1 id="remove-mesh-by-blendshape">
  Remove Mesh By BlendShape
  &lt;a class="anchor" href="#remove-mesh-by-blendshape">#&lt;/a>
 &lt;/h1>
@@ -11016,7 +10611,7 @@ Currently, Avatar Optimizer provides ShaderInformation for some popular shaders 
  &lt;a class="anchor" href="#remove-mesh-by-box">#&lt;/a>
 &lt;/h1>
 &lt;p>Remove some polygons with any of specified boxes.&lt;/p>
-&lt;p>This component should be added to a GameObject which has a Skinned Mesh Renderer or Mesh Renderer component. (Kind: &lt;a href="../../component-kind/edit-skinned-mesh-components#modifying-component">Modifying Edit Skinned Mesh Component with basic mesh support&lt;/a>)&lt;/p>
+&lt;p>This component should be added to a GameObject which has a SkinnedMeshRenderer component. (Kind: &lt;a href="../../component-kind/edit-skinned-mesh-components#modifying-component">Modifying Edit Skinned Mesh Component&lt;/a>)&lt;/p>
 &lt;h2 id="benefits">
  Benefits
  &lt;a class="anchor" href="#benefits">#&lt;/a>
@@ -11026,27 +10621,35 @@ Currently, Avatar Optimizer provides ShaderInformation for some popular shaders 
  Settings
  &lt;a class="anchor" href="#settings">#&lt;/a>
 &lt;/h2>
-&lt;p>&lt;img src="component.png" alt="component.png" />&lt;/p></description></item><item><title>Remove Mesh By Mask</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/remove-mesh-by-mask/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/remove-mesh-by-mask/</guid><description>&lt;h1 id="remove-mesh-by-mask">
+&lt;p>&lt;img src="component.png" alt="component.png" />&lt;/p>
+&lt;h3 id="remove-polygons">
+ Remove Polygons
+ &lt;a class="anchor" href="#remove-polygons">#&lt;/a>
+&lt;/h3>
+&lt;p>You can choose whether to remove polygons in the any of boxes or outside the all boxes.&lt;/p></description></item><item><title>Remove Mesh By Mask</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/remove-mesh-by-mask/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/remove-mesh-by-mask/</guid><description>&lt;h1 id="remove-mesh-by-mask">
  Remove Mesh By Mask
  &lt;a class="anchor" href="#remove-mesh-by-mask">#&lt;/a>
 &lt;/h1>
 &lt;p>Remove some polygons in any area specified by mask textures.&lt;/p>
-&lt;p>This component should be added to a GameObject which has a Skinned Mesh Renderer or Mesh Renderer component. (Kind: &lt;a href="../../component-kind/edit-skinned-mesh-components#modifying-component">Modifying Edit Skinned Mesh Component with basic mesh support&lt;/a>)&lt;/p>
+&lt;p>This component should be added to a GameObject which has a SkinnedMeshRenderer component. (Kind: &lt;a href="../../component-kind/edit-skinned-mesh-components#modifying-component">Modifying Edit Skinned Mesh Component&lt;/a>)&lt;/p>
 &lt;h2 id="benefits">
  Benefits
  &lt;a class="anchor" href="#benefits">#&lt;/a>
 &lt;/h2>
-&lt;p>By removing polygons which are hidden by clothes or something, you can reduce rendering cost, BlendShape processing cost, etc. without affecting the appearance so much.&lt;/p></description></item><item><title>Remove Mesh By UV Tile</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/remove-mesh-by-uv-tile/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/remove-mesh-by-uv-tile/</guid><description>&lt;h1 id="remove-mesh-by-uv-tile">
+&lt;p>By removing polygons which are hidden by clothes or something, you can reduce rendering cost, BlendShape processing cost, etc. without affecting the appearance so much.&lt;/p>
+&lt;p>You can use this component to easily remove polygons with alpha mask texture or mask texture for &lt;a href="https://github.com/gatosyocora/MeshDeleterWithTexture">MeshDeleterWithTexture&lt;/a> by gatosyocora.&lt;/p></description></item><item><title>Remove Mesh By UV Tile</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/remove-mesh-by-uv-tile/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/remove-mesh-by-uv-tile/</guid><description>&lt;h1 id="remove-mesh-by-uv-tile">
  Remove Mesh By UV Tile
  &lt;a class="anchor" href="#remove-mesh-by-uv-tile">#&lt;/a>
 &lt;/h1>
 &lt;p>Remove some polygons in any area specified by UV Tile.&lt;/p>
-&lt;p>This component should be added to a GameObject which has a Skinned Mesh Renderer or Mesh Renderer component. (Kind: &lt;a href="../../component-kind/edit-skinned-mesh-components#modifying-component">Modifying Edit Skinned Mesh Component with basic mesh support&lt;/a>)&lt;/p>
+&lt;p>This component should be added to a GameObject which has a SkinnedMeshRenderer component. (Kind: &lt;a href="../../component-kind/edit-skinned-mesh-components#modifying-component">Modifying Edit Skinned Mesh Component&lt;/a>)&lt;/p>
 &lt;h2 id="benefits">
  Benefits
  &lt;a class="anchor" href="#benefits">#&lt;/a>
 &lt;/h2>
-&lt;p>By removing polygons which are hidden by clothes or something, you can reduce rendering cost, BlendShape processing cost, etc. without affecting the appearance so much.&lt;/p></description></item><item><title>Rename BlendShape</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/rename-blendshape/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/rename-blendshape/</guid><description>&lt;h1 id="rename-blendshape">
+&lt;p>By removing polygons which are hidden by clothes or something, you can reduce rendering cost, BlendShape processing cost, etc. without affecting the appearance so much.&lt;/p>
+&lt;p>You can use this component to easily remove polygons of models designed to hide some portion with UV Tile Discard feature of Poiyomi or lilToon.&lt;br>
+This component works like UV Tile Discard with Vertex Mode.&lt;/p></description></item><item><title>Rename BlendShape</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/rename-blendshape/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/rename-blendshape/</guid><description>&lt;h1 id="rename-blendshape">
  Rename BlendShape
  &lt;a class="anchor" href="#rename-blendshape">#&lt;/a>
 &lt;/h1>
@@ -11090,7 +10693,9 @@ Also, if some other components are attached to the target GameObject, they will 
 &lt;/h2>
 &lt;p>Merge target PhysBones must be children of the same GameObject.
 Alternatively, you can use &lt;code>Make Children of Me&lt;/code> option.&lt;/p>
-&lt;p>This component will create a new PhysBone root GameObject and make the bones swayed by merge target PhysBones into children of this GameObject.&lt;/p></description></item><item><title>Remove Zero Sized Polygon</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/remove-zero-sized-polygon/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/remove-zero-sized-polygon/</guid><description>&lt;h1 id="remove-zero-sized-polygon">
+&lt;p>This component will create a new PhysBone root GameObject and make the bones swayed by merge target PhysBones into children of this GameObject.&lt;br>
+Since the root GameObject is treated as a PhysBone affected Transforms, the number of &lt;code>PhysBone Affected Transforms&lt;/code> will be increased by one for each Merge PhysBone.
+The GameObject added by this component will not be swayed by PhysBone, so this can be a bug of the VRChat Performance Rank System.&lt;/p></description></item><item><title>Remove Zero Sized Polygon</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/remove-zero-sized-polygon/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/remove-zero-sized-polygon/</guid><description>&lt;h1 id="remove-zero-sized-polygon">
  Remove Zero Sized Polygon
  &lt;a class="anchor" href="#remove-zero-sized-polygon">#&lt;/a>
 &lt;/h1>
@@ -11105,18 +10710,7 @@ Alternatively, you can use &lt;code>Make Children of Me&lt;/code> option.&lt;/p>
  &lt;a class="anchor" href="#benefits">#&lt;/a>
 &lt;/h2>
 &lt;p>By removing polygons whose area are zero, you can reduce rendering cost.
-This will have almost zero effect on the appearance.&lt;/p></description></item><item><title>Replace End Bone With Endpoint Position</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/replace-end-bone-with-endpoint-position/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/replace-end-bone-with-endpoint-position/</guid><description>&lt;h1 id="replace-end-bone-with-endpoint-position">
- Replace End Bone With Endpoint Position
- &lt;a class="anchor" href="#replace-end-bone-with-endpoint-position">#&lt;/a>
-&lt;/h1>
-&lt;p>This component replaces the End Bone, which is the tip bone in a PhysBone, with an Endpoint Position.&lt;/p>
-&lt;p>Add this component to the GameObject that has the PhysBone component.&lt;br>
-If there are multiple PhysBone components, the settings will be applied to all of them.&lt;/p>
-&lt;h2 id="benefits">
- Benefits
- &lt;a class="anchor" href="#benefits">#&lt;/a>
-&lt;/h2>
-&lt;p>By replacing the End Bone with an Endpoint Position, you can reduce the number of &lt;code>PhysBone Affected Transforms&lt;/code> counted by the VRChat Performance Rank system.&lt;/p></description></item><item><title>Make Children</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/make-children/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/make-children/</guid><description>&lt;h1 id="make-children">
+This will have almost zero effect on the appearance.&lt;/p></description></item><item><title>Make Children</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/make-children/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/make-children/</guid><description>&lt;h1 id="make-children">
  Make Children
  &lt;a class="anchor" href="#make-children">#&lt;/a>
 &lt;/h1>
@@ -11125,32 +10719,7 @@ If there are multiple PhysBone components, the settings will be applied to all o
 &lt;p>This component is deprecated.&lt;/p>
 &lt;p>This function is not related to avatar optimization, so this component will be replaced by one in a currently planned non-destructive Avatar Modification Utils.&lt;/p>
 &lt;/blockquote>
-&lt;p>&lt;img src="component.png" alt="component.png" />&lt;/p></description></item><item><title>Merge ToonLit Material</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/merge-toonlit-material/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/merge-toonlit-material/</guid><description>&lt;h1 id="merge-toonlit-material">
- Merge ToonLit Material
- &lt;a class="anchor" href="#merge-toonlit-material">#&lt;/a>
-&lt;/h1>
-&lt;blockquote class="book-hint warning">
-&lt;p>This component is obsolete.&lt;/p>
-&lt;p>Please use &lt;a href="../merge-material/">Merge Material&lt;/a> component, which supports more shaders than this component and has better save format.&lt;br>
-This component will never receive any further improvements.&lt;/p>
-&lt;/blockquote>
-&lt;p>Merge &lt;code>VRChat/Mobile/Toon Lit&lt;/code> materials to one material by packing texture manually.&lt;/p>
-&lt;p>This component should be added to a GameObject which has a SkinnedMeshRenderer component. (Kind: &lt;a href="../../component-kind/edit-skinned-mesh-components#modifying-component">Modifying Edit Skinned Mesh Component&lt;/a>)&lt;/p>
-&lt;p>This component currently only supports &lt;code>VRChat/Mobile/Toon Lit&lt;/code> because I believe there are big demands
-but I may add support for other shaders. (also for third-party shaders)
-If you want other shader support, please write a &lt;a href="https://github.com/anatawa12/AvatarOptimizer/issues/new/choose">issue&lt;/a>&lt;/p></description></item><item><title>UnusedBonesByReferencesTool</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/unused-bones-by-references-tool/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/unused-bones-by-references-tool/</guid><description>&lt;h1 id="unusedbonesbyreferencestool">
- UnusedBonesByReferencesTool
- &lt;a class="anchor" href="#unusedbonesbyreferencestool">#&lt;/a>
-&lt;/h1>
-&lt;p>Marks it as EditorOnly that bones referenced only from EditorOnly meshes.&lt;/p>
-&lt;p>This component should be added to an avatar root. (Kind: &lt;a href="../../component-kind/avatar-global-components">Avatar Global Component&lt;/a>)&lt;/p>
-&lt;blockquote class="book-hint warning">
-&lt;p>This component is obsolete. You should use &lt;code>Remove unused Objects&lt;/code> of &lt;a href="../trace-and-optimize">Trace and Optimize&lt;/a> instead.
-This component is obsolete.&lt;/p>
-&lt;p>You should use &lt;code>Remove unused Objects&lt;/code> of &lt;a href="../trace-and-optimize">Trace and Optimize&lt;/a> instead.&lt;br>
-This component will never get algorithm improvements.&lt;/p>
-&lt;/blockquote>
-&lt;p>This is port of &lt;a href="https://narazaka.booth.pm/items/3831781">UnusedBonesByReferencesTool by Narazaka&lt;/a> but run at build time.&lt;/p></description></item><item><title/><link>https://vpm.anatawa12.com/avatar-optimizer/beta/404.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/404.html</guid><description/></item><item><title>Asset Description</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/developers/asset-description/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/developers/asset-description/</guid><description>&lt;h1 id="asset-description">
+&lt;p>&lt;img src="component.png" alt="component.png" />&lt;/p></description></item><item><title/><link>https://vpm.anatawa12.com/avatar-optimizer/beta/404.html</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/404.html</guid><description/></item><item><title>Asset Description</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/developers/asset-description/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/developers/asset-description/</guid><description>&lt;h1 id="asset-description">
  Asset Description
  &lt;a class="anchor" href="#asset-description">#&lt;/a>
 &lt;/h1>
@@ -11217,7 +10786,6 @@ Here is the list of components that are supported by Component API.&lt;/p>
 &lt;ul>
 &lt;li>&lt;code>RemoveMeshInBox&lt;/code> - Adding component and configuring for that is supported&lt;/li>
 &lt;li>&lt;code>RemoveMeshByBlendShape&lt;/code> - Adding component and configuring for that is supported&lt;/li>
-&lt;li>&lt;code>RemoveMeshByMask&lt;/code> - Adding component and configuring for that is supported&lt;/li>
 &lt;li>&lt;code>TraceAndOptimize&lt;/code> - Adding with default configuration is supported but configuring is not supported&lt;/li>
 &lt;/ul>
 &lt;p>For components that supports configuring, to keep compatibility with future features that enabled by default,

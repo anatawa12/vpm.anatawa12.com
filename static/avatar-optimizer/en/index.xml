@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Introduction on Avatar Optimizer (1.8.15)</title><link>https://vpm.anatawa12.com/avatar-optimizer/en/</link><description>Recent content in Introduction on Avatar Optimizer (1.8.15)</description><generator>Hugo</generator><language>en</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/en/index.xml" rel="self" type="application/rss+xml"/><item><title>Basic Concepts</title><link>https://vpm.anatawa12.com/avatar-optimizer/en/docs/basic-concept/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/en/docs/basic-concept/</guid><description>&lt;h1 id="basic-concepts">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Introduction on Avatar Optimizer (1.8.16)</title><link>https://vpm.anatawa12.com/avatar-optimizer/en/</link><description>Recent content in Introduction on Avatar Optimizer (1.8.16)</description><generator>Hugo</generator><language>en</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/en/index.xml" rel="self" type="application/rss+xml"/><item><title>Basic Concepts</title><link>https://vpm.anatawa12.com/avatar-optimizer/en/docs/basic-concept/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/en/docs/basic-concept/</guid><description>&lt;h1 id="basic-concepts">
  Basic Concepts of Avatar Optimizer
  &lt;a class="anchor" href="#basic-concepts">#&lt;/a>
 &lt;/h1>
@@ -95,6 +95,28 @@ I&amp;rsquo;m usually use Japanese, but you can ask me with English.&lt;/p>
 
  
  
+
+
+ 
+
+ 
+
+ 
+ 
+
+ 
+
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+ 
  
 
  
@@ -3018,6 +3040,17 @@ I&amp;rsquo;m usually use Japanese, but you can ask me with English.&lt;/p>
 
 
 
+&lt;h2 id="1.8.16">
+ &lt;a href="https://github.com/anatawa12/AvatarOptimizer/compare/v1.8.15...v1.8.16">1.8.16&lt;/a> - 2025-12-03
+ &lt;a class="anchor" href="#1.8.16">#&lt;/a>
+&lt;/h2>
+&lt;h3 id="1.8.16-changed">
+ Changed
+ &lt;a class="anchor" href="#1.8.16-changed">#&lt;/a>
+&lt;/h3>
+&lt;ul>
+&lt;li>Streaming mipmap settings are copied when processing textures &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1558">&lt;code>#1558&lt;/code>&lt;/a>&lt;/li>
+&lt;/ul>
 &lt;h2 id="1.8.15">
  &lt;a href="https://github.com/anatawa12/AvatarOptimizer/compare/v1.8.14...v1.8.15">1.8.15&lt;/a> - 2025-11-24
  &lt;a class="anchor" href="#1.8.15">#&lt;/a>
