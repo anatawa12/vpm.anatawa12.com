@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>コンポーネントの種類 on Avatar Optimizer (1.8.16)</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/component-kind/</link><description>Recent content in コンポーネントの種類 on Avatar Optimizer (1.8.16)</description><generator>Hugo</generator><language>ja</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/component-kind/index.xml" rel="self" type="application/rss+xml"/><item><title>Avatar Global Components</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/component-kind/avatar-global-components/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/component-kind/avatar-global-components/</guid><description>&lt;h1 id="avatar-global-components">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>コンポーネントの種類 on Avatar Optimizer (1.9.0-rc.2)</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/component-kind/</link><description>Recent content in コンポーネントの種類 on Avatar Optimizer (1.9.0-rc.2)</description><generator>Hugo</generator><language>ja</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/component-kind/index.xml" rel="self" type="application/rss+xml"/><item><title>Avatar Global Components</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/component-kind/avatar-global-components/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/component-kind/avatar-global-components/</guid><description>&lt;h1 id="avatar-global-components">
  Avatar Global Components
  &lt;a class="anchor" href="#avatar-global-components">#&lt;/a>
 &lt;/h1>
@@ -16,6 +16,8 @@
  &lt;a class="anchor" href="#edit-skinned-mesh-components">#&lt;/a>
 &lt;/h1>
 &lt;p>Edit Skinned Mesh ComponentはSkinnedMeshRendererコンポーネントのあるGameObjectに追加することで、そのSkinnedMeshRendererに作用するコンポーネントです。&lt;/p>
+&lt;p>Avatar Optimizer 1.9.0以降では、一部のコンポーネントがメッシュレンダラー(MeshRendererコンポーネント)にも対応しています。&lt;br>
+これらは「MeshRenderer対応Edit Skinned Mesh Component」と呼ばれます。&lt;/p>
 &lt;p>このコンポーネントには2つの小分類があります。&lt;/p>
 &lt;h2 id="source-component">
  Source Component
@@ -39,6 +41,12 @@
 &lt;li>&lt;a href="../../reference/remove-mesh-by-box">Remove Mesh By Box&lt;/a>&lt;/li>
 &lt;li>&lt;a href="../../remove-mesh-by-uv-tile/">Remove Mesh By UV Tile&lt;/a>&lt;/li>
 &lt;li>&lt;a href="../../reference/freeze-blendshape">Freeze BlendShape&lt;/a>&lt;/li>
-&lt;li>&lt;a href="../../reference/merge-toonlit-material">Merge ToonLit Material&lt;/a>&lt;/li>
+&lt;li>&lt;a href="../../reference/merge-material">Merge Material&lt;/a>&lt;/li>
 &lt;li>&lt;a href="../../reference/rename-blendshape">Rename BlendsShape&lt;/a>&lt;/li>
-&lt;/ul></description></item></channel></rss>
+&lt;li>&lt;a href="../../reference/merge-toonlit-material">Merge ToonLit Material&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h1 id="components-with-basic-mesh-support">
+ MeshRenderer対応コンポーネント
+ &lt;a class="anchor" href="#components-with-basic-mesh-support">#&lt;/a>
+&lt;/h1>
+&lt;p>Avatar Optimizer 1.9.0以降では、以下のEdit Skinned Mesh Componentがメッシュレンダラーにも対応しています。&lt;/p></description></item></channel></rss>

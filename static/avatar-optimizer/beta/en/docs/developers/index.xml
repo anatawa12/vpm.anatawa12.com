@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>For Developers on Avatar Optimizer (1.8.16)</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/developers/</link><description>Recent content in For Developers on Avatar Optimizer (1.8.16)</description><generator>Hugo</generator><language>en</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/developers/index.xml" rel="self" type="application/rss+xml"/><item><title>Asset Description</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/developers/asset-description/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/developers/asset-description/</guid><description>&lt;h1 id="asset-description">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>For Developers on Avatar Optimizer (1.9.0-rc.2)</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/developers/</link><description>Recent content in For Developers on Avatar Optimizer (1.9.0-rc.2)</description><generator>Hugo</generator><language>en</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/developers/index.xml" rel="self" type="application/rss+xml"/><item><title>Asset Description</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/developers/asset-description/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/developers/asset-description/</guid><description>&lt;h1 id="asset-description">
  Asset Description
  &lt;a class="anchor" href="#asset-description">#&lt;/a>
 &lt;/h1>
@@ -32,6 +32,7 @@ Here is the list of components that are supported by Component API.&lt;/p>
 &lt;ul>
 &lt;li>&lt;code>RemoveMeshInBox&lt;/code> - Adding component and configuring for that is supported&lt;/li>
 &lt;li>&lt;code>RemoveMeshByBlendShape&lt;/code> - Adding component and configuring for that is supported&lt;/li>
+&lt;li>&lt;code>RemoveMeshByMask&lt;/code> - Adding component and configuring for that is supported&lt;/li>
 &lt;li>&lt;code>TraceAndOptimize&lt;/code> - Adding with default configuration is supported but configuring is not supported&lt;/li>
 &lt;/ul>
 &lt;p>For components that supports configuring, to keep compatibility with future features that enabled by default,

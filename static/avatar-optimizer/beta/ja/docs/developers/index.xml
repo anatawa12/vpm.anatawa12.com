@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>開発者向け on Avatar Optimizer (1.8.16)</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/developers/</link><description>Recent content in 開発者向け on Avatar Optimizer (1.8.16)</description><generator>Hugo</generator><language>ja</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/developers/index.xml" rel="self" type="application/rss+xml"/><item><title>Asset Description</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/developers/asset-description/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/developers/asset-description/</guid><description>&lt;h1 id="asset-description">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>開発者向け on Avatar Optimizer (1.9.0-rc.2)</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/developers/</link><description>Recent content in 開発者向け on Avatar Optimizer (1.9.0-rc.2)</description><generator>Hugo</generator><language>ja</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/developers/index.xml" rel="self" type="application/rss+xml"/><item><title>Asset Description</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/developers/asset-description/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/developers/asset-description/</guid><description>&lt;h1 id="asset-description">
  Asset Description
  &lt;a class="anchor" href="#asset-description">#&lt;/a>
 &lt;/h1>
@@ -55,6 +55,7 @@ Component APIが利用可能なコンポーネントの一覧は以下の通り�
 &lt;ul>
 &lt;li>&lt;code>RemoveMeshInBox&lt;/code> - コンポーネントの追加と追加時の設定変更がサポートされています&lt;/li>
 &lt;li>&lt;code>RemoveMeshByBlendShape&lt;/code> - コンポーネントの追加と追加時の設定変更がサポートされています&lt;/li>
+&lt;li>&lt;code>RemoveMeshByMask&lt;/code> - コンポーネントの追加と追加時の設定変更がサポートされています&lt;/li>
 &lt;li>&lt;code>TraceAndOptimize&lt;/code> - デフォルト設定での追加はサポートされていますが、設定変更はサポートされていません&lt;/li>
 &lt;/ul>
 &lt;p>将来のバージョンで追加されるデフォルトで有効な機能との互換性を保つために、コンポーネントの設定変更を行う場合には注意が必要です。
