@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Introduction on Avatar Optimizer (1.9.0-rc.2)</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/</link><description>Recent content in Introduction on Avatar Optimizer (1.9.0-rc.2)</description><generator>Hugo</generator><language>ja</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/beta/ja/index.xml" rel="self" type="application/rss+xml"/><item><title>v1.0.0一周年を記念してちょっと歴史を振り返る</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/posts/2024-06-27-one-year-since-stable-release/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/posts/2024-06-27-one-year-since-stable-release/</guid><description>&lt;p>AAO: Avatar Optimizer v1.0.0一周年を記念してちょっと歴史を振り返ってみることにしてみる。&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Introduction on Avatar Optimizer (1.9.0-rc.3)</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/</link><description>Recent content in Introduction on Avatar Optimizer (1.9.0-rc.3)</description><generator>Hugo</generator><language>ja</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/beta/ja/index.xml" rel="self" type="application/rss+xml"/><item><title>v1.0.0一周年を記念してちょっと歴史を振り返る</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/posts/2024-06-27-one-year-since-stable-release/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/posts/2024-06-27-one-year-since-stable-release/</guid><description>&lt;p>AAO: Avatar Optimizer v1.0.0一周年を記念してちょっと歴史を振り返ってみることにしてみる。&lt;/p>
 &lt;p>書いた人はanatawa12なので「私」はanatawa12を指す。&lt;/p>
 &lt;h2 id="before-born">
  Avatar Optimizerが生まれるまで
@@ -175,6 +175,28 @@
 
  
  
+
+
+ 
+
+ 
+
+ 
+ 
+
+ 
+
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+ 
  
 
  
@@ -7315,6 +7337,21 @@
 
 
 
+&lt;h2 id="1.9.0-rc.3">
+ &lt;a href="https://github.com/anatawa12/AvatarOptimizer/compare/v1.9.0-rc.2...v1.9.0-rc.3">1.9.0-rc.3&lt;/a> - 2025-12-25
+ &lt;a class="anchor" href="#1.9.0-rc.3">#&lt;/a>
+&lt;/h2>
+&lt;h3 id="1.9.0-rc.3-fixed">
+ Fixed
+ &lt;a class="anchor" href="#1.9.0-rc.3-fixed">#&lt;/a>
+&lt;/h3>
+&lt;ul>
+&lt;li>Complete Graph to Entry Exit optimization broke such patterns with immediate transition &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1588">&lt;code>#1588&lt;/code>&lt;/a>
+&lt;ul>
+&lt;li>This bug broke miminoko V2 Hard Mode. Thank you &lt;a href="https://x.com/Safkert">Safkert&lt;/a>, the author of miminoko, for providing test data!&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
 &lt;h2 id="1.9.0-rc.2">
  &lt;a href="https://github.com/anatawa12/AvatarOptimizer/compare/v1.9.0-rc.1...v1.9.0-rc.2">1.9.0-rc.2&lt;/a> - 2025-12-17
  &lt;a class="anchor" href="#1.9.0-rc.2">#&lt;/a>
