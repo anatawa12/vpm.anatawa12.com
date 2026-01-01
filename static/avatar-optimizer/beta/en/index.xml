@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Introduction on Avatar Optimizer (1.9.0-rc.3)</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/</link><description>Recent content in Introduction on Avatar Optimizer (1.9.0-rc.3)</description><generator>Hugo</generator><language>en</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/beta/en/index.xml" rel="self" type="application/rss+xml"/><item><title>Basic Concepts</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/basic-concept/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/basic-concept/</guid><description>&lt;h1 id="basic-concepts">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Introduction on Avatar Optimizer (1.9.0-rc.4)</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/</link><description>Recent content in Introduction on Avatar Optimizer (1.9.0-rc.4)</description><generator>Hugo</generator><language>en</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/beta/en/index.xml" rel="self" type="application/rss+xml"/><item><title>Basic Concepts</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/basic-concept/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/basic-concept/</guid><description>&lt;h1 id="basic-concepts">
  Basic Concepts of Avatar Optimizer
  &lt;a class="anchor" href="#basic-concepts">#&lt;/a>
 &lt;/h1>
@@ -95,6 +95,28 @@ I&amp;rsquo;m usually use Japanese, but you can ask me with English.&lt;/p>
 
  
  
+
+
+ 
+
+ 
+
+ 
+ 
+
+ 
+
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+ 
  
 
  
@@ -7235,6 +7257,23 @@ I&amp;rsquo;m usually use Japanese, but you can ask me with English.&lt;/p>
 
 
 
+&lt;h2 id="1.9.0-rc.4">
+ &lt;a href="https://github.com/anatawa12/AvatarOptimizer/compare/v1.9.0-rc.3...v1.9.0-rc.4">1.9.0-rc.4&lt;/a> - 2026-01-01
+ &lt;a class="anchor" href="#1.9.0-rc.4">#&lt;/a>
+&lt;/h2>
+&lt;h3 id="1.9.0-rc.4-changed">
+ Changed
+ &lt;a class="anchor" href="#1.9.0-rc.4-changed">#&lt;/a>
+&lt;/h3>
+&lt;ul>
+&lt;li>Reverted Ignore unknown IEditorOnly components and log a warning in console instead of showing a popup. &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1592">&lt;code>#1592&lt;/code>&lt;/a>
+&lt;ul>
+&lt;li>We added button to ignore such components instead.&lt;/li>
+&lt;li>As a part of this feature, we added Project-level settings to store a list of ignored components.&lt;/li>
+&lt;li>You can access this settings in &lt;code>Project/Avatar Optimizer&lt;/code> of &lt;code>Project settings&lt;/code> and stored at &lt;code>ProjectSettings/AvatarOptimizerSettings.asset&lt;/code> file.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
 &lt;h2 id="1.9.0-rc.3">
  &lt;a href="https://github.com/anatawa12/AvatarOptimizer/compare/v1.9.0-rc.2...v1.9.0-rc.3">1.9.0-rc.3&lt;/a> - 2025-12-25
  &lt;a class="anchor" href="#1.9.0-rc.3">#&lt;/a>
@@ -11147,7 +11186,19 @@ If renamed name is duplicated, it will merge the BlendShapes into one.&lt;/p>
 &lt;p>&lt;img src="component.png" alt="component.png" />&lt;/p>
 &lt;p>You&amp;rsquo;ll see the list of BlendShape mapping.&lt;/p>
 &lt;p>Click upper right &amp;lsquo;+&amp;rsquo; button to add new mapping.&lt;/p>
-&lt;p>If the renamed name is duplicated, it will be shown in yellow color to indicate that it will be merged.&lt;/p></description></item><item><title>Clear Endpoint Position</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/clear-endpoint-position/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/clear-endpoint-position/</guid><description>&lt;h1 id="clear-endpoint-position">
+&lt;p>If the renamed name is duplicated, it will be shown in yellow color to indicate that it will be merged.&lt;/p></description></item><item><title>System Assumptions</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/developers/system-assumptions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/developers/system-assumptions/</guid><description>&lt;h1 id="assumptions-we-make-for-external-tools">
+ Assumptions we make for external tools
+ &lt;a class="anchor" href="#assumptions-we-make-for-external-tools">#&lt;/a>
+&lt;/h1>
+&lt;p>This page describes assumptions Avatar Optimizer makes about external tools and data structures.&lt;br>
+If you are developing tools that integrate with Avatar Optimizer, please ensure your tools respect these assumptions.&lt;/p>
+&lt;h2 id="transform-instance-usage">
+ Transform Instance Usage
+ &lt;a class="anchor" href="#transform-instance-usage">#&lt;/a>
+&lt;/h2>
+&lt;p>The same instance of Transform is used to express the same bone in Avatar Optimizer.&lt;/p>
+&lt;p>Avatar Optimizer may use transform matrices from the Resolving phase to determine which vertices will be removed with Remove Mesh By Box.&lt;br>
+If you create tools that manipulate transforms, ensure each Transform instance represents a single, consistent bone or purpose throughout the optimization process.&lt;/p></description></item><item><title>Clear Endpoint Position</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/clear-endpoint-position/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/clear-endpoint-position/</guid><description>&lt;h1 id="clear-endpoint-position">
  Clear Endpoint Position
  &lt;a class="anchor" href="#clear-endpoint-position">#&lt;/a>
 &lt;/h1>
@@ -11338,4 +11389,14 @@ if your users use a newer version of Avatar Optimizer than your unofficial distr
  &lt;a class="anchor" href="#when-incompatible">#&lt;/a>
 &lt;/h2>
 &lt;p>If your components are on the avatar and still exist when Avatar Optimizer processes it,
-your components can be incompatible with Avatar Optimizer.&lt;/p></description></item></channel></rss>
+your components can be incompatible with Avatar Optimizer.&lt;/p></description></item><item><title>Shader Information API</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/developers/shader-information/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/developers/shader-information/</guid><description>&lt;h1 id="shader-information-api">
+ Shader Information API
+ &lt;a class="anchor" href="#shader-information-api">#&lt;/a>
+&lt;/h1>
+&lt;p>Since Avatar Optimizer v1.8.0, Avatar Optimizer provides the Shader Information API to help optimize materials that use your custom shaders.
+By registering shader information, you can enable Avatar Optimizer to perform advanced optimizations like texture atlasing and UV packing.&lt;/p>
+&lt;h2 id="what-is-shader-information">
+ What is Shader Information?
+ &lt;a class="anchor" href="#what-is-shader-information">#&lt;/a>
+&lt;/h2>
+&lt;p>Shader Information is a way to tell Avatar Optimizer how your shader uses textures, UV channels, and other material properties.&lt;/p></description></item></channel></rss>

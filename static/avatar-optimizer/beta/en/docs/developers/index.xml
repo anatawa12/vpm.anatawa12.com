@@ -1,4 +1,16 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>For Developers on Avatar Optimizer (1.9.0-rc.3)</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/developers/</link><description>Recent content in For Developers on Avatar Optimizer (1.9.0-rc.3)</description><generator>Hugo</generator><language>en</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/developers/index.xml" rel="self" type="application/rss+xml"/><item><title>Asset Description</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/developers/asset-description/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/developers/asset-description/</guid><description>&lt;h1 id="asset-description">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>For Developers on Avatar Optimizer (1.9.0-rc.4)</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/developers/</link><description>Recent content in For Developers on Avatar Optimizer (1.9.0-rc.4)</description><generator>Hugo</generator><language>en</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/developers/index.xml" rel="self" type="application/rss+xml"/><item><title>System Assumptions</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/developers/system-assumptions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/developers/system-assumptions/</guid><description>&lt;h1 id="assumptions-we-make-for-external-tools">
+ Assumptions we make for external tools
+ &lt;a class="anchor" href="#assumptions-we-make-for-external-tools">#&lt;/a>
+&lt;/h1>
+&lt;p>This page describes assumptions Avatar Optimizer makes about external tools and data structures.&lt;br>
+If you are developing tools that integrate with Avatar Optimizer, please ensure your tools respect these assumptions.&lt;/p>
+&lt;h2 id="transform-instance-usage">
+ Transform Instance Usage
+ &lt;a class="anchor" href="#transform-instance-usage">#&lt;/a>
+&lt;/h2>
+&lt;p>The same instance of Transform is used to express the same bone in Avatar Optimizer.&lt;/p>
+&lt;p>Avatar Optimizer may use transform matrices from the Resolving phase to determine which vertices will be removed with Remove Mesh By Box.&lt;br>
+If you create tools that manipulate transforms, ensure each Transform instance represents a single, consistent bone or purpose throughout the optimization process.&lt;/p></description></item><item><title>Asset Description</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/developers/asset-description/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/developers/asset-description/</guid><description>&lt;h1 id="asset-description">
  Asset Description
  &lt;a class="anchor" href="#asset-description">#&lt;/a>
 &lt;/h1>
@@ -66,4 +78,14 @@ if your users use a newer version of Avatar Optimizer than your unofficial distr
  &lt;a class="anchor" href="#when-incompatible">#&lt;/a>
 &lt;/h2>
 &lt;p>If your components are on the avatar and still exist when Avatar Optimizer processes it,
-your components can be incompatible with Avatar Optimizer.&lt;/p></description></item></channel></rss>
+your components can be incompatible with Avatar Optimizer.&lt;/p></description></item><item><title>Shader Information API</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/developers/shader-information/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/developers/shader-information/</guid><description>&lt;h1 id="shader-information-api">
+ Shader Information API
+ &lt;a class="anchor" href="#shader-information-api">#&lt;/a>
+&lt;/h1>
+&lt;p>Since Avatar Optimizer v1.8.0, Avatar Optimizer provides the Shader Information API to help optimize materials that use your custom shaders.
+By registering shader information, you can enable Avatar Optimizer to perform advanced optimizations like texture atlasing and UV packing.&lt;/p>
+&lt;h2 id="what-is-shader-information">
+ What is Shader Information?
+ &lt;a class="anchor" href="#what-is-shader-information">#&lt;/a>
+&lt;/h2>
+&lt;p>Shader Information is a way to tell Avatar Optimizer how your shader uses textures, UV channels, and other material properties.&lt;/p></description></item></channel></rss>

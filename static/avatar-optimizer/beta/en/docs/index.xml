@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Docs on Avatar Optimizer (1.9.0-rc.3)</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/</link><description>Recent content in Docs on Avatar Optimizer (1.9.0-rc.3)</description><generator>Hugo</generator><language>en</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/index.xml" rel="self" type="application/rss+xml"/><item><title>Basic Concepts</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/basic-concept/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/basic-concept/</guid><description>&lt;h1 id="basic-concepts">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Docs on Avatar Optimizer (1.9.0-rc.4)</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/</link><description>Recent content in Docs on Avatar Optimizer (1.9.0-rc.4)</description><generator>Hugo</generator><language>en</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/index.xml" rel="self" type="application/rss+xml"/><item><title>Basic Concepts</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/basic-concept/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/basic-concept/</guid><description>&lt;h1 id="basic-concepts">
  Basic Concepts of Avatar Optimizer
  &lt;a class="anchor" href="#basic-concepts">#&lt;/a>
 &lt;/h1>
@@ -95,6 +95,28 @@ I&amp;rsquo;m usually use Japanese, but you can ask me with English.&lt;/p>
 
  
  
+
+
+ 
+
+ 
+
+ 
+ 
+
+ 
+
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+ 
  
 
  
@@ -7235,6 +7257,23 @@ I&amp;rsquo;m usually use Japanese, but you can ask me with English.&lt;/p>
 
 
 
+&lt;h2 id="1.9.0-rc.4">
+ &lt;a href="https://github.com/anatawa12/AvatarOptimizer/compare/v1.9.0-rc.3...v1.9.0-rc.4">1.9.0-rc.4&lt;/a> - 2026-01-01
+ &lt;a class="anchor" href="#1.9.0-rc.4">#&lt;/a>
+&lt;/h2>
+&lt;h3 id="1.9.0-rc.4-changed">
+ Changed
+ &lt;a class="anchor" href="#1.9.0-rc.4-changed">#&lt;/a>
+&lt;/h3>
+&lt;ul>
+&lt;li>Reverted Ignore unknown IEditorOnly components and log a warning in console instead of showing a popup. &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1592">&lt;code>#1592&lt;/code>&lt;/a>
+&lt;ul>
+&lt;li>We added button to ignore such components instead.&lt;/li>
+&lt;li>As a part of this feature, we added Project-level settings to store a list of ignored components.&lt;/li>
+&lt;li>You can access this settings in &lt;code>Project/Avatar Optimizer&lt;/code> of &lt;code>Project settings&lt;/code> and stored at &lt;code>ProjectSettings/AvatarOptimizerSettings.asset&lt;/code> file.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
 &lt;h2 id="1.9.0-rc.3">
  &lt;a href="https://github.com/anatawa12/AvatarOptimizer/compare/v1.9.0-rc.2...v1.9.0-rc.3">1.9.0-rc.3&lt;/a> - 2025-12-25
  &lt;a class="anchor" href="#1.9.0-rc.3">#&lt;/a>

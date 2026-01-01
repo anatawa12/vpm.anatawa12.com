@@ -1,4 +1,30 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>開発者向け on Avatar Optimizer (1.9.0-rc.3)</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/developers/</link><description>Recent content in 開発者向け on Avatar Optimizer (1.9.0-rc.3)</description><generator>Hugo</generator><language>ja</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/developers/index.xml" rel="self" type="application/rss+xml"/><item><title>Asset Description</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/developers/asset-description/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/developers/asset-description/</guid><description>&lt;h1 id="asset-description">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>開発者向け on Avatar Optimizer (1.9.0-rc.4)</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/developers/</link><description>Recent content in 開発者向け on Avatar Optimizer (1.9.0-rc.4)</description><generator>Hugo</generator><language>ja</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/developers/index.xml" rel="self" type="application/rss+xml"/><item><title>システムの前提条件</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/developers/system-assumptions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/developers/system-assumptions/</guid><description>&lt;h1 id="外部ツールに求める前提条件">
+ 外部ツールに求める前提条件
+ &lt;a class="anchor" href="#%e5%a4%96%e9%83%a8%e3%83%84%e3%83%bc%e3%83%ab%e3%81%ab%e6%b1%82%e3%82%81%e3%82%8b%e5%89%8d%e6%8f%90%e6%9d%a1%e4%bb%b6">#&lt;/a>
+&lt;/h1>
+&lt;p>このページでは、Avatar Optimizerが外部ツールやデータ構造に対して仮定している条件について説明します。&lt;br>
+Avatar Optimizerと連携するツールを開発している場合は、これらの条件を尊重していただけると幸いです。&lt;/p>
+&lt;h2 id="transform-instance-usage">
+ Transformインスタンスの使用方法
+ &lt;a class="anchor" href="#transform-instance-usage">#&lt;/a>
+&lt;/h2>
+&lt;p>Transformインスタンスが同一であるか否かは、Avatar Optimizer内で同じボーンであるか否かを判定するために使用されます。&lt;/p>
+&lt;p>Avatar Optimizerは、Resolving Phaseで取得したTransform行列を使用し、Remove Mesh By Boxにより削除対象となる頂点を判断する場合があります。&lt;br>
+Transformを操作するツールを作成する場合は、Avatar Optimizerの最適化処理内において各Transformインスタンスが一貫して単一のボーンや目的を表すことを確認してください。&lt;/p>
+&lt;h2 id="vertex-index-usage">
+ 頂点インデックスの使用
+ &lt;a class="anchor" href="#vertex-index-usage">#&lt;/a>
+&lt;/h2>
+&lt;p>ShaderInformationで明示的に登録されていない限り、頂点インデックスは、シェーダーやAvatar Optimizerの後に実行される他のプラグインなどにおいて使用されないものと仮定して扱われます。&lt;/p>
+&lt;p>Avatar Optimizerは、その最適化処理においてメッシュを統合し、頂点インデックスを変更する可能性があります。&lt;br>
+シェーダーやツールで頂点インデックスを使用する場合は、&lt;a href="../shader-information">ShaderInformation API&lt;/a>を介してその利用状況を登録し、不適切な最適化処理を防止する必要があります。&lt;/p>
+&lt;h2 id="external-parameter-usage">
+ 外部ツールによるAnimatorパラメーターの使用
+ &lt;a class="anchor" href="#external-parameter-usage">#&lt;/a>
+&lt;/h2>
+&lt;p>Avatar Optimizerは、Animatorパラメーターの使用方法やその値の範囲を用いて、不要なアニメーションなどを最適化することがあります。&lt;br>
+しかし、外部ツールによって使用されるパラメーターについては、アバターのデータから適切に推測することが不可能であるため、AssetDescriptionで明示的に宣言されていない限り、パラメーターは外部から使用されていないものと仮定して扱われます。&lt;/p>
+&lt;p>ツールがOSCなどでパラメーターを変更したり読み取ったりする場合は、&lt;a href="../asset-description">AssetDescription&lt;/a>を介して外部ツールから使用されるパラメーターとして登録してください。&lt;/p></description></item><item><title>Asset Description</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/developers/asset-description/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/developers/asset-description/</guid><description>&lt;h1 id="asset-description">
  Asset Description
  &lt;a class="anchor" href="#asset-description">#&lt;/a>
 &lt;/h1>
@@ -80,7 +106,51 @@ Avatar Optimizerはランタイムで動作しないため、ランタイムビ�
 &lt;p>コンポーネントの設定変更はコンポーネントを追加した直後に行う場合のみサポートされており、既にGameObject上に存在しているコンポーネントに対する設定変更はサポートされていません。
 これは、将来のバージョンで追加された機能が、既存のコンポーネントの設定内容と互換性がない可能性があるためです。&lt;/p>
 &lt;p>例えば、v1.8.0で追加された&lt;code>AAO Remove Mesh By Box&lt;/code>コンポーネントの反転オプションを有効にすると、設定される箱による効果が変わってしまい、v1.7以前のみを想定して作成されているツールと互換性がなくなってしまいます。&lt;/p>
-&lt;/blockquote></description></item><item><title>アセットの配布について</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/developers/distributing-prefabs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/developers/distributing-prefabs/</guid><description>&lt;h1 id="distributing-prefabs">
+&lt;/blockquote></description></item><item><title>Shader Information API</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/developers/shader-information/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/developers/shader-information/</guid><description>&lt;h1 id="shader-information-api">
+ Shader Information API
+ &lt;a class="anchor" href="#shader-information-api">#&lt;/a>
+&lt;/h1>
+&lt;p>Avatar Optimizer v1.8.0以降は、カスタムシェーダーを使用するマテリアルの最適化を支援するShader Information APIを提供しています。シェーダー情報を登録することで、Avatar Optimizerがテクスチャのアトラス化やUVのパッキングなどの高度な最適化を実行できるようになります。&lt;/p>
+&lt;h2 id="what-is-shader-information">
+ Shader Informationとは？
+ &lt;a class="anchor" href="#what-is-shader-information">#&lt;/a>
+&lt;/h2>
+&lt;p>Shader Informationは、あなたのシェーダーがテクスチャ、UVチャンネル、その他のマテリアルプロパティをどのように使用しているかをAvatar Optimizerに伝える方法です。&lt;/p>
+&lt;p>現在のAvatar Optimizerはこの情報を用いて、以下の方法でアバターを最適化します。将来的にさらに多くの最適化が追加される可能性があります。&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup> ただし、すべての最適化が Trace and Optimize によって自動的に実行されるわけではありません。&lt;/p>
+&lt;ul>
+&lt;li>複数のテクスチャをテクスチャアトラスにパッキング (&lt;code>AAO Merge Material&lt;/code>などのコンポーネントを使用)&lt;/li>
+&lt;li>シェーダー機能で使用されているがマテリアル設定で無効化されているテクスチャを削除&lt;/li>
+&lt;/ul>
+&lt;p>Shader Informationがない場合、Avatar Optimizerはシェーダーを保守的に扱い、これらの最適化の一部を実行できません。&lt;/p>
+&lt;h2 id="core-concepts">
+ コアコンセプト
+ &lt;a class="anchor" href="#core-concepts">#&lt;/a>
+&lt;/h2>
+&lt;h3 id="main-classes">
+ 主要なクラス
+ &lt;a class="anchor" href="#main-classes">#&lt;/a>
+&lt;/h3>
+&lt;p>Shader Information APIは3つの主要なクラスで構成されています:&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>ShaderInformation&lt;/code>: シェーダーに関する情報を提供するために継承する基底クラス。&lt;code>GetMaterialInformation&lt;/code>をオーバーライドして、シェーダーを使用するマテリアルのテクスチャとUV使用状況を登録します。&lt;/li>
+&lt;li>&lt;code>ShaderInformationRegistry&lt;/code>: エディタ初期化中に&lt;code>ShaderInformation&lt;/code>実装をAvatar Optimizerに&lt;a href="#registration-methods">登録&lt;/a>するために使用する静的クラス。&lt;/li>
+&lt;li>&lt;code>MaterialInformationCallback&lt;/code>: &lt;code>GetMaterialInformation&lt;/code>に渡され、マテリアルプロパティを読み取り、テクスチャ/UV使用情報を登録するメソッドを提供します。&lt;/li>
+&lt;/ul>
+&lt;h3 id="null-values">
+ Null値
+ &lt;a class="anchor" href="#null-values">#&lt;/a>
+&lt;/h3>
+&lt;p>Shader Information API全体を通して、&lt;code>null&lt;/code>値には一貫した意味があります: &lt;strong>不明な値&lt;/strong>または&lt;strong>アニメーション化された(静的に決定不可能な)値&lt;/strong>を表します。マテリアルプロパティがアニメーション化されている可能性があるか、ビルド時にその値を決定できない場合、APIは不確実性を示すために&lt;code>null&lt;/code>を返します。値を静的に決定できない場合は、パラメータに&lt;code>null&lt;/code>を渡す必要があります。&lt;/p>
+&lt;h2 id="getting-started">
+ はじめに
+ &lt;a class="anchor" href="#getting-started">#&lt;/a>
+&lt;/h2>
+&lt;p>シェーダーのShader Informationを提供するには、以下の手順に従ってください:&lt;/p>
+&lt;h3 id="create-asmdef">
+ 1. Assembly Definitionを作成
+ &lt;a class="anchor" href="#create-asmdef">#&lt;/a>
+&lt;/h3>
+&lt;p>シェーダーパッケージにエディタ用のAssembly Definition（asmdef）がない場合は、作成してください。 Shader Informationはビルド時にのみ使用され、Shader Information APIはエディタでのみ利用可能なため、該当するアセンブリはエディタ専用にしてください。&lt;/p></description></item><item><title>アセットの配布について</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/developers/distributing-prefabs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/developers/distributing-prefabs/</guid><description>&lt;h1 id="distributing-prefabs">
  アセットの配布について
  &lt;a class="anchor" href="#distributing-prefabs">#&lt;/a>
 &lt;/h1>
