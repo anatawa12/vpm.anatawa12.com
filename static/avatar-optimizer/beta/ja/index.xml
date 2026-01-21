@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Introduction on Avatar Optimizer (1.9.0-rc.4)</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/</link><description>Recent content in Introduction on Avatar Optimizer (1.9.0-rc.4)</description><generator>Hugo</generator><language>ja</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/beta/ja/index.xml" rel="self" type="application/rss+xml"/><item><title>v1.0.0一周年を記念してちょっと歴史を振り返る</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/posts/2024-06-27-one-year-since-stable-release/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/posts/2024-06-27-one-year-since-stable-release/</guid><description>&lt;p>AAO: Avatar Optimizer v1.0.0一周年を記念してちょっと歴史を振り返ってみることにしてみる。&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Introduction on Avatar Optimizer (1.9.0-rc.5)</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/</link><description>Recent content in Introduction on Avatar Optimizer (1.9.0-rc.5)</description><generator>Hugo</generator><language>ja</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/beta/ja/index.xml" rel="self" type="application/rss+xml"/><item><title>v1.0.0一周年を記念してちょっと歴史を振り返る</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/posts/2024-06-27-one-year-since-stable-release/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/posts/2024-06-27-one-year-since-stable-release/</guid><description>&lt;p>AAO: Avatar Optimizer v1.0.0一周年を記念してちょっと歴史を振り返ってみることにしてみる。&lt;/p>
 &lt;p>書いた人はanatawa12なので「私」はanatawa12を指す。&lt;/p>
 &lt;h2 id="before-born">
  Avatar Optimizerが生まれるまで
@@ -175,6 +175,37 @@
 
  
  
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+ 
+
+
+ 
+
+ 
+
+ 
+ 
+
+ 
+
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+ 
 
 
  
@@ -7359,6 +7390,28 @@
 
 
 
+&lt;h2 id="1.9.0-rc.5">
+ &lt;a href="https://github.com/anatawa12/AvatarOptimizer/compare/v1.9.0-rc.4...v1.9.0-rc.5">1.9.0-rc.5&lt;/a> - 2026-01-21
+ &lt;a class="anchor" href="#1.9.0-rc.5">#&lt;/a>
+&lt;/h2>
+&lt;h3 id="1.9.0-rc.5-added">
+ Added
+ &lt;a class="anchor" href="#1.9.0-rc.5-added">#&lt;/a>
+&lt;/h3>
+&lt;ul>
+&lt;li>Public API of &lt;code>MergePhysBone&lt;/code> component
+&lt;ul>
+&lt;li>&lt;code>MergePhysBone&lt;/code> component is now part of public component API.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="1.9.0-rc.5-fixed">
+ Fixed
+ &lt;a class="anchor" href="#1.9.0-rc.5-fixed">#&lt;/a>
+&lt;/h3>
+&lt;ul>
+&lt;li>VRM: Improved robustness of parsing incompletely setup VRM0.x / VRM1.0 avatars &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1599">&lt;code>#1599&lt;/code>&lt;/a>&lt;/li>
+&lt;/ul>
 &lt;h2 id="1.9.0-rc.4">
  &lt;a href="https://github.com/anatawa12/AvatarOptimizer/compare/v1.9.0-rc.3...v1.9.0-rc.4">1.9.0-rc.4&lt;/a> - 2026-01-01
  &lt;a class="anchor" href="#1.9.0-rc.4">#&lt;/a>
@@ -11859,6 +11912,7 @@ Component APIが利用可能なコンポーネントの一覧は以下の通り�
 &lt;li>&lt;code>RemoveMeshInBox&lt;/code> - コンポーネントの追加と追加時の設定変更がサポートされています&lt;/li>
 &lt;li>&lt;code>RemoveMeshByBlendShape&lt;/code> - コンポーネントの追加と追加時の設定変更がサポートされています&lt;/li>
 &lt;li>&lt;code>RemoveMeshByMask&lt;/code> - コンポーネントの追加と追加時の設定変更がサポートされています&lt;/li>
+&lt;li>&lt;code>MergePhysBone&lt;/code> - コンポーネントの追加と追加時の設定変更がサポートされています&lt;/li>
 &lt;li>&lt;code>TraceAndOptimize&lt;/code> - デフォルト設定での追加はサポートされていますが、設定変更はサポートされていません&lt;/li>
 &lt;/ul>
 &lt;p>将来のバージョンで追加されるデフォルトで有効な機能との互換性を保つために、コンポーネントの設定変更を行う場合には注意が必要です。
@@ -11883,7 +11937,11 @@ Avatar Optimizerはランタイムで動作しないため、ランタイムビ�
 &lt;p>コンポーネントの設定変更はコンポーネントを追加した直後に行う場合のみサポートされており、既にGameObject上に存在しているコンポーネントに対する設定変更はサポートされていません。
 これは、将来のバージョンで追加された機能が、既存のコンポーネントの設定内容と互換性がない可能性があるためです。&lt;/p>
 &lt;p>例えば、v1.8.0で追加された&lt;code>AAO Remove Mesh By Box&lt;/code>コンポーネントの反転オプションを有効にすると、設定される箱による効果が変わってしまい、v1.7以前のみを想定して作成されているツールと互換性がなくなってしまいます。&lt;/p>
-&lt;/blockquote></description></item><item><title>Shader Information API</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/developers/shader-information/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/developers/shader-information/</guid><description>&lt;h1 id="shader-information-api">
+&lt;/blockquote>
+&lt;blockquote class="book-hint info">
+&lt;p>v1.9.0以降、&lt;code>MergePhysBone&lt;/code>コンポーネントのComponent APIを提供していますが、そのセマンティックバージョニング上の取り扱いは特殊なものになっています。&lt;/p>
+&lt;p>このコンポーネントはVRChat SDKのPhysBoneコンポーネントと密接に結びついているため、PhysBoneコンポーネントの仕様変更に伴って、&lt;code>MergePhysBone&lt;/code>にも対応する変更が必要になる場合があります。
+その場合、新しいプロパティの追加や既存プロパティの変更は、セマンティックバージョニングの規定に従わずに行われる可能性があります。&lt;/p></description></item><item><title>Shader Information API</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/developers/shader-information/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/developers/shader-information/</guid><description>&lt;h1 id="shader-information-api">
  Shader Information API
  &lt;a class="anchor" href="#shader-information-api">#&lt;/a>
 &lt;/h1>
