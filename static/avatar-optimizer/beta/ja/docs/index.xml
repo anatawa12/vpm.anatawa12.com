@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Docs on Avatar Optimizer (1.9.0-rc.7)</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/</link><description>Recent content in Docs on Avatar Optimizer (1.9.0-rc.7)</description><generator>Hugo</generator><language>ja</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/index.xml" rel="self" type="application/rss+xml"/><item><title>基本コンセプト</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/basic-concept/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/basic-concept/</guid><description>&lt;h1 id="basic-concepts">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Docs on Avatar Optimizer (1.9.0-rc.8)</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/</link><description>Recent content in Docs on Avatar Optimizer (1.9.0-rc.8)</description><generator>Hugo</generator><language>ja</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/index.xml" rel="self" type="application/rss+xml"/><item><title>基本コンセプト</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/basic-concept/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/basic-concept/</guid><description>&lt;h1 id="basic-concepts">
  Avatar Optimizerの基本コンセプト
  &lt;a class="anchor" href="#basic-concepts">#&lt;/a>
 &lt;/h1>
@@ -57,7 +57,7 @@
  &lt;a class="anchor" href="#avatar-behavior-or-appearance-changed-when-using-aao-trace-and-optimize-component">#&lt;/a>
 &lt;/h2>
 &lt;p>&lt;code>AAO Trace and Optimize&lt;/code>コンポーネントを使用して、アバターの振る舞いや見た目が変わってしまった場合は、(アバターがAvatar Optimizerの他のコンポーネントのバグ挙動に依存していない限り、)全てバグです。
-&lt;a href="https://github.com/anatawa12/AvatarOptimizer/issues/new/choose">GitHub Issues&lt;/a>や&lt;a href="https://misskey.niri.la/@anatawa12">Fediverse (Misskey / Mastodon)&lt;/a>、&lt;a href="https://twitter.com/anatawa12_vrc">Twitter&lt;/a>などから報告をお願いします。&lt;/p>
+&lt;a href="https://github.com/anatawa12/AvatarOptimizer/issues/new/choose">GitHub Issues&lt;/a>や&lt;a href="https://discord.gg/dV4cVpewmM">NDMF Discord&lt;/a>、&lt;a href="https://misskey.niri.la/@anatawa12">Fediverse (Misskey / Mastodon)&lt;/a>、&lt;a href="https://twitter.com/anatawa12_vrc">Twitter&lt;/a>などから報告をお願いします。&lt;/p>
 &lt;h2 id="mesh-is-invisible-even-though-it-is-in-the-field-of-view">
  メッシュが視界の中にあるのに非表示になってしまう
  &lt;a class="anchor" href="#mesh-is-invisible-even-though-it-is-in-the-field-of-view">#&lt;/a>
@@ -76,9 +76,7 @@
  &lt;code>AAO Merge Skinned Mesh&lt;/code>コンポーネントを使用すると、マテリアルプロパティに対するアニメーションが競合する
  &lt;a class="anchor" href="#material-property-animations-conflict-when-using-aao-merge-skinned-mesh-component">#&lt;/a>
 &lt;/h2>
-&lt;p>この問題は既知のバグであり、現時点では競合してしまう仕様です。&lt;/p>
-&lt;p>マテリアルプロパティに対してアニメーションされるメッシュを統合する際は、競合しないようご注意ください。
-競合する場合は警告が表示されるので、そちらを確認してください。&lt;/p></description></item><item><title>Changelog</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/changelog/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/changelog/</guid><description>&lt;h1 id="changelog">
+&lt;p>この問題は既知のバグであり、現時点では競合してしまう仕様です。&lt;/p></description></item><item><title>Changelog</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/changelog/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/changelog/</guid><description>&lt;h1 id="changelog">
  Changelog
  &lt;a class="anchor" href="#changelog">#&lt;/a>
 &lt;/h1>
@@ -153,6 +151,37 @@
 
  
  
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+ 
+
+
+ 
+
+ 
+
+ 
+ 
+
+ 
+
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+ 
 
 
  
@@ -212,40 +241,62 @@
 
  
 
+ 
  
+
  
 
+ 
+ 
  
 
  
  
  
+ 
 
  
  
+
+
  
+
  
 
  
  
 
+ 
 
+ 
+ 
  
 
  
+ 
+ 
+ 
 
+ 
  
  
 
  
+ 
+ 
+ 
 
  
  
+
+
  
 
  
+
  
  
+
  
 
  
@@ -7390,6 +7441,34 @@
 
 
 
+&lt;h2 id="1.9.0-rc.8">
+ &lt;a href="https://github.com/anatawa12/AvatarOptimizer/compare/v1.9.0-rc.7...v1.9.0-rc.8">1.9.0-rc.8&lt;/a> - 2026-02-05
+ &lt;a class="anchor" href="#1.9.0-rc.8">#&lt;/a>
+&lt;/h2>
+&lt;h3 id="1.9.0-rc.8-added">
+ Added
+ &lt;a class="anchor" href="#1.9.0-rc.8-added">#&lt;/a>
+&lt;/h3>
+&lt;ul>
+&lt;li>A summary of optimizations to the console &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1611">&lt;code>#1611&lt;/code>&lt;/a>
+&lt;ul>
+&lt;li>This feature is enabled by default.&lt;/li>
+&lt;li>You can disable it from &lt;code>Tools/Avatar Optimizer/Optimization Metrics&lt;/code>.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>A window to collect data for bug reports &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1615">&lt;code>#1615&lt;/code>&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="1.9.0-rc.8-fixed">
+ Fixed
+ &lt;a class="anchor" href="#1.9.0-rc.8-fixed">#&lt;/a>
+&lt;/h3>
+&lt;ul>
+&lt;li>Changed message shown on Trace and Optimize inspector &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1609">&lt;code>#1609&lt;/code>&lt;/a>
+&lt;ul>
+&lt;li>This message shows &amp;ldquo;Behavior changes are bugs of AAO: Avatar Optimizer&amp;rdquo; and suggests reporting issues.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
 &lt;h2 id="1.9.0-rc.7">
  &lt;a href="https://github.com/anatawa12/AvatarOptimizer/compare/v1.9.0-rc.6...v1.9.0-rc.7">1.9.0-rc.7&lt;/a> - 2026-01-26
  &lt;a class="anchor" href="#1.9.0-rc.7">#&lt;/a>
@@ -7493,6 +7572,17 @@
 &lt;ul>
 &lt;li>Error with Object as the animation target &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1586">&lt;code>#1586&lt;/code>&lt;/a>&lt;/li>
 &lt;/ul>
+&lt;h2 id="1.8.16">
+ &lt;a href="https://github.com/anatawa12/AvatarOptimizer/compare/v1.8.15...v1.8.16">1.8.16&lt;/a> - 2025-12-03
+ &lt;a class="anchor" href="#1.8.16">#&lt;/a>
+&lt;/h2>
+&lt;h3 id="1.8.16-changed">
+ Changed
+ &lt;a class="anchor" href="#1.8.16-changed">#&lt;/a>
+&lt;/h3>
+&lt;ul>
+&lt;li>Streaming mipmap settings are copied when processing textures &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1558">&lt;code>#1558&lt;/code>&lt;/a> (backport)&lt;/li>
+&lt;/ul>
 &lt;h2 id="1.9.0-rc.1">
  &lt;a href="https://github.com/anatawa12/AvatarOptimizer/compare/v1.9.0-beta.6...v1.9.0-rc.1">1.9.0-rc.1&lt;/a> - 2025-12-01
  &lt;a class="anchor" href="#1.9.0-rc.1">#&lt;/a>
@@ -7552,7 +7642,7 @@
 &lt;li>Error with insoncistent animator controller &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1571">&lt;code>#1571&lt;/code>&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;h2 id="1.8.15">
- &lt;a href="https://github.com/anatawa12/AvatarOptimizer/compare/v1.9.0-beta.5...v1.8.15">1.8.15&lt;/a> - 2025-11-24
+ &lt;a href="https://github.com/anatawa12/AvatarOptimizer/compare/v1.8.14...v1.8.15">1.8.15&lt;/a> - 2025-11-24
  &lt;a class="anchor" href="#1.8.15">#&lt;/a>
 &lt;/h2>
 &lt;h3 id="1.8.15-added">
