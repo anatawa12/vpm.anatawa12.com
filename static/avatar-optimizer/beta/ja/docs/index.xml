@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Docs on Avatar Optimizer (1.9.0-rc.9)</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/</link><description>Recent content in Docs on Avatar Optimizer (1.9.0-rc.9)</description><generator>Hugo</generator><language>ja</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/index.xml" rel="self" type="application/rss+xml"/><item><title>基本コンセプト</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/basic-concept/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/basic-concept/</guid><description>&lt;h1 id="basic-concepts"&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Docs on Avatar Optimizer (1.9.0-rc.10)</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/</link><description>Recent content in Docs on Avatar Optimizer (1.9.0-rc.10)</description><generator>Hugo</generator><language>ja</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/index.xml" rel="self" type="application/rss+xml"/><item><title>基本コンセプト</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/basic-concept/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/basic-concept/</guid><description>&lt;h1 id="basic-concepts"&gt;
  Avatar Optimizerの基本コンセプト
  &lt;a class="anchor" href="#basic-concepts"&gt;#&lt;/a&gt;
 &lt;/h1&gt;
@@ -94,6 +94,10 @@
 &lt;p&gt;ウィンドウ上部には、報告対象のアバターを指定するためのフィールドがあります。&lt;br&gt;
 発生している問題に関連するアバターをセットしてください。&lt;/p&gt;
 &lt;p&gt;ウィンドウ下部には、&lt;code&gt;Save Bug Report&lt;/code&gt;と&lt;code&gt;Copy Bug Report to Clipboard&lt;/code&gt;という2つのボタンがあります。&lt;/p&gt;
+&lt;blockquote class="book-hint info"&gt;
+&lt;p&gt;Play Mode中(上部の▶ボタンが青色)の場合、これらのボタンは無効化されます。&lt;br&gt;
+Bug Report Helperを使用する前にPlay Modeを終了してください。(▶ボタンをクリックして灰色にします)。&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;&lt;code&gt;Save Bug Report&lt;/code&gt;ボタンをクリックすると、レポートファイルを圧縮(gz)ファイルとして保存するためのダイアログが開きます。&lt;br&gt;
 圧縮効率が良いため、この方法を推奨します。&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;Copy Bug Report to Clipboard&lt;/code&gt;ボタンをクリックすると、レポートファイルのテキストがクリップボードにコピーされます。&lt;br&gt;
@@ -200,6 +204,28 @@
 
  
  
+
+
+ 
+
+ 
+
+ 
+ 
+
+ 
+
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+ 
  
 
  
@@ -7521,6 +7547,18 @@
 
 
 
+&lt;h2 id="1.9.0-rc.10"&gt;
+ &lt;a href="https://github.com/anatawa12/AvatarOptimizer/compare/v1.9.0-rc.9...v1.9.0-rc.10"&gt;1.9.0-rc.10&lt;/a&gt; - 2026-02-10
+ &lt;a class="anchor" href="#1.9.0-rc.10"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;h3 id="1.9.0-rc.10-changed"&gt;
+ Changed
+ &lt;a class="anchor" href="#1.9.0-rc.10-changed"&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Improved behavior of Bug Report Helper to prevent mistakes &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1623"&gt;&lt;code&gt;#1623&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Disabled merging PhysBones when constraints are affected &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1624"&gt;&lt;code&gt;#1624&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2 id="1.9.0-rc.9"&gt;
  &lt;a href="https://github.com/anatawa12/AvatarOptimizer/compare/v1.9.0-rc.8...v1.9.0-rc.9"&gt;1.9.0-rc.9&lt;/a&gt; - 2026-02-08
  &lt;a class="anchor" href="#1.9.0-rc.9"&gt;#&lt;/a&gt;
