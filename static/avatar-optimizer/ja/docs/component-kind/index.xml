@@ -1,44 +1,52 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>コンポーネントの種類 on Avatar Optimizer (1.8.16)</title><link>https://vpm.anatawa12.com/avatar-optimizer/ja/docs/component-kind/</link><description>Recent content in コンポーネントの種類 on Avatar Optimizer (1.8.16)</description><generator>Hugo</generator><language>ja</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/ja/docs/component-kind/index.xml" rel="self" type="application/rss+xml"/><item><title>Avatar Global Components</title><link>https://vpm.anatawa12.com/avatar-optimizer/ja/docs/component-kind/avatar-global-components/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/ja/docs/component-kind/avatar-global-components/</guid><description>&lt;h1 id="avatar-global-components">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>コンポーネントの種類 on Avatar Optimizer (1.9.0)</title><link>https://vpm.anatawa12.com/avatar-optimizer/ja/docs/component-kind/</link><description>Recent content in コンポーネントの種類 on Avatar Optimizer (1.9.0)</description><generator>Hugo</generator><language>ja</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/ja/docs/component-kind/index.xml" rel="self" type="application/rss+xml"/><item><title>Avatar Global Components</title><link>https://vpm.anatawa12.com/avatar-optimizer/ja/docs/component-kind/avatar-global-components/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/ja/docs/component-kind/avatar-global-components/</guid><description>&lt;h1 id="avatar-global-components"&gt;
  Avatar Global Components
- &lt;a class="anchor" href="#avatar-global-components">#&lt;/a>
-&lt;/h1>
-&lt;p>Avatar Global Componentはアバターのルートに追加することでアバター全体に作用するコンポーネントです。&lt;/p>
-&lt;p>&amp;ldquo;アバターのルート&amp;quot;とは、アバターの最も上の階層にあるGameObjectのことです。
-例えばVRChat用アバターの場合、VRC Avatar DescriptorコンポーネントがあるGameObjectが&amp;quot;アバターのルート&amp;quot;です。&lt;/p>
-&lt;p>&lt;img src="avatar-root.png" alt="avatar-root.png" />&lt;/p>
-&lt;p>Avatar Global Componentをアバターのルート以外に追加した場合、インスペクター上にエラーが表示され、コンポーネントは一切動作しません。&lt;/p>
-&lt;p>以下のコンポーネントがAvatar Global Componentです。&lt;/p>
-&lt;ul>
-&lt;li>&lt;a href="../../reference/trace-and-optimize">Trace And Optimize&lt;/a>&lt;/li>
-&lt;li>&lt;a href="../../reference/unused-bones-by-references-tool">UnusedBonesByReferencesTool&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>Edit Skinned Mesh Components</title><link>https://vpm.anatawa12.com/avatar-optimizer/ja/docs/component-kind/edit-skinned-mesh-components/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/ja/docs/component-kind/edit-skinned-mesh-components/</guid><description>&lt;h1 id="edit-skinned-mesh-components">
+ &lt;a class="anchor" href="#avatar-global-components"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;Avatar Global Componentはアバターのルートに追加することでアバター全体に作用するコンポーネントです。&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;アバターのルート&amp;quot;とは、アバターの最も上の階層にあるGameObjectのことです。
+例えばVRChat用アバターの場合、VRC Avatar DescriptorコンポーネントがあるGameObjectが&amp;quot;アバターのルート&amp;quot;です。&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://vpm.anatawa12.com/avatar-optimizer/en/docs/component-kind/avatar-global-components/avatar-root.png" alt="avatar-root.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Avatar Global Componentをアバターのルート以外に追加した場合、インスペクター上にエラーが表示され、コンポーネントは一切動作しません。&lt;/p&gt;
+&lt;p&gt;以下のコンポーネントがAvatar Global Componentです。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="../../reference/trace-and-optimize"&gt;Trace And Optimize&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="../../reference/unused-bones-by-references-tool"&gt;UnusedBonesByReferencesTool&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>Edit Skinned Mesh Components</title><link>https://vpm.anatawa12.com/avatar-optimizer/ja/docs/component-kind/edit-skinned-mesh-components/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/ja/docs/component-kind/edit-skinned-mesh-components/</guid><description>&lt;h1 id="edit-skinned-mesh-components"&gt;
  Edit Skinned Mesh Components
- &lt;a class="anchor" href="#edit-skinned-mesh-components">#&lt;/a>
-&lt;/h1>
-&lt;p>Edit Skinned Mesh ComponentはSkinnedMeshRendererコンポーネントのあるGameObjectに追加することで、そのSkinnedMeshRendererに作用するコンポーネントです。&lt;/p>
-&lt;p>このコンポーネントには2つの小分類があります。&lt;/p>
-&lt;h2 id="source-component">
+ &lt;a class="anchor" href="#edit-skinned-mesh-components"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;Edit Skinned Mesh ComponentはSkinnedMeshRendererコンポーネントのあるGameObjectに追加することで、そのSkinnedMeshRendererに作用するコンポーネントです。&lt;/p&gt;
+&lt;p&gt;Avatar Optimizer 1.9.0以降では、一部のコンポーネントがメッシュレンダラー(MeshRendererコンポーネント)にも対応しています。&lt;br&gt;
+これらは「MeshRenderer対応Edit Skinned Mesh Component」と呼ばれます。&lt;/p&gt;
+&lt;p&gt;このコンポーネントには2つの小分類があります。&lt;/p&gt;
+&lt;h2 id="source-component"&gt;
  Source Component
- &lt;a class="anchor" href="#source-component">#&lt;/a>
-&lt;/h2>
-&lt;p>メッシュなどを生成するコンポーネントです。&lt;br>
-以下のコンポーネントがSource Edit Skinned Mesh Componentです。&lt;/p>
-&lt;ul>
-&lt;li>&lt;a href="../../reference/merge-skinned-mesh">MergeSkinnedMesh&lt;/a>&lt;br>
-このコンポーネントは他の(Skinned)MeshRendererを基にメッシュを生成します。&lt;/li>
-&lt;/ul>
-&lt;h2 id="modifying-component">
+ &lt;a class="anchor" href="#source-component"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;メッシュなどを生成するコンポーネントです。&lt;br&gt;
+以下のコンポーネントがSource Edit Skinned Mesh Componentです。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="../../reference/merge-skinned-mesh"&gt;MergeSkinnedMesh&lt;/a&gt;&lt;br&gt;
+このコンポーネントは他の(Skinned)MeshRendererを基にメッシュを生成します。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="modifying-component"&gt;
  Modifying Component
- &lt;a class="anchor" href="#modifying-component">#&lt;/a>
-&lt;/h2>
-&lt;p>既にあるメッシュなどを(複製して)編集するコンポーネントです。&lt;br>
-以下のコンポーネントがModifying Edit Skinned Mesh Componentです。&lt;/p>
-&lt;ul>
-&lt;li>&lt;a href="../../reference/remove-mesh-by-blendshape">Remove Mesh By BlendShape&lt;/a>&lt;/li>
-&lt;li>&lt;a href="../../reference/remove-mesh-by-mask">Remove Mesh By Mask&lt;/a>&lt;/li>
-&lt;li>&lt;a href="../../reference/remove-mesh-by-box">Remove Mesh By Box&lt;/a>&lt;/li>
-&lt;li>&lt;a href="../../remove-mesh-by-uv-tile/">Remove Mesh By UV Tile&lt;/a>&lt;/li>
-&lt;li>&lt;a href="../../reference/freeze-blendshape">Freeze BlendShape&lt;/a>&lt;/li>
-&lt;li>&lt;a href="../../reference/merge-toonlit-material">Merge ToonLit Material&lt;/a>&lt;/li>
-&lt;li>&lt;a href="../../reference/rename-blendshape">Rename BlendsShape&lt;/a>&lt;/li>
-&lt;/ul></description></item></channel></rss>
+ &lt;a class="anchor" href="#modifying-component"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;既にあるメッシュなどを(複製して)編集するコンポーネントです。&lt;br&gt;
+以下のコンポーネントがModifying Edit Skinned Mesh Componentです。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="../../reference/remove-mesh-by-blendshape"&gt;Remove Mesh By BlendShape&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="../../reference/remove-mesh-by-mask"&gt;Remove Mesh By Mask&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="../../reference/remove-mesh-by-box"&gt;Remove Mesh By Box&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="../../remove-mesh-by-uv-tile/"&gt;Remove Mesh By UV Tile&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="../../reference/freeze-blendshape"&gt;Freeze BlendShape&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="../../reference/merge-material"&gt;Merge Material&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="../../reference/rename-blendshape"&gt;Rename BlendsShape&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="../../reference/merge-toonlit-material"&gt;Merge ToonLit Material&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id="components-with-basic-mesh-support"&gt;
+ MeshRenderer対応コンポーネント
+ &lt;a class="anchor" href="#components-with-basic-mesh-support"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;Avatar Optimizer 1.9.0以降では、以下のEdit Skinned Mesh Componentがメッシュレンダラーにも対応しています。&lt;/p&gt;</description></item></channel></rss>
