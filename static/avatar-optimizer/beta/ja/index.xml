@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Introduction on Avatar Optimizer (1.9.1)</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/</link><description>Recent content in Introduction on Avatar Optimizer (1.9.1)</description><generator>Hugo</generator><language>ja</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/beta/ja/index.xml" rel="self" type="application/rss+xml"/><item><title>v1.0.0一周年を記念してちょっと歴史を振り返る</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/posts/2024-06-27-one-year-since-stable-release/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/posts/2024-06-27-one-year-since-stable-release/</guid><description>&lt;p&gt;AAO: Avatar Optimizer v1.0.0一周年を記念してちょっと歴史を振り返ってみることにしてみる。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Introduction on Avatar Optimizer (1.9.2)</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/</link><description>Recent content in Introduction on Avatar Optimizer (1.9.2)</description><generator>Hugo</generator><language>ja</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/beta/ja/index.xml" rel="self" type="application/rss+xml"/><item><title>v1.0.0一周年を記念してちょっと歴史を振り返る</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/posts/2024-06-27-one-year-since-stable-release/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/posts/2024-06-27-one-year-since-stable-release/</guid><description>&lt;p&gt;AAO: Avatar Optimizer v1.0.0一周年を記念してちょっと歴史を振り返ってみることにしてみる。&lt;/p&gt;
 &lt;p&gt;書いた人はanatawa12なので「私」はanatawa12を指す。&lt;/p&gt;
 &lt;h2 id="before-born"&gt;
  Avatar Optimizerが生まれるまで
@@ -235,6 +235,28 @@ Bug Report Helperを使用する前にPlay Modeを終了してください。(�
 
  
  
+
+
+ 
+
+ 
+
+ 
+ 
+
+ 
+
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+ 
  
 
  
@@ -7653,6 +7675,19 @@ Bug Report Helperを使用する前にPlay Modeを終了してください。(�
 
 
 
+&lt;h2 id="1.9.2"&gt;
+ &lt;a href="https://github.com/anatawa12/AvatarOptimizer/compare/v1.9.1...v1.9.2"&gt;1.9.2&lt;/a&gt; - 2026-02-13
+ &lt;a class="anchor" href="#1.9.2"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;h3 id="1.9.2-fixed"&gt;
+ Fixed
+ &lt;a class="anchor" href="#1.9.2-fixed"&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Unexpectedly animated end bones are replaced with endpoint position &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1634"&gt;&lt;code&gt;#1634&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Unexpected compilation flags passed to unity &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1637"&gt;&lt;code&gt;#1637&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;ArgumentException if Body is added to exclusions and MMD World Compatibility is enabled &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1638"&gt;&lt;code&gt;#1638&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2 id="1.9.1"&gt;
  &lt;a href="https://github.com/anatawa12/AvatarOptimizer/compare/v1.9.0...v1.9.1"&gt;1.9.1&lt;/a&gt; - 2026-02-13
  &lt;a class="anchor" href="#1.9.1"&gt;#&lt;/a&gt;
