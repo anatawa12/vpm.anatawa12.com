@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Docs on Avatar Optimizer (1.9.2)</title><link>https://vpm.anatawa12.com/avatar-optimizer/en/docs/</link><description>Recent content in Docs on Avatar Optimizer (1.9.2)</description><generator>Hugo</generator><language>en</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/en/docs/index.xml" rel="self" type="application/rss+xml"/><item><title>Basic Concepts</title><link>https://vpm.anatawa12.com/avatar-optimizer/en/docs/basic-concept/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/en/docs/basic-concept/</guid><description>&lt;h1 id="basic-concepts"&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Docs on Avatar Optimizer (1.9.3)</title><link>https://vpm.anatawa12.com/avatar-optimizer/en/docs/</link><description>Recent content in Docs on Avatar Optimizer (1.9.3)</description><generator>Hugo</generator><language>en</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/en/docs/index.xml" rel="self" type="application/rss+xml"/><item><title>Basic Concepts</title><link>https://vpm.anatawa12.com/avatar-optimizer/en/docs/basic-concept/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/en/docs/basic-concept/</guid><description>&lt;h1 id="basic-concepts"&gt;
  Basic Concepts of Avatar Optimizer
  &lt;a class="anchor" href="#basic-concepts"&gt;#&lt;/a&gt;
 &lt;/h1&gt;
@@ -105,6 +105,28 @@ Therefore, you may be asked to provide more information about avatar.&lt;/p&gt;<
 
  
  
+
+
+ 
+
+ 
+
+ 
+ 
+
+ 
+
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+ 
  
 
  
@@ -3143,6 +3165,20 @@ Therefore, you may be asked to provide more information about avatar.&lt;/p&gt;<
 
 
 
+&lt;h2 id="1.9.3"&gt;
+ &lt;a href="https://github.com/anatawa12/AvatarOptimizer/compare/v1.9.2...v1.9.3"&gt;1.9.3&lt;/a&gt; - 2026-02-14
+ &lt;a class="anchor" href="#1.9.3"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;h3 id="1.9.3-fixed"&gt;
+ Fixed
+ &lt;a class="anchor" href="#1.9.3-fixed"&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Auto Merge PhysBone may enables disabled PhysBones by merging disabled PhysBones &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1647"&gt;&lt;code&gt;#1647&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Auto Merge Material Slots may break material swapping animations &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1650"&gt;&lt;code&gt;#1650&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;KeyNotFoundException occurs when the physbone root transform field contains an external transform &lt;code&gt;1651&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;PhysBones targeting same bone are merged &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1656"&gt;&lt;code&gt;#1656&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2 id="1.9.2"&gt;
  &lt;a href="https://github.com/anatawa12/AvatarOptimizer/compare/v1.9.1...v1.9.2"&gt;1.9.2&lt;/a&gt; - 2026-02-13
  &lt;a class="anchor" href="#1.9.2"&gt;#&lt;/a&gt;
