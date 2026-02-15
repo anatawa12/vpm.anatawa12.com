@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Introduction on Avatar Optimizer (1.9.3)</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/</link><description>Recent content in Introduction on Avatar Optimizer (1.9.3)</description><generator>Hugo</generator><language>ja</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/beta/ja/index.xml" rel="self" type="application/rss+xml"/><item><title>v1.0.0一周年を記念してちょっと歴史を振り返る</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/posts/2024-06-27-one-year-since-stable-release/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/posts/2024-06-27-one-year-since-stable-release/</guid><description>&lt;p&gt;AAO: Avatar Optimizer v1.0.0一周年を記念してちょっと歴史を振り返ってみることにしてみる。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Introduction on Avatar Optimizer (1.9.4)</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/</link><description>Recent content in Introduction on Avatar Optimizer (1.9.4)</description><generator>Hugo</generator><language>ja</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/beta/ja/index.xml" rel="self" type="application/rss+xml"/><item><title>v1.0.0一周年を記念してちょっと歴史を振り返る</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/posts/2024-06-27-one-year-since-stable-release/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/posts/2024-06-27-one-year-since-stable-release/</guid><description>&lt;p&gt;AAO: Avatar Optimizer v1.0.0一周年を記念してちょっと歴史を振り返ってみることにしてみる。&lt;/p&gt;
 &lt;p&gt;書いた人はanatawa12なので「私」はanatawa12を指す。&lt;/p&gt;
 &lt;h2 id="before-born"&gt;
  Avatar Optimizerが生まれるまで
@@ -279,6 +279,28 @@ Bug Report Helperを使用する前にPlay Modeを終了してください。(�
 
  
  
+
+
+ 
+
+ 
+
+ 
+ 
+
+ 
+
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+ 
  
 
  
@@ -7697,6 +7719,27 @@ Bug Report Helperを使用する前にPlay Modeを終了してください。(�
 
 
 
+&lt;h2 id="1.9.4"&gt;
+ &lt;a href="https://github.com/anatawa12/AvatarOptimizer/compare/v1.9.3...v1.9.4"&gt;1.9.4&lt;/a&gt; - 2026-02-15
+ &lt;a class="anchor" href="#1.9.4"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;h3 id="1.9.4-fixed"&gt;
+ Fixed
+ &lt;a class="anchor" href="#1.9.4-fixed"&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;PhysBones squished / stretched by colliders can behave differently after optimization &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1663"&gt;&lt;code&gt;#1663&lt;/code&gt;&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;Hard to explain shortly but AAO falsy replaces end bone with endpoint position in some cases.&lt;/li&gt;
+&lt;li&gt;This broke marshmallow PB in some cases. This is fixed now.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;lilToon audio link mask texture removed if used as any color or color gradient. &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1667"&gt;&lt;code&gt;#1667&lt;/code&gt;&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;We previously retained audio link mask only if it was used as vertex offset.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2 id="1.9.3"&gt;
  &lt;a href="https://github.com/anatawa12/AvatarOptimizer/compare/v1.9.2...v1.9.3"&gt;1.9.3&lt;/a&gt; - 2026-02-14
  &lt;a class="anchor" href="#1.9.3"&gt;#&lt;/a&gt;

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Docs on Avatar Optimizer (1.9.3)</title><link>https://vpm.anatawa12.com/avatar-optimizer/en/docs/</link><description>Recent content in Docs on Avatar Optimizer (1.9.3)</description><generator>Hugo</generator><language>en</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/en/docs/index.xml" rel="self" type="application/rss+xml"/><item><title>Basic Concepts</title><link>https://vpm.anatawa12.com/avatar-optimizer/en/docs/basic-concept/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/en/docs/basic-concept/</guid><description>&lt;h1 id="basic-concepts"&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Docs on Avatar Optimizer (1.9.4)</title><link>https://vpm.anatawa12.com/avatar-optimizer/en/docs/</link><description>Recent content in Docs on Avatar Optimizer (1.9.4)</description><generator>Hugo</generator><language>en</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/en/docs/index.xml" rel="self" type="application/rss+xml"/><item><title>Basic Concepts</title><link>https://vpm.anatawa12.com/avatar-optimizer/en/docs/basic-concept/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/en/docs/basic-concept/</guid><description>&lt;h1 id="basic-concepts"&gt;
  Basic Concepts of Avatar Optimizer
  &lt;a class="anchor" href="#basic-concepts"&gt;#&lt;/a&gt;
 &lt;/h1&gt;
@@ -127,6 +127,28 @@ Therefore, you may be asked to provide more information about avatar.&lt;/p&gt;<
 
  
  
+
+
+ 
+
+ 
+
+ 
+ 
+
+ 
+
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+ 
  
 
  
@@ -3165,6 +3187,27 @@ Therefore, you may be asked to provide more information about avatar.&lt;/p&gt;<
 
 
 
+&lt;h2 id="1.9.4"&gt;
+ &lt;a href="https://github.com/anatawa12/AvatarOptimizer/compare/v1.9.3...v1.9.4"&gt;1.9.4&lt;/a&gt; - 2026-02-15
+ &lt;a class="anchor" href="#1.9.4"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;h3 id="1.9.4-fixed"&gt;
+ Fixed
+ &lt;a class="anchor" href="#1.9.4-fixed"&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;PhysBones squished / stretched by colliders can behave differently after optimization &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1663"&gt;&lt;code&gt;#1663&lt;/code&gt;&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;Hard to explain shortly but AAO falsy replaces end bone with endpoint position in some cases.&lt;/li&gt;
+&lt;li&gt;This broke marshmallow PB in some cases. This is fixed now.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;lilToon audio link mask texture removed if used as any color or color gradient. &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1667"&gt;&lt;code&gt;#1667&lt;/code&gt;&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;We previously retained audio link mask only if it was used as vertex offset.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2 id="1.9.3"&gt;
  &lt;a href="https://github.com/anatawa12/AvatarOptimizer/compare/v1.9.2...v1.9.3"&gt;1.9.3&lt;/a&gt; - 2026-02-14
  &lt;a class="anchor" href="#1.9.3"&gt;#&lt;/a&gt;
