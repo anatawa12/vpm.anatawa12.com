@@ -1,0 +1,324 @@
+<!doctype html><html lang=en dir=ltr><head><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="
+  Shader Information API
+  #
+
+Since Avatar Optimizer v1.8.0, Avatar Optimizer provides the Shader Information API to help optimize materials that use your custom shaders.
+By registering shader information, you can enable Avatar Optimizer to perform advanced optimizations like texture atlasing and UV packing.
+
+  What is Shader Information?
+  #
+
+Shader Information is a way to tell Avatar Optimizer how your shader uses textures, UV channels, and other material properties."><meta name=theme-color media="(prefers-color-scheme: light)" content="#ffffff"><meta name=theme-color media="(prefers-color-scheme: dark)" content="#343a40"><meta name=color-scheme content="light dark"><meta property="og:url" content="https://vpm.anatawa12.com/avatar-optimizer/en/docs/developers/shader-information/"><meta property="og:site_name" content="Avatar Optimizer (1.9.4)"><meta property="og:title" content="Shader Information API"><meta property="og:description" content="Shader Information API # Since Avatar Optimizer v1.8.0, Avatar Optimizer provides the Shader Information API to help optimize materials that use your custom shaders. By registering shader information, you can enable Avatar Optimizer to perform advanced optimizations like texture atlasing and UV packing.
+What is Shader Information? # Shader Information is a way to tell Avatar Optimizer how your shader uses textures, UV channels, and other material properties."><meta property="og:locale" content="en"><meta property="og:type" content="article"><meta property="article:section" content="docs"><title>Shader Information API | Avatar Optimizer (1.9.4)</title><link rel=icon href=/avatar-optimizer/favicon.png><link rel=manifest href=/avatar-optimizer/manifest.json><link rel=canonical href=https://vpm.anatawa12.com/avatar-optimizer/en/docs/developers/shader-information/><link rel=alternate hreflang=ja href=https://vpm.anatawa12.com/avatar-optimizer/ja/docs/developers/shader-information/ title="Shader Information API"><link rel=stylesheet href=/avatar-optimizer/book.min.e0a9d206623624a99ee922419f11e1110a88e06770d97913b11d9ecadaa614a9.css integrity="sha256-4KnSBmI2JKme6SJBnxHhEQqI4Gdw2XkTsR2eytqmFKk=" crossorigin=anonymous><script defer src=/avatar-optimizer/fuse.min.js></script><script defer src=/avatar-optimizer/en.search.min.8e03e75f6178b6e1d68d524b68431c4e13e662485fc7189a7844f7d1fb4e2187.js integrity="sha256-jgPnX2F4tuHWjVJLaEMcThPmYkhfxxiaeET30ftOIYc=" crossorigin=anonymous></script></head><body dir=ltr><input type=checkbox class="hidden toggle" id=menu-control>
+<input type=checkbox class="hidden toggle" id=toc-control><main class="container flex"><aside class=book-menu><div class=book-menu-content><nav><h2 class=book-brand><a class="flex align-center" href=/avatar-optimizer/en/><span>Avatar Optimizer (1.9.4)</span></a></h2><div class="book-search hidden"><input type=text id=book-search-input placeholder=Search aria-label=Search maxlength=64 data-hotkeys=s/><div class="book-search-spinner hidden"></div><ul id=book-search-results></ul></div><script>document.querySelector(".book-search").classList.remove("hidden")</script><ul class=book-languages><li><input type=checkbox id=languages class=toggle>
+<label for=languages class="flex justify-between"><a role=button class="flex align-center"><img src=/avatar-optimizer/svg/translate.svg class=book-icon alt=Languages>
+English</a></label><ul><li><a href=/avatar-optimizer/ja/docs/developers/shader-information/>日本語</a></li></ul></li></ul><ul><li><a class=ao-stable-beta href=https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/developers/shader-information/>Goto Beta Docs</a></li><li><a class=ao-stable-beta href=https://vpm.anatawa12.com/avatar-optimizer/en/#installation>How to Install</a></li></ul><ul><li class=book-section-flat><span>Tutorial</span><ul><li><a href=/avatar-optimizer/en/docs/tutorial/basic-usage/>Basic Usage</a></li></ul></li><li><a href=/avatar-optimizer/en/docs/basic-concept/>Basic Concepts</a></li><li><a href=/avatar-optimizer/en/docs/faq/>Frequently Asked Questions</a></li><li><a href=/avatar-optimizer/en/docs/bug-report-helper/>Bug Report Helper</a></li><li><a href=/avatar-optimizer/en/docs/changelog/>Changelog</a></li><li class=book-section-flat><span>Component Kinds</span><ul><li><a href=/avatar-optimizer/en/docs/component-kind/avatar-global-components/>Avatar Global Components</a></li><li><a href=/avatar-optimizer/en/docs/component-kind/edit-skinned-mesh-components/>Edit Skinned Mesh Components</a></li></ul></li><li class=book-section-flat><span>Component Reference</span><ul><li><a href=/avatar-optimizer/en/docs/reference/trace-and-optimize/>Trace And Optimize</a></li><li><a href=/avatar-optimizer/en/docs/reference/merge-skinned-mesh/>Merge Skinned Mesh</a></li><li><a href=/avatar-optimizer/en/docs/reference/freeze-blendshape/>Freeze BlendShape</a></li><li><a href=/avatar-optimizer/en/docs/reference/max-texture-size/>Max Texture Size</a></li><li><a href=/avatar-optimizer/en/docs/reference/merge-material/>Merge Material</a></li><li><a href=/avatar-optimizer/en/docs/reference/remove-mesh-by-blendshape/>Remove Mesh By BlendShape</a></li><li><a href=/avatar-optimizer/en/docs/reference/remove-mesh-by-box/>Remove Mesh By Box</a></li><li><a href=/avatar-optimizer/en/docs/reference/remove-mesh-by-mask/>Remove Mesh By Mask</a></li><li><a href=/avatar-optimizer/en/docs/reference/remove-mesh-by-uv-tile/>Remove Mesh By UV Tile</a></li><li><a href=/avatar-optimizer/en/docs/reference/rename-blendshape/>Rename BlendShape</a></li><li><a href=/avatar-optimizer/en/docs/reference/clear-endpoint-position/>Clear Endpoint Position</a></li><li><a href=/avatar-optimizer/en/docs/reference/merge-bone/>Merge Bone</a></li><li><a href=/avatar-optimizer/en/docs/reference/merge-physbone/>Merge PhysBone</a></li><li><a href=/avatar-optimizer/en/docs/reference/remove-zero-sized-polygon/>Remove Zero Sized Polygon</a></li><li><a href=/avatar-optimizer/en/docs/reference/replace-end-bone-with-endpoint-position/>Replace End Bone With Endpoint Position</a></li><li><a href=/avatar-optimizer/en/docs/reference/make-children/>Make Children</a></li><li><a href=/avatar-optimizer/en/docs/reference/merge-toonlit-material/>Merge ToonLit Material</a></li><li><a href=/avatar-optimizer/en/docs/reference/unused-bones-by-references-tool/>UnusedBonesByReferencesTool</a></li></ul></li><li class=book-section-flat><span>For Developers</span><ul><li><a href=/avatar-optimizer/en/docs/developers/system-assumptions/>System Assumptions</a></li><li><a href=/avatar-optimizer/en/docs/developers/asset-description/>Asset Description</a></li><li><a href=/avatar-optimizer/en/docs/developers/component-api/>Component Scripting API</a></li><li><a href=/avatar-optimizer/en/docs/developers/distributing-prefabs/>Distributing Prefabs</a></li><li><a href=/avatar-optimizer/en/docs/developers/make-your-components-compatible-with-aao/>Make your components compatible with Avatar Optimizer</a></li><li><a href=/avatar-optimizer/en/docs/developers/shader-information/ class=active>Shader Information API</a></li></ul></li></ul><ul><li class=book-section-flat><span>Blog Posts(日本語)</span><ul><li><a href=/avatar-optimizer/ja/posts/2024-06-27-one-year-since-stable-release/>v1.0.0一周年を記念してちょっと歴史を振り返る</a></li></ul></li></ul></nav><script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script></div></aside><div class=book-page><header class=book-header><div class="flex align-center justify-between"><label for=menu-control><img src=/avatar-optimizer/svg/menu.svg class=book-icon alt=Menu></label><h3>Shader Information API</h3><label for=toc-control><img src=/avatar-optimizer/svg/toc.svg class=book-icon alt="Table of Contents"></label></div><aside class="hidden clearfix"><nav id=TableOfContents><ul><li><a href=#what-is-shader-information>What is Shader Information?</a></li><li><a href=#core-concepts>Core Concepts</a><ul><li><a href=#main-classes>Main Classes</a></li><li><a href=#null-values>Null Values</a></li></ul></li><li><a href=#getting-started>Getting Started</a><ul><li><a href=#create-asmdef>1. Create an Assembly Definition</a></li><li><a href=#add-reference>2. Add Assembly Reference</a></li><li><a href=#create-class>3. Create Shader Information Class</a></li></ul></li><li><a href=#information-kinds>ShaderInformationKind Flags</a></li><li><a href=#registering-information>Registering Material Information</a><ul><li><a href=#reading-properties>Reading Material Properties</a></li><li><a href=#registering-textures>Registering Texture Usage</a></li><li><a href=#register-vertex-index>Registering Vertex Index Usage</a></li></ul></li><li><a href=#registration-methods>Registering Shader Information</a><ul><li><a href=#register-by-guid>Register by GUID (Recommended)</a></li><li><a href=#register-by-instance>Register by Shader Instance</a></li></ul></li><li><a href=#best-practices>Best Practices</a><ul><li><a href=#use-initializeonload>Use InitializeOnLoad</a></li><li><a href=#handle-unknown-values>Handle Unknown Values</a></li><li><a href=#check-keywords-properties>Check Keywords and Properties</a></li><li><a href=#provide-accurate-information>Provide Accurate Information</a></li><li><a href=#use-internal-class>Use <code>internal class</code> for Shader Information Classes</a></li></ul></li><li><a href=#examples>Complete Examples</a><ul><li><a href=#example-simple>Simple Shader with Main Texture</a></li><li><a href=#example-conditional>Shader with Conditional Features</a></li><li><a href=#example-vertex-indices>Shader Using Vertex Indices</a></li></ul></li><li><a href=#support>Support</a></li></ul></nav></aside></header><article class="markdown book-article"><h1 id=shader-information-api>Shader Information API
+<a class=anchor href=#shader-information-api>#</a></h1><p>Since Avatar Optimizer v1.8.0, Avatar Optimizer provides the Shader Information API to help optimize materials that use your custom shaders.
+By registering shader information, you can enable Avatar Optimizer to perform advanced optimizations like texture atlasing and UV packing.</p><h2 id=what-is-shader-information>What is Shader Information?
+<a class=anchor href=#what-is-shader-information>#</a></h2><p>Shader Information is a way to tell Avatar Optimizer how your shader uses textures, UV channels, and other material properties.</p><p>Current Avatar Optimizer optimizes avatars with this information in the following way, but more optimizations might be added later.<sup id=fnref:1><a href=#fn:1 class=footnote-ref role=doc-noteref>1</a></sup>
+Please note that not all optimizations are performed automatically with Trace and Optimize.</p><ul><li>Pack multiple textures into texture atlases (with components like <code>AAO Merge Material</code>)</li><li>Remove textures used by shader features but disabled by material settings</li></ul><p>Without Shader Information, Avatar Optimizer treats your shader conservatively and cannot perform some of these optimizations.</p><h2 id=core-concepts>Core Concepts
+<a class=anchor href=#core-concepts>#</a></h2><h3 id=main-classes>Main Classes
+<a class=anchor href=#main-classes>#</a></h3><p>The Shader Information API consists of three main classes:</p><ul><li><code>ShaderInformation</code>: Base class you extend to provide information about your shader. Override <code>GetMaterialInformation</code> to register texture and UV usage for materials using your shader.</li><li><code>ShaderInformationRegistry</code>: Static class used to <a href=#registration-methods>register</a> your <code>ShaderInformation</code> implementation with Avatar Optimizer during editor initialization.</li><li><code>MaterialInformationCallback</code>: Passed to <code>GetMaterialInformation</code>, provides methods to read material properties and register texture/UV usage information.</li></ul><h3 id=null-values>Null Values
+<a class=anchor href=#null-values>#</a></h3><p>Throughout the Shader Information API, <code>null</code> values have a consistent meaning: they represent either <strong>unknown values</strong> or <strong>animated (statically undecidable) values</strong>. When a material property might be animated or its value cannot be determined at build time, the API returns <code>null</code> to indicate uncertainty. You should pass <code>null</code> for parameters when their values cannot be determined statically.</p><h2 id=getting-started>Getting Started
+<a class=anchor href=#getting-started>#</a></h2><p>To provide Shader Information for your shader, follow these steps:</p><h3 id=create-asmdef>1. Create an Assembly Definition
+<a class=anchor href=#create-asmdef>#</a></h3><p>If your shader package doesn&rsquo;t have an Editor assembly definition, create one.
+The assembly should be Editor-only since Shader Information is only used at build time and Shader Information API is only available for Editor build.</p><h3 id=add-reference>2. Add Assembly Reference
+<a class=anchor href=#add-reference>#</a></h3><p>Add <code>com.anatawa12.avatar-optimizer.api.editor</code> to your assembly definition&rsquo;s references.</p><p>If you don&rsquo;t want to require Avatar Optimizer as the dependency, use <a href=https://docs.unity3d.com/2019.4/Documentation/Manual/ScriptCompilationAssemblyDefinitionFiles.html#define-symbols>Version Defines</a> with symbols like <code>AVATAR_OPTIMIZER</code>, to detect if Avatar Optimizer is installed and if AAO version is newer than specified version.</p><p><img src=../version-defines.png alt=version-defines.png></p><p>We recommended version range like <code>[1.8,2.0)</code> (supports v1.8.0 and later but will require updates for v2.0.0). Note that some APIs may have been added in later versions, so you may need to adjust the version range based on which APIs you use.</p><h3 id=create-class>3. Create Shader Information Class
+<a class=anchor href=#create-class>#</a></h3><p>Create a class that extends <code>ShaderInformation</code> and register it with <code>ShaderInformationRegistry</code>.
+Registration must be done in <code>InitializeOnLoad</code> to ensure it&rsquo;s registered before Avatar Optimizer processes materials:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-csharp data-lang=csharp><span style=display:flex><span><span style=color:#75715e>#if</span> AVATAR_OPTIMIZER &amp;&amp; UNITY_EDITOR
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>using</span> Anatawa12.AvatarOptimizer.API;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>using</span> UnityEditor;
+</span></span><span style=display:flex><span><span style=color:#66d9ef>using</span> UnityEngine;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>namespace</span> YourNamespace
+</span></span><span style=display:flex><span>{
+</span></span><span style=display:flex><span><span style=color:#a6e22e>    [InitializeOnLoad]</span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>internal</span> <span style=color:#66d9ef>class</span> <span style=color:#a6e22e>YourShaderInformation</span> : ShaderInformation
+</span></span><span style=display:flex><span>    {
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>static</span> YourShaderInformation()
+</span></span><span style=display:flex><span>        {
+</span></span><span style=display:flex><span>            <span style=color:#75715e>// Register with shader GUID (recommended for shader assets)</span>
+</span></span><span style=display:flex><span>            <span style=color:#66d9ef>string</span> shaderGuid = <span style=color:#e6db74>&#34;your-shader-guid-here&#34;</span>;
+</span></span><span style=display:flex><span>            ShaderInformationRegistry.RegisterShaderInformationWithGUID(
+</span></span><span style=display:flex><span>                shaderGuid, 
+</span></span><span style=display:flex><span>                <span style=color:#66d9ef>new</span> YourShaderInformation()
+</span></span><span style=display:flex><span>            );
+</span></span><span style=display:flex><span>        }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>public</span> <span style=color:#66d9ef>override</span> ShaderInformationKind SupportedInformationKind =&gt;
+</span></span><span style=display:flex><span>            ShaderInformationKind.TextureAndUVUsage;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>public</span> <span style=color:#66d9ef>override</span> <span style=color:#66d9ef>void</span> GetMaterialInformation(MaterialInformationCallback matInfo)
+</span></span><span style=display:flex><span>        {
+</span></span><span style=display:flex><span>            <span style=color:#75715e>// Register texture and UV usage here (see examples below)</span>
+</span></span><span style=display:flex><span>        }
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e>#endif</span>
+</span></span></code></pre></div><h2 id=information-kinds>ShaderInformationKind Flags
+<a class=anchor href=#information-kinds>#</a></h2><p>The <code>SupportedInformationKind</code> property tells Avatar Optimizer what information you&rsquo;re providing.</p><p>Currently, the following kinds are available for registration:</p><ul><li><code>TextureAndUVUsage</code>: Indicates you provide information about which textures the shader uses, which UV channels each texture samples from, UV transform matrices, and sampler states. See <a href=#registering-textures>Registering Texture Usage</a>.</li><li><code>VertexIndexUsage</code>: Indicates your shader uses vertex indices. If you don&rsquo;t provide this flag, Avatar Optimizer assumes vertex indices are not used and may shuffle vertices during optimization. See <a href=#register-vertex-index>Registering Vertex Index Usage</a>.</li></ul><p>This is a flags enum, so you can combine multiple values with the <code>|</code> operator.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-csharp data-lang=csharp><span style=display:flex><span><span style=color:#66d9ef>public</span> <span style=color:#66d9ef>override</span> ShaderInformationKind SupportedInformationKind =&gt;
+</span></span><span style=display:flex><span>    ShaderInformationKind.TextureAndUVUsage | ShaderInformationKind.VertexIndexUsage;
+</span></span></code></pre></div><h2 id=registering-information>Registering Material Information
+<a class=anchor href=#registering-information>#</a></h2><p>The <code>GetMaterialInformation</code> method is called for each material using your shader.
+Use the <code>MaterialInformationCallback</code> to register texture and UV usage.</p><p>See the API documentation comments for more details on each method.</p><h3 id=reading-properties>Reading Material Properties
+<a class=anchor href=#reading-properties>#</a></h3><p>The callback provides methods to read material properties on the shader:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-csharp data-lang=csharp><span style=display:flex><span><span style=color:#75715e>// Read float properties</span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>float?</span> <span style=color:#66d9ef>value</span> = matInfo.GetFloat(<span style=color:#e6db74>&#34;_PropertyName&#34;</span>);
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e>// Read int properties  </span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>int?</span> <span style=color:#66d9ef>value</span> = matInfo.GetInt(<span style=color:#e6db74>&#34;_PropertyName&#34;</span>);
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e>// Read Vector4 properties (like _MainTex_ST)</span>
+</span></span><span style=display:flex><span>Vector4? <span style=color:#66d9ef>value</span> = matInfo.GetVector(<span style=color:#e6db74>&#34;_MainTex_ST&#34;</span>);
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e>// Check if shader keyword is enabled</span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>bool?</span> enabled = matInfo.IsShaderKeywordEnabled(<span style=color:#e6db74>&#34;KEYWORD_NAME&#34;</span>);
+</span></span></code></pre></div><p>These methods return <code>null</code> if the property doesn&rsquo;t exist or the value is unknown.</p><h3 id=registering-textures>Registering Texture Usage
+<a class=anchor href=#registering-textures>#</a></h3><p>Use <code>RegisterTextureUVUsage</code> to tell Avatar Optimizer about each 2D texture. See the API documentation comments for details on the parameters.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-csharp data-lang=csharp><span style=display:flex><span><span style=color:#66d9ef>public</span> <span style=color:#66d9ef>override</span> <span style=color:#66d9ef>void</span> GetMaterialInformation(MaterialInformationCallback matInfo)
+</span></span><span style=display:flex><span>{
+</span></span><span style=display:flex><span>    <span style=color:#75715e>// Get the UV transform (scale/offset)</span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>var</span> mainTexST = matInfo.GetVector(<span style=color:#e6db74>&#34;_MainTex_ST&#34;</span>);
+</span></span><span style=display:flex><span>    Matrix2x3? uvMatrix = mainTexST <span style=color:#66d9ef>is</span> { } st 
+</span></span><span style=display:flex><span>        ? Matrix2x3.NewScaleOffset(st) 
+</span></span><span style=display:flex><span>        : <span style=color:#66d9ef>null</span>;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#75715e>// Register the texture</span>
+</span></span><span style=display:flex><span>    matInfo.RegisterTextureUVUsage(
+</span></span><span style=display:flex><span>        textureMaterialPropertyName: <span style=color:#e6db74>&#34;_MainTex&#34;</span>,
+</span></span><span style=display:flex><span>        samplerState: <span style=color:#e6db74>&#34;_MainTex&#34;</span>,  <span style=color:#75715e>// Uses sampler from _MainTex property</span>
+</span></span><span style=display:flex><span>        uvChannels: UsingUVChannels.UV0,
+</span></span><span style=display:flex><span>        uvMatrix: uvMatrix
+</span></span><span style=display:flex><span>    );
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div><h4 id=sampler-states>Sampler States
+<a class=anchor href=#sampler-states>#</a></h4><p>Sampler states define texture wrapping and filtering. Most shaders use a sampler from a material property - use the property name (string implicitly converts to <code>SamplerStateInformation</code>):</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-csharp data-lang=csharp><span style=display:flex><span>matInfo.RegisterTextureUVUsage(
+</span></span><span style=display:flex><span>    <span style=color:#e6db74>&#34;_MainTex&#34;</span>,
+</span></span><span style=display:flex><span>    samplerState: <span style=color:#e6db74>&#34;_MainTex&#34;</span>,  <span style=color:#75715e>// String implicitly converts</span>
+</span></span><span style=display:flex><span>    UsingUVChannels.UV0,
+</span></span><span style=display:flex><span>    uvMatrix
+</span></span><span style=display:flex><span>);
+</span></span></code></pre></div><p>If your shader uses inline samplers (e.g., <code>SamplerState linearClampSampler</code>), use predefined constants like <code>SamplerStateInformation.LinearRepeatSampler</code>.</p><p>If the sampler cannot be determined, use <code>SamplerStateInformation.Unknown</code>.</p><h4 id=uv-channels>UV Channels
+<a class=anchor href=#uv-channels>#</a></h4><p>Specify which UV channel(s) the texture samples from using <code>UsingUVChannels</code>. For textures that don&rsquo;t use mesh UVs (screen space, MatCap, view-direction based, etc.), use <code>UsingUVChannels.NonMesh</code>:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-csharp data-lang=csharp><span style=display:flex><span>matInfo.RegisterTextureUVUsage(
+</span></span><span style=display:flex><span>    <span style=color:#e6db74>&#34;_MatCapTexture&#34;</span>,
+</span></span><span style=display:flex><span>    <span style=color:#e6db74>&#34;_MatCapTexture&#34;</span>, 
+</span></span><span style=display:flex><span>    UsingUVChannels.NonMesh,  <span style=color:#75715e>// Not from mesh UVs</span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>null</span>  <span style=color:#75715e>// No UV transform</span>
+</span></span><span style=display:flex><span>);
+</span></span></code></pre></div><p>If the UV channel depends on a material property,</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-csharp data-lang=csharp><span style=display:flex><span><span style=color:#66d9ef>var</span> uvChannel = matInfo.GetFloat(<span style=color:#e6db74>&#34;_UVChannel&#34;</span>) <span style=color:#66d9ef>switch</span>
+</span></span><span style=display:flex><span>{
+</span></span><span style=display:flex><span>    <span style=color:#ae81ff>0</span> =&gt; UsingUVChannels.UV0,
+</span></span><span style=display:flex><span>    <span style=color:#ae81ff>1</span> =&gt; UsingUVChannels.UV1,
+</span></span><span style=display:flex><span>    _ =&gt; UsingUVChannels.UV0 | UsingUVChannels.UV1  <span style=color:#75715e>// Unknown, could be either</span>
+</span></span><span style=display:flex><span>};
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>matInfo.RegisterTextureUVUsage(<span style=color:#e6db74>&#34;_DetailTex&#34;</span>, <span style=color:#e6db74>&#34;_DetailTex&#34;</span>, uvChannel, uvMatrix);
+</span></span></code></pre></div><h4 id=uv-transform-matrices>UV Transform Matrices
+<a class=anchor href=#uv-transform-matrices>#</a></h4><p>UV transform matrices describe how UVs are transformed before sampling the texture.
+Tipical Unity shaders use Scale Offset value from material properties (like <code>_MainTex_ST</code>).
+You can convert Scale Offset to a <code>Matrix2x3</code> using <code>Matrix2x3.NewScaleOffset</code>.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-csharp data-lang=csharp><span style=display:flex><span><span style=color:#66d9ef>var</span> texST = matInfo.GetVector(<span style=color:#e6db74>&#34;_MainTex_ST&#34;</span>);
+</span></span><span style=display:flex><span>Matrix2x3? uvMatrix = texST <span style=color:#66d9ef>is</span> { } st 
+</span></span><span style=display:flex><span>    ? Matrix2x3.NewScaleOffset(st)
+</span></span><span style=display:flex><span>    : <span style=color:#66d9ef>null</span>;
+</span></span></code></pre></div><p>You can also build matrices manually if needed. If the UV transform is animated or calculated dynamically, use <code>null</code>.</p><h3 id=register-vertex-index>Registering Vertex Index Usage
+<a class=anchor href=#register-vertex-index>#</a></h3><p>When your shader registers vertex index usage, Avatar Optimizer will try to preserve vertex indices from the original mesh.
+This currently disables automatic Merge Skinned Mesh feature in Trace and Optimize, but more features may be affected later.</p><p>Since this method is to preserve vertex indices, when your shader uses vertex indices just for generating random sequences, it&rsquo;s not a good idea to register <code>RegisterVertexIndexUsage</code>.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-csharp data-lang=csharp><span style=display:flex><span><span style=color:#66d9ef>public</span> <span style=color:#66d9ef>override</span> <span style=color:#66d9ef>void</span> GetMaterialInformation(MaterialInformationCallback matInfo)
+</span></span><span style=display:flex><span>{
+</span></span><span style=display:flex><span>    <span style=color:#75715e>// ... register textures ...</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#75715e>// Check if the feature using vertex indices is enabled</span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>if</span> (matInfo.GetFloat(<span style=color:#e6db74>&#34;_UseVertexIdEffect&#34;</span>) != <span style=color:#ae81ff>0</span>)
+</span></span><span style=display:flex><span>    {
+</span></span><span style=display:flex><span>        <span style=color:#75715e>// Tell this shader wants Avatar Optimizer to preserve vertex indices</span>
+</span></span><span style=display:flex><span>        matInfo.RegisterVertexIndexUsage();
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div><h2 id=registration-methods>Registering Shader Information
+<a class=anchor href=#registration-methods>#</a></h2><p>You have to register your ShaderInformation implementation to link information to your shader.
+There are two ways to register Shader Information:</p><h3 id=register-by-guid>Register by GUID (Recommended)
+<a class=anchor href=#register-by-guid>#</a></h3><p>For shader assets, use the shader&rsquo;s GUID. This method is recommended because GUIDs don&rsquo;t change, won&rsquo;t duplicate, and don&rsquo;t require accessing AssetDatabase (accessing AssetDatabase in InitializeOnLoad methods is not valid, so registering by shader instance can become invalid).</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-csharp data-lang=csharp><span style=display:flex><span>ShaderInformationRegistry.RegisterShaderInformationWithGUID(
+</span></span><span style=display:flex><span>    <span style=color:#e6db74>&#34;your-shader-asset-guid&#34;</span>,
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>new</span> YourShaderInformation()
+</span></span><span style=display:flex><span>);
+</span></span></code></pre></div><h3 id=register-by-instance>Register by Shader Instance
+<a class=anchor href=#register-by-instance>#</a></h3><p>For shaders dynamically created on build or when you have the shader instance, you can register with shader instance.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-csharp data-lang=csharp><span style=display:flex><span>Shader shader = Shader.Find(<span style=color:#e6db74>&#34;Your/Shader/Name&#34;</span>);
+</span></span><span style=display:flex><span>ShaderInformationRegistry.RegisterShaderInformation(
+</span></span><span style=display:flex><span>    shader,
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>new</span> YourShaderInformation()
+</span></span><span style=display:flex><span>);
+</span></span></code></pre></div><h2 id=best-practices>Best Practices
+<a class=anchor href=#best-practices>#</a></h2><h3 id=use-initializeonload>Use InitializeOnLoad
+<a class=anchor href=#use-initializeonload>#</a></h3><p>Register your Shader Information in a static constructor with <code>[InitializeOnLoad]</code> to register before &lsquo;apply on play&rsquo; builds.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-csharp data-lang=csharp><span style=display:flex><span><span style=color:#a6e22e>[InitializeOnLoad]</span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>internal</span> <span style=color:#66d9ef>class</span> <span style=color:#a6e22e>YourShaderInformation</span> : ShaderInformation
+</span></span><span style=display:flex><span>{
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>static</span> YourShaderInformation()
+</span></span><span style=display:flex><span>    {
+</span></span><span style=display:flex><span>        <span style=color:#75715e>// Registration happens automatically when Unity loads</span>
+</span></span><span style=display:flex><span>        Register();
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>    
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>private</span> <span style=color:#66d9ef>static</span> <span style=color:#66d9ef>void</span> Register()
+</span></span><span style=display:flex><span>    {
+</span></span><span style=display:flex><span>        ShaderInformationRegistry.RegisterShaderInformationWithGUID(
+</span></span><span style=display:flex><span>            <span style=color:#e6db74>&#34;guid&#34;</span>, <span style=color:#66d9ef>new</span> YourShaderInformation()
+</span></span><span style=display:flex><span>        );
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div><h3 id=handle-unknown-values>Handle Unknown Values
+<a class=anchor href=#handle-unknown-values>#</a></h3><p>Material properties might be animated or unknown. Handle <code>null</code> values. Even when your shader does not support animating a property, Avatar Optimizer may pass it as <code>null</code> since Avatar Optimizer may process multiple materials at once.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-csharp data-lang=csharp><span style=display:flex><span><span style=color:#75715e>// Use pattern matching</span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> st = matInfo.GetVector(<span style=color:#e6db74>&#34;_MainTex_ST&#34;</span>);
+</span></span><span style=display:flex><span>Matrix2x3? uvMatrix = st <span style=color:#66d9ef>is</span> { } st2 ? Matrix2x3.NewScaleOffset(st2) : <span style=color:#66d9ef>null</span>;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e>// Use union value for null cases</span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>var</span> uvChannel = matInfo.GetFloat(<span style=color:#e6db74>&#34;_UVChannel&#34;</span>) <span style=color:#66d9ef>switch</span>
+</span></span><span style=display:flex><span>{
+</span></span><span style=display:flex><span>    <span style=color:#ae81ff>0</span> =&gt; UsingUVChannels.UV0,
+</span></span><span style=display:flex><span>    <span style=color:#ae81ff>1</span> =&gt; UsingUVChannels.UV1,
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>null</span> =&gt; UsingUVChannels.UV0 | UsingUVChannels.UV1,  <span style=color:#75715e>// Unknown</span>
+</span></span><span style=display:flex><span>    _ =&gt; UsingUVChannels.UV0 | UsingUVChannels.UV1
+</span></span><span style=display:flex><span>};
+</span></span></code></pre></div><h3 id=check-keywords-properties>Check Keywords and Properties
+<a class=anchor href=#check-keywords-properties>#</a></h3><p>Only register textures that are actually used:</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-csharp data-lang=csharp><span style=display:flex><span><span style=color:#66d9ef>if</span> (matInfo.IsShaderKeywordEnabled(<span style=color:#e6db74>&#34;_NORMALMAP&#34;</span>) != <span style=color:#66d9ef>false</span>)
+</span></span><span style=display:flex><span>{
+</span></span><span style=display:flex><span>    <span style=color:#75715e>// Keyword might be enabled, register normal map</span>
+</span></span><span style=display:flex><span>}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>if</span> (matInfo.GetFloat(<span style=color:#e6db74>&#34;_UseEmission&#34;</span>) != <span style=color:#ae81ff>0</span>)
+</span></span><span style=display:flex><span>{
+</span></span><span style=display:flex><span>    <span style=color:#75715e>// Emission is enabled, register emission map</span>
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div><p><strong>Note:</strong> <code>!= false</code> checks if the value is <code>true</code> or <code>null</code> (unknown).
+This conservative approach assumes features are enabled if unknown.</p><h3 id=provide-accurate-information>Provide Accurate Information
+<a class=anchor href=#provide-accurate-information>#</a></h3><ul><li>Only set <code>VertexIndexUsage</code> if vertex indices truly matter</li><li>Use correct sampler states (affects texture filtering during atlasing)</li><li>Set UV matrices to <code>null</code> if they&rsquo;re dynamic or animated</li><li>Use <code>UsingUVChannels.NonMesh</code> for screen-space UVs</li></ul><h3 id=use-internal-class>Use <code>internal class</code> for Shader Information Classes
+<a class=anchor href=#use-internal-class>#</a></h3><p>To avoid exposing your Shader Information classes in your assembly&rsquo;s public API, we recommend declaring them as <code>internal class</code>.
+This helps keep your codebase clean and prevents accidental misuse of internal details.</p><p>If your editor doesn&rsquo;t have public API, you may set your assembly definition Auto Reference to false to avoid exposing classes to <code>Assembly-CSharp</code>.</p><h2 id=examples>Complete Examples
+<a class=anchor href=#examples>#</a></h2><p>Here&rsquo;s some simple ShaderInformation examples for simple shaders.</p><p>For more complex examples, see Avatar Optimizer&rsquo;s built-in shader information implementations on <a href=https://github.com/anatawa12/AvatarOptimizer/tree/master/Editor/APIInternal/>GitHub</a>.</p><h3 id=example-simple>Simple Shader with Main Texture
+<a class=anchor href=#example-simple>#</a></h3><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-csharp data-lang=csharp><span style=display:flex><span><span style=color:#a6e22e>[InitializeOnLoad]</span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>internal</span> <span style=color:#66d9ef>class</span> <span style=color:#a6e22e>SimpleShaderInformation</span> : ShaderInformation
+</span></span><span style=display:flex><span>{
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>static</span> SimpleShaderInformation()
+</span></span><span style=display:flex><span>    {
+</span></span><span style=display:flex><span>        ShaderInformationRegistry.RegisterShaderInformationWithGUID(
+</span></span><span style=display:flex><span>            <span style=color:#e6db74>&#34;your-shader-guid&#34;</span>,
+</span></span><span style=display:flex><span>            <span style=color:#66d9ef>new</span> SimpleShaderInformation()
+</span></span><span style=display:flex><span>        );
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>public</span> <span style=color:#66d9ef>override</span> ShaderInformationKind SupportedInformationKind =&gt;
+</span></span><span style=display:flex><span>        ShaderInformationKind.TextureAndUVUsage;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>public</span> <span style=color:#66d9ef>override</span> <span style=color:#66d9ef>void</span> GetMaterialInformation(MaterialInformationCallback matInfo)
+</span></span><span style=display:flex><span>    {
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>var</span> mainTexST = matInfo.GetVector(<span style=color:#e6db74>&#34;_MainTex_ST&#34;</span>);
+</span></span><span style=display:flex><span>        Matrix2x3? uvMatrix = mainTexST <span style=color:#66d9ef>is</span> { } st 
+</span></span><span style=display:flex><span>            ? Matrix2x3.NewScaleOffset(st) 
+</span></span><span style=display:flex><span>            : <span style=color:#66d9ef>null</span>;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>        matInfo.RegisterTextureUVUsage(
+</span></span><span style=display:flex><span>            <span style=color:#e6db74>&#34;_MainTex&#34;</span>,
+</span></span><span style=display:flex><span>            <span style=color:#e6db74>&#34;_MainTex&#34;</span>,
+</span></span><span style=display:flex><span>            UsingUVChannels.UV0,
+</span></span><span style=display:flex><span>            uvMatrix
+</span></span><span style=display:flex><span>        );
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div><h3 id=example-conditional>Shader with Conditional Features
+<a class=anchor href=#example-conditional>#</a></h3><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-csharp data-lang=csharp><span style=display:flex><span><span style=color:#a6e22e>[InitializeOnLoad]</span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>internal</span> <span style=color:#66d9ef>class</span> <span style=color:#a6e22e>FeatureShaderInformation</span> : ShaderInformation
+</span></span><span style=display:flex><span>{
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>static</span> FeatureShaderInformation()
+</span></span><span style=display:flex><span>    {
+</span></span><span style=display:flex><span>        ShaderInformationRegistry.RegisterShaderInformationWithGUID(
+</span></span><span style=display:flex><span>            <span style=color:#e6db74>&#34;your-shader-guid&#34;</span>,
+</span></span><span style=display:flex><span>            <span style=color:#66d9ef>new</span> FeatureShaderInformation()
+</span></span><span style=display:flex><span>        );
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>public</span> <span style=color:#66d9ef>override</span> ShaderInformationKind SupportedInformationKind =&gt;
+</span></span><span style=display:flex><span>        ShaderInformationKind.TextureAndUVUsage;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>public</span> <span style=color:#66d9ef>override</span> <span style=color:#66d9ef>void</span> GetMaterialInformation(MaterialInformationCallback matInfo)
+</span></span><span style=display:flex><span>    {
+</span></span><span style=display:flex><span>        <span style=color:#75715e>// Main texture (always present)</span>
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>var</span> mainTexST = matInfo.GetVector(<span style=color:#e6db74>&#34;_MainTex_ST&#34;</span>);
+</span></span><span style=display:flex><span>        Matrix2x3? mainUVMatrix = mainTexST <span style=color:#66d9ef>is</span> { } st 
+</span></span><span style=display:flex><span>            ? Matrix2x3.NewScaleOffset(st) 
+</span></span><span style=display:flex><span>            : <span style=color:#66d9ef>null</span>;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>        matInfo.RegisterTextureUVUsage(
+</span></span><span style=display:flex><span>            <span style=color:#e6db74>&#34;_MainTex&#34;</span>, <span style=color:#e6db74>&#34;_MainTex&#34;</span>, UsingUVChannels.UV0, mainUVMatrix
+</span></span><span style=display:flex><span>        );
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>        <span style=color:#75715e>// Normal map (conditional on keyword)</span>
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>if</span> (matInfo.IsShaderKeywordEnabled(<span style=color:#e6db74>&#34;_NORMALMAP&#34;</span>) != <span style=color:#66d9ef>false</span>)
+</span></span><span style=display:flex><span>        {
+</span></span><span style=display:flex><span>            matInfo.RegisterTextureUVUsage(
+</span></span><span style=display:flex><span>                <span style=color:#e6db74>&#34;_BumpMap&#34;</span>, <span style=color:#e6db74>&#34;_BumpMap&#34;</span>, UsingUVChannels.UV0, mainUVMatrix
+</span></span><span style=display:flex><span>            );
+</span></span><span style=display:flex><span>        }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>        <span style=color:#75715e>// Detail texture (conditional on property)</span>
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>if</span> (matInfo.GetFloat(<span style=color:#e6db74>&#34;_UseDetail&#34;</span>) != <span style=color:#ae81ff>0</span>)
+</span></span><span style=display:flex><span>        {
+</span></span><span style=display:flex><span>            <span style=color:#66d9ef>var</span> detailST = matInfo.GetVector(<span style=color:#e6db74>&#34;_DetailTex_ST&#34;</span>);
+</span></span><span style=display:flex><span>            Matrix2x3? detailUVMatrix = detailST <span style=color:#66d9ef>is</span> { } st2 
+</span></span><span style=display:flex><span>                ? Matrix2x3.NewScaleOffset(st2) 
+</span></span><span style=display:flex><span>                : <span style=color:#66d9ef>null</span>;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>            <span style=color:#66d9ef>var</span> detailUV = matInfo.GetFloat(<span style=color:#e6db74>&#34;_DetailUV&#34;</span>) <span style=color:#66d9ef>switch</span>
+</span></span><span style=display:flex><span>            {
+</span></span><span style=display:flex><span>                <span style=color:#ae81ff>0</span> =&gt; UsingUVChannels.UV0,
+</span></span><span style=display:flex><span>                <span style=color:#ae81ff>1</span> =&gt; UsingUVChannels.UV1,
+</span></span><span style=display:flex><span>                _ =&gt; UsingUVChannels.UV0 | UsingUVChannels.UV1
+</span></span><span style=display:flex><span>            };
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>            matInfo.RegisterTextureUVUsage(
+</span></span><span style=display:flex><span>                <span style=color:#e6db74>&#34;_DetailTex&#34;</span>, <span style=color:#e6db74>&#34;_DetailTex&#34;</span>, detailUV, detailUVMatrix
+</span></span><span style=display:flex><span>            );
+</span></span><span style=display:flex><span>        }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>        <span style=color:#75715e>// MatCap (screen-space, no UV transform)</span>
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>if</span> (matInfo.IsShaderKeywordEnabled(<span style=color:#e6db74>&#34;_MATCAP&#34;</span>) != <span style=color:#66d9ef>false</span>)
+</span></span><span style=display:flex><span>        {
+</span></span><span style=display:flex><span>            matInfo.RegisterTextureUVUsage(
+</span></span><span style=display:flex><span>                <span style=color:#e6db74>&#34;_MatCap&#34;</span>,
+</span></span><span style=display:flex><span>                SamplerStateInformation.LinearClampSampler,
+</span></span><span style=display:flex><span>                UsingUVChannels.NonMesh,
+</span></span><span style=display:flex><span>                <span style=color:#66d9ef>null</span>
+</span></span><span style=display:flex><span>            );
+</span></span><span style=display:flex><span>        }
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div><h3 id=example-vertex-indices>Shader Using Vertex Indices
+<a class=anchor href=#example-vertex-indices>#</a></h3><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none><code class=language-csharp data-lang=csharp><span style=display:flex><span><span style=color:#a6e22e>[InitializeOnLoad]</span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>internal</span> <span style=color:#66d9ef>class</span> <span style=color:#a6e22e>VertexShaderInformation</span> : ShaderInformation
+</span></span><span style=display:flex><span>{
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>static</span> VertexShaderInformation()
+</span></span><span style=display:flex><span>    {
+</span></span><span style=display:flex><span>        ShaderInformationRegistry.RegisterShaderInformationWithGUID(
+</span></span><span style=display:flex><span>            <span style=color:#e6db74>&#34;your-shader-guid&#34;</span>,
+</span></span><span style=display:flex><span>            <span style=color:#66d9ef>new</span> VertexShaderInformation()
+</span></span><span style=display:flex><span>        );
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>public</span> <span style=color:#66d9ef>override</span> ShaderInformationKind SupportedInformationKind =&gt;
+</span></span><span style=display:flex><span>        ShaderInformationKind.TextureAndUVUsage | ShaderInformationKind.VertexIndexUsage;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>    <span style=color:#66d9ef>public</span> <span style=color:#66d9ef>override</span> <span style=color:#66d9ef>void</span> GetMaterialInformation(MaterialInformationCallback matInfo)
+</span></span><span style=display:flex><span>    {
+</span></span><span style=display:flex><span>        <span style=color:#66d9ef>var</span> mainTexST = matInfo.GetVector(<span style=color:#e6db74>&#34;_MainTex_ST&#34;</span>);
+</span></span><span style=display:flex><span>        Matrix2x3? uvMatrix = mainTexST <span style=color:#66d9ef>is</span> { } st 
+</span></span><span style=display:flex><span>            ? Matrix2x3.NewScaleOffset(st) 
+</span></span><span style=display:flex><span>            : <span style=color:#66d9ef>null</span>;
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>        matInfo.RegisterTextureUVUsage(
+</span></span><span style=display:flex><span>            <span style=color:#e6db74>&#34;_MainTex&#34;</span>, <span style=color:#e6db74>&#34;_MainTex&#34;</span>, UsingUVChannels.UV0, uvMatrix
+</span></span><span style=display:flex><span>        );
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span>        <span style=color:#75715e>// Shader uses SV_VertexID for effects</span>
+</span></span><span style=display:flex><span>        matInfo.RegisterVertexIndexUsage();
+</span></span><span style=display:flex><span>    }
+</span></span><span style=display:flex><span>}
+</span></span></code></pre></div><h2 id=support>Support
+<a class=anchor href=#support>#</a></h2><p>If you have questions or need help, ask me on</p><ul><li><strong>Discord</strong>: <a href=https://discord.gg/dV4cVpewmM>NDMF Discord</a> mention <code>@anatawa12</code></li><li><strong>Fediverse</strong>: <a href=https://misskey.niri.la/@anatawa12>@anatawa12@misskey.niri.la</a></li><li><strong>GitHub Issues</strong>: <a href=https://github.com/anatawa12/AvatarOptimizer/issues>AvatarOptimizer Issues</a></li></ul><div class=footnotes role=doc-endnotes><hr><ol><li id=fn:1><p>For example, UV channel optimization is not currently implemented but may be added in future versions.&#160;<a href=#fnref:1 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p></li></ol></div></article><footer class=book-footer><div class="flex flex-wrap justify-between"><div><a class="flex align-center" href=https://github.com/anatawa12/AvatarOptimizer/edit/master/.docs/content/docs/developers/shader-information/index.md target=_blank rel=noopener><img src=/avatar-optimizer/svg/edit.svg class=book-icon alt>
+<span>Edit this page</span></a></div></div><script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script></footer><div class=book-comments></div><label for=menu-control class="hidden book-menu-overlay"></label></div><aside class=book-toc><div class=book-toc-content><nav id=TableOfContents><ul><li><a href=#what-is-shader-information>What is Shader Information?</a></li><li><a href=#core-concepts>Core Concepts</a><ul><li><a href=#main-classes>Main Classes</a></li><li><a href=#null-values>Null Values</a></li></ul></li><li><a href=#getting-started>Getting Started</a><ul><li><a href=#create-asmdef>1. Create an Assembly Definition</a></li><li><a href=#add-reference>2. Add Assembly Reference</a></li><li><a href=#create-class>3. Create Shader Information Class</a></li></ul></li><li><a href=#information-kinds>ShaderInformationKind Flags</a></li><li><a href=#registering-information>Registering Material Information</a><ul><li><a href=#reading-properties>Reading Material Properties</a></li><li><a href=#registering-textures>Registering Texture Usage</a></li><li><a href=#register-vertex-index>Registering Vertex Index Usage</a></li></ul></li><li><a href=#registration-methods>Registering Shader Information</a><ul><li><a href=#register-by-guid>Register by GUID (Recommended)</a></li><li><a href=#register-by-instance>Register by Shader Instance</a></li></ul></li><li><a href=#best-practices>Best Practices</a><ul><li><a href=#use-initializeonload>Use InitializeOnLoad</a></li><li><a href=#handle-unknown-values>Handle Unknown Values</a></li><li><a href=#check-keywords-properties>Check Keywords and Properties</a></li><li><a href=#provide-accurate-information>Provide Accurate Information</a></li><li><a href=#use-internal-class>Use <code>internal class</code> for Shader Information Classes</a></li></ul></li><li><a href=#examples>Complete Examples</a><ul><li><a href=#example-simple>Simple Shader with Main Texture</a></li><li><a href=#example-conditional>Shader with Conditional Features</a></li><li><a href=#example-vertex-indices>Shader Using Vertex Indices</a></li></ul></li><li><a href=#support>Support</a></li></ul></nav></div></aside></main></body></html>

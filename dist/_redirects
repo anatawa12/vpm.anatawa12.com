@@ -1,0 +1,16 @@
+# for compatiblity
+/custom-localization-for-editor-extension/com.anatawa12.custom-localization-for-editor-extension-:version.zip https://github.com/anatawa12/CustomLocalization4EditorExtension/releases/download/v:version/com.anatawa12.custom-localization-for-editor-extension-:version.zip
+# new style
+/custom-localization-for-editor-extension/package-:version.zip https://github.com/anatawa12/CustomLocalization4EditorExtension/releases/download/v:version/com.anatawa12.custom-localization-for-editor-extension-:version.zip
+/vpm-package-auto-installer.creator/package-:version.zip https://github.com/anatawa12/VPMPackageAutoInstaller/releases/download/v:version/com.anatawa12.vpm-package-auto-installer.creator-:version.zip
+/animator-controller-as-a-code/package-:version.zip https://github.com/anatawa12/AnimatorController-as-a-Code/releases/download/v:version/com.anatawa12.animator-controller-as-a-code-:version.zip
+/avatar-optimizer/package-:version.zip https://github.com/anatawa12/AvatarOpitimizer/releases/download/v:version/com.anatawa12.avatar-optimizer-:version.zip
+/av3emulator/package-:version.zip https://github.com/anatawa12/Av3Emulator/releases/download/v:version/com.anatawa12.av3emulator-:version.zip
+/gists/package-:version.zip https://github.com/anatawa12/unity-gist-pack/releases/download/v:version/com.anatawa12.gists-:version.zip
+/harmonyfix/package-:version.zip https://github.com/anatawa12/HarmonyFix-for-Unity/releases/download/v:version/com.anatawa12.harmonyfix-:version.zip
+/continuous-avatar-uploader/package-:version.zip https://github.com/anatawa12/ContinuousAvatarUploader/releases/download/v:version/com.anatawa12.continuous-avatar-uploader-:version.zip
+/udon-sharp-migration-fix/package-:version.zip https://github.com/anatawa12/UdonSharpMigrationBugFix/releases/download/v:version/com.anatawa12.udon-sharp-migration-fix-:version.zip
+/vrc-constraints-converter/package-:version.zip https://github.com/anatawa12/ProjectWideVRCConstraintsConverter/releases/download/v:version/com.anatawa12.vrc-constraints-converter-:version.zip
+/apple-silicon-harmony/package-:version.zip https://github.com/anatawa12/AppleSiliconHarmony/releases/download/v:version/com.anatawa12.apple-silicon-harmony-:version.zip
+/multi-unity-package-exporter/package-:version.zip https://github.com/anatawa12/MultiUnityPackageExporter/releases/download/v:version/com.anatawa12.multi-unity-package-exporter-:version.zip
+/liltoon-vat/package-:version.zip https://github.com/anatawa12/lilToonVAT/releases/download/v:version/com.anatawa12.liltoon-vat-:version.zip

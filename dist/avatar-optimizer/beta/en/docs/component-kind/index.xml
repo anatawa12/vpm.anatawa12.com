@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Component Kinds on Avatar Optimizer (1.9.4)</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/component-kind/</link><description>Recent content in Component Kinds on Avatar Optimizer (1.9.4)</description><generator>Hugo</generator><language>en</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/component-kind/index.xml" rel="self" type="application/rss+xml"/><item><title>Avatar Global Components</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/component-kind/avatar-global-components/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/component-kind/avatar-global-components/</guid><description>&lt;h1 id="avatar-global-components"&gt;
+ Avatar Global Components
+ &lt;a class="anchor" href="#avatar-global-components"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;Avatar Global Component is a kind of component which should be added to an avatar root and applied to whole avatar.&lt;/p&gt;
+&lt;p&gt;The &amp;ldquo;avatar root&amp;rdquo; is the GameObject at the top of the avatar hierarchy.
+For example, in the case of a VRChat avatar, the &amp;ldquo;avatar root&amp;rdquo; is the GameObject that has the VRC Avatar Descriptor component.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/component-kind/avatar-global-components/avatar-root.png" alt="avatar-root.png" /&gt;&lt;/p&gt;
+&lt;p&gt;If you add any Avatar Global Components to anything other than the avatar root, you&amp;rsquo;ll see error on the inspector and will not have any effect.&lt;/p&gt;</description></item><item><title>Edit Skinned Mesh Components</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/component-kind/edit-skinned-mesh-components/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/component-kind/edit-skinned-mesh-components/</guid><description>&lt;h1 id="edit-skinned-mesh-components"&gt;
+ Edit Skinned Mesh Components
+ &lt;a class="anchor" href="#edit-skinned-mesh-components"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;Edit Skinned Mesh Component is a kind of component which should be added to
+a GameObject which has a SkinnedMeshRenderer component, and applies some modification to the SkinnedMeshRenderer.&lt;/p&gt;
+&lt;p&gt;Since Avatar Optimizer 1.9.0, some components can be used with basic MeshRenderer component.
+Those will be called &amp;ldquo;Edit Skinned Mesh component with basic mesh support&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;There are two sub-kinds.&lt;/p&gt;
+&lt;h2 id="source-component"&gt;
+ Source Component
+ &lt;a class="anchor" href="#source-component"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;This kind of component will produce Mesh and some other properties of SkinnedMeshRenderer.&lt;br&gt;
+Following components are Source Edit Skinned Mesh Component.&lt;/p&gt;</description></item></channel></rss>
