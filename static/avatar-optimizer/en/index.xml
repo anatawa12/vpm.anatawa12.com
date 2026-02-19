@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Introduction on Avatar Optimizer (1.9.5)</title><link>https://vpm.anatawa12.com/avatar-optimizer/en/</link><description>Recent content in Introduction on Avatar Optimizer (1.9.5)</description><generator>Hugo</generator><language>en</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/en/index.xml" rel="self" type="application/rss+xml"/><item><title>Basic Concepts</title><link>https://vpm.anatawa12.com/avatar-optimizer/en/docs/basic-concept/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/en/docs/basic-concept/</guid><description>&lt;h1 id="basic-concepts"&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Introduction on Avatar Optimizer (1.9.6)</title><link>https://vpm.anatawa12.com/avatar-optimizer/en/</link><description>Recent content in Introduction on Avatar Optimizer (1.9.6)</description><generator>Hugo</generator><language>en</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/en/index.xml" rel="self" type="application/rss+xml"/><item><title>Basic Concepts</title><link>https://vpm.anatawa12.com/avatar-optimizer/en/docs/basic-concept/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/en/docs/basic-concept/</guid><description>&lt;h1 id="basic-concepts"&gt;
  Basic Concepts of Avatar Optimizer
  &lt;a class="anchor" href="#basic-concepts"&gt;#&lt;/a&gt;
 &lt;/h1&gt;
@@ -171,6 +171,28 @@ Therefore, you may be asked to provide more information about avatar.&lt;/p&gt;<
 
  
  
+
+
+ 
+
+ 
+
+ 
+ 
+
+ 
+
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+ 
  
 
  
@@ -3209,6 +3231,24 @@ Therefore, you may be asked to provide more information about avatar.&lt;/p&gt;<
 
 
 
+&lt;h2 id="1.9.6"&gt;
+ &lt;a href="https://github.com/anatawa12/AvatarOptimizer/compare/v1.9.5...v1.9.6"&gt;1.9.6&lt;/a&gt; - 2026-02-19
+ &lt;a class="anchor" href="#1.9.6"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;h3 id="1.9.6-fixed"&gt;
+ Fixed
+ &lt;a class="anchor" href="#1.9.6-fixed"&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;EntryExit to BlendTree optimization breaks &amp;lsquo;Copy&amp;rsquo; Parameter Drivers &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1674"&gt;&lt;code&gt;#1674&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Error when there is PhysBone targeting non-avatar bones &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1675"&gt;&lt;code&gt;#1675&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Bad behavior when PhysBones targeting non-avatar bones are specified in MergePhysBone &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1675"&gt;&lt;code&gt;#1675&lt;/code&gt;&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;We added error for such case instead of modifying non-avatar bones.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Some animations with Chinese characters are broken in some Japanese environments &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1679"&gt;&lt;code&gt;#1679&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2 id="1.9.5"&gt;
  &lt;a href="https://github.com/anatawa12/AvatarOptimizer/compare/v1.9.4...v1.9.5"&gt;1.9.5&lt;/a&gt; - 2026-02-17
  &lt;a class="anchor" href="#1.9.5"&gt;#&lt;/a&gt;
@@ -5751,7 +5791,7 @@ Parameters that can be changed by external tools, especially for OSC Tools.&lt;/
  Component Scripting API
  &lt;a class="anchor" href="#component-scripting-api"&gt;#&lt;/a&gt;
 &lt;/h1&gt;
-&lt;p&gt;Since Avatar Optimizer v1.7.0, Avatar Optimizer provides Component API to add Avatar Optimizer components to the Avatar.
+&lt;p&gt;Since Avatar Optimizer v1.7.0, Avatar Optimizer provides Component API to add Avatar Optimizer components to the Avatar.&lt;br&gt;
 By using this API, you can create tools or components that add Avatar Optimizer components.&lt;/p&gt;
 &lt;h2 id="supported-components"&gt;
  Components that supported by Component API
@@ -5801,7 +5841,7 @@ your components can be incompatible with Avatar Optimizer.&lt;/p&gt;</descriptio
  Shader Information API
  &lt;a class="anchor" href="#shader-information-api"&gt;#&lt;/a&gt;
 &lt;/h1&gt;
-&lt;p&gt;Since Avatar Optimizer v1.8.0, Avatar Optimizer provides the Shader Information API to help optimize materials that use your custom shaders.
+&lt;p&gt;Since Avatar Optimizer v1.8.0, Avatar Optimizer provides the Shader Information API to help optimize materials that use your custom shaders.&lt;br&gt;
 By registering shader information, you can enable Avatar Optimizer to perform advanced optimizations like texture atlasing and UV packing.&lt;/p&gt;
 &lt;h2 id="what-is-shader-information"&gt;
  What is Shader Information?
