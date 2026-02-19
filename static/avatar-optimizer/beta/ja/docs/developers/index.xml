@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>開発者向け on Avatar Optimizer (1.9.5)</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/developers/</link><description>Recent content in 開発者向け on Avatar Optimizer (1.9.5)</description><generator>Hugo</generator><language>ja</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/developers/index.xml" rel="self" type="application/rss+xml"/><item><title>システムの前提条件</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/developers/system-assumptions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/developers/system-assumptions/</guid><description>&lt;h1 id="外部ツールに求める前提条件"&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>開発者向け on Avatar Optimizer (1.9.6-beta.1)</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/developers/</link><description>Recent content in 開発者向け on Avatar Optimizer (1.9.6-beta.1)</description><generator>Hugo</generator><language>ja</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/developers/index.xml" rel="self" type="application/rss+xml"/><item><title>システムの前提条件</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/developers/system-assumptions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/developers/system-assumptions/</guid><description>&lt;h1 id="外部ツールに求める前提条件"&gt;
  外部ツールに求める前提条件
  &lt;a class="anchor" href="#%e5%a4%96%e9%83%a8%e3%83%84%e3%83%bc%e3%83%ab%e3%81%ab%e6%b1%82%e3%82%81%e3%82%8b%e5%89%8d%e6%8f%90%e6%9d%a1%e4%bb%b6"&gt;#&lt;/a&gt;
 &lt;/h1&gt;
@@ -70,7 +70,7 @@ Avatar Optimizer v1.6.0で&lt;a href="../make-your-components-compatible-with-aa
  Component Scripting API
  &lt;a class="anchor" href="#component-scripting-api"&gt;#&lt;/a&gt;
 &lt;/h1&gt;
-&lt;p&gt;Avatar Optimizer v1.7.0以降、アバターにAvatar Optimizerのコンポーネントを追加・設定するためのComponent APIを提供しています。
+&lt;p&gt;Avatar Optimizer v1.7.0以降では、アバターにAvatar Optimizerのコンポーネントを追加・設定するためのComponent APIを提供しています。&lt;br&gt;
 このAPIを使用することで、Avatar Optimizerのコンポーネントを追加するツールやコンポーネントを作成することができます。&lt;/p&gt;
 &lt;h2 id="supported-components"&gt;
  Component APIが利用可能なコンポーネント
@@ -88,13 +88,13 @@ Component APIが利用可能なコンポーネントの一覧は以下の通り�
 &lt;p&gt;将来のバージョンで追加されるデフォルトで有効な機能との互換性を保つために、コンポーネントの設定変更を行う場合には注意が必要です。
 詳細については以下のドキュメントを参照してください。&lt;/p&gt;
 &lt;h2 id="getting-started"&gt;
- はじめに
+ 使い方
  &lt;a class="anchor" href="#getting-started"&gt;#&lt;/a&gt;
 &lt;/h2&gt;
-&lt;p&gt;Component APIを使用するには、assembly definitionファイルで&lt;code&gt;com.anatawa12.avatar-optimizer.runtime&lt;/code&gt;を参照する必要があります。
+&lt;p&gt;Component APIを使用するには、Assembly Definitionファイルで&lt;code&gt;com.anatawa12.avatar-optimizer.runtime&lt;/code&gt;を参照する必要があります。
 Avatar Optimizerはランタイムで動作しないため、ランタイムビルド向けで&lt;code&gt;com.anatawa12.avatar-optimizer.runtime&lt;/code&gt;に依存してはいけません。&lt;br&gt;
 &lt;code&gt;com.anatawa12.avatar-optimizer.runtime&lt;/code&gt;にあるいくつかのクラスは、将来のバージョンでランタイム向けビルドから除外される可能性があります。
-言い換えると、ランタイム向けのアセンブリで&lt;code&gt;com.anatawa12.avatar-optimizer.runtime&lt;/code&gt;を使用するのは避けることをお勧めします。エディタ向けのアセンブリでのみ使用するようにしてください。&lt;/p&gt;
+言い換えると、ランタイム向けのアセンブリで&lt;code&gt;com.anatawa12.avatar-optimizer.runtime&lt;/code&gt;を使用するのは避けることをお勧めします。エディター向けのアセンブリでのみ使用するようにしてください。&lt;/p&gt;
 &lt;p&gt;次に、コンポーネントの設定を変更する場合は、将来のバージョンで追加される機能との互換性を確保するために&lt;code&gt;void Initialize(int version)&lt;/code&gt;メソッドを呼び出す必要があります。
 (&lt;a href="../../basic-concept/#behavior-stability"&gt;動作の安定性&lt;/a&gt;で説明されているように、)デフォルト設定は変更される可能性があります。&lt;br&gt;
 デフォルト設定は、&lt;code&gt;GameObject.AddComponent&amp;lt;T&amp;gt;()&lt;/code&gt;メソッドで追加されるコンポーネントに影響します。
@@ -115,47 +115,54 @@ Avatar Optimizerはランタイムで動作しないため、ランタイムビ�
  Shader Information API
  &lt;a class="anchor" href="#shader-information-api"&gt;#&lt;/a&gt;
 &lt;/h1&gt;
-&lt;p&gt;Avatar Optimizer v1.8.0以降は、カスタムシェーダーを使用するマテリアルの最適化を支援するShader Information APIを提供しています。シェーダー情報を登録することで、Avatar Optimizerがテクスチャのアトラス化やUVのパッキングなどの高度な最適化を実行できるようになります。&lt;/p&gt;
+&lt;p&gt;Avatar Optimizer v1.8.0以降では、カスタムシェーダーが使用されているマテリアルの最適化を支援するためのShader Information APIを提供しています。&lt;br&gt;
+APIを通じてシェーダーの情報を登録することで、Avatar Optimizerはテクスチャのアトラス化やUVパッキングなどの高度な最適化を実行できるようになります。&lt;/p&gt;
 &lt;h2 id="what-is-shader-information"&gt;
  Shader Informationとは？
  &lt;a class="anchor" href="#what-is-shader-information"&gt;#&lt;/a&gt;
 &lt;/h2&gt;
-&lt;p&gt;Shader Informationは、あなたのシェーダーがテクスチャ、UVチャンネル、その他のマテリアルプロパティをどのように使用しているかをAvatar Optimizerに伝える方法です。&lt;/p&gt;
-&lt;p&gt;現在のAvatar Optimizerはこの情報を用いて、以下の方法でアバターを最適化します。将来的にさらに多くの最適化が追加される可能性があります。&lt;sup id="fnref:1"&gt;&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref"&gt;1&lt;/a&gt;&lt;/sup&gt; ただし、すべての最適化が Trace and Optimize によって自動的に実行されるわけではありません。&lt;/p&gt;
+&lt;p&gt;Shader Informationは、テクスチャ、UVチャンネル、その他のマテリアルプロパティをシェーダーがどのように使用しているかをAvatar Optimizerに伝えるための方法です。&lt;/p&gt;
+&lt;p&gt;現在のAvatar Optimizerはこの情報を用いて、アバターに以下のような最適化を行います。
+(将来的に、さらに多くの最適化が追加される可能性があります。&lt;sup id="fnref:1"&gt;&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref"&gt;1&lt;/a&gt;&lt;/sup&gt;)&lt;br&gt;
+なお、すべての最適化がTrace and Optimizeで自動的に実行されるとは限りません。&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;複数のテクスチャをテクスチャアトラスにパッキング (&lt;code&gt;AAO Merge Material&lt;/code&gt;などのコンポーネントを使用)&lt;/li&gt;
-&lt;li&gt;シェーダー機能で使用されているがマテリアル設定で無効化されているテクスチャを削除&lt;/li&gt;
+&lt;li&gt;複数のテクスチャをアトラス化し、パッキングする (&lt;code&gt;AAO Merge Material&lt;/code&gt;などのコンポーネントを使用)&lt;/li&gt;
+&lt;li&gt;シェーダーの機能としては存在するが、マテリアル設定で無効化されていて使用されていないテクスチャの削除&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Shader Informationがない場合、Avatar Optimizerはシェーダーを保守的に扱い、これらの最適化の一部を実行できません。&lt;/p&gt;
+&lt;p&gt;Shaderの情報がない場合、Avatar Optimizerはシェーダーを慎重に取り扱うため、これらの最適化の一部を実行することができません。&lt;/p&gt;
 &lt;h2 id="core-concepts"&gt;
- コアコンセプト
+ コンセプト
  &lt;a class="anchor" href="#core-concepts"&gt;#&lt;/a&gt;
 &lt;/h2&gt;
 &lt;h3 id="main-classes"&gt;
  主要なクラス
  &lt;a class="anchor" href="#main-classes"&gt;#&lt;/a&gt;
 &lt;/h3&gt;
-&lt;p&gt;Shader Information APIは3つの主要なクラスで構成されています:&lt;/p&gt;
+&lt;p&gt;Shader Information APIは3つの主要なクラスで構成されています。&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;ShaderInformation&lt;/code&gt;: シェーダーに関する情報を提供するために継承する基底クラス。&lt;code&gt;GetMaterialInformation&lt;/code&gt;をオーバーライドして、シェーダーを使用するマテリアルのテクスチャとUV使用状況を登録します。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;ShaderInformationRegistry&lt;/code&gt;: エディタ初期化中に&lt;code&gt;ShaderInformation&lt;/code&gt;実装をAvatar Optimizerに&lt;a href="#registration-methods"&gt;登録&lt;/a&gt;するために使用する静的クラス。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;MaterialInformationCallback&lt;/code&gt;: &lt;code&gt;GetMaterialInformation&lt;/code&gt;に渡され、マテリアルプロパティを読み取り、テクスチャ/UV使用情報を登録するメソッドを提供します。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ShaderInformation&lt;/code&gt;: シェーダーに関する情報を提供するために継承する基底クラス。&lt;br&gt;
+&lt;code&gt;GetMaterialInformation&lt;/code&gt;メソッドをオーバーライドして、そのシェーダーを使用するマテリアルがテクスチャとUVをどのように使用するかを登録します。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ShaderInformationRegistry&lt;/code&gt;: エディターの初期化処理中に&lt;code&gt;ShaderInformation&lt;/code&gt;の実装をAvatar Optimizerに&lt;a href="#registration-methods"&gt;登録&lt;/a&gt;するために使用する静的クラス。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;MaterialInformationCallback&lt;/code&gt;: マテリアルプロパティを読み取ってテクスチャとUVの使用方法を伝えるためのメソッドを提供します。これは&lt;code&gt;GetMaterialInformation&lt;/code&gt;に渡されます。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id="null-values"&gt;
  Null値
  &lt;a class="anchor" href="#null-values"&gt;#&lt;/a&gt;
 &lt;/h3&gt;
-&lt;p&gt;Shader Information API全体を通して、&lt;code&gt;null&lt;/code&gt;値には一貫した意味があります: &lt;strong&gt;不明な値&lt;/strong&gt;または&lt;strong&gt;アニメーション化された(静的に決定不可能な)値&lt;/strong&gt;を表します。マテリアルプロパティがアニメーション化されている可能性があるか、ビルド時にその値を決定できない場合、APIは不確実性を示すために&lt;code&gt;null&lt;/code&gt;を返します。値を静的に決定できない場合は、パラメータに&lt;code&gt;null&lt;/code&gt;を渡す必要があります。&lt;/p&gt;
+&lt;p&gt;Shader Information API全体を通して、&lt;code&gt;null&lt;/code&gt;値は&lt;strong&gt;不明な値&lt;/strong&gt;または&lt;strong&gt;アニメーションで操作される(静的に決定することのできない)値&lt;/strong&gt;を表します。&lt;br&gt;
+マテリアルプロパティがアニメーションで操作されているなど、ビルド時にその値を決定できない場合、APIはその不確実性を示すために&lt;code&gt;null&lt;/code&gt;を返します。&lt;br&gt;
+値を静的に決定できない場合は、パラメータに&lt;code&gt;null&lt;/code&gt;を渡す必要があります。&lt;/p&gt;
 &lt;h2 id="getting-started"&gt;
- はじめに
+ 使い方
  &lt;a class="anchor" href="#getting-started"&gt;#&lt;/a&gt;
 &lt;/h2&gt;
-&lt;p&gt;シェーダーのShader Informationを提供するには、以下の手順に従ってください:&lt;/p&gt;
+&lt;p&gt;Shader Informationを提供するには、以下の手順に従ってください。&lt;/p&gt;
 &lt;h3 id="create-asmdef"&gt;
- 1. Assembly Definitionを作成
+ 1. Assembly Definitionを作成する
  &lt;a class="anchor" href="#create-asmdef"&gt;#&lt;/a&gt;
 &lt;/h3&gt;
-&lt;p&gt;シェーダーパッケージにエディタ用のAssembly Definition（asmdef）がない場合は、作成してください。 Shader Informationはビルド時にのみ使用され、Shader Information APIはエディタでのみ利用可能なため、該当するアセンブリはエディタ専用にしてください。&lt;/p&gt;</description></item><item><title>アセットの配布について</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/developers/distributing-prefabs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/developers/distributing-prefabs/</guid><description>&lt;h1 id="distributing-prefabs"&gt;
+&lt;p&gt;シェーダーのパッケージにエディター向けのAssembly Definition&lt;sup id="fnref:2"&gt;&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref"&gt;2&lt;/a&gt;&lt;/sup&gt;がない場合は、作成してください。&lt;br&gt;
+Shader Informationはビルド時にのみ使用され、Shader Information APIもエディター上でのみ利用可能であるため、エディター向けのアセンブリが必要です。&lt;/p&gt;</description></item><item><title>アセットの配布について</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/developers/distributing-prefabs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/developers/distributing-prefabs/</guid><description>&lt;h1 id="distributing-prefabs"&gt;
  アセットの配布について
  &lt;a class="anchor" href="#distributing-prefabs"&gt;#&lt;/a&gt;
 &lt;/h1&gt;
