@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Introduction on Avatar Optimizer (1.9.6)</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/</link><description>Recent content in Introduction on Avatar Optimizer (1.9.6)</description><generator>Hugo</generator><language>ja</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/beta/ja/index.xml" rel="self" type="application/rss+xml"/><item><title>v1.0.0一周年を記念してちょっと歴史を振り返る</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/posts/2024-06-27-one-year-since-stable-release/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/posts/2024-06-27-one-year-since-stable-release/</guid><description>&lt;p&gt;AAO: Avatar Optimizer v1.0.0一周年を記念してちょっと歴史を振り返ってみることにしてみる。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Introduction on Avatar Optimizer (1.9.7)</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/</link><description>Recent content in Introduction on Avatar Optimizer (1.9.7)</description><generator>Hugo</generator><language>ja</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/beta/ja/index.xml" rel="self" type="application/rss+xml"/><item><title>v1.0.0一周年を記念してちょっと歴史を振り返る</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/posts/2024-06-27-one-year-since-stable-release/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/posts/2024-06-27-one-year-since-stable-release/</guid><description>&lt;p&gt;AAO: Avatar Optimizer v1.0.0一周年を記念してちょっと歴史を振り返ってみることにしてみる。&lt;/p&gt;
 &lt;p&gt;書いた人はanatawa12なので「私」はanatawa12を指す。&lt;/p&gt;
 &lt;h2 id="before-born"&gt;
  Avatar Optimizerが生まれるまで
@@ -202,6 +202,28 @@ Bug Report Helperを使用する前にPlay Modeを終了してください。(�
 
  
  
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+ 
+
+
+ 
+
+ 
+
+ 
+ 
+
+ 
+
+ 
+ 
 
 
  
@@ -7752,6 +7774,23 @@ Bug Report Helperを使用する前にPlay Modeを終了してください。(�
 
 
 
+&lt;h2 id="1.9.7"&gt;
+ &lt;a href="https://github.com/anatawa12/AvatarOptimizer/compare/v1.9.6...v1.9.7"&gt;1.9.7&lt;/a&gt; - 2026-02-22
+ &lt;a class="anchor" href="#1.9.7"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;h3 id="1.9.7-fixed"&gt;
+ Fixed
+ &lt;a class="anchor" href="#1.9.7-fixed"&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;AutoMergePB enables PhysBones if disabled with IsActive of GameObjects &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1683"&gt;&lt;code&gt;#1683&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;MergePhysBone may change force-relative value when curve is used &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1685"&gt;&lt;code&gt;#1685&lt;/code&gt;&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;In extreme case, the value from t=0 is used in original phys bone but the value from t=1 is used in merged phys bone.&lt;/li&gt;
+&lt;li&gt;This also affects Automatic MergePhysBone since it uses MergePhysBone internally.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2 id="1.9.6"&gt;
  &lt;a href="https://github.com/anatawa12/AvatarOptimizer/compare/v1.9.6-beta.1...v1.9.6"&gt;1.9.6&lt;/a&gt; - 2026-02-19
  &lt;a class="anchor" href="#1.9.6"&gt;#&lt;/a&gt;
@@ -11794,18 +11833,20 @@ with Additive Layer or BlendTree will be fixed with this parser.&lt;/li&gt;
 &lt;small&gt;以前は&lt;code&gt;BlendShapeを自動的に固定・除去する&lt;/code&gt;という名前でしたが、機能が増えたため名前が変わりました。&lt;/small&gt;&lt;br&gt;
 アニメーションなどを走査して、BlendShapeを自動的に固定・除去・統合することでBlendShapeの数を削減します。&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;使われていないObjectを自動的に削除する&lt;/code&gt;&lt;br&gt;
-アニメーションなどを走査して、使われていないObject(GameObjectやコンポーネントなど)を自動的に削除します。&lt;br&gt;
+アニメーションなどを走査して、使われていないObject(GameObjectやコンポーネント、テクスチャなど)を自動的に削除します。&lt;br&gt;
 また、切り替えるものと一緒に使われていて、他の方法で使われていないPhysBooneコンポーネントを自動的に切り替えるようにします。
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;endボーンを残す&lt;/code&gt;&lt;br&gt;
 親が削除されていないendボーン&lt;sup id="fnref:1"&gt;&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref"&gt;1&lt;/a&gt;&lt;/sup&gt;を削除しないようにします。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;code&gt;PhysBoneの設定を最適化する&lt;/code&gt;&lt;br&gt;
-PhysBoneの設定について、以下の最適化を行います。
+&lt;li&gt;&lt;code&gt;PhysBoneを最適化する&lt;/code&gt;&lt;br&gt;
+PhysBoneついて、以下の最適化を行います。
 &lt;ul&gt;
 &lt;li&gt;全く同じ設定のPhysBone Colliderを1つに統合します。&lt;/li&gt;
 &lt;li&gt;不要な場合に&lt;code&gt;Is Animated&lt;/code&gt;のチェックを外します。&lt;/li&gt;
+&lt;li&gt;掴めないなど、統合して問題ない場合に複数の PhysBone を1つに統合します。&lt;/li&gt;
+&lt;li&gt;Endpoint Positionで問題なく表現できる場合に、endボーンを削除してEndpoint Positionに置き換えます。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;code&gt;アニメーターの最適化&lt;/code&gt;&lt;br&gt;
@@ -11816,7 +11857,7 @@ Animator Controllerを最適化します。詳細は&lt;a href="#animator-optimi
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;マテリアルスロットの前後関係を変えることを許可する&lt;/code&gt;&lt;br&gt;
 マテリアルスロットの前後関係を変えることで、アバターの描画負荷を減らせる場合があります。&lt;br&gt;
-多くの場合、マテリアルスロットの前後関係は特に意味を持ちませんが、描画順に影響を与える場合もあるようです。&lt;/li&gt;
+多くの場合、マテリアルスロットの前後関係は開発者の知る限りでは関係ありません。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;code&gt;テクスチャを最適化する&lt;/code&gt;&lt;br&gt;
@@ -11842,38 +11883,7 @@ MMDワールドで使われるBlendShapeを固定しないなど、MMDワール�
  &lt;a class="anchor" href="#animator-optimizer"&gt;#&lt;/a&gt;
 &lt;/h2&gt;
 &lt;p&gt;この機能では、現在、アニメーターに対して以下の最適化を行います。&lt;/p&gt;
-&lt;p&gt;(最適化処理の詳細な仕様は、将来的に変更される可能性があります。)&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;AnyState式のレイヤーをEntry-Exit式に変換&lt;br&gt;
-AnyState式のレイヤーをできる限りDiamond型のEntry-Exit式に変換します。
-また、後述の最適化により、AnyState式のレイヤーは最終的にBlendTreeに変換されることがあります。&lt;/p&gt;
-&lt;pre class="mermaid"&gt;
- ---
-title: AnyState式Layer
----
-graph LR;
- AnyState(AnyState);
- Entry(Entry) --&amp;gt; State1;
- AnyState --&amp;gt; State1(State1);
- AnyState --&amp;gt; State2(State2);
- AnyState --&amp;gt; State3(State3);
-
-classDef default fill:#ab8211
-classDef node stroke-width:0px,color:#ffffff
-classDef state fill:#878787
-style AnyState fill:#29a0cc
-style Entry fill:#15910f
-class Entry,State1,State2,Exit node
-class State1 default
-class State2,State3 state
-&lt;/pre&gt;
-
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;完全グラフ構造のレイヤーをEntry-Exit式に変換&lt;br&gt;
-完全グラフを構成しているレイヤーをできる限りDiamond型のEntry-Exit式に変換します。&lt;br&gt;
-また、後述の最適化により、完全グラフ構造のレイヤーは最終的にBlendTreeに変換されることがあります。&lt;/p&gt;</description></item><item><title>Edit Skinned Mesh Components</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/component-kind/edit-skinned-mesh-components/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/component-kind/edit-skinned-mesh-components/</guid><description>&lt;h1 id="edit-skinned-mesh-components"&gt;
+&lt;p&gt;(最適化処理の詳細な仕様は、将来的に変更される可能性があります。)&lt;/p&gt;</description></item><item><title>Edit Skinned Mesh Components</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/component-kind/edit-skinned-mesh-components/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/component-kind/edit-skinned-mesh-components/</guid><description>&lt;h1 id="edit-skinned-mesh-components"&gt;
  Edit Skinned Mesh Components
  &lt;a class="anchor" href="#edit-skinned-mesh-components"&gt;#&lt;/a&gt;
 &lt;/h1&gt;
