@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>コンポーネントの詳細説明 on Avatar Optimizer (1.9.7)</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/</link><description>Recent content in コンポーネントの詳細説明 on Avatar Optimizer (1.9.7)</description><generator>Hugo</generator><language>ja</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/index.xml" rel="self" type="application/rss+xml"/><item><title>Trace And Optimize</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/trace-and-optimize/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/trace-and-optimize/</guid><description>&lt;h1 id="trace-and-optimize"&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>コンポーネントの詳細説明 on Avatar Optimizer (1.9.8-beta.1)</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/</link><description>Recent content in コンポーネントの詳細説明 on Avatar Optimizer (1.9.8-beta.1)</description><generator>Hugo</generator><language>ja</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/index.xml" rel="self" type="application/rss+xml"/><item><title>Trace And Optimize</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/trace-and-optimize/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/trace-and-optimize/</guid><description>&lt;h1 id="trace-and-optimize"&gt;
  Trace And Optimize (T&amp;amp;O)
  &lt;a class="anchor" href="#trace-and-optimize"&gt;#&lt;/a&gt;
 &lt;/h1&gt;
@@ -29,7 +29,7 @@ PhysBoneついて、以下の最適化を行います。
 &lt;ul&gt;
 &lt;li&gt;全く同じ設定のPhysBone Colliderを1つに統合します。&lt;/li&gt;
 &lt;li&gt;不要な場合に&lt;code&gt;Is Animated&lt;/code&gt;のチェックを外します。&lt;/li&gt;
-&lt;li&gt;掴めないなど、統合して問題ない場合に複数の PhysBone を1つに統合します。&lt;/li&gt;
+&lt;li&gt;掴めないものなど、統合しても動作が変化しない複数のPhysBoneを1つに統合します。&lt;/li&gt;
 &lt;li&gt;Endpoint Positionで問題なく表現できる場合に、endボーンを削除してEndpoint Positionに置き換えます。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
@@ -41,7 +41,7 @@ Animator Controllerを最適化します。詳細は&lt;a href="#animator-optimi
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;マテリアルスロットの前後関係を変えることを許可する&lt;/code&gt;&lt;br&gt;
 マテリアルスロットの前後関係を変えることで、アバターの描画負荷を減らせる場合があります。&lt;br&gt;
-多くの場合、マテリアルスロットの前後関係は開発者の知る限りでは関係ありません。&lt;/li&gt;
+Avatar Optimizerの作者が知る限りにおいて、マテリアルスロットの前後関係は特に意味を持ちません。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;code&gt;テクスチャを最適化する&lt;/code&gt;&lt;br&gt;
@@ -67,7 +67,12 @@ MMDワールドで使われるBlendShapeを固定しないなど、MMDワール�
  &lt;a class="anchor" href="#animator-optimizer"&gt;#&lt;/a&gt;
 &lt;/h2&gt;
 &lt;p&gt;この機能では、現在、アニメーターに対して以下の最適化を行います。&lt;/p&gt;
-&lt;p&gt;(最適化処理の詳細な仕様は、将来的に変更される可能性があります。)&lt;/p&gt;</description></item><item><title>Merge Skinned Mesh</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/merge-skinned-mesh/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/merge-skinned-mesh/</guid><description>&lt;h1 id="merge-skinned-mesh"&gt;
+&lt;p&gt;(最適化処理の詳細な仕様は、将来的に変更される可能性があります。)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;AnyState式のレイヤーをEntry-Exit式に変換&lt;br&gt;
+AnyState式のレイヤーをできる限りDiamond型のEntry-Exit式に変換します。
+また、後述の最適化により、AnyState式のレイヤーは最終的にBlendTreeに変換されることがあります。&lt;/p&gt;</description></item><item><title>Merge Skinned Mesh</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/merge-skinned-mesh/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/reference/merge-skinned-mesh/</guid><description>&lt;h1 id="merge-skinned-mesh"&gt;
  Merge Skinned Mesh (MergeSMR)
  &lt;a class="anchor" href="#merge-skinned-mesh"&gt;#&lt;/a&gt;
 &lt;/h1&gt;

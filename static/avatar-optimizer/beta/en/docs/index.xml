@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Docs on Avatar Optimizer (1.9.7)</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/</link><description>Recent content in Docs on Avatar Optimizer (1.9.7)</description><generator>Hugo</generator><language>en</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/index.xml" rel="self" type="application/rss+xml"/><item><title>Basic Concepts</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/basic-concept/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/basic-concept/</guid><description>&lt;h1 id="basic-concepts"&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Docs on Avatar Optimizer (1.9.8-beta.1)</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/</link><description>Recent content in Docs on Avatar Optimizer (1.9.8-beta.1)</description><generator>Hugo</generator><language>en</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/index.xml" rel="self" type="application/rss+xml"/><item><title>Basic Concepts</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/basic-concept/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/basic-concept/</guid><description>&lt;h1 id="basic-concepts"&gt;
  Basic Concepts of Avatar Optimizer
  &lt;a class="anchor" href="#basic-concepts"&gt;#&lt;/a&gt;
 &lt;/h1&gt;
@@ -96,6 +96,28 @@ Therefore, you may be asked to provide more information about avatar.&lt;/p&gt;<
 
  
  
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+ 
+
+
+ 
+
+ 
+
+ 
+ 
+
+ 
+
+ 
+ 
 
 
  
@@ -7646,6 +7668,17 @@ Therefore, you may be asked to provide more information about avatar.&lt;/p&gt;<
 
 
 
+&lt;h2 id="1.9.8-beta.1"&gt;
+ &lt;a href="https://github.com/anatawa12/AvatarOptimizer/compare/v1.9.7...v1.9.8-beta.1"&gt;1.9.8-beta.1&lt;/a&gt; - 2026-02-24
+ &lt;a class="anchor" href="#1.9.8-beta.1"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;h3 id="1.9.8-beta.1-added"&gt;
+ Added
+ &lt;a class="anchor" href="#1.9.8-beta.1-added"&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Few more debug information &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1689"&gt;&lt;code&gt;#1689&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2 id="1.9.7"&gt;
  &lt;a href="https://github.com/anatawa12/AvatarOptimizer/compare/v1.9.6...v1.9.7"&gt;1.9.7&lt;/a&gt; - 2026-02-22
  &lt;a class="anchor" href="#1.9.7"&gt;#&lt;/a&gt;
