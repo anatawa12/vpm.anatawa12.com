@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Docs on Avatar Optimizer (1.9.7)</title><link>https://vpm.anatawa12.com/avatar-optimizer/ja/docs/</link><description>Recent content in Docs on Avatar Optimizer (1.9.7)</description><generator>Hugo</generator><language>ja</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/ja/docs/index.xml" rel="self" type="application/rss+xml"/><item><title>基本コンセプト</title><link>https://vpm.anatawa12.com/avatar-optimizer/ja/docs/basic-concept/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/ja/docs/basic-concept/</guid><description>&lt;h1 id="basic-concepts"&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Docs on Avatar Optimizer (1.9.8)</title><link>https://vpm.anatawa12.com/avatar-optimizer/ja/docs/</link><description>Recent content in Docs on Avatar Optimizer (1.9.8)</description><generator>Hugo</generator><language>ja</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/ja/docs/index.xml" rel="self" type="application/rss+xml"/><item><title>基本コンセプト</title><link>https://vpm.anatawa12.com/avatar-optimizer/ja/docs/basic-concept/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/ja/docs/basic-concept/</guid><description>&lt;h1 id="basic-concepts"&gt;
  Avatar Optimizerの基本コンセプト
  &lt;a class="anchor" href="#basic-concepts"&gt;#&lt;/a&gt;
 &lt;/h1&gt;
@@ -158,6 +158,46 @@ Bug Report Helperを使用する前にPlay Modeを終了してください。(�
 
  
  
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+ 
+
+
+ 
+
+ 
+
+ 
+ 
+
+ 
+
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+ 
 
 
  
@@ -3328,6 +3368,49 @@ Bug Report Helperを使用する前にPlay Modeを終了してください。(�
 
 
 
+&lt;h2 id="1.9.8"&gt;
+ &lt;a href="https://github.com/anatawa12/AvatarOptimizer/compare/v1.9.7...v1.9.8"&gt;1.9.8&lt;/a&gt; - 2026-03-17
+ &lt;a class="anchor" href="#1.9.8"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;h3 id="1.9.8-added"&gt;
+ Added
+ &lt;a class="anchor" href="#1.9.8-added"&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;More debug information &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1689"&gt;&lt;code&gt;#1689&lt;/code&gt;&lt;/a&gt; &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1694"&gt;&lt;code&gt;#1694&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="1.9.8-changed"&gt;
+ Changed
+ &lt;a class="anchor" href="#1.9.8-changed"&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Reduced size of report file a little &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1695"&gt;&lt;code&gt;#1695&lt;/code&gt;&lt;/a&gt; &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1705"&gt;&lt;code&gt;#1705&lt;/code&gt;&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;With information added in this release, the overall size may be increased, but report file should be smaller with same information as before.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="1.9.8-fixed"&gt;
+ Fixed
+ &lt;a class="anchor" href="#1.9.8-fixed"&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;The default values for each parameter may be reset to zero &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1698"&gt;&lt;code&gt;#1698&lt;/code&gt;&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;This may change behavior if parameter is not controlled by VRC Expressions Parameter&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Optimize Texture may break textures with multiple UV channel used by same texture &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1700"&gt;&lt;code&gt;#1700&lt;/code&gt;&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;This was longstanding issue but 1.9.7 relaxed condition to apply to Optimize Texture, which made this issue more likely to be encountered.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Auto Merge PhysBone may break humanoid bone mapping if there are PhysBones targeting humanoid bones &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1704"&gt;&lt;code&gt;#1704&lt;/code&gt;&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;PhysBones targeting humanoid bones are not supported by VRChat, but we added support since some avatars have them and working in some cases.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2 id="1.9.7"&gt;
  &lt;a href="https://github.com/anatawa12/AvatarOptimizer/compare/v1.9.6...v1.9.7"&gt;1.9.7&lt;/a&gt; - 2026-02-22
  &lt;a class="anchor" href="#1.9.7"&gt;#&lt;/a&gt;
