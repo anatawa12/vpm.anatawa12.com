@@ -2347,6 +2347,60 @@
             "com.unity.burst": "1.8.7"
           },
           "zipSHA256": "d67f8983985c4ca9e3d9e94680600243ea75ca148abb1e413f3cbec0b5a72153"
+        },
+        "1.9.9": {
+          "name": "com.anatawa12.avatar-optimizer",
+          "version": "1.9.9",
+          "unity": "2022.3",
+          "private": false,
+          "private-beta": false,
+          "description": "Set of Anatawa12's Small Avatar Optimization Utilities",
+          "displayName": "AAO: Avatar Optimizer",
+          "author": {
+            "name": "anatawa12",
+            "url": "https://anatawa12.com/"
+          },
+          "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.9.9.zip?",
+          "repo": "https://vpm.anatawa12.com/vpm.json",
+          "documentationUrl": "https://vpm.anatawa12.com/avatar-optimizer/",
+          "changelogUrl": "https://vpm.anatawa12.com/avatar-optimizer/en/docs/changelog/#1.9.9",
+          "license": "MIT",
+          "vpmDependencies": {
+            "nadena.dev.ndmf": ">=1.8.0 <2.0.0",
+            "com.vrchat.avatars": ">=3.7.0 <3.11.0"
+          },
+          "dependencies": {
+            "com.unity.nuget.newtonsoft-json": "3.2.1",
+            "com.unity.burst": "1.8.7"
+          },
+          "zipSHA256": "b81bdebc3b25ec60d5d031f4ea8dd31e1fcfe1c55821f8bd56e32c2f492368c0"
+        },
+        "1.9.10": {
+          "name": "com.anatawa12.avatar-optimizer",
+          "version": "1.9.10",
+          "unity": "2022.3",
+          "private": false,
+          "private-beta": false,
+          "description": "Set of Anatawa12's Small Avatar Optimization Utilities",
+          "displayName": "AAO: Avatar Optimizer",
+          "author": {
+            "name": "anatawa12",
+            "url": "https://anatawa12.com/"
+          },
+          "url": "https://vpm.anatawa12.com/avatar-optimizer/package-1.9.10.zip?",
+          "repo": "https://vpm.anatawa12.com/vpm.json",
+          "documentationUrl": "https://vpm.anatawa12.com/avatar-optimizer/",
+          "changelogUrl": "https://vpm.anatawa12.com/avatar-optimizer/en/docs/changelog/#1.9.10",
+          "license": "MIT",
+          "vpmDependencies": {
+            "nadena.dev.ndmf": ">=1.8.0 <2.0.0",
+            "com.vrchat.avatars": ">=3.7.0 <3.11.0"
+          },
+          "dependencies": {
+            "com.unity.nuget.newtonsoft-json": "3.2.1",
+            "com.unity.burst": "1.8.7"
+          },
+          "zipSHA256": "73a793efaac4cccb97714df825fecbd1024d9e9806d61b30e6f1b9699431fb9b"
         }
       }
     },
