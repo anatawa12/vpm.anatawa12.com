@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Docs on Avatar Optimizer (1.9.8)</title><link>https://vpm.anatawa12.com/avatar-optimizer/ja/docs/</link><description>Recent content in Docs on Avatar Optimizer (1.9.8)</description><generator>Hugo</generator><language>ja</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/ja/docs/index.xml" rel="self" type="application/rss+xml"/><item><title>基本コンセプト</title><link>https://vpm.anatawa12.com/avatar-optimizer/ja/docs/basic-concept/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/ja/docs/basic-concept/</guid><description>&lt;h1 id="basic-concepts"&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Docs on Avatar Optimizer (1.9.9)</title><link>https://vpm.anatawa12.com/avatar-optimizer/ja/docs/</link><description>Recent content in Docs on Avatar Optimizer (1.9.9)</description><generator>Hugo</generator><language>ja</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/ja/docs/index.xml" rel="self" type="application/rss+xml"/><item><title>基本コンセプト</title><link>https://vpm.anatawa12.com/avatar-optimizer/ja/docs/basic-concept/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/ja/docs/basic-concept/</guid><description>&lt;h1 id="basic-concepts"&gt;
  Avatar Optimizerの基本コンセプト
  &lt;a class="anchor" href="#basic-concepts"&gt;#&lt;/a&gt;
 &lt;/h1&gt;
@@ -167,6 +167,37 @@ Bug Report Helperを使用する前にPlay Modeを終了してください。(�
 
  
  
+
+
+ 
+
+ 
+
+ 
+ 
+
+ 
+
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+ 
  
 
  
@@ -3368,6 +3399,30 @@ Bug Report Helperを使用する前にPlay Modeを終了してください。(�
 
 
 
+&lt;h2 id="1.9.9"&gt;
+ &lt;a href="https://github.com/anatawa12/AvatarOptimizer/compare/v1.9.8...v1.9.9"&gt;1.9.9&lt;/a&gt; - 2026-04-18
+ &lt;a class="anchor" href="#1.9.9"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;h3 id="1.9.9-added"&gt;
+ Added
+ &lt;a class="anchor" href="#1.9.9-added"&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Added support for &lt;code&gt;VRCRaycast&lt;/code&gt; component added in VRCSDK 3.10.3 &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1706"&gt;&lt;code&gt;#1706&lt;/code&gt;&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;This also add support for &lt;code&gt;RaycastCount&lt;/code&gt; performance category &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1706"&gt;&lt;code&gt;#1706&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Added support for ToonStandard &lt;code&gt;ColorMask&lt;/code&gt; property &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1706"&gt;&lt;code&gt;#1706&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="1.9.9-fixed"&gt;
+ Fixed
+ &lt;a class="anchor" href="#1.9.9-fixed"&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Early mode of MakeChildren is not working &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1709"&gt;&lt;code&gt;#1709&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;FX Layer animations are ignored if the Gesture layer contains animations that revert properties &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1710"&gt;&lt;code&gt;#1710&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2 id="1.9.8"&gt;
  &lt;a href="https://github.com/anatawa12/AvatarOptimizer/compare/v1.9.7...v1.9.8"&gt;1.9.8&lt;/a&gt; - 2026-03-17
  &lt;a class="anchor" href="#1.9.8"&gt;#&lt;/a&gt;
