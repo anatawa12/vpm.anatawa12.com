@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Introduction on Avatar Optimizer (1.9.9)</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/</link><description>Recent content in Introduction on Avatar Optimizer (1.9.9)</description><generator>Hugo</generator><language>en</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/beta/en/index.xml" rel="self" type="application/rss+xml"/><item><title>Basic Concepts</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/basic-concept/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/basic-concept/</guid><description>&lt;h1 id="basic-concepts"&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Introduction on Avatar Optimizer (1.9.10)</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/</link><description>Recent content in Introduction on Avatar Optimizer (1.9.10)</description><generator>Hugo</generator><language>en</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/beta/en/index.xml" rel="self" type="application/rss+xml"/><item><title>Basic Concepts</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/basic-concept/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/basic-concept/</guid><description>&lt;h1 id="basic-concepts"&gt;
  Basic Concepts of Avatar Optimizer
  &lt;a class="anchor" href="#basic-concepts"&gt;#&lt;/a&gt;
 &lt;/h1&gt;
@@ -74,6 +74,28 @@ Therefore, you may be asked to provide more information about avatar.&lt;/p&gt;<
 
  
  
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+ 
+
+
+ 
+
+ 
+
+ 
+ 
+
+ 
+
+ 
+ 
 
 
  
@@ -7787,6 +7809,21 @@ Therefore, you may be asked to provide more information about avatar.&lt;/p&gt;<
 
 
 
+&lt;h2 id="1.9.10"&gt;
+ &lt;a href="https://github.com/anatawa12/AvatarOptimizer/compare/v1.9.9...v1.9.10"&gt;1.9.10&lt;/a&gt; - 2026-04-18
+ &lt;a class="anchor" href="#1.9.10"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;h3 id="1.9.10-fixed"&gt;
+ Fixed
+ &lt;a class="anchor" href="#1.9.10-fixed"&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Incompatibility with VRCSDK 3.10.3 &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1712"&gt;&lt;code&gt;#1712&lt;/code&gt;&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;They removed single property from &lt;code&gt;VRCRaycast&lt;/code&gt; component on stabilization of 3.10.3 witch caused error in AAO. This is fixed now.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2 id="1.9.9"&gt;
  &lt;a href="https://github.com/anatawa12/AvatarOptimizer/compare/v1.9.9-beta.1...v1.9.9"&gt;1.9.9&lt;/a&gt; - 2026-04-18
  &lt;a class="anchor" href="#1.9.9"&gt;#&lt;/a&gt;
