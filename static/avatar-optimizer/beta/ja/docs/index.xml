@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Docs on Avatar Optimizer (1.9.10)</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/</link><description>Recent content in Docs on Avatar Optimizer (1.9.10)</description><generator>Hugo</generator><language>ja</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/index.xml" rel="self" type="application/rss+xml"/><item><title>基本コンセプト</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/basic-concept/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/basic-concept/</guid><description>&lt;h1 id="basic-concepts"&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Docs on Avatar Optimizer (1.9.11-beta.1)</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/</link><description>Recent content in Docs on Avatar Optimizer (1.9.11-beta.1)</description><generator>Hugo</generator><language>ja</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/index.xml" rel="self" type="application/rss+xml"/><item><title>基本コンセプト</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/basic-concept/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/basic-concept/</guid><description>&lt;h1 id="basic-concepts"&gt;
  Avatar Optimizerの基本コンセプト
  &lt;a class="anchor" href="#basic-concepts"&gt;#&lt;/a&gt;
 &lt;/h1&gt;
@@ -171,6 +171,28 @@ Bug Report Helperを使用する前にPlay Modeを終了してください。(�
 
  
  
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+ 
+
+
+ 
+
+ 
+
+ 
+ 
+
+ 
+
+ 
+ 
 
 
  
@@ -7884,6 +7906,32 @@ Bug Report Helperを使用する前にPlay Modeを終了してください。(�
 
 
 
+&lt;h2 id="1.9.11-beta.1"&gt;
+ &lt;a href="https://github.com/anatawa12/AvatarOptimizer/compare/v1.9.10...v1.9.11-beta.1"&gt;1.9.11-beta.1&lt;/a&gt; - 2026-04-19
+ &lt;a class="anchor" href="#1.9.11-beta.1"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;h3 id="1.9.11-beta.1-fixed"&gt;
+ Fixed
+ &lt;a class="anchor" href="#1.9.11-beta.1-fixed"&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Remove Unused Objects Automatically broke Ignore Other PhysBones behavior &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1715"&gt;&lt;code&gt;#1715&lt;/code&gt;&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;Ignore Other PhysBones implicitly adds transforms controlled by other PhysBones, including disabled ones.&lt;/li&gt;
+&lt;li&gt;Since Remove Unused Objects removes disabled PhysBones, this caused unexpected changes to Ignore Other PhysBones behavior.&lt;/li&gt;
+&lt;li&gt;This release fixes the issue by adding such transforms to the Ignore Transforms list before most of the AAO processes.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;(Automatic) Merge PhysBone may change the behavior of a PhysBone if there is a parent PhysBone &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1717"&gt;&lt;code&gt;#1717&lt;/code&gt;&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;The new root should be added to the parent PhysBone’s Ignore Transforms to prevent it from being animated, but this was not implemented.&lt;/li&gt;
+&lt;li&gt;This bug occurs especially when the parent PhysBone has angle limits affecting the identity transform.&lt;/li&gt;
+&lt;li&gt;This fix is applied iff any of the source PhysBones should be added to the parent PhysBone’s Ignore Transforms.&lt;/li&gt;
+&lt;li&gt;This also affects Automatic Merge PhysBone, since it uses Merge PhysBone internally.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Automatic Merge PhysBone may not be applied on entering play mode &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1718"&gt;&lt;code&gt;#1718&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2 id="1.9.10"&gt;
  &lt;a href="https://github.com/anatawa12/AvatarOptimizer/compare/v1.9.9...v1.9.10"&gt;1.9.10&lt;/a&gt; - 2026-04-18
  &lt;a class="anchor" href="#1.9.10"&gt;#&lt;/a&gt;
