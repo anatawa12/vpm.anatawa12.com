@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Docs on Avatar Optimizer (1.9.13-beta.1)</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/</link><description>Recent content in Docs on Avatar Optimizer (1.9.13-beta.1)</description><generator>Hugo</generator><language>ja</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/index.xml" rel="self" type="application/rss+xml"/><item><title>基本コンセプト</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/basic-concept/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/basic-concept/</guid><description>&lt;h1 id="basic-concepts"&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Docs on Avatar Optimizer (1.9.13-beta.2)</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/</link><description>Recent content in Docs on Avatar Optimizer (1.9.13-beta.2)</description><generator>Hugo</generator><language>ja</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/index.xml" rel="self" type="application/rss+xml"/><item><title>基本コンセプト</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/basic-concept/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/basic-concept/</guid><description>&lt;h1 id="basic-concepts"&gt;
  Avatar Optimizerの基本コンセプト
  &lt;a class="anchor" href="#basic-concepts"&gt;#&lt;/a&gt;
 &lt;/h1&gt;
@@ -171,6 +171,28 @@ Bug Report Helperを使用する前にPlay Modeを終了してください。(�
 
  
  
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+ 
+
+
+ 
+
+ 
+
+ 
+ 
+
+ 
+
+ 
+ 
 
 
  
@@ -7976,6 +7998,27 @@ Bug Report Helperを使用する前にPlay Modeを終了してください。(�
 
 
 
+&lt;h2 id="1.9.13-beta.2"&gt;
+ &lt;a href="https://github.com/anatawa12/AvatarOptimizer/compare/v1.9.13-beta.1...v1.9.13-beta.2"&gt;1.9.13-beta.2&lt;/a&gt; - 2026-05-11
+ &lt;a class="anchor" href="#1.9.13-beta.2"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;h3 id="1.9.13-beta.2-fixed"&gt;
+ Fixed
+ &lt;a class="anchor" href="#1.9.13-beta.2-fixed"&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Avatar Optimizer unexpectedly requires VRCSDK 3.8.0 or later &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1728"&gt;&lt;code&gt;#1728&lt;/code&gt;&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;Avatar Optimizer officially supports 3.7.0 but 1.9.11 and 1.9.12 unexpectedly require 3.8.0 or later.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;EyeLook could stop working if either eye bone was unused &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1729"&gt;&lt;code&gt;#1729&lt;/code&gt;&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;I found that if only one eye bone remained assigned, VRChat would stop animating both eye bones.&lt;/li&gt;
+&lt;li&gt;This is now fixed by preserving both eye bones whenever either one is used by another component.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2 id="1.9.13-beta.1"&gt;
  &lt;a href="https://github.com/anatawa12/AvatarOptimizer/compare/v1.9.12...v1.9.13-beta.1"&gt;1.9.13-beta.1&lt;/a&gt; - 2026-05-09
  &lt;a class="anchor" href="#1.9.13-beta.1"&gt;#&lt;/a&gt;
