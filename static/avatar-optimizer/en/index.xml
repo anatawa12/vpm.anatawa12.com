@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Introduction on Avatar Optimizer (1.9.12)</title><link>https://vpm.anatawa12.com/avatar-optimizer/en/</link><description>Recent content in Introduction on Avatar Optimizer (1.9.12)</description><generator>Hugo</generator><language>en</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/en/index.xml" rel="self" type="application/rss+xml"/><item><title>Basic Concepts</title><link>https://vpm.anatawa12.com/avatar-optimizer/en/docs/basic-concept/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/en/docs/basic-concept/</guid><description>&lt;h1 id="basic-concepts"&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Introduction on Avatar Optimizer (1.9.13)</title><link>https://vpm.anatawa12.com/avatar-optimizer/en/</link><description>Recent content in Introduction on Avatar Optimizer (1.9.13)</description><generator>Hugo</generator><language>en</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/en/index.xml" rel="self" type="application/rss+xml"/><item><title>Basic Concepts</title><link>https://vpm.anatawa12.com/avatar-optimizer/en/docs/basic-concept/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/en/docs/basic-concept/</guid><description>&lt;h1 id="basic-concepts"&gt;
  Basic Concepts of Avatar Optimizer
  &lt;a class="anchor" href="#basic-concepts"&gt;#&lt;/a&gt;
 &lt;/h1&gt;
@@ -149,6 +149,28 @@ Therefore, you may be asked to provide more information about avatar.&lt;/p&gt;<
 
  
  
+
+
+ 
+
+ 
+
+ 
+ 
+
+ 
+
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+ 
  
 
  
@@ -3390,6 +3412,33 @@ Therefore, you may be asked to provide more information about avatar.&lt;/p&gt;<
 
 
 
+&lt;h2 id="1.9.13"&gt;
+ &lt;a href="https://github.com/anatawa12/AvatarOptimizer/compare/v1.9.12...v1.9.13"&gt;1.9.13&lt;/a&gt; - 2026-05-13
+ &lt;a class="anchor" href="#1.9.13"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;h3 id="1.9.13-fixed"&gt;
+ Fixed
+ &lt;a class="anchor" href="#1.9.13-fixed"&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Merge PhysBone could break behavior when merging all children of a source component&amp;rsquo;s parent if the parent transform was animated by other components &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1726"&gt;&lt;code&gt;#1726&lt;/code&gt;&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;This bug also occurs if the parent has constraint components&lt;/li&gt;
+&lt;li&gt;This bug also affected Optimize PhysBone in Trace and Optimize&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Avatar Optimizer unexpectedly requires VRCSDK 3.8.0 or later &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1728"&gt;&lt;code&gt;#1728&lt;/code&gt;&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;Avatar Optimizer officially supports 3.7.0 but 1.9.11 and 1.9.12 unexpectedly require 3.8.0 or later.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;EyeLook could stop working if either eye bone was unused &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1729"&gt;&lt;code&gt;#1729&lt;/code&gt;&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;I found that if only one eye bone remained assigned, VRChat would stop animating both eye bones.&lt;/li&gt;
+&lt;li&gt;This is now fixed by preserving both eye bones whenever either one is used by another component.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2 id="1.9.12"&gt;
  &lt;a href="https://github.com/anatawa12/AvatarOptimizer/compare/v1.9.11...v1.9.12"&gt;1.9.12&lt;/a&gt; - 2026-04-28
  &lt;a class="anchor" href="#1.9.12"&gt;#&lt;/a&gt;
