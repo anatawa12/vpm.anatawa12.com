@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Introduction on Avatar Optimizer (1.9.17-beta.1)</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/</link><description>Recent content in Introduction on Avatar Optimizer (1.9.17-beta.1)</description><generator>Hugo</generator><language>ja</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/beta/ja/index.xml" rel="self" type="application/rss+xml"/><item><title>v1.0.0一周年を記念してちょっと歴史を振り返る</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/posts/2024-06-27-one-year-since-stable-release/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/posts/2024-06-27-one-year-since-stable-release/</guid><description>&lt;p&gt;AAO: Avatar Optimizer v1.0.0一周年を記念してちょっと歴史を振り返ってみることにしてみる。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Introduction on Avatar Optimizer (1.9.17-beta.2)</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/</link><description>Recent content in Introduction on Avatar Optimizer (1.9.17-beta.2)</description><generator>Hugo</generator><language>ja</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/beta/ja/index.xml" rel="self" type="application/rss+xml"/><item><title>v1.0.0一周年を記念してちょっと歴史を振り返る</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/posts/2024-06-27-one-year-since-stable-release/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/posts/2024-06-27-one-year-since-stable-release/</guid><description>&lt;p&gt;AAO: Avatar Optimizer v1.0.0一周年を記念してちょっと歴史を振り返ってみることにしてみる。&lt;/p&gt;
 &lt;p&gt;書いた人はanatawa12なので「私」はanatawa12を指す。&lt;/p&gt;
 &lt;h2 id="before-born"&gt;
  Avatar Optimizerが生まれるまで
@@ -224,6 +224,28 @@ Bug Report Helperを使用する前にPlay Modeを終了してください。(�
 
  
  
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+ 
+
+
+ 
+
+ 
+
+ 
+ 
+
+ 
+
+ 
+ 
 
 
  
@@ -8284,6 +8306,18 @@ Bug Report Helperを使用する前にPlay Modeを終了してください。(�
 
 
 
+&lt;h2 id="1.9.17-beta.2"&gt;
+ &lt;a href="https://github.com/anatawa12/AvatarOptimizer/compare/v1.9.17-beta.1...v1.9.17-beta.2"&gt;1.9.17-beta.2&lt;/a&gt; - 2026-08-03
+ &lt;a class="anchor" href="#1.9.17-beta.2"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;h3 id="1.9.17-beta.2-fixed"&gt;
+ Fixed
+ &lt;a class="anchor" href="#1.9.17-beta.2-fixed"&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Compatibility with &lt;a href="https://8ya.booth.pm/items/8618883"&gt;Tide of Alba&lt;/a&gt; &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1761"&gt;&lt;code&gt;#1761&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Automatic Replace EndBone with Endpoint Position breaks PhysBone when bone is at (0, 0, 0) &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1761"&gt;&lt;code&gt;#1761&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2 id="1.9.17-beta.1"&gt;
  &lt;a href="https://github.com/anatawa12/AvatarOptimizer/compare/v1.9.16...v1.9.17-beta.1"&gt;1.9.17-beta.1&lt;/a&gt; - 2026-07-24
  &lt;a class="anchor" href="#1.9.17-beta.1"&gt;#&lt;/a&gt;
@@ -8320,20 +8354,7 @@ Bug Report Helperを使用する前にPlay Modeを終了してください。(�
 &lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;Replaced logic for estimating Texture usage &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1753"&gt;&lt;code&gt;#1753&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Previously, we used to use VRCSDK to estimate texture usage, but we wrote new our own logic instead.&lt;/li&gt;
-&lt;li&gt;This should fix the following problems
-&lt;ul&gt;
-&lt;li&gt;Render Textures are not included&lt;/li&gt;
-&lt;li&gt;CubeMaps are calculated to one-sixth of the actual size&lt;/li&gt;
-&lt;li&gt;Some properties are not included&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Update Simplified Chinese localization &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1752"&gt;&lt;code&gt;#1752&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;</description></item><item><title>Avatar Global Components</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/component-kind/avatar-global-components/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/component-kind/avatar-global-components/</guid><description>&lt;h1 id="avatar-global-components"&gt;
+&lt;p&gt;Replaced logic for estimating Texture usage &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1753"&gt;&lt;code&gt;#1753&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;</description></item><item><title>Avatar Global Components</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/component-kind/avatar-global-components/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/component-kind/avatar-global-components/</guid><description>&lt;h1 id="avatar-global-components"&gt;
  Avatar Global Components
  &lt;a class="anchor" href="#avatar-global-components"&gt;#&lt;/a&gt;
 &lt;/h1&gt;
@@ -8749,7 +8770,7 @@ PoiyomiやlilToonのUV Tile Discard機能とは異なり、このコンポーネ
  &lt;a class="anchor" href="#rename-blendshape"&gt;#&lt;/a&gt;
 &lt;/h1&gt;
 &lt;p&gt;メッシュのBlendShape名を変更することが出来ます。&lt;br&gt;
-変更後の名前が重複している場合、それらは1つのBlendShapeへと統合されます。&lt;/p&gt;
+変更後の名前が重複している場合、エラーになります。&lt;/p&gt;
 &lt;p&gt;このコンポーネントは、SkinnedMeshRendererコンポーネントのあるGameObjectに追加してください。(分類: &lt;a href="../../component-kind/edit-skinned-mesh-components#modifying-component"&gt;Modifying Edit Skinned Mesh Component&lt;/a&gt;)&lt;/p&gt;
 &lt;h2 id="Settings"&gt;
  設定
@@ -8757,8 +8778,7 @@ PoiyomiやlilToonのUV Tile Discard機能とは異なり、このコンポーネ
 &lt;/h2&gt;
 &lt;p&gt;&lt;img src="https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/rename-blendshape/component.png" alt="component.png" /&gt;&lt;/p&gt;
 &lt;p&gt;BlendShape名の変更一覧表が表示されます。
-右上の &amp;lsquo;+&amp;rsquo; ボタンから、名前を変更するBlendShapeを追加することが出来ます。&lt;/p&gt;
-&lt;p&gt;変更後の名前が重複している場合は、それらが統合されることを示すために、入力欄が黄色でハイライトされます。&lt;/p&gt;</description></item><item><title>システムの前提条件</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/developers/system-assumptions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/developers/system-assumptions/</guid><description>&lt;h1 id="外部ツールに求める前提条件"&gt;
+右上の &amp;lsquo;+&amp;rsquo; ボタンから、名前を変更するBlendShapeを追加することが出来ます。&lt;/p&gt;</description></item><item><title>システムの前提条件</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/developers/system-assumptions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/developers/system-assumptions/</guid><description>&lt;h1 id="外部ツールに求める前提条件"&gt;
  外部ツールに求める前提条件
  &lt;a class="anchor" href="#%e5%a4%96%e9%83%a8%e3%83%84%e3%83%bc%e3%83%ab%e3%81%ab%e6%b1%82%e3%82%81%e3%82%8b%e5%89%8d%e6%8f%90%e6%9d%a1%e4%bb%b6"&gt;#&lt;/a&gt;
 &lt;/h1&gt;

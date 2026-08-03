@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Introduction on Avatar Optimizer (1.9.17-beta.1)</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/</link><description>Recent content in Introduction on Avatar Optimizer (1.9.17-beta.1)</description><generator>Hugo</generator><language>en</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/beta/en/index.xml" rel="self" type="application/rss+xml"/><item><title>Basic Concepts</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/basic-concept/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/basic-concept/</guid><description>&lt;h1 id="basic-concepts"&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Introduction on Avatar Optimizer (1.9.17-beta.2)</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/</link><description>Recent content in Introduction on Avatar Optimizer (1.9.17-beta.2)</description><generator>Hugo</generator><language>en</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/beta/en/index.xml" rel="self" type="application/rss+xml"/><item><title>Basic Concepts</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/basic-concept/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/basic-concept/</guid><description>&lt;h1 id="basic-concepts"&gt;
  Basic Concepts of Avatar Optimizer
  &lt;a class="anchor" href="#basic-concepts"&gt;#&lt;/a&gt;
 &lt;/h1&gt;
@@ -96,6 +96,28 @@ Therefore, you may be asked to provide more information about avatar.&lt;/p&gt;<
 
  
  
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+ 
+
+
+ 
+
+ 
+
+ 
+ 
+
+ 
+
+ 
+ 
 
 
  
@@ -8156,6 +8178,18 @@ Therefore, you may be asked to provide more information about avatar.&lt;/p&gt;<
 
 
 
+&lt;h2 id="1.9.17-beta.2"&gt;
+ &lt;a href="https://github.com/anatawa12/AvatarOptimizer/compare/v1.9.17-beta.1...v1.9.17-beta.2"&gt;1.9.17-beta.2&lt;/a&gt; - 2026-08-03
+ &lt;a class="anchor" href="#1.9.17-beta.2"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;h3 id="1.9.17-beta.2-fixed"&gt;
+ Fixed
+ &lt;a class="anchor" href="#1.9.17-beta.2-fixed"&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Compatibility with &lt;a href="https://8ya.booth.pm/items/8618883"&gt;Tide of Alba&lt;/a&gt; &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1761"&gt;&lt;code&gt;#1761&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Automatic Replace EndBone with Endpoint Position breaks PhysBone when bone is at (0, 0, 0) &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1761"&gt;&lt;code&gt;#1761&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2 id="1.9.17-beta.1"&gt;
  &lt;a href="https://github.com/anatawa12/AvatarOptimizer/compare/v1.9.16...v1.9.17-beta.1"&gt;1.9.17-beta.1&lt;/a&gt; - 2026-07-24
  &lt;a class="anchor" href="#1.9.17-beta.1"&gt;#&lt;/a&gt;
@@ -8192,20 +8226,7 @@ Therefore, you may be asked to provide more information about avatar.&lt;/p&gt;<
 &lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;Replaced logic for estimating Texture usage &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1753"&gt;&lt;code&gt;#1753&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Previously, we used to use VRCSDK to estimate texture usage, but we wrote new our own logic instead.&lt;/li&gt;
-&lt;li&gt;This should fix the following problems
-&lt;ul&gt;
-&lt;li&gt;Render Textures are not included&lt;/li&gt;
-&lt;li&gt;CubeMaps are calculated to one-sixth of the actual size&lt;/li&gt;
-&lt;li&gt;Some properties are not included&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Update Simplified Chinese localization &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1752"&gt;&lt;code&gt;#1752&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;</description></item><item><title>Avatar Global Components</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/component-kind/avatar-global-components/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/component-kind/avatar-global-components/</guid><description>&lt;h1 id="avatar-global-components"&gt;
+&lt;p&gt;Replaced logic for estimating Texture usage &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1753"&gt;&lt;code&gt;#1753&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;</description></item><item><title>Avatar Global Components</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/component-kind/avatar-global-components/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/component-kind/avatar-global-components/</guid><description>&lt;h1 id="avatar-global-components"&gt;
  Avatar Global Components
  &lt;a class="anchor" href="#avatar-global-components"&gt;#&lt;/a&gt;
 &lt;/h1&gt;
@@ -8348,7 +8369,7 @@ Currently, Avatar Optimizer provides ShaderInformation for some popular shaders 
  &lt;a class="anchor" href="#rename-blendshape"&gt;#&lt;/a&gt;
 &lt;/h1&gt;
 &lt;p&gt;Renames BlendShapes in the Mesh.&lt;br&gt;
-If renamed name is duplicated, it will merge the BlendShapes into one.&lt;/p&gt;
+If renamed BlendShape name is duplicated, this component shows an error.&lt;/p&gt;
 &lt;p&gt;This component should be added to a GameObject which has a SkinnedMeshRenderer component. (Kind: &lt;a href="../../component-kind/edit-skinned-mesh-components#modifying-component"&gt;Modifying Edit Skinned Mesh Component&lt;/a&gt;)&lt;/p&gt;
 &lt;h2 id="settings"&gt;
  Settings
@@ -8356,8 +8377,7 @@ If renamed name is duplicated, it will merge the BlendShapes into one.&lt;/p&gt;
 &lt;/h2&gt;
 &lt;p&gt;&lt;img src="https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/rename-blendshape/component.png" alt="component.png" /&gt;&lt;/p&gt;
 &lt;p&gt;You&amp;rsquo;ll see the list of BlendShape mapping.&lt;/p&gt;
-&lt;p&gt;Click upper right &amp;lsquo;+&amp;rsquo; button to add new mapping.&lt;/p&gt;
-&lt;p&gt;If the renamed name is duplicated, it will be shown in yellow color to indicate that it will be merged.&lt;/p&gt;</description></item><item><title>System Assumptions</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/developers/system-assumptions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/developers/system-assumptions/</guid><description>&lt;h1 id="assumptions-we-make-for-external-tools"&gt;
+&lt;p&gt;Click upper right &amp;lsquo;+&amp;rsquo; button to add new mapping.&lt;/p&gt;</description></item><item><title>System Assumptions</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/developers/system-assumptions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/developers/system-assumptions/</guid><description>&lt;h1 id="assumptions-we-make-for-external-tools"&gt;
  Assumptions we make for external tools
  &lt;a class="anchor" href="#assumptions-we-make-for-external-tools"&gt;#&lt;/a&gt;
 &lt;/h1&gt;

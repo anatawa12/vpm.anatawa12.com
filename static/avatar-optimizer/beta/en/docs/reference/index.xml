@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Component Reference on Avatar Optimizer (1.9.17-beta.1)</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/</link><description>Recent content in Component Reference on Avatar Optimizer (1.9.17-beta.1)</description><generator>Hugo</generator><language>en</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/index.xml" rel="self" type="application/rss+xml"/><item><title>Trace And Optimize</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/trace-and-optimize/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/trace-and-optimize/</guid><description>&lt;h1 id="trace-and-optimize"&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Component Reference on Avatar Optimizer (1.9.17-beta.2)</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/</link><description>Recent content in Component Reference on Avatar Optimizer (1.9.17-beta.2)</description><generator>Hugo</generator><language>en</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/index.xml" rel="self" type="application/rss+xml"/><item><title>Trace And Optimize</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/trace-and-optimize/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/trace-and-optimize/</guid><description>&lt;h1 id="trace-and-optimize"&gt;
  Trace And Optimize (T&amp;amp;O)
  &lt;a class="anchor" href="#trace-and-optimize"&gt;#&lt;/a&gt;
 &lt;/h1&gt;
@@ -119,7 +119,7 @@ Currently, Avatar Optimizer provides ShaderInformation for some popular shaders 
  &lt;a class="anchor" href="#rename-blendshape"&gt;#&lt;/a&gt;
 &lt;/h1&gt;
 &lt;p&gt;Renames BlendShapes in the Mesh.&lt;br&gt;
-If renamed name is duplicated, it will merge the BlendShapes into one.&lt;/p&gt;
+If renamed BlendShape name is duplicated, this component shows an error.&lt;/p&gt;
 &lt;p&gt;This component should be added to a GameObject which has a SkinnedMeshRenderer component. (Kind: &lt;a href="../../component-kind/edit-skinned-mesh-components#modifying-component"&gt;Modifying Edit Skinned Mesh Component&lt;/a&gt;)&lt;/p&gt;
 &lt;h2 id="settings"&gt;
  Settings
@@ -127,8 +127,7 @@ If renamed name is duplicated, it will merge the BlendShapes into one.&lt;/p&gt;
 &lt;/h2&gt;
 &lt;p&gt;&lt;img src="https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/rename-blendshape/component.png" alt="component.png" /&gt;&lt;/p&gt;
 &lt;p&gt;You&amp;rsquo;ll see the list of BlendShape mapping.&lt;/p&gt;
-&lt;p&gt;Click upper right &amp;lsquo;+&amp;rsquo; button to add new mapping.&lt;/p&gt;
-&lt;p&gt;If the renamed name is duplicated, it will be shown in yellow color to indicate that it will be merged.&lt;/p&gt;</description></item><item><title>Clear Endpoint Position</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/clear-endpoint-position/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/clear-endpoint-position/</guid><description>&lt;h1 id="clear-endpoint-position"&gt;
+&lt;p&gt;Click upper right &amp;lsquo;+&amp;rsquo; button to add new mapping.&lt;/p&gt;</description></item><item><title>Clear Endpoint Position</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/clear-endpoint-position/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/reference/clear-endpoint-position/</guid><description>&lt;h1 id="clear-endpoint-position"&gt;
  Clear Endpoint Position
  &lt;a class="anchor" href="#clear-endpoint-position"&gt;#&lt;/a&gt;
 &lt;/h1&gt;
