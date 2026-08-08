@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Docs on Avatar Optimizer (1.9.16)</title><link>https://vpm.anatawa12.com/avatar-optimizer/en/docs/</link><description>Recent content in Docs on Avatar Optimizer (1.9.16)</description><generator>Hugo</generator><language>en</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/en/docs/index.xml" rel="self" type="application/rss+xml"/><item><title>Basic Concepts</title><link>https://vpm.anatawa12.com/avatar-optimizer/en/docs/basic-concept/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/en/docs/basic-concept/</guid><description>&lt;h1 id="basic-concepts"&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Docs on Avatar Optimizer (1.9.17)</title><link>https://vpm.anatawa12.com/avatar-optimizer/en/docs/</link><description>Recent content in Docs on Avatar Optimizer (1.9.17)</description><generator>Hugo</generator><language>en</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/en/docs/index.xml" rel="self" type="application/rss+xml"/><item><title>Basic Concepts</title><link>https://vpm.anatawa12.com/avatar-optimizer/en/docs/basic-concept/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/en/docs/basic-concept/</guid><description>&lt;h1 id="basic-concepts"&gt;
  Basic Concepts of Avatar Optimizer
  &lt;a class="anchor" href="#basic-concepts"&gt;#&lt;/a&gt;
 &lt;/h1&gt;
@@ -83,6 +83,28 @@ Therefore, you may be asked to provide more information about avatar.&lt;/p&gt;<
 
  
  
+
+
+ 
+
+ 
+
+ 
+ 
+
+ 
+
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+ 
  
 
  
@@ -3496,6 +3518,19 @@ Therefore, you may be asked to provide more information about avatar.&lt;/p&gt;<
 
 
 
+&lt;h2 id="1.9.17"&gt;
+ &lt;a href="https://github.com/anatawa12/AvatarOptimizer/compare/v1.9.16...v1.9.17"&gt;1.9.17&lt;/a&gt; - 2026-08-08
+ &lt;a class="anchor" href="#1.9.17"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;h3 id="1.9.17-fixed"&gt;
+ Fixed
+ &lt;a class="anchor" href="#1.9.17-fixed"&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Bug Report Helper errors with no AAO components in avatar &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1757"&gt;&lt;code&gt;#1757&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Compatibility with &lt;a href="https://8ya.booth.pm/items/8618883"&gt;Tide of Alba&lt;/a&gt; &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1761"&gt;&lt;code&gt;#1761&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Automatic Replace EndBone with Endpoint Position breaks PhysBone when bone is at (0, 0, 0) &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1761"&gt;&lt;code&gt;#1761&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2 id="1.9.16"&gt;
  &lt;a href="https://github.com/anatawa12/AvatarOptimizer/compare/v1.9.15...v1.9.16"&gt;1.9.16&lt;/a&gt; - 2026-07-13
  &lt;a class="anchor" href="#1.9.16"&gt;#&lt;/a&gt;
@@ -3506,17 +3541,4 @@ Therefore, you may be asked to provide more information about avatar.&lt;/p&gt;<
 &lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;Replaced logic for estimating Texture usage &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1753"&gt;&lt;code&gt;#1753&lt;/code&gt;&lt;/a&gt; &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1755"&gt;&lt;code&gt;#1755&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Previously, we used to use VRCSDK to estimate texture usage, but we wrote new our own logic instead.&lt;/li&gt;
-&lt;li&gt;This should fix the following problems
-&lt;ul&gt;
-&lt;li&gt;Render Textures are not included&lt;/li&gt;
-&lt;li&gt;CubeMaps are calculated to one-sixth of the actual size&lt;/li&gt;
-&lt;li&gt;Some properties are not included&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Update Simplified Chinese localization &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1752"&gt;&lt;code&gt;#1752&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;</description></item></channel></rss>
+&lt;p&gt;Replaced logic for estimating Texture usage &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1753"&gt;&lt;code&gt;#1753&lt;/code&gt;&lt;/a&gt; &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1755"&gt;&lt;code&gt;#1755&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;</description></item></channel></rss>

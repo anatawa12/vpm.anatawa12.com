@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Docs on Avatar Optimizer (1.9.17-beta.2)</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/</link><description>Recent content in Docs on Avatar Optimizer (1.9.17-beta.2)</description><generator>Hugo</generator><language>ja</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/index.xml" rel="self" type="application/rss+xml"/><item><title>基本コンセプト</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/basic-concept/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/basic-concept/</guid><description>&lt;h1 id="basic-concepts"&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Docs on Avatar Optimizer (1.9.17)</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/</link><description>Recent content in Docs on Avatar Optimizer (1.9.17)</description><generator>Hugo</generator><language>ja</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/index.xml" rel="self" type="application/rss+xml"/><item><title>基本コンセプト</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/basic-concept/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/basic-concept/</guid><description>&lt;h1 id="basic-concepts"&gt;
  Avatar Optimizerの基本コンセプト
  &lt;a class="anchor" href="#basic-concepts"&gt;#&lt;/a&gt;
 &lt;/h1&gt;
@@ -110,11 +110,12 @@ Bug Report Helperを使用する前にPlay Modeを終了してください。(�
 レポートファイルを生成するために、Avatar Optimizerはアバターのビルドを実行します。&lt;/p&gt;
 &lt;p&gt;このウィンドウで収集した情報をバグ報告で提供する場合は、このファイルを直接添付するか、ファイル共有サービスにアップロードし、そのリンクを共有してください。&lt;/p&gt;
 &lt;p&gt;&lt;img src="https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/bug-report-helper/window.png" alt="ウィンドウのスクリーンショット" /&gt;&lt;/p&gt;
-&lt;h2 id="report-contents"&gt;
- レポート内容
- &lt;a class="anchor" href="#report-contents"&gt;#&lt;/a&gt;
-&lt;/h2&gt;
-&lt;p&gt;レポートファイルには以下のような情報(一部)が含まれます:&lt;/p&gt;</description></item><item><title>Changelog</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/changelog/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/changelog/</guid><description>&lt;h1 id="changelog"&gt;
+&lt;h3 id="additional-helpful-information"&gt;
+ バグ報告時にあると助かる追加の情報
+ &lt;a class="anchor" href="#additional-helpful-information"&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;Bug Report Helperでは、アバターの情報はわかるようになっていますが、どのような不具合があるかという情報を集めることは困難です。&lt;br&gt;
+そのため、正常な状態での動作と、Avatar Optimizerを使用することで発生する意図しない動作のそれぞれについて、動画やスクリーンショットを用いて説明していただけると、調査の助けになります。&lt;/p&gt;</description></item><item><title>Changelog</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/changelog/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/changelog/</guid><description>&lt;h1 id="changelog"&gt;
  Changelog
  &lt;a class="anchor" href="#changelog"&gt;#&lt;/a&gt;
 &lt;/h1&gt;
@@ -149,6 +150,19 @@ Bug Report Helperを使用する前にPlay Modeを終了してください。(�
 
  
  
+
+
+ 
+
+ 
+
+ 
+ 
+
+ 
+
+ 
+ 
  
 
  
@@ -8253,6 +8267,10 @@ Bug Report Helperを使用する前にPlay Modeを終了してください。(�
 
 
 
+&lt;h2 id="1.9.17"&gt;
+ &lt;a href="https://github.com/anatawa12/AvatarOptimizer/compare/v1.9.17-beta.2...v1.9.17"&gt;1.9.17&lt;/a&gt; - 2026-08-08
+ &lt;a class="anchor" href="#1.9.17"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
 &lt;h2 id="1.9.17-beta.2"&gt;
  &lt;a href="https://github.com/anatawa12/AvatarOptimizer/compare/v1.9.17-beta.1...v1.9.17-beta.2"&gt;1.9.17-beta.2&lt;/a&gt; - 2026-08-03
  &lt;a class="anchor" href="#1.9.17-beta.2"&gt;#&lt;/a&gt;

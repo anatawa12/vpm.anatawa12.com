@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>コンポーネントの詳細説明 on Avatar Optimizer (1.9.16)</title><link>https://vpm.anatawa12.com/avatar-optimizer/ja/docs/reference/</link><description>Recent content in コンポーネントの詳細説明 on Avatar Optimizer (1.9.16)</description><generator>Hugo</generator><language>ja</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/ja/docs/reference/index.xml" rel="self" type="application/rss+xml"/><item><title>Trace And Optimize</title><link>https://vpm.anatawa12.com/avatar-optimizer/ja/docs/reference/trace-and-optimize/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/ja/docs/reference/trace-and-optimize/</guid><description>&lt;h1 id="trace-and-optimize"&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>コンポーネントの詳細説明 on Avatar Optimizer (1.9.17)</title><link>https://vpm.anatawa12.com/avatar-optimizer/ja/docs/reference/</link><description>Recent content in コンポーネントの詳細説明 on Avatar Optimizer (1.9.17)</description><generator>Hugo</generator><language>ja</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/ja/docs/reference/index.xml" rel="self" type="application/rss+xml"/><item><title>Trace And Optimize</title><link>https://vpm.anatawa12.com/avatar-optimizer/ja/docs/reference/trace-and-optimize/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/ja/docs/reference/trace-and-optimize/</guid><description>&lt;h1 id="trace-and-optimize"&gt;
  Trace And Optimize (T&amp;amp;O)
  &lt;a class="anchor" href="#trace-and-optimize"&gt;#&lt;/a&gt;
 &lt;/h1&gt;
@@ -363,7 +363,7 @@ PoiyomiやlilToonのUV Tile Discard機能とは異なり、このコンポーネ
  &lt;a class="anchor" href="#rename-blendshape"&gt;#&lt;/a&gt;
 &lt;/h1&gt;
 &lt;p&gt;メッシュのBlendShape名を変更することが出来ます。&lt;br&gt;
-変更後の名前が重複している場合、それらは1つのBlendShapeへと統合されます。&lt;/p&gt;
+変更後の名前が重複している場合、エラーになります。&lt;/p&gt;
 &lt;p&gt;このコンポーネントは、SkinnedMeshRendererコンポーネントのあるGameObjectに追加してください。(分類: &lt;a href="../../component-kind/edit-skinned-mesh-components#modifying-component"&gt;Modifying Edit Skinned Mesh Component&lt;/a&gt;)&lt;/p&gt;
 &lt;h2 id="Settings"&gt;
  設定
@@ -371,8 +371,7 @@ PoiyomiやlilToonのUV Tile Discard機能とは異なり、このコンポーネ
 &lt;/h2&gt;
 &lt;p&gt;&lt;img src="https://vpm.anatawa12.com/avatar-optimizer/en/docs/reference/rename-blendshape/component.png" alt="component.png" /&gt;&lt;/p&gt;
 &lt;p&gt;BlendShape名の変更一覧表が表示されます。
-右上の &amp;lsquo;+&amp;rsquo; ボタンから、名前を変更するBlendShapeを追加することが出来ます。&lt;/p&gt;
-&lt;p&gt;変更後の名前が重複している場合は、それらが統合されることを示すために、入力欄が黄色でハイライトされます。&lt;/p&gt;</description></item><item><title>Clear Endpoint Position</title><link>https://vpm.anatawa12.com/avatar-optimizer/ja/docs/reference/clear-endpoint-position/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/ja/docs/reference/clear-endpoint-position/</guid><description>&lt;h1 id="clear-endpoint-position"&gt;
+右上の &amp;lsquo;+&amp;rsquo; ボタンから、名前を変更するBlendShapeを追加することが出来ます。&lt;/p&gt;</description></item><item><title>Clear Endpoint Position</title><link>https://vpm.anatawa12.com/avatar-optimizer/ja/docs/reference/clear-endpoint-position/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/ja/docs/reference/clear-endpoint-position/</guid><description>&lt;h1 id="clear-endpoint-position"&gt;
  Clear Endpoint Position
  &lt;a class="anchor" href="#clear-endpoint-position"&gt;#&lt;/a&gt;
 &lt;/h1&gt;
