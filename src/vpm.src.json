@@ -10630,6 +10630,29 @@
           "zipSHA256": "cb0e648cc8c3f4c0cf72f9ad0b063b1997fbc71754ffee0c2af0d3bcf97e741f",
           "documentationUrl": "https://ndmf.nadena.dev",
           "changelogUrl": "https://github.com/bdunderscore/ndmf/releases/tag/1.14.3"
+        },
+        "1.14.4": {
+          "name": "nadena.dev.ndmf",
+          "displayName": "Non-Destructive Modular Framework",
+          "version": "1.14.4",
+          "unity": "2022.3",
+          "description": "A framework for building non-destructive plugins for VRChat Avatar 3.0",
+          "vrchatVersion": "2022.1.1",
+          "author": {
+            "name": "bd_",
+            "email": "bd_@nadena.dev",
+            "url": "https://github.com/bdunderscore/ndmf"
+          },
+          "dependencies": {
+            "com.unity.collections": "2.1.4",
+            "com.unity.mathematics": "1.2.6",
+            "com.unity.modules.animation": "1.0.0"
+          },
+          "url": "https://github.com/bdunderscore/ndmf/releases/download/1.14.4/nadena.dev.ndmf-1.14.4.zip?",
+          "repo": "https://vpm.nadena.dev/vpm.json",
+          "zipSHA256": "2b2ad36097b140e840e5171cacb08937f5848e90d1e09f4c3e1bb164c205a9e5",
+          "documentationUrl": "https://ndmf.nadena.dev",
+          "changelogUrl": "https://github.com/bdunderscore/ndmf/releases/tag/1.14.4"
         }
       }
     },
