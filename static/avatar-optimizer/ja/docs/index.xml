@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Docs on Avatar Optimizer (1.9.17)</title><link>https://vpm.anatawa12.com/avatar-optimizer/ja/docs/</link><description>Recent content in Docs on Avatar Optimizer (1.9.17)</description><generator>Hugo</generator><language>ja</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/ja/docs/index.xml" rel="self" type="application/rss+xml"/><item><title>基本コンセプト</title><link>https://vpm.anatawa12.com/avatar-optimizer/ja/docs/basic-concept/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/ja/docs/basic-concept/</guid><description>&lt;h1 id="basic-concepts"&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Docs on Avatar Optimizer (1.9.18)</title><link>https://vpm.anatawa12.com/avatar-optimizer/ja/docs/</link><description>Recent content in Docs on Avatar Optimizer (1.9.18)</description><generator>Hugo</generator><language>ja</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/ja/docs/index.xml" rel="self" type="application/rss+xml"/><item><title>基本コンセプト</title><link>https://vpm.anatawa12.com/avatar-optimizer/ja/docs/basic-concept/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/ja/docs/basic-concept/</guid><description>&lt;h1 id="basic-concepts"&gt;
  Avatar Optimizerの基本コンセプト
  &lt;a class="anchor" href="#basic-concepts"&gt;#&lt;/a&gt;
 &lt;/h1&gt;
@@ -159,6 +159,37 @@ Bug Report Helperを使用する前にPlay Modeを終了してください。(�
 
  
  
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+ 
+
+
+ 
+
+ 
+
+ 
+ 
+
+ 
+
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+ 
 
 
  
@@ -3594,6 +3625,32 @@ Bug Report Helperを使用する前にPlay Modeを終了してください。(�
 
 
 
+&lt;h2 id="1.9.18"&gt;
+ &lt;a href="https://github.com/anatawa12/AvatarOptimizer/compare/v1.9.17...v1.9.18"&gt;1.9.18&lt;/a&gt; - 2026-08-31
+ &lt;a class="anchor" href="#1.9.18"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;h3 id="1.9.18-added"&gt;
+ Added
+ &lt;a class="anchor" href="#1.9.18-added"&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Initial minimal support for Unity 6000.x &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1711"&gt;&lt;code&gt;#1711&lt;/code&gt;&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;Those versions are not yet officially supported, but something should start working.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Added support for AudioLink support in Toon Standard in 3.10.5 &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1787"&gt;&lt;code&gt;#1787&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="1.9.18-fixed"&gt;
+ Fixed
+ &lt;a class="anchor" href="#1.9.18-fixed"&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Missing localization for few messages &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1767"&gt;&lt;code&gt;#1767&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;False positive &amp;ldquo;Differently animated BlendShape is detected&amp;rdquo; error in Merge Skinned Mesh with MA BlendShape Sync &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1778"&gt;&lt;code&gt;#1778&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Incompatibility with animations swapping mesh of Mesh Filter &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1780"&gt;&lt;code&gt;#1780&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;VRCImpostorSettings might be removed unexpectedly &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1783"&gt;&lt;code&gt;#1783&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2 id="1.9.17"&gt;
  &lt;a href="https://github.com/anatawa12/AvatarOptimizer/compare/v1.9.16...v1.9.17"&gt;1.9.17&lt;/a&gt; - 2026-08-08
  &lt;a class="anchor" href="#1.9.17"&gt;#&lt;/a&gt;
@@ -3617,17 +3674,4 @@ Bug Report Helperを使用する前にPlay Modeを終了してください。(�
 &lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;Replaced logic for estimating Texture usage &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1753"&gt;&lt;code&gt;#1753&lt;/code&gt;&lt;/a&gt; &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1755"&gt;&lt;code&gt;#1755&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Previously, we used to use VRCSDK to estimate texture usage, but we wrote new our own logic instead.&lt;/li&gt;
-&lt;li&gt;This should fix the following problems
-&lt;ul&gt;
-&lt;li&gt;Render Textures are not included&lt;/li&gt;
-&lt;li&gt;CubeMaps are calculated to one-sixth of the actual size&lt;/li&gt;
-&lt;li&gt;Some properties are not included&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Update Simplified Chinese localization &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1752"&gt;&lt;code&gt;#1752&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;</description></item></channel></rss>
+&lt;p&gt;Replaced logic for estimating Texture usage &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1753"&gt;&lt;code&gt;#1753&lt;/code&gt;&lt;/a&gt; &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1755"&gt;&lt;code&gt;#1755&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;</description></item></channel></rss>

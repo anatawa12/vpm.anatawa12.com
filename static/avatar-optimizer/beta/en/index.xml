@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Introduction on Avatar Optimizer (1.9.18-beta.3)</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/</link><description>Recent content in Introduction on Avatar Optimizer (1.9.18-beta.3)</description><generator>Hugo</generator><language>en</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/beta/en/index.xml" rel="self" type="application/rss+xml"/><item><title>Basic Concepts</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/basic-concept/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/basic-concept/</guid><description>&lt;h1 id="basic-concepts"&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Introduction on Avatar Optimizer (1.9.18)</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/</link><description>Recent content in Introduction on Avatar Optimizer (1.9.18)</description><generator>Hugo</generator><language>en</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/beta/en/index.xml" rel="self" type="application/rss+xml"/><item><title>Basic Concepts</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/basic-concept/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/basic-concept/</guid><description>&lt;h1 id="basic-concepts"&gt;
  Basic Concepts of Avatar Optimizer
  &lt;a class="anchor" href="#basic-concepts"&gt;#&lt;/a&gt;
 &lt;/h1&gt;
@@ -83,6 +83,37 @@ Therefore, you may be asked to provide more information about avatar.&lt;/p&gt;<
 
  
  
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+ 
+
+
+ 
+
+ 
+
+ 
+ 
+
+ 
+
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+ 
 
 
  
@@ -8257,6 +8288,24 @@ Therefore, you may be asked to provide more information about avatar.&lt;/p&gt;<
 
 
 
+&lt;h2 id="1.9.18"&gt;
+ &lt;a href="https://github.com/anatawa12/AvatarOptimizer/compare/v1.9.18-beta.3...v1.9.18"&gt;1.9.18&lt;/a&gt; - 2026-08-31
+ &lt;a class="anchor" href="#1.9.18"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;h3 id="1.9.18-added"&gt;
+ Added
+ &lt;a class="anchor" href="#1.9.18-added"&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Added support for AudioLink support in Toon Standard in 3.10.5 &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1787"&gt;&lt;code&gt;#1787&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="1.9.18-fixed"&gt;
+ Fixed
+ &lt;a class="anchor" href="#1.9.18-fixed"&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;VRCImpostorSettings might be removed unexpectedly &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1783"&gt;&lt;code&gt;#1783&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2 id="1.9.18-beta.3"&gt;
  &lt;a href="https://github.com/anatawa12/AvatarOptimizer/compare/v1.9.18-beta.2...v1.9.18-beta.3"&gt;1.9.18-beta.3&lt;/a&gt; - 2026-08-24
  &lt;a class="anchor" href="#1.9.18-beta.3"&gt;#&lt;/a&gt;
@@ -8702,7 +8751,21 @@ if your users use a newer version of Avatar Optimizer than your unofficial distr
  &lt;a class="anchor" href="#when-incompatible"&gt;#&lt;/a&gt;
 &lt;/h2&gt;
 &lt;p&gt;If your components are on the avatar and still exist when Avatar Optimizer processes it,
-your components can be incompatible with Avatar Optimizer.&lt;/p&gt;</description></item><item><title>Shader Information API</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/developers/shader-information/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/developers/shader-information/</guid><description>&lt;h1 id="shader-information-api"&gt;
+your components can be incompatible with Avatar Optimizer.&lt;/p&gt;</description></item><item><title>Make your OSC gimmicks compatible with Avatar Optimizer</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/developers/osc-gimmick/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/developers/osc-gimmick/</guid><description>&lt;h1 id="make-your-osc-gimmicks-compatible-with-avatar-optimizer"&gt;
+ Make your OSC gimmicks compatible with Avatar Optimizer
+ &lt;a class="anchor" href="#make-your-osc-gimmicks-compatible-with-avatar-optimizer"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;This page is for authors of avatar gimmicks that use OSC tools to read or write PhysBone or Contact Receiver parameters at runtime.&lt;/p&gt;
+&lt;h2 id="why"&gt;
+ Why can OSC Gimmicks be incompatible with Avatar Optimizer?
+ &lt;a class="anchor" href="#why"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;h3 id="why-read"&gt;
+ Parameters Read by Your OSC Tool
+ &lt;a class="anchor" href="#why-read"&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;Some modern avatars have their own gimmicks based on PhysBone / Contact Receiver components, so those components will be forgotten to remove in most cases.&lt;br&gt;
+Therefore, Avatar Optimizer is designed to remove such components if they does not effect the avatar through Animators or Expression Parameters.&lt;sup id="fnref:1"&gt;&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref"&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;</description></item><item><title>Shader Information API</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/developers/shader-information/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/en/docs/developers/shader-information/</guid><description>&lt;h1 id="shader-information-api"&gt;
  Shader Information API
  &lt;a class="anchor" href="#shader-information-api"&gt;#&lt;/a&gt;
 &lt;/h1&gt;

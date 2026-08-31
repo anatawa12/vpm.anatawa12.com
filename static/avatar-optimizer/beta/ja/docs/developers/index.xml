@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>開発者向け on Avatar Optimizer (1.9.18-beta.3)</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/developers/</link><description>Recent content in 開発者向け on Avatar Optimizer (1.9.18-beta.3)</description><generator>Hugo</generator><language>ja</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/developers/index.xml" rel="self" type="application/rss+xml"/><item><title>システムの前提条件</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/developers/system-assumptions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/developers/system-assumptions/</guid><description>&lt;h1 id="外部ツールに求める前提条件"&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>開発者向け on Avatar Optimizer (1.9.18)</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/developers/</link><description>Recent content in 開発者向け on Avatar Optimizer (1.9.18)</description><generator>Hugo</generator><language>ja</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/developers/index.xml" rel="self" type="application/rss+xml"/><item><title>システムの前提条件</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/developers/system-assumptions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/developers/system-assumptions/</guid><description>&lt;h1 id="外部ツールに求める前提条件"&gt;
  外部ツールに求める前提条件
  &lt;a class="anchor" href="#%e5%a4%96%e9%83%a8%e3%83%84%e3%83%bc%e3%83%ab%e3%81%ab%e6%b1%82%e3%82%81%e3%82%8b%e5%89%8d%e6%8f%90%e6%9d%a1%e4%bb%b6"&gt;#&lt;/a&gt;
 &lt;/h1&gt;
@@ -111,7 +111,53 @@ Avatar Optimizerはランタイムで動作しないため、ランタイムビ�
 &lt;blockquote class="book-hint info"&gt;
 &lt;p&gt;v1.9.0以降、&lt;code&gt;MergePhysBone&lt;/code&gt;コンポーネントのComponent APIを提供していますが、そのセマンティックバージョニング上の取り扱いは特殊なものになっています。&lt;/p&gt;
 &lt;p&gt;このコンポーネントはVRChat SDKのPhysBoneコンポーネントと密接に結びついているため、PhysBoneコンポーネントの仕様変更に伴って、&lt;code&gt;MergePhysBone&lt;/code&gt;にも対応する変更が必要になる場合があります。
-その場合、新しいプロパティの追加や既存プロパティの変更は、セマンティックバージョニングの規定に従わずに行われる可能性があります。&lt;/p&gt;</description></item><item><title>Shader Information API</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/developers/shader-information/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/developers/shader-information/</guid><description>&lt;h1 id="shader-information-api"&gt;
+その場合、新しいプロパティの追加や既存プロパティの変更は、セマンティックバージョニングの規定に従わずに行われる可能性があります。&lt;/p&gt;</description></item><item><title>OSCギミックにAvatar Optimizerとの互換性をもたせる</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/developers/osc-gimmick/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/developers/osc-gimmick/</guid><description>&lt;h1 id="oscギミックにavatar-optimizerとの互換性をもたせる"&gt;
+ OSCギミックにAvatar Optimizerとの互換性をもたせる
+ &lt;a class="anchor" href="#osc%e3%82%ae%e3%83%9f%e3%83%83%e3%82%af%e3%81%abavatar-optimizer%e3%81%a8%e3%81%ae%e4%ba%92%e6%8f%9b%e6%80%a7%e3%82%92%e3%82%82%e3%81%9f%e3%81%9b%e3%82%8b"&gt;#&lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;このページでは、OSCツールを使用して実行時にPhysBoneやContact Receiverのパラメーターを読み書きするアバターギミックの作者向けに、互換性を確保するために必要な設定について説明します。&lt;/p&gt;
+&lt;h2 id="why"&gt;
+ なぜOSCギミックがAvatar Optimizerと非互換になる場合があるか
+ &lt;a class="anchor" href="#why"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;h3 id="why-read"&gt;
+ OSCツールによるパラメーターの読み取り
+ &lt;a class="anchor" href="#why-read"&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;最近のアバターはPhysBoneやContact Receiverコンポーネントを使用した独自のギミックが含まれている場合があり、ユーザーがギミックを削除する際には、これらのコンポーネントを削除し忘れる可能性が高いです。&lt;br&gt;
+そのため、Avatar Optimizerは、Animator ParameterやExpression Parameterを通じてアバターを変化させることがないコンポーネントについては削除するように設計されています。&lt;sup id="fnref:1"&gt;&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref"&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;しかしながら、PhysBoneやContact Receiverは、OSCツールから直接読み取ることができるパラメーターを公開しており、
+Avatar Optimizerは、そのようなパラメーターが本当に使用されていないのか、OSCツールによって読み取られることが意図されているのかを判別することができません。&lt;br&gt;
+そのため、OSCツールによってパラメーターを読み取ることが意図されていた場合も、コンポーネントを削除してしまう可能性があります。&lt;/p&gt;
+&lt;h3 id="why-change"&gt;
+ OSCツールによるパラメーターの変更
+ &lt;a class="anchor" href="#why-change"&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;Avatar Optimizerでは、実行時に変更されないパラメーターを分析してAnimator Controllerを最適化する機能の実装も計画しています。&lt;br&gt;
+しかし、Avatar Optimizerが定数だと判断したパラメーターが、実際にはOSCツールやVRCParameterDriverによって変更されるものであった場合、この最適化によってギミックが動作しなくなる可能性があります。&lt;/p&gt;
+&lt;p&gt;Avatar Optimizerはまだこの最適化を実装していませんが、将来この最適化が実装された場合にギミックとの互換性を維持できるよう、パラメーターを宣言するようお願いします。&lt;/p&gt;
+&lt;h2 id="what-to-do"&gt;
+ 何をすればよいか
+ &lt;a class="anchor" href="#what-to-do"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;Avatar Optimizerがギミックに誤った最適化を適用してしまうことを防ぐために、&lt;a href="../asset-description/"&gt;Asset Description&lt;/a&gt;を作成し、OSCツールが読み取る、または変更するすべてのパラメーターを、それぞれ&lt;code&gt;Parameters Read By External Tools&lt;/code&gt;または&lt;code&gt;Parameters Changed By External Tools&lt;/code&gt;リストに宣言していただくようお願いします。&lt;/p&gt;
+&lt;p&gt;その後、作成したAsset Descriptionをアバター、またはギミックと一緒に配布してください。&lt;br&gt;
+Avatar OptimizerがインストールされていないプロジェクトにAsset Descriptionファイルが存在した場合でも特に問題は発生しないため、ギミックと一緒にAsset Descriptionを配布しても、ギミックがAvatar Optimizerに依存することにはなりません。&lt;sup id="fnref:2"&gt;&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref"&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;h3 id="step-by-step"&gt;
+ 手順
+ &lt;a class="anchor" href="#step-by-step"&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;OSCツールが読み取る、または変更するすべてのパラメーターを確認してください。&lt;/p&gt;
+&lt;p&gt;ツールが実行時に読み取る、または変更するすべてのパラメーター名を列挙してください。&lt;br&gt;
+Asset Descriptionは正規表現に対応しているため、必ずしも正確な名前を指定する必要はありません。&lt;br&gt;
+例えば、&lt;code&gt;FooHaptics/OSC/&lt;/code&gt;のような接頭辞(プレフィックス)を持つすべてのパラメーターに一致するパターンを指定することが可能です。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Asset Descriptionを作成してください。&lt;/p&gt;
+&lt;p&gt;UnityのProjectウィンドウで右クリックし、&lt;code&gt;Create &amp;gt; Avatar Optimizer &amp;gt; Asset Description&lt;/code&gt;を選択してください。&lt;br&gt;
+ファイルの名前や保存場所は自由です。&lt;/p&gt;</description></item><item><title>Shader Information API</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/developers/shader-information/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/docs/developers/shader-information/</guid><description>&lt;h1 id="shader-information-api"&gt;
  Shader Information API
  &lt;a class="anchor" href="#shader-information-api"&gt;#&lt;/a&gt;
 &lt;/h1&gt;
@@ -151,7 +197,7 @@ APIを通じてシェーダーの情報を登録することで、Avatar Optimiz
 &lt;/h3&gt;
 &lt;p&gt;Shader Information API全体を通して、&lt;code&gt;null&lt;/code&gt;値は&lt;strong&gt;不明な値&lt;/strong&gt;または&lt;strong&gt;アニメーションで操作される(静的に決定することのできない)値&lt;/strong&gt;を表します。&lt;br&gt;
 マテリアルプロパティがアニメーションで操作されているなど、ビルド時にその値を決定できない場合、APIはその不確実性を示すために&lt;code&gt;null&lt;/code&gt;を返します。&lt;br&gt;
-値を静的に決定できない場合は、パラメータに&lt;code&gt;null&lt;/code&gt;を渡す必要があります。&lt;/p&gt;
+値を静的に決定できない場合は、パラメーターに&lt;code&gt;null&lt;/code&gt;を渡す必要があります。&lt;/p&gt;
 &lt;h2 id="getting-started"&gt;
  使い方
  &lt;a class="anchor" href="#getting-started"&gt;#&lt;/a&gt;

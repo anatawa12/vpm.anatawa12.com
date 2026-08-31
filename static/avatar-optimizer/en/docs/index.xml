@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Docs on Avatar Optimizer (1.9.17)</title><link>https://vpm.anatawa12.com/avatar-optimizer/en/docs/</link><description>Recent content in Docs on Avatar Optimizer (1.9.17)</description><generator>Hugo</generator><language>en</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/en/docs/index.xml" rel="self" type="application/rss+xml"/><item><title>Basic Concepts</title><link>https://vpm.anatawa12.com/avatar-optimizer/en/docs/basic-concept/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/en/docs/basic-concept/</guid><description>&lt;h1 id="basic-concepts"&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Docs on Avatar Optimizer (1.9.18)</title><link>https://vpm.anatawa12.com/avatar-optimizer/en/docs/</link><description>Recent content in Docs on Avatar Optimizer (1.9.18)</description><generator>Hugo</generator><language>en</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/en/docs/index.xml" rel="self" type="application/rss+xml"/><item><title>Basic Concepts</title><link>https://vpm.anatawa12.com/avatar-optimizer/en/docs/basic-concept/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/en/docs/basic-concept/</guid><description>&lt;h1 id="basic-concepts"&gt;
  Basic Concepts of Avatar Optimizer
  &lt;a class="anchor" href="#basic-concepts"&gt;#&lt;/a&gt;
 &lt;/h1&gt;
@@ -83,6 +83,37 @@ Therefore, you may be asked to provide more information about avatar.&lt;/p&gt;<
 
  
  
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+ 
+
+
+ 
+
+ 
+
+ 
+ 
+
+ 
+
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+ 
 
 
  
@@ -3518,6 +3549,32 @@ Therefore, you may be asked to provide more information about avatar.&lt;/p&gt;<
 
 
 
+&lt;h2 id="1.9.18"&gt;
+ &lt;a href="https://github.com/anatawa12/AvatarOptimizer/compare/v1.9.17...v1.9.18"&gt;1.9.18&lt;/a&gt; - 2026-08-31
+ &lt;a class="anchor" href="#1.9.18"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;h3 id="1.9.18-added"&gt;
+ Added
+ &lt;a class="anchor" href="#1.9.18-added"&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Initial minimal support for Unity 6000.x &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1711"&gt;&lt;code&gt;#1711&lt;/code&gt;&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;Those versions are not yet officially supported, but something should start working.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Added support for AudioLink support in Toon Standard in 3.10.5 &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1787"&gt;&lt;code&gt;#1787&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="1.9.18-fixed"&gt;
+ Fixed
+ &lt;a class="anchor" href="#1.9.18-fixed"&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Missing localization for few messages &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1767"&gt;&lt;code&gt;#1767&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;False positive &amp;ldquo;Differently animated BlendShape is detected&amp;rdquo; error in Merge Skinned Mesh with MA BlendShape Sync &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1778"&gt;&lt;code&gt;#1778&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Incompatibility with animations swapping mesh of Mesh Filter &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1780"&gt;&lt;code&gt;#1780&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;VRCImpostorSettings might be removed unexpectedly &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1783"&gt;&lt;code&gt;#1783&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2 id="1.9.17"&gt;
  &lt;a href="https://github.com/anatawa12/AvatarOptimizer/compare/v1.9.16...v1.9.17"&gt;1.9.17&lt;/a&gt; - 2026-08-08
  &lt;a class="anchor" href="#1.9.17"&gt;#&lt;/a&gt;
