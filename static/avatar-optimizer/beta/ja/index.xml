@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Introduction on Avatar Optimizer (1.9.19)</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/</link><description>Recent content in Introduction on Avatar Optimizer (1.9.19)</description><generator>Hugo</generator><language>ja</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/beta/ja/index.xml" rel="self" type="application/rss+xml"/><item><title>v1.0.0一周年を記念してちょっと歴史を振り返る</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/posts/2024-06-27-one-year-since-stable-release/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/posts/2024-06-27-one-year-since-stable-release/</guid><description>&lt;p&gt;AAO: Avatar Optimizer v1.0.0一周年を記念してちょっと歴史を振り返ってみることにしてみる。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Introduction on Avatar Optimizer (1.9.20-beta.1)</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/</link><description>Recent content in Introduction on Avatar Optimizer (1.9.20-beta.1)</description><generator>Hugo</generator><language>ja</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/beta/ja/index.xml" rel="self" type="application/rss+xml"/><item><title>v1.0.0一周年を記念してちょっと歴史を振り返る</title><link>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/posts/2024-06-27-one-year-since-stable-release/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/beta/ja/posts/2024-06-27-one-year-since-stable-release/</guid><description>&lt;p&gt;AAO: Avatar Optimizer v1.0.0一周年を記念してちょっと歴史を振り返ってみることにしてみる。&lt;/p&gt;
 &lt;p&gt;書いた人はanatawa12なので「私」はanatawa12を指す。&lt;/p&gt;
 &lt;h2 id="before-born"&gt;
  Avatar Optimizerが生まれるまで
@@ -203,6 +203,37 @@ Bug Report Helperを使用する前にPlay Modeを終了してください。(�
 
  
  
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+ 
+
+
+ 
+
+ 
+
+ 
+ 
+
+ 
+
+ 
+ 
 
 
  
@@ -8474,6 +8505,25 @@ Bug Report Helperを使用する前にPlay Modeを終了してください。(�
 
 
 
+&lt;h2 id="1.9.20-beta.1"&gt;
+ &lt;a href="https://github.com/anatawa12/AvatarOptimizer/compare/v1.9.19...v1.9.20-beta.1"&gt;1.9.20-beta.1&lt;/a&gt; - 2026-09-28
+ &lt;a class="anchor" href="#1.9.20-beta.1"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;h3 id="1.9.20-beta.1-added"&gt;
+ Added
+ &lt;a class="anchor" href="#1.9.20-beta.1-added"&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Korean localization with UI labels kept in English &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1793"&gt;&lt;code&gt;#1793&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="1.9.20-beta.1-fixed"&gt;
+ Fixed
+ &lt;a class="anchor" href="#1.9.20-beta.1-fixed"&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Bones closer than 3mm with x100 scale might be unexpectedly merged incorrectly &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1796"&gt;&lt;code&gt;#1796&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Duplicate and outdated localization keys and PO syntax errors in existing language catalogs &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1793"&gt;&lt;code&gt;#1793&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2 id="1.9.19"&gt;
  &lt;a href="https://github.com/anatawa12/AvatarOptimizer/compare/v1.9.19-beta.2...v1.9.19"&gt;1.9.19&lt;/a&gt; - 2026-09-11
  &lt;a class="anchor" href="#1.9.19"&gt;#&lt;/a&gt;
