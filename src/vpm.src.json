@@ -8803,6 +8803,23 @@
             "com.vrchat.avatars": ">=3.3.0-beta.1 <3.11.0"
           },
           "zipSHA256": "25e28eb57c359be3927b4f0c37672d4d1b50a13e8fd9dcb402d932b4c7750c3d"
+        },
+        "0.3.13-beta.2": {
+          "name": "com.anatawa12.continuous-avatar-uploader",
+          "version": "0.3.13-beta.2",
+          "unity": "2022.3",
+          "description": "The tool to upload multiple avatars continuously with tagging version",
+          "displayName": "Continuous Avatar Uploader",
+          "author": {
+            "name": "anatawa12",
+            "url": "https://anatawa12.com/"
+          },
+          "url": "https://vpm.anatawa12.com/continuous-avatar-uploader/package-0.3.13-beta.2.zip?",
+          "repo": "https://vpm.anatawa12.com/vpm.json",
+          "vpmDependencies": {
+            "com.vrchat.avatars": ">=3.3.0-beta.1 <3.11.0"
+          },
+          "zipSHA256": "3a341393d793e958b6abc5023147f62999fbf1413cc0d6b47474134492f34731"
         }
       }
     },
