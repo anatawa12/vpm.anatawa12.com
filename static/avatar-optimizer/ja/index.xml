@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Introduction on Avatar Optimizer (1.9.22)</title><link>https://vpm.anatawa12.com/avatar-optimizer/ja/</link><description>Recent content in Introduction on Avatar Optimizer (1.9.22)</description><generator>Hugo</generator><language>ja</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/ja/index.xml" rel="self" type="application/rss+xml"/><item><title>v1.0.0一周年を記念してちょっと歴史を振り返る</title><link>https://vpm.anatawa12.com/avatar-optimizer/ja/posts/2024-06-27-one-year-since-stable-release/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/ja/posts/2024-06-27-one-year-since-stable-release/</guid><description>&lt;p&gt;AAO: Avatar Optimizer v1.0.0一周年を記念してちょっと歴史を振り返ってみることにしてみる。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Introduction on Avatar Optimizer (1.9.23)</title><link>https://vpm.anatawa12.com/avatar-optimizer/ja/</link><description>Recent content in Introduction on Avatar Optimizer (1.9.23)</description><generator>Hugo</generator><language>ja</language><atom:link href="https://vpm.anatawa12.com/avatar-optimizer/ja/index.xml" rel="self" type="application/rss+xml"/><item><title>v1.0.0一周年を記念してちょっと歴史を振り返る</title><link>https://vpm.anatawa12.com/avatar-optimizer/ja/posts/2024-06-27-one-year-since-stable-release/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://vpm.anatawa12.com/avatar-optimizer/ja/posts/2024-06-27-one-year-since-stable-release/</guid><description>&lt;p&gt;AAO: Avatar Optimizer v1.0.0一周年を記念してちょっと歴史を振り返ってみることにしてみる。&lt;/p&gt;
 &lt;p&gt;書いた人はanatawa12なので「私」はanatawa12を指す。&lt;/p&gt;
 &lt;h2 id="before-born"&gt;
  Avatar Optimizerが生まれるまで
@@ -221,6 +221,46 @@ Bug Report Helperを使用する前にPlay Modeを終了してください。(�
 
  
  
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+ 
+
+
+ 
+
+ 
+
+ 
+ 
+
+ 
+
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+ 
 
 
  
@@ -3784,6 +3824,38 @@ Bug Report Helperを使用する前にPlay Modeを終了してください。(�
 
 
 
+&lt;h2 id="1.9.23"&gt;
+ &lt;a href="https://github.com/anatawa12/AvatarOptimizer/compare/v1.9.22...v1.9.23"&gt;1.9.23&lt;/a&gt; - 2026-11-17
+ &lt;a class="anchor" href="#1.9.23"&gt;#&lt;/a&gt;
+&lt;/h2&gt;
+&lt;h3 id="1.9.23-added"&gt;
+ Added
+ &lt;a class="anchor" href="#1.9.23-added"&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Version information on each component &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1820"&gt;&lt;code&gt;#1820&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="1.9.23-changed"&gt;
+ Changed
+ &lt;a class="anchor" href="#1.9.23-changed"&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Reduce unnecessary mesh removal preview updates. &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1819"&gt;&lt;code&gt;#1819&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="1.9.23-fixed"&gt;
+ Fixed
+ &lt;a class="anchor" href="#1.9.23-fixed"&gt;#&lt;/a&gt;
+&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed a mesh leak in Remove Mesh by Box previews. &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1819"&gt;&lt;code&gt;#1819&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Fixed UV channel selection in Remove Mesh by UV Tile previews. &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1819"&gt;&lt;code&gt;#1819&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Global PhysBone Colliders with VRCSDK 3.10.5 can be removed &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1823"&gt;&lt;code&gt;#1823&lt;/code&gt;&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;AAO only supports VRCSDK 3.10.4 Global PhysBone Colliders for bug.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Target Transform of VRC Raycast (VRCSDK 3.10.5 feature) can be removed &lt;a href="https://github.com/anatawa12/AvatarOptimizer/pull/1825"&gt;&lt;code&gt;#1825&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h2 id="1.9.22"&gt;
  &lt;a href="https://github.com/anatawa12/AvatarOptimizer/compare/v1.9.21...v1.9.22"&gt;1.9.22&lt;/a&gt; - 2026-11-10
  &lt;a class="anchor" href="#1.9.22"&gt;#&lt;/a&gt;
