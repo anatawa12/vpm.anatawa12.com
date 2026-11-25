@@ -6801,6 +6801,29 @@
           "zipSHA256": "f9f8504f88f42356cc820584eb3e2477868694e898964c4d9849a6e80ddd5da8",
           "documentationUrl": "https://modular-avatar.nadena.dev/?lang=auto",
           "changelogUrl": "https://github.com/bdunderscore/modular-avatar/releases/tag/1.19.0"
+        },
+        "1.19.1": {
+          "name": "nadena.dev.modular-avatar",
+          "displayName": "Modular Avatar",
+          "version": "1.19.1",
+          "unity": "2022.3",
+          "description": "A suite of tools for assembling your avatar out of reusable components",
+          "author": {
+            "name": "bd_",
+            "email": "bd_@nadena.dev",
+            "url": "https://github.com/bdunderscore/modular-avatar"
+          },
+          "url": "https://packages.vpm.nadena.dev/repositories/nadena.dev/packages/nadena.dev.modular-avatar/1.19.1/4fb4abccb9c677ddab3723613b96cb0fc4fe58dbe6a4f90ba6954652f278a504.zip",
+          "repo": "https://vpm.nadena.dev/vpm.json",
+          "dependencies": {
+            "com.unity.nuget.newtonsoft-json": "2.0.0"
+          },
+          "vpmDependencies": {
+            "nadena.dev.ndmf": ">=1.15.0-beta.1 <2.0.0-a"
+          },
+          "zipSHA256": "4fb4abccb9c677ddab3723613b96cb0fc4fe58dbe6a4f90ba6954652f278a504",
+          "documentationUrl": "https://modular-avatar.nadena.dev/?lang=auto",
+          "changelogUrl": "https://github.com/bdunderscore/modular-avatar/releases/tag/1.19.1"
         }
       }
     },
